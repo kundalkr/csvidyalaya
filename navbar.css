@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.cs-logo {
+  font-family: "Moderustic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 556;
+  font-style: normal;
+  color: #ffffff;
+}
+#vidyalaya-logo{
+    font-family: "Moderustic", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: small;
+    font-style: normal;
+    color: #ffffff;
+}
