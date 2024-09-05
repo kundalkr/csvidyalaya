@@ -20,7 +20,7 @@
 .navbar.navbar-expand-lg.navbar-light {
   background-color: #c26bcf;
 }
-@media (400px >= width) {
+@media (500px >= width) {
   .navbar.bg-body-tertiary > .container > .navbar-brand > img {
     width: 100px;
     height: 40px;
