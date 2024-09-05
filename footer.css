@@ -1,4 +1,16 @@
-.footer{
-    background-color: #c26bcf;
-    padding-top: 15px;
+.footer {
+  background-color: #c26bcf;
+  padding-top: 15px;
+}
+.footer {
+  .container {
+    .row {
+      .col-md-3 {
+        img {
+          width: 200px;
+          height: 50px;
+        }
+      }
+    }
+  }
 }

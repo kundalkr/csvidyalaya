@@ -35,3 +35,8 @@
     height: 60px;
   }
 }
+.btn .btn-success {
+  .material-icons {
+    background-color: red;
+  }
+}
