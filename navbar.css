@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap");
 
 /* // <uniquifier>: Use a unique and descriptive class name */
 
@@ -9,10 +9,24 @@
   font-style: normal;
   color: #ffffff;
 }
-#vidyalaya-logo{
-    font-family: "Moderustic", sans-serif;
-    /* font-optical-sizing: auto; */
-    font-weight: small;
-    font-style: normal;
-    color: #ffffff;
+#vidyalaya-logo {
+  font-family: "Moderustic", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-weight: small;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+  background-color: #c26bcf;
+}
+@media (400px >= width) {
+  .navbar.bg-body-tertiary > .container > .navbar-brand > img {
+    width: 100px;
+    height: 40px;
+    
+  }
+  .d-flex>.form-control.me-2{
+    width: 90px;
+  }
 }

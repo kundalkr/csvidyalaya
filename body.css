@@ -1,13 +1,15 @@
-body{
-    margin: 0px 100px;
+body {
+  margin: 0px 100px;
 }
-#all-cards{
-    /* background-color: brown; */
-    margin: 10px 10px;
+#all-cards {
+  /* background-color: brown; */
+  margin: 10px 10px;
 }
-.card{
-    margin: 10px 10px;
+.card {
+  margin: 10px 10px;
 }
-img{
-    background-size: cover;
+img {
+  background-size: cover;
 }
+
+
