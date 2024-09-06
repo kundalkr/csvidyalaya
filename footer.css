@@ -14,3 +14,18 @@
     }
   }
 }
+
+@media (width>=500) {
+  .footer {
+    .container {
+      .row {
+        .col-md-3 {
+          img {
+            width: 20px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}

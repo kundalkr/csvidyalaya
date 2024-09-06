@@ -6,7 +6,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../navbar.css" />
-    <link rel="stylesheet" href="../../footer.css">
+    <link rel="stylesheet" href="../../footer.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -25,12 +25,12 @@
     <title>Document</title>
   </head>
   <body>
-     <!-- navbar start-->
-     <nav class="navbar bg-body-tertiary">
+    <!-- navbar start-->
+    <nav class="navbar bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
-          src="../../assets/logo/main_Logo.jpg"
+            src="../../assets/logo/main_Logo.jpg"
             alt="Bootstrap"
             width="300"
             height="100"
@@ -68,7 +68,12 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Features</a>
@@ -670,6 +675,10 @@
       </table>
 
       <h3>Solution :</h3>
+      <p>
+        lower number represents higher priority (here i take 1 as a highest
+        priority)
+      </p>
       <p><strong>Formula:</strong></p>
       <ul>
         <li>Turnaround Time = Completion Time - Arrival Time</li>
@@ -684,7 +693,7 @@
       </ul>
 
       <h4>Gantt Chart</h4>
-      <p>| P1 (0-5) | P2 (5-8) | P3 (8-9) | P4 (9-11) |</p>
+      <p>| P1 (0-5) | P2 (5-8) | P4 (8-10) | P3 (10-11) |</p>
       <table border="1" class="table table-bordered">
         <tr>
           <th>Process</th>
@@ -718,26 +727,26 @@
           <td>4</td>
           <td>1</td>
           <td>4</td>
-          <td>9</td>
-          <td>9 - 4 = 5</td>
-          <td>5 - 1 = 4</td>
+          <td>11</td>
+          <td>11 - 4 = 7</td>
+          <td>7 - 1 = 6</td>
         </tr>
         <tr>
           <td>P4</td>
           <td>6</td>
           <td>2</td>
           <td>3</td>
-          <td>11</td>
-          <td>11 - 6 = 5</td>
-          <td>5 - 2 = 3</td>
+          <td>10</td>
+          <td>10 - 6 = 4</td>
+          <td>4 - 2 = 2</td>
         </tr>
       </table>
 
       <h5>Average Turnaround Time:</h5>
-      <p>(5 + 6 + 5 + 5) / 4 = 5.25 units</p>
+      <p>(5 + 6 + 7 + 4) / 4 = 5.5 units</p>
 
       <h5>Average Waiting Time:</h5>
-      <p>(0 + 3 + 4 + 3) / 4 = 2.5 units</p>
+      <p>(0 + 3 + 6 + 2) / 4 = 2.75 units</p>
 
       <!-- question 6 end -->
       <!-- question 7 start -->
@@ -789,6 +798,10 @@
       </table>
 
       <h3>Solution :</h3>
+      <p>
+        lower number represents higher priority (here i take 1 as a highest
+        priority)
+      </p>
       <p><strong>Formula:</strong></p>
       <ul>
         <li>Turnaround Time = Completion Time - Arrival Time</li>
@@ -802,7 +815,9 @@
         </li>
       </ul>
 
-      <h5>Calculations:</h5>
+      <h4>Gantt Chart</h4>
+      <p>| P1 (0-7) | P4 (7-10) | P2 (10-14) | P3 (14-15) | P5 (15-17) |</p>
+
       <table border="1" class="table table-bordered">
         <tr>
           <th>Process</th>
@@ -818,58 +833,53 @@
           <td>0</td>
           <td>7</td>
           <td>1</td>
-          <td>14</td>
-          <td>14 - 0 = 14</td>
-          <td>14 - 7 = 7</td>
+          <td>7</td>
+          <td>7 - 0 = 7</td>
+          <td>7 - 7 = 0</td>
         </tr>
         <tr>
           <td>P2</td>
           <td>2</td>
           <td>4</td>
           <td>2</td>
-          <td>9</td>
-          <td>9 - 2 = 7</td>
-          <td>7 - 4 = 3</td>
+          <td>14</td>
+          <td>14 - 2 = 12</td>
+          <td>12 - 4 = 8</td>
         </tr>
         <tr>
           <td>P3</td>
           <td>4</td>
           <td>1</td>
           <td>3</td>
-          <td>5</td>
-          <td>5 - 4 = 1</td>
-          <td>1 - 1 = 0</td>
+          <td>15</td>
+          <td>15 - 4 = 11</td>
+          <td>11 - 1 = 10</td>
         </tr>
         <tr>
           <td>P4</td>
           <td>5</td>
           <td>3</td>
           <td>1</td>
-          <td>8</td>
-          <td>8 - 5 = 3</td>
-          <td>3 - 3 = 0</td>
+          <td>10</td>
+          <td>10 - 5 = 5</td>
+          <td>5 - 3 = 2</td>
         </tr>
         <tr>
           <td>P5</td>
           <td>6</td>
           <td>2</td>
           <td>4</td>
-          <td>10</td>
-          <td>10 - 6 = 4</td>
-          <td>4 - 2 = 2</td>
+          <td>17</td>
+          <td>17 - 6 = 11</td>
+          <td>11 - 2 = 09</td>
         </tr>
       </table>
 
       <h5>Average Turnaround Time:</h5>
-      <p>(14 + 7 + 1 + 3 + 4) / 5 = 5.8 units</p>
+      <p>(7+12+11+5+11) / 5 = 9.2 units</p>
 
       <h5>Average Waiting Time:</h5>
-      <p>(7 + 3 + 0 + 0 + 2) / 5 = 2.4 units</p>
-
-      <h4>Gantt Chart</h4>
-      <p>
-        | P1 (0-2) | P2 (2-4) | P3 (4-5) | P4 (5-8) | P5 (8-10) | P1 (10-14) |
-      </p>
+      <p>(0+8+10+2+9) / 5 = 5.8 units</p>
 
       <!-- question 7 end -->
       <!-- question 8 start -->
@@ -915,6 +925,10 @@
       </table>
 
       <h3>Solution :</h3>
+      <p>
+        lower number represents higher priority (here i take 1 as a highest
+        priority)
+      </p>
       <p><strong>Formula:</strong></p>
       <ul>
         <li>Turnaround Time = Completion Time - Arrival Time</li>
@@ -928,7 +942,8 @@
         </li>
       </ul>
 
-      <h5>Calculations:</h5>
+      <h4>Gantt Chart</h4>
+      <p>| P1 (1-4) | P3 (4-8) | P2 (8-14) | P4 (14-19) |</p>
       <table border="1" class="table table-bordered">
         <tr>
           <th>Process</th>
@@ -953,18 +968,18 @@
           <td>2</td>
           <td>6</td>
           <td>2</td>
-          <td>10</td>
-          <td>10 - 2 = 8</td>
-          <td>8 - 6 = 2</td>
+          <td>14</td>
+          <td>14 - 2 = 12</td>
+          <td>12 - 6 = 6</td>
         </tr>
         <tr>
           <td>P3</td>
           <td>3</td>
           <td>4</td>
           <td>1</td>
-          <td>14</td>
-          <td>14 - 3 = 11</td>
-          <td>11 - 4 = 7</td>
+          <td>8</td>
+          <td>8 - 3 = 5</td>
+          <td>5 - 4 = 1</td>
         </tr>
         <tr>
           <td>P4</td>
@@ -978,13 +993,10 @@
       </table>
 
       <h5>Average Turnaround Time:</h5>
-      <p>(3 + 8 + 11 + 14) / 4 = 9 units</p>
+      <p>(3 + 12 + 5 + 14) / 4 = 8.5 units</p>
 
       <h5>Average Waiting Time:</h5>
-      <p>(0 + 2 + 7 + 9) / 4 = 4.5 units</p>
-
-      <h4>Gantt Chart</h4>
-      <p>| P1 (1-4) | P2 (4-10) | P3 (10-14) | P4 (14-19) |</p>
+      <p>(0 + 6 + 1 + 9) / 4 = 4 units</p>
 
       <!-- question 8 end -->
       <!-- question 9 start -->
@@ -1036,6 +1048,10 @@
       </table>
 
       <h3>Solution :</h3>
+      <p>
+        lower number represents higher priority (here i take 1 as a highest
+        priority)
+      </p>
       <p><strong>Formula:</strong></p>
       <ul>
         <li>Turnaround Time = Completion Time - Arrival Time</li>
@@ -1049,7 +1065,8 @@
         </li>
       </ul>
 
-      <h5>Calculations:</h5>
+      <h4>Gantt Chart</h4>
+      <p>| P1 (0-8) | P3 (8-17) | P2 (17-21) | P4 (21-26) | P5 (26-32) |</p>
       <table border="1" class="table table-bordered">
         <tr>
           <th>Process</th>
@@ -1074,49 +1091,44 @@
           <td>1</td>
           <td>4</td>
           <td>3</td>
-          <td>9</td>
-          <td>9 - 1 = 8</td>
-          <td>8 - 4 = 4</td>
+          <td>21</td>
+          <td>21 - 1 = 20</td>
+          <td>20 - 4 = 16</td>
         </tr>
         <tr>
           <td>P3</td>
           <td>2</td>
           <td>9</td>
           <td>2</td>
-          <td>13</td>
-          <td>13 - 2 = 11</td>
-          <td>11 - 9 = 2</td>
+          <td>17</td>
+          <td>17 - 2 = 15</td>
+          <td>15 - 9 = 6</td>
         </tr>
         <tr>
           <td>P4</td>
           <td>3</td>
           <td>5</td>
           <td>4</td>
-          <td>18</td>
-          <td>18 - 3 = 15</td>
-          <td>15 - 5 = 10</td>
+          <td>26</td>
+          <td>26 - 3 = 23</td>
+          <td>23 - 5 = 18</td>
         </tr>
         <tr>
           <td>P5</td>
           <td>4</td>
           <td>6</td>
           <td>5</td>
-          <td>24</td>
-          <td>24 - 4 = 20</td>
-          <td>20 - 6 = 14</td>
+          <td>32</td>
+          <td>32 - 4 = 28</td>
+          <td>28 - 6 = 22</td>
         </tr>
       </table>
 
       <h5>Average Turnaround Time:</h5>
-      <p>(8 + 8 + 11 + 15 + 20) / 5 = 12.4 units</p>
+      <p>(20 + 8 + 15 + 23 + 28) / 5 = 18.8 units</p>
 
       <h5>Average Waiting Time:</h5>
-      <p>(0 + 4 + 2 + 10 + 14) / 5 = 6 units</p>
-
-      <h4>Gantt Chart</h4>
-      <p>
-        | P1 (0-1) | P2 (1-2) | P3 (2-3) | P4 (3-8) | P5 (8-14) | P3 (14-24) |
-      </p>
+      <p>(0 + 16 + 6 + 18 + 22) / 5 = 12.4 units</p>
 
       <!-- question 9 end -->
       <!-- question 10 start -->
@@ -1168,6 +1180,10 @@
       </table>
 
       <h3>Solution :</h3>
+      <p>
+        lower number represents higher priority (here i take 1 as a highest
+        priority)
+      </p>
       <p><strong>Formula:</strong></p>
       <ul>
         <li>Turnaround Time = Completion Time - Arrival Time</li>
@@ -1180,8 +1196,8 @@
           Average Waiting Time = Sum of Waiting Times / Number of Processes
         </li>
       </ul>
-
-      <h5>Calculations:</h5>
+      <h4>Gantt Chart</h4>
+      <p>| P1 (1-6) | P2 (6-9) | P4 (9-13) | P3 (139) | P5 (19-21) |</p>
       <table border="1" class="table table-bordered">
         <tr>
           <th>Process</th>
@@ -1215,18 +1231,18 @@
           <td>3</td>
           <td>6</td>
           <td>4</td>
-          <td>15</td>
-          <td>15 - 3 = 12</td>
-          <td>12 - 6 = 6</td>
+          <td>19</td>
+          <td>19 - 3 = 16</td>
+          <td>16 - 6 = 10</td>
         </tr>
         <tr>
           <td>P4</td>
           <td>4</td>
           <td>4</td>
           <td>3</td>
-          <td>19</td>
-          <td>19 - 4 = 15</td>
-          <td>15 - 4 = 11</td>
+          <td>13</td>
+          <td>13 - 4 = 9</td>
+          <td>19 - 4 = 5</td>
         </tr>
         <tr>
           <td>P5</td>
@@ -1240,13 +1256,12 @@
       </table>
 
       <h5>Average Turnaround Time:</h5>
-      <p>(5 + 7 + 12 + 15 + 16) / 5 = 11 units</p>
+      <p>(5 + 7 + 16 + 9 + 16) / 5 = 10.6 units</p>
 
       <h5>Average Waiting Time:</h5>
-      <p>(0 + 4 + 6 + 11 + 14) / 5 = 7 units</p>
+      <p>(0 + 4 + 10 + 5+ 14) / 5 = 6.6 units</p>
 
-      <h4>Gantt Chart</h4>
-      <p>| P1 (1-6) | P2 (6-9) | P3 (9-15) | P4 (15-19) | P5 (19-21) |</p>
+     
 
       <!-- question  10 end -->
       <div class="d-grid gap-2 col-6 mx-auto">
@@ -1257,8 +1272,9 @@
         </button>
       </div>
     </div>
-     <!-- FOOTER -->
-     <footer class="footer">
+    <br><br>
+    <!-- FOOTER -->
+    <footer class="footer">
       <div class="container">
         <div class="row">
           <div class="col-md-3">

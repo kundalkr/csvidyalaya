@@ -35,6 +35,12 @@
     height: 60px;
   }
 }
+@media (width >= 50px) {
+  .navbar.bg-body-tertiary > .container > .navbar-brand > img {
+    width: 270px;
+    height: 70px;
+  }
+}
 .btn .btn-success {
   .material-icons {
     background-color: red;
