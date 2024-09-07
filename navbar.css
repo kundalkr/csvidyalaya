@@ -35,10 +35,13 @@
     height: 60px;
   }
 }
-@media (width >= 50px) {
+@media (760px >= width >= 500px) {
   .navbar.bg-body-tertiary > .container > .navbar-brand > img {
     width: 270px;
     height: 70px;
+  }
+  .d-flex > .form-control.me-2 {
+    width: 100px;
   }
 }
 .btn .btn-success {
