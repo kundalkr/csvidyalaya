@@ -69,7 +69,7 @@ header.innerHTML = `
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img
-            src="https://drive.google.com/file/d/1HTa-oMNHl_CxC4Vel0u5NFstfYAkud7N/view?usp=sharing"
+            src="https://lh3.googleusercontent.com/d/1HTa-oMNHl_CxC4Vel0u5NFstfYAkud7N"
             alt="Bootstrap"
             width="300"
             height="100"
@@ -199,7 +199,7 @@ footer.innerHTML = `   <head>
            
             <a class="navbar-brand" href="#">
               <img
-                src="assets/logo/main_Logo.jpg"
+                src="https://lh3.googleusercontent.com/d/1HTa-oMNHl_CxC4Vel0u5NFstfYAkud7N"
                 alt="Bootstrap"
               />
             </a>
