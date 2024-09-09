@@ -47,7 +47,7 @@ header.innerHTML = `
 
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">Home</a>
+            <a href="#" class="nav-link " >Home</a>
           </li>
           <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
@@ -96,6 +96,7 @@ footer.innerHTML = `<!DOCTYPE html>
           <p class="text-muted">
             © 2024 <span class="navbar-bran">csvidyalaya.com</span>
           </p>
+              <p>Here student can practice university core subject question like OS, DSA , any programming language</p>
         </div>
 
         <div class="col mb-3"></div>

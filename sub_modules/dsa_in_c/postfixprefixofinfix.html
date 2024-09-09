@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <div class="container">
+      <h1 id="upper">Stack Questions</h1>
+      <p>These questions are generally asked in university exam</p>
+      <p>infix, prefix based stack question</p>
+    </div>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+    >
+      <a href="#down"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_downward
+        </span></a
+      >
+    </button>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+    >
+      <a href="#upper"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a
+      >
+    </button>
+    <br /><br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" id="down" type="button">
+        <a href="prefixtopostfix.html" style="color: antiquewhite"
+          >back to question no 69 - 88
+        </a>
+      </button>
+    </div>
+    <br /><br />
+    <!-- upper and down button end-->
+
+    <div class="container">
+      <div class="card" style="width: 18rem">
+        <div class="card-header">Also try these question</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="infixtoprefix.html">practice prefix to infix</a>
+          </li>
+          <li class="list-group-item">
+            <a href="prefixtopostfix.html">practice prefix to postfix</a>
+          </li>
+          <li class="list-group-item">
+            <a href="infixtoprefix.html">practice infix to prefix</a>
+          </li>
+          <li class="list-group-item">
+            <a href="Arrays.html">array questions</a>
+          </li>
+          <li class="list-group-item">
+            <a href="../os/os_topic.html">operating system questions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <br /><br />
+    <main>
+      <div class="container">
+        <h3>
+          89. Infix Expression: ( A + B ) * ( C - D ); <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB+CD-* <br />
+          Prefix: *+AB-CD
+        </p>
+
+        <h3>
+          90. Infix Expression: A * ( B + C ) / D; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: ABC+*D/ <br />
+          Prefix: /*A+BCD
+        </p>
+
+        <h3>
+          91. Infix Expression: ( A + B ) - ( C * D ); <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB+CD*- <br />
+          Prefix: -+AB*CD
+        </p>
+
+        <h3>
+          92. Infix Expression: A + ( B * C ) - D; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: ABC*+D- <br />
+          Prefix: -+A*BCD
+        </p>
+
+        <h3>
+          93. Infix Expression: ( A - B ) * ( C + D ); <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB-CD+* <br />
+          Prefix: *-AB+CD
+        </p>
+
+        <h3>
+          94. Infix Expression: ( A + B * C ) / D; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: ABC*+D/ <br />
+          Prefix: /+A*BCD
+        </p>
+
+        <h3>
+          95. Infix Expression: A * ( B + C ) / ( D - E ); <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: ABC+*DE-/ <br />
+          Prefix: /*A+BC-DE
+        </p>
+
+        <h3>
+          96. Infix Expression: A + B * ( C - D ); <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: ABCD-*+ <br />
+          Prefix: +A*B-CD
+        </p>
+
+        <h3>
+          97. Infix Expression: ( A + B ) * ( C - D / E ); <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB+CD*E/- <br />
+          Prefix: *+AB-CD/E
+        </p>
+
+        <h3>
+          98. Infix Expression: ( A - B ) + ( C * D / E ); <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB-CD*E/+ <br />
+          Prefix: +-AB*CD/E
+        </p>
+
+        <h3>
+          99. Infix Expression: ( A * B ) + ( C / D ); <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB*CD/+ <br />
+          Prefix: +*AB/CD
+        </p>
+
+        <h3>
+          100. Infix Expression: ( A + B ) / ( C - D ) * E; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB+CD-/E* <br />
+          Prefix: *+/AB-CD E
+        </p>
+
+        <h3>
+          101. Infix Expression: ( A + B ) * ( C / D ) - E; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB+CD/*E- <br />
+          Prefix: -*+AB/CD E
+        </p>
+
+        <h3>
+          102. Infix Expression: A * ( B + C - D ) / E; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: ABC+ D-* E/ <br />
+          Prefix: /* A+ BC -D E
+        </p>
+
+        <h3>
+          103. Infix Expression: A + B * C - D / E; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: ABC*+ D E/- <br />
+          Prefix: -+A* B C / D E
+        </p>
+
+        <h3>
+          104. Infix Expression: ( A / B ) + ( C - D ); <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB/C D-+ <br />
+          Prefix: + /A B - C D
+        </p>
+
+        <h3>
+          105. Infix Expression: ( A + B ) * C - D / E; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB+C* D E/- <br />
+          Prefix: - *+ A B C /D E
+        </p>
+
+        <h3>
+          106. Infix Expression: ( A * B - C ) / D + E; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB*C-D/E+ <br />
+          Prefix: + / - *A B C D E
+        </p>
+
+        <h3>
+          107. Infix Expression: ( A - B ) + C * D / E; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB- CD*E/+ <br />
+          Prefix: + -AB * C D /E
+        </p>
+
+        <h3>
+          108. Infix Expression: ( A / B ) - ( C + D ) * E; <br />
+          Postfix Expression: <br />
+          Prefix Expression: <br />
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          Postfix: AB/ CD+ E*- <br />
+          Prefix: - /A B * + C D E
+        </p>
+      </div>
+    </main>
+
+    <div class="container">
+      <div class="card" style="width: 18rem">
+        <div class="card-header">Also try these question</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="infixtoprefix.html">practice prefix to infix</a>
+          </li>
+          <li class="list-group-item">
+            <a href="infixtoprefix.html">practice infix to prefix</a>
+          </li>
+          <li class="list-group-item">
+            <a href="prefixtopostfix.html">practice prefix to postfix</a>
+          </li>
+          <li class="list-group-item">
+            <a href="array1.html">array questions</a>
+          </li>
+          <li class="list-group-item">
+            <a href="../os/os_topic.html">operating system questions</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <br /><br />
+    <br /><br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" id="down" type="button">
+        <a href="prefixtopostfix.html" style="color: antiquewhite"
+          >back to question no 69 - 88
+        </a>
+      </button>
+    </div>
+    <br /><br />
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" id="down" type="button">
+        <a href="infixtoprefix.html" style="color: antiquewhite"
+          >click here for more question on infix to prefix</a
+        >
+      </button>
+    </div>
+    <br /><br />
+    <script type="text/javascript" src="../../hdr_ftr.js"></script>
+  </body>
+</html>
