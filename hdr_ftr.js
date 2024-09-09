@@ -1,274 +1,163 @@
 const header = document.createElement("div");
 
 header.innerHTML = `
-             <head>
-             <style>
-       <!-- navbar.css --> 
+             <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .navbar-bran {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
 
-       @import url("https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap");
+      @media (width>= 500px) {
+        .navbar-bran {
+          font-family: "Pacifico", cursive;
+          font-weight: 400;
+          font-style: normal;
+          font-size: x-large;
+        }
+      }
 
-/* // <uniquifier>: Use a unique and descriptive class name */
-
-#cs-logo {
-  font-family: "Moderustic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 556;
-  font-style: normal;
-  color: #ffffff;
-}
-#vidyalaya-logo {
-  font-family: "Moderustic", sans-serif;
-  /* font-optical-sizing: auto; */
-  font-weight: small;
-  font-style: normal;
-  color: #ffffff;
-}
-
-.navbar.navbar-expand-lg.navbar-light {
-  background-color: #c26bcf;
-}
-
-
-@media (500px >= width >= 350px) {
-  .navbar.bg-body-tertiary > .container > .navbar-brand > img {
-    width: 130px;
-    height: 40px;
-  }
-
-  .d-flex > .form-control.me-2 {
-    width: 90px;
-  }
-
-}
-
-@media (350px >= width >= 200px) {
-  .navbar.bg-body-tertiary > .container > .navbar-brand > img {
-    width: 200px;
-    height: 60px;
-  }
-}
-@media (760px >= width >= 500px) {
-  .navbar.bg-body-tertiary > .container > .navbar-brand > img {
-    width: 270px;
-    height: 70px;
-  }
-  .d-flex > .form-control.me-2 {
-    width: 100px;
-  }
-}
-.btn .btn-success {
-  .material-icons {
-    background-color: red;
-  }
-}
-
-          <!-- navbar.css end -->
-  </style>
+      .navbar .navbar-expand-lg .navbar-light {
+        color: black;
+      }
+    </style>
   </head>
-<nav class="navbar bg-body-tertiary">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="https://lh3.googleusercontent.com/d/1HTa-oMNHl_CxC4Vel0u5NFstfYAkud7N"
-            alt="Bootstrap"
-            width="300"
-            height="100"
-          />
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <span class="fs-4 navbar-bran">CSvidyalaya.com</span>
         </a>
 
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"
-          ><span id="cs-logo">CS</span
-          ><span id="vidyalaya-logo">vidyalaya.com</span></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Subjects
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li>
-                  <a class="dropdown-item" href="sub_modules/os/os_topic.html"
-                    >Operating System</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="sub_modules/dsa_in_c/dsa_in_c_topic.html"
-                    >DSA IN C</a
-                  >
-                </li>
-           
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>`;
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </header>
+    </div>
+    <!-- bootstrap js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js link end -->
+  </body>
+</html>
+`;
 document.querySelector("body").prepend(header);
 
 const footer = document.createElement("div");
-footer.innerHTML = `   <head>
-             <style>
-             .footer {
-  background-color: #c26bcf;
-  padding-top: 15px;
-}
-.footer {
-  .container {
-    .row {
-      .col-md-3 {
-        img {
-          width: 200px;
-          height: 50px;
-        }
-      }
-    }
-  }
-}
-
-@media (width>=500) {
-  .footer {
-    .container {
-      .row {
-        .col-md-3 {
-          img {
-            width: 20px;
-            height: 50px;
-          }
-        }
-      }
-    }
-  }
-}
-
-             </style></head>
-               <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-           
-            <a class="navbar-brand" href="#">
-              <img
-                src="https://lh3.googleusercontent.com/d/1HTa-oMNHl_CxC4Vel0u5NFstfYAkud7N"
-                alt="Bootstrap"
-              />
-            </a>
-            <!-- <h2>CSvidyalaya</h2> -->
-          </div>
-          <div class="col-md-3">
-            <h5>About Us</h5>
-            <p>
-              CSvidyalaya is a learning platform where you can practice all core
-              subject of computer science.
-            </p>
-          </div>
-          <div class="col-md-3">
-            <h5>Contact Us</h5>
-            <ul class="list-unstyled">
-              <li>Email: info@example.com</li>
-              <li>Phone: +1233567890</li>
-              <li>Address: 123 Street, City, Country</li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h5>Follow Us</h5>
-            <ul class="list-inline footer-links">
-              <li class="list-inline-item">
-                <a href="#" style="color: white">
-                  <i class="bi bi-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" style="color: white">
-                  <i class="bi bi-twitter-x"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" style="color: white">
-                  <i class="bi bi-instagram"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+footer.innerHTML = `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    /> -->
+  </head>
+  <body>
+    <div class="container">
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      >
+        <div class="col mb-3">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 link-dark text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <p class="text-muted">
+            © 2024 <span class="navbar-bran">csvidyalaya.com</span>
+          </p>
         </div>
-        <hr />
-        <div class="row">
-          <div class="col-md-6">
-            <p>&copy; 2024 Your Website. All rights reserved.</p>
-          </div>
-          <div class="col-md-6 text-end">
-            <ul class="list-inline footer-links">
-              <li class="list-inline-item">
-                <a href="anotherpage/privacy_policy.html" style="color: aliceblue">Privacy Policy</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" style="color: aliceblue">Terms of Service</a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#" style="color: aliceblue">Sitemap</a>
-              </li>
-            </ul>
-          </div>
+
+        <div class="col mb-3"></div>
+
+        <div class="col mb-3">
+          <h5>HOME</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">ALL COURSES</a>
+            </li>
+
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </footer>
-             
-             
-             
-             `;
+
+        <div class="col mb-3">
+          <h5>All Question</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Stack </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Array</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FCFS scheduling</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">SJF scheduling</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted"
+                >PRIORITY Scheduling</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="col mb-3">
+          <h5>Subtopic Question</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">infix to prefix</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">infix to postfix</a>
+            </li>
+            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li> -->
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>`;
 document.querySelector("body").append(footer);
