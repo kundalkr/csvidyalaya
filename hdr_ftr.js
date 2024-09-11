@@ -85,7 +85,7 @@ header.innerHTML = `
           class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
         >
           <a
-            href="/"
+            href="/index.html"
             class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
           >
             <!-- <svg class="bi me-2" width="40" height="32">
@@ -236,3 +236,9 @@ footer.innerHTML = `<!DOCTYPE html>
   </body>
 </html>`;
 document.querySelector("body").append(footer);
+const scrt = document.createElement("script");
+scrt.src =
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js";
+scrt.integrity =
+  "sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4";
+scrt.crossorigin = "anonymous";
