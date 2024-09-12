@@ -108,14 +108,14 @@ header.innerHTML = `
               <ul class="dropdown-menu dropdown-menu-dark">
                 <!-- dropdown-menu-dark -->
                 <li>
-                  <a class="dropdown-item" href="/sub_modules/os/os_topic.html"
+                  <a class="dropdown-item" href="https://kundalkr.github.io/csvidyalaya/sub_modules/os/os_topic.html"
                     >Operating System</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="/sub_modules/dsa_in_c/dsa_in_c_topic.html"
+                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/dsa_in_c/dsa_in_c_topic.html"
                     >Dsa</a
                   >
                 </li>
@@ -193,7 +193,6 @@ footer.innerHTML = `<!DOCTYPE html>
             </li>
           </ul>
         </div>
-
         <div class="col mb-3">
           <h5>All Question</h5>
           <ul class="nav flex-column">
