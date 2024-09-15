@@ -143,17 +143,7 @@ header.innerHTML = `
 document.querySelector("body").prepend(header);
 
 const footer = document.createElement("div");
-footer.innerHTML = `<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-      crossorigin="anonymous"
-    /> -->
-  </head>
-  <body>
+footer.innerHTML = `
     <div class="container">
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
@@ -232,12 +222,23 @@ footer.innerHTML = `<!DOCTYPE html>
         </div>
       </footer>
     </div>
-  </body>
-</html>`;
+        <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+`;
 document.querySelector("body").append(footer);
-const scrt = document.createElement("script");
-scrt.src =
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js";
-scrt.integrity =
-  "sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4";
-scrt.crossorigin = "anonymous";
+
+
+const head = document.querySelector('head');
+const bootstrapScript = document.createElement('script');
+
+bootstrapScript.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js'; // Replace with your actual path
+
+bootstrapScript.setAttribute("integrity","sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4");
+bootstrapScript.setAttribute("crossorigin","anonymous");
+head.appendChild(bootstrapScript);
+
+
+
