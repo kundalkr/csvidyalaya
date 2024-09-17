@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <div class="container">
+      <h1 id="upper">decimal to binary conversion Questions</h1>
+      <p>These questions are generally asked in university exam</p>
+    </div>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+    >
+      <a href="#down"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_downward
+        </span></a
+      >
+    </button>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+    >
+      <a href="#upper"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a
+      >
+    </button>
+
+    <br /><br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" id="down" type="button">
+        <a href="decimaltobinary1.html" style="color: antiquewhite"
+          >click for previous question 1 to 10 click here</a
+        >
+      </button>
+    </div>
+    <br /><br />
+    <!-- upper and down button end-->
+    <main>
+      <div class="container">
+        <h2>Question 11: Convert decimal 25 to binary.</h2>
+        <p>
+          Solution: To convert 25 to binary, divide by 2 and record the
+          remainder. 25 ÷ 2 = 12, remainder 1 <br />
+          12 ÷ 2 = 6, remainder 0 <br />
+          6 ÷ 2 = 3, remainder 0 <br />
+          3 ÷ 2 = 1, remainder 1 <br />
+          1 ÷ 2 = 0, remainder 1 <br />
+          Reading the remainders from bottom to top gives: 11001. So, 25 in
+          binary is 11001.
+        </p>
+
+        <h2>Question 12: Convert binary 10110 to decimal.</h2>
+        <p>
+          Solution: Starting from the rightmost digit, multiply each binary
+          digit by 2 raised to the power of its position: 1 × 2^4 = 16 0 × 2^3 =
+          0 1 × 2^2 = 4 1 × 2^1 = 2 0 × 2^0 = 0 Add them up: 16 + 4 + 2 = 22.
+          So, 10110 in decimal is 22.
+        </p>
+
+        <h2>Question 13: Convert decimal 150 to binary.</h2>
+        <p>
+          Solution: 150 ÷ 2 = 75, remainder 0 <br />
+          75 ÷ 2 = 37, remainder 1 <br />
+          37 ÷ 2 = 18, remainder 1 <br />
+          18 ÷ 2 = 9, remainder 0 <br />
+          9 ÷ 2 = 4, remainder 1 <br />
+          4 ÷ 2 = 2, remainder 0 <br />
+          2 ÷ 2 = 1, remainder 0 <br />
+          1 ÷ 2 = 0, remainder 1 <br />
+          Reading the remainders from bottom to top gives: 10010110. So, 150 in
+          binary is 10010110.
+        </p>
+
+        <h2>Question 14: Convert binary 10001011 to decimal.</h2>
+        <p>
+          Solution: 1 × 2^7 = 128 <br />
+          0 × 2^6 = 0 <br />
+          0 × 2^5 = 0 <br />
+          0 × 2^4 = 0 <br />
+          1 × 2^3 = 8 <br />
+          0 × 2^2 = 0 <br />
+          1 × 2^1 = 2 <br />
+          1 × 2^0 = 1 <br />
+          Add them up: 128 + 8 + 2 + 1 = 139. So, 10001011 in decimal is 139.
+        </p>
+
+        <h2>Question 15: Convert decimal 45 to binary.</h2>
+        <p>
+          Solution: 45 ÷ 2 = 22, remainder 1 <br />
+          22 ÷ 2 = 11, remainder 0 <br />
+          11 ÷ 2 = 5, remainder 1 <br />
+          5 ÷ 2 = 2, remainder 1 <br />
+          2 ÷ 2 = 1, remainder 0 <br />
+          1 ÷ 2 = 0, remainder 1 <br />
+          Reading the remainders from bottom to top gives: 101101. So, 45 in
+          binary is 101101.
+        </p>
+
+        <h2>Question 16: Convert binary 110100 to decimal.</h2>
+        <p>
+          Solution: 1 × 2^5 = 32 <br />
+          1 × 2^4 = 16 <br />
+          0 × 2^3 = 0 <br />
+          1 × 2^2 = 4 <br />
+          0 × 2^1 = 0 <br />
+          0 × 2^0 = 0 <br />
+          Add them up: 32 + 16 + 4 = 52. So, 110100 in decimal is 52.
+        </p>
+
+        <h2>Question 17: Convert decimal 512 to binary.</h2>
+        <p>
+          Solution: 512 ÷ 2 = 256, remainder 0 <br />
+          256 ÷ 2 = 128, remainder 0 <br />
+          128 ÷ 2 = 64, remainder 0 <br />
+          64 ÷ 2 = 32, remainder 0 <br />
+          32 ÷ 2 = 16, remainder 0 <br />
+          16 ÷ 2 = 8, remainder 0 <br />
+          8 ÷ 2 = 4, remainder 0 <br />
+          4 ÷ 2 = 2, remainder 0 <br />
+          2 ÷ 2 = 1, remainder 0 <br />
+          1 ÷ 2 = 0, remainder 1 <br />
+          Reading the remainders from bottom to top gives: 1000000000. So, 512
+          in binary is 1000000000.
+        </p>
+
+        <h2>Question 18: Convert binary 101010101 to decimal.</h2>
+        <p>
+          Solution: 1 × 2^8 = 256 <br />
+          0 × 2^7 = 0 <br />
+          1 × 2^6 = 64 <br />
+          0 × 2^5 = 0 <br />
+          1 × 2^4 = 16 <br />
+          0 × 2^3 = 0 <br />
+          1 × 2^2 = 4 <br />
+          0 × 2^1 = 0 <br />
+          1 × 2^0 = 1 <br />
+          Add them up: 256 + 64 + 16 + 4 + 1 = 341. So, 101010101 in decimal is
+          341.
+        </p>
+
+        <h2>Question 19: Convert decimal 202 to binary.</h2>
+        <p>
+          Solution: 202 ÷ 2 = 101, remainder 0 <br />
+          101 ÷ 2 = 50, remainder 1 <br />
+          50 ÷ 2 = 25, remainder 0 <br />
+          25 ÷ 2 = 12, remainder 1 <br />
+          12 ÷ 2 = 6, remainder 0 <br />
+          6 ÷ 2 = 3, remainder 0 <br />
+          3 ÷ 2 = 1, remainder 1 <br />
+          1 ÷ 2 = 0, remainder 1 <br />
+          Reading the remainders from bottom to top gives: 11001010. So, 202 in
+          binary is 11001010.
+        </p>
+
+        <h2>Question 20: Convert binary 1101011 to decimal.</h2>
+        <p>
+          Solution: 1 × 2^6 = 64 <br />
+          1 × 2^5 = 32 <br />
+          0 × 2^4 = 0 <br />
+          1 × 2^3 = 8 <br />
+          0 × 2^2 = 0 <br />
+          1 × 2^1 = 2 <br />
+          1 × 2^0 = 1 <br />
+          Add them up: 64 + 32 + 8 + 2 + 1 = 107. So, 1101011 in decimal is 107.
+        </p>
+      </div>
+    </main>
+
+    <br /><br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" id="down" type="button">
+        <a href="decimaltobinary1.html" style="color: antiquewhite"
+          >click for previous question 1 to 10 click here</a
+        >
+      </button>
+    </div>
+    <br /><br />
+    <br /><br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" id="down" type="button">
+        <a href="decimaltobinary3.html" style="color: antiquewhite"
+          >click for next question 21 to 32 click here</a
+        >
+      </button>
+    </div>
+    <br /><br />
+
+    <script type="text/javascript" src="../../hdr_ftr.js"></script>
+  </body>
+</html>

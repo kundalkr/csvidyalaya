@@ -14,3 +14,11 @@ postfixprefixofinfix.html   ----> 89 to 108  ---> back button done
 queue
 -------
 queue1.html ----- (theoritical question)  ------> 
+
+
+
+
+
+
+
+decimaltobinary -----------> 1 to 10 ---------------> 
