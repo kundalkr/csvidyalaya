@@ -119,7 +119,7 @@ header.innerHTML = `
                     >Dsa</a
                   >
                 </li>
-                <!-- <li><a class="dropdown-item" href="https://kundalkr.github.io/csvidyalaya/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html">Digital Fundamentals</a></li> -->
+            <li><a class="dropdown-item" href="https://kundalkr.github.io/csvidyalaya/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html">Digital Fundamentals</a></li>
               </ul>
             </li>
 
@@ -230,15 +230,47 @@ footer.innerHTML = `
 `;
 document.querySelector("body").append(footer);
 
+const head = document.querySelector("head");
+const bootstrapScript = document.createElement("script");
 
-const head = document.querySelector('head');
-const bootstrapScript = document.createElement('script');
+bootstrapScript.src =
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"; // Replace with your actual path
 
-bootstrapScript.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js'; // Replace with your actual path
-
-bootstrapScript.setAttribute("integrity","sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4");
-bootstrapScript.setAttribute("crossorigin","anonymous");
+bootstrapScript.setAttribute(
+  "integrity",
+  "sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+);
+bootstrapScript.setAttribute("crossorigin", "anonymous");
 head.appendChild(bootstrapScript);
+
+const get_linked_cards = document.getElementsByClassName("get_linked_cards");
+
+for (let index = 0; index <= get_linked_cards.length; index++) {
+  get_linked_cards[index].innerHTML = ` <br>  <div class="card" style="width: 18rem">
+      <div class="card-header bg-success text-white text-center">
+        <p class="h4">Jump To Question</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-success bg-opacity-50 text-center">
+          <a href="decimaltobinary.html" class="btn btn-link"
+            >Decimal To Binary</a
+          >
+        </li>
+        <li class="list-group-item bg-success bg-opacity-50 text-center">
+          <a href="decimaltoOctal1.html" class="btn btn-link"
+            >Decimal To Octal
+          </a>
+        </li>
+        <li class="list-group-item bg-success bg-opacity-50 text-center">
+          <a href="decimaltoOctal1.html" class="btn btn-link"
+            >Decimal To hexadecimal
+          </a>
+        </li>
+      </ul>
+    </div><br>`;
+  
+}
+
 
 
 

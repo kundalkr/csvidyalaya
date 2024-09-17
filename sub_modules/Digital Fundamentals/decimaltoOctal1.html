@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <div class="container">
+      <h1 id="upper">decimal to Octal conversion Questions</h1>
+      <p>These questions are generally asked in university exam</p>
+    </div>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+    >
+      <a href="#down"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_downward
+        </span></a
+      >
+    </button>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+    >
+      <a href="#upper"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a
+      >
+    </button>
+    <!-- upper and down button end-->
+    <main>
+      <div class="container">
+        <div class="get_linked_cards"></div>
+        <h2>1. Convert the decimal number 45 to octal.</h2>
+        <p>Answer: 55</p>
+        <ul>
+          <li>Step 1: Divide 45 by 8, quotient is 5 and remainder is 5.</li>
+          <li>
+            Step 2: Divide the quotient 5 by 8, quotient is 0 and remainder is
+            5.
+          </li>
+          <li>Step 3: Read the remainders from bottom to top: 55 in octal.</li>
+        </ul>
+
+        <h2>2. Convert the octal number 45 to decimal.</h2>
+        <p>Answer: 37</p>
+        <ul>
+          <li>Step 1: Multiply 4 by 8^1 and 5 by 8^0.</li>
+          <li>Step 2: 4 * 8 = 32, 5 * 1 = 5.</li>
+          <li>Step 3: Add the results: 32 + 5 = 37 in decimal.</li>
+        </ul>
+
+        <h2>3. Convert the decimal number 180 to octal.</h2>
+        <p>Answer: 264</p>
+        <ul>
+          <li>Step 1: Divide 180 by 8, quotient is 22 and remainder is 4.</li>
+          <li>
+            Step 2: Divide the quotient 22 by 8, quotient is 2 and remainder is
+            6.
+          </li>
+          <li>
+            Step 3: Divide the quotient 2 by 8, quotient is 0 and remainder is
+            2.
+          </li>
+          <li>Step 4: Read the remainders from bottom to top: 264 in octal.</li>
+        </ul>
+
+        <h2>4. Convert the octal number 264 to decimal.</h2>
+        <p>Answer: 180</p>
+        <ul>
+          <li>Step 1: Multiply 2 by 8^2, 6 by 8^1, and 4 by 8^0.</li>
+          <li>Step 2: 2 * 64 = 128, 6 * 8 = 48, 4 * 1 = 4.</li>
+          <li>Step 3: Add the results: 128 + 48 + 4 = 180 in decimal.</li>
+        </ul>
+
+        <h2>5. Convert the decimal number 75 to octal.</h2>
+        <p>Answer: 113</p>
+        <ul>
+          <li>Step 1: Divide 75 by 8, quotient is 9 and remainder is 3.</li>
+          <li>
+            Step 2: Divide the quotient 9 by 8, quotient is 1 and remainder is
+            1.
+          </li>
+          <li>
+            Step 3: Divide the quotient 1 by 8, quotient is 0 and remainder is
+            1.
+          </li>
+          <li>Step 4: Read the remainders from bottom to top: 113 in octal.</li>
+        </ul>
+        <div class="get_linked_cards"></div>
+        <h2>6. Convert the octal number 113 to decimal.</h2>
+        <p>Answer: 75</p>
+        <ul>
+          <li>Step 1: Multiply 1 by 8^2, 1 by 8^1, and 3 by 8^0.</li>
+          <li>Step 2: 1 * 64 = 64, 1 * 8 = 8, 3 * 1 = 3.</li>
+          <li>Step 3: Add the results: 64 + 8 + 3 = 75 in decimal.</li>
+        </ul>
+
+        <h2>7. Convert the decimal number 250 to octal.</h2>
+        <p>Answer: 372</p>
+        <ul>
+          <li>Step 1: Divide 250 by 8, quotient is 31 and remainder is 2.</li>
+          <li>
+            Step 2: Divide the quotient 31 by 8, quotient is 3 and remainder is
+            7.
+          </li>
+          <li>
+            Step 3: Divide the quotient 3 by 8, quotient is 0 and remainder is
+            3.
+          </li>
+          <li>Step 4: Read the remainders from bottom to top: 372 in octal.</li>
+        </ul>
+
+        <h2>8. Convert the octal number 372 to decimal.</h2>
+        <p>Answer: 250</p>
+        <ul>
+          <li>Step 1: Multiply 3 by 8^2, 7 by 8^1, and 2 by 8^0.</li>
+          <li>Step 2: 3 * 64 = 192, 7 * 8 = 56, 2 * 1 = 2.</li>
+          <li>Step 3: Add the results: 192 + 56 + 2 = 250 in decimal.</li>
+        </ul>
+
+        <h2>9. Convert the decimal number 320 to octal.</h2>
+        <p>Answer: 500</p>
+        <ul>
+          <li>Step 1: Divide 320 by 8, quotient is 40 and remainder is 0.</li>
+          <li>
+            Step 2: Divide the quotient 40 by 8, quotient is 5 and remainder is
+            0.
+          </li>
+          <li>
+            Step 3: Divide the quotient 5 by 8, quotient is 0 and remainder is
+            5.
+          </li>
+          <li>Step 4: Read the remainders from bottom to top: 500 in octal.</li>
+        </ul>
+
+        <h2>10. Convert the octal number 500 to decimal.</h2>
+        <p>Answer: 320</p>
+        <ul>
+          <li>Step 1: Multiply 5 by 8^2 and 0 by 8^1 and 0 by 8^0.</li>
+          <li>Step 2: 5 * 64 = 320, 0 * 8 = 0, 0 * 1 = 0.</li>
+          <li>Step 3: Add the results: 320 + 0 + 0 = 320 in decimal.</li>
+        </ul>
+        <div class="get_linked_cards"></div>
+      </div>
+    </main>
+
+    <br /><br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" id="down" type="button">
+        <a href="decimaltoOctal2.html" style="color: antiquewhite"
+          >click for next question 11 to 20 click here</a
+        >
+      </button>
+    </div>
+    <br /><br />
+
+    <script type="text/javascript" src="../../hdr_ftr.js"></script>
+  </body>
+</html>
