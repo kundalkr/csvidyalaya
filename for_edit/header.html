@@ -7,9 +7,12 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
@@ -25,7 +28,6 @@
         font-weight: 400;
         font-style: normal;
       }
-
       @media (width>= 500px) {
         .navbar-bran {
           font-family: "Pacifico", cursive;
@@ -33,12 +35,11 @@
           font-style: normal;
         }
       }
-
-      .navbar .navbar-expand-lg .navbar-light {
+      /* .navbar .navbar-expand-lg .navbar-light {
         color: black;
-      }
+      } */
 
-      .nav.nav-pills > li {
+      li > a {
         font-family: "Playpen Sans", cursive;
         font-optical-sizing: auto;
         font-weight: 450;
@@ -51,81 +52,115 @@
           color: inherit;
           color: black;
         }
-        .dropdown-menu.dropdown-menu-dark {
-          li {
-            a,
-            a:hover,
-            a:focus,
-            a:active {
-              text-decoration: none;
-              color: inherit;
-              color: white;
-            }
-          }
-        }
-      }
-
-      @media (width<= 500px) {
-        .nav.nav-pills > li {
-          font-family: "Playpen Sans", cursive;
-          font-optical-sizing: auto;
-          font-weight: 300;
-          font-style: normal;
-        }
+ 
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-      >
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
         <a
-          href="/"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+          class="navbar-brand navbar-bran"
+          href="https://kundalkr.github.io/csvidyalaya/"
+          >CSvidyalaya.com</a
         >
-          <!-- <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
-            </svg> -->
-          <span class="fs-4 navbar-bran">CSvidyalaya.com</span>
-        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://kundalkr.github.io/csvidyalaya/"
+                >Home</a
+              >
+            </li>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-          <li class="nav-item dropdown">
-            <button
-              class="btn dropdown-toggle"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Subjects
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Subjects
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/os/os_topic.html"
+                    >Operating System</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/dsa_in_c/dsa_in_c_topic.html"
+                    >Dsa</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html"
+                    >Digital Fundamentals</a
+                  >
+                </li>
+                <!-- <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li> -->
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li> -->
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://kundalkr.github.io/csvidyalaya/"
+                >About</a
+              >
+            </li>
+          </ul>
+          <!-- <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
             </button>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <!-- dropdown-menu-dark -->
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://kundalkr.github.io/csvidyalaya/sub_modules/os/os_topic.html"
-                  >Operating System
-                </a>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item"
-                  href="https://kundalkr.github.io/csvidyalaya/sub_modules/dsa_in_c/dsa_in_c_topic.html"
-                  >Dsa</a
-                >
-              </li>
-              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            </ul>
-          </li>
+          </form> -->
+        </div>
+      </div>
+    </nav>
 
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
-      </header>
-    </div>
     <!-- bootstrapcards -->
     <div class="card" style="width: 18rem">
       <div class="card-header bg-success text-white text-center">
@@ -150,12 +185,11 @@
       </ul>
     </div>
     <!-- bootstrapcards -->
-    <!-- bootstrap js link -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <!-- bootstrap js link end -->
+    <!-- <script src="../hdr_ftr.js"></script> -->
   </body>
 </html>

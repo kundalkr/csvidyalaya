@@ -1,114 +1,113 @@
 const header = document.createElement("div");
 
 header.innerHTML = `
-              <html>
-    <head>
-      <!-- always remove this -->
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-        crossorigin="anonymous"
-      />
+             
+      <head>
+    <!-- always remove this -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-      <link
-        href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
-        rel="stylesheet"
-      />
-      <style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .navbar-bran {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      @media (width>= 500px) {
         .navbar-bran {
           font-family: "Pacifico", cursive;
           font-weight: 400;
           font-style: normal;
         }
+      }
+      /* .navbar .navbar-expand-lg .navbar-light {
+        color: black;
+      } */
 
-        @media (width>= 500px) {
-          .navbar-bran {
-            font-family: "Pacifico", cursive;
-            font-weight: 400;
-            font-style: normal;
-            font-size: x-large;
-          }
-        }
-
-        .navbar .navbar-expand-lg .navbar-light {
+      li > a {
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+          text-decoration: none;
+          color: inherit;
           color: black;
         }
-
-        .nav.nav-pills > li {
-          font-family: "Playpen Sans", cursive;
-          font-optical-sizing: auto;
-          font-weight: 450;
-          font-style: normal;
-          a,
-          a:hover,
-          a:focus,
-          a:active {
-            text-decoration: none;
-            color: inherit;
-            color: black;
-          }
-          .dropdown-menu.dropdown-menu-dark {
-            li {
-              a,
-              a:hover,
-              a:focus,
-              a:active {
-                text-decoration: none;
-                color: inherit;
-                color: white;
-              }
-            }
-          }
-        }
-
-        @media (width<= 500px) {
-          .nav.nav-pills > li {
-            font-family: "Playpen Sans", cursive;
-            font-optical-sizing: auto;
-            font-weight: 300;
-            font-style: normal;
-          }
-        }
-      </style>
-    </head>
-    <body>
-      <div class="container">
-        <header
-          class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+ 
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand navbar-bran"
+          href="https://kundalkr.github.io/csvidyalaya/"
+          >CSvidyalaya.com</a
         >
-          <a
-            href="https://kundalkr.github.io/csvidyalaya/"
-            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
-          >
-            <!-- <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
-            </svg> -->
-            <span class="fs-4 navbar-bran">CSvidyalaya.com</span>
-          </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://kundalkr.github.io/csvidyalaya/"
+                >Home</a
+              >
+            </li>
 
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
             <li class="nav-item dropdown">
-              <button
-                class="btn dropdown-toggle"
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Subjects
-              </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
-                <!-- dropdown-menu-dark -->
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDropdown"
+              >
                 <li>
-                  <a class="dropdown-item" href="https://kundalkr.github.io/csvidyalaya/sub_modules/os/os_topic.html"
+                  <a
+                    class="dropdown-item"
+                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/os/os_topic.html"
                     >Operating System</a
                   >
                 </li>
@@ -119,25 +118,51 @@ header.innerHTML = `
                     >Dsa</a
                   >
                 </li>
-            <li><a class="dropdown-item" href="https://kundalkr.github.io/csvidyalaya/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html">Digital Fundamentals</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html"
+                    >Digital Fundamentals</a
+                  >
+                </li>
+                <!-- <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li> -->
               </ul>
             </li>
-
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <!-- <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Disabled</a
+              >
+            </li> -->
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://kundalkr.github.io/csvidyalaya/"
+                >About</a
+              >
+            </li>
           </ul>
-        </header>
+          <!-- <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> -->
+        </div>
       </div>
-
-      <!-- bootstrap js link -->
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"
-      ></script>
-      <!-- bootstrap js link end -->
-    </body>
-  </html>
+    </nav>
 
 `;
 document.querySelector("body").prepend(header);
@@ -246,7 +271,9 @@ head.appendChild(bootstrapScript);
 const get_linked_cards = document.getElementsByClassName("get_linked_cards");
 
 for (let index = 0; index <= get_linked_cards.length; index++) {
-  get_linked_cards[index].innerHTML = ` <br>  <div class="card" style="width: 18rem">
+  get_linked_cards[
+    index
+  ].innerHTML = ` <br>  <div class="card" style="width: 18rem">
       <div class="card-header bg-success text-white text-center">
         <p class="h4">Jump To Question</p>
       </div>
@@ -268,9 +295,11 @@ for (let index = 0; index <= get_linked_cards.length; index++) {
         </li>
       </ul>
     </div><br>`;
-  
 }
-
-
-
-
+const t = document.querySelector(
+  "body>div.container>header.d-flex.flex-wrap.justify-content-center.py-3.mb-4.border-bottom"
+);
+// t.innerHTML=`<h1>kundal kumar</h1>`;
+if (window.innerWidth <= "890px") {
+  t.classList.remove(".d-flex", ".flex-wrap", ".justify-content-center");
+}
