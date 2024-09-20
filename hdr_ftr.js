@@ -163,7 +163,7 @@ header.innerHTML = `
         </div>
       </div>
     </nav>
-
+<br><br>
 `;
 document.querySelector("body").prepend(header);
 
@@ -267,12 +267,41 @@ bootstrapScript.setAttribute(
 );
 bootstrapScript.setAttribute("crossorigin", "anonymous");
 head.appendChild(bootstrapScript);
+//internal  cards
+var octal_to_another = document.getElementsByClassName("octal_to_another");
 
-const get_linked_cards = document.getElementsByClassName("get_linked_cards");
-
-for (let index = 0; index <= get_linked_cards.length; index++) {
-  get_linked_cards[
+for (let index = 0; index <= octal_to_another.length; index++) {
+  octal_to_another[
     index
+  ].innerHTML = ` <br>  <div class="card" style="width: 18rem">
+      <div class="card-header bg-success text-white text-center">
+        <p class="h4">Jump To Question</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-success bg-opacity-50 text-center">
+          <a href="octaltodecimal1.html" class="btn btn-link"
+            >Octal To Decimal</a
+          >
+        </li>
+        <li class="list-group-item bg-success bg-opacity-50 text-center">
+          <a href="decimaltoOctal1.html" class="btn btn-link"
+            >Decimal To Octal
+          </a>
+        </li>
+        <li class="list-group-item bg-success bg-opacity-50 text-center">
+          <a href="decimaltohexadecimal1.html" class="btn btn-link"
+            >Decimal To hexadecimal
+          </a>
+        </li>
+      </ul>
+    </div><br>`;
+};
+const decimal_to_another =
+  document.getElementsByClassName("decimal_to_another");
+
+for (let indexi = 0; indexi <= decimal_to_another.length; indexi++) {
+  decimal_to_another[
+    indexi
   ].innerHTML = ` <br>  <div class="card" style="width: 18rem">
       <div class="card-header bg-success text-white text-center">
         <p class="h4">Jump To Question</p>
@@ -289,17 +318,10 @@ for (let index = 0; index <= get_linked_cards.length; index++) {
           </a>
         </li>
         <li class="list-group-item bg-success bg-opacity-50 text-center">
-          <a href="decimaltoOctal1.html" class="btn btn-link"
+          <a href="decimaltohexadecimal1.html" class="btn btn-link"
             >Decimal To hexadecimal
           </a>
         </li>
       </ul>
     </div><br>`;
-}
-const t = document.querySelector(
-  "body>div.container>header.d-flex.flex-wrap.justify-content-center.py-3.mb-4.border-bottom"
-);
-// t.innerHTML=`<h1>kundal kumar</h1>`;
-if (window.innerWidth <= "890px") {
-  t.classList.remove(".d-flex", ".flex-wrap", ".justify-content-center");
-}
+};
