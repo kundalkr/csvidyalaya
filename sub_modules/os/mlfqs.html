@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <div class="container">
+      <h1 id="upper">RR(Round Robin) process scheduling algorithms question</h1>
+    </div>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+    >
+      <a href="#down"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_downward
+        </span></a
+      >
+    </button>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+    >
+      <a href="#upper"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a
+      >
+    </button>
+    <!-- upper and down button end-->
+<br><br>
+    <p style="margin: 0px 2vw">
+      Here are 30 questions on MLFQS(MULTILEVEL FEEDBACK QUEUE SCHDULING)
+      process scheduling algorithms . Each question is presented in a table
+      format, followed by the solution with Gantt charts, average turnaround
+      time (TAT), and average waiting time (WT).
+    </p>
+    <br><br>
+    <main>
+      <div class="container">
+        <h2>
+          Question 1 : find the average Turn Around Time and Waiting Time of
+          following processes using MLFQS(MULTILEVEL FEEDBACK QUEUE SCHDULING)
+          process scheduling algorithm? Consider the following processes with
+          their Arrival Time, Burst Time.
+          Question criteria : <br />
+          (1) There are four queue Q1, Q2, Q3, Q4 <br />
+          (2) Queue with their time stamp Q1(T.S=4), Q2(T.S=8), Q3(T.S=16),
+          Q4(FCFS) <br />
+          (in Q1, Q2, Q3, we use Round Robin and in Q4 we use FCFS scheduling
+          algorithms)
+        </h2>
+
+        <table border="1" class="table table-bordered">
+          <tr>
+            <th>Process</th>
+            <th>Arrival Time</th>
+            <th>Burst Time</th>
+          </tr>
+          <tr>
+            <td>P1</td>
+            <td>1</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>P2</td>
+            <td>4</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>P3</td>
+            <td>5</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>P4</td>
+            <td>8</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>P5</td>
+            <td>12</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>P6</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>P7</td>
+            <td>8</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>P8</td>
+            <td>16</td>
+            <td>6</td>
+          </tr>
+        </table>
+        <h4>Formula:</h4>
+        <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+        <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+
+        <h4>Solution:</h4>
+        <h4>Gantt Chart</h4>
+        <p>
+          | P1 (1-5) | P2 (5-9) | P3 (9-13) | P4 (13-17) | P7 (17-21) | P6
+          (21-25) | P5 (25-29) | P8 (29-33) | P1 (33-35) | P2(35-39) | P3(39-47)
+          | P4(47-55) | P7(55-59) | P6(59-65) | P5(65-67) | P8(67-69) |
+          P4(69-71)
+        </p>
+
+        <h4>Calculations:</h4>
+        <table border="1" class="table table-bordered">
+          <tr>
+            <th>Process</th>
+            <th>Completion Time</th>
+            <th>Turnaround Time (TAT)</th>
+            <th>Waiting Time (WT)</th>
+          </tr>
+          <tr>
+            <td>P1</td>
+            <td>35</td>
+            <td>34</td>
+            <td>28</td>
+          </tr>
+          <tr>
+            <td>P2</td>
+            <td>39</td>
+            <td>35</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>P3</td>
+            <td>47</td>
+            <td>42</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>P4</td>
+            <td>71</td>
+            <td>63</td>
+            <td>49</td>
+          </tr>
+          <tr>
+            <td>P5</td>
+            <td>67</td>
+            <td>55</td>
+            <td>49</td>
+          </tr>
+          <tr>
+            <td>P6</td>
+            <td>65</td>
+            <td>55</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>P7</td>
+            <td>59</td>
+            <td>51</td>
+            <td>43</td>
+          </tr>
+          <tr>
+            <td>P8</td>
+            <td>69</td>
+            <td>53</td>
+            <td>47</td>
+          </tr>
+        </table>
+
+        <h4>Average Turnaround Time:</h4>
+        <p>(34 + 35 + 42 + 63 + 55 + 55 + 51 + 53) / 8 = 48.5</p>
+
+        <h4>Average Waiting Time:</h4>
+        <p>(28 + 27 + 30 + 49 + 49 + 45 + 43 + 47) / 8 = 39.75</p>
+      </div>
+    </main>
+
+    <br /><br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" id="down" type="button">
+        <a href="RR1.html" style="color: antiquewhite"
+          >click for previous question 1 to 15 click here</a
+        >
+      </button>
+    </div>
+    <br /><br />
+    <br /><br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" id="down" type="button">
+        <a href="RR1.html" style="color: antiquewhite"
+          >for question 11 to 20 click here</a
+        >
+      </button>
+    </div>
+    <br /><br />
+    <script type="text/javascript" src="../../hdr_ftr.js"></script>
+  </body>
+</html>
