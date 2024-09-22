@@ -1,7 +1,5 @@
 const header = document.createElement("div");
-
 header.innerHTML = `
-             
       <head>
     <!-- always remove this -->
     <link
@@ -55,7 +53,6 @@ header.innerHTML = `
           color: inherit;
           color: black;
         }
- 
       }
     </style>
   </head>
@@ -88,7 +85,6 @@ header.innerHTML = `
                 >Home</a
               >
             </li>
-
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -199,10 +195,14 @@ footer.innerHTML = `
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-muted">ALL COURSES</a>
             </li>
-
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-muted">FAQs</a>
             </li>
+
+  <li class="nav-item mb-2">
+              <a href="../../sitemap.html" class="nav-link p-0 text-muted">Sitemap</a>
+            </li>
+
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-muted">About</a>
             </li>
@@ -247,11 +247,7 @@ footer.innerHTML = `
         </div>
       </footer>
     </div>
-        <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
+
 `;
 document.querySelector("body").append(footer);
 
