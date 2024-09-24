@@ -252,6 +252,17 @@ footer.innerHTML = `
 document.querySelector("body").append(footer);
 
 const head = document.querySelector("head");
+
+// <!-- Google tag (gtag.js) -->
+// <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS"></script>
+// <script>
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
+
+//   gtag('config', 'G-C4M8ZRW6HS');
+// </script>
+
 const bootstrapScript = document.createElement("script");
 
 bootstrapScript.src =
@@ -263,4 +274,25 @@ bootstrapScript.setAttribute(
 );
 bootstrapScript.setAttribute("crossorigin", "anonymous");
 head.appendChild(bootstrapScript);
-//internal  cards
+
+
+const scriptrs = document.createElement('script');
+scriptrs.src = 'https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS'; 
+scriptrs.async = true;
+document.head.appendChild(scriptrs);
+
+
+
+const jsscript = document.createElement('script');
+jsscript.type = 'text/javascript';
+jsscript.text = `
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C4M8ZRW6HS');
+`;
+document.head.appendChild(jsscript);
+
+
+
