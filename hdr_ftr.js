@@ -277,8 +277,9 @@ head.appendChild(bootstrapScript);
 
 
 const scriptrs = document.createElement('script');
-scriptrs.src = 'https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS'; 
 scriptrs.async = true;
+scriptrs.src = 'https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS'; 
+
 document.head.appendChild(scriptrs);
 
 
