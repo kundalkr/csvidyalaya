@@ -253,20 +253,25 @@ document.querySelector("body").append(footer);
 
 const head = document.querySelector("head");
 
-// <!-- Google tag (gtag.js) -->
-// <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS"></script>
-// <script>
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'G-C4M8ZRW6HS');
-// </script>
+const bootstrapcss = document.createElement("link");
+bootstrapcss.href =
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css";
+bootstrapcss.rel = "stylesheet";
+bootstrapcss.integrity =
+  "sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65";
+bootstrapcss.crossorigin = "anonymous";
+{
+  /* <link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+crossorigin="anonymous"
+/> */
+}
 
 const bootstrapScript = document.createElement("script");
-
 bootstrapScript.src =
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"; // Replace with your actual path
+  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js";
 
 bootstrapScript.setAttribute(
   "integrity",
@@ -275,17 +280,14 @@ bootstrapScript.setAttribute(
 bootstrapScript.setAttribute("crossorigin", "anonymous");
 head.appendChild(bootstrapScript);
 
-
-const scriptrs = document.createElement('script');
+const scriptrs = document.createElement("script");
 scriptrs.async = true;
-scriptrs.src = 'https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS'; 
+scriptrs.src = "https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS";
 
 document.head.appendChild(scriptrs);
 
-
-
-const jsscript = document.createElement('script');
-jsscript.type = 'text/javascript';
+const jsscript = document.createElement("script");
+jsscript.type = "text/javascript";
 jsscript.text = `
    window.dataLayer = window.dataLayer || [];
    function gtag(){dataLayer.push(arguments);}
@@ -294,6 +296,3 @@ jsscript.text = `
   gtag('config', 'G-C4M8ZRW6HS');
 `;
 document.head.appendChild(jsscript);
-
-
-
