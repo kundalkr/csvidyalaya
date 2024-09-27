@@ -1,54 +1,5 @@
 const header = document.createElement("div");
 header.innerHTML = `
-      <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .navbar-bran {
-        font-family: "Pacifico", cursive;
-        font-weight: 400;
-        font-style: normal;
-      }
-      @media (width>= 500px) {
-        .navbar-bran {
-          font-family: "Pacifico", cursive;
-          font-weight: 400;
-          font-style: normal;
-        }
-      }
-      /* .navbar .navbar-expand-lg .navbar-light {
-        color: black;
-      } */
-
-      li > a {
-        font-family: "Playpen Sans", cursive;
-        font-optical-sizing: auto;
-        font-weight: 450;
-        font-style: normal;
-        a,
-        a:hover,
-        a:focus,
-        a:active {
-          text-decoration: none;
-          color: inherit;
-          color: black;
-        }
-      }
-    </style>
-  </head>
-  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a

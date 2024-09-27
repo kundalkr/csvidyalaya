@@ -1,24 +1,98 @@
 const head = document.querySelector("head");
 
+// google icon
+const googleicon = document.createElement("link");
+googleicon.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/icon?family=Material+Icons"
+);
+googleicon.setAttribute("rel", "stylesheet");
+head.appendChild(googleicon);
+
+
+  /* <link
+href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet"
+/> */
+
+const googleapi3 = document.createElement("link");
+googleapi3.setAttribute("href", "https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
+googleapi3.setAttribute("rel","stylesheet");
+head.appendChild(googleapi3);
+/* <link
+href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+rel="stylesheet"
+/> */
+
+// google icon end
+
+// bootstrap css
 const bootstrapcss = document.createElement("link");
 bootstrapcss.setAttribute(
   "href",
   "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
 );
-// bootstrapcss.href =
-//   "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
 bootstrapcss.setAttribute("rel", "stylesheet");
-// bootstrapcss.rel = "stylesheet";
-// bootstrapcss.integrity =
-//   "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH";
+
 bootstrapcss.setAttribute(
   "integrity",
   "sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 );
-
 bootstrapcss.setAttribute("crossorigin", "anonymous");
-bootstrapcss.crossorigin = "anonymous";
 head.appendChild(bootstrapcss);
+// bootstrap css end
+// bootstrap icon
+const bootstrapicon = document.createElement("link");
+bootstrapicon.setAttribute("rel", "stylesheet");
+bootstrapicon.setAttribute(
+  "href",
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+);
+head.appendChild(bootstrapicon);
+/*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+ */
+// bootstrap icon end
+
+// bootstrap font
+/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */
+const gfont1 = document.createElement("link");
+gfont1.setAttribute("rel", "preconnect");
+gfont1.setAttribute("href", "https://fonts.googleapis.com");
+head.appendChild(gfont1);
+
+const gfont2 = document.createElement("link");
+gfont2.setAttribute("rel", "preconnect");
+gfont2.setAttribute("href", "https://fonts.gstatic.com");
+gfont2.setAttribute("crossorigin", "anonymous");
+head.appendChild(gfont2);
+/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */
+
+const gapi1 = document.createElement("link");
+gapi1.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+);
+gapi1.setAttribute("rel", "stylesheet");
+head.appendChild(gapi1);
+/* <link
+  href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+  rel="stylesheet"
+/> */
+
+const gapi2 = document.createElement("link");
+gapi2.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
+);
+gapi2.setAttribute("rel", "stylesheet");
+head.appendChild(gapi2);
+/*
+<link
+  href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
+  rel="stylesheet"
+/> */
+
+// bootstrap font end
 
 // favicon start
 const apple_fav1 = document.createElement("link");
@@ -89,3 +163,35 @@ jsscript.text = `
 `;
 document.head.appendChild(jsscript);
 // analytics end
+const cssstyle = document.createElement("style");
+cssstyle.innerHTML = `.navbar-bran {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      @media (width>= 500px) {
+        .navbar-bran {
+          font-family: "Pacifico", cursive;
+          font-weight: 400;
+          font-style: normal;
+        }
+      }
+      /* .navbar .navbar-expand-lg .navbar-light {
+        color: black;
+      } */
+
+      li > a {
+        font-family: "Playpen Sans", cursive;
+        font-optical-sizing: auto;
+        font-weight: 450;
+        font-style: normal;
+        a,
+        a:hover,
+        a:focus,
+        a:active {
+          text-decoration: none;
+          color: inherit;
+          color: black;
+        }
+      }`;
+head.appendChild(cssstyle);
