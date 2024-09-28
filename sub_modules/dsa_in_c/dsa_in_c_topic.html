@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>csvidyalaya</title>
-    <script  type="text/javascript" src="../../externalcss.js"></script>
+    <script type="text/javascript" src="../../externalcss.js"></script>
     <style>
       body {
         h1 {
@@ -16,26 +16,43 @@
           text-align: center;
         }
       }
-      @media (width<=500px) {
+      @media (width<=700px) {
+        .row {
+          display: flex;
+          justify-content: center;
+        }
+        a.btn {
+          font-size: x-small;
+          padding: 6px;
+        }
+        .card {
+          padding: 1px;
+        }
         h1 {
+          font-size: large;
           font-family: "Playwrite CU", cursive;
           font-optical-sizing: auto;
           font-weight: 400;
           font-style: normal;
           text-align: center;
-        
+        }
+        h5 {
+          font-size: small;
+        }
+        .card-body {
+          .card-text {
+            font-size: small;
+          }
         }
       }
     </style>
   </head>
-
-
   <body>
     <h1>Dsa In C</h1>
     <br />
     <div class="container">
       <div class="row">
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem">
+        <div class="card text-bg-primary mb-3" style="max-width: 18rem">  
           <div class="card-body">
             <h2 class="card-title">Arrays</h2>
             <p class="card-text">all types of dsa based array question.</p>
