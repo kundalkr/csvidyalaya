@@ -16,13 +16,33 @@
           text-align: center;
         }
       }
-      @media (width<=500px) {
+      @media (width<=700px) {
+        .row {
+          display: flex;
+          justify-content: center;
+        }
+        a.btn {
+          font-size: x-small;
+          padding: 6px;
+        }
+        .card {
+          padding: 1px;
+        }
         h1 {
+          font-size: large;
           font-family: "Playwrite CU", cursive;
           font-optical-sizing: auto;
           font-weight: 400;
           font-style: normal;
           text-align: center;
+        }
+        h5 {
+          font-size: small;
+        }
+        .card-body {
+          .card-text {
+            font-size: small;
+          }
         }
       }
     </style>
