@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="../../../externalcss.js"></script>
+    <script type="text/javascript" src="cmmnthing.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean Algebra Question</title>
+  </head>
+  <body>
+    <div class="container" id="samethings">
+      <h1 id="upper">Boolean Algebra Questions</h1>
+      <p>here, 53 question are given for pratice boolean algebra</p>
+      <p>These questions are generally asked in university exam</p>
+      <br />
+      <a
+        href="#fstque"
+        class="btn btn-primary btn-lg active"
+        role="button"
+        aria-pressed="true"
+        >Jump To Question</a
+      >
+      <br /><br />
+    </div>
+    <!-- upper and down button -->
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+    >
+      <a href="#down"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_downward
+        </span></a
+      >
+    </button>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+    >
+      <a href="#upper"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a
+      >
+    </button>
+    <br />
+    <!-- upper and down button end-->
+    <main>
+      <div class="container" id="fstque">
+        <h2>Question 26: Simplify the Boolean expression (A + B)(A' + C).</h2>
+        <p>Solution: AC + A'B</p>
+        <ul>
+            <li>Using the Distributive Law: (A + B)(A' + C) = AA' + AC + BA' + BC.</li>
+            <li>Simplifying: 0 + AC + A'B = AC + A'B.</li>
+        </ul>
+        
+        <h2>Question 27: Simplify the Boolean expression A + A'B'.</h2>
+        <p>Solution: A + B'</p>
+        <ul>
+            <li>Using the Distributive Law: A + A'B' = A + B'.</li>
+        </ul>
+        
+        <h2>Question 28: Simplify the Boolean expression A'B + AB'.</h2>
+        <p>Solution: A ⊕ B</p>
+        <ul>
+            <li>This is the standard XOR expression: A ⊕ B = A'B + AB'.</li>
+        </ul>
+        
+        <h2>Question 29: Prove that A * A' = 0.</h2>
+        <p>Solution: 0</p>
+        <ul>
+            <li>This is the Complement Law in Boolean algebra: A * A' = 0, as a variable ANDed with its complement is always 0.</li>
+        </ul>
+        
+        <h2>Question 30: Prove that A + A' = 1.</h2>
+        <p>Solution: 1</p>
+        <ul>
+            <li>This is the Complement Law in Boolean algebra: A + A' = 1, as a variable ORed with its complement is always 1.</li>
+        </ul>
+        
+        <h2>Question 31: Simplify the Boolean expression A + AB + A'B'.</h2>
+        <p>Solution: A + B'</p>
+        <ul>
+            <li>Using the Distributive Law: A + AB + A'B' = A + B'.</li>
+        </ul>
+        
+        
+        <h2>Question 32: Simplify the Boolean expression A'B + A'B'.</h2>
+        <p>Solution: A'</p>
+        <ul>
+            <li>Using the Distributive Law: A'B + A'B' = A'(B + B').</li>
+            <li>Since B + B' = 1, the expression simplifies to A'.</li>
+        </ul>
+        
+        <h2>Question 33: Simplify the Boolean expression AB + AB'.</h2>
+        <p>Solution: A</p>
+        <ul>
+            <li>Using the Distributive Law: AB + AB' = A(B + B').</li>
+            <li>Since B + B' = 1, the expression simplifies to A.</li>
+        </ul>
+        
+        <h2>Question 34: Simplify the Boolean expression A(A' + B)(A + B').</h2>
+        <p>Solution: AB'</p>
+        <ul>
+            <li>Using the Distributive Law: A(A' + B)(A + B') = A(A + B')(A' + B).</li>
+            <li>Simplifying: A(A + B')(A' + B) = A * AB' = AB'.</li>
+        </ul>
+        
+        <h2>Question 35: Simplify the Boolean expression A'B' + AB + A'B.</h2>
+        <p>Solution: B + A'</p>
+        <ul>
+            <li>Group terms: (A'B' + A'B) + AB = A'(B' + B) + AB = A' + AB.</li>
+            <li>Using Absorption Law: A' + AB = A' + B.</li>
+        </ul>
+        
+        <h2>Question 36: Simplify the Boolean expression (A + B')(A' + B').</h2>
+        <p>Solution: B'</p>
+        <ul>
+            <li>Using the Distributive Law: (A + B')(A' + B') = A(A' + B') + B'(A' + B').</li>
+            <li>Simplifying: A'B' + A'B = A' + B'.</li>
+        </ul>
+        
+        <h2>Question 37: Simplify the Boolean expression A(B + C') + A'B.</h2>
+        <p>Solution: B + AC'</p>
+        <ul>
+            <li>Using the Distributive Law: A(B + C') + A'B = AB + AC' + A'B.</li>
+            <li>Group terms: (AB + A'B) + AC' = B(A + A') + AC'.</li>
+            <li>Simplifying: B + AC'.</li>
+        </ul>
+        
+        <h2>Question 38: Simplify the Boolean expression A + (A'B)' + A'C.</h2>
+        <p>Solution: A + B + C</p>
+        <ul>
+            <li>Using De Morgan's Law: A + (A'B)' = A + A + B = A + B.</li>
+            <li>Thus, A + B + A'C simplifies to A + B + C.</li>
+        </ul>
+        
+        <h2>Question 39: Simplify the Boolean expression A + A'B + A'B'.</h2>
+        <p>Solution: A + B'</p>
+        <ul>
+            <li>Group terms: A + A'B + A'B' = A + A'(B + B').</li>
+            <li>Since B + B' = 1, the expression simplifies to A + A' = A.</li>
+        </ul>
+        
+        <h2>Question 40: Simplify the Boolean expression (A + B)(A' + B). </h2>
+        <p>Solution: A + B</p>
+        <ul>
+            <li>Using the Distributive Law: (A + B)(A' + B) = AA' + AB + A'B + BB.</li>
+            <li>Simplifying: 0 + AB + A'B + B = A + B.</li>
+        </ul>
+        
+        <h2>Question 41: Simplify the Boolean expression (A + B')(A + C').</h2>
+        <p>Solution: A + B'C'</p>
+        <ul>
+            <li>Using the Distributive Law: (A + B')(A + C') = A(A + C') + B'(A + C').</li>
+            <li>Simplifying: A + B'C'.</li>
+        </ul>
+        
+      </div>
+    </main>
+
+    <br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" id="down" type="button">
+        <a href="booleanalgebra2.html" style="color: antiquewhite"
+          >click for previous question 13 to 25 click here</a
+        >
+      </button>
+    </div>
+    <br />
+    <br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" id="down" type="button">
+        <a href="booleanalgebra4.html" style="color: antiquewhite"
+          >click for previous question 41 to 53 click here</a
+        >
+      </button>
+    </div>
+    <br />
+
+    <script type="text/javascript" src="../../../hdr_ftr.js"></script>
+  </body>
+</html>

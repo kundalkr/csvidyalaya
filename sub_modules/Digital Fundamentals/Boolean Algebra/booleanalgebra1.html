@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="../../../externalcss.js"></script>
+    <script type="text/javascript" src="cmmnthing.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Boolean Algebra Question </title>
+  </head>
+  <body>
+    <div class="container" id="samethings">
+      <h1 id="upper">Boolean Algebra Questions</h1>
+      <p>here, 53 question are given for pratice boolean algebra</p>
+      <p>These questions are generally asked in university exam</p>
+      <br />
+      <a
+        href="#fstque"
+        class="btn btn-primary btn-lg active"
+        role="button"
+        aria-pressed="true"
+        >Jump To Question</a
+      >
+      <br /><br />
+    </div>
+    <!-- upper and down button -->
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+    >
+      <a href="#down"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_downward
+        </span></a
+      >
+    </button>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+    >
+      <a href="#upper"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a
+      >
+    </button>
+    <br />
+    <!-- upper and down button end-->
+    <main>
+      <div class="container" id="fstque">
+        <h2>Question 1: Simplify the Boolean expression A + A'B.</h2>
+        <p>Solution: A + B</p>
+        <ul>
+          <li>
+            A + A'B is simplified using the Distributive Law: A + A'B = A + B.
+          </li>
+          <li>This happens because A + A' = 1, and 1B = B.</li>
+        </ul>
+
+        <h2>Question 2: Simplify the Boolean expression A(A + B).</h2>
+        <p>Solution: A</p>
+        <ul>
+          <li>Using the Distributive Law: A(A + B) = AA + AB.</li>
+          <li>Since AA = A, the expression becomes A + AB.</li>
+          <li>Using Absorption Law: A + AB = A.</li>
+        </ul>
+
+        <h2>Question 3: Simplify the Boolean expression A' + AB.</h2>
+        <p>Solution: A' + B</p>
+        <ul>
+          <li>Using Distributive Law: A' + AB = (A' + A)(A' + B).</li>
+          <li>
+            Since A' + A = 1, the expression simplifies to 1(A' + B) = A' + B.
+          </li>
+        </ul>
+
+        <h2>Question 4: Simplify the Boolean expression AB + A'B.</h2>
+        <p>Solution: B</p>
+        <ul>
+          <li>Using the Distributive Law: AB + A'B = B(A + A').</li>
+          <li>Since A + A' = 1, the expression simplifies to B.</li>
+        </ul>
+
+        <h2>Question 5: Simplify the Boolean expression (A + B)(A + B').</h2>
+        <p>Solution: A</p>
+        <ul>
+          <li>
+            Using the Distributive Law: (A + B)(A + B') = A(A + B') + B(A + B').
+          </li>
+          <li>
+            Simplifying further: A(A + B') = A, and B(A + B') = B' + B = 1.
+          </li>
+          <li>Thus, the entire expression simplifies to A.</li>
+        </ul>
+
+        <h2>Question 6: Simplify the Boolean expression A + AB'.</h2>
+        <p>Solution: A + B'</p>
+        <ul>
+          <li>Using the Distributive Law: A + AB' = A(1 + B').</li>
+          <li>Since 1 + B' = 1, the expression simplifies to A + B'.</li>
+        </ul>
+
+        <h2>Question 7: Prove that A + A' = 1.</h2>
+        <p>Solution: 1</p>
+        <ul>
+          <li>
+            A + A' is an axiom in Boolean algebra known as the Complement Law.
+          </li>
+          <li>
+            The sum of a variable and its complement is always equal to 1.
+          </li>
+        </ul>
+
+        <h2>Question 8: Simplify the Boolean expression A'B + AB'.</h2>
+        <p>Solution: A ⊕ B (A XOR B)</p>
+        <ul>
+          <li>
+            This is the standard expression for XOR (exclusive OR): A ⊕ B = A'B
+            + AB'.
+          </li>
+        </ul>
+
+        <h2>Question 9: Simplify the Boolean expression A' + AB + A'C.</h2>
+        <p>Solution: A' + B + C</p>
+        <ul>
+          <li>Using the Distributive Law: A' + AB + A'C = A'(1 + C) + AB.</li>
+          <li>
+            Since 1 + C = 1, the expression simplifies to A' + AB = A' + B.
+          </li>
+          <li>The result is A' + B + C.</li>
+        </ul>
+
+        <h2>Question 10: Simplify the Boolean expression AB + A'B + AB'.</h2>
+        <p>Solution: A + B</p>
+        <ul>
+          <li>Using the Distributive Law: AB + A'B + AB' = B(A + A') + AB'.</li>
+          <li>
+            Since A + A' = 1, the expression simplifies to B + AB' = A + B.
+          </li>
+        </ul>
+
+        <h2>Question 11: Simplify the Boolean expression (A + B)(A + C).</h2>
+        <p>Solution: A + BC</p>
+        <ul>
+          <li>
+            Using the Distributive Law: (A + B)(A + C) = A(A + C) + B(A + C).
+          </li>
+          <li>Simplifying: A + AC + AB + BC = A + AB + BC.</li>
+          <li>
+            Using Absorption: A + AB = A, so the expression becomes A + BC.
+          </li>
+        </ul>
+
+        <h2>Question 12: Simplify the Boolean expression A'B + AB.</h2>
+        <p>Solution: B</p>
+        <ul>
+          <li>Using the Distributive Law: A'B + AB = B(A' + A).</li>
+          <li>Since A' + A = 1, the expression simplifies to B.</li>
+        </ul>
+
+        <h2>Question 13: Prove that A + 0 = A.</h2>
+        <p>Solution: A</p>
+        <ul>
+          <li>This is a Boolean algebra axiom called the Identity Law.</li>
+          <li>
+            The OR operation with 0 does not affect the value of A, so A + 0 =
+            A.
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <br /><br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" id="down" type="button">
+        <a href="booleanalgebra2.html" style="color: antiquewhite"
+          >click for next question 14 to 25 click here</a
+        >
+      </button>
+    </div>
+    <br /><br />
+
+    <script type="text/javascript" src="../../../hdr_ftr.js"></script>
+  </body>
+</html>

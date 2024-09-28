@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="../../../externalcss.js"></script>
+    <script type="text/javascript" src="cmmnthing.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean Algebra Question</title>
+  </head>
+  <body>
+    <div class="container" id="samethings">
+      <h1 id="upper">Boolean Algebra Questions</h1>
+      <p>here, 53 question are given for pratice boolean algebra</p>
+      <p>These questions are generally asked in university exam</p>
+      <br />
+      <a
+        href="#fstque"
+        class="btn btn-primary btn-lg active"
+        role="button"
+        aria-pressed="true"
+        >Jump To Question</a
+      >
+      <br /><br />
+    </div>
+    <!-- upper and down button -->
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+    >
+      <a href="#down"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_downward
+        </span></a
+      >
+    </button>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+    >
+      <a href="#upper"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a
+      >
+    </button>
+    <br />
+    <!-- upper and down button end-->
+    <main>
+      <div class="container" id="fstque">
+        <h2>
+          Question 42: Simplify the Boolean expression A(B + C) + B(A + C').
+        </h2>
+        <p>Solution: A + B</p>
+        <ul>
+          <li>
+            Expanding: A(B + C) + B(A + C') = AB + AC + BA + BC' = AB + AC +
+            BC'.
+          </li>
+          <li>Using Absorption: AB + AC + BC' = A + B.</li>
+        </ul>
+
+        <h2>
+          Question 43: Simplify the Boolean expression A'BC + AB'C + ABC'.
+        </h2>
+        <p>Solution: BC + AC'</p>
+        <ul>
+          <li>Group terms: A'BC + AB'C + ABC' = (A'B + AB')C + AC'.</li>
+          <li>Using XOR: (A'B + AB')C = C.</li>
+          <li>Thus, the result is BC + AC'.</li>
+        </ul>
+
+        <h2>Question 44: Simplify the Boolean expression AB'C + A'BC'.</h2>
+        <p>Solution: A'BC' + AB'C</p>
+        <ul>
+          <li>
+            This expression is in its simplest form and represents exclusive OR
+            of multiple terms.
+          </li>
+        </ul>
+
+        <h2>Question 45: Simplify the Boolean expression A + A'B + A'C.</h2>
+        <p>Solution: A + B + C</p>
+        <ul>
+          <li>Using the Distributive Law: A + A'B + A'C = A + A'(B + C).</li>
+          <li>Simplifying: A + B + C.</li>
+        </ul>
+
+        <h2>Question 46: Simplify the Boolean expression A'B + AB' + AB.</h2>
+        <p>Solution: A + B</p>
+        <ul>
+          <li>
+            Using the Distributive Law: A'B + AB' + AB = A(B + B') + B(A + A').
+          </li>
+          <li>
+            Since B + B' = 1 and A + A' = 1, the expression simplifies to A + B.
+          </li>
+        </ul>
+
+        <h2>
+          Question 47: Simplify the Boolean expression A(B + C) + B(A + C).
+        </h2>
+        <p>Solution: A + B</p>
+        <ul>
+          <li>
+            Using the Distributive Law: A(B + C) + B(A + C) = AB + AC + BA + BC.
+          </li>
+          <li>Simplifying: A + B.</li>
+        </ul>
+
+        <h2>Question 48: Simplify the Boolean expression (A + B)(A' + C).</h2>
+        <p>Solution: AC + A'B</p>
+        <ul>
+          <li>
+            Using the Distributive Law: (A + B)(A' + C) = AA' + AC + A'B + BC =
+            AC + A'B.
+          </li>
+        </ul>
+
+        <h2>
+          Question 49: Simplify the Boolean expression A'B'C + A'BC' + ABC.
+        </h2>
+        <p>Solution: A'C + BC</p>
+        <ul>
+          <li>
+            Using the Distributive Law: A'B'C + A'BC' + ABC = A'(B'C + BC') +
+            ABC.
+          </li>
+          <li>Simplifying: A'C + BC.</li>
+        </ul>
+
+        <h2>Question 50: Simplify the Boolean expression A + A'BC.</h2>
+        <p>Solution: A + BC</p>
+        <ul>
+          <li>Using the Distributive Law: A + A'BC = A + BC.</li>
+        </ul>
+
+        <h2>Question 51: Simplify the Boolean expression A'B' + AB + A'B.</h2>
+        <p>Solution: A' + B</p>
+        <ul>
+          <li>
+            Using the Distributive Law: A'B' + AB + A'B = A'(B' + B) + AB = A' +
+            AB = A' + B.
+          </li>
+        </ul>
+
+        <h2>Question 52: Simplify the Boolean expression A + A'B + B'C'.</h2>
+        <p>Solution: A + B'C'</p>
+        <ul>
+          <li>Using the Distributive Law: A + A'B + B'C' = A + B'C'.</li>
+        </ul>
+
+        <h2>Question 53: Simplify the Boolean expression A + B(A' + C).</h2>
+        <p>Solution: A + BC</p>
+        <ul>
+          <li>Using the Distributive Law: A + B(A' + C) = A + BA' + BC.</li>
+          <li>Using Absorption: A + BA' + BC = A + BC.</li>
+        </ul>
+      </div>
+    </main>
+
+    <br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" id="down" type="button">
+        <a href="booleanalgebra3.html" style="color: antiquewhite"
+          >click for previous question 26 to 41 click here</a
+        >
+      </button>
+    </div>
+    <br />
+
+    <script type="text/javascript" src="../../../hdr_ftr.js"></script>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="../../../externalcss.js"></script>
+    <script type="text/javascript" src="cmmnthing.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean Algebra Question</title>
+  </head>
+  <body>
+    <div class="container" id="samethings">
+      <h1 id="upper">Boolean Algebra Questions</h1>
+      <p>here, 53 question are given for pratice boolean algebra</p>
+      <p>These questions are generally asked in university exam</p>
+      <br />
+      <a
+        href="#fstque"
+        class="btn btn-primary btn-lg active"
+        role="button"
+        aria-pressed="true"
+        >Jump To Question</a
+      >
+      <br />
+      <br />
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" id="down" type="button">
+          <a href="booleanalgebra1.html" style="color: antiquewhite"
+            >click for previous question 1 to 13 click here</a
+          >
+        </button>
+      </div>
+      <br />
+    </div>
+    <!-- upper and down button -->
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+    >
+      <a href="#down"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_downward
+        </span></a
+      >
+    </button>
+    <button
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+    >
+      <a href="#upper"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a
+      >
+    </button>
+    <br />
+    <!-- upper and down button end-->
+    <main>
+      <div class="container" id="fstque">
+        <h2>Question 14: Simplify the Boolean expression A + A.</h2>
+        <p>Solution: A</p>
+        <ul>
+          <li>
+            This is the Idempotent Law of Boolean algebra, which states that A +
+            A = A.
+          </li>
+        </ul>
+
+        <h2>Question 15: Simplify the Boolean expression A + 1.</h2>
+        <p>Solution: 1</p>
+        <ul>
+          <li>
+            This follows the Domination Law: A + 1 = 1, because any variable
+            ORed with 1 is always equal to 1.
+          </li>
+        </ul>
+
+        <h2>Question 16: Simplify the Boolean expression A * 0.</h2>
+        <p>Solution: 0</p>
+        <ul>
+          <li>
+            This follows the Domination Law: A * 0 = 0, because any variable
+            ANDed with 0 is always equal to 0.
+          </li>
+        </ul>
+
+        <h2>Question 17: Simplify the Boolean expression A * 1.</h2>
+        <p>Solution: A</p>
+        <ul>
+          <li>
+            This follows the Identity Law: A * 1 = A, because any variable ANDed
+            with 1 remains unchanged.
+          </li>
+        </ul>
+
+        <h2>Question 18: Prove that A * A = A.</h2>
+        <p>Solution: A</p>
+        <ul>
+          <li>
+            This is the Idempotent Law of Boolean algebra, which states that A *
+            A = A.
+          </li>
+        </ul>
+
+        <h2>Question 19: Simplify the Boolean expression (A + B)'.</h2>
+        <p>Solution: A'B'</p>
+        <ul>
+          <li>This is an application of De Morgan's Law: (A + B)' = A'B'.</li>
+        </ul>
+
+        <h2>Question 20: Simplify the Boolean expression (AB)'.</h2>
+        <p>Solution: A' + B'</p>
+        <ul>
+          <li>This is an application of De Morgan's Law: (AB)' = A' + B'.</li>
+        </ul>
+
+        <h2>Question 21: Simplify the Boolean expression A(A' + B).</h2>
+        <p>Solution: AB</p>
+        <ul>
+          <li>Using the Distributive Law: A(A' + B) = AA' + AB.</li>
+          <li>Since AA' = 0, the expression simplifies to AB.</li>
+        </ul>
+
+        <h2>Question 22: Simplify the Boolean expression AB + A'B'.</h2>
+        <p>Solution: A ≡ B (A XNOR B)</p>
+        <ul>
+          <li>
+            This is the standard expression for XNOR (exclusive NOR): A ≡ B = AB
+            + A'B'.
+          </li>
+        </ul>
+
+        <h2>Question 23: Simplify the Boolean expression (A + B')(A' + B).</h2>
+        <p>Solution: A'B + AB'</p>
+        <ul>
+          <li>This is the expression for XOR: A'B + AB' = A ⊕ B.</li>
+        </ul>
+
+        <h2>Question 24: Simplify the Boolean expression (A' + B)(A' + B').</h2>
+        <p>Solution: A'</p>
+        <ul>
+          <li>
+            Using the Distributive Law: (A' + B)(A' + B') = A'(A' + B') + B(A' +
+            B').
+          </li>
+          <li>Simplifying: A' + B(A' + B') = A' + B'A + B'.</li>
+          <li>Using De Morgan's, the final result is A'.</li>
+        </ul>
+
+        <h2>Question 25: Simplify the Boolean expression A(B + C).</h2>
+        <p>Solution: AB + AC</p>
+        <ul>
+          <li>This follows the Distributive Law: A(B + C) = AB + AC.</li>
+        </ul>
+      </div>
+    </main>
+
+    <br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" id="down" type="button">
+        <a href="booleanalgebra1.html" style="color: antiquewhite"
+          >click for previous question 1 to 13 click here</a
+        >
+      </button>
+    </div>
+    <br />
+    <br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-success" type="button">
+        <a href="booleanalgebra3.html" style="color: antiquewhite"
+          >click for next question 26 to 41 click here</a
+        >
+      </button>
+    </div>
+    <br />
+
+    <script type="text/javascript" src="../../../hdr_ftr.js"></script>
+  </body>
+</html>
