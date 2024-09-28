@@ -102,7 +102,7 @@ header.innerHTML = `
         </div>
       </div>
     </nav>
-<br><br>
+    <br>
 `;
 document.querySelector("body").prepend(header);
 

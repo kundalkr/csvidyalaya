@@ -2,17 +2,47 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="body.css" />
-    <script  type="text/javascript" src="externalcss.js"></script>
+    <script type="text/javascript" src="externalcss.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>csvidyalaya.com : practice core subject problems</title>
+    <style>
+      @media (300px<=width<=600px) {
+        .card-body {
+        }
+        h5 {
+          font-size: medium;
+        }
+        .card-text {
+          font-size: 10px;
+          margin-bottom: 1px;
+        }
+        #all-cards {
+          display: flex;
+          .card {
+            width: 70vw;
+          }
+          .card > img {
+            width: 100%;
+            height: 20vh;
+          }
+        }
+        a.btn {
+          padding: 3px;
+          font-size: x-small;
+        }
+      }
+      .card {
+        width: 18rem;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="row" id="all-cards">
-        <div class="card" style="width: 18rem">
+        <div class="card">
           <img
-            src="assets/images/os2.jpeg"
+            src="assets/images/os2_192x192.png"
             class="card-img-top"
             alt="operating system question"
           />
@@ -30,15 +60,15 @@
         </div>
         <div class="card" style="width: 18rem">
           <img
-            src="assets/images/dsainc.jpeg"
+            src="assets/images/dsainc_192x192.png"
             class="card-img-top"
             alt="operating system question"
           />
           <div class="card-body">
             <h5 class="card-title">DSA in C</h5>
             <p class="card-text">
-              You can practice here Array question, stack, linkedlist, Queue
-              and all other data structure question .....
+              You can practice here Array question, stack, linkedlist, Queue and
+              all other data structure question .....
             </p>
             <a
               href="sub_modules/dsa_in_c/dsa_in_c_topic.html"
@@ -49,7 +79,7 @@
         </div>
         <div class="card" style="width: 18rem">
           <img
-            src="assets/images/digital fundamentals.jpeg"
+            src="assets/images/digi_funda_192x192.png"
             class="card-img-top"
             alt="operating system question"
           />
@@ -69,7 +99,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- cards end -->
     <!-- bootstrap link -->
     <script type="text/javascript" src="hdr_ftr.js"></script>
