@@ -1,7 +1,12 @@
 const head = document.querySelector("head");
-
+// meta verification
+const metaveri = document.createElement("meta");
+metaveri.setAttribute("name", "yandex-verification");
+metaveri.setAttribute("content", "3bab63c2b603f5fe");
+// meta verification end
 // google icon
 const googleicon = document.createElement("link");
+
 googleicon.setAttribute(
   "href",
   "https://fonts.googleapis.com/icon?family=Material+Icons"
