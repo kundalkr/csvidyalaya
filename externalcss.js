@@ -3,6 +3,7 @@ const head = document.querySelector("head");
 const metaveri = document.createElement("meta");
 metaveri.setAttribute("name", "yandex-verification");
 metaveri.setAttribute("content", "3bab63c2b603f5fe");
+head.appendChild(metaveri);
 // meta verification end
 // google icon
 const googleicon = document.createElement("link");
