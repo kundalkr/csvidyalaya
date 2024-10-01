@@ -134,16 +134,14 @@ footer.innerHTML = `
           <h5>HOME</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Home</a>
+              <a href="/index.html" class="nav-link p-0 text-muted">Home</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">ALL COURSES</a>
-            </li>
+     
             <li class="nav-item mb-2">
               <a href="/anotherpage/FAQs.html" class="nav-link p-0 text-muted">FAQs</a>
             </li>
 
-  <li class="nav-item mb-2">
+            <li class="nav-item mb-2">
               <a href="/sitemap.xml" class="nav-link p-0 text-muted">Sitemap</a>
             </li>
 
