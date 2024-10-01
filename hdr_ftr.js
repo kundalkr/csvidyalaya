@@ -140,7 +140,7 @@ footer.innerHTML = `
               <a href="#" class="nav-link p-0 text-muted">ALL COURSES</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+              <a href="/anotherpage/FAQs.html" class="nav-link p-0 text-muted">FAQs</a>
             </li>
 
   <li class="nav-item mb-2">
