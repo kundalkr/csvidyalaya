@@ -1,6 +1,6 @@
 const header = document.createElement("div");
 header.innerHTML = `
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFD1DC; "  >
       <div class="container-fluid">
         <a
           class="navbar-brand navbar-bran"
@@ -107,10 +107,11 @@ header.innerHTML = `
 document.querySelector("body").prepend(header);
 
 const footer = document.createElement("div");
+footer.style.backgroundColor = "#FFD1DC";
 footer.innerHTML = `
     <div class="container">
       <footer
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  border-top"
       >
         <div class="col mb-3">
           <a
@@ -143,32 +144,35 @@ footer.innerHTML = `
             </li>
 
   <li class="nav-item mb-2">
-              <a href="../../sitemap.html" class="nav-link p-0 text-muted">Sitemap</a>
+              <a href="/sitemap.xml" class="nav-link p-0 text-muted">Sitemap</a>
             </li>
 
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-muted">About</a>
             </li>
+            <li class="nav-item mb-2"><a href="/anotherpage/privacy_policy.html" class="nav-link p-0 text-muted">Privacy policy</a></li>
           </ul>
         </div>
         <div class="col mb-3">
-          <h5>All Question</h5>
+          <h5>CPU Scheduling Question</h5>
           <ul class="nav flex-column">
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Stack </a>
+              <a href="/sub_modules/os/fcfs.html" class="nav-link p-0 text-muted">FCFS scheduling</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Array</a>
+              <a href="/sub_modules/os/sjf1.html" class="nav-link p-0 text-muted">SJF scheduling</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">FCFS scheduling</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">SJF scheduling</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted"
+              <a href="/sub_modules/os/ps1.html" class="nav-link p-0 text-muted"
                 >PRIORITY Scheduling</a
+              >
+            </li>
+                <li class="nav-item mb-2">
+              <a href="/sub_modules/os/RR1.html" class="nav-link p-0 text-muted">Round Robin scheduling</a>
+            </li>
+             <li class="nav-item mb-2">
+              <a href="/sub_modules/os/mlfqs.html" class="nav-link p-0 text-muted"
+                >MLFQS Scheduling</a
               >
             </li>
           </ul>
@@ -185,11 +189,10 @@ footer.innerHTML = `
             </li>
             <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li> -->
+             -->
           </ul>
         </div>
       </footer>
     </div>
-
 `;
 document.querySelector("body").append(footer);

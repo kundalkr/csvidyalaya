@@ -15,15 +15,17 @@ googleicon.setAttribute(
 googleicon.setAttribute("rel", "stylesheet");
 head.appendChild(googleicon);
 
-
-  /* <link
+/* <link
 href="https://fonts.googleapis.com/icon?family=Material+Icons"
 rel="stylesheet"
 /> */
 
 const googleapi3 = document.createElement("link");
-googleapi3.setAttribute("href", "https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap");
-googleapi3.setAttribute("rel","stylesheet");
+googleapi3.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+);
+googleapi3.setAttribute("rel", "stylesheet");
 head.appendChild(googleapi3);
 /* <link
 href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
@@ -170,7 +172,9 @@ jsscript.text = `
 document.head.appendChild(jsscript);
 // analytics end
 const cssstyle = document.createElement("style");
-cssstyle.innerHTML = `.navbar-bran {
+cssstyle.innerHTML = `
+
+.navbar-bran {
         font-family: "Pacifico", cursive;
         font-weight: 400;
         font-style: normal;
@@ -201,3 +205,5 @@ cssstyle.innerHTML = `.navbar-bran {
         }
       }`;
 head.appendChild(cssstyle);
+const nav = document.querySelector(".navbar.navbar-expand-lg");
+nav.style.backgroundColor = "#2db88f";
