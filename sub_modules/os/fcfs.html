@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script  type="text/javascript" src="../../externalcss.js"></script>
+    <script type="text/javascript" src="../../externalcss.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FCFS Scheduling Algorithm Questions with Solutions - Practice</title>
-    <meta name="description" content="Explore FCFS (First Come First Serve) scheduling algorithm questions and step-by-step solutions. Perfect for computer science students and professionals preparing for exams." />
-    
+    <meta
+      name="description"
+      content="Explore FCFS (First Come First Serve) scheduling algorithm questions and step-by-step solutions. Perfect for computer science students and professionals preparing for exams."
+    />
+    <style>
+
+      #fcfs1 {
+        height: 111px;
+        width: 600px;
+        background-image: url(/assets/picturefghfghfg.png);
+        background-repeat: no-repeat;
+        background-position: -52px -32px;
+        border: 1px solid red;
+      }
+      @media (width<=700px) {
+        #fcfs1 {
+          height: 111px;
+          width: auto;
+          background-image: url(/assets/picturefghfghfg.png);
+          background-repeat: no-repeat;
+
+          border: 1px solid red;
+          background-position: -84px -32px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <h1 id="upper">FCFS(FIRST COME FIRST SERVED) question</h1>
     </div>
-      <!-- upper and down button start-->
+    <!-- upper and down button start-->
     <button
       type="button"
       class="btn btn-success"
-      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh;"
-    > <a href="#down"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+    >
+      <a href="#down"
         ><span class="material-icons" style="color: antiquewhite">
           arrow_downward
         </span></a
       >
     </button>
     <button
-    type="button"
-    class="btn btn-success"
-    style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw;"> <a href="#upper"
-      ><span class="material-icons" style="color: antiquewhite">
-        arrow_upward
-        </span></a
+      type="button"
+      class="btn btn-success"
+      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
     >
-  </button>
-  <!-- upper and down button end-->
+      <a href="#upper"
+        ><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a
+      >
+    </button>
+    <!-- upper and down button end-->
     <p style="margin: 0px 2vw">
       Here are 30 questions on FCFS(FIRST COME FIRST SERVED) process scheduling
       algorithms. Each question is presented in a table format, followed by the
@@ -83,6 +110,7 @@
       </ul>
 
       <h4>Gantt Chart</h4>
+      <div id="fcfs1"></div>
       <p>P1 (0-4) -> P2 (4-7) -> P3 (7-9)</p>
 
       <table border="1" class="table table-bordered">
@@ -135,7 +163,7 @@
       <p>Average Waiting Time = (0 + 2 + 3) / 3 = 5 / 3 = 1.67 units</p>
 
       <!-- question 1 end -->
-     <!-- question 2 start --> 
+      <!-- question 2 start -->
       <h2>Question 2</h2>
       <p>
         find the average Turn Around Time and Waiting Time of following
@@ -1051,6 +1079,6 @@
       </div>
       <!-- question 10 end -->
     </div>
-    <script type="text/javascript" src="../../hdr_ftr.js" ></script>
+    <script type="text/javascript" src="../../hdr_ftr.js"></script>
   </body>
 </html>
