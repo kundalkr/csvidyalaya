@@ -1,12 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script  type="text/javascript" src="../../externalcss.js"></script>
+    <script type="text/javascript" src="../../externalcss.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Round Robin Scheduling: Algorithm Questions & Solutions</title>
-    <meta name="description" content="Find comprehensive Round Robin scheduling algorithm questions with step-by-step solutions. Master RR concepts for interviews and competitive exams." />
-    
+    <meta
+      name="description"
+      content="Find comprehensive Round Robin scheduling algorithm questions with step-by-step solutions. Master RR concepts for interviews and competitive exams."
+    />
+    <style>
+      #RR1,
+      #RR2_1,
+      #RR2_2,
+      #RR3_1,
+      #RR3_2,
+      #RR4_1,
+      #RR4_2,
+      #RR4_3,
+      #RR4_4,
+      #RR5,
+      #RR6,
+      #RR7,
+      #RR8_1,
+      #RR8_2 {
+        height: 180px;
+        width: 630px;
+        background-image: url(/assets/RR1.png);
+        background-repeat: no-repeat;
+        /* border: 1px solid red; */
+      }
+
+      #RR1 {
+        background-position: -70px -43px;
+        }
+        #RR2_1 {
+          background-position: -43px -485px;
+        }
+        #RR2_2 {
+          background-position: -46px -683px;
+        }
+        #RR3_1 {
+          background-position: -54px -1251px;
+        }
+        #RR3_2 {
+          background-position: -48px -1460px;
+        }
+        #RR4_1 {
+          background-position: -66px -2085px;
+        }
+        #RR4_2 {
+          background-position: -63px -2283px;
+        }
+        #RR4_3 {
+          background-position: -56px -2500px;
+        }
+        #RR4_4 {
+          background-position: -56px -2712px;
+        }
+        #RR5 {
+          background-position: -1002px -42px;
+        }
+        #RR6 {
+          background-position: -958px -511px;
+        }
+        #RR7 {
+          background-position: -945px -992px;
+        }
+        #RR8_1 {
+          background-position: -957px -1429px;
+        }
+        #RR8_2 {
+          background-position: -957px -1656px;
+        }
+      @media (width<=770px) {
+        #RR1,
+        #RR2_1,
+        #RR2_2,
+        #RR3_1,
+        #RR3_2,
+        #RR4_1,
+        #RR4_2,
+        #RR4_3,
+        #RR4_4,
+        #RR5,
+        #RR6,
+        #RR7,
+        #RR8_1,
+        #RR8_2 {
+          height: 150px;
+          width: 400px;
+          background-image: url(/assets/RR1.png);
+        }
+        #RR1 {
+          background-position: -36px -228px;
+        }
+        #RR2_1 {
+          background-position: -46px -683px;
+        }
+        #RR2_2 {
+          background-position: -46px -683px;
+        }
+        #RR3_1 {
+          background-position: -48px -1129px;
+        }
+        #RR3_2 {
+          background-position: -48px -1129px;
+        }
+        #RR4_1 {
+          background-position: -43px -1556px;
+        }
+        #RR4_2 {
+          background-position: -43px -1556px;
+        }
+        #RR4_3 {
+          background-position: -43px -1556px;
+        }
+        #RR4_4 {
+          background-position: -43px -1556px;
+        }
+        #RR5 {
+          background-position: -50px -2029px;
+        }
+        #RR6 {
+          background-position: -38px -2450px;
+        }
+        #RR7 {
+          background-position: -59px -2896px;
+        }
+        #RR8_1 {
+          background-position: -43px -3323px;
+        }
+        #RR8_2 {
+          background-position: -43px -3323px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- upper and down button -->
@@ -97,6 +226,7 @@
         </ul>
 
         <h4>Gantt Chart</h4>
+        <div id="RR1"></div>
         <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-6) | P1 (6-8) | P4 (8-9) | P2 (9-10) |
         </p>
@@ -206,6 +336,8 @@
         </ul>
 
         <h4>Gantt Chart</h4>
+        <div id="RR2_1"></div>
+        <div id="RR2_2"></div>
         <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-6) | P1 (6-8) | P4 (8-10) | P5 (10-12) |
           P2 (12-14) | P3 (14-15) | P1 (15-17) | P4(17-20)
@@ -317,6 +449,8 @@
         </ul>
 
         <h4>Gantt Chart</h4>
+        <div id="RR3_1"></div>
+        <div id="RR3_2"></div>
         <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-6) | P1 (6-8) | P4 (8-10) | P2 (10-11) |
           P3 (11-13) | P1(13-14)
@@ -417,11 +551,18 @@
         <h4>Formula:</h4>
         <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
         <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
-
         <h4>Solution:</h4>
         <h4>Gantt Chart</h4>
+        <div id="RR4_1"></div>
+        <div id="RR4_2"></div>
+        <div id="RR4_3"></div>
+        <div id="RR4_4"></div>
         <p>
-          |P3(0-1)|P2(1-2)|P3(2-3)|P6(3-4)|P2(4-5)|P4(5-6)|P3(6-7)|P5(7-8)|P6(8-9)|P1(9-10)|P2(10-11)|P4(11-12)|P3(12-13)|P5(13-14)|P6(14-15)|P1(15-16)|P2(16-17)|P3(17-18)|P5(18-19)|P6(19-20)|P1(20-21)|P1(21-22)|P2(22-23)|P3(23-24)|P6(24-25)|P1(25-26)|P6(26-27)|
+          | P3(0-1) | P2(1-2) | P3(2-3) | P6(3-4) | P2(4-5) | P4(5-6) | P3(6-7)
+          | P5(7-8) | P6(8-9) | P1(9-10) | P2(10-11) | P4(11-12) | P3(12-13) |
+          P5(13-14) | P6(14-15) | P1(15-16) | P2(16-17) | P3(17-18) | P5(18-19)
+          | P6(19-20) | P1(20-21) | P1(21-22) | P2(22-23) | P3(23-24) |
+          P6(24-25) | P1(25-26) | P6(26-27) |
         </p>
 
         <h4>Calculations:</h4>
@@ -531,6 +672,7 @@
         </ul>
 
         <h4>Gantt Chart</h4>
+        <div id="RR5"></div>
         <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-5) | P4 (5-7) | P5 (7-9) | P2 (9-10) |
           P5 (10-11) |
@@ -639,6 +781,7 @@
         </ul>
 
         <h4>Gantt Chart</h4>
+        <div id="RR6"></div>
         <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-5) | P1 (5-6) | P4 (6-8) | P5 (8-11) |
         </p>
@@ -744,6 +887,7 @@
         </ul>
 
         <h4>Gantt Chart</h4>
+        <div id="RR7"></div>
         <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-6) | P4 (6-7) | P5 (7-9) | P2 (9-10) |
         </p>
@@ -842,6 +986,8 @@
         </ul>
 
         <h4>Gantt Chart</h4>
+        <div id="RR8_1"></div>
+        <div id="RR8_2"></div>
         <p>
           | P1 (0-3) | P2 (3-6) | P3 (6-9) | P4 (9-12) | P1 (12-15) | P5 (15-18)
           | P3 (18-21) | P4 (21-23) | P5(23-24) | P3(24-25)
