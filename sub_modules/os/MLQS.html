@@ -187,7 +187,7 @@
           scheduling algorithm? Consider the following processes with their
           Arrival Time, Burst Time. Question criteria : <br />
           (1) There are three queue Q1, Q2, Q3<br />
-          (2) In Q1 (sjf non-preemptive), Q2(Round robin, timestamp=1),Q3(FCFS)
+          (2) In Q1 (sjf, non-preemptive), Q2(Round robin, timestamp=1),Q3(FCFS)
         </h2>
 
         <table border="1" class="table table-bordered">
@@ -325,7 +325,7 @@
           scheduling algorithm? Consider the following processes with their
           Arrival Time, Burst Time. Question criteria : <br />
           (1) There are three queue Q1, Q2, Q3<br />
-          (2) In Q1 (Priority scheduling premptive), Q2(sjf preemptive) ,
+          (2) In Q1 (Priority scheduling, premptive), Q2(sjf, preemptive) ,
           Q3(Round robin, timestamp=1)
         </h2>
 
@@ -465,6 +465,168 @@
 
         <h4>Average Waiting Time:</h4>
         <p>(17 + 1 + 24 + 9 + 0 + 11 + 5 + 5) / 8 = 9</p>
+
+        <h2>
+          Question 3 : find the average Turn Around Time and Waiting Time of
+          following processes using MLQS(MULTILEVEL QUEUE SCHDULING) process
+          scheduling algorithm? Consider the following processes with their
+          Arrival Time, Burst Time. Question criteria : <br />
+          (1) There are four queue Q1, Q2, Q3, Q4<br />
+          (2) In Q1(Round robin, timestamp=1), Q2(Priority scheduling,
+          preemptive), Q3(sjf, preemptive), Q4(FCFS)
+        </h2>
+
+        <table border="1" class="table table-bordered">
+          <tr>
+            <th>Process</th>
+            <th>Arrival Time</th>
+            <th>Burst Time</th>
+            <th>Queue name</th>
+            <th>Priority</th>
+          </tr>
+          <tr>
+            <td>P1</td>
+            <td>0</td>
+            <td>6</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>P2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>P3</td>
+            <td>6</td>
+            <td>4</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>P4</td>
+            <td>10</td>
+            <td>6</td>
+            <td>3</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>P5</td>
+            <td>18</td>
+            <td>12</td>
+            <td>4</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>P6</td>
+            <td>24</td>
+            <td>4</td>
+            <td>1</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>P7</td>
+            <td>26</td>
+            <td>3</td>
+            <td>1</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>P8</td>
+            <td>32</td>
+            <td>8</td>
+            <td>2</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>P9</td>
+            <td>36</td>
+            <td>6</td>
+            <td>2</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>P10</td>
+            <td>40</td>
+            <td>10</td>
+            <td>3</td>
+            <td>6</td>
+          </tr>
+        </table>
+        <h4>Formula:</h4>
+        <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+        <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+
+        <h4>Solution:</h4>
+        <h4>Gantt Chart</h4>
+        <div id="MLQS1_1"></div>
+        <div id="MLQS1_2"></div>
+
+        <h4>Calculations:</h4>
+        <table border="1" class="table table-bordered">
+          <tr>
+            <th>Process</th>
+            <th>Completion Time</th>
+            <th>Turnaround Time (TAT)</th>
+            <th>Waiting Time (WT)</th>
+          </tr>
+          <tr>
+            <td>P1</td>
+            <td>25</td>
+            <td>25</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>P2</td>
+            <td>7</td>
+            <td>6</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>P3</td>
+            <td>29</td>
+            <td>28</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>P4</td>
+            <td>20</td>
+            <td>18</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>P5</td>
+            <td>8</td>
+            <td>6</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>P6</td>
+            <td>22</td>
+            <td>19</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>P7</td>
+            <td>9</td>
+            <td>6</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>P8</td>
+            <td>17</td>
+            <td>13</td>
+            <td>11</td>
+          </tr>
+        </table>
+
+        <h4>Average Turnaround Time:</h4>
+        <p>(25 + 6 + 28 + 18 + 6 + 19 + 6 + 13) / 8 = 15.125</p>
+
+        <h4>Average Waiting Time:</h4>
+        <p>(17 + 0 + 24 + 15 + 5 + 15 + 5 + 11) / 8 = 11.5</p>
       </div>
     </main>
     <div id="down"></div>
