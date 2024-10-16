@@ -15,7 +15,9 @@
       #MLQS1_2,
       #MLQS2_1,
       #MLQS2_2,
+      #MLQS3_1,
       #MLQS3_2,
+      #MLQS3_3,
       #MLQS4_1,
       #MLQS4_2,
       #MLQS4_3,
@@ -29,7 +31,7 @@
         width: 630px;
         background-image: url(/assets/MLQS.png);
         background-repeat: no-repeat;
-        /* border: 1px solid red; */
+        border: 1px solid red;
       }
 
       #MLQS1_1 {
@@ -44,8 +46,14 @@
       #MLQS2_2 {
         background-position: -27px -1041px;
       }
+      #MLQS3_1 {
+        background-position: -22px -1725px;
+      }
       #MLQS3_2 {
-        background-position: -48px -1460px;
+        background-position: -24px -1930px;
+      }
+      #MLQS3_3 {
+        background-position: -30px -2157px;
       }
       #MLQS4_1 {
         background-position: -66px -2085px;
@@ -79,7 +87,9 @@
         #MLQS1_2,
         #MLQS2_1,
         #MLQS2_2,
+        #MLQS3_1,
         #MLQS3_2,
+        #MLQS3_3,
         #MLQS4_1,
         #MLQS4_2,
         #MLQS4_3,
@@ -92,7 +102,7 @@
           height: 150px;
           width: 400px;
           background-image: url(/assets/MLQS.png);
-          /* border: 1px solid red; */
+          border: 1px solid red;
         }
         #MLQS1_1 {
           background-position: -22px -404px;
@@ -106,8 +116,14 @@
         #MLQS2_2 {
           background-position: -15px -1450px;
         }
+        #MLQS3_1 {
+          background-position: -54px -2415px;
+        }
         #MLQS3_2 {
-          background-position: -50px -1883px;
+          background-position: -51px -2597px;
+        }
+        #MLQS3_3 {
+          background-position: -48px -2785px;
         }
         #MLQS4_1 {
           background-position: -59px -2899px;
@@ -561,8 +577,9 @@
 
         <h4>Solution:</h4>
         <h4>Gantt Chart</h4>
-        <div id="MLQS1_1"></div>
-        <div id="MLQS1_2"></div>
+        <div id="MLQS3_1"></div>
+        <div id="MLQS3_2"></div>
+        <div id="MLQS3_3"></div>
 
         <h4>Calculations:</h4>
         <table border="1" class="table table-bordered">
@@ -574,59 +591,71 @@
           </tr>
           <tr>
             <td>P1</td>
-            <td>25</td>
-            <td>25</td>
-            <td>17</td>
+            <td>7</td>
+            <td>7</td>
+            <td>1</td>
           </tr>
           <tr>
             <td>P2</td>
-            <td>7</td>
-            <td>6</td>
+            <td>3</td>
+            <td>1</td>
             <td>0</td>
           </tr>
           <tr>
             <td>P3</td>
-            <td>29</td>
-            <td>28</td>
-            <td>24</td>
+            <td>11</td>
+            <td>5</td>
+            <td>1</td>
           </tr>
           <tr>
             <td>P4</td>
-            <td>20</td>
-            <td>18</td>
-            <td>15</td>
+            <td>17</td>
+            <td>7</td>
+            <td>1</td>
           </tr>
           <tr>
             <td>P5</td>
-            <td>8</td>
-            <td>6</td>
-            <td>5</td>
+            <td>61</td>
+            <td>43</td>
+            <td>31</td>
           </tr>
           <tr>
             <td>P6</td>
-            <td>22</td>
-            <td>19</td>
-            <td>15</td>
+            <td>31</td>
+            <td>7</td>
+            <td>3</td>
           </tr>
           <tr>
             <td>P7</td>
-            <td>9</td>
-            <td>6</td>
-            <td>5</td>
+            <td>29</td>
+            <td>3</td>
+            <td>0</td>
           </tr>
           <tr>
             <td>P8</td>
-            <td>17</td>
-            <td>13</td>
-            <td>11</td>
+            <td>46</td>
+            <td>14</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>P9</td>
+            <td>42</td>
+            <td>6</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>P10</td>
+            <td>56</td>
+            <td>16</td>
+            <td>6</td>
           </tr>
         </table>
 
         <h4>Average Turnaround Time:</h4>
-        <p>(25 + 6 + 28 + 18 + 6 + 19 + 6 + 13) / 8 = 15.125</p>
+        <p>(7 + 1 + 5 + 7 + 43 + 7 + 3 + 14 + 6 + 16) / 10 = 10.9</p>
 
         <h4>Average Waiting Time:</h4>
-        <p>(17 + 0 + 24 + 15 + 5 + 15 + 5 + 11) / 8 = 11.5</p>
+        <p>(1 + 0 + 1 + 1 + 31 + 3 + 0 + 6 + 0 + 6) / 10 = 4.9</p>
       </div>
     </main>
     <div id="down"></div>
