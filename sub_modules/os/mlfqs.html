@@ -10,6 +10,79 @@
       name="description"
       content="Explore detailed MLFQS scheduling algorithm questions with step-by-step solutions. Master key concepts with practical examples and answers to complex problems."
     />
+    <style>
+      #MLFQS1_1,
+      #MLFQS1_2,
+      #MLFQS1_3,
+      #MLFQS2_1,
+      #MLFQS2_2,
+      #MLFQS2_3,
+      #MLFQS2_4 {
+        height: 180px;
+        width: 630px;
+        background-image: url(/assets/MLFQS.png);
+        background-repeat: no-repeat;
+        /* border: 1px solid red; */
+      }
+
+      #MLFQS1_1 {
+        background-position: -55px -31px;
+      }
+      #MLFQS1_2 {
+        background-position: -60px -269px;
+      }
+      #MLFQS1_3 {
+        background-position: -52px -495px;
+      }
+      #MLFQS2_1 {
+        background-position: -36px -1296px;
+      }
+      #MLFQS2_2 {
+        background-position: -30px -1514px;
+      }
+      #MLFQS2_3 {
+        background-position: -54px -1734px;
+      }
+      #MLFQS2_4 {
+        background-position: -42px -1946px;
+      }
+
+      @media (width<=770px) {
+        #MLFQS1_1,
+        #MLFQS1_2,
+        #MLFQS1_3,
+        #MLFQS2_1,
+        #MLFQS2_2,
+        #MLFQS2_3,
+        #MLFQS2_4 {
+          height: 150px;
+          width: 400px;
+          background-image: url(/assets/MLFQS.png);
+          /* border: 1px solid red; */
+        }
+        #MLFQS1_1 {
+          background-position: -32px -698px;
+        }
+        #MLFQS1_2 {
+          background-position: -41px -874px;
+        }
+        #MLFQS1_3 {
+          background-position: -47px -1061px;
+        }
+        #MLFQS2_1 {
+          background-position: -73px -2200px;
+        }
+        #MLFQS2_2 {
+          background-position: -82px -2380px;
+        }
+        #MLFQS2_3 {
+          background-position: -76px -2596px;
+        }
+        #MLFQS2_4 {
+          background-position: -54px -2803px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- upper and down button -->
@@ -119,12 +192,15 @@
 
         <h4>Solution:</h4>
         <h4>Gantt Chart</h4>
-        <p>
+        <div id="MLFQS1_1"></div>
+        <div id="MLFQS1_2"></div>
+        <div id="MLFQS1_3"></div>
+        <!-- <p>
           | P1 (1-5) | P2 (5-9) | P3 (9-13) | P4 (13-17) | P7 (17-21) | P6
           (21-25) | P5 (25-29) | P8 (29-33) | P1 (33-35) | P2(35-39) | P3(39-47)
           | P4(47-55) | P7(55-59) | P6(59-65) | P5(65-67) | P8(67-69) |
           P4(69-71)
-        </p>
+        </p> -->
 
         <h4>Calculations:</h4>
         <table border="1" class="table table-bordered">
@@ -255,12 +331,16 @@
 
         <h4>Solution:</h4>
         <h4>Gantt Chart</h4>
-        <p>
+        <div id="MLFQS2_1"></div>
+        <div id="MLFQS2_2"></div>
+        <div id="MLFQS2_3"></div>
+        <div id="MLFQS2_4"></div>
+        <!-- <p>
           | P1 (0-5) | P2 (5-7) | P1 (7-8) | P3 (8-10) | P4 (10-12) | P3 (12-14)
           | P5 (14-16) | P4 (16-18) | P6 (18-20) | P3(20-21) | P5(21-22) |
           P7(22-24) | P8(24-26) | P4(26-28) | P6(28-29) | P5(29-30) | P8(30-34)
           | P4(34-36) | P8(36-40)
-        </p>
+        </p> -->
 
         <h4>Calculations:</h4>
         <table border="1" class="table table-bordered">

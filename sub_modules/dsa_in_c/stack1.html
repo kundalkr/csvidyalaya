@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script  type="text/javascript" src="../../externalcss.js"></script>
+    <script type="text/javascript" src="../../externalcss.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-
     <!-- upper and down button -->
     <div class="container">
       <h1 id="upper">Stack Questions</h1>
@@ -38,7 +37,7 @@
       >
     </button>
     <!-- upper and down button end-->
-     <main>
+    <main>
       <div class="container">
         <h3>
           1. Convert the infix expression (a-b/c)*(a/c-d) to prefix expression.
@@ -54,12 +53,13 @@
           <li>Step 1: Apply operator precedence and associativity rules.</li>
           <li>Step 2: The postfix expression is: abc/-ac/d-*.</li>
           <li>
-            Step 3: Reverse the postfix to get the prefix expression: *-a/bc-/acd.
+            Step 3: Reverse the postfix to get the prefix expression:
+            *-a/bc-/acd.
           </li>
         </ul>
-  
+
         <p>Thus, the prefix expression is <strong> *-a/bc-/acd </strong>.</p>
-  
+
         <h3>2. Evaluate the postfix expression "5 6 2 + * 12 4 / -".</h3>
         <p><strong>Answer:</strong></p>
         <p>
@@ -68,17 +68,21 @@
         </p>
         <ul>
           <li>Step 1: Push 5, 6, and 2 onto the stack.</li>
-          <li>Step 2: Pop 6 and 2, add them (6+2=8), and push the result (8).</li>
           <li>
-            Step 3: Pop 5 and 8, multiply them (5*8=40), and push the result (40).
+            Step 2: Pop 6 and 2, add them (6+2=8), and push the result (8).
           </li>
           <li>
-            Step 4: Push 12 and 4, divide them (12/4=3), and push the result (3).
+            Step 3: Pop 5 and 8, multiply them (5*8=40), and push the result
+            (40).
+          </li>
+          <li>
+            Step 4: Push 12 and 4, divide them (12/4=3), and push the result
+            (3).
           </li>
           <li>Step 5: Pop 40 and 3, subtract them (40-3=37).</li>
         </ul>
         <p>Final result is <strong>37</strong>.</p>
-  
+
         <h3>3. Convert the prefix expression +A*BCD to infix.</h3>
         <p><strong>Answer:</strong></p>
         <p>To convert prefix to infix, we process from right to left.</p>
@@ -92,7 +96,7 @@
           </li>
         </ul>
         <p>Thus, the infix expression is <strong>(A+(B*C))</strong>.</p>
-  
+
         <h3>
           4. What is the result of pushing the elements 3, 5, and 7 into a stack
           and then popping two elements?
@@ -106,8 +110,10 @@
           So, the final state of the stack is: <br />
           Top -> 3.
         </p>
-  
-        <h3>5. Convert the infix expression A*(B+C)/D to postfix expression.</h3>
+
+        <h3>
+          5. Convert the infix expression A*(B+C)/D to postfix expression.
+        </h3>
         <p><strong>Answer:</strong></p>
         <p>The given infix expression is A*(B+C)/D. <br /></p>
         To convert to postfix:
@@ -119,7 +125,7 @@
           <li>Step 3: Apply / with D, so the final expression is ABC+*D/.</li>
         </ul>
         <p>Thus, the postfix expression is <strong>ABC+*D/</strong>.</p>
-  
+
         <h3>6. Implement a stack using arrays in C.</h3>
         <p><strong>Answer:</strong></p>
         <p>In C, a stack can be implemented using arrays as follows:</p>
@@ -148,9 +154,10 @@
         <p>
           This code defines a stack with push and pop operations using arrays.
         </p>
-  
+
         <h3>
-          7. What are the time complexities of push and pop operations in a stack?
+          7. What are the time complexities of push and pop operations in a
+          stack?
         </h3>
         <p><strong>Answer:</strong></p>
         <p>
@@ -162,11 +169,12 @@
           <li>Time complexity of push: <strong>O(1)</strong></li>
           <li>Time complexity of pop: <strong>O(1)</strong></li>
         </ul>
-  
+
         <h3>8. Convert the postfix expression "AB+C*D-" to infix.</h3>
         <p><strong>Answer:</strong></p>
         <p>
-          To convert a postfix expression to infix, we process from left to right.
+          To convert a postfix expression to infix, we process from left to
+          right.
         </p>
         <ul>
           <li>Step 1: Take the operands A and B, and apply + to get (A+B).</li>
@@ -176,38 +184,42 @@
           </li>
         </ul>
         <p>Thus, the infix expression is <strong>(((A+B)*C)-D)</strong>.</p>
-  
+
         <h3>9. Explain how to check for balanced parentheses using a stack.</h3>
         <p><strong>Answer:</strong></p>
         <p>To check for balanced parentheses, we use a stack:</p>
         <ul>
           <li>Step 1: Traverse the expression.</li>
-          <li>Step 2: Push opening parentheses '(', '{', '[' onto the stack.</li>
           <li>
-            Step 3: When a closing parenthesis ')', '}', ']' is encountered, check
-            if it matches the top element of the stack. If yes, pop the top
-            element.
+            Step 2: Push opening parentheses '(', '{', '[' onto the stack.
+          </li>
+          <li>
+            Step 3: When a closing parenthesis ')', '}', ']' is encountered,
+            check if it matches the top element of the stack. If yes, pop the
+            top element.
           </li>
           <li>
             Step 4: If the stack is empty at the end, the parentheses are
             balanced.
           </li>
         </ul>
-  
+
         <h3>10. Convert the prefix expression "*+AB-CD" to infix.</h3>
         <p><strong>Answer:</strong></p>
         <p>To convert prefix to infix, we process from right to left.</p>
         <ul>
           <li>Step 1: Start with D (operand).</li>
           <li>Step 2: Apply -, so the expression becomes (C-D).</li>
-          <li>Step 3: Apply + with A and B, so the expression becomes (A+B).</li>
+          <li>
+            Step 3: Apply + with A and B, so the expression becomes (A+B).
+          </li>
           <li>
             Step 4: Apply * with both parts, so the final expression is
             ((A+B)*(C-D)).
           </li>
         </ul>
         <p>Thus, the infix expression is <strong>((A+B)*(C-D))</strong>.</p>
-  
+
         <h3>11. How can a stack be used to reverse a string?</h3>
         <p><strong>Answer:</strong></p>
         <p>To reverse a string using a stack:</p>
@@ -222,7 +234,7 @@
           Since the stack is LIFO (Last In First Out), the order of characters
           will be reversed.
         </p>
-  
+
         <h3>12. Convert the infix expression "A/B+C*(D-E)" to postfix.</h3>
         <p><strong>Answer:</strong></p>
         <p>
@@ -240,31 +252,35 @@
           </li>
         </ul>
         <p>Thus, the postfix expression is <strong>AB/CDE-*+</strong>.</p>
-  
+
         <h3>13. What is the main difference between stack and queue?</h3>
         <p><strong>Answer:</strong></p>
         <p>
-          The main difference between a stack and a queue lies in how elements are
-          removed:
+          The main difference between a stack and a queue lies in how elements
+          are removed:
         </p>
         <ul>
           <li>
-            Stack: Follows the LIFO (Last In First Out) principle, where the last
-            element added is the first one removed.
+            Stack: Follows the LIFO (Last In First Out) principle, where the
+            last element added is the first one removed.
           </li>
           <li>
             Queue: Follows the FIFO (First In First Out) principle, where the
             first element added is the first one removed.
           </li>
         </ul>
-  
+
         <h3>14. Convert the postfix expression "ABC/-AK/L-*" to infix.</h3>
         <p><strong>Answer:</strong></p>
         <p>To convert postfix to infix, process from left to right.</p>
         <ul>
-          <li>Step 1: Apply / with B and C, so the expression becomes (B/C).</li>
+          <li>
+            Step 1: Apply / with B and C, so the expression becomes (B/C).
+          </li>
           <li>Step 2: Apply - with A, giving (A-(B/C)).</li>
-          <li>Step 3: Apply / with A and K, so the expression becomes (A/K).</li>
+          <li>
+            Step 3: Apply / with A and K, so the expression becomes (A/K).
+          </li>
           <li>Step 4: Apply - with L, giving ((A/K)-L).</li>
           <li>
             Step 5: Apply * to both parts, resulting in ((A-(B/C))*((A/K)-L)).
@@ -273,16 +289,16 @@
         <p>
           Thus, the infix expression is <strong>((A-(B/C))*((A/K)-L))</strong>.
         </p>
-  
+
         <h3>15. Explain stack overflow and how it occurs.</h3>
         <p><strong>Answer:</strong></p>
         <p>
-          A stack overflow occurs when there is an attempt to push an element onto
-          a stack that is already full. Since a stack has a finite size, trying to
-          add more elements than it can hold causes an overflow, which can result
-          in program crashes or unexpected behavior.
+          A stack overflow occurs when there is an attempt to push an element
+          onto a stack that is already full. Since a stack has a finite size,
+          trying to add more elements than it can hold causes an overflow, which
+          can result in program crashes or unexpected behavior.
         </p>
-  
+
         <h3>16. Convert the prefix expression "-*+ABC/DE" to infix.</h3>
         <p><strong>Answer:</strong></p>
         <p>To convert prefix to infix, process from right to left.</p>
@@ -296,7 +312,7 @@
           </li>
         </ul>
         <p>Thus, the infix expression is <strong>((A+B*C)-(D/E))</strong>.</p>
-  
+
         <h3>
           17. Write a program to check for balanced parentheses using a stack in
           C.
@@ -305,7 +321,7 @@
         <p>
           The following C program checks for balanced parentheses using a stack:
         </p>
-  
+
         <pre>
           #include &lt;stdio.h&gt;
           #include &lt;string.h&gt;
@@ -344,7 +360,7 @@
               return 0;
           }
         </pre>
-  
+
         <h3>18. How can a stack be used in function recursion?</h3>
         <p><strong>Answer:</strong></p>
         <p>
@@ -353,7 +369,7 @@
           enables the program to track where it left off and resume from that
           point when the recursion unwinds.
         </p>
-  
+
         <h3>19. Convert the postfix expression "AB+CD+*" to infix.</h3>
         <p><strong>Answer:</strong></p>
         <p>To convert postfix to infix, process from left to right.</p>
@@ -363,7 +379,7 @@
           <li>Step 3: Apply * to both parts, resulting in (A+B)*(C+D).</li>
         </ul>
         <p>Thus, the infix expression is <strong>(A+B)*(C+D)</strong>.</p>
-  
+
         <h3>20. Describe how to implement a queue using two stacks.</h3>
         <p><strong>Answer:</strong></p>
         <p>To implement a queue using two stacks:</p>
@@ -379,9 +395,7 @@
           </li>
         </ul>
       </div>
-
-     </main>
-
+    </main>
 
     <div class="d-grid gap-2 col-6 mx-auto">
       <button class="btn btn-primary" id="down" type="button">
@@ -392,6 +406,6 @@
     </div>
     <br /><br />
 
-    <script type="text/javascript" src="../../hdr_ftr.js" ></script>
+    <script type="text/javascript" src="../../hdr_ftr.js"></script>
   </body>
 </html>
