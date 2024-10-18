@@ -111,7 +111,7 @@ footer.style.backgroundColor = "#FFD1DC";
 footer.innerHTML = `
     <div class="container">
       <footer
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  border-top"
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
       >
         <div class="col mb-3">
           <a
@@ -125,20 +125,22 @@ footer.innerHTML = `
           <p class="text-muted">
             © 2024 <span class="navbar-bran">csvidyalaya.com</span>
           </p>
-              <p>Here student can practice university core subject question like OS, DSA , any programming language</p>
+          <p>
+            Here student can practice university core subject question like OS,
+            DSA , any programming language
+          </p>
         </div>
-
-        <div class="col mb-3"></div>
-
-        <div class="col mb-3">
-          <h5>HOME</h5>
+        <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">HOME</li>
             <li class="nav-item mb-2">
               <a href="/index.html" class="nav-link p-0 text-muted">Home</a>
             </li>
-     
+
             <li class="nav-item mb-2">
-              <a href="/anotherpage/FAQs.html" class="nav-link p-0 text-muted">FAQs</a>
+              <a href="/anotherpage/FAQs.html" class="nav-link p-0 text-muted"
+                >FAQs</a
+              >
             </li>
 
             <li class="nav-item mb-2">
@@ -148,46 +150,163 @@ footer.innerHTML = `
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-muted">About</a>
             </li>
-            <li class="nav-item mb-2"><a href="/anotherpage/privacy_policy.html" class="nav-link p-0 text-muted">Privacy policy</a></li>
+            <li class="nav-item mb-2">
+              <a
+                href="/anotherpage/privacy_policy.html"
+                class="nav-link p-0 text-muted"
+                >Privacy policy</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="col mb-3">
-          <h5>CPU Scheduling Question</h5>
+        <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">CPU Scheduling Question</li>
             <li class="nav-item mb-2">
-              <a href="/sub_modules/os/fcfs.html" class="nav-link p-0 text-muted">FCFS scheduling</a>
+              <a
+                href="/sub_modules/os/fcfs.html"
+                class="nav-link p-0 text-muted"
+                >FCFS scheduling</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="/sub_modules/os/sjf1.html" class="nav-link p-0 text-muted">SJF scheduling</a>
+              <a
+                href="/sub_modules/os/sjf1.html"
+                class="nav-link p-0 text-muted"
+                >SJF scheduling</a
+              >
             </li>
             <li class="nav-item mb-2">
               <a href="/sub_modules/os/ps1.html" class="nav-link p-0 text-muted"
                 >PRIORITY Scheduling</a
               >
             </li>
-                <li class="nav-item mb-2">
-              <a href="/sub_modules/os/RR1.html" class="nav-link p-0 text-muted">Round Robin scheduling</a>
+            <li class="nav-item mb-2">
+              <a href="/sub_modules/os/RR1.html" class="nav-link p-0 text-muted"
+                >Round Robin scheduling</a
+              >
             </li>
-             <li class="nav-item mb-2">
-              <a href="/sub_modules/os/mlfqs.html" class="nav-link p-0 text-muted"
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/os/mlfqs.html"
+                class="nav-link p-0 text-muted"
                 >MLFQS Scheduling</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/os/MLQS.html"
+                class="nav-link p-0 text-muted"
+                >MLQS Scheduling</a
               >
             </li>
           </ul>
         </div>
 
-        <div class="col mb-3">
-          <h5>Subtopic Question</h5>
+        <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">DSA QUESTION</li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">infix to prefix</a>
+              <a
+                href="/sub_modules/dsa_in_c/Arrays.html"
+                class="nav-link p-0 text-muted"
+                >Arrays</a
+              >
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">infix to postfix</a>
+              <a
+                href="/sub_modules/dsa_in_c/infixtopostfix.html"
+                class="nav-link p-0 text-muted"
+                >Infix And Postfix Conversion</a
+              >
             </li>
-            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-             -->
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/dsa_in_c/infixtoprefix.html"
+                class="nav-link p-0 text-muted"
+                >Infix And Prefix Conversion</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/dsa_in_c/postfixprefixofinfix.html"
+                class="nav-link p-0 text-muted"
+                >Infix To Postfix and Prefix Conversion</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/dsa_in_c/prefixtopostfix.html"
+                class="nav-link p-0 text-muted"
+                >Prefix And Postfix Conversion</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/dsa_in_c/linkedlist1.html"
+                class="nav-link p-0 text-muted"
+                >Linkedlist Question</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/dsa_in_c/queue1.html"
+                class="nav-link p-0 text-muted"
+                >Queue Question</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/dsa_in_c/stack1.html"
+                class="nav-link p-0 text-muted"
+                >stack Question</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3" id="foot">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">Digital Fundamentals Questions</li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html"
+                class="nav-link p-0 text-muted"
+                >Boolean Algebra Question</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3" id="foot">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">Number System Questions</li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/Digital Fundamentals/Number System/decimaltobinary.html"
+                class="nav-link p-0 text-muted"
+                >Decimal And Binary Conversion</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/Digital Fundamentals/Number System/decimaltohexadecimal1.html"
+                class="nav-link p-0 text-muted"
+                >Decimal And Hexadecimal Conversion</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/Digital Fundamentals/Number System/decimaltoOctal1.html"
+                class="nav-link p-0 text-muted"
+                >Decimal And Octal Conversion</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+           href="/sub_modules/Digital Fundamentals/Number System/octaltohexadecimal1.html"
+                class="nav-link p-0 text-muted"
+                >Octal And Hexadecimal Conversion</a
+              >
+            </li>
           </ul>
         </div>
       </footer>

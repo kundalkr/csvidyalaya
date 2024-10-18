@@ -173,7 +173,29 @@ document.head.appendChild(jsscript);
 // analytics end
 const cssstyle = document.createElement("style");
 cssstyle.innerHTML = `
-
+@media (width<=700px) {
+        div#foot:has(ul) {
+          height: auto;
+          display: flex;
+          justify-content: center;
+    
+        }
+        div#foot > ul li {
+          display: flex;
+          justify-content: center; /* Center text horizontally within the li */
+          align-items: center; /* Center text vertically within the li */
+          flex-wrap: wrap; /* Allow text to wrap */
+          width: 250px; /* Set a width for the li elements */
+          text-align: center; /* Center text alignment */
+          margin: 5px 0; /* Optional: add some spacing between items */
+        }
+      }
+            .headi{
+        color: rgb(11, 24, 207);
+        /* font-size: large; */
+        font-weight: bold;
+        
+      }
 .navbar-bran {
         font-family: "Pacifico", cursive;
         font-weight: 400;
