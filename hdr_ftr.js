@@ -4,7 +4,7 @@ header.innerHTML = `
       <div class="container-fluid">
         <a
           class="navbar-brand navbar-bran"
-          href="https://kundalkr.github.io/csvidyalaya/"
+          href="csvidyalaya.com" target="_blank"
           >CSvidyalaya.com</a
         >
         <button
@@ -24,7 +24,7 @@ header.innerHTML = `
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="https://kundalkr.github.io/csvidyalaya/"
+                href="https://kundalkr.github.io/csvidyalaya/" target="_blank"
                 >Home</a
               >
             </li>
@@ -40,27 +40,27 @@ header.innerHTML = `
                 Subjects
               </a>
               <ul
-                class="dropdown-menu dropdown-menu-dark"
+                class="dropdown-menu dropdown-menu-dark" 
                 aria-labelledby="navbarDropdown"
               >
                 <li>
                   <a
                     class="dropdown-item"
-                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/os/os_topic.html"
+                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/os/os_topic.html" target="_blank"
                     >Operating System</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/dsa_in_c/dsa_in_c_topic.html"
+                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/dsa_in_c/dsa_in_c_topic.html" target="_blank"
                     >Dsa</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html"
+                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html" target="_blank"
                     >Digital Fundamentals</a
                   >
                 </li>
@@ -83,7 +83,7 @@ header.innerHTML = `
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="https://kundalkr.github.io/csvidyalaya/"
+                href="csvidyalaya.com" target="_blank"
                 >About</a
               >
             </li>
@@ -134,26 +134,26 @@ footer.innerHTML = `
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">HOME</li>
             <li class="nav-item mb-2">
-              <a href="/index.html" class="nav-link p-0 text-muted">Home</a>
+              <a href="/index.html" class="nav-link p-0 text-muted" target="_blank">Home</a>
             </li>
 
             <li class="nav-item mb-2">
-              <a href="/anotherpage/FAQs.html" class="nav-link p-0 text-muted"
+              <a href="/anotherpage/FAQs.html" class="nav-link p-0 text-muted" target="_blank"
                 >FAQs</a
               >
             </li>
 
             <li class="nav-item mb-2">
-              <a href="/sitemap.xml" class="nav-link p-0 text-muted">Sitemap</a>
+              <a href="/sitemap.xml" class="nav-link p-0 text-muted" target="_blank">Sitemap</a>
             </li>
 
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">About</a>
+              <a href="#" class="nav-link p-0 text-muted" target="_blank">About</a>
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/anotherpage/privacy_policy.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Privacy policy</a
               >
             </li>
@@ -165,38 +165,38 @@ footer.innerHTML = `
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/os/fcfs.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >FCFS scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/os/sjf1.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >SJF scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="/sub_modules/os/ps1.html" class="nav-link p-0 text-muted"
+              <a href="/sub_modules/os/ps1.html" class="nav-link p-0 text-muted" target="_blank"
                 >PRIORITY Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="/sub_modules/os/RR1.html" class="nav-link p-0 text-muted"
+              <a href="/sub_modules/os/RR1.html" class="nav-link p-0 text-muted" target="_blank"
                 >Round Robin scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/os/mlfqs.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >MLFQS Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/os/MLQS.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >MLQS Scheduling</a
               >
             </li>
@@ -209,56 +209,56 @@ footer.innerHTML = `
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/Arrays.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Arrays</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/infixtopostfix.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Infix And Postfix Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/infixtoprefix.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Infix And Prefix Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/postfixprefixofinfix.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Infix To Postfix and Prefix Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/prefixtopostfix.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Prefix And Postfix Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/linkedlist1.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Linkedlist Question</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/queue1.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Queue Question</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/stack1.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >stack Question</a
               >
             </li>
@@ -270,7 +270,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Boolean Algebra Question</a
               >
             </li>
@@ -282,28 +282,29 @@ footer.innerHTML = `
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/Digital Fundamentals/Number System/decimaltobinary.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Decimal And Binary Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/Digital Fundamentals/Number System/decimaltohexadecimal1.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Decimal And Hexadecimal Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/Digital Fundamentals/Number System/decimaltoOctal1.html"
-                class="nav-link p-0 text-muted"
+                class="nav-link p-0 text-muted" target="_blank"
                 >Decimal And Octal Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-           href="/sub_modules/Digital Fundamentals/Number System/octaltohexadecimal1.html"
-                class="nav-link p-0 text-muted"
+                href="/sub_modules/Digital Fundamentals/Number System/octaltohexadecimal1.html"
+                class="nav-link p-0 text-muted" target="_blank"
+               
                 >Octal And Hexadecimal Conversion</a
               >
             </li>
