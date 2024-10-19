@@ -10,7 +10,7 @@
     <style>
       @media (width<=770px) {
         div#foot:has(ul) {
-          height: auto;
+    
           display: flex;
           justify-content: center;
           border: 1px solid red;
@@ -19,6 +19,20 @@
           display: flex;
           justify-content: center; /* Center text horizontally within the li */
           align-items: center; /* Center text vertically within the li */
+          flex-wrap: wrap; /* Allow text to wrap */
+          width: 200px; /* Set a width for the li elements */
+          text-align: center; /* Center text alignment */
+          margin: 5px 0; /* Optional: add some spacing between items */
+        }
+        div#foot:has(p){
+          display: flex;
+          justify-content: center;
+          border: 1px solid red;
+        }
+        div#foot > p{
+          display: flex;
+          justify-content: center; 
+          align-items: center;
           flex-wrap: wrap; /* Allow text to wrap */
           width: 200px; /* Set a width for the li elements */
           text-align: center; /* Center text alignment */
@@ -38,15 +52,7 @@
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
       >
-        <div class="col mb-3">
-          <a
-            href="/"
-            class="d-flex align-items-center mb-3 link-dark text-decoration-none"
-          >
-            <svg class="bi me-2" width="40" height="32">
-              <use xlink:href="#bootstrap"></use>
-            </svg>
-          </a>
+        <div class="col mb-3 " id="foot">
           <p class="text-muted">
             © 2024 <span class="navbar-bran">csvidyalaya.com</span>
           </p>

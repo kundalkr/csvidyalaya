@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script  type="text/javascript" src="../../externalcss.js"></script>
+    <script type="text/javascript" src="../../externalcss.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -72,217 +73,262 @@
     <br /><br />
     <main>
       <div class="container">
-        <h3>
-          49. Convert the infix expression (A + B) * (C + D) to postfix
-          expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>
-          To convert the infix expression (A + B) * (C + D) to postfix, we
-          follow the precedence of operators and associativity.
-        </p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. (A + B) becomes AB+<br />2. (C + D) becomes CD+<br />3. Now the
-          entire expression becomes AB+CD+*.
-        </p>
-        <p>The postfix expression is: <strong>AB+CD+*</strong></p>
+        <div class="question">
+          <h3>
+            49. Convert the infix expression (A + B) * (C + D) to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>
+            To convert the infix expression (A + B) * (C + D) to postfix, we
+            follow the precedence of operators and associativity.
+          </p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. (A + B) becomes AB+<br />2. (C + D) becomes CD+<br />3. Now the
+            entire expression becomes AB+CD+*.
+          </p>
+          <p>The postfix expression is: <strong>AB+CD+*</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            50. Convert the infix expression A * (B + C) / D to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. A * (B + C) becomes ABC+*<br />2. Now, divide the result by D.
+          </p>
+          <p>The postfix expression is: <strong>ABC+*D/</strong></p>
+        </div>
+        <div class="question">
+          <h3>51. Convert the postfix expression AB+C* to infix expression.</h3>
+          <p><strong>Answer:</strong></p>
+          <p>
+            In postfix, operands appear before operators, so the order of
+            operations is important.
+          </p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. A and B are operands, and + is an operator, so combine them as (A
+            + B).<br />2. C is the next operand, and * is the operator, so
+            multiply (A + B) with C.
+          </p>
+          <p>The infix expression is: <strong>(A + B) * C</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            52. Convert the infix expression (A / B) + (C * D) - E to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. (A / B) becomes AB/<br />2. (C * D) becomes CD*<br />3. Now add
+            AB/ and CD*<br />4. Finally, subtract E.
+          </p>
+          <p>The postfix expression is: <strong>AB/CD*+E-</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            53. Convert the postfix expression AB+CD+*E- to infix expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. AB+ becomes (A + B)<br />2. CD+ becomes (C + D)<br />3. Now
+            multiply (A + B) with (C + D) to get (A + B) * (C + D)<br />4.
+            Subtract E from the result.
+          </p>
+          <p>
+            The infix expression is: <strong>((A + B) * (C + D)) - E</strong>
+          </p>
+        </div>
+        <div class="question">
+          <h3>
+            54. Convert the infix expression A * B + C / D to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. A * B becomes AB*<br />2. C / D becomes CD/<br />3. Now add AB*
+            and CD/.
+          </p>
+          <p>The postfix expression is: <strong>AB*CD/+</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            55. Convert the postfix expression AB*C+D/ to infix expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. AB* becomes (A * B)<br />2. C and D are operands, and / is the
+            operator, so combine them as (C / D)<br />3. Now add (A * B) and (C
+            / D).
+          </p>
+          <p>The infix expression is: <strong>(A * B) + (C / D)</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            56. Convert the infix expression (A - B) * (C + D) / E to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. (A - B) becomes AB-<br />2. (C + D) becomes CD+<br />3. Multiply
+            AB- with CD+, then divide by E.
+          </p>
+          <p>The postfix expression is: <strong>AB-CD+*E/</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            57. Convert the postfix expression AB-CD+*E/ to infix expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. AB- becomes (A - B)<br />2. CD+ becomes (C + D)<br />3. Multiply
+            (A - B) with (C + D), then divide by E.
+          </p>
+          <p>
+            The infix expression is: <strong>((A - B) * (C + D)) / E</strong>
+          </p>
+        </div>
+        <div class="question">
+          <h3>
+            58. Convert the infix expression A + B * (C - D) to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>1. B * (C - D) becomes BCD-*<br />2. Now add A to the result.</p>
+          <p>The postfix expression is: <strong>ABCD-*+</strong></p>
+        </div>
 
-        <h3>
-          50. Convert the infix expression A * (B + C) / D to postfix
-          expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>1. A * (B + C) becomes ABC+*<br />2. Now, divide the result by D.</p>
-        <p>The postfix expression is: <strong>ABC+*D/</strong></p>
-
-        <h3>51. Convert the postfix expression AB+C* to infix expression.</h3>
-        <p><strong>Answer:</strong></p>
-        <p>
-          In postfix, operands appear before operators, so the order of
-          operations is important.
-        </p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. A and B are operands, and + is an operator, so combine them as (A +
-          B).<br />2. C is the next operand, and * is the operator, so multiply
-          (A + B) with C.
-        </p>
-        <p>The infix expression is: <strong>(A + B) * C</strong></p>
-
-        <h3>
-          52. Convert the infix expression (A / B) + (C * D) - E to postfix
-          expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. (A / B) becomes AB/<br />2. (C * D) becomes CD*<br />3. Now add AB/
-          and CD*<br />4. Finally, subtract E.
-        </p>
-        <p>The postfix expression is: <strong>AB/CD*+E-</strong></p>
-
-        <h3>
-          53. Convert the postfix expression AB+CD+*E- to infix expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. AB+ becomes (A + B)<br />2. CD+ becomes (C + D)<br />3. Now
-          multiply (A + B) with (C + D) to get (A + B) * (C + D)<br />4.
-          Subtract E from the result.
-        </p>
-        <p>The infix expression is: <strong>((A + B) * (C + D)) - E</strong></p>
-
-        <h3>
-          54. Convert the infix expression A * B + C / D to postfix expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. A * B becomes AB*<br />2. C / D becomes CD/<br />3. Now add AB* and
-          CD/.
-        </p>
-        <p>The postfix expression is: <strong>AB*CD/+</strong></p>
-
-        <h3>55. Convert the postfix expression AB*C+D/ to infix expression.</h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. AB* becomes (A * B)<br />2. C and D are operands, and / is the
-          operator, so combine them as (C / D)<br />3. Now add (A * B) and (C /
-          D).
-        </p>
-        <p>The infix expression is: <strong>(A * B) + (C / D)</strong></p>
-
-        <h3>
-          56. Convert the infix expression (A - B) * (C + D) / E to postfix
-          expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. (A - B) becomes AB-<br />2. (C + D) becomes CD+<br />3. Multiply
-          AB- with CD+, then divide by E.
-        </p>
-        <p>The postfix expression is: <strong>AB-CD+*E/</strong></p>
-
-        <h3>
-          57. Convert the postfix expression AB-CD+*E/ to infix expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. AB- becomes (A - B)<br />2. CD+ becomes (C + D)<br />3. Multiply (A
-          - B) with (C + D), then divide by E.
-        </p>
-        <p>The infix expression is: <strong>((A - B) * (C + D)) / E</strong></p>
-
-        <h3>
-          58. Convert the infix expression A + B * (C - D) to postfix
-          expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>1. B * (C - D) becomes BCD-*<br />2. Now add A to the result.</p>
-        <p>The postfix expression is: <strong>ABCD-*+</strong></p>
-
-        <h3>59. Convert the postfix expression ABCD-*+ to infix expression.</h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>1. BCD-* becomes B * (C - D)<br />2. Now add A to the result.</p>
-        <p>The infix expression is: <strong>A + (B * (C - D))</strong></p>
-
-        <h3>
-          60. Convert the infix expression A * B + C - D to postfix expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>1. A * B becomes AB*<br />2. Now add C, and then subtract D.</p>
-        <p>The postfix expression is: <strong>AB*C+D-</strong></p>
-
-        <h3>61. Convert the postfix expression AB*C+D- to infix expression.</h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. AB* becomes (A * B)<br />2. Add C to the result, then subtract D.
-        </p>
-        <p>The infix expression is: <strong>(A * B) + C - D</strong></p>
-        <h3>
-          62. Convert the infix expression A + (B * C) - D to postfix
-          expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. B * C becomes BC*<br />2. Now add A to BC* and then subtract D.
-        </p>
-        <p>The postfix expression is: <strong>ABC*+D-</strong></p>
-
-        <h3>63. Convert the postfix expression ABC*+D- to infix expression.</h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>1. BC* becomes (B * C)<br />2. Add A to (B * C), then subtract D.</p>
-        <p>The infix expression is: <strong>A + (B * C) - D</strong></p>
-
-        <h3>
-          64. Convert the infix expression (A - B) * (C / D) + E to postfix
-          expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. (A - B) becomes AB-<br />2. (C / D) becomes CD/<br />3. Multiply
-          AB- with CD/ and then add E.
-        </p>
-        <p>The postfix expression is: <strong>AB-CD/*E+</strong></p>
-
-        <h3>
-          65. Convert the postfix expression AB-CD/*E+ to infix expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. AB- becomes (A - B)<br />2. CD/ becomes (C / D)<br />3. Multiply (A
-          - B) with (C / D), then add E.
-        </p>
-        <p>The infix expression is: <strong>((A - B) * (C / D)) + E</strong></p>
-
-        <h3>
-          66. Convert the infix expression A * (B + C) - D / E to postfix
-          expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. (B + C) becomes BC+<br />2. Multiply A with BC+, then divide D by E
-          and subtract.
-        </p>
-        <p>The postfix expression is: <strong>ABC+*DE/-</strong></p>
-
-        <h3>
-          67. Convert the postfix expression ABC+*DE/- to infix expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. BC+ becomes (B + C)<br />2. Multiply A with (B + C), then subtract
-          (D / E).
-        </p>
-        <p>The infix expression is: <strong>(A * (B + C)) - (D / E)</strong></p>
-
-        <h3>
-          68. Convert the infix expression A / B + (C * D) - E to postfix
-          expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>Step-by-step conversion:</p>
-        <p>
-          1. A / B becomes AB/<br />2. C * D becomes CD*<br />3. Add AB/ and
-          CD*, then subtract E.
-        </p>
-        <p>The postfix expression is: <strong>AB/CD*+E-</strong></p>
+        <div class="question">
+          <h3>
+            59. Convert the postfix expression ABCD-*+ to infix expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>1. BCD-* becomes B * (C - D)<br />2. Now add A to the result.</p>
+          <p>The infix expression is: <strong>A + (B * (C - D))</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            60. Convert the infix expression A * B + C - D to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>1. A * B becomes AB*<br />2. Now add C, and then subtract D.</p>
+          <p>The postfix expression is: <strong>AB*C+D-</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            61. Convert the postfix expression AB*C+D- to infix expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. AB* becomes (A * B)<br />2. Add C to the result, then subtract D.
+          </p>
+          <p>The infix expression is: <strong>(A * B) + C - D</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            62. Convert the infix expression A + (B * C) - D to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. B * C becomes BC*<br />2. Now add A to BC* and then subtract D.
+          </p>
+          <p>The postfix expression is: <strong>ABC*+D-</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            63. Convert the postfix expression ABC*+D- to infix expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. BC* becomes (B * C)<br />2. Add A to (B * C), then subtract D.
+          </p>
+          <p>The infix expression is: <strong>A + (B * C) - D</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            64. Convert the infix expression (A - B) * (C / D) + E to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. (A - B) becomes AB-<br />2. (C / D) becomes CD/<br />3. Multiply
+            AB- with CD/ and then add E.
+          </p>
+          <p>The postfix expression is: <strong>AB-CD/*E+</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            65. Convert the postfix expression AB-CD/*E+ to infix expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. AB- becomes (A - B)<br />2. CD/ becomes (C / D)<br />3. Multiply
+            (A - B) with (C / D), then add E.
+          </p>
+          <p>
+            The infix expression is: <strong>((A - B) * (C / D)) + E</strong>
+          </p>
+        </div>
+        <div class="question">
+          <h3>
+            66. Convert the infix expression A * (B + C) - D / E to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. (B + C) becomes BC+<br />2. Multiply A with BC+, then divide D by
+            E and subtract.
+          </p>
+          <p>The postfix expression is: <strong>ABC+*DE/-</strong></p>
+        </div>
+        <div class="question">
+          <h3>
+            67. Convert the postfix expression ABC+*DE/- to infix expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. BC+ becomes (B + C)<br />2. Multiply A with (B + C), then
+            subtract (D / E).
+          </p>
+          <p>
+            The infix expression is: <strong>(A * (B + C)) - (D / E)</strong>
+          </p>
+        </div>
+        <div class="question">
+          <h3>
+            68. Convert the infix expression A / B + (C * D) - E to postfix
+            expression.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. A / B becomes AB/<br />2. C * D becomes CD*<br />3. Add AB/ and
+            CD*, then subtract E.
+          </p>
+          <p>The postfix expression is: <strong>AB/CD*+E-</strong></p>
+        </div>
       </div>
     </main>
 
@@ -326,6 +372,7 @@
       </button>
     </div>
     <br /><br />
+    <script type="text/javascript" src="commonthings.js"></script>    
     <script type="text/javascript" src="../../hdr_ftr.js"></script>
   </body>
 </html>

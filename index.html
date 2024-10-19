@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="body.css" />
     <script type="text/javascript" src="externalcss.js"></script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>csvidyalaya.com : practice core subject problems</title>
     <style>
+      * {
+        /* border: 1px solid red; */
+      }
+
+      #all-cards {
+        /* background-color: brown; */
+        margin: 10px 10px;
+      }
+
+      .card {
+        width: 18rem;
+        margin-right: 10px;
+      }
+      div#os,
+      div#dsainc,
+      div#digifunda {
+        width: 262px;
+        height: 262px;
+        background-image: url(/assets/os\ logo.png);
+        background-repeat: no-repeat;
+        border: 1px solid;
+      }
+      div#os {
+        background-position: -189px -36px;
+      }
+      div#dsainc {
+        background-position: -200px -348px;
+      }
+      div#digifunda {
+        background-position: -209px -640px;
+      }
+
       @media (width<=750px) {
+        .card {
+          width: 163px;
+          margin-bottom: 10px;
+        }
         .card-body {
           padding: 4px;
         }
         h5 {
-          font-size: medium;
+          font-weight: bold;
+          font-size: x-small;
         }
         .card-text {
           font-size: 10px;
@@ -21,18 +57,34 @@
         #all-cards {
           display: flex;
           justify-content: center;
-          .card > img {
-            width: 100%;
-            height: 70%;
-          }
+        }
+        *,
+        ::after,
+        ::before {
+          box-sizing: unset;
         }
         a.btn {
           padding: 4px;
           font-size: x-small;
         }
-      }
-      .card {
-        width: 18rem;
+        div#os,
+        div#dsainc,
+        div#digifunda {
+          width: 160px;
+          height: 160px;
+          background-image: url(/assets/os\ logo.png);
+          background-repeat: no-repeat;
+          border: 1px solid;
+        }
+        div#dsainc {
+          background-position: -17px -363px;
+        }
+        div#os {
+          background-position: -19px -37px;
+        }
+        div#digifunda {
+          background-position: -24px -653px;
+        }
       }
     </style>
   </head>
@@ -40,11 +92,12 @@
     <div class="container">
       <div class="row" id="all-cards">
         <div class="card">
-          <img
+          <!-- <img
             src="assets/images/os2_192x192.png"
             class="card-img-top"
             alt="operating system question"
-          />
+          /> -->
+          <div id="os"></div>
           <div class="card-body">
             <h5 class="card-title">Operating System Question</h5>
             <p class="card-text">
@@ -57,14 +110,15 @@
             >
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img
+        <div class="card">
+          <!-- <img
             src="assets/images/dsainc_192x192.png"
             class="card-img-top"
             alt="operating system question"
-          />
+          /> -->
+          <div id="dsainc"></div>
           <div class="card-body">
-            <h5 class="card-title">DSA in C</h5>
+            <h5 class="card-title">DSA In C</h5>
             <p class="card-text">
               You can practice here Array question, stack, linkedlist, Queue and
               all other data structure question .....
@@ -76,12 +130,13 @@
             >
           </div>
         </div>
-        <div class="card" style="width: 18rem">
-          <img
+        <div class="card">
+          <!-- <img
             src="assets/images/digi_funda_192x192.png"
             class="card-img-top"
             alt="operating system question"
-          />
+          /> -->
+          <div id="digifunda"></div>
           <div class="card-body">
             <h5 class="card-title">digital fundamentals</h5>
             <p class="card-text">
