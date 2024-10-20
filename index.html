@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>csvidyalaya.com : practice core subject problems</title>
+    <script></script>
     <style>
       * {
         /* border: 1px solid red; */
@@ -24,7 +25,7 @@
       div#digifunda {
         width: 262px;
         height: 262px;
-        background-image: url(/assets/os\ logo.png);
+        /* background-image: url(/assets/os\ logo.png); */
         background-repeat: no-repeat;
         border: 1px solid;
       }
@@ -72,7 +73,7 @@
         div#digifunda {
           width: 160px;
           height: 160px;
-          background-image: url(/assets/os\ logo.png);
+          /* background-image: url(/assets/os\ logo.png); */
           background-repeat: no-repeat;
           border: 1px solid;
         }
@@ -157,6 +158,18 @@
     <!-- cards end -->
     <!-- bootstrap link -->
     <script type="text/javascript" src="hdr_ftr.js"></script>
+    <script async>
+      window.onload = function () {
+        // Apply the background image after the text is loaded
+        var os = document.getElementById("os");
+        var dsainc = document.getElementById("dsainc");
+        var digifunda = document.getElementById("digifunda");
+        const cars = [os, dsainc, digifunda];
+        for (let index = 0; index < cars.length; index++) {
+          cars[index].style.backgroundImage = "url('/assets/os\ logo.png')";
+        }
+      };
+    </script>
     <!-- bootstrap links -->
   </body>
 </html>

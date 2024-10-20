@@ -1,16 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script  type="text/javascript" src="../../externalcss.js"></script>
+    <script type="text/javascript" src="../../externalcss.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Priority Scheduling Algorithm Questions & Solutions | PS Explained</title>
-    <meta name="description" content="Master Priority Scheduling (PS) with solved questions. Understand the concept, solve problems, and enhance your knowledge with step-by-step PS solutions." />
-    
+    <title>
+      Priority Scheduling Algorithm Questions & Solutions | PS Explained
+    </title>
+    <meta
+      name="description"
+      content="Master Priority Scheduling (PS) with solved questions. Understand the concept, solve problems, and enhance your knowledge with step-by-step PS solutions."
+    />
+
+    <style>
+      #ps1,
+      #ps2,
+      #ps3,
+      #ps4,
+      #ps5,
+      #ps6,
+      #ps7,
+      #ps8,
+      #ps9,
+      #ps10 {
+        height: 180px;
+        width: 630px;
+        object-fit: none;
+        border: 1px solid red;
+      }
+
+      #ps1 {
+        object-position: -67px -41px;
+      }
+      #ps2 {
+        object-position: -37px -457px;
+      }
+      #ps3 {
+        object-position: -41px -899px;
+      }
+      #ps4 {
+        object-position: -36px -1354px;
+      }
+      #ps5 {
+        object-position: -48px -1826px;
+      }
+      #ps6 {
+        object-position: -55px -2241px;
+      }
+      #ps7 {
+        object-position: -52px -2696px;
+      }
+      #ps8 {
+        object-position: -43px -3139px;
+      }
+      #ps9 {
+        object-position: -742px -13px;
+      }
+      #ps10 {
+        object-position: -749px -459px;
+      }
+      @media (width<=770px) {
+        #ps1,
+        #ps2,
+        #ps3,
+        #ps4,
+        #ps5,
+        #ps6,
+        #ps7,
+        #ps8,
+        #ps9,
+        #ps10 {
+          height: 150px;
+          width: 400px;
+          /* background-image: url(/assets/SJF1.png); */
+        }
+        #ps1 {
+          object-position: -87px -272px;
+        }
+        #ps2 {
+          object-position: -46px -683px;
+        }
+        #ps3 {
+          object-position: -48px -1129px;
+        }
+        #ps4 {
+          object-position: -43px -1556px;
+        }
+        #ps5 {
+          object-position: -50px -2029px;
+        }
+        #ps6 {
+          object-position: -38px -2450px;
+        }
+        #ps7 {
+          object-position: -59px -2896px;
+        }
+        #ps8 {
+          object-position: -43px -3323px;
+        }
+        #ps9 {
+          object-position: -756px -228px;
+        }
+        #ps10 {
+          object-position: -763px -651px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- upper and down button -->
-
     <div class="container">
       <h1 id="upper">
         PS(Priority Scheduling) premptive and non-premptive question
@@ -107,6 +205,7 @@
         </ul>
 
         <h4>Gantt Chart</h4>
+        <img src="/assets/PS1.png" id="ps1" alt="" srcset="" />
         <p>| P1 (0-8) | P2 (8-12) | P3 (12-21) | P4 (21-26) |</p>
 
         <table border="1" class="table table-bordered">
@@ -1165,10 +1264,9 @@
         <p>(0 + 4 + 10 + 5+ 14) / 5 = 6.6 units</p>
 
         <!-- question  10 end -->
-        
       </div>
     </main>
-    <br>
+    <br />
     <div class="d-grid gap-2 col-6 mx-auto">
       <button class="btn btn-success" id="down" type="button">
         <a href="ps2.html" style="color: antiquewhite"
@@ -1178,5 +1276,13 @@
     </div>
     <br />
     <script type="text/javascript" src="../../hdr_ftr.js"></script>
+    <script async>
+      window.onload = function () {
+        let ganttcharts = document.getElementsByTagName("img");
+        for (let index = 0; index < ganttcharts.length; index++) {
+          ganttcharts[index].src = "/assets/MLQS.png";
+        }
+      };
+    </script>
   </body>
 </html>
