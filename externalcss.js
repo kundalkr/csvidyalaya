@@ -231,5 +231,6 @@ cssstyle.innerHTML = `
         }
       }`;
 head.appendChild(cssstyle);
-const nav = document.querySelector(".navbar.navbar-expand-lg");
-nav.style.backgroundColor = "#2db88f";
+
+const nav = document.querySelectorAll("body > div:nth-child(1) > nav");
+nav[0].style.backgroundColor = "#2db88f";
