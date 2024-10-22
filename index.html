@@ -21,23 +21,22 @@
         width: 18rem;
         margin-right: 10px;
       }
-      div#os,
-      div#dsainc,
-      div#digifunda {
+      #os,
+      #dsainc,
+      #digifunda {
         width: 262px;
         height: 262px;
-        /* background-image: url(/assets/os\ logo.png); */
-        background-repeat: no-repeat;
-        border: 1px solid;
+        object-fit: none;
+        border: 1px solid black;
       }
-      div#os {
-        background-position: -189px -36px;
+      #os {
+        object-position: -189px -36px;
       }
-      div#dsainc {
-        background-position: -200px -348px;
+      #dsainc {
+        object-position: -200px -348px;
       }
-      div#digifunda {
-        background-position: -209px -640px;
+      #digifunda {
+        object-position: -209px -640px;
       }
 
       @media (width<=750px) {
@@ -69,23 +68,23 @@
           padding: 4px;
           font-size: x-small;
         }
-        div#os,
-        div#dsainc,
-        div#digifunda {
+        #os,
+        #dsainc,
+        #digifunda {
           width: 160px;
           height: 160px;
           /* background-image: url(/assets/os\ logo.png); */
-          background-repeat: no-repeat;
+          /* background-repeat: no-repeat; */
           border: 1px solid;
         }
-        div#dsainc {
-          background-position: -17px -363px;
+        #dsainc {
+          object-position: -17px -363px;
         }
-        div#os {
-          background-position: -19px -37px;
+        #os {
+          object-position: -19px -37px;
         }
-        div#digifunda {
-          background-position: -24px -653px;
+        #digifunda {
+          object-position: -24px -653px;
         }
       }
     </style>
@@ -99,7 +98,8 @@
             class="card-img-top"
             alt="operating system question"
           /> -->
-          <div id="os"></div>
+          <!-- <div id="os"></div> -->
+          <img id="os" alt="operating system questions | process scheduling" title="operating system questions | process scheduling" srcset="" />
           <div class="card-body">
             <h5 class="card-title">Operating System Question</h5>
             <p class="card-text">
@@ -118,7 +118,8 @@
             class="card-img-top"
             alt="operating system question"
           /> -->
-          <div id="dsainc"></div>
+          <!-- <div id="dsainc"></div> -->
+          <img id="dsainc" alt="data structure question | linked list, stack, tree" title="data structure question | linked list, stack, tree" srcset="" />
           <div class="card-body">
             <h5 class="card-title">DSA In C</h5>
             <p class="card-text">
@@ -138,9 +139,10 @@
             class="card-img-top"
             alt="operating system question"
           /> -->
-          <div id="digifunda"></div>
+          <!-- <div id="digifunda"></div> -->
+          <img id="digifunda" alt="digital fundamentals question | number system, boolean algebra" title="digital fundamentals question | number system, boolean algebra"/>
           <div class="card-body">
-            <h5 class="card-title">digital fundamentals</h5>
+            <h5 class="card-title">Digital Fundamentals</h5>
             <p class="card-text">
               Question related to Number Systems and Conversion, complements,
               Computer Arithmetic, Logic Gates, Boolean Algebra and all others
@@ -161,13 +163,9 @@
     <script type="text/javascript" src="hdr_ftr.js"></script>
     <script async>
       window.onload = function () {
-        // Apply the background image after the text is loaded
-        var os = document.getElementById("os");
-        var dsainc = document.getElementById("dsainc");
-        var digifunda = document.getElementById("digifunda");
-        const cars = [os, dsainc, digifunda];
-        for (let index = 0; index < cars.length; index++) {
-          cars[index].style.backgroundImage = "url('/assets/os\ logo.png')";
+        let ganttcharts = document.getElementsByTagName("img");
+        for (let index = 0; index < ganttcharts.length; index++) {
+          ganttcharts[index].src = "assets/os_logo.png";
         }
       };
     </script>
