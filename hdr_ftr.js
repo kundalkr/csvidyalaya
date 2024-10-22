@@ -4,7 +4,7 @@ header.innerHTML = `
       <div class="container-fluid">
         <a
           class="navbar-brand navbar-bran"
-          href="csvidyalaya.com" target="_blank"
+          href=" https://csvidyalaya.com/" target="_blank"
           >CSvidyalaya.com</a
         >
         <button
