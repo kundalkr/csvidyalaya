@@ -192,7 +192,7 @@ cssstyle.innerHTML = `
       }
             .headi{
         color: rgb(11, 24, 207);
-        /* font-size: large; */
+
         font-weight: bold;
         
       }
