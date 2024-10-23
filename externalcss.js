@@ -175,11 +175,10 @@ const cssstyle = document.createElement("style");
 cssstyle.innerHTML = `
 @media (width<=700px) {
         div#foot:has(ul) {
-          height: auto;
           display: flex;
           justify-content: center;
-    
         }
+
         div#foot > ul li {
           display: flex;
           justify-content: center; /* Center text horizontally within the li */
@@ -192,13 +191,10 @@ cssstyle.innerHTML = `
       }
             .headi{
         color: rgb(11, 24, 207);
-
         font-weight: bold;
-        
       }
  .py-5 {
     padding-top: 0px ;
-
 }
 .navbar-bran {
         font-family: "Pacifico", cursive;
@@ -211,11 +207,7 @@ cssstyle.innerHTML = `
           font-weight: 400;
           font-style: normal;
         }
-      }
-      /* .navbar .navbar-expand-lg .navbar-light {
-        color: black;
-      } */
-
+      } 
       li > a {
         font-family: "Playpen Sans", cursive;
         font-optical-sizing: auto;
