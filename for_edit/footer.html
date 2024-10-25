@@ -10,7 +10,6 @@
     <style>
       @media (width<=770px) {
         div#foot:has(ul) {
-    
           display: flex;
           justify-content: center;
           border: 1px solid red;
@@ -24,14 +23,14 @@
           text-align: center; /* Center text alignment */
           margin: 5px 0; /* Optional: add some spacing between items */
         }
-        div#foot:has(p){
+        div#foot:has(p) {
           display: flex;
           justify-content: center;
           border: 1px solid red;
         }
-        div#foot > p{
+        div#foot > p {
           display: flex;
-          justify-content: center; 
+          justify-content: center;
           align-items: center;
           flex-wrap: wrap; /* Allow text to wrap */
           width: 200px; /* Set a width for the li elements */
@@ -52,7 +51,7 @@
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
       >
-        <div class="col mb-3 " id="foot">
+        <div class="col mb-3" id="foot">
           <p class="text-muted">
             © 2024 <span class="navbar-bran">csvidyalaya.com</span>
           </p>
@@ -65,26 +64,42 @@
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">HOME</li>
             <li class="nav-item mb-2">
-              <a href="/index.html" class="nav-link p-0 text-muted" target="_blank">Home</a>
+              <a
+                href="/index.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Home</a
+              >
             </li>
 
             <li class="nav-item mb-2">
-              <a href="/anotherpage/FAQs.html" class="nav-link p-0 text-muted" target="_blank"
+              <a
+                href="/anotherpage/FAQs.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >FAQs</a
               >
             </li>
 
             <li class="nav-item mb-2">
-              <a href="/sitemap.xml" class="nav-link p-0 text-muted" target="_blank">Sitemap</a>
+              <a
+                href="/sitemap.xml"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Sitemap</a
+              >
             </li>
 
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted" target="_blank">About</a>
+              <a href="#" class="nav-link p-0 text-muted" target="_blank"
+                >About</a
+              >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/anotherpage/privacy_policy.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Privacy policy</a
               >
             </li>
@@ -96,39 +111,57 @@
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/os/fcfs.html"
-                class="nav-link p-0 text-muted" target="_blank"
-                >FCFS scheduling</a
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >First Come First Serve (FCFS) Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/sjf1.html"
-                class="nav-link p-0 text-muted" target="_blank"
-                >SJF scheduling</a
+                href="/sub_modules/os/scheduling_algorithms/sjf1.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Shortest Job First (SJF) Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="/sub_modules/os/ps1.html" class="nav-link p-0 text-muted" target="_blank"
+              <a
+                href="/sub_modules/os/scheduling_algorithms/sjf2.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Shortest Remaining Time First (Preemptive SJF or SRTF)</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/os/scheduling_algorithms/ps1.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >PRIORITY Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="/sub_modules/os/RR1.html" class="nav-link p-0 text-muted" target="_blank"
-                >Round Robin scheduling</a
+              <a
+                href="/sub_modules/os/scheduling_algorithms/RR1.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Round Robin Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/mlfqs.html"
-                class="nav-link p-0 text-muted" target="_blank"
-                >MLFQS Scheduling</a
+                href="/sub_modules/os/scheduling_algorithms/mlfqs.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Multilevel Feedback Queue Scheduling (MLFQ)</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/MLQS.html"
-                class="nav-link p-0 text-muted" target="_blank"
-                >MLQS Scheduling</a
+                href="/sub_modules/os/scheduling_algorithms/MLQS.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Multilevel Queue (MLQ) Scheduling</a
               >
             </li>
           </ul>
@@ -140,56 +173,64 @@
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/Arrays.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Arrays</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/infixtopostfix.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Infix And Postfix Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/infixtoprefix.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Infix And Prefix Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/postfixprefixofinfix.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Infix To Postfix and Prefix Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/prefixtopostfix.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Prefix And Postfix Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/linkedlist1.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Linkedlist Question</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/queue1.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Queue Question</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/stack1.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >stack Question</a
               >
             </li>
@@ -201,7 +242,8 @@
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Boolean Algebra Question</a
               >
             </li>
@@ -213,29 +255,32 @@
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/Digital Fundamentals/Number System/decimaltobinary.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Decimal And Binary Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/Digital Fundamentals/Number System/decimaltohexadecimal1.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Decimal And Hexadecimal Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/Digital Fundamentals/Number System/decimaltoOctal1.html"
-                class="nav-link p-0 text-muted" target="_blank"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Decimal And Octal Conversion</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/Digital Fundamentals/Number System/octaltohexadecimal1.html"
-                class="nav-link p-0 text-muted" target="_blank"
-               
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Octal And Hexadecimal Conversion</a
               >
             </li>

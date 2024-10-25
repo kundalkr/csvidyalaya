@@ -165,39 +165,57 @@ footer.innerHTML = `
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/os/fcfs.html"
-                class="nav-link p-0 text-muted" target="_blank"
-                >FCFS scheduling</a
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >First Come First Serve (FCFS) Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/sjf1.html"
-                class="nav-link p-0 text-muted" target="_blank"
-                >SJF scheduling</a
+                href="/sub_modules/os/scheduling_algorithms/sjf1.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Shortest Job First (SJF) Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="/sub_modules/os/ps1.html" class="nav-link p-0 text-muted" target="_blank"
+              <a
+                href="/sub_modules/os/scheduling_algorithms/sjf2.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Shortest Remaining Time First (Preemptive SJF or SRTF)</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/os/scheduling_algorithms/ps1.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >PRIORITY Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
-              <a href="/sub_modules/os/RR1.html" class="nav-link p-0 text-muted" target="_blank"
-                >Round Robin scheduling</a
+              <a
+                href="/sub_modules/os/scheduling_algorithms/RR1.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Round Robin Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/mlfqs.html"
-                class="nav-link p-0 text-muted" target="_blank"
-                >MLFQS Scheduling</a
+                href="/sub_modules/os/scheduling_algorithms/mlfqs.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Multilevel Feedback Queue Scheduling (MLFQ)</a
               >
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/MLQS.html"
-                class="nav-link p-0 text-muted" target="_blank"
-                >MLQS Scheduling</a
+                href="/sub_modules/os/scheduling_algorithms/MLQS.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Multilevel Queue (MLQ) Scheduling</a
               >
             </li>
           </ul>
