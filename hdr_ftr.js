@@ -164,7 +164,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">CPU Scheduling Question</li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/fcfs.html"
+                href="/sub_modules/os/scheduling_algorithms/fcfs.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >First Come First Serve (FCFS) Scheduling</a
