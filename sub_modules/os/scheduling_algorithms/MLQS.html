@@ -22,6 +22,11 @@
         width: 630px;
         object-fit: none;
       }
+      #def1 {
+        width: 710px;
+        height: 615px;
+        object-fit: none;
+      }
 
       #MLQS1_1 {
         object-position: -23px -7px;
@@ -44,6 +49,9 @@
       #MLQS3_3 {
         object-position: -30px -2157px;
       }
+      #def1 {
+        object-position: -854px -33px;
+      }
 
       @media (width<=770px) {
         #MLQS1_1,
@@ -55,6 +63,10 @@
         #MLQS3_3 {
           height: 150px;
           width: 400px;
+        }
+        #def1 {
+          width: 400px;
+          height: 360px;
         }
         #MLQS1_1 {
           object-position: -22px -404px;
@@ -76,6 +88,9 @@
         }
         #MLQS3_3 {
           object-position: -48px -2785px;
+        }
+        #def1 {
+          object-position: -817px -730px;
         }
       }
     </style>
@@ -122,7 +137,146 @@
 
     <main>
       <div class="container">
-        <h2>
+        <br />
+        <div>
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+          <br /><br />
+          <h2>Multilevel Queue Scheduling Algorithm In Operating System</h2>
+
+          <p>
+            In the Multilevel Queue Scheduling algorithm, the processes are
+            divided into multiple queues based on specific characteristics, such
+            as process priority or memory requirements. Each queue has its own
+            scheduling algorithm, which could be First-Come-First-Serve (FCFS),
+            Shortest Job First (SJF), or Round Robin (RR), depending on the type
+            of processes it holds. This algorithm is typically used in scenarios
+            where different types of processes need to be managed independently
+            and efficiently.
+          </p>
+          <img
+            alt="multilevel queue scheduling definiton"
+            id="def1"
+            srcset=""
+          />
+
+          <h2>Method for Multilevel Queue Scheduling</h2>
+          <ul>
+            <li>
+              Step 1: Divide the processes into multiple queues based on
+              priority or process type.
+            </li>
+            <li>
+              Step 2: Assign a scheduling algorithm to each queue according to
+              the specific requirements of the processes in that queue.
+            </li>
+            <li>
+              Step 3: Define the priority levels among queues, determining which
+              queue should be given preference when multiple queues have
+              processes ready to run.
+            </li>
+            <li>
+              Step 4: If a process completes its execution in its assigned
+              queue, it is removed; otherwise, it may be moved to another queue
+              as per the system’s defined rules.
+            </li>
+            <li>
+              Step 5: Repeat the above steps until all processes in all queues
+              are completed.
+            </li>
+          </ul>
+
+          <h2>Advantages and Disadvantages of Multilevel Queue Scheduling</h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>
+                Enables specific scheduling policies for different types of
+                processes, improving efficiency.
+              </td>
+              <td>
+                Static division of queues may lead to underutilization of
+                resources if queues are imbalanced.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Allows easy prioritization of system processes over user
+                processes, enhancing system performance.
+              </td>
+              <td>
+                Higher-priority queues can lead to starvation of processes in
+                lower-priority queues.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Each queue can be customized to meet specific needs, offering
+                flexibility.
+              </td>
+              <td>
+                Complex to implement and maintain, especially with a large
+                number of queues and processes.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Reduces the turnaround time for certain high-priority processes.
+              </td>
+              <td>
+                Lack of interaction among queues can cause inefficiencies in
+                overall CPU utilization.
+              </td>
+            </tr>
+            <tr>
+              <td>Supports separation of long-term and short-term tasks.</td>
+              <td>
+                Static assignment of processes means changes to process
+                priorities are challenging.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Helps manage processes that require different resources
+                effectively.
+              </td>
+              <td>
+                Once a process is assigned to a queue, it generally cannot be
+                moved, reducing adaptability.
+              </td>
+            </tr>
+          </table>
+
+          <h2>
+            Why Multilevel Queue Scheduling Is Better than Other Scheduling
+            Algorithms?
+          </h2>
+
+          <p>
+            Multilevel Queue Scheduling is particularly beneficial in
+            environments where different categories of tasks require distinct
+            scheduling policies. By allowing separate scheduling algorithms per
+            queue and facilitating priority-based processing, it can deliver
+            more efficient performance compared to a single algorithm for all
+            processes. This makes it highly suitable for systems requiring quick
+            responses for specific types of processes, as well as in multiuser
+            environments, where prioritizing system tasks can help maintain
+            system stability and responsiveness.
+          </p>
+        </div>
+
+        <br />
+        <br />
+
+        <h2 id="fstque">
           Question 1 : find the average Turn Around Time and Waiting Time of
           following processes using MLQS(MULTILEVEL QUEUE SCHDULING) process
           scheduling algorithm? Consider the following processes with their
