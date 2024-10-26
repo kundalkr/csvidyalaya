@@ -122,8 +122,117 @@
     <br />
 
     <main>
-      <div class="container">
+      <div>
+        <a
+          href="#fstque"
+          class="btn btn-primary btn-lg active"
+          role="button"
+          aria-pressed="true"
+          >Jump To Question</a
+        >
+        <br /><br />
+
+        <h2>Multilevel Feedback Queue Scheduling Algorithm</h2>
+
+        <p>
+          The Multilevel Feedback Queue Scheduling (MLFQS) algorithm is a
+          complex CPU scheduling method in operating systems that improves upon
+          multilevel queue scheduling by allowing processes to move between
+          queues. This algorithm is designed to handle various types of
+          processes, assigning them dynamically based on their behavior and CPU
+          burst time, which helps optimize CPU utilization and responsiveness.
+        </p>
+<img src="" alt="">
+        <h2>Method to Solve the Multilevel Feedback Queue Scheduling</h2>
+        <ul>
+          <li>
+            Step 1: Initialize multiple queues with different priority levels,
+            where higher-priority queues have shorter time quantums.
+          </li>
+          <li>Step 2:Place each new process in the highest-priority queue.</li>
+          <li>Step 3: Apply Round Robin scheduling in each queue.</li>
+          <li>
+            Step 4: If a process uses its entire time quantum without
+            completing, it is moved to a lower-priority queue.
+          </li>
+          <li>
+            Step 5: If a process in a lower-priority queue does not finish
+            within its time quantum, it moves down again.
+          </li>
+          <li>
+            Step 6: When a process in any queue becomes I/O bound, it can move
+            back up to a higher-priority queue upon resuming.
+          </li>
+          <li>
+            Step 7: Continue this reallocation until each process completes or
+            is terminated.
+          </li>
+        </ul>
+
         <h2>
+          Advantages and Disadvantages of Multilevel Feedback Queue Scheduling
+        </h2>
+        <table border="1">
+          <tr>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+          </tr>
+          <tr>
+            <td>
+              Efficient handling of processes with varying CPU burst times.
+            </td>
+            <td>Complex to implement and manage multiple queues.</td>
+          </tr>
+          <tr>
+            <td>
+              Improved CPU utilization due to dynamic priority adjustment.
+            </td>
+            <td>Starvation can occur for lower-priority processes.</td>
+          </tr>
+          <tr>
+            <td>
+              Reduces turnaround time for I/O-bound and interactive processes.
+            </td>
+            <td>Increased overhead for context switching between queues.</td>
+          </tr>
+          <tr>
+            <td>Allows fair sharing of CPU time based on process needs.</td>
+            <td>
+              Difficulty in choosing appropriate time quantum for each queue.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Minimizes response time for short tasks or interactive processes.
+            </td>
+            <td>
+              Performance can degrade if too many high-priority processes exist.
+            </td>
+          </tr>
+          <tr>
+            <td>Adaptable to system load and changes in process behavior.</td>
+            <td>Requires fine-tuning of parameters to avoid inefficiency.</td>
+          </tr>
+        </table>
+
+        <h2>
+          Why Multilevel Feedback Queue Scheduling Is Better Than Other
+          Scheduling Algorithms
+        </h2>
+        <p>
+          Multilevel Feedback Queue Scheduling is advantageous over simpler
+          algorithms like First-Come-First-Serve (FCFS), Round Robin (RR), and
+          Shortest Job Next (SJN) because it adapts dynamically to the varying
+          requirements of processes. By allowing processes to move between
+          different priority queues, MLFQS prevents process starvation,
+          optimizes CPU time usage, and reduces turnaround time for interactive
+          and I/O-bound processes. This adaptability ensures a balanced
+          performance for systems handling diverse workloads, making it an
+          efficient choice for many modern operating systems.
+        </p>
+      </div>
+      <div class="container">
+        <h2 id="fstque">
           Question 1 : find the average Turn Around Time and Waiting Time of
           following processes using MLFQS(MULTILEVEL FEEDBACK QUEUE SCHDULING)
           process scheduling algorithm? Consider the following processes with

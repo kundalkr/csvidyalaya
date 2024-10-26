@@ -22,11 +22,11 @@
         width: 630px;
         object-fit: none;
       }
-      #def1 {
+      /* #def1 {
         width: 710px;
         height: 615px;
         object-fit: none;
-      }
+      } */
 
       #MLQS1_1 {
         object-position: -23px -7px;
@@ -49,9 +49,9 @@
       #MLQS3_3 {
         object-position: -30px -2157px;
       }
-      #def1 {
+      /* #def1 {
         object-position: -854px -33px;
-      }
+      } */
 
       @media (width<=770px) {
         #MLQS1_1,
@@ -64,10 +64,10 @@
           height: 150px;
           width: 400px;
         }
-        #def1 {
+        /* #def1 {
           width: 400px;
           height: 360px;
-        }
+        } */
         #MLQS1_1 {
           object-position: -22px -404px;
         }
@@ -89,9 +89,9 @@
         #MLQS3_3 {
           object-position: -48px -2785px;
         }
-        #def1 {
+        /* #def1 {
           object-position: -817px -730px;
-        }
+        } */
       }
     </style>
   </head>
@@ -160,7 +160,7 @@
             and efficiently.
           </p>
           <img
-            alt="multilevel queue scheduling definiton"
+            alt="multilevel queue scheduling definiton | "
             id="def1"
             srcset=""
           />
@@ -776,9 +776,23 @@
     <script type="text/javascript" src="/hdr_ftr.js"></script>
     <script async>
       window.onload = function () {
-        let ganttcharts = document.getElementsByTagName("img");
-        for (let index = 0; index < ganttcharts.length; index++) {
-          ganttcharts[index].src = "/assets/MLQS.png";
+        const cars = [
+          MLQS1_1,
+          MLQS1_2,
+          MLQS2_1,
+          MLQS2_2,
+          MLQS3_1,
+          MLQS3_2,
+          MLQS3_3,
+        ];
+        let img = document.querySelector("img#def1");
+        if (window.innerWidth >= 770) {
+          img.setAttribute("src", "/assets/MLQS DEFINITION nig.png");
+        }else{
+          img.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
+        }
+        for (let index = 0; index < cars.length; index++) {
+          cars[index].src = "/assets/MLQS.png";
         }
       };
     </script>
