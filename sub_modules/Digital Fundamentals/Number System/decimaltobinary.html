@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript" src="../../../externalcss.js"></script>
+    <script type="text/javascript" src="/externalcss.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Solve a variety of decimal to binary and binary to decimal conversion questions with detailed solutions. Test your knowledge with our comprehensive practice problems." />
+    <meta
+      name="description"
+      content="Solve a variety of decimal to binary and binary to decimal conversion questions with detailed solutions. Test your knowledge with our comprehensive practice problems."
+    />
 
-    <title>Decimal to Binary and Binary to Decimal Conversion Practice Questions</title>
+    <title>
+      Decimal to Binary and Binary to Decimal Conversion Practice Questions
+    </title>
   </head>
   <body>
     <!-- upper and down button -->
     <div class="container">
-      <h1 id="upper">decimal to binary & binary to decimal conversion Questions</h1>
+      <h1 id="upper">
+        decimal to binary & binary to decimal conversion Questions
+      </h1>
       <p>These questions are generally asked in university exam</p>
     </div>
     <button
@@ -40,9 +47,123 @@
     <main>
       <div class="container">
         <div class="decimal_to_another"></div>
+        <div>
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
 
+          <h2>Binary and Decimal Conversion in Digital Fundamentals</h2>
+
+          <p>
+            In the field of digital electronics and computer science, binary and
+            decimal conversions are essential concepts. Binary (base-2) is the
+            language of computers, while decimal (base-10) is the numeric system
+            commonly used by humans. Understanding the conversions between these
+            systems is crucial for computer programming, data storage, and
+            digital circuits.
+          </p>
+
+          <h2>Method to Convert Binary to Decimal</h2>
+          <ul>
+            <li>Step 1: Write down the binary number.</li>
+            <li>
+              Step 2: Starting from the rightmost digit, multiply each binary
+              digit by 2 raised to the power of its position (starting from 0).
+            </li>
+            <li>
+              Step 3: Sum all the products from Step 2 to get the decimal
+              equivalent.
+            </li>
+            <li>
+              Example: Binary 1011 = (1×2^3) + (0×2^2) + (1×2^1) + (1×2^0) = 11
+              in decimal.
+            </li>
+          </ul>
+
+          <h2>Method to Convert Decimal to Binary</h2>
+          <ul>
+            <li>
+              Step 1: Divide the decimal number by 2 and note the remainder.
+            </li>
+            <li>
+              Step 2: Write down the quotient and repeat the division by 2,
+              noting each remainder, until the quotient is zero.
+            </li>
+            <li>
+              Step 3: Write down all remainders in reverse order to get the
+              binary equivalent.
+            </li>
+            <li>Example: Decimal 11 divided by 2 gives binary 1011.</li>
+          </ul>
+
+          <h2>Advantages and Disadvantages of Binary and Decimal Systems</h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>Binary simplifies digital circuit design.</td>
+              <td>Binary numbers are difficult for humans to interpret.</td>
+            </tr>
+            <tr>
+              <td>Decimal is easy for humans to read and understand.</td>
+              <td>Decimal requires more complex circuits for computers.</td>
+            </tr>
+            <tr>
+              <td>Binary systems are more efficient for computers.</td>
+              <td>Decimal calculations can slow down computer processes.</td>
+            </tr>
+            <tr>
+              <td>Binary code is essential for modern computing systems.</td>
+              <td>
+                Decimal needs conversion to binary for computer processing.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Binary allows easier representation of data in logic gates.
+              </td>
+              <td>Decimal-based devices require complex circuitry.</td>
+            </tr>
+            <tr>
+              <td>
+                Binary values are more resilient to error in digital systems.
+              </td>
+              <td>Decimal operations are challenging in digital devices.</td>
+            </tr>
+          </table>
+
+          <h2>Applications of Binary and Decimal Conversion</h2>
+
+          <ul>
+            <li>
+              Binary is foundational in programming and digital systems as it is
+              used to store, process, and communicate data within computers.
+            </li>
+            <li>
+              Each bit in binary represents a state of either ON (1) or OFF (0),
+              simplifying the physical and logical design of circuits.
+            </li>
+            <li>
+              Decimal conversions are used when data must be interpreted in a
+              human-readable format, such as displaying data on user interfaces,
+              calculators, or performing arithmetic operations in accounting
+              software.
+            </li>
+            <li>
+              Conversions between these systems are also critical in areas like
+              network addressing (e.g., IP addresses), digital image processing,
+              and data encryption.
+            </li>
+          </ul>
+        </div>
         <!-- Question 1 -->
-        <h2>Question 1: Convert decimal number 10 to binary.</h2>
+        <h2 id="fstque">Question 1: Convert decimal number 10 to binary.</h2>
         <p>
           Solution: The decimal number 10 can be converted to binary by dividing
           by 2 and writing down the remainders.
@@ -195,6 +316,6 @@
     </div>
     <br /><br />
 
-    <script type="text/javascript" src="../../../hdr_ftr.js"></script>
+    <script type="text/javascript" src="/hdr_ftr.js"></script>
   </body>
 </html>
