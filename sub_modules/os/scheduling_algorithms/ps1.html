@@ -146,8 +146,97 @@
     </p>
     <main>
       <div class="container">
+        <div>
+          <br />
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+          <br /><br />
+
+          <h2>What Is Priority Scheduling Algorithm in Operating System?</h2>
+
+          <p>
+            The Priority Scheduling algorithm in operating systems allocates CPU
+            to the processes based on priority. Each process is assigned a
+            priority, and the CPU is assigned to the process with the highest
+            priority. Lower-priority processes wait until higher-priority ones
+            finish, ensuring that essential processes get CPU time as needed.
+          </p>
+
+          <h2>Method for Priority Scheduling Algorithm</h2>
+          <ul>
+            <li>Step 1: Assign a priority number to each process.</li>
+            <li>
+              Step 2: Compare the priority of each process in the ready queue.
+            </li>
+            <li>
+              Step 3: Select the process with the highest priority and allocate
+              the CPU to it.
+            </li>
+            <li>
+              Step 4: If two processes have the same priority, use an alternate
+              scheduling algorithm (e.g., FCFS) to decide the order.
+            </li>
+            <li>
+              Step 5: Once the process is completed, move to the next
+              highest-priority process.
+            </li>
+            <li>Repeat until all processes in the queue have executed.</li>
+          </ul>
+
+          <h2>Advantages and Disadvantages of Priority Scheduling Algorithm</h2>
+
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>Ensures important processes execute first.</td>
+              <td>Can lead to starvation for lower-priority processes.</td>
+            </tr>
+            <tr>
+              <td>Can be customized to specific needs.</td>
+              <td>Complexity increases with more processes.</td>
+            </tr>
+            <tr>
+              <td>Efficient for real-time systems.</td>
+              <td>May require additional calculations for priority.</td>
+            </tr>
+            <tr>
+              <td>Flexible for process priority adjustments.</td>
+              <td>Risk of priority inversion issues.</td>
+            </tr>
+            <tr>
+              <td>Less overhead for high-priority tasks.</td>
+              <td>CPU utilization can be low for non-essential tasks.</td>
+            </tr>
+            <tr>
+              <td>Reduces wait time for critical processes.</td>
+              <td>Can lead to unpredictable CPU allocation.</td>
+            </tr>
+          </table>
+
+          <h2>
+            Why Priority Scheduling is Better Than Other Scheduling Algorithms?
+          </h2>
+
+          <p>
+            Priority scheduling is often favored in systems that require high
+            responsiveness for critical tasks, such as real-time systems,
+            because it ensures essential processes are given priority access to
+            the CPU. Compared to algorithms like FCFS or Round Robin, priority
+            scheduling minimizes the wait time for critical applications and can
+            be optimized further with priority adjustments, making it adaptable
+            and highly effective for time-sensitive applications.
+          </p>
+        </div>
         <!-- question 1 start -->
-        <h2>Question 1 : Non-Preemptive Priority Scheduling</h2>
+        <h2 id="fstque">Question 1 : Non-Preemptive Priority Scheduling</h2>
         <p>
           find the average Turn Around Time and Waiting Time of following
           processes using Non-Preemptive PS(Priority Scheduling) process

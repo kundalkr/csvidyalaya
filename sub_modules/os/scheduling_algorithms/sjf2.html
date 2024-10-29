@@ -144,8 +144,101 @@
     </p>
     <main>
       <div class="container">
+        <div>
+          <br><br>
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+          <br /><br />
+
+          <h2>What Is Shortest Remaining Time First (SRTF) Scheduling Algorithm ?</h2>
+
+          <p>
+            Shortest Remaining Time First (SRTF) is a preemptive scheduling
+            algorithm used in operating systems. In this algorithm, the process
+            with the shortest remaining burst time is selected for execution. If
+            a new process arrives with a burst time shorter than the remaining
+            time of the currently running process, the current process is
+            preempted, and the new process starts execution.
+          </p>
+
+          <h2>Method to Solve SRTF Scheduling Algorithm</h2>
+          <ul>
+            <li>Step 1: Determine the burst time for all processes.</li>
+            <li>
+              Step 2: Select the process with the shortest remaining burst time
+              from the ready queue.
+            </li>
+            <li>
+              Step 3: If a new process arrives with a shorter burst time than
+              the current process, preempt the current process.
+            </li>
+            <li>
+              Step 4: Continue the above steps until all processes are
+              completed.
+            </li>
+            <li>
+              Step 5: Calculate the waiting time and turnaround time for each
+              process.
+            </li>
+            <li>
+              Step 6: Calculate the average waiting time and average turnaround
+              time.
+            </li>
+          </ul>
+
+          <h2>Advantages and Disadvantages of SRTF Scheduling Algorithm</h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>Minimizes average waiting time.</td>
+              <td>Can cause starvation for longer processes.</td>
+            </tr>
+            <tr>
+              <td>Improves overall system throughput.</td>
+              <td>Frequent context switching, which increases overhead.</td>
+            </tr>
+            <tr>
+              <td>Reduces turnaround time for shorter processes.</td>
+              <td>Not ideal for real-time systems.</td>
+            </tr>
+            <tr>
+              <td>Efficient for batch processing.</td>
+              <td>
+                Difficult to predict the next shortest process in real time.
+              </td>
+            </tr>
+            <tr>
+              <td>Ensures high processor utilization.</td>
+              <td>Requires precise information about burst time.</td>
+            </tr>
+            <tr>
+              <td>Dynamic adaptation to new processes.</td>
+              <td>Can lead to high response time variance.</td>
+            </tr>
+          </table>
+
+          <h2>Why SRTF is Better than Other Scheduling Algorithms</h2>
+          <p>
+            SRTF is considered better than non-preemptive scheduling algorithms
+            like Shortest Job First (SJF) because it allows processes with
+            shorter remaining burst times to be executed immediately, reducing
+            the average waiting and turnaround time. Unlike algorithms such as
+            First Come First Serve (FCFS), which may lead to high waiting times
+            for shorter jobs, SRTF is more efficient in handling time-sensitive
+            processes, especially when minimizing average wait time is the
+            priority.
+          </p>
+        </div>
         <!-- question 11 start -->
-        <h2>Question 11: Non-preemptive SJF Scheduling</h2>
+        <h2 id="fstque">Question 11: Non-preemptive SJF Scheduling</h2>
         <p>
           find the average Turn Around Time and Waiting Time of following
           processes using Non-Preemptive SJF(SHORTEST JOB FIRST) process
@@ -195,8 +288,13 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-    
-        <img alt="SJF SCHEDULING | Question 11 Solution | Gantt Chart" title="SJF SCHEDULING | Question 11 Solution | Gantt Chart" id="sjf11" srcset="" />
+
+        <img
+          alt="SJF SCHEDULING | Question 11 Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 11 Solution | Gantt Chart"
+          id="sjf11"
+          srcset=""
+        />
         <!-- <p>| P1 (0-6) | P3 (6-9) | P5 (9-11) | P2 (11-15) | P4 (15-20) |</p> -->
         <table border="1" class="table table-bordered">
           <tr>
@@ -313,8 +411,13 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-  
-        <img alt="SJF SCHEDULING | Question 12 Solution | Gantt Chart" title="SJF SCHEDULING | Question 12 Solution | Gantt Chart" id="sjf12" srcset="" />
+
+        <img
+          alt="SJF SCHEDULING | Question 12 Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 12 Solution | Gantt Chart"
+          id="sjf12"
+          srcset=""
+        />
         <!-- <p>
           | P1 (0-2) | P2 (2-6) | P4 (6-9) | P1 (9-14) | P5 (14-19) | P3 (19-28)
           |
@@ -434,8 +537,13 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-  
-        <img alt="SJF SCHEDULING | Question 13SJF SCHEDULING | Question 14 Solution | Gantt Chart Solution | Gantt Chart" title="SJF SCHEDULING | Question 13SJF SCHEDULING | Question 14 Solution | Gantt Chart Solution | Gantt Chart" id="sjf13" srcset="" />
+
+        <img
+          alt="SJF SCHEDULING | Question 13SJF SCHEDULING | Question 14 Solution | Gantt Chart Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 13SJF SCHEDULING | Question 14 Solution | Gantt Chart Solution | Gantt Chart"
+          id="sjf13"
+          srcset=""
+        />
         <!-- <p>| P1 (0-8) | P5 (8-11) | P2 (11-15) | P4 (15-20) | P3 (20-29) |</p> -->
 
         <table border="1" class="table table-bordered">
@@ -553,8 +661,13 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-   
-        <img alt="SJF SCHEDULING | Question 14 Solution | Gantt Chart" title="SJF SCHEDULING | Question 14 Solution | Gantt Chart" id="sjf14" srcset="" />
+
+        <img
+          alt="SJF SCHEDULING | Question 14 Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 14 Solution | Gantt Chart"
+          id="sjf14"
+          srcset=""
+        />
         <!-- <p> 
           | P1 (0-1) | P2 (1-3) | P1 (3-7) | P4 (7-10) | P3 (10-14) | P5 (14-20)
           |
@@ -675,7 +788,12 @@
 
         <h4>Gantt Chart</h4>
 
-        <img alt="SJF SCHEDULING | Question 15 Solution | Gantt Chart" title="SJF SCHEDULING | Question 15 Solution | Gantt Chart" id="sjf15" srcset="" />
+        <img
+          alt="SJF SCHEDULING | Question 15 Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 15 Solution | Gantt Chart"
+          id="sjf15"
+          srcset=""
+        />
         <!-- <p>| P1 (0-10) | P2 (10-11) | P4 (11-12) | P3 (12-14) | P5 (14-19) |</p> -->
         <table border="1" class="table table-bordered">
           <tr>
@@ -790,8 +908,13 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-     
-        <img alt="SJF SCHEDULING | Question 16 Solution | Gantt Chart" title="SJF SCHEDULING | Question 16 Solution | Gantt Chart" id="sjf16" srcset="" />
+
+        <img
+          alt="SJF SCHEDULING | Question 16 Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 16 Solution | Gantt Chart"
+          id="sjf16"
+          srcset=""
+        />
         <!-- <p>| P1 (0-7) | P3 (7-8) | P5 (8-11) | P2 (11-15) | P4 (15-19) |</p> -->
 
         <table border="1" class="table table-bordered">
@@ -911,7 +1034,12 @@
 
         <h4>Gantt Chart</h4>
 
-        <img alt="SJF SCHEDULING | Question 17 Solution | Gantt Chart" title="SJF SCHEDULING | Question 17 Solution | Gantt Chart" id="sjf17" srcset="" />
+        <img
+          alt="SJF SCHEDULING | Question 17 Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 17 Solution | Gantt Chart"
+          id="sjf17"
+          srcset=""
+        />
         <!-- <p> 
           | P1 (0-1) | P2 (1-4) | P4 (4-6) | P5 (6-10) | P3 (10-16) | P1 (16-24)
           |
@@ -1034,7 +1162,12 @@
 
         <h4>Gantt Chart</h4>
 
-        <img alt="SJF SCHEDULING | Question 18 Solution | Gantt Chart" title="SJF SCHEDULING | Question 18 Solution | Gantt Chart" id="sjf18" srcset="" />
+        <img
+          alt="SJF SCHEDULING | Question 18 Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 18 Solution | Gantt Chart"
+          id="sjf18"
+          srcset=""
+        />
         <!-- <p>| P1 (0-8) | P5 (8-10) | P2 (10-14) | P4 (14-19) | P3 (19-28) |</p> -->
 
         <table border="1" class="table table-bordered">
@@ -1154,7 +1287,12 @@
 
         <h4>Gantt Chart</h4>
 
-        <img alt="SJF SCHEDULING | Question 19 Solution | Gantt Chart" title="SJF SCHEDULING | Question 19 Solution | Gantt Chart" id="sjf19" srcset="" />
+        <img
+          alt="SJF SCHEDULING | Question 19 Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 19 Solution | Gantt Chart"
+          id="sjf19"
+          srcset=""
+        />
         <!-- <p> 
           | P1 (0-1) | P2 (1-4) | P4 (4-8) | P5 (8-13) | P3 (13-20) | P1 (20-29)
           |
@@ -1282,7 +1420,12 @@
 
         <h4>Gantt Chart</h4>
 
-        <img alt="SJF SCHEDULING | Question 20 Solution | Gantt Chart" title="SJF SCHEDULING | Question 20 Solution | Gantt Chart" id="sjf20" srcset="" />
+        <img
+          alt="SJF SCHEDULING | Question 20 Solution | Gantt Chart"
+          title="SJF SCHEDULING | Question 20 Solution | Gantt Chart"
+          id="sjf20"
+          srcset=""
+        />
         <!-- <p> 
           | no process(0-1) | P1 (1-7) | P4 (7-9) | P2 (9-12) | P6 (12-15) | P3
           (15-19) | P5 (19-24) |

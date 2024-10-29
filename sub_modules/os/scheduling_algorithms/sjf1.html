@@ -142,8 +142,73 @@
     </p>
     <main>
       <div class="container">
+        <div>
+          
+
+      <a
+        href="#fstque"
+        class="btn btn-primary btn-lg active"
+        role="button"
+        aria-pressed="true"
+        >Jump To Question</a
+      >
+ 
+      <br />
+  
+
+        <h2>What Is Shortest Job First (SJF) Scheduling Algorithm in Operating System</h2>
+        <p>Shortest Job First (SJF) is a process scheduling algorithm in which the process with the shortest execution time is selected for execution next. This scheduling technique is also known as Shortest Job Next (SJN) and can be either preemptive or non-preemptive.</p>
+    
+        <h2>Method to Solve SJF Scheduling Algorithm</h2>
+        <ul>
+            <li>Step 1: Identify all processes in the queue along with their burst times.</li>
+            <li>Step 2: Sort the processes based on their burst times (shortest to longest).</li>
+            <li>Step 3: Select the process with the shortest burst time and execute it.</li>
+            <li>Step 4: Once completed, remove it from the queue and update the waiting and turnaround times for all processes.</li>
+            <li>Step 5: Repeat steps 2 to 4 until all processes are executed.</li>
+        </ul>
+    
+        <h2>Advantages and Disadvantages of SJF Scheduling Algorithm</h2>
+        <table border="1" class="table table-bordered">
+          <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+            </tr>
+            <tr>
+                <td>Minimizes average waiting time.</td>
+                <td>Not practical for real-time scheduling as burst times are often unknown.</td>
+            </tr>
+            <tr>
+                <td>Simple and easy to understand.</td>
+                <td>Can cause starvation for longer processes.</td>
+            </tr>
+            <tr>
+                <td>Effective in a batch processing environment.</td>
+                <td>Requires knowledge of all process burst times.</td>
+            </tr>
+            <tr>
+                <td>Optimal in terms of reducing average waiting time.</td>
+                <td>Challenging to implement in interactive systems.</td>
+            </tr>
+            <tr>
+                <td>Works well with a small number of processes.</td>
+                <td>Not suitable for time-sharing environments.</td>
+            </tr>
+            <tr>
+                <td>Lower CPU idle time for batch jobs.</td>
+                <td>High overhead if burst times vary widely.</td>
+            </tr>
+        </table>
+    
+        <h2>Why SJF is Better than Other Scheduling Algorithms</h2>
+        <p>SJF is more efficient in reducing the average waiting time compared to other scheduling algorithms, especially when burst times are predictable. It prioritizes shorter tasks, which helps optimize the utilization of CPU resources. However, it is only optimal when burst times can be determined in advance, which is often possible in batch processing systems but not in real-time or interactive environments.</p>
+    
+
+    
+    </div>
+        </div>
         <!-- question 1 start -->
-        <h2>Question 1:</h2>
+        <h2 id="fstque">Question 1:</h2>
         <p>
           find the average Turn Around Time and Waiting Time of following
           processes using Non-Preemptive SJF(SHORTEST JOB FIRST) process

@@ -5,7 +5,7 @@ fcfs.style.padding = "0px 12px";
 
 fcfs.innerHTML = `
 
-    <h2>FCFS Scheduling Algorithm in Operating System</h2>
+    <h2>What Is FCFS Scheduling Algorithm in Operating System ?</h2>
     <p>FCFS (First Come First Serve) is one of the simplest scheduling algorithms in operating systems. It schedules processes based on their arrival time. The process that arrives first gets executed first, and others wait in a queue.</p>
 
     <h2>Method to Solve FCFS Scheduling Algorithm</h2>

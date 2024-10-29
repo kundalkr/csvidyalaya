@@ -136,6 +136,7 @@
   </head>
   <body>
     <!-- upper and down button -->
+
     <div class="container">
       <h1 id="upper">RR(Round Robin) process scheduling algorithms question</h1>
 
@@ -172,8 +173,113 @@
     </p>
     <main>
       <div class="container">
+        <div>
+          <br />
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+          <br /><br />
+
+          <h2>Round Robin Scheduling Algorithm in Operating System</h2>
+          <p>
+            Round Robin (RR) is a preemptive scheduling algorithm that assigns a
+            fixed time slice (or time quantum) to each process in the ready
+            queue. Each process is allowed to run for a time quantum, and if it
+            doesn’t finish within this period, it is sent back to the end of the
+            queue, and the next process in line is executed. This cycle
+            continues until all processes are completed.
+          </p>
+
+          <h2>Method to Solve Round Robin Scheduling Algorithm</h2>
+          <ul>
+            <li>
+              Step 1: Determine the time quantum (time slice) for each process.
+            </li>
+            <li>Step 2: Place all processes in the ready queue.</li>
+            <li>
+              Step 3: Assign the first process the CPU for the duration of the
+              time quantum.
+            </li>
+            <li>
+              Step 4: If the process completes within the time quantum, remove
+              it from the queue; otherwise, place it at the end of the queue.
+            </li>
+            <li>
+              Step 5: Move to the next process and repeat the same steps until
+              all processes have completed.
+            </li>
+            <li>
+              Step 6: Calculate the average waiting time and average turnaround
+              time for performance evaluation.
+            </li>
+          </ul>
+
+          <h2>Advantages and Disadvantages of Round Robin Scheduling</h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>Simple and easy to implement.</td>
+              <td>Higher turnaround time due to frequent context switching.</td>
+            </tr>
+            <tr>
+              <td>
+                Prevents process starvation as each process gets CPU time.
+              </td>
+              <td>Performance is heavily dependent on time quantum.</td>
+            </tr>
+            <tr>
+              <td>Good for time-sharing systems.</td>
+              <td>Not ideal for processes with varying burst times.</td>
+            </tr>
+            <tr>
+              <td>
+                Ensures fairness by giving each process equal time quantum.
+              </td>
+              <td>
+                May lead to CPU inefficiency if time quantum is too small.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Responsive to interactive applications due to frequent
+                preemption.
+              </td>
+              <td>
+                Higher context switching overhead compared to non-preemptive
+                algorithms.
+              </td>
+            </tr>
+            <tr>
+              <td>Better for systems requiring real-time responsiveness.</td>
+              <td>
+                Processes with long burst times may need multiple cycles to
+                complete.
+              </td>
+            </tr>
+          </table>
+
+          <h2>Why Round Robin is Better Than Other Scheduling Algorithms</h2>
+          <p>
+            Round Robin scheduling is often better than other scheduling
+            algorithms like First Come First Serve (FCFS) and Shortest Job Next
+            (SJN) in scenarios that require fairness and responsiveness. By
+            allocating equal time slices, it ensures that no process is starved
+            of CPU time, making it suitable for time-sharing systems. It also
+            allows for quick response times for interactive processes, making it
+            ideal for real-time applications. Its preemptive nature means that
+            long processes do not monopolize the CPU, improving the overall
+            efficiency of multi-tasking environments.
+          </p>
+        </div>
         <!-- question 1 start -->
-        <h2>
+        <h2 id="fstque">
           Question 1 : find the average Turn Around Time and Waiting Time of
           following processes using RR(Round Robin) process scheduling
           algorithm? Consider the following processes with their Arrival Time,
@@ -225,7 +331,12 @@
 
         <h4>Gantt Chart</h4>
 
-        <img alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart" title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart" id="RR1" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+          title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+          id="RR1"
+          srcset=""
+        />
         <!-- <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-6) | P1 (6-8) | P4 (8-9) | P2 (9-10) |
         </p> -->
@@ -335,8 +446,18 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-        <img alt="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 1" title="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 1" id="RR2_1" srcset="" />
-        <img alt="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 2" title="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 2" id="RR2_2" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 1"
+          title="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 1"
+          id="RR2_1"
+          srcset=""
+        />
+        <img
+          alt="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 2"
+          title="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 2"
+          id="RR2_2"
+          srcset=""
+        />
         <!-- <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-6) | P1 (6-8) | P4 (8-10) | P5 (10-12) |
           P2 (12-14) | P3 (14-15) | P1 (15-17) | P4(17-20)
@@ -448,8 +569,18 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-        <img alt="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 1" title="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 1" id="RR3_1" srcset="" />
-        <img alt="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 2" title="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 2" id="RR3_2" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 1"
+          title="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 1"
+          id="RR3_1"
+          srcset=""
+        />
+        <img
+          alt="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 2"
+          title="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 2"
+          id="RR3_2"
+          srcset=""
+        />
         <!-- <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-6) | P1 (6-8) | P4 (8-10) | P2 (10-11) |
           P3 (11-13) | P1(13-14)
@@ -553,13 +684,33 @@
         <h4>Solution:</h4>
         <h4>Gantt Chart</h4>
 
-        <img alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 1" title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 1" id="RR4_1" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 1"
+          title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 1"
+          id="RR4_1"
+          srcset=""
+        />
 
-        <img alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 2" title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 2" id="RR4_2" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 2"
+          title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 2"
+          id="RR4_2"
+          srcset=""
+        />
 
-        <img alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 3" title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 3" id="RR4_3" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 3"
+          title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 3"
+          id="RR4_3"
+          srcset=""
+        />
 
-        <img alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 4Round Robin SCHEDULING | Question 5 Solution | Gantt Chart" title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart part 4Round Robin SCHEDULING | Question 5 Solution | Gantt Chart" id="RR4_4" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 4Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
+          title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart part 4Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
+          id="RR4_4"
+          srcset=""
+        />
         <!-- <p>
           | P3(0-1) | P2(1-2) | P3(2-3) | P6(3-4) | P2(4-5) | P4(5-6) | P3(6-7)
           | P5(7-8) | P6(8-9) | P1(9-10) | P2(10-11) | P4(11-12) | P3(12-13) |
@@ -675,7 +826,12 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-        <img alt="Round Robin SCHEDULING | Question 5 Solution | Gantt Chart" title="Round Robin SCHEDULING | Question 5 Solution | Gantt Chart" id="RR5" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
+          title="Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
+          id="RR5"
+          srcset=""
+        />
         <!-- <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-5) | P4 (5-7) | P5 (7-9) | P2 (9-10) |
           P5 (10-11) |
@@ -784,7 +940,12 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-        <img alt="Round Robin SCHEDULING | Question 6 Solution | Gantt Chart" title="Round Robin SCHEDULING | Question 6 Solution | Gantt Chart" id="RR6" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 6 Solution | Gantt Chart"
+          title="Round Robin SCHEDULING | Question 6 Solution | Gantt Chart"
+          id="RR6"
+          srcset=""
+        />
         <!-- <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-5) | P1 (5-6) | P4 (6-8) | P5 (8-11) |
         </p> -->
@@ -890,7 +1051,12 @@
         </ul>
 
         <h4>Gantt Chart</h4>
-        <img alt="Round Robin SCHEDULING | Question 7 Solution | Gantt Chart" title="Round Robin SCHEDULING | Question 7 Solution | Gantt Chart" id="RR7" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 7 Solution | Gantt Chart"
+          title="Round Robin SCHEDULING | Question 7 Solution | Gantt Chart"
+          id="RR7"
+          srcset=""
+        />
         <!-- <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-6) | P4 (6-7) | P5 (7-9) | P2 (9-10) |
         </p> -->
@@ -990,9 +1156,19 @@
 
         <h4>Gantt Chart</h4>
 
-        <img alt="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 1" title="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 1" id="RR8_1" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 1"
+          title="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 1"
+          id="RR8_1"
+          srcset=""
+        />
 
-        <img alt="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 2" title="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 2" id="RR8_2" srcset="" />
+        <img
+          alt="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 2"
+          title="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 2"
+          id="RR8_2"
+          srcset=""
+        />
         <!-- <p>
           | P1 (0-3) | P2 (3-6) | P3 (6-9) | P4 (9-12) | P1 (12-15) | P5 (15-18)
           | P3 (18-21) | P4 (21-23) | P5(23-24) | P3(24-25)
