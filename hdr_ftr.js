@@ -43,24 +43,24 @@ header.innerHTML = `
                 class="dropdown-menu dropdown-menu-dark" 
                 aria-labelledby="navbarDropdown"
               >
-                <li>
+                 <li>
                   <a
                     class="dropdown-item"
-                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/os/os_topic.html" target="_blank"
+                    href="/sub_modules/os/operating_System_Topics.html"
                     >Operating System</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/dsa_in_c/dsa_in_c_topic.html" target="_blank"
+                    href="/sub_modules/dsa_in_c/dsa_in_c_topic.html"
                     >Dsa</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="https://kundalkr.github.io/csvidyalaya/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html" target="_blank"
+                    href="/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html"
                     >Digital Fundamentals</a
                   >
                 </li>
