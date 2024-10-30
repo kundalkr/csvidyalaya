@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="/externalcss.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <title>Banker's Algorithm Questions & Solutions - Operating System Practice</title>
+        <meta name="description" content="Explore a comprehensive set of Banker’s Algorithm questions with solutions for operating system studies. Perfect for students and professionals seeking to master deadlock avoidance algorithms in OS.">
+    </head>
+    
+    <style>
+      #MLFQS1_1,
+      #MLFQS1_2,
+      #MLFQS1_3,
+      #MLFQS2_1,
+      #MLFQS2_2,
+      #MLFQS2_3,
+      #MLFQS2_4 {
+        height: 180px;
+        width: 630px;
+        object-fit: none;
+      }
+
+      #MLFQS1_1 {
+        object-position: -55px -31px;
+      }
+      #MLFQS1_2 {
+        object-position: -60px -269px;
+      }
+      #MLFQS1_3 {
+        object-position: -52px -495px;
+      }
+      #MLFQS2_1 {
+        object-position: -36px -1296px;
+      }
+      #MLFQS2_2 {
+        object-position: -30px -1514px;
+      }
+      #MLFQS2_3 {
+        object-position: -54px -1734px;
+      }
+      #MLFQS2_4 {
+        object-position: -42px -1946px;
+      }
+
+      @media (width<=770px) {
+        #MLFQS1_1,
+        #MLFQS1_2,
+        #MLFQS1_3,
+        #MLFQS2_1,
+        #MLFQS2_2,
+        #MLFQS2_3,
+        #MLFQS2_4 {
+          height: 150px;
+          width: 400px;
+        }
+        #MLFQS1_1 {
+          object-position: -32px -698px;
+        }
+        #MLFQS1_2 {
+          object-position: -41px -874px;
+        }
+        #MLFQS1_3 {
+          object-position: -47px -1061px;
+        }
+        #MLFQS2_1 {
+          object-position: -73px -2200px;
+        }
+        #MLFQS2_2 {
+          object-position: -82px -2380px;
+        }
+        #MLFQS2_3 {
+          object-position: -76px -2596px;
+        }
+        #MLFQS2_4 {
+          object-position: -54px -2803px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <div class="container">
+      <h1 id="upper">Bankers algorithms question</h1>
+
+      <button
+        type="button"
+        class="btn btn-success"
+        style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+      >
+        <a href="#down"
+          ><span class="material-icons" style="color: antiquewhite">
+            arrow_downward
+          </span></a
+        >
+      </button>
+      <button
+        type="button"
+        class="btn btn-success"
+        style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+      >
+        <a href="#upper"
+          ><span class="material-icons" style="color: antiquewhite">
+            arrow_upward
+          </span></a
+        >
+      </button>
+    </div>
+    <!-- upper and down button end-->
+    <br />
+    <p style="margin: 0px 2vw">
+      Here are 17 questions on Bankers algorithms . Each question is presented
+      in a table format. each question is solved in explained form.
+    </p>
+    <br />
+
+    <main>
+      <div class="container">
+        <div>
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+          <br /><br />
+          <body>
+            <h2>What Is Banker's Algorithm in Operating System?</h2>
+            <p>
+              The Banker's Algorithm is a resource allocation and deadlock
+              avoidance algorithm that tests whether the system can allocate
+              resources to each process in a safe sequence. It works by
+              simulating the allocation of predetermined maximum resources to
+              each process and checking the system's state to prevent deadlock.
+            </p>
+
+            <h2>Method to Solve Banker's Algorithm</h2>
+            <ul>
+              <li>
+                Step 1: Identify the available resources and maximum demand of
+                each process.
+              </li>
+              <li>
+                Step 2: Calculate the "Need" matrix by subtracting the allocated
+                resources from the maximum demand for each process.
+              </li>
+              <li>
+                Step 3: Check if the system has a safe state by allocating
+                resources based on the "Need" matrix while ensuring the system
+                remains in a safe state.
+              </li>
+              <li>
+                Step 4: Allocate resources to processes only if they satisfy the
+                "Need" matrix and resources are available.
+              </li>
+              <li>
+                Step 5: If a safe sequence is found, allocate resources; if not,
+                resources remain unallocated to prevent deadlock.
+              </li>
+            </ul>
+
+            <h2>Advantages and Disadvantages of Banker's Algorithm</h2>
+            <table>
+              <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+              </tr>
+              <tr>
+                <td>Effective in preventing deadlocks</td>
+                <td>Works only with known resources and maximum demand</td>
+              </tr>
+              <tr>
+                <td>Ensures the system remains in a safe state</td>
+                <td>Complex and time-consuming calculations</td>
+              </tr>
+              <tr>
+                <td>Prevents the starvation of processes</td>
+                <td>Not suitable for systems with unpredictable resources</td>
+              </tr>
+              <tr>
+                <td>Maintains system stability and availability</td>
+                <td>Requires significant memory and CPU time</td>
+              </tr>
+              <tr>
+                <td>Identifies safe and unsafe states</td>
+                <td>Inapplicable to real-time systems</td>
+              </tr>
+              <tr>
+                <td>Applicable in systems with fixed resources</td>
+                <td>Does not allow resource sharing flexibility</td>
+              </tr>
+            </table>
+
+            <h2>Why Banker's Algorithm is Better than Other Algorithms?</h2>
+            <p>
+              Banker's Algorithm is better than other deadlock prevention
+              algorithms as it dynamically checks for safe and unsafe states
+              based on each process's resource needs, ensuring efficient
+              resource utilization. Unlike static resource allocation methods,
+              it provides a safe sequence, preventing deadlock while allowing
+              processes to request resources flexibly. This adaptability makes
+              it effective in multi-process systems with stable resources.
+            </p>
+          </body>
+        </div>
+        <div id="question1 fstque">
+          <div class="question">
+            <h2>
+              question 1 : Answer the question using banker's algorithms. <br />
+              consider the following snapshot(Available in table form) of a
+              system:
+            </h2>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th colspan="4" style="text-align: center">Available</th>
+              </tr>
+              <tr>
+                <th>R1</th>
+                <th>R2</th>
+                <th>R3</th>
+                <th>R4</th>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th colspan="4">Current Allocation</th>
+                <th colspan="4">Maximum Demand</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>R1</th>
+                <th>R2</th>
+                <th>R3</th>
+                <th>R4</th>
+                <th>R1</th>
+                <th>R2</th>
+                <th>R3</th>
+                <th>R4</th>
+              </tr>
+              <tr>
+                <th>P1</th>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>P2</th>
+                <td>2</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th>P3</th>
+                <td>1</td>
+                <td>0</td>
+                <td>3</td>
+                <td>3</td>
+                <td>4</td>
+                <td>2</td>
+                <td>4</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>P4</th>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>3</td>
+                <td>4</td>
+                <td>3</td>
+                <td>5</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th>P5</th>
+                <td>1</td>
+                <td>3</td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+                <td>5</td>
+                <td>4</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th>P6</th>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </table>
+            <p>
+              Is the system is in Safe state? If yes, then find out the safe
+              sequences.
+            </p>
+          </div>
+          <div class="solution">
+            <h2>solution :</h2>
+            <h3>All Formulas</h3>
+            <p>Resources = Available + Σ (allocation)</p>
+            <p>Available = Resources - Σ (allocation)</p>
+            <p>Need = maximum - Allocation</p>
+            <p>
+              No , it is not in safe state <br />
+              the all safe sequences are : <br />
+            </p>
+
+            <p>(1): P1 > P6 > P4 > P5 > P2 > P3</p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th colspan="4" style="text-align: center">Maximum Demand</th>
+              </tr>
+              <tr>
+                <th>Process</th>
+                <th>R1</th>
+                <th>R2</th>
+                <th>R3</th>
+                <th>R4</th>
+              </tr>
+              <tr>
+                <th>P1</th>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>P2</th>
+                <td>2</td>
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th>P3</th>
+                <td>4</td>
+                <td>2</td>
+                <td>4</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>P4</th>
+                <td>4</td>
+                <td>3</td>
+                <td>5</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th>P5</th>
+                <td>2</td>
+                <td>5</td>
+                <td>4</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th>P6</th>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- <h2>Available</h2> -->
+      </div>
+    </main>
+    <br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" id="down" type="button">
+        <a href="RR1.html" style="color: antiquewhite"
+          >click for previous question 1 to 15 click here</a
+        >
+      </button>
+    </div>
+    <script type="text/javascript" src="/hdr_ftr.js"></script>
+    <!-- <script async>
+      window.onload = function () {
+        const cars = [
+          MLFQS1_1,
+          MLFQS1_2,
+          MLFQS1_3,
+          MLFQS2_1,
+          MLFQS2_2,
+          MLFQS2_3,
+          MLFQS2_4,
+        ];
+        let img = document.querySelector("img#def1");
+        if (window.innerWidth >= 770) {
+          img.setAttribute("src", "/assets/MLFQS DEFINITION BIG.png");
+        } else {
+          img.setAttribute("src", "/assets/MLFQS DEFINITION SMALL.png");
+        }
+        for (let index = 0; index < cars.length; index++) {
+          cars[index].src = "/assets/MLFQS.png";
+        }
+      };
+    </script> -->
+  </body>
+</html>
