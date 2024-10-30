@@ -348,6 +348,14 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">Digital Fundamentals Questions</li>
             <li class="nav-item mb-2">
               <a
+                href="/sub_modules/Digital Fundamentals/Dgital_funda_topic.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Digital Fundamentals Question</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
                 href="/sub_modules/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
