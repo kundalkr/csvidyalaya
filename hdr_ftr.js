@@ -191,7 +191,15 @@ footer.innerHTML = `
                 href="/sub_modules/os/scheduling_algorithms/ps1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
-                >PRIORITY Scheduling</a
+                >Priority Scheduling</a
+              >
+            </li>
+              <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/os/scheduling_algorithms/ps2.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Preemptive Priority Scheduling</a
               >
             </li>
             <li class="nav-item mb-2">
