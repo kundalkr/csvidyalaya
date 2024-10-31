@@ -109,7 +109,7 @@ document.querySelector("body").prepend(header);
 const footer = document.createElement("div");
 footer.style.backgroundColor = "#FFD1DC";
 footer.innerHTML = `
-   <div class="container">
+     <div class="container">
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
       >
@@ -177,13 +177,21 @@ footer.innerHTML = `
         </div>
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
-            <li class="nav-item mb-2 headi">CPU Scheduling Question</li>
+            <li class="nav-item mb-2 headi">Operating System Question</li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/os/operating_System_Topics.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Operating System Questions</a
+              >
+            </li>
             <li class="nav-item mb-2">
               <a
                 href="/sub_modules/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
-                >All cpu Scheduling algorithm questions</a
+                >Cpu Scheduling algorithm questions</a
               >
             </li>
             <li class="nav-item mb-2">
@@ -260,7 +268,7 @@ footer.innerHTML = `
                 href="/sub_modules/os/Deadlocks/deadlock_topics.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
-                >Deadlock related question</a
+                >Deadlock Question</a
               >
             </li>
             <li class="nav-item mb-2">
