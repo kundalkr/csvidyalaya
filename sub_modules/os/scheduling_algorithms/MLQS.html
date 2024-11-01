@@ -147,7 +147,9 @@
             >Jump To Question</a
           >
           <br /><br />
-          <h2>what is Multilevel Queue Scheduling Algorithm In Operating System ?</h2>
+          <h2>
+            what is Multilevel Queue Scheduling Algorithm In Operating System ?
+          </h2>
 
           <p>
             In the Multilevel Queue Scheduling algorithm, the processes are
@@ -275,505 +277,511 @@
 
         <br />
         <br />
+        <div class="question">
+          <h2 id="fstque">
+            Question 1 : find the average Turn Around Time and Waiting Time of
+            following processes using MLQS(MULTILEVEL QUEUE SCHDULING) process
+            scheduling algorithm? Consider the following processes with their
+            Arrival Time, Burst Time. Question criteria : <br />
+            (1) There are three queue Q1, Q2, Q3<br />
+            (2) In Q1 (sjf, non-preemptive), Q2(Round robin,
+            timestamp=1),Q3(FCFS)
+          </h2>
 
-        <h2 id="fstque">
-          Question 1 : find the average Turn Around Time and Waiting Time of
-          following processes using MLQS(MULTILEVEL QUEUE SCHDULING) process
-          scheduling algorithm? Consider the following processes with their
-          Arrival Time, Burst Time. Question criteria : <br />
-          (1) There are three queue Q1, Q2, Q3<br />
-          (2) In Q1 (sjf, non-preemptive), Q2(Round robin, timestamp=1),Q3(FCFS)
-        </h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Arrival Time</th>
+              <th>Burst Time</th>
+              <th>Queue name</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>0</td>
+              <td>8</td>
+              <td>Q2</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>1</td>
+              <td>6</td>
+              <td>Q1</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>1</td>
+              <td>4</td>
+              <td>Q3</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Q2</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>2</td>
+              <td>1</td>
+              <td>Q1</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>3</td>
+              <td>4</td>
+              <td>Q2</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>3</td>
+              <td>1</td>
+              <td>Q1</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>4</td>
+              <td>2</td>
+              <td>Q2</td>
+            </tr>
+          </table>
+          <h4>Formula:</h4>
+          <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+          <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
-        <table border="1" class="table table-bordered">
-          <tr>
-            <th>Process</th>
-            <th>Arrival Time</th>
-            <th>Burst Time</th>
-            <th>Queue name</th>
-          </tr>
-          <tr>
-            <td>P1</td>
-            <td>0</td>
-            <td>8</td>
-            <td>Q2</td>
-          </tr>
-          <tr>
-            <td>P2</td>
-            <td>1</td>
-            <td>6</td>
-            <td>Q1</td>
-          </tr>
-          <tr>
-            <td>P3</td>
-            <td>1</td>
-            <td>4</td>
-            <td>Q3</td>
-          </tr>
-          <tr>
-            <td>P4</td>
-            <td>2</td>
-            <td>3</td>
-            <td>Q2</td>
-          </tr>
-          <tr>
-            <td>P5</td>
-            <td>2</td>
-            <td>1</td>
-            <td>Q1</td>
-          </tr>
-          <tr>
-            <td>P6</td>
-            <td>3</td>
-            <td>4</td>
-            <td>Q2</td>
-          </tr>
-          <tr>
-            <td>P7</td>
-            <td>3</td>
-            <td>1</td>
-            <td>Q1</td>
-          </tr>
-          <tr>
-            <td>P8</td>
-            <td>4</td>
-            <td>2</td>
-            <td>Q2</td>
-          </tr>
-        </table>
-        <h4>Formula:</h4>
-        <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-        <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+          <h4>Solution:</h4>
+          <h4>Gantt Chart</h4>
+          <img
+            alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 1 Solution | Gantt Chart part 1"
+            title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 1 Solution | Gantt Chart part 1"
+            id="MLQS1_1"
+            srcset=""
+          />
+          <img
+            alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 1 Solution | Gantt Chart part 2"
+            title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 1 Solution | Gantt Chart part 2"
+            id="MLQS1_2"
+            srcset=""
+          />
 
-        <h4>Solution:</h4>
-        <h4>Gantt Chart</h4>
-        <img
-          alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 1 Solution | Gantt Chart part 1"
-          title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 1 Solution | Gantt Chart part 1"
-          id="MLQS1_1"
-          srcset=""
-        />
-        <img
-          alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 1 Solution | Gantt Chart part 2"
-          title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 1 Solution | Gantt Chart part 2"
-          id="MLQS1_2"
-          srcset=""
-        />
+          <h4>Calculations:</h4>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Completion Time</th>
+              <th>Turnaround Time (TAT)</th>
+              <th>Waiting Time (WT)</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>25</td>
+              <td>25</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>7</td>
+              <td>6</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>29</td>
+              <td>28</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>20</td>
+              <td>18</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>8</td>
+              <td>6</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>22</td>
+              <td>19</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>9</td>
+              <td>6</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>17</td>
+              <td>13</td>
+              <td>11</td>
+            </tr>
+          </table>
 
-        <h4>Calculations:</h4>
-        <table border="1" class="table table-bordered">
-          <tr>
-            <th>Process</th>
-            <th>Completion Time</th>
-            <th>Turnaround Time (TAT)</th>
-            <th>Waiting Time (WT)</th>
-          </tr>
-          <tr>
-            <td>P1</td>
-            <td>25</td>
-            <td>25</td>
-            <td>17</td>
-          </tr>
-          <tr>
-            <td>P2</td>
-            <td>7</td>
-            <td>6</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>P3</td>
-            <td>29</td>
-            <td>28</td>
-            <td>24</td>
-          </tr>
-          <tr>
-            <td>P4</td>
-            <td>20</td>
-            <td>18</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>P5</td>
-            <td>8</td>
-            <td>6</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>P6</td>
-            <td>22</td>
-            <td>19</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>P7</td>
-            <td>9</td>
-            <td>6</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>P8</td>
-            <td>17</td>
-            <td>13</td>
-            <td>11</td>
-          </tr>
-        </table>
+          <h4>Average Turnaround Time:</h4>
+          <p>(25 + 6 + 28 + 18 + 6 + 19 + 6 + 13) / 8 = 15.125</p>
 
-        <h4>Average Turnaround Time:</h4>
-        <p>(25 + 6 + 28 + 18 + 6 + 19 + 6 + 13) / 8 = 15.125</p>
+          <h4>Average Waiting Time:</h4>
+          <p>(17 + 0 + 24 + 15 + 5 + 15 + 5 + 11) / 8 = 11.5</p>
+        </div>
 
-        <h4>Average Waiting Time:</h4>
-        <p>(17 + 0 + 24 + 15 + 5 + 15 + 5 + 11) / 8 = 11.5</p>
+        <div class="question">
+          <h2>
+            Question 2 : find the average Turn Around Time and Waiting Time of
+            following processes using MLQS(MULTILEVEL QUEUE SCHDULING) process
+            scheduling algorithm? Consider the following processes with their
+            Arrival Time, Burst Time. Question criteria : <br />
+            (1) There are three queue Q1, Q2, Q3<br />
+            (2) In Q1 (Priority scheduling, premptive), Q2(sjf, preemptive) ,
+            Q3(Round robin, timestamp=1)
+          </h2>
 
-        <h2>
-          Question 2 : find the average Turn Around Time and Waiting Time of
-          following processes using MLQS(MULTILEVEL QUEUE SCHDULING) process
-          scheduling algorithm? Consider the following processes with their
-          Arrival Time, Burst Time. Question criteria : <br />
-          (1) There are three queue Q1, Q2, Q3<br />
-          (2) In Q1 (Priority scheduling, premptive), Q2(sjf, preemptive) ,
-          Q3(Round robin, timestamp=1)
-        </h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Arrival Time</th>
+              <th>Burst Time</th>
+              <th>Queue Name</th>
+              <th>Priority</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>0</td>
+              <td>8</td>
+              <td>Q2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>1</td>
+              <td>6</td>
+              <td>Q1</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>1</td>
+              <td>4</td>
+              <td>Q3</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>2</td>
+              <td>3</td>
+              <td>Q2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>2</td>
+              <td>1</td>
+              <td>Q1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>3</td>
+              <td>4</td>
+              <td>Q2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>3</td>
+              <td>1</td>
+              <td>Q1</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>4</td>
+              <td>2</td>
+              <td>Q2</td>
+              <td></td>
+            </tr>
+          </table>
+          <h4>Formula:</h4>
+          <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+          <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
-        <table border="1" class="table table-bordered">
-          <tr>
-            <th>Process</th>
-            <th>Arrival Time</th>
-            <th>Burst Time</th>
-            <th>Queue Name</th>
-            <th>Priority</th>
-          </tr>
-          <tr>
-            <td>P1</td>
-            <td>0</td>
-            <td>8</td>
-            <td>Q2</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>P2</td>
-            <td>1</td>
-            <td>6</td>
-            <td>Q1</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>P3</td>
-            <td>1</td>
-            <td>4</td>
-            <td>Q3</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>P4</td>
-            <td>2</td>
-            <td>3</td>
-            <td>Q2</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>P5</td>
-            <td>2</td>
-            <td>1</td>
-            <td>Q1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>P6</td>
-            <td>3</td>
-            <td>4</td>
-            <td>Q2</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>P7</td>
-            <td>3</td>
-            <td>1</td>
-            <td>Q1</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>P8</td>
-            <td>4</td>
-            <td>2</td>
-            <td>Q2</td>
-            <td></td>
-          </tr>
-        </table>
-        <h4>Formula:</h4>
-        <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-        <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+          <h4>Solution:</h4>
+          <h4>Gantt Chart</h4>
 
-        <h4>Solution:</h4>
-        <h4>Gantt Chart</h4>
+          <img
+            alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 2 Solution | Gantt Chart part 1"
+            title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 2 Solution | Gantt Chart part 1"
+            id="MLQS2_1"
+            srcset=""
+          />
+          <img
+            alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 2 Solution | Gantt Chart part 2MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart"
+            title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 2 Solution | Gantt Chart part 2MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart"
+            id="MLQS2_2"
+            srcset=""
+          />
+          <h4>Calculations:</h4>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Completion Time</th>
+              <th>Turnaround Time (TAT)</th>
+              <th>Waiting Time (WT)</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>25</td>
+              <td>25</td>
+              <td>17</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>8</td>
+              <td>7</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>29</td>
+              <td>28</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>14</td>
+              <td>12</td>
+              <td>9</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>18</td>
+              <td>15</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>9</td>
+              <td>6</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>11</td>
+              <td>7</td>
+              <td>5</td>
+            </tr>
+          </table>
+          <h4>Average Turnaround Time:</h4>
+          <p>(25 + 7 + 28 + 12 + 1 + 15 + 6 + 7) / 8 = 12.625</p>
 
-        <img
-          alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 2 Solution | Gantt Chart part 1"
-          title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 2 Solution | Gantt Chart part 1"
-          id="MLQS2_1"
-          srcset=""
-        />
-        <img
-          alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 2 Solution | Gantt Chart part 2MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart"
-          title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 2 Solution | Gantt Chart part 2MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart"
-          id="MLQS2_2"
-          srcset=""
-        />
-        <h4>Calculations:</h4>
-        <table border="1" class="table table-bordered">
-          <tr>
-            <th>Process</th>
-            <th>Completion Time</th>
-            <th>Turnaround Time (TAT)</th>
-            <th>Waiting Time (WT)</th>
-          </tr>
-          <tr>
-            <td>P1</td>
-            <td>25</td>
-            <td>25</td>
-            <td>17</td>
-          </tr>
-          <tr>
-            <td>P2</td>
-            <td>8</td>
-            <td>7</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>P3</td>
-            <td>29</td>
-            <td>28</td>
-            <td>24</td>
-          </tr>
-          <tr>
-            <td>P4</td>
-            <td>14</td>
-            <td>12</td>
-            <td>9</td>
-          </tr>
-          <tr>
-            <td>P5</td>
-            <td>3</td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>P6</td>
-            <td>18</td>
-            <td>15</td>
-            <td>11</td>
-          </tr>
-          <tr>
-            <td>P7</td>
-            <td>9</td>
-            <td>6</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>P8</td>
-            <td>11</td>
-            <td>7</td>
-            <td>5</td>
-          </tr>
-        </table>
-        <h4>Average Turnaround Time:</h4>
-        <p>(25 + 7 + 28 + 12 + 1 + 15 + 6 + 7) / 8 = 12.625</p>
+          <h4>Average Waiting Time:</h4>
+          <p>(17 + 1 + 24 + 9 + 0 + 11 + 5 + 5) / 8 = 9</p>
+        </div>
+        <div class="question">
+          <h2>
+            Question 3 : find the average Turn Around Time and Waiting Time of
+            following processes using MLQS(MULTILEVEL QUEUE SCHDULING) process
+            scheduling algorithm? Consider the following processes with their
+            Arrival Time, Burst Time. Question criteria : <br />
+            (1) There are four queue Q1, Q2, Q3, Q4<br />
+            (2) In Q1(Round robin, timestamp=1), Q2(Priority scheduling,
+            preemptive), Q3(sjf, preemptive), Q4(FCFS)
+          </h2>
 
-        <h4>Average Waiting Time:</h4>
-        <p>(17 + 1 + 24 + 9 + 0 + 11 + 5 + 5) / 8 = 9</p>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Arrival Time</th>
+              <th>Burst Time</th>
+              <th>Queue name</th>
+              <th>Priority</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>0</td>
+              <td>6</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>2</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>6</td>
+              <td>4</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>10</td>
+              <td>6</td>
+              <td>3</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>18</td>
+              <td>12</td>
+              <td>4</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>24</td>
+              <td>4</td>
+              <td>1</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>26</td>
+              <td>3</td>
+              <td>1</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>32</td>
+              <td>8</td>
+              <td>2</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>P9</td>
+              <td>36</td>
+              <td>6</td>
+              <td>2</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>P10</td>
+              <td>40</td>
+              <td>10</td>
+              <td>3</td>
+              <td>6</td>
+            </tr>
+          </table>
+          <h4>Formula:</h4>
+          <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+          <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
-        <h2>
-          Question 3 : find the average Turn Around Time and Waiting Time of
-          following processes using MLQS(MULTILEVEL QUEUE SCHDULING) process
-          scheduling algorithm? Consider the following processes with their
-          Arrival Time, Burst Time. Question criteria : <br />
-          (1) There are four queue Q1, Q2, Q3, Q4<br />
-          (2) In Q1(Round robin, timestamp=1), Q2(Priority scheduling,
-          preemptive), Q3(sjf, preemptive), Q4(FCFS)
-        </h2>
+          <h4>Solution:</h4>
+          <h4>Gantt Chart</h4>
+          <img
+            alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 1"
+            title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 1"
+            id="MLQS3_1"
+            srcset=""
+          />
+          <img
+            alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 2"
+            title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 2"
+            id="MLQS3_2"
+            srcset=""
+          />
+          <img
+            alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 2"
+            title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 2"
+            id="MLQS3_3"
+            srcset=""
+          />
 
-        <table border="1" class="table table-bordered">
-          <tr>
-            <th>Process</th>
-            <th>Arrival Time</th>
-            <th>Burst Time</th>
-            <th>Queue name</th>
-            <th>Priority</th>
-          </tr>
-          <tr>
-            <td>P1</td>
-            <td>0</td>
-            <td>6</td>
-            <td>2</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>P2</td>
-            <td>2</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>P3</td>
-            <td>6</td>
-            <td>4</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>P4</td>
-            <td>10</td>
-            <td>6</td>
-            <td>3</td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td>P5</td>
-            <td>18</td>
-            <td>12</td>
-            <td>4</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <td>P6</td>
-            <td>24</td>
-            <td>4</td>
-            <td>1</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>P7</td>
-            <td>26</td>
-            <td>3</td>
-            <td>1</td>
-            <td>12</td>
-          </tr>
-          <tr>
-            <td>P8</td>
-            <td>32</td>
-            <td>8</td>
-            <td>2</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>P9</td>
-            <td>36</td>
-            <td>6</td>
-            <td>2</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>P10</td>
-            <td>40</td>
-            <td>10</td>
-            <td>3</td>
-            <td>6</td>
-          </tr>
-        </table>
-        <h4>Formula:</h4>
-        <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-        <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+          <h4>Calculations:</h4>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Completion Time</th>
+              <th>Turnaround Time (TAT)</th>
+              <th>Waiting Time (WT)</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>7</td>
+              <td>7</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>11</td>
+              <td>5</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>17</td>
+              <td>7</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>61</td>
+              <td>43</td>
+              <td>31</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>31</td>
+              <td>7</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>29</td>
+              <td>3</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>46</td>
+              <td>14</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>P9</td>
+              <td>42</td>
+              <td>6</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>P10</td>
+              <td>56</td>
+              <td>16</td>
+              <td>6</td>
+            </tr>
+          </table>
 
-        <h4>Solution:</h4>
-        <h4>Gantt Chart</h4>
-        <img
-          alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 1"
-          title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 1"
-          id="MLQS3_1"
-          srcset=""
-        />
-        <img
-          alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 2"
-          title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 2"
-          id="MLQS3_2"
-          srcset=""
-        />
-        <img
-          alt="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 2"
-          title="MLQS(MULTILEVEL QUEUE SCHEDULING) SCHEDULING | Question 3 Solution | Gantt Chart part 2"
-          id="MLQS3_3"
-          srcset=""
-        />
+          <h4>Average Turnaround Time:</h4>
+          <p>(7 + 1 + 5 + 7 + 43 + 7 + 3 + 14 + 6 + 16) / 10 = 10.9</p>
 
-        <h4>Calculations:</h4>
-        <table border="1" class="table table-bordered">
-          <tr>
-            <th>Process</th>
-            <th>Completion Time</th>
-            <th>Turnaround Time (TAT)</th>
-            <th>Waiting Time (WT)</th>
-          </tr>
-          <tr>
-            <td>P1</td>
-            <td>7</td>
-            <td>7</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>P2</td>
-            <td>3</td>
-            <td>1</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>P3</td>
-            <td>11</td>
-            <td>5</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>P4</td>
-            <td>17</td>
-            <td>7</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>P5</td>
-            <td>61</td>
-            <td>43</td>
-            <td>31</td>
-          </tr>
-          <tr>
-            <td>P6</td>
-            <td>31</td>
-            <td>7</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>P7</td>
-            <td>29</td>
-            <td>3</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>P8</td>
-            <td>46</td>
-            <td>14</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>P9</td>
-            <td>42</td>
-            <td>6</td>
-            <td>0</td>
-          </tr>
-          <tr>
-            <td>P10</td>
-            <td>56</td>
-            <td>16</td>
-            <td>6</td>
-          </tr>
-        </table>
-
-        <h4>Average Turnaround Time:</h4>
-        <p>(7 + 1 + 5 + 7 + 43 + 7 + 3 + 14 + 6 + 16) / 10 = 10.9</p>
-
-        <h4>Average Waiting Time:</h4>
-        <p>(1 + 0 + 1 + 1 + 31 + 3 + 0 + 6 + 0 + 6) / 10 = 4.9</p>
+          <h4>Average Waiting Time:</h4>
+          <p>(1 + 0 + 1 + 1 + 31 + 3 + 0 + 6 + 0 + 6) / 10 = 4.9</p>
+        </div>
       </div>
     </main>
     <div id="down"></div>
     <script type="text/javascript" src="/hdr_ftr.js"></script>
+    <script type="text/javascript" src="commonthings.js"></script>
     <script async>
       window.onload = function () {
         const cars = [
@@ -788,7 +796,7 @@
         let img = document.querySelector("img#def1");
         if (window.innerWidth >= 770) {
           img.setAttribute("src", "/assets/MLQS DEFINITION nig.png");
-        }else{
+        } else {
           img.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
         }
         for (let index = 0; index < cars.length; index++) {

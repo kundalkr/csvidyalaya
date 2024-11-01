@@ -1,51 +1,43 @@
+const int_links = document.createElement("div");
+int_links.style.padding = "0px 12px";
+int_links.innerHTML = `
 
-const fcfs = document.createElement("div");
-fcfs.style.border = "1px solid red";
-fcfs.style.padding = "0px 12px";
-
-fcfs.innerHTML = `
-
-    <h2>What Is FCFS Scheduling Algorithm in Operating System ?</h2>
-    <p>FCFS (First Come First Serve) is one of the simplest scheduling algorithms in operating systems. It schedules processes based on their arrival time. The process that arrives first gets executed first, and others wait in a queue.</p>
-
-    <h2>Method to Solve FCFS Scheduling Algorithm</h2>
-    <ul>
-        <li>Step 1: List all the processes and their arrival times in the order they arrive.</li>
-        <li>Step 2: Assign CPU to the process that arrives first and continue until it completes execution.</li>
-        <li>Step 3: After completion, check if the next process is ready to execute.</li>
-        <li>Step 4: Repeat the process for all other processes in the queue based on arrival time.</li>
-        <li>Step 5: Calculate the waiting time for each process as:
-            <ul>
-                <li>Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)</li>
-            </ul>
-        </li>
-        <li>Step 6: Calculate the turnaround time for each process as:
-            <ul>
-                <li> Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)</li>
-            </ul>
-        </li>
-        <li>Step 7: Sum up the total waiting time and turnaround time for performance evaluation.</li>
-    </ul>
-
-    <h2>Advantages and Disadvantages of FCFS Scheduling</h2>
-     <table border="1" class="table table-bordered">
-        <tr>
-            <th>Advantages</th>
-            <th>Disadvantages</th>
-        </tr>
-        <tr>
-            <td>Simple and easy to implement.</td>
-            <td>Long waiting times for processes with long burst times (convoy effect).</td>
-        </tr>
-        <tr>
-            <td>No starvation, as every process gets a turn.</td>
-            <td>Poor response time for time-critical processes.</td>
-        </tr>
-        <tr>
-            <td>Fair for long-running processes.</td>
-            <td>Not optimal for a multi-user or real-time system.</td>
-        </tr>
-    </table>
+<br>
+   <div class="card" style="width: 18rem">
+        <div class="card-header" id="this">Also Try These Question</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="fcfs.html">practice first come first serve questions</a>
+          </li>
+          <li class="list-group-item">
+            <a href="sjf1.html">practice shortest job first(SJF) question</a>
+          </li>
+           <li class="list-group-item">
+            <a href="sjf2.html">practice Shortest Remaining Time First (SRTF) question</a>
+          </li>
+          <li class="list-group-item">
+            <a href="mlfqs.html">practice Multilevel feedback queue scheduling question</a>
+          </li>
+          <li class="list-group-item">
+            <a href="MLQS.html">practice Multilevel queue scheduling question</a>
+          </li>
+          <li class="list-group-item">
+            <a href="ps1.html">practice priority scheduling question</a>
+          </li>
+          <li class="list-group-item">
+            <a href="ps2.html">practice peemptive priority scheduling question</a>
+          </li>
+              <li class="list-group-item">
+            <a href="RR1.html">practice Round Robin scheduling question</a>
+          </li>
+        </ul>
+      </div>
+      <br>
 `;
-var appd = document.getElementById("samethings");
-appd.appendChild(fcfs);
+
+var questions = document.getElementsByClassName("question");
+questions[0].append(int_links);
+
+let erty = document.querySelector("div#this.card-header");
+erty.style.color = "red";
+erty.style.fontWeight = "bold";
