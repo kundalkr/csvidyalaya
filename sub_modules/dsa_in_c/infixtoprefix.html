@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script  type="text/javascript" src="../../externalcss.js"></script>
+    <script type="text/javascript" src="/externalcss.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Infix to Prefix Conversion Guide | Step-by-Step Solutions</title>
+    <meta
+      name="description"
+      content="Master infix to prefix conversions with step-by-step examples, explanations, and practice questions for better understanding of expressions."
+    />
   </head>
   <body>
-
     <!-- upper and down button -->
     <div class="container">
-      <h1 id="upper">Stack Questions</h1>
+      <h1 id="upper">Infix To Prefix Conversion Questions</h1>
       <p>These questions are generally asked in university exam</p>
       <p>infix, prefix based stack question</p>
     </div>
@@ -39,7 +43,88 @@
     <!-- upper and down button end-->
     <main>
       <div class="container">
-        <h3>
+        <div>
+          <br />
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+          <br /><br />
+
+          <h2>Infix to Prefix Conversion in DSA</h2>
+
+          <h2>What is Infix to Prefix Conversion?</h2>
+          <p>
+            Infix to Prefix conversion is a process in Data Structures and
+            Algorithms (DSA) where an expression written in infix notation
+            (e.g., A + B) is converted to prefix notation (e.g., +AB). In prefix
+            notation, also known as Polish notation, operators precede their
+            operands.
+          </p>
+
+          <h2>Why is There a Need to Convert Infix to Prefix?</h2>
+          <p>
+            Infix notation is how expressions are commonly written, but it
+            requires precedence rules and parentheses to determine the order of
+            operations. Converting infix to prefix simplifies the evaluation
+            process, particularly for computer programs and calculators, as it
+            removes the need for precedence and associativity rules, ensuring
+            faster processing and less ambiguity in mathematical expressions.
+          </p>
+
+          <h2>Advantages of Prefix Notation</h2>
+          <ul>
+            <li>
+              Removes the need for parentheses, as the order of operations is
+              clear in prefix notation.
+            </li>
+            <li>
+              Evaluation of expressions is faster and more straightforward for
+              computers.
+            </li>
+            <li>
+              Improves the efficiency of compilers and interpreters in parsing
+              expressions.
+            </li>
+          </ul>
+
+          <h2>Disadvantages of Prefix Notation</h2>
+          <ul>
+            <li>
+              Not as intuitive for humans to read compared to infix notation.
+            </li>
+            <li>
+              Conversion from infix to prefix may be complex and time-consuming
+              for beginners.
+            </li>
+            <li>
+              Less commonly used outside of programming and computer science
+              contexts.
+            </li>
+          </ul>
+
+          <h2>Method to Convert Infix to Prefix Notation</h2>
+          <ul>
+            <li>
+              Reverse the infix expression (e.g., if the infix expression is
+              <code>A + B * C</code>, the reversed form would be
+              <code>C * B + A</code>).
+            </li>
+            <li>
+              Replace every '(' with ')' and every ')' with '(' in the reversed
+              expression.
+            </li>
+            <li>
+              Convert the modified expression to postfix notation using standard
+              infix to postfix rules.
+            </li>
+            <li>Reverse the result to obtain the prefix expression.</li>
+          </ul>
+        </div>
+        <h3 id="fstque">
           21. Convert infix expression (a-b/c)*(a/c-d) to prefix expression.
         </h3>
         <p>
@@ -189,9 +274,9 @@
           corresponding prefix expression is /+*abc-+def.
         </p>
       </div>
-    </main >
-<div id="down"></div>
+    </main>
+    <div id="down"></div>
 
-    <script type="text/javascript" src="../../hdr_ftr.js" ></script>
+    <script type="text/javascript" src="/hdr_ftr.js"></script>
   </body>
 </html>

@@ -127,14 +127,29 @@ header.innerHTML = `
             >Infix And Postfix question</a
           >
         </li>
+            <li>
+          <a href="/sub_modules/dsa_in_c/prefixtopostfix.html"
+            >Prefix And Postfix question</a
+          >
+        </li>
         <li>
-          <a href="/sub_modules/dsa_in_c/infixtoprefix.html"
+          <a href="/sub_modules/dsa_in_c/stack2.html"
             >Infix And Prefix question</a
+          >
+        </li>
+        <li>
+          <a href="/sub_modules/dsa_in_c/stack3.html"
+            >Prefix And Infix question</a
           >
         </li>
         <li>
           <a href="/sub_modules/dsa_in_c/postfixprefixofinfix.html"
             >Postfix & Prefix To Infix</a
+          >
+        </li>
+         <li>
+          <a href="/sub_modules/dsa_in_c/infixtoprefix.html"
+            >Infix To Prefix question</a
           >
         </li>
         <li>
@@ -354,6 +369,14 @@ footer.innerHTML = `
                 href="/sub_modules/dsa_in_c/infixtoprefix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
+                >Infix To Prefix Conversion</a
+              >
+            </li>
+              <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/dsa_in_c/stack2.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >Infix And Prefix Conversion</a
               >
             </li>
@@ -461,4 +484,3 @@ footer.innerHTML = `
     </div>
 `;
 document.querySelector("body").append(footer);
-

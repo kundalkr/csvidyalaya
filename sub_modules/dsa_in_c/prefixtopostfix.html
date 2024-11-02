@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script  type="text/javascript" src="/externalcss.js"></script>
+    <script type="text/javascript" src="/externalcss.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Prefix to Postfix & Postfix to Prefix Conversions Questions</title>
+    <meta
+      name="description"
+      content="Explore a comprehensive collection of questions and solutions on converting prefix to postfix and vice versa. Enhance your coding skills!"
+    />
   </head>
   <body>
     <!-- upper and down button -->
     <div class="container">
-      <h1 id="upper">Stack Questions</h1>
+      <h1 id="upper">Prefix And Postfix Conversion Questions</h1>
       <p>These questions are generally asked in university exam</p>
       <p>infix, prefix based stack question</p>
     </div>
@@ -35,16 +40,16 @@
         </span></a
       >
     </button>
-    <br>
+    <br />
     <!-- upper and down button end-->
     <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary"type="button">
+      <button class="btn btn-primary" type="button">
         <a href="infixtopostfix.html" style="color: antiquewhite"
           >back to question no 49 to 68
         </a>
       </button>
     </div>
-    <br><br>
+    <br /><br />
     <div class="container">
       <div class="card" style="width: 18rem">
         <div class="card-header">Also try these question</div>
@@ -59,7 +64,9 @@
             <a href="Arrays.html">array questions</a>
           </li>
           <li class="list-group-item">
-            <a href="/sub_modules/os/operating_System_Topics.html">operating system questions</a>
+            <a href="/sub_modules/os/operating_System_Topics.html"
+              >operating system questions</a
+            >
           </li>
         </ul>
       </div>
@@ -67,7 +74,127 @@
     <br /><br />
     <main>
       <div class="container">
-        <h3>
+        <div>
+          <br />
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+          <br /><br />
+          <body>
+            <h2>Prefix and Postfix Notation in DSA</h2>
+            <p>
+              Prefix and postfix are two ways to write expressions in which the
+              operator is positioned either before (prefix) or after (postfix)
+              the operands. These notations are particularly useful in the
+              evaluation of expressions without the need for parentheses to
+              dictate order of operations.
+            </p>
+
+            <h3>Method to Convert Prefix to Postfix and Vice-Versa</h3>
+            <ul>
+              <li>
+                <strong>Prefix to Postfix:</strong>
+                <ul>
+                  <li>Read the prefix expression from right to left.</li>
+                  <li>If an operand is encountered, push it onto a stack.</li>
+                  <li>
+                    If an operator is encountered, pop the top two operands from
+                    the stack.
+                  </li>
+                  <li>
+                    Combine the operands with the operator in postfix form and
+                    push the result back onto the stack.
+                  </li>
+                  <li>
+                    The final element left in the stack is the postfix
+                    expression.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Postfix to Prefix:</strong>
+                <ul>
+                  <li>Read the postfix expression from left to right.</li>
+                  <li>If an operand is encountered, push it onto a stack.</li>
+                  <li>
+                    If an operator is encountered, pop the top two operands from
+                    the stack.
+                  </li>
+                  <li>
+                    Combine the operands with the operator in prefix form and
+                    push the result back onto the stack.
+                  </li>
+                  <li>
+                    The final element left in the stack is the prefix
+                    expression.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3>Advantages and Disadvantages</h3>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Notation</th>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+              </tr>
+              <tr>
+                <td>Prefix</td>
+                <td>
+                  <ul>
+                    <li>No need for parentheses to dictate order.</li>
+                    <li>Evaluation is straightforward using a stack.</li>
+                    <li>Unambiguous, as each operator follows its operands.</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Less intuitive for human reading and writing.</li>
+                    <li>More complex parsing compared to infix notation.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Postfix</td>
+                <td>
+                  <ul>
+                    <li>Similar advantages to prefix, with easy evaluation.</li>
+                    <li>Allows for easier implementation in calculators.</li>
+                    <li>
+                      Also unambiguous, eliminating confusion with operator
+                      precedence.
+                    </li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Like prefix, can be less intuitive for humans.</li>
+                    <li>
+                      Requires extra processing to convert to infix for
+                      readability.
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+
+            <h3>Need for Conversion</h3>
+            <p>
+              Converting between prefix and postfix notation is essential for
+              various applications, including compilers and expression
+              evaluators. The conversion enables different representations of
+              expressions, optimizing them for specific evaluation strategies
+              and improving efficiency in computations where one form might be
+              more advantageous than the other.
+            </p>
+          </body>
+        </div>
+        <h3 id="fstque">
           69. Convert the following prefix expression to postfix: * + A B - C D
         </h3>
         <p><strong>Answer:</strong></p>
@@ -338,7 +465,9 @@
             <a href="Arrays.html">array questions</a>
           </li>
           <li class="list-group-item">
-            <a href="/sub_modules/os/operating_System_Topics.html">operating system questions</a>
+            <a href="/sub_modules/os/operating_System_Topics.html"
+              >operating system questions</a
+            >
           </li>
         </ul>
       </div>

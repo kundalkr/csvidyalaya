@@ -4,7 +4,11 @@
     <script  type="text/javascript" src="../../externalcss.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+      <title>Comprehensive Queue Questions and Answers</title>
+      <meta name="description" content="Explore a variety of queue-related questions with detailed answers to enhance your understanding and prepare for exams.">
+
+  
   </head>
   <body>
     <!-- upper and down button -->
@@ -37,7 +41,68 @@
     <!-- upper and down button end-->
     <main>
       <div class="container">
-        <h2>Question 1: What is a Queue data structure?</h2>
+        <div>
+          <br />
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+  
+            <h2>What Is Queue in Data Structures and Algorithms</h2>
+            <p>A Queue is a linear data structure that follows the First In First Out (FIFO) principle. This means that the first element added to the queue will be the first one to be removed. Queues are used in various applications such as scheduling tasks, handling requests in web servers, and managing resources in concurrent programming.</p>
+            
+            <h3>Methods of Queue</h3>
+            <ul>
+                <li>Enqueue: Adds an element to the end of the queue.</li>
+                <li>Dequeue: Removes an element from the front of the queue.</li>
+                <li>Peek: Returns the front element of the queue without removing it.</li>
+                <li>isEmpty: Checks whether the queue is empty.</li>
+                <li>Size: Returns the number of elements in the queue.</li>
+                <li>Clear: Removes all elements from the queue.</li>
+            </ul>
+        
+            <h3>Advantages and Disadvantages of Queue</h3>
+            <table border="1" class="table table-bordered">
+                <tr>
+                    <th>Advantages</th>
+                    <th>Disadvantages</th>
+                </tr>
+                <tr>
+                    <td>Simple and easy to implement.</td>
+                    <td>Limited size in static implementations (e.g., array-based queues).</td>
+                </tr>
+                <tr>
+                    <td>Efficient for managing data in a FIFO manner.</td>
+                    <td>Not suitable for random access of elements.</td>
+                </tr>
+                <tr>
+                    <td>Used in many algorithms and applications (e.g., breadth-first search).</td>
+                    <td>Overhead of maintaining pointers in linked list implementations.</td>
+                </tr>
+                <tr>
+                    <td>Supports multiple operations efficiently.</td>
+                    <td>Can lead to increased memory usage in dynamic implementations.</td>
+                </tr>
+                <tr>
+                    <td>Facilitates task scheduling and resource management.</td>
+                    <td>Requires careful handling of underflow and overflow conditions.</td>
+                </tr>
+                <tr>
+                    <td>Provides better performance in scenarios where elements are processed in order.</td>
+                    <td>Potentially slower than stacks in certain applications due to the FIFO nature.</td>
+                </tr>
+            </table>
+        
+            <h3>Need of Queue in Linked List</h3>
+            <p>Queues are often implemented using linked lists because linked lists allow for dynamic sizing and efficient insertion and deletion of elements. Using a linked list for a queue can help avoid the issues of overflow that may occur with array-based implementations, as the size of the queue can grow and shrink as needed without the constraints of a predefined limit. This is especially beneficial in applications where the number of elements cannot be predicted in advance.</p>
+
+        
+          <br /><br />
+        </div>
+        <h2 id="fstque">Question 1: What is a Queue data structure?</h2>
 
         <p><strong>Solution : </strong></p>
         <p>
