@@ -462,10 +462,3 @@ footer.innerHTML = `
 `;
 document.querySelector("body").append(footer);
 
-function opene() {
-  document.getElementById("sidebar").style.display = "block";
-}
-
-function closee() {
-  document.getElementById("sidebar").style.display = "none";
-}
