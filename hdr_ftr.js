@@ -16,7 +16,7 @@ header.innerHTML = `
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" onclick="opene()"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -102,6 +102,54 @@ header.innerHTML = `
         </div>
       </div>
     </nav>
+    <div id="sidebar" style="display: none">
+      <button onclick="closee()" style="float: right; padding-right: 22px;">
+        <span class="material-symbols-outlined"> close </span>
+      </button>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li>
+          <a href="/sub_modules/os/operating_System_Topics.html"
+            >operating System Topics</a
+          >
+        </li>
+        <li>
+          <a
+            href="/sub_modules/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
+            >Scheduling Algorithms Question</a
+          >
+        </li>
+        <li>
+          <a href="/sub_modules/dsa_in_c/dsa_in_c_topic.html">Dsa In C</a>
+        </li>
+        <li>
+          <a href="/sub_modules/dsa_in_c/infixtopostfix.html"
+            >Infix And Postfix question</a
+          >
+        </li>
+        <li>
+          <a href="/sub_modules/dsa_in_c/infixtoprefix.html"
+            >Infix And Prefix question</a
+          >
+        </li>
+        <li>
+          <a href="/sub_modules/dsa_in_c/postfixprefixofinfix.html"
+            >Postfix & Prefix To Infix</a
+          >
+        </li>
+        <li>
+          <a href="/sub_modules/dsa_in_c/linkedlist1.html"
+            >linkedlist question</a
+          >
+        </li>
+
+        <li>
+          <a href="/sub_modules/Digital Fundamentals/Dgital_funda_topic.html"
+            >Dgital fundamental</a
+          >
+        </li>
+      </ul>
+    </div>
     <br>
 `;
 document.querySelector("body").prepend(header);
@@ -413,3 +461,11 @@ footer.innerHTML = `
     </div>
 `;
 document.querySelector("body").append(footer);
+
+function opene() {
+  document.getElementById("sidebar").style.display = "block";
+}
+
+function closee() {
+  document.getElementById("sidebar").style.display = "none";
+}

@@ -262,10 +262,3 @@ cssstyle.innerHTML = `
         }
       }`;
 head.appendChild(cssstyle);
-function opene() {
-  document.getElementById("sidebar").style.display = "block";
-}
-
-function closee() {
-  document.getElementById("sidebar").style.display = "none";
-}
