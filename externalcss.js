@@ -20,6 +20,14 @@ href="https://fonts.googleapis.com/icon?family=Material+Icons"
 rel="stylesheet"
 /> */
 
+const googl = document.createElement("link");
+googl.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close"
+);
+googl.setAttribute("rel", "stylesheet");
+head.appendChild(googl);
+
 const googleapi3 = document.createElement("link");
 googleapi3.setAttribute(
   "href",
@@ -191,7 +199,38 @@ cssstyle.innerHTML = `
  .py-5 {
     padding-top: 0px ;
 }
-.navbar-bran {
+    /* header.html css start here */
+ @media (width<= 800px) {
+        #navbarSupportedContent {
+          display: none;
+        }
+        #sdbrs_open_button {
+          display: block;
+        }
+        #sidebar {
+          padding-top: 15px;
+          position: fixed;
+          top: 0px;
+          background-color: #ffd1dc;
+          z-index: 111111111;
+          border: 1px solid red;
+          width: 100vw;
+          height: 90vh;
+          li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            a {
+              text-decoration: none;
+              color: black;
+            }
+          }
+          button {
+            border: none;
+            background-color: #ffd1dc;
+          }
+        }
+      }
+      .navbar-bran {
         font-family: "Pacifico", cursive;
         font-weight: 400;
         font-style: normal;
@@ -202,7 +241,12 @@ cssstyle.innerHTML = `
           font-weight: 400;
           font-style: normal;
         }
-      } 
+      }
+
+      /* .navbar .navbar-expand-lg .navbar-light {
+        color: black;
+      } */
+
       li > a {
         font-family: "Playpen Sans", cursive;
         font-optical-sizing: auto;
@@ -218,6 +262,10 @@ cssstyle.innerHTML = `
         }
       }`;
 head.appendChild(cssstyle);
+function opene() {
+  document.getElementById("sidebar").style.display = "block";
+}
 
-const nav = document.querySelectorAll("body > div:nth-child(1) > nav");
-nav[0].style.backgroundColor = "#2db88f";
+function closee() {
+  document.getElementById("sidebar").style.display = "none";
+}
