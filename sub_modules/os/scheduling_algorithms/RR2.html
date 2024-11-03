@@ -11,6 +11,76 @@
       name="description"
       content="Improve your knowledge of Round Robin scheduling algorithms with practice questions and detailed answers. Perfect resource for technical interviews and academic studies."
     />
+    <style>
+      #RR1_1,
+      #RR1_2,
+      #RR2_1,
+      #RR2_2,
+      #RR3_1,
+      #RR3_2,
+      #RR3_3 {
+        height: 180px;
+        width: 630px;
+        object-fit: none;
+        border: 1px solid red;
+      }
+
+      #RR1_1 {
+        object-position: -37px -14px;
+      }
+      #RR1_2 {
+        object-position: -34px -219px;
+      }
+      #RR2_1 {
+        object-position: -39px -947px;
+      }
+      #RR2_2 {
+        object-position: -42px -1140px;
+      }
+      #RR3_1 {
+        object-position: -34px -1844px;
+      }
+      #RR3_2 {
+        object-position: -27px -2052px;
+      }
+      #RR3_3 {
+        object-position: -27px -2260px;
+      }
+      @media (width<=770px) {
+        #RR1_1,
+        #RR1_2,
+        #RR2_1,
+        #RR2_2,
+        #RR3_1,
+        #RR3_2,
+        #RR3_3 {
+          height: 150px;
+          width: 400px;
+        }
+
+        #RR1_1 {
+          object-position: -46px -500px;
+        }
+        #RR1_2 {
+          object-position: -42px -707px;
+        }
+        #RR2_1 {
+        object-position: -50px -1395px;
+        }
+        #RR2_2 {
+          object-position: -49px -1567px;
+        }
+        #RR3_1 {
+        object-position: -37px -2463px;
+        }
+        #RR3_2 {
+          object-position: -50px -2647px;
+        }
+        #RR3_3 {
+          object-position: -42px -2820px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- upper and down button -->
@@ -100,6 +170,18 @@
 
           <h4>Solution:</h4>
           <h4>Gantt Chart</h4>
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR1_1"
+            srcset=""
+          />
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR1_2"
+            srcset=""
+          />
           <p>
             | P1 (0-3) | P2 (3-6) | P3 (6-9) | P1 (9-12) | P4 (12-15) | P5
             (15-18) | P2 (18-20) | P6 (20-22) | P3 (22-23) | P1(23-24) |
@@ -208,6 +290,18 @@
 
           <h4>Solution:</h4>
           <h4>Gantt Chart</h4>
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR2_1"
+            srcset=""
+          />
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR2_2"
+            srcset=""
+          />
           <p>
             | P1 (0-3) | P2 (3-6) | P1 (6-8) | P3 (8-11) | P4 (11-14) | P2
             (14-15) | P5 (15-18) | P6 (18-20) | P4 (20-23) | P5 (23-27) |
@@ -316,6 +410,24 @@
           </ul>
 
           <h4>Gantt Chart</h4>
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR3_1"
+            srcset=""
+          />
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR3_2"
+            srcset=""
+          />
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR3_3"
+            srcset=""
+          />
           <p>
             | P1(0-2)| P2(2-4) | P3(4-6) | P1(6-8) | P4(8-10) | P5(10-12) |
             P2(12-13) | P3(13-15) | P1(15-17) | P4(17-19) | P5(19-21) |
@@ -403,5 +515,22 @@
     <br />
     <script type="text/javascript" src="/hdr_ftr.js"></script>
     <script type="text/javascript" src="commonthings.js"></script>
+    <script async>
+      window.onload = function () {
+        // const cars = [
+        //   "RR1_1",
+        //   "RR1_2",
+        //   "RR2_1",
+        //   "RR2_2",
+        //   "RR3_1",
+        //   "RR3_2",
+        //   "RR3_3",
+        // ];
+        let img = document.getElementsByTagName("img");
+        for (let index = 0; index < img.length; index++) {
+          img[index].src = "/assets/RR2.png";
+        }
+      };
+    </script>
   </body>
 </html>

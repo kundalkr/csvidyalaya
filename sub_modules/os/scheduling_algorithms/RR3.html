@@ -9,6 +9,50 @@
       name="description"
       content="Explore solved examples and answers for Round Robin scheduling algorithm questions. Ideal for students and professionals preparing for exams or job interviews."
     />
+    <style>
+      #RR1_1,
+      #RR1_2,
+      #RR1_3,
+      #RR1_4 {
+        height: 180px;
+        width: 630px;
+        object-fit: none;
+        border: 1px solid red;
+      }
+      #RR1_1 {
+        object-position: -897px -32px;
+      }
+      #RR1_2 {
+        object-position: -900px -229px;
+      }
+      #RR1_3 {
+        object-position: -910px -439px;
+      }
+      #RR1_4 {
+        object-position: -887px -643px;
+      }
+      @media (width<=770px) {
+        #RR1_1,
+        #RR1_2,
+        #RR1_3,
+        #RR1_4 {
+          height: 150px;
+          width: 400px;
+        }
+        #RR1_1 {
+          object-position: -899px -885px;
+        }
+        #RR1_2 {
+          object-position: -904px -1087px;
+        }
+        #RR1_3 {
+          object-position: -889px -1299px;
+        }
+        #RR1_4 {
+          object-position: -899px -1498px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- upper and down button -->
@@ -26,6 +70,15 @@
           </span></a
         >
       </button>
+      <br />
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" id="down" type="button">
+          <a href="RR2.html" style="color: antiquewhite"
+            >click for previous question 9 to 11 click here</a
+          >
+        </button>
+      </div>
+      <br />
       <button
         type="button"
         class="btn btn-success"
@@ -112,6 +165,30 @@
           </ul>
 
           <h4>Gantt Chart</h4>
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR1_1"
+            srcset=""
+          />
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR1_2"
+            srcset=""
+          />
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR1_3"
+            srcset=""
+          />
+          <img
+            alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+            id="RR1_4"
+            srcset=""
+          />
           <p>
             | P1(0-2)| P2(2-2.5) | P1(2.5-3.5) | P3(3.5-4.5) | P1(4.5-5.5) |
             P4(5.5-6.5) | P5(6.5-7.5) | P3(7.5-8.5) | P1(8.5-9) | P6(9-10) |
@@ -218,16 +295,17 @@
       </button>
     </div>
     <br />
-    <br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" id="down" type="button">
-        <a href="RR1.html" style="color: antiquewhite"
-          >for previous question 1 to 8 click here</a
-        >
-      </button>
-    </div>
-    <br />
-    <script type="text/javascript" src="/hdr_ftr.js"></script> 
-     <script type="text/javascript" src="commonthings.js"></script>
+
+    <script type="text/javascript" src="/hdr_ftr.js"></script>
+    <script type="text/javascript" src="commonthings.js"></script>
+
+    <script async>
+      window.onload = function () {
+        let ganttcharts = document.getElementsByTagName("img");
+        for (let index = 0; index < ganttcharts.length; index++) {
+          ganttcharts[index].src = "/assets/RR2.png";
+        }
+      };
+    </script>
   </body>
 </html>
