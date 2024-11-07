@@ -22,20 +22,38 @@
           //   )}&key=52dc76ca093a4794804768838053c8e7`;
 
           window.open(
-              `https://www.bing.com/indexnow?url=https://www.${valse.value.slice(
-                12,
-                valse.value.length
-              )}&key=52dc76ca093a4794804768838053c8e7`,
-              "_blank"
-            );
+            `https://www.bing.com/indexnow?url=https://www.${valse.value.slice(
+              12,
+              valse.value.length
+            )}&key=52dc76ca093a4794804768838053c8e7`,
+            "_blank"
+          );
 
-            window.open(
-              `https://yandex.com/indexnow?url=https://www.${valse.value.slice(
-                12,
-                valse.value.length
-              )}&key=52dc76ca093a4794804768838053c8e7`,
-              "_blank"
-            );
+          window.open(
+            `https://yandex.com/indexnow?url=https://www.${valse.value.slice(
+              12,
+              valse.value.length
+            )}&key=52dc76ca093a4794804768838053c8e7`,
+            "_blank"
+          );
+        } else if(valse.value.slice(0, 10) === "https://cs") {
+          console.log("yes");
+          window.open(
+         
+            `https://www.bing.com/indexnow?url=https://www.${valse.value.slice(
+              8,
+              valse.value.length
+            )}&key=52dc76ca093a4794804768838053c8e7`,
+            "_blank"
+          );
+
+          window.open(
+            `https://yandex.com/indexnow?url=https://www.${valse.value.slice(
+              8,
+              valse.value.length
+            )}&key=52dc76ca093a4794804768838053c8e7`,
+            "_blank"
+          );
         }
 
         //   setTimeout(function () {
