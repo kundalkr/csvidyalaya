@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i</title>
+  </head>
+  <body>
+    <input type="text" id="valuesd" />
+    For Bing And Yandex :
+    <button id="forredirection">index now</button>
+    <script>
+      var valse = document.getElementById("valuesd");
+      var likf = document.getElementById("forredirection");
+
+      likf.addEventListener("click", function () {
+        if (valse.value.slice(0, 12) === "https://www.") {
+          console.log(valse.value.slice(12, valse.value.length));
+          //   window.location.href = `https://www.bing.com/indexnow?url=https://www.${valse.value.slice(
+          //     12,
+          //     valse.value.length
+          //   )}&key=52dc76ca093a4794804768838053c8e7`;
+
+          window.open(
+              `https://www.bing.com/indexnow?url=https://www.${valse.value.slice(
+                12,
+                valse.value.length
+              )}&key=52dc76ca093a4794804768838053c8e7`,
+              "_blank"
+            );
+
+            window.open(
+              `https://yandex.com/indexnow?url=https://www.${valse.value.slice(
+                12,
+                valse.value.length
+              )}&key=52dc76ca093a4794804768838053c8e7`,
+              "_blank"
+            );
+        }
+
+        //   setTimeout(function () {
+        //     window.open(
+        //       `https://www.bing.com/indexnow?url=https://www.${valse.value.slice(
+        //         12,
+        //         valse.value.length
+        //       )}&key=52dc76ca093a4794804768838053c8e7`,
+        //       "_blank"
+        //     );
+        //   }, 3000);
+        //   setTimeout(function () {
+        //     window.open(
+        //       `https://yandex.com/indexnow?url=https://www.${valse.value.slice(
+        //         12,
+        //         valse.value.length
+        //       )}&key=52dc76ca093a4794804768838053c8e7`,
+        //       "_blank"
+        //     );
+        //   }, 3000);
+        // }
+        //   window.location.href = `https://yandex.com/indexnow?url=https://www.${valse.value.slice(
+        //     12,
+        //     valse.value.length
+        //   )}&key=52dc76ca093a4794804768838053c8e7`;
+        // }
+
+        // window.location.href = `https://www.bing.com/indexnow?url=https://www.${valse.value}&key=52dc76ca093a4794804768838053c8e7`;
+        // window.location.href = `https://yandex.com/indexnow?url=https://www.${valse.value}&key=52dc76ca093a4794804768838053c8e7`;
+      });
+
+      console.log(valse.value.slice(13, valse.value.length));
+    </script>
+  </body>
+</html>
