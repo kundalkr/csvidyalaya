@@ -155,8 +155,8 @@
             In the Multilevel Queue Scheduling algorithm, the processes are
             divided into multiple queues based on specific characteristics, such
             as process priority or memory requirements. Each queue has its own
-            scheduling algorithm, which could be First-Come-First-Serve (FCFS),
-            Shortest Job First (SJF), or Round Robin (RR), depending on the type
+            scheduling algorithm, which could be <a href="/sub_modules/os/scheduling_algorithms/fcfs.html">First-Come-First-Serve (FCFS)</a>,
+            <a href="/sub_modules/os/scheduling_algorithms/sjf1.html">Shortest Job First (SJF)</a>, or <a href="/sub_modules/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>, depending on the type
             of processes it holds. This algorithm is typically used in scenarios
             where different types of processes need to be managed independently
             and efficiently.
@@ -265,7 +265,7 @@
           <p>
             Multilevel Queue Scheduling is particularly beneficial in
             environments where different categories of tasks require distinct
-            scheduling policies. By allowing separate scheduling algorithms per
+            scheduling policies. By allowing separate <a href="/sub_modules/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a> per
             queue and facilitating priority-based processing, it can deliver
             more efficient performance compared to a single algorithm for all
             processes. This makes it highly suitable for systems requiring quick
@@ -593,8 +593,7 @@
             scheduling algorithm? Consider the following processes with their
             Arrival Time, Burst Time. Question criteria : <br />
             (1) There are four queue Q1, Q2, Q3, Q4<br />
-            (2) In Q1(Round robin, timestamp=1), Q2(Priority scheduling,
-            preemptive), Q3(sjf, preemptive), Q4(FCFS)
+            (2) In Q1(Round robin, timestamp=1), Q2(preemptive Priority scheduling), Q3(preemptive sjf ), Q4(FCFS)
           </h2>
 
           <table border="1" class="table table-bordered">

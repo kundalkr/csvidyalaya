@@ -155,17 +155,18 @@
           >
           <br /><br />
 
-          <h2>
+          <h2 id="defi">
             What Is Shortest Remaining Time First (SRTF) Scheduling Algorithm ?
           </h2>
 
           <p>
-            Shortest Remaining Time First (SRTF) is a preemptive scheduling
-            algorithm used in operating systems. In this algorithm, the process
-            with the shortest remaining burst time is selected for execution. If
-            a new process arrives with a burst time shorter than the remaining
-            time of the currently running process, the current process is
-            preempted, and the new process starts execution.
+            Shortest Remaining Time First (SRTF) or Shortest Job Next (SJN) is a
+            <a href="https://www.baeldung.com/cs/scheduling-types#:~:text=An%20example%20of%20a%20preemptive,shortest%20time%20left%20to%20completion.">preemptive scheduling algorithm</a> used in operating systems. In this
+            algorithm, the process with the shortest remaining burst time is
+            selected for execution. If a new process arrives with a burst time
+            shorter than the remaining time of the currently running process,
+            the current process is preempted, and the new process starts
+            execution.
           </p>
 
           <h2>Method to Solve SRTF Scheduling Algorithm</h2>
@@ -188,8 +189,9 @@
               process.
             </li>
             <li>
-              Step 6: Calculate the average waiting time and average turnaround
-              time.
+              Step 6: Calculate the
+              <a href="#avgwt">average waiting time</a> and
+              <a href="#avgtat">average turnaround time</a>
             </li>
           </ul>
 
@@ -230,20 +232,28 @@
           <h2>Why SRTF is Better than Other Scheduling Algorithms</h2>
           <p>
             SRTF is considered better than non-preemptive scheduling algorithms
-            like Shortest Job First (SJF) because it allows processes with
-            shorter remaining burst times to be executed immediately, reducing
-            the average waiting and turnaround time. Unlike algorithms such as
-            First Come First Serve (FCFS), which may lead to high waiting times
-            for shorter jobs, SRTF is more efficient in handling time-sensitive
-            processes, especially when minimizing average wait time is the
-            priority.
+            like
+            <a href="/sub_modules/os/scheduling_algorithms/sjf1.html"
+              >Shortest Job First (SJF)</a
+            >
+            because it allows processes with shorter remaining burst times to be
+            executed immediately, reducing the average waiting and turnaround
+            time. Unlike algorithms such as
+            <a href="/sub_modules/os/scheduling_algorithms/fcfs.html">
+              First Come First Serve (FCFS)</a
+            >, which may lead to high waiting times for shorter jobs, SRTF is
+            more efficient in handling time-sensitive processes, especially when
+            minimizing average wait time is the priority.
           </p>
         </div>
         <!-- question 11 start -->
         <div class="question">
           <h2 id="fstque">
             Question 11:find the average Turn Around Time and Waiting Time of
-            following processes using Non-Preemptive SJF(SHORTEST JOB FIRST)
+            following processes using
+            <a href="/sub_modules/os/scheduling_algorithms/sjf1.html"
+              >Non-Preemptive SJF(SHORTEST JOB FIRST)</a
+            >
             process scheduling algorithm?
           </h2>
           <table border="1" class="table table-bordered">
@@ -283,12 +293,14 @@
 
           <p>Formulas:</p>
           <ul>
-            <li>
+            <li id="avgtat">
               Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
             </li>
-            <li>
+            <br />
+            <li id="avgwt">
               Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
             </li>
+            <br />
           </ul>
 
           <h4>Gantt Chart</h4>
@@ -623,8 +635,8 @@
         <div class="question">
           <h2>
             Question 14: find the average Turn Around Time and Waiting Time of
-            following processes using Preemptive SJF or SRTF(SHORTEST REMAINING
-            TIME FIRST) process scheduling algorithm?
+            following processes using <a href="#defi">Preemptive SJF or SRTF(SHORTEST REMAINING
+              TIME FIRST)</a> process scheduling algorithm?
           </h2>
           <table border="1" class="table table-bordered">
             <tr>

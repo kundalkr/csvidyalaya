@@ -155,13 +155,18 @@
 
           <h2>
             What Is Shortest Job First (SJF) Scheduling Algorithm in Operating
-            System
+            System ?
           </h2>
           <p>
-            Shortest Job First (SJF) is a process scheduling algorithm in which
-            the process with the shortest execution time is selected for
-            execution next. This scheduling technique is also known as Shortest
-            Job Next (SJN) and can be either preemptive or non-preemptive.
+            Shortest Job First (SJF) is a
+            <a
+              href="/sub_modules/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
+              >process scheduling algorithm</a
+            >
+            in which the process with the shortest execution time is selected
+            for execution next. This scheduling technique is also known as
+            Shortest Job Next (SJN) and can be either preemptive or
+            non-preemptive.
           </p>
 
           <h2>Method to Solve SJF Scheduling Algorithm</h2>
@@ -196,8 +201,12 @@
             <tr>
               <td>Minimizes average waiting time.</td>
               <td>
-                Not practical for real-time scheduling as burst times are often
-                unknown.
+                Not practical for
+                <a
+                  href="https://en.wikipedia.org/wiki/Scheduling_analysis_real-time_systems"
+                  >real-time scheduling</a
+                >
+                as burst times are often unknown.
               </td>
             </tr>
             <tr>
@@ -217,8 +226,18 @@
               <td>Not suitable for time-sharing environments.</td>
             </tr>
             <tr>
-              <td>Lower CPU idle time for batch jobs.</td>
-              <td>High overhead if burst times vary widely.</td>
+              <td>
+                Lower CPU idle time for
+                <a href="https://www.ibm.com/topics/batch-jobs">batch jobs</a>.
+              </td>
+              <td>
+                High overhead if
+                <a
+                  href="https://www.baeldung.com/cs/cpu-scheduling#:~:text=Burst%20time%2C%20also%20referred%20to,or%20unit%20of%20a%20job."
+                  >Burst Times</a
+                >
+                vary widely.
+              </td>
             </tr>
           </table>
 
@@ -228,8 +247,12 @@
             to other scheduling algorithms, especially when burst times are
             predictable. It prioritizes shorter tasks, which helps optimize the
             utilization of CPU resources. However, it is only optimal when burst
-            times can be determined in advance, which is often possible in batch
-            processing systems but not in real-time or interactive environments.
+            times can be determined in advance, which is often possible in
+            <a
+              href="https://aws.amazon.com/what-is/batch-processing/#:~:text=Batch%20processing%20is%20the%20method,run%20on%20individual%20data%20transactions."
+              >batch processing systems</a
+            >
+            but not in real-time or interactive environments.
           </p>
         </div>
 
@@ -360,8 +383,11 @@
         <div class="question">
           <h2>
             Question 2: find the average Turn Around Time and Waiting Time of
-            following processes using Preemptive SJF(SHORTEST JOB FIRST) process
-            scheduling algorithm?
+            following processes using
+            <a href="/sub_modules/os/scheduling_algorithms/sjf2.html"
+              >Preemptive SJF(SHORTEST JOB FIRST)</a
+            >
+            process scheduling algorithm?
           </h2>
           <table border="1" class="table table-bordered">
             <tr>
@@ -1518,7 +1544,8 @@
         </div>
       </div>
     </main>
-    <script type="text/javascript" src="/hdr_ftr.js"></script>   <script type="text/javascript" src="commonthings.js"></script>
+    <script type="text/javascript" src="/hdr_ftr.js"></script>
+    <script type="text/javascript" src="commonthings.js"></script>
     <script async>
       window.onload = function () {
         let ganttcharts = document.getElementsByTagName("img");
