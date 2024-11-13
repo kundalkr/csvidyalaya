@@ -1,6 +1,6 @@
 const header = document.createElement("div");
 header.innerHTML = `
-    <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFD1DC; "  >
+    <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFD1DC;">
       <div class="container-fluid">
         <a
           class="navbar-brand navbar-bran"
@@ -157,7 +157,6 @@ header.innerHTML = `
             >linkedlist question</a
           >
         </li>
-
         <li>
           <a href="/sub_modules/Digital Fundamentals/Dgital_funda_topic.html"
             >Dgital fundamental</a
