@@ -100,1254 +100,1281 @@
           object-position: -29px -1446px;
         }
       }
+      
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1 id="upper">FCFS(FIRST COME FIRST SERVED) question</h1>
-    </div>
-    <!-- upper and down button start-->
-    <button
-      type="button"
-      class="btn btn-success"
-      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
-    >
-      <a href="#down"
-        ><span class="material-icons" style="color: antiquewhite">
-          arrow_downward
-        </span></a
-      >
-    </button>
-    <button
-      type="button"
-      class="btn btn-success"
-      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
-    >
-      <a href="#upper"
-        ><span class="material-icons" style="color: antiquewhite">
-          arrow_upward
-        </span></a
-      >
-    </button>
-    <!-- upper and down button end-->
-
-    <p style="margin: 0px 2vw">
-      Here are 24 questions on FCFS(FIRST COME FIRST SERVED) process scheduling
-      algorithms. Each question is presented in a table format, followed by the
-      solution with Gantt charts, average turnaround time (TAT), and average
-      waiting time (WT).
-    </p>
-    <br />
-    <br />
-
-    <br />
-    <div class="container" id="samethings"></div>
-
-    <!-- question 1 start -->
-
-    <main>
+    <div id="padd">
       <div class="container">
-        <a
-          href="#fstque"
-          class="btn btn-primary btn-lg active"
-          role="button"
-          aria-pressed="true"
-          >Jump To Question</a
+        <h1 id="upper">FCFS(FIRST COME FIRST SERVED) question</h1>
+      </div>
+      <!-- upper and down button start-->
+      <button
+        type="button"
+        class="btn btn-success"
+        style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+      >
+        <a href="#down"
+          ><span class="material-icons" style="color: antiquewhite">
+            arrow_downward
+          </span></a
         >
-        <br />
-        <br />
-        <h2>What Is FCFS Scheduling Algorithm in Operating System ?</h2>
-        <p>
-          FCFS (First Come First Serve) is one of the simplest
-          <a href="/sub_modules/os/operating_System_Topics.html"
-            >scheduling algorithms in operating system</a
-          >. It schedules processes based on their arrival time. The process
-          that arrives first gets executed first, and others wait in a queue.
-        </p>
+      </button>
+      <button
+        type="button"
+        class="btn btn-success"
+        style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+      >
+        <a href="#upper"
+          ><span class="material-icons" style="color: antiquewhite">
+            arrow_upward
+          </span></a
+        >
+      </button>
+      <!-- upper and down button end-->
 
-        <h2>Method to Solve FCFS Scheduling Algorithm</h2>
-        <ul>
-          <li>
-            Step 1: List all the processes and their arrival times in the order
-            they arrive.
-          </li>
-          <li>
-            Step 2: Assign CPU to the process that arrives first and continue
-            until it completes execution.
-          </li>
-          <li>
-            Step 3: After completion, check if the next process is ready to
-            execute.
-          </li>
-          <li>
-            Step 4: Repeat the process for all other processes in the queue
-            based on arrival time.
-          </li>
-          <li>
-            Step 5: Calculate the waiting time for each process as:
+      <p style="margin: 0px 2vw">
+        Here are 24 questions on FCFS(FIRST COME FIRST SERVED) process
+        scheduling algorithms. Each question is presented in a table format,
+        followed by the solution with Gantt charts, average turnaround time
+        (TAT), and average waiting time (WT).
+      </p>
+      <br />
+      <br />
+
+      <br />
+      <div class="container" id="samethings"></div>
+      <!-- question 1 start -->
+      <main>
+        <div class="container">
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+          <br />
+          <br />
+          <h2>What Is FCFS Scheduling Algorithm in Operating System ?</h2>
+          <p>
+            FCFS (First Come First Serve) is one of the simplest
+            <a href="/sub_modules/os/operating_System_Topics.html"
+              >scheduling algorithms in operating system</a
+            >. It schedules processes based on their arrival time. The process
+            that arrives first gets executed first, and others wait in a queue.
+          </p>
+
+          <h2>Method to Solve FCFS Scheduling Algorithm</h2>
+          <ul>
+            <li>
+              Step 1: List all the processes and their arrival times in the
+              order they arrive.
+            </li>
+            <li>
+              Step 2: Assign CPU to the process that arrives first and continue
+              until it completes execution.
+            </li>
+            <li>
+              Step 3: After completion, check if the next process is ready to
+              execute.
+            </li>
+            <li>
+              Step 4: Repeat the process for all other processes in the queue
+              based on arrival time.
+            </li>
+            <li>
+              Step 5: Calculate the waiting time for each process as:
+              <ul>
+                <li>
+                  Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+                </li>
+              </ul>
+            </li>
+            <li>
+              Step 6: Calculate the turnaround time for each process as:
+              <ul>
+                <li>
+                  <a
+                    href="https://en.wikipedia.org/wiki/Turnaround_time#:~:text=Turnaround%20time%20may%20simply%20deal,an%20operating%20system's%20scheduling%20algorithms."
+                    >Turn Around Time (TAT)</a
+                  >
+                  = Completion Time (CT) - Arrival Time (AT)
+                </li>
+              </ul>
+            </li>
+            <li>
+              Step 7: Sum up the total waiting time and turnaround time for
+              performance evaluation.
+            </li>
+          </ul>
+
+          <h2>Advantages and Disadvantages of FCFS Scheduling</h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>Simple and easy to implement.</td>
+              <td>
+                Long waiting times for processes with long burst times (
+                <a
+                  href="https://www.geeksforgeeks.org/convoy-effect-operating-systems/"
+                  >convoy effect</a
+                >
+                ).
+              </td>
+            </tr>
+            <tr>
+              <td>No starvation, as every process gets a turn.</td>
+              <td>Poor response time for time-critical processes.</td>
+            </tr>
+            <tr>
+              <td>Fair for long-running processes.</td>
+              <td>Not optimal for a multi-user or real-time system.</td>
+            </tr>
+          </table>
+          <div class="question">
+            <h2 id="fstque">
+              Question 1 : find the average Turn Around Time and Waiting Time of
+              following processes using FCFS(FIRST COME FIRST SERVED) process
+              scheduling algorithm?
+            </h2>
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>0</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>4</td>
+                <td>2</td>
+              </tr>
+            </table>
+
+            <h3>Solution</h3>
+
+            <p>Formulas:</p>
             <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
               <li>
                 Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
               </li>
             </ul>
-          </li>
-          <li>
-            Step 6: Calculate the turnaround time for each process as:
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 1 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 1 Solution | Gantt Chart"
+              id="fcfs1"
+              srcset=""
+            />
+            <br />
+
+            <!-- <p>P1 (0-4) -> P2 (4-7) -> P3 (7-9)</p> -->
+
+            <table border="1" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Process</th>
+
+                  <th scope="col">Completion Time</th>
+                  <th scope="col">Turn Around Time</th>
+                  <th scope="col">Waiting Time</th>
+                </tr>
+              </thead>
+
+              <tr>
+                <td>P1</td>
+
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>7</td>
+                <td>5</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>9</td>
+                <td>5</td>
+                <td>3</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
             <ul>
               <li>
-                <a
-                  href="https://en.wikipedia.org/wiki/Turnaround_time#:~:text=Turnaround%20time%20may%20simply%20deal,an%20operating%20system's%20scheduling%20algorithms."
-                  >Turn Around Time (TAT)</a
-                >
-                = Completion Time (CT) - Arrival Time (AT)
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
               </li>
             </ul>
-          </li>
-          <li>
-            Step 7: Sum up the total waiting time and turnaround time for
-            performance evaluation.
-          </li>
-        </ul>
 
-        <h2>Advantages and Disadvantages of FCFS Scheduling</h2>
-        <table border="1" class="table table-bordered">
-          <tr>
-            <th>Advantages</th>
-            <th>Disadvantages</th>
-          </tr>
-          <tr>
-            <td>Simple and easy to implement.</td>
-            <td>
-              Long waiting times for processes with long burst times (
-              <a
-                href="https://www.geeksforgeeks.org/convoy-effect-operating-systems/"
-                >convoy effect</a
-              >
-              ).
-            </td>
-          </tr>
-          <tr>
-            <td>No starvation, as every process gets a turn.</td>
-            <td>Poor response time for time-critical processes.</td>
-          </tr>
-          <tr>
-            <td>Fair for long-running processes.</td>
-            <td>Not optimal for a multi-user or real-time system.</td>
-          </tr>
-        </table>
-        <div class="question">
-          <h2 id="fstque">
-            Question 1 : find the average Turn Around Time and Waiting Time of
-            following processes using FCFS(FIRST COME FIRST SERVED) process
-            scheduling algorithm?
-          </h2>
+            <p>
+              Average Turn Around Time = (4 + 5 + 5) / 3 = 14 / 3 = 4.67 units
+            </p>
+            <p>Average Waiting Time = (0 + 2 + 3) / 3 = 5 / 3 = 1.67 units</p>
+          </div>
 
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>0</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>2</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>4</td>
-              <td>2</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 1 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 1 Solution | Gantt Chart"
-            id="fcfs1"
-            srcset=""
-          />
-          <br />
-
-          <!-- <p>P1 (0-4) -> P2 (4-7) -> P3 (7-9)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <thead>
+          <!-- question 1 end -->
+          <!-- question 2 start -->
+          <div class="question">
+            <h2>Question 2</h2>
+            <p>
+              find the average Turn Around Time and Waiting Time of following
+              processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+              algorithm?
+            </p>
+            <table border="1" class="table table-bordered">
               <tr>
-                <th scope="col">Process</th>
-
-                <th scope="col">Completion Time</th>
-                <th scope="col">Turn Around Time</th>
-                <th scope="col">Waiting Time</th>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
               </tr>
-            </thead>
+              <tr>
+                <td>P1</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>3</td>
+                <td>6</td>
+              </tr>
+            </table>
 
-            <tr>
-              <td>P1</td>
+            <h3>Solution</h3>
 
-              <td>4</td>
-              <td>4</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <li>
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+            </ul>
 
-              <td>7</td>
-              <td>5</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>P3</td>
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 2 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 2 Solution | Gantt Chart"
+              id="fcfs2"
+              srcset=""
+            />
+            <br />
+            <!-- <p>P1 (1-6) -> P2 (6-9) -> P3 (9-15)</p> -->
 
-              <td>9</td>
-              <td>5</td>
-              <td>3</td>
-            </tr>
-          </table>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
 
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
 
-          <p>
-            Average Turn Around Time = (4 + 5 + 5) / 3 = 14 / 3 = 4.67 units
-          </p>
-          <p>Average Waiting Time = (0 + 2 + 3) / 3 = 5 / 3 = 1.67 units</p>
+                <td>6</td>
+                <td>5</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>9</td>
+                <td>7</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>15</td>
+                <td>12</td>
+                <td>6</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+
+            <p>
+              Average Turn Around Time = (5 + 7 + 12) / 3 = 24 / 3 = 8 units
+            </p>
+            <p>Average Waiting Time = (0 + 4 + 6) / 3 = 10 / 3 = 3.33 units</p>
+          </div>
+
+          <!-- question 2 end -->
+          <!-- question 3 start -->
+          <div class="question">
+            <h2>Question 3</h2>
+            <p>
+              find the average Turn Around Time and Waiting Time of following
+              processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+              algorithm?
+            </p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>5</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>6</td>
+                <td>2</td>
+              </tr>
+            </table>
+
+            <h3>Solution</h3>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <li>
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 3 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 3 Solution |  Gantt Chart"
+              id="fcfs3"
+              srcset=""
+            />
+            <br />
+            <!-- <p>P1 (1-3) -> P2 (3-7) -> P3 (7-10) -> P4 (10-12)</p> -->
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>7</td>
+                <td>4</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>10</td>
+                <td>5</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+
+                <td>12</td>
+                <td>6</td>
+                <td>4</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+
+            <p>
+              Average Turn Around Time = (2 + 4 + 5 + 6) / 4 = 17 / 4 = 4.25
+              units
+            </p>
+            <p>
+              Average Waiting Time = (0 + 0 + 2 + 4) / 4 = 6 / 4 = 1.5 units
+            </p>
+          </div>
+          <!-- question 3 end -->
+          <!-- question 4 start -->
+          <div class="question">
+            <h2>Question 4</h2>
+            <p>
+              find the average Turn Around Time and Waiting Time of following
+              processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+              algorithm?
+            </p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>0</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>1</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>3</td>
+                <td>2</td>
+              </tr>
+            </table>
+
+            <h3>Solution</h3>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <li>
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 4 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 4 Solution | Gantt Chart"
+              id="fcfs4"
+              srcset=""
+            />
+            <br />
+            <!-- <p>P1 (0-4) -> P2 (4-7) -> P3 (7-8) -> P4 (8-10)</p> -->
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>7</td>
+                <td>6</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>8</td>
+                <td>6</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+
+                <td>10</td>
+                <td>7</td>
+                <td>5</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+
+            <p>
+              Average Turn Around Time = (4 + 6 + 6 + 7) / 4 = 23 / 4 = 5.75
+              units
+            </p>
+            <p>
+              Average Waiting Time = (0 + 3 + 5 + 5) / 4 = 13 / 4 = 3.25 units
+            </p>
+          </div>
+          <!-- question 4 end -->
+          <!-- question 5 start -->
+          <div class="question">
+            <h2>Question 5</h2>
+            <p>
+              find the average Turn Around Time and Waiting Time of following
+              processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+              algorithm?
+            </p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>4</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>6</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>7</td>
+                <td>4</td>
+              </tr>
+            </table>
+
+            <h3>Solution</h3>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <li>
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 5 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 5 Solution | Gantt Chart"
+              id="fcfs5"
+              srcset=""
+            />
+            <br />
+            <!-- <p>P1 (2-5) -> P2 (5-6) -> P3 (6-8) -> P4 (8-12)</p> -->
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>5</td>
+                <td>3</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>6</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>8</td>
+                <td>2</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+
+                <td>12</td>
+                <td>5</td>
+                <td>1</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+
+            <p>
+              Average Turn Around Time = (3 + 2 + 2 + 5) / 4 = 12 / 4 = 3 units
+            </p>
+            <p>
+              Average Waiting Time = (0 + 1 + 0 + 1) / 4 = 2 / 4 = 0.5 units
+            </p>
+          </div>
+
+          <!-- question 5 end -->
+          <!-- question 6 start -->
+          <div class="question">
+            <h2>Question 6</h2>
+            <p>
+              find the average Turn Around Time and Waiting Time of following
+              processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+              algorithm?
+            </p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>0</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>6</td>
+                <td>2</td>
+              </tr>
+            </table>
+
+            <h3>Solution</h3>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <li>
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 6 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 6 Solution | Gantt Chart"
+              id="fcfs6"
+              srcset=""
+            />
+            <br />
+            <!-- <p>P1 (0-6) -> P2 (6-9) -> P3 (9-14) -> P4 (14-16)</p> -->
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>6</td>
+                <td>6</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>9</td>
+                <td>7</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>14</td>
+                <td>10</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+
+                <td>16</td>
+                <td>10</td>
+                <td>8</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+
+            <p>
+              Average Turn Around Time = (6 + 7 + 10 + 10) / 4 = 33 / 4 = 8.25
+              units
+            </p>
+            <p>
+              Average Waiting Time = (0 + 4 + 5 + 8) / 4 = 17 / 4 = 4.25 units
+            </p>
+          </div>
+          <!-- question 6 end -->
+          <!-- question 7 start -->
+          <div class="question">
+            <h2>Question 7</h2>
+            <p>
+              find the average Turn Around Time and Waiting Time of following
+              processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+              algorithm?
+            </p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>0</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </table>
+
+            <h3>Solution</h3>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <li>
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 7 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 7 Solution | Gantt Chart"
+              id="fcfs7"
+              srcset=""
+            />
+            <br />
+            <!-- <p>P1 (0-7) -> P2 (7-12) -> P3 (12-15)</p> -->
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>12</td>
+                <td>11</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>15</td>
+                <td>13</td>
+                <td>10</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+
+            <p>
+              Average Turn Around Time = (7 + 11 + 13) / 3 = 31 / 3 = 10.33
+              units
+            </p>
+            <p>Average Waiting Time = (0 + 6 + 10) / 3 = 16 / 3 = 5.33 units</p>
+          </div>
+          <!-- question 7 end -->
+          <!-- question 8 start -->
+          <div class="question">
+            <h2>Question 8</h2>
+            <p>
+              find the average Turn Around Time and Waiting Time of following
+              processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+              algorithm?
+            </p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>3</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>5</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>7</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>9</td>
+                <td>1</td>
+              </tr>
+            </table>
+
+            <h3>Solution</h3>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <li>
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 8 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 8 Solution | Gantt Chart"
+              id="fcfs8"
+              srcset=""
+            />
+            <br />
+            <!-- <p>P1 (3-5) -> P2 (5-9) -> P3 (9-12) -> P4 (12-13)</p> -->
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>9</td>
+                <td>4</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>12</td>
+                <td>5</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+
+                <td>13</td>
+                <td>4</td>
+                <td>3</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+
+            <p>
+              Average Turn Around Time = (2 + 4 + 5 + 4) / 4 = 15 / 4 = 3.75
+              units
+            </p>
+            <p>
+              Average Waiting Time = (0 + 0 + 2 + 3) / 4 = 5 / 4 = 1.25 units
+            </p>
+          </div>
+          <!-- question 8 end -->
+          <!-- question 9 start -->
+          <div class="question">
+            <h2>Question 9</h2>
+            <p>
+              find the average Turn Around Time and Waiting Time of following
+              processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+              algorithm?
+            </p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>0</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>5</td>
+                <td>2</td>
+              </tr>
+            </table>
+
+            <h3>Solution</h3>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <li>
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 9 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 9 Solution | Gantt Chart"
+              id="fcfs9"
+              srcset=""
+            />
+            <br />
+            <!-- <p>P1 (0-4) -> P2 (4-9) -> P3 (9-12) -> P4 (12-14)</p> -->
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>4</td>
+                <td>4</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>9</td>
+                <td>8</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>12</td>
+                <td>9</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+
+                <td>14</td>
+                <td>9</td>
+                <td>7</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+
+            <p>
+              Average Turn Around Time = (4 + 8 + 9 + 9) / 4 = 30 / 4 = 7.5
+              units
+            </p>
+            <p>Average Waiting Time = (0 + 3 + 6 + 7) / 4 = 16 / 4 = 4 units</p>
+          </div>
+          <!-- question 9 end -->
+          <!-- question 10 start -->
+          <div class="question">
+            <h2>Question 10</h2>
+            <p>
+              find the average Turn Around Time and Waiting Time of following
+              processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+              algorithm?
+            </p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>4</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>5</td>
+                <td>1</td>
+              </tr>
+            </table>
+
+            <h3>Solution</h3>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <li>
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="FCFS SCHEDULING | Question 10 Solution | Gantt Chart"
+              title="FCFS SCHEDULING | Question 10 Solution | Gantt Chart"
+              id="fcfs10"
+              srcset=""
+            />
+            <br />
+            <!-- <p>P1 (0-2) -> P2 (2-6) -> P3 (6-9) -> P4 (9-10)</p> -->
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turn Around Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>6</td>
+                <td>4</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>9</td>
+                <td>5</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+
+                <td>10</td>
+                <td>5</td>
+                <td>4</td>
+              </tr>
+            </table>
+
+            <p>Formulas:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+
+            <p>
+              Average Turn Around Time = (2 + 4 + 5 + 5) / 4 = 16 / 4 = 4 units
+            </p>
+            <p>
+              Average Waiting Time = (0 + 0 + 2 + 4) / 4 = 6 / 4 = 1.5 units
+            </p>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" id="down" type="button">
+              <a href="fcfs2.html" style="color: antiquewhite"
+                >for question 11 to 20 click here</a
+              >
+            </button>
+          </div>
+          <br /><br />
+          <!-- question 10 end -->
         </div>
+      </main>
+    </div>
 
-        <!-- question 1 end -->
-        <!-- question 2 start -->
-        <div class="question">
-          <h2>Question 2</h2>
-          <p>
-            find the average Turn Around Time and Waiting Time of following
-            processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-            algorithm?
-          </p>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>1</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>2</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>3</td>
-              <td>6</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 2 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 2 Solution | Gantt Chart"
-            id="fcfs2"
-            srcset=""
-          />
-          <br />
-          <!-- <p>P1 (1-6) -> P2 (6-9) -> P3 (9-15)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-
-              <th>Completion Time</th>
-              <th>Turn Around Time</th>
-              <th>Waiting Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-
-              <td>6</td>
-              <td>5</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-
-              <td>9</td>
-              <td>7</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-
-              <td>15</td>
-              <td>12</td>
-              <td>6</td>
-            </tr>
-          </table>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
-
-          <p>Average Turn Around Time = (5 + 7 + 12) / 3 = 24 / 3 = 8 units</p>
-          <p>Average Waiting Time = (0 + 4 + 6) / 3 = 10 / 3 = 3.33 units</p>
-        </div>
-
-        <!-- question 2 end -->
-        <!-- question 3 start -->
-        <div class="question">
-          <h2>Question 3</h2>
-          <p>
-            find the average Turn Around Time and Waiting Time of following
-            processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-            algorithm?
-          </p>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>3</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>5</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              <td>6</td>
-              <td>2</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 3 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 3 Solution |  Gantt Chart"
-            id="fcfs3"
-            srcset=""
-          />
-          <br />
-          <!-- <p>P1 (1-3) -> P2 (3-7) -> P3 (7-10) -> P4 (10-12)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-             
-              <th>Completion Time</th>
-              <th>Turn Around Time</th>
-              <th>Waiting Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              
-              <td>3</td>
-              <td>2</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              
-              <td>7</td>
-              <td>4</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              
-              <td>10</td>
-              <td>5</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              
-              <td>12</td>
-              <td>6</td>
-              <td>4</td>
-            </tr>
-          </table>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
-
-          <p>
-            Average Turn Around Time = (2 + 4 + 5 + 6) / 4 = 17 / 4 = 4.25 units
-          </p>
-          <p>Average Waiting Time = (0 + 0 + 2 + 4) / 4 = 6 / 4 = 1.5 units</p>
-        </div>
-        <!-- question 3 end -->
-        <!-- question 4 start -->
-        <div class="question">
-          <h2>Question 4</h2>
-          <p>
-            find the average Turn Around Time and Waiting Time of following
-            processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-            algorithm?
-          </p>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>0</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>1</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>2</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              <td>3</td>
-              <td>2</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 4 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 4 Solution | Gantt Chart"
-            id="fcfs4"
-            srcset=""
-          />
-          <br />
-          <!-- <p>P1 (0-4) -> P2 (4-7) -> P3 (7-8) -> P4 (8-10)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-   
-              <th>Completion Time</th>
-              <th>Turn Around Time</th>
-              <th>Waiting Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              
-              <td>4</td>
-              <td>4</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              
-              <td>7</td>
-              <td>6</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              
-              <td>8</td>
-              <td>6</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              
-              <td>10</td>
-              <td>7</td>
-              <td>5</td>
-            </tr>
-          </table>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
-
-          <p>
-            Average Turn Around Time = (4 + 6 + 6 + 7) / 4 = 23 / 4 = 5.75 units
-          </p>
-          <p>
-            Average Waiting Time = (0 + 3 + 5 + 5) / 4 = 13 / 4 = 3.25 units
-          </p>
-        </div>
-        <!-- question 4 end -->
-        <!-- question 5 start -->
-        <div class="question">
-          <h2>Question 5</h2>
-          <p>
-            find the average Turn Around Time and Waiting Time of following
-            processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-            algorithm?
-          </p>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>2</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>4</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>6</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              <td>7</td>
-              <td>4</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 5 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 5 Solution | Gantt Chart"
-            id="fcfs5"
-            srcset=""
-          />
-          <br />
-          <!-- <p>P1 (2-5) -> P2 (5-6) -> P3 (6-8) -> P4 (8-12)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-     
-              <th>Completion Time</th>
-              <th>Turn Around Time</th>
-              <th>Waiting Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              
-              <td>5</td>
-              <td>3</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              
-              <td>6</td>
-              <td>2</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              
-              <td>8</td>
-              <td>2</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              
-              <td>12</td>
-              <td>5</td>
-              <td>1</td>
-            </tr>
-          </table>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
-
-          <p>
-            Average Turn Around Time = (3 + 2 + 2 + 5) / 4 = 12 / 4 = 3 units
-          </p>
-          <p>Average Waiting Time = (0 + 1 + 0 + 1) / 4 = 2 / 4 = 0.5 units</p>
-        </div>
-
-        <!-- question 5 end -->
-        <!-- question 6 start -->
-        <div class="question">
-          <h2>Question 6</h2>
-          <p>
-            find the average Turn Around Time and Waiting Time of following
-            processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-            algorithm?
-          </p>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>0</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>2</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>4</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              <td>6</td>
-              <td>2</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 6 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 6 Solution | Gantt Chart"
-            id="fcfs6"
-            srcset=""
-          />
-          <br />
-          <!-- <p>P1 (0-6) -> P2 (6-9) -> P3 (9-14) -> P4 (14-16)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-  
-              <th>Completion Time</th>
-              <th>Turn Around Time</th>
-              <th>Waiting Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              
-              <td>6</td>
-              <td>6</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              
-              <td>9</td>
-              <td>7</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              
-              <td>14</td>
-              <td>10</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              
-              <td>16</td>
-              <td>10</td>
-              <td>8</td>
-            </tr>
-          </table>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
-
-          <p>
-            Average Turn Around Time = (6 + 7 + 10 + 10) / 4 = 33 / 4 = 8.25
-            units
-          </p>
-          <p>
-            Average Waiting Time = (0 + 4 + 5 + 8) / 4 = 17 / 4 = 4.25 units
-          </p>
-        </div>
-        <!-- question 6 end -->
-        <!-- question 7 start -->
-        <div class="question">
-          <h2>Question 7</h2>
-          <p>
-            find the average Turn Around Time and Waiting Time of following
-            processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-            algorithm?
-          </p>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>0</td>
-              <td>7</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>1</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>2</td>
-              <td>3</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 7 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 7 Solution | Gantt Chart"
-            id="fcfs7"
-            srcset=""
-          />
-          <br />
-          <!-- <p>P1 (0-7) -> P2 (7-12) -> P3 (12-15)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              
-              <th>Completion Time</th>
-              <th>Turn Around Time</th>
-              <th>Waiting Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              
-              <td>7</td>
-              <td>7</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              
-              <td>12</td>
-              <td>11</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              
-              <td>15</td>
-              <td>13</td>
-              <td>10</td>
-            </tr>
-          </table>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
-
-          <p>
-            Average Turn Around Time = (7 + 11 + 13) / 3 = 31 / 3 = 10.33 units
-          </p>
-          <p>Average Waiting Time = (0 + 6 + 10) / 3 = 16 / 3 = 5.33 units</p>
-        </div>
-        <!-- question 7 end -->
-        <!-- question 8 start -->
-        <div class="question">
-          <h2>Question 8</h2>
-          <p>
-            find the average Turn Around Time and Waiting Time of following
-            processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-            algorithm?
-          </p>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>3</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>5</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>7</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              <td>9</td>
-              <td>1</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 8 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 8 Solution | Gantt Chart"
-            id="fcfs8"
-            srcset=""
-          />
-          <br />
-          <!-- <p>P1 (3-5) -> P2 (5-9) -> P3 (9-12) -> P4 (12-13)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-             
-              <th>Completion Time</th>
-              <th>Turn Around Time</th>
-              <th>Waiting Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              
-              <td>5</td>
-              <td>2</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              
-              <td>9</td>
-              <td>4</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              
-              <td>12</td>
-              <td>5</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              
-              <td>13</td>
-              <td>4</td>
-              <td>3</td>
-            </tr>
-          </table>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
-
-          <p>
-            Average Turn Around Time = (2 + 4 + 5 + 4) / 4 = 15 / 4 = 3.75 units
-          </p>
-          <p>Average Waiting Time = (0 + 0 + 2 + 3) / 4 = 5 / 4 = 1.25 units</p>
-        </div>
-        <!-- question 8 end -->
-        <!-- question 9 start -->
-        <div class="question">
-          <h2>Question 9</h2>
-          <p>
-            find the average Turn Around Time and Waiting Time of following
-            processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-            algorithm?
-          </p>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>0</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>1</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>3</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              <td>5</td>
-              <td>2</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 9 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 9 Solution | Gantt Chart"
-            id="fcfs9"
-            srcset=""
-          />
-          <br />
-          <!-- <p>P1 (0-4) -> P2 (4-9) -> P3 (9-12) -> P4 (12-14)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              
-              <th>Completion Time</th>
-              <th>Turn Around Time</th>
-              <th>Waiting Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              
-              <td>4</td>
-              <td>4</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              
-              <td>9</td>
-              <td>8</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              
-              <td>12</td>
-              <td>9</td>
-              <td>6</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              
-              <td>14</td>
-              <td>9</td>
-              <td>7</td>
-            </tr>
-          </table>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
-
-          <p>
-            Average Turn Around Time = (4 + 8 + 9 + 9) / 4 = 30 / 4 = 7.5 units
-          </p>
-          <p>Average Waiting Time = (0 + 3 + 6 + 7) / 4 = 16 / 4 = 4 units</p>
-        </div>
-        <!-- question 9 end -->
-        <!-- question 10 start -->
-        <div class="question">
-          <h2>Question 10</h2>
-          <p>
-            find the average Turn Around Time and Waiting Time of following
-            processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-            algorithm?
-          </p>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>0</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>2</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>4</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              <td>5</td>
-              <td>1</td>
-            </tr>
-          </table>
-
-          <h3>Solution</h3>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Turn Around Time (TAT) = Completion Time (CT) - Arrival Time (AT)
-            </li>
-            <li>
-              Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
-            </li>
-          </ul>
-
-          <h4>Gantt Chart</h4>
-          <img
-            alt="FCFS SCHEDULING | Question 10 Solution | Gantt Chart"
-            title="FCFS SCHEDULING | Question 10 Solution | Gantt Chart"
-            id="fcfs10"
-            srcset=""
-          />
-          <br />
-          <!-- <p>P1 (0-2) -> P2 (2-6) -> P3 (6-9) -> P4 (9-10)</p> -->
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              
-              <th>Completion Time</th>
-              <th>Turn Around Time</th>
-              <th>Waiting Time</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              
-              <td>2</td>
-              <td>2</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              
-              <td>6</td>
-              <td>4</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              
-              <td>9</td>
-              <td>5</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              
-              <td>10</td>
-              <td>5</td>
-              <td>4</td>
-            </tr>
-          </table>
-
-          <p>Formulas:</p>
-          <ul>
-            <li>
-              Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
-              Processes
-            </li>
-            <li>
-              Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
-            </li>
-          </ul>
-
-          <p>
-            Average Turn Around Time = (2 + 4 + 5 + 5) / 4 = 16 / 4 = 4 units
-          </p>
-          <p>Average Waiting Time = (0 + 0 + 2 + 4) / 4 = 6 / 4 = 1.5 units</p>
-        </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-primary" id="down" type="button">
-            <a href="fcfs2.html" style="color: antiquewhite"
-              >for question 11 to 20 click here</a
-            >
-          </button>
-        </div>
-        <br /><br />
-        <!-- question 10 end -->
-      </div>
-    </main>
     <script type="text/javascript" src="commonthings.js"></script>
     <script type="text/javascript" src="/hdr_ftr.js"></script>
     <script async>
