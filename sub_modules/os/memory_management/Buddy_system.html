@@ -52,13 +52,111 @@
         </button>
       </div>
       <!-- upper and down button end-->
-      <br />
-      <p style="margin: 0px 2vw">
-        Here are 11 questions on Buddy System. Each question is presented in a
-        table format. each question is solved in explained form.
-      </p>
-      <br />
+
       <div class="container">
+        <br />
+        <p style="margin: 0px 2vw">
+          Here are 11 questions on Buddy System. Each question is presented in a
+          table format. each question is solved in explained form.
+        </p>
+        <br />
+        <div class="explained">
+          <h2>What is Buddy System in Operating System ?</h2>
+          <p>
+            The Buddy System is a memory allocation and management technique
+            used in operating systems. It divides the memory into partitions to
+            satisfy memory allocation requests while trying to minimize
+            fragmentation. In this method, memory is split into blocks of size
+            equal to powers of 2.
+          </p>
+
+          <h2>Method to Solve Buddy System Questions</h2>
+          <ul>
+            <li>
+              Identify the size of the memory block required for allocation.
+            </li>
+            <li>
+              Find the smallest power of 2 that can accommodate the required
+              memory size.
+            </li>
+            <li>
+              Split the available memory block iteratively into smaller blocks
+              (buddies) until the required block size is obtained.
+            </li>
+            <li>Allocate the memory block to the requesting process.</li>
+            <li>
+              When the process releases the memory, merge it with its buddy if
+              the buddy is free, forming a larger block.
+            </li>
+            <li>
+              Repeat the process for subsequent allocation or deallocation
+              requests.
+            </li>
+          </ul>
+
+          <h2>Advantages and Disadvantages of Buddy System</h2>
+          <table border="1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Minimizes internal fragmentation by using power-of-2 blocks.
+                </td>
+                <td>
+                  Leads to external fragmentation if block merging is not
+                  possible.
+                </td>
+              </tr>
+              <tr>
+                <td>Efficient block splitting and merging process.</td>
+                <td>Requires complex implementation logic.</td>
+              </tr>
+              <tr>
+                <td>Supports dynamic memory allocation and deallocation.</td>
+                <td>
+                  Limits memory allocation to power-of-2 sizes, potentially
+                  wasting memory.
+                </td>
+              </tr>
+              <tr>
+                <td>Can handle multiple allocation requests concurrently.</td>
+                <td>Merging and splitting may lead to performance overhead.</td>
+              </tr>
+              <tr>
+                <td>
+                  Enables coalescing of adjacent free blocks for better memory
+                  utilization.
+                </td>
+                <td>May cause fragmentation for varying allocation sizes.</td>
+              </tr>
+              <tr>
+                <td>Easy to track memory usage using buddy indexing.</td>
+                <td>
+                  Wastes memory when small allocations do not fit well in large
+                  blocks.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Why Buddy System is Better Than Other Algorithms</h2>
+          <p>
+            The Buddy System is often preferred over other memory allocation
+            algorithms like First Fit, Best Fit, Next Fit and Worst Fit because
+            due to its efficient block splitting and merging mechanism, which
+            minimizes internal fragmentation and allows for quick allocation and
+            deallocation. Its use of power-of-2 block sizes simplifies memory
+            management and reduces the complexity of maintaining free memory
+            lists. However, it still requires careful management to handle
+            external fragmentation effectively.
+          </p>
+        </div>
+
         <div id="question2">
           <div class="question" title="first question on Buddy System">
             <h2>
@@ -102,7 +200,7 @@
             </p>
           </div>
           <div class="solution" title="solution of buddy system question">
-    <h3>Solution : </h3>
+            <h3>Solution :</h3>
             <table border="1" class="table table-bordered border-2 text-center">
               <tr>
                 <p>A : request 28K</p>
@@ -205,9 +303,9 @@
                 <td>512K</td>
               </tr>
             </table>
-            <p>Internal Fragmentation = 2K</p> 
-            <br>
-            <p> Release A</p>
+            <p>Internal Fragmentation = 2K</p>
+            <br />
+            <p>Release A</p>
             <table border="1" class="table text-center">
               <tr>
                 <td>32K</td>
@@ -217,8 +315,9 @@
                 <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
                 <td>512K</td>
               </tr>
-            </table><br>
-            <p> Release C</p>
+            </table>
+            <br />
+            <p>Release C</p>
             <table border="1" class="table text-center">
               <tr>
                 <td>32K</td>
@@ -229,11 +328,13 @@
                 <td>512K</td>
               </tr>
             </table>
-            <br>
+            <br />
             <p>F : request 20K</p>
             <table border="1" class="table text-center">
               <tr>
-                <td style="background-color: rgba(118, 84, 255, 0.982);">F = 32K</td>
+                <td style="background-color: rgba(118, 84, 255, 0.982)">
+                  F = 32K
+                </td>
                 <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
                 <td>64K</td>
                 <td style="background-color: chocolate">D = 128K</td>
@@ -241,19 +342,23 @@
                 <td>512K</td>
               </tr>
             </table>
-            <p>Internal Fragmentation = 12K</p> <br>
+            <p>Internal Fragmentation = 12K</p>
+            <br />
             <p>G : request 48K</p>
             <table border="1" class="table text-center">
               <tr>
-                <td style="background-color: rgba(118, 84, 255, 0.982);">F = 32K</td>
+                <td style="background-color: rgba(118, 84, 255, 0.982)">
+                  F = 32K
+                </td>
                 <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
-                <td style="background-color: chartreuse;">G = 64K</td>
+                <td style="background-color: chartreuse">G = 64K</td>
                 <td style="background-color: chocolate">D = 128K</td>
                 <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
                 <td>512K</td>
               </tr>
             </table>
-            <p>Internal Fragmentation = 16K</p> <br>
+            <p>Internal Fragmentation = 16K</p>
+            <br />
           </div>
         </div>
       </div>

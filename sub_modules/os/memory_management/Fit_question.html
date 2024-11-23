@@ -50,14 +50,130 @@
         </button>
       </div>
       <!-- upper and down button end-->
-      <br />
-      <p style="margin: 0px 2vw">
-        Here are 11 questions on fit algorithms . Each question is presented in
-        a table format. each question is solved in explained form.
-      </p>
-      <br />
+
       <div class="container">
-        <div id="question2">
+        <br />
+        <p style="margin: 0px 2vw">
+          Here are 11 questions on fit algorithms . Each question is presented
+          in a table format. each question is solved in explained form.
+        </p>
+        <br />
+        <a
+          href="#fstque"
+          class="btn btn-primary btn-lg active"
+          role="button"
+          aria-pressed="true"
+          >Jump To Question</a
+        >
+        <br />
+        <div id="explained">
+          <h2>What is Placement Algorithm in Operating System ? </h2>
+          <p>
+            The placement algorithm in
+            <a href="/sub_modules/os/operating_System_Topics.html"
+              >Operating Systems</a
+            >
+            is used to determine where a process or data should be placed in
+            memory. It helps manage memory allocation efficiently and ensures
+            optimal use of available memory space. These algorithms are crucial
+            in multitasking environments to minimize memory fragmentation and
+            maximize system performance.
+          </p>
+
+          <h2 title="advantages and disadvantages of placement algorithms">
+            Advantages and Disadvantages
+          </h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>Efficient memory utilization.</td>
+              <td>May lead to external fragmentation.</td>
+            </tr>
+            <tr>
+              <td>Reduces idle memory slots.</td>
+              <td>Complex implementation for some algorithms.</td>
+            </tr>
+            <tr>
+              <td>Supports multitasking effectively.</td>
+              <td>Requires frequent memory compaction.</td>
+            </tr>
+            <tr>
+              <td>Improves system throughput.</td>
+              <td>Can be computationally expensive.</td>
+            </tr>
+            <tr>
+              <td>Adaptable to various memory demands.</td>
+              <td>Suboptimal performance for certain workloads.</td>
+            </tr>
+            <tr>
+              <td>Helps minimize swapping overhead.</td>
+              <td>Prone to internal fragmentation with fixed partitions.</td>
+            </tr>
+          </table>
+
+          <h2>Method to Solve Placement Algorithm Questions</h2>
+          <ul>
+            <li>
+              Understand the memory layout, including partitions and their
+              sizes.
+            </li>
+            <li>
+              Identify the processes or data sizes that need to be allocated.
+            </li>
+            <li>
+              Select the appropriate placement algorithm based on the given
+              problem.
+            </li>
+            <li>
+              Simulate the allocation process step by step using the chosen
+              algorithm.
+            </li>
+            <li>
+              Account for fragmentation (internal or external) after allocation.
+            </li>
+            <li>Evaluate the performance and efficiency of the solution.</li>
+          </ul>
+
+          <h2>Types of Placement Algorithms</h2>
+          <p>The four main types of placement algorithms are:</p>
+          <ul>
+            <li>
+              <strong>First Fit:</strong> Allocates the first available block of
+              memory large enough to accommodate the process or data. Simple and
+              fast but may lead to fragmentation.
+            </li>
+            <li>
+              <strong>Best Fit:</strong> Allocates the smallest block of memory
+              that fits the process or data, reducing wasted space. However, it
+              increases the time required for searching.
+            </li>
+            <li>
+              <strong>Worst Fit:</strong> Allocates the largest available block
+              of memory, leaving large free spaces for future allocations. This
+              method can reduce small fragmentations but may waste large blocks.
+            </li>
+            <li>
+              <strong>Next Fit:</strong> A variant of First Fit that starts the
+              search from the last allocated position, making it efficient in a
+              cyclic memory environment.
+            </li>
+          </ul>
+
+          <h2>Why Placement Algorithms Are Better Than Other Algorithms</h2>
+          <p>
+            Placement algorithms are specifically designed to handle memory
+            allocation efficiently, ensuring minimal fragmentation and optimal
+            use of memory space. Unlike general-purpose algorithms, these are
+            tailored to address the dynamic and unpredictable memory demands of
+            multitasking systems, providing higher throughput and better
+            adaptability.
+          </p>
+        </div>
+        <br />
+        <div id="question1 fstque">
           <div
             class="question"
             title="first question on First-Fit, Best-Fit, Next-Fit, Worst-Fit "
