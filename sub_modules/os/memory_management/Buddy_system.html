@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="/externalcss.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!DOCTYPE html>
+
+    <title>Buddy System in Operating Systems - Questions and Answers</title>
+    <meta
+      name="description"
+      content="Explore detailed questions and answers about the Buddy System in operating systems. Understand memory allocation techniques with solved examples and explanations."
+    />
+    <meta
+      name="keywords"
+      content="Buddy System, Operating System, Memory Allocation, Buddy System Questions, OS Questions, Computer Science, Memory Management Techniques, Buddy System Examples"
+    />
+    <meta name="author" content="Kundal kumar" />
+    <link
+      rel="canonical"
+      href="https://csvidyalaya.com/buddy-system-questions"
+    />
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <main>
+      <div class="container">
+        <h1 id="upper">Buddy System Questions</h1>
+
+        <button
+          type="button"
+          class="btn btn-success"
+          style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+        >
+          <a href="#down"
+            ><span class="material-icons" style="color: antiquewhite">
+              arrow_downward
+            </span></a
+          >
+        </button>
+        <button
+          type="button"
+          class="btn btn-success"
+          style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+        >
+          <a href="#upper"
+            ><span class="material-icons" style="color: antiquewhite">
+              arrow_upward
+            </span></a
+          >
+        </button>
+      </div>
+      <!-- upper and down button end-->
+      <br />
+      <p style="margin: 0px 2vw">
+        Here are 11 questions on Buddy System. Each question is presented in a
+        table format. each question is solved in explained form.
+      </p>
+      <br />
+      <div class="container">
+        <div id="question2">
+          <div class="question" title="first question on Buddy System">
+            <h2>
+              Question 1 : Suppose the OS on your computer uses the buddy system
+              for memory management. Initially, the system has 1 megabyte
+              (1024K) block of memory available, which begins at address zero.
+              Show the results of each request/release via successive figures.
+            </h2>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <td>A :Request 28K</td>
+              </tr>
+              <tr>
+                <td>B :Request 232K</td>
+              </tr>
+              <tr>
+                <td>C :Request 60K</td>
+              </tr>
+              <tr>
+                <td>D :Request 100K</td>
+              </tr>
+              <tr>
+                <td>E :Request 30K</td>
+              </tr>
+              <tr>
+                <td>Release A</td>
+              </tr>
+              <tr>
+                <td>Release C</td>
+              </tr>
+              <tr>
+                <td>F : Request 20K</td>
+              </tr>
+              <tr>
+                <td>G : Request 48K</td>
+              </tr>
+            </table>
+            <p>
+              After memory is allocated to process F, how much internal
+              Fragmentation exists in the system?
+            </p>
+          </div>
+          <div class="solution" title="solution of buddy system question">
+    <h3>Solution : </h3>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <p>A : request 28K</p>
+
+                <td>1024K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>512K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>128K</td>
+                <td>128K</td>
+                <td>256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>64K</td>
+                <td>64K</td>
+                <td>128K</td>
+                <td>256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>32K</td>
+                <td>32K</td>
+                <td>64K</td>
+                <td>128K</td>
+                <td>256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: cadetblue">A = 32K</td>
+                <td>32K</td>
+                <td>64K</td>
+                <td>128K</td>
+                <td>256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 4K</p>
+            <br />
+            <p>B : request 232K</p>
+            <table border="1" class="table text-center">
+              <tr>
+                <td style="background-color: cadetblue">A = 32K</td>
+                <td>32K</td>
+                <td>64K</td>
+                <td>128K</td>
+                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 24K</p>
+            <br />
+            <p>C : request 60K</p>
+            <table border="1" class="table text-center">
+              <tr>
+                <td style="background-color: cadetblue">A = 32K</td>
+                <td>32K</td>
+                <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
+                <td>128K</td>
+                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 4K</p>
+            <br />
+            <p>D : request 100K</p>
+            <table border="1" class="table text-center">
+              <tr>
+                <td style="background-color: cadetblue">A = 32K</td>
+                <td>32K</td>
+                <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
+                <td style="background-color: chocolate">D = 128K</td>
+                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 28K</p>
+            <br />
+            <p>E : request 30K</p>
+            <table border="1" class="table text-center">
+              <tr>
+                <td style="background-color: cadetblue">A = 32K</td>
+                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+                <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
+                <td style="background-color: chocolate">D = 128K</td>
+                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 2K</p> 
+            <br>
+            <p> Release A</p>
+            <table border="1" class="table text-center">
+              <tr>
+                <td>32K</td>
+                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+                <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
+                <td style="background-color: chocolate">D = 128K</td>
+                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+                <td>512K</td>
+              </tr>
+            </table><br>
+            <p> Release C</p>
+            <table border="1" class="table text-center">
+              <tr>
+                <td>32K</td>
+                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+                <td>64K</td>
+                <td style="background-color: chocolate">D = 128K</td>
+                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <br>
+            <p>F : request 20K</p>
+            <table border="1" class="table text-center">
+              <tr>
+                <td style="background-color: rgba(118, 84, 255, 0.982);">F = 32K</td>
+                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+                <td>64K</td>
+                <td style="background-color: chocolate">D = 128K</td>
+                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 12K</p> <br>
+            <p>G : request 48K</p>
+            <table border="1" class="table text-center">
+              <tr>
+                <td style="background-color: rgba(118, 84, 255, 0.982);">F = 32K</td>
+                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+                <td style="background-color: chartreuse;">G = 64K</td>
+                <td style="background-color: chocolate">D = 128K</td>
+                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 16K</p> <br>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="/hdr_ftr.js"></script>
+  </body>
+</html>
