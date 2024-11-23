@@ -171,7 +171,7 @@ document.querySelector("body").prepend(header);
 const footer = document.createElement("div");
 footer.style.backgroundColor = "#FFD1DC";
 footer.innerHTML = `
-     <div class="container">
+      <div class="container">
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
       >
@@ -344,6 +344,29 @@ footer.innerHTML = `
           </ul>
         </div>
 
+
+        <div class="col mb-3" id="foot">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">Memory Management Question</li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/os/memory_management/Fit_question.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >fit algorithms question</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/sub_modules/os/memory_management/Buddy_system.html "
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Buddy System Question</a
+              >
+            </li>
+          </ul>
+        </div>
+
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">DSA QUESTION</li>
@@ -371,7 +394,7 @@ footer.innerHTML = `
                 >Infix To Prefix Conversion</a
               >
             </li>
-              <li class="nav-item mb-2">
+            <li class="nav-item mb-2">
               <a
                 href="/sub_modules/dsa_in_c/stack2.html"
                 class="nav-link p-0 text-muted"
