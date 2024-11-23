@@ -5,15 +5,11 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <head>
-      <title>
-        Banker's Algorithm Questions & Solutions - Operating System Practice
-      </title>
-      <meta
-        name="description"
-        content="Explore a comprehensive set of Banker’s Algorithm questions with solutions for operating system studies. Perfect for students and professionals seeking to master deadlock avoidance algorithms in OS."
-      />
-    </head>
+    <title>Banker's Algorithm Questions and Solutions | Operating Systems</title>
+    <meta name="description" content="Explore comprehensive questions and solutions on Banker's Algorithm in Operating Systems. Understand concepts like deadlock avoidance and resource allocation with detailed examples.">
+    <meta name="keywords" content="Banker's Algorithm, Operating Systems, Deadlock Avoidance, Resource Allocation, Banker's Algorithm Questions, Banker's Algorithm Solutions, Operating Systems Questions, Computer Science, OS Algorithms">
+    <meta name="author" content="Kundal Kumar">
+    <link rel="canonical" href="https://csvidyalaya.com/bankers-algorithm">
 
     <style>
       #MLFQS1_1,
@@ -132,84 +128,83 @@
             >Jump To Question</a
           >
           <br /><br />
-          <body>
-            <h2>What Is Banker's Algorithm in Operating System?</h2>
-            <p>
-              The Banker's Algorithm is a resource allocation and deadlock
-              avoidance algorithm that tests whether the system can allocate
-              resources to each process in a safe sequence. It works by
-              simulating the allocation of predetermined maximum resources to
-              each process and checking the system's state to prevent deadlock.
-            </p>
 
-            <h2>Method to Solve Banker's Algorithm</h2>
-            <ul>
-              <li>
-                Step 1: Identify the available resources and maximum demand of
-                each process.
-              </li>
-              <li>
-                Step 2: Calculate the "Need" matrix by subtracting the allocated
-                resources from the maximum demand for each process.
-              </li>
-              <li>
-                Step 3: Check if the system has a safe state by allocating
-                resources based on the "Need" matrix while ensuring the system
-                remains in a safe state.
-              </li>
-              <li>
-                Step 4: Allocate resources to processes only if they satisfy the
-                "Need" matrix and resources are available.
-              </li>
-              <li>
-                Step 5: If a safe sequence is found, allocate resources; if not,
-                resources remain unallocated to prevent deadlock.
-              </li>
-            </ul>
+          <h2>What Is Banker's Algorithm in Operating System?</h2>
+          <p>
+            The Banker's Algorithm is a resource allocation and deadlock
+            avoidance algorithm that tests whether the system can allocate
+            resources to each process in a safe sequence. It works by simulating
+            the allocation of predetermined maximum resources to each process
+            and checking the system's state to prevent deadlock.
+          </p>
 
-            <h2>Advantages and Disadvantages of Banker's Algorithm</h2>
-            <table>
-              <tr>
-                <th>Advantages</th>
-                <th>Disadvantages</th>
-              </tr>
-              <tr>
-                <td>Effective in preventing deadlocks</td>
-                <td>Works only with known resources and maximum demand</td>
-              </tr>
-              <tr>
-                <td>Ensures the system remains in a safe state</td>
-                <td>Complex and time-consuming calculations</td>
-              </tr>
-              <tr>
-                <td>Prevents the starvation of processes</td>
-                <td>Not suitable for systems with unpredictable resources</td>
-              </tr>
-              <tr>
-                <td>Maintains system stability and availability</td>
-                <td>Requires significant memory and CPU time</td>
-              </tr>
-              <tr>
-                <td>Identifies safe and unsafe states</td>
-                <td>Inapplicable to real-time systems</td>
-              </tr>
-              <tr>
-                <td>Applicable in systems with fixed resources</td>
-                <td>Does not allow resource sharing flexibility</td>
-              </tr>
-            </table>
+          <h2>Method to Solve Banker's Algorithm</h2>
+          <ul>
+            <li>
+              Step 1: Identify the available resources and maximum demand of
+              each process.
+            </li>
+            <li>
+              Step 2: Calculate the "Need" matrix by subtracting the allocated
+              resources from the maximum demand for each process.
+            </li>
+            <li>
+              Step 3: Check if the system has a safe state by allocating
+              resources based on the "Need" matrix while ensuring the system
+              remains in a safe state.
+            </li>
+            <li>
+              Step 4: Allocate resources to processes only if they satisfy the
+              "Need" matrix and resources are available.
+            </li>
+            <li>
+              Step 5: If a safe sequence is found, allocate resources; if not,
+              resources remain unallocated to prevent deadlock.
+            </li>
+          </ul>
 
-            <h2>Why Banker's Algorithm is Better than Other Algorithms?</h2>
-            <p>
-              Banker's Algorithm is better than other deadlock prevention
-              algorithms as it dynamically checks for safe and unsafe states
-              based on each process's resource needs, ensuring efficient
-              resource utilization. Unlike static resource allocation methods,
-              it provides a safe sequence, preventing deadlock while allowing
-              processes to request resources flexibly. This adaptability makes
-              it effective in multi-process systems with stable resources.
-            </p>
-          </body>
+          <h2>Advantages and Disadvantages of Banker's Algorithm</h2>
+          <table>
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>Effective in preventing deadlocks</td>
+              <td>Works only with known resources and maximum demand</td>
+            </tr>
+            <tr>
+              <td>Ensures the system remains in a safe state</td>
+              <td>Complex and time-consuming calculations</td>
+            </tr>
+            <tr>
+              <td>Prevents the starvation of processes</td>
+              <td>Not suitable for systems with unpredictable resources</td>
+            </tr>
+            <tr>
+              <td>Maintains system stability and availability</td>
+              <td>Requires significant memory and CPU time</td>
+            </tr>
+            <tr>
+              <td>Identifies safe and unsafe states</td>
+              <td>Inapplicable to real-time systems</td>
+            </tr>
+            <tr>
+              <td>Applicable in systems with fixed resources</td>
+              <td>Does not allow resource sharing flexibility</td>
+            </tr>
+          </table>
+
+          <h2>Why Banker's Algorithm is Better than Other Algorithms?</h2>
+          <p>
+            Banker's Algorithm is better than other deadlock prevention
+            algorithms as it dynamically checks for safe and unsafe states based
+            on each process's resource needs, ensuring efficient resource
+            utilization. Unlike static resource allocation methods, it provides
+            a safe sequence, preventing deadlock while allowing processes to
+            request resources flexibly. This adaptability makes it effective in
+            multi-process systems with stable resources.
+          </p>
         </div>
         <div id="question1 fstque">
           <div class="question">
@@ -392,40 +387,126 @@
             </table>
           </div>
         </div>
-
+        <div id="question2">
+          <div class="question">
+            <h2>
+              question 2 : consider the following snapshot(Available in table
+              form) of a system:
+            </h2>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th colspan="4" style="text-align: center">Available</th>
+              </tr>
+              <tr>
+                <th>R1</th>
+                <th>R2</th>
+                <th>R3</th>
+                <th>R4</th>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th colspan="4">Current Allocation</th>
+                <th colspan="4">Maximum Demand</th>
+              </tr>
+              <tr>
+                <th></th>
+                <th>R1</th>
+                <th>R2</th>
+                <th>R3</th>
+                <th>R4</th>
+                <th>R1</th>
+                <th>R2</th>
+                <th>R3</th>
+                <th>R4</th>
+              </tr>
+              <tr>
+                <th>P1</th>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>P2</th>
+                <td>1</td>
+                <td>3</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>4</td>
+                <td>3</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>P3</th>
+                <td>2</td>
+                <td>0</td>
+                <td>3</td>
+                <td>4</td>
+                <td>4</td>
+                <td>3</td>
+                <td>5</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <th>P4</th>
+                <td>2</td>
+                <td>1</td>
+                <td>2</td>
+                <td>2</td>
+                <td>4</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>P5</th>
+                <td>0</td>
+                <td>3</td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>6</td>
+                <td>5</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th>P6</th>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>3</td>
+                <td>5</td>
+                <td>4</td>
+              </tr>
+            </table>
+            <p>Answer the following question using the Banker's algorithm :</p>
+            <p>(a) Is the system in a safe state ?</p>
+            <p>
+              (b) If a request from process p3 arrives for (0, 1, 1, 0), can the
+              request be granted immediately?
+            </p>
+          </div>
+          <div class="solution"></div>
+        </div>
         <!-- <h2>Available</h2> -->
       </div>
     </main>
-    <!-- <br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" id="down" type="button">
-        <a href="RR1.html" style="color: antiquewhite"
-          >click for previous question 1 to 15 click here</a
-        >
-      </button>
-    </div> -->
+
     <script type="text/javascript" src="/hdr_ftr.js"></script>
-    <!-- <script async>
-      window.onload = function () {
-        const cars = [
-          MLFQS1_1,
-          MLFQS1_2,
-          MLFQS1_3,
-          MLFQS2_1,
-          MLFQS2_2,
-          MLFQS2_3,
-          MLFQS2_4,
-        ];
-        let img = document.querySelector("img#def1");
-        if (window.innerWidth >= 770) {
-          img.setAttribute("src", "/assets/MLFQS DEFINITION BIG.png");
-        } else {
-          img.setAttribute("src", "/assets/MLFQS DEFINITION SMALL.png");
-        }
-        for (let index = 0; index < cars.length; index++) {
-          cars[index].src = "/assets/MLFQS.png";
-        }
-      };
-    </script> -->
   </body>
 </html>
