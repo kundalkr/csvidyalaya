@@ -188,13 +188,17 @@
           </p>
         </div>
 
-        <div id="question2">
+        <div id="question1">
           <div class="question" title="first question on Buddy System">
             <h2>
-              Question 1 : Suppose the OS on your computer uses the <a href="#defi">buddy system</a>
-              for <a href="/sub_modules/os/memory_management/memory_management_topics.html">memory management</a>. Initially, the system has 1 megabyte
-              (1024K) block of memory available, which begins at address zero.
-              Show the results of each request/release via successive figures.
+              Question 1 : Suppose the OS on your computer uses the
+              <a href="#defi">buddy system</a> for
+              <a
+                href="/sub_modules/os/memory_management/memory_management_topics.html"
+                >memory management</a
+              >. Initially, the system has 1 megabyte (1024K) block of memory
+              available, which begins at address zero. Show the results of each
+              request/release via successive figures.
             </h2>
             <table border="1" class="table table-bordered">
               <tr>
@@ -390,6 +394,258 @@
             </table>
             <p>Internal Fragmentation = 16K</p>
             <br />
+          </div>
+        </div>
+        <div id="question2">
+          <div class="question">
+            <h2>
+              Question 2 : Suppose the OS on your computer uses the
+              <a href="#defi">buddy system</a> for
+              <a
+                href="/sub_modules/os/memory_management/memory_management_topics.html"
+                >memory management</a
+              >. Initially, the system has 1 megabyte (1024K) block of memory
+              available, which begins at address zero. Show the results of each
+              request/release via successive figures.
+            </h2>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <td>A :Request 100K</td>
+              </tr>
+              <tr>
+                <td>B :Request 400K</td>
+              </tr>
+              <tr>
+                <td>C :Request 40K</td>
+              </tr>
+              <tr>
+                <td>D :Request 60K</td>
+              </tr>
+              <tr>
+                <td>E :Request 30K</td>
+              </tr>
+              <tr>
+                <td>F :Request 20K</td>
+              </tr>
+              <tr>
+                <td>G :Request 42K</td>
+              </tr>
+              <tr>
+                <td>Release A</td>
+              </tr>
+              <tr>
+                <td>Release C</td>
+              </tr>
+              <tr>
+                <td>G : Request 20K</td>
+              </tr>
+              <tr>
+                <td>Release B</td>
+              </tr>
+            </table>
+            <p>
+              After memory is allocated to process G, how much internal
+              Fragmentation exists in the system?
+            </p>
+          </div>
+          <div class="solution">
+            <h3>solution :</h3>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <p>A : request 100K</p>
+
+                <td>1024K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>512K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>128K</td>
+                <td>128K</td>
+                <td>256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td>128K</td>
+                <td>256K</td>
+                <td>512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 28K</p>
+            <br />
+            <p>B : request 400K</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td>128K</td>
+                <td>256K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 112K</p>
+
+            <p>C : request 40K</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td>128K</td>
+                <td>256K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+                <td>64K</td>
+                <td>256K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 24K</p>
+            <br />
+            <p>D : Request 60K</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td>256K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 4K</p>
+            <br />
+            <p>E : Request 30K</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td>128K</td>
+                <td>128K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td>64K</td>
+                <td>64K</td>
+                <td>128K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+                <td>32K</td>
+                <td>64K</td>
+                <td>128K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 2K</p>
+            <br />
+            <p>F : request 20K</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+                <td>64K</td>
+                <td>128K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 12K</p>
+            <br />
+            <p>G : request 42K</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td style="background-color: aqua">A = 128K</td>
+                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+                <td>128K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation = 22K</p>
+            <br />
+            <p>Release A</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>128K</td>
+                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+                <td>128K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <p>Release C</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>128K</td>
+                <td>64K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+                <td>128K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <p>G : request 20K</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>128K</td>
+                <td style="background-color: rgb(255, 45, 147)">G = 32K</td>
+                <td>32K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+                <td>128K</td>
+                <td style="background-color: chartreuse">B = 512K</td>
+              </tr>
+            </table>
+            <p>Internal Fragmentation : 12K</p>
+            <br />
+            <p>Release B</p>
+            <table border="1" class="table table-bordered border-2 text-center">
+              <tr>
+                <td>128K</td>
+                <td style="background-color: rgb(255, 45, 147)">G = 32K</td>
+                <td>32K</td>
+                <td style="background-color: chocolate">D = 64K</td>
+                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+                <td>128K</td>
+                <td>512K</td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
