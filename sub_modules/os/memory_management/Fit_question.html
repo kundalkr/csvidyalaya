@@ -67,7 +67,7 @@
         >
         <br />
         <div id="explained">
-          <h2>What is Placement Algorithm in Operating System ? </h2>
+          <h2>What is Placement Algorithm in Operating System ?</h2>
           <p>
             The placement algorithm in
             <a href="/sub_modules/os/operating_System_Topics.html"
@@ -141,24 +141,25 @@
           <p>The four main types of placement algorithms are:</p>
           <ul>
             <li>
-              <strong>First Fit:</strong> Allocates the first available block of
-              memory large enough to accommodate the process or data. Simple and
-              fast but may lead to fragmentation.
+              <strong id="first_fit">First Fit:</strong> Allocates the first
+              available block of memory large enough to accommodate the process
+              or data. Simple and fast but may lead to fragmentation.
             </li>
             <li>
-              <strong>Best Fit:</strong> Allocates the smallest block of memory
-              that fits the process or data, reducing wasted space. However, it
-              increases the time required for searching.
+              <strong id="best_fit">Best Fit:</strong> Allocates the smallest
+              block of memory that fits the process or data, reducing wasted
+              space. However, it increases the time required for searching.
             </li>
             <li>
-              <strong>Worst Fit:</strong> Allocates the largest available block
-              of memory, leaving large free spaces for future allocations. This
-              method can reduce small fragmentations but may waste large blocks.
+              <strong id="worst_fit">Worst Fit:</strong> Allocates the largest
+              available block of memory, leaving large free spaces for future
+              allocations. This method can reduce small fragmentations but may
+              waste large blocks.
             </li>
             <li>
-              <strong>Next Fit:</strong> A variant of First Fit that starts the
-              search from the last allocated position, making it efficient in a
-              cyclic memory environment.
+              <strong id="next_fit">Next Fit:</strong> A variant of First Fit
+              that starts the search from the last allocated position, making it
+              efficient in a cyclic memory environment.
             </li>
           </ul>
 
@@ -173,12 +174,12 @@
           </p>
         </div>
         <br />
-        <div id="question1 fstque">
+        <div id="question1">
           <div
             class="question"
             title="first question on First-Fit, Best-Fit, Next-Fit, Worst-Fit "
           >
-            <h2>
+            <h2 id="fstque">
               Question 1 : A dynamic partioning scheme is being used, and the
               following is the memory configuration at the given point in time.
             </h2>
@@ -196,15 +197,15 @@
                 <th>10</th>
               </tr>
               <tr>
-                <td></td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
                 <td>40 MB</td>
                 <td>50 MB</td>
-                <td></td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
                 <td>60 MB</td>
-                <td></td>
-                <td></td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
                 <td>26 MB</td>
-                <td></td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
                 <td>20 MB</td>
               </tr>
             </table>
@@ -222,7 +223,142 @@
               MB) of memory.
             </p>
           </div>
-          <div class="solution"></div>
+          <div class="solution">
+            <h2>solution :</h2>
+            <p>let P1 = 16MB, P2 = 30MB, P3 = 20MB, P4 = 50MB</p>
+
+            <h3>First-Fit :</h3>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>40 MB (P1)</td>
+                <td>50 MB (P2)</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>60 MB (P3)</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>26 MB</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>20 MB</td>
+              </tr>
+            </table>
+            <p>P1 = 40MB - 16MB = 24MB</p>
+            <p>P2 = 50MB - 30MB = 20MB</p>
+            <p>P3 = 60MB - 20MB = 40MB</p>
+
+            <p>Total External Fragmentation : 24MB + 20MB + 40MB = 84MB</p>
+
+            <h3>Best-Fit :</h3>
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>40 MB (P2)</td>
+                <td>50 MB</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>60 MB (P4)</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>26 MB (P3)</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>20 MB (P1)</td>
+              </tr>
+            </table>
+            <p>P1 = 20MB - 16MB = 4MB</p>
+            <p>P2 = 40MB - 30MB = 10MB</p>
+            <p>P3 = 26MB - 20MB = 6MB</p>
+            <p>P4 = 60MB - 50MB = 10MB</p>
+            <p>Total External Fragmentation : 4MB + 10MB + 6MB + 10MB = 30MB</p>
+            <h3>Next-Fit :</h3>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>40 MB (P1)</td>
+                <td>50 MB (P2)</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>60 MB (P3)</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>26 MB</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>20 MB</td>
+              </tr>
+            </table>
+            <p>P1 = 40MB - 16MB = 24MB</p>
+            <p>P2 = 50MB - 30MB = 20MB</p>
+            <p>P3 = 60MB - 20MB = 40MB</p>
+
+            <p>Total External Fragmentation : 24MB + 20MB + 40MB = 84MB</p>
+
+            <h3>Worst-Fit :</h3>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>40 MB (P3)</td>
+                <td>50 MB (P2)</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>60 MB (P1)</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>26 MB</td>
+                <td style="background-color: rgb(248, 115, 115)"></td>
+                <td>20 MB</td>
+              </tr>
+            </table>
+            <p>P1 = 60MB - 16MB = 44MB</p>
+            <p>P2 = 50MB - 30MB = 20MB</p>
+            <p>P3 = 40MB - 20MB = 20MB</p>
+
+            <p>Total External Fragmentation : 24MB + 20MB + 40MB = 84MB</p>
+          </div>
         </div>
       </div>
     </main>

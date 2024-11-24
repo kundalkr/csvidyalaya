@@ -343,8 +343,6 @@ footer.innerHTML = `
             </li>
           </ul>
         </div>
-
-
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">Memory Management Question</li>
@@ -366,7 +364,6 @@ footer.innerHTML = `
             </li>
           </ul>
         </div>
-
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">DSA QUESTION</li>
