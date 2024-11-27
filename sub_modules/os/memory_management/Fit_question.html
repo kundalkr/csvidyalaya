@@ -361,6 +361,252 @@
             <p>Best-Fit algorithm makes the most efficient use of memory</p>
           </div>
         </div>
+        <div id="question2">
+          <div
+            class="question"
+            title="second question on First-Fit, Best-Fit, Next-Fit, Worst-Fit "
+          >
+            <h2>
+              Question 2 : A dynamic partioning scheme is being used, and the
+              following is the memory configuration at the given point in time.
+            </h2>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>30 MB</td>
+                <td>46 MB</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>54 MB</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>26 MB</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>20 MB</td>
+              </tr>
+            </table>
+            <p>
+              The areas 1, 4, 6, 7 and 9 are allocated blocks; the others areas
+              are free blocks. the next four memory requests are for 12MB, 28MB,
+              32MB, and 50MB. which of the following placement algorithms makes
+              the most efficient use of memory?
+            </p>
+            <p>a. First-Fit</p>
+            <p>b. Best-Fit</p>
+            <p>c. Worst-Fit</p>
+            <p>
+              d. Next-Fit. Assume the most recently added block is at the 3 (46
+              MB) of memory.
+            </p>
+          </div>
+          <div class="solution">
+            <h2>solution :</h2>
+            <p>let P1 = 12MB, P2 = 28MB, P3 = 32MB, P4 = 50MB</p>
+            <h3>First-Fit :</h3>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>30 MB (P1)</td>
+                <td>46 MB (P2)</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>54 MB (P3)</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>26 MB</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>20 MB</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Memory Request</th>
+                <th>External fragment</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>30MB - 12MB = 18MB</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>46MB - 28MB = 18MB</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>54MB - 32MB = 22MB</td>
+              </tr>
+            </table>
+            <p>Total external Fragmentation => 18 + 18 + 22 = 58</p>
+
+            <h3>Best-Fit :</h3>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>30 MB (P2)</td>
+                <td>46 MB (P3)</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>54 MB (P4)</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>26 MB</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>20 MB (P1)</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Memory Request</th>
+                <th>External fragment</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>20MB - 12MB = 8MB</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>30MB - 28MB = 2MB</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>46MB - 32MB = 14MB</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>54MB - 50MB = 5MB</td>
+              </tr>
+            </table>
+            <p>Total external Fragmentation => 8 + 2 + 14 + 5 = 28</p>
+
+            <h3>Next-Fit :</h3>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>30 MB (P1)</td>
+                <td>46 MB (P2)</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>54 MB (P3)</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>26 MB</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>20 MB</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Memory Request</th>
+                <th>External fragment</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>30MB - 12MB = 18MB</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>46MB - 28MB = 18MB</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>54MB - 32MB = 22MB</td>
+              </tr>
+            </table>
+            <p>Total external Fragmentation => 18 + 18 + 22 = 58</p>
+
+            <h3>Worst-Fit :</h3>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+              <tr>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>30 MB</td>
+                <td>46 MB (P2)</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>54 MB (P1)</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>26 MB</td>
+                <td style="background-color: rgb(115, 248, 171)"></td>
+                <td>20 MB</td>
+              </tr>
+            </table>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Memory Request</th>
+                <th>External fragment</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>54MB - 12MB = 32MB</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>46MB - 28MB = 18MB</td>
+              </tr>
+            </table>
+            <p>Total external Fragmentation => 32 + 18 = 50</p>
+            <p>
+              " best-fit " placement Algorithm makes the most efficient use of
+              memory in this question. because he fulfill the all memory
+              request.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
     <script type="text/javascript" src="/hdr_ftr.js"></script>
