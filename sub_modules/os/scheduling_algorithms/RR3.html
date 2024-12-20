@@ -13,11 +13,15 @@
       #RR1_1,
       #RR1_2,
       #RR1_3,
-      #RR1_4 {
+      #RR1_4,
+      #RR2_1,
+      #RR2_2,
+      #RR2_3,
+      #RR2_4 {
         height: 180px;
         width: 630px;
         object-fit: none;
-        border: 1px solid red;
+        /* border: 1px solid red; */
       }
       #RR1_1 {
         object-position: -897px -32px;
@@ -31,11 +35,27 @@
       #RR1_4 {
         object-position: -887px -643px;
       }
+      #RR2_1 {
+        object-position: -831px -1732px;
+      }
+      #RR2_2 {
+        object-position: -826px -1952px;
+      }
+      #RR2_3 {
+        object-position: -829px -2154px;
+      }
+      #RR2_4 {
+        object-position: -829px -2376px;
+      }
       @media (width<=770px) {
         #RR1_1,
         #RR1_2,
         #RR1_3,
-        #RR1_4 {
+        #RR1_4,
+        #RR2_1,
+        #RR2_2,
+        #RR2_3,
+        #RR2_4 {
           height: 150px;
           width: 400px;
         }
@@ -50,6 +70,18 @@
         }
         #RR1_4 {
           object-position: -899px -1498px;
+        }
+        #RR2_1 {
+          object-position: -787px -2582px;
+        }
+        #RR2_2 {
+          object-position: -791px -2776px;
+        }
+        #RR2_3 {
+          object-position: -801px -2965px;
+        }
+        #RR2_4 {
+          object-position: -796px -3126px;
         }
       }
     </style>
@@ -284,6 +316,165 @@
             <p>
               Average Waiting Time = (5.5 + 0 + 12.5 + 5 + 2.5 + 10 + 2 + 6.5) /
               8 = 5.5
+            </p>
+          </div>
+        </div>
+        <div id="question13">
+          <div class="question">
+            <h2>
+              Question 12: consider the following set of processes, with the
+              length of the cpu burst time given in millisecond. Draw Gantt
+              charts illustrating the execution of these processes using Round
+              Robin (quantum = 1) scheduling. what is turn around time and
+              waiting time of each of the processes.
+            </h2>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>0</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>4</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>5</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P5</td>
+                <td>6</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P6</td>
+                <td>8</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>P7</td>
+                <td>10</td>
+                <td>2</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="solution">
+            <h3>Solution:</h3>
+            <p>Given Time Quantum: 1.0</p>
+
+            <h4>Formulas:</h4>
+            <ul>
+              <li>Turnaround Time (TAT) = Completion Time - Arrival Time</li>
+              <li>Waiting Time (WT) = Turnaround Time - Burst Time</li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="Round Robin SCHEDULING | Question 13 Solution | Gantt Chart"
+              title="Round Robin SCHEDULING | Question 13 Solution | Gantt Chart"
+              id="RR2_1"
+              srcset=""
+            />
+            <img
+              alt="Round Robin SCHEDULING | Question 13 Solution | Gantt Chart"
+              title="Round Robin SCHEDULING | Question 13 Solution | Gantt Chart"
+              id="RR2_2"
+              srcset=""
+            />
+            <img
+              alt="Round Robin SCHEDULING | Question 13 Solution | Gantt Chart"
+              title="Round Robin SCHEDULING | Question 13 Solution | Gantt Chart"
+              id="RR2_3"
+              srcset=""
+            />
+            <img
+              alt="Round Robin SCHEDULING | Question 13 Solution | Gantt Chart"
+              title="Round Robin SCHEDULING | Question 13 Solution | Gantt Chart"
+              id="RR2_4"
+              srcset=""
+            />
+
+            <h4>Calculation:</h4>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turnaround Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>24</td>
+                <td>24 - 0 = 24</td>
+                <td>24 - 8 = 16</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>15</td>
+                <td>15 - 2 = 13</td>
+                <td>13 - 4 = 9</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>11</td>
+                <td>11 - 4 = 7</td>
+                <td>7 - 2 = 5</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+
+                <td>19</td>
+                <td>19 - 5 = 14</td>
+                <td>14 - 3 = 11</td>
+              </tr>
+              <tr>
+                <td>P5</td>
+
+                <td>25</td>
+                <td>25 - 6 = 19</td>
+                <td>19 - 5 = 14</td>
+              </tr>
+              <tr>
+                <td>P6</td>
+
+                <td>13</td>
+                <td>13 - 8 = 5</td>
+                <td>5 - 1 = 4</td>
+              </tr>
+              <tr>
+                <td>P7</td>
+
+                <td>20</td>
+                <td>20 - 10 = 10</td>
+                <td>10 - 2 = 8</td>
+              </tr>
+            </table>
+
+            <p>
+              Average Turnaround Time = (24 + 13 + 7 + 14 + 19 + 5 + 10 ) / 7 =
+              13.14
+            </p>
+
+            <p>
+              Average Waiting Time = (16 + 9 + 5 + 11 + 14 + 4 + 8 ) / 7 = 8.42
             </p>
           </div>
         </div>
