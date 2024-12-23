@@ -46,21 +46,21 @@ header.innerHTML = `
                  <li>
                   <a
                     class="dropdown-item"
-                    href="/sub_modules/os/operating_System_Topics.html"
+                    href="/os/operating_System_Topics.html"
                     >Operating System</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="/sub_modules/dsa_in_c/dsa_in_c_topic.html"
+                    href="/dsa_in_c/dsa_in_c_topic.html"
                     >Dsa</a
                   >
                 </li>
                 <li>
                   <a
                     class="dropdown-item"
-                    href="/sub_modules/Digital%20Fundamentals/Dgital_funda_topic.html"
+                    href="/Digital%20Fundamentals/Dgital_funda_topic.html"
                     >Digital Fundamentals</a
                   >
                 </li>
@@ -109,56 +109,56 @@ header.innerHTML = `
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li>
-          <a href="/sub_modules/os/operating_System_Topics.html"
+          <a href="/os/operating_System_Topics.html"
             >operating System Topics</a
           >
         </li>
         <li>
           <a
-            href="/sub_modules/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
+            href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
             >Scheduling Algorithms Question</a
           >
         </li>
         <li>
-          <a href="/sub_modules/dsa_in_c/dsa_in_c_topic.html">Dsa In C</a>
+          <a href="/dsa_in_c/dsa_in_c_topic.html">Dsa In C</a>
         </li>
         <li>
-          <a href="/sub_modules/dsa_in_c/infixtopostfix.html"
+          <a href="/dsa_in_c/infixtopostfix.html"
             >Infix And Postfix question</a
           >
         </li>
             <li>
-          <a href="/sub_modules/dsa_in_c/prefixtopostfix.html"
+          <a href="/dsa_in_c/prefixtopostfix.html"
             >Prefix And Postfix question</a
           >
         </li>
         <li>
-          <a href="/sub_modules/dsa_in_c/stack2.html"
+          <a href="/dsa_in_c/stack2.html"
             >Infix And Prefix question</a
           >
         </li>
         <li>
-          <a href="/sub_modules/dsa_in_c/stack3.html"
+          <a href="/dsa_in_c/stack3.html"
             >Prefix And Infix question</a
           >
         </li>
         <li>
-          <a href="/sub_modules/dsa_in_c/postfixprefixofinfix.html"
+          <a href="/dsa_in_c/postfixprefixofinfix.html"
             >Postfix & Prefix To Infix</a
           >
         </li>
          <li>
-          <a href="/sub_modules/dsa_in_c/infixtoprefix.html"
+          <a href="/dsa_in_c/infixtoprefix.html"
             >Infix To Prefix question</a
           >
         </li>
         <li>
-          <a href="/sub_modules/dsa_in_c/linkedlist1.html"
+          <a href="/dsa_in_c/linkedlist1.html"
             >linkedlist question</a
           >
         </li>
         <li>
-          <a href="/sub_modules/Digital Fundamentals/Dgital_funda_topic.html"
+          <a href="/Digital Fundamentals/Dgital_funda_topic.html"
             >Dgital fundamental</a
           >
         </li>
@@ -242,7 +242,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">Operating System Question</li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/operating_System_Topics.html"
+                href="/os/operating_System_Topics.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Operating System Questions</a
@@ -250,7 +250,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
+                href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Cpu Scheduling algorithm questions</a
@@ -258,7 +258,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/scheduling_algorithms/fcfs.html"
+                href="/os/scheduling_algorithms/fcfs.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >First Come First Serve (FCFS) Scheduling</a
@@ -266,7 +266,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/scheduling_algorithms/sjf1.html"
+                href="/os/scheduling_algorithms/sjf1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Shortest Job First (SJF) Scheduling</a
@@ -274,7 +274,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/scheduling_algorithms/sjf2.html"
+                href="/os/scheduling_algorithms/sjf2.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Shortest Remaining Time First (Preemptive SJF or SRTF)</a
@@ -282,7 +282,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/scheduling_algorithms/ps1.html"
+                href="/os/scheduling_algorithms/ps1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Priority Scheduling</a
@@ -290,7 +290,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/scheduling_algorithms/ps2.html"
+                href="/os/scheduling_algorithms/ps2.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Preemptive Priority Scheduling</a
@@ -298,7 +298,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/scheduling_algorithms/RR1.html"
+                href="/os/scheduling_algorithms/RR1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Round Robin Scheduling</a
@@ -306,7 +306,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/scheduling_algorithms/mlfqs.html"
+                href="/os/scheduling_algorithms/mlfqs.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Multilevel Feedback Queue Scheduling (MLFQ)</a
@@ -314,7 +314,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/scheduling_algorithms/MLQS.html"
+                href="/os/scheduling_algorithms/MLQS.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Multilevel Queue (MLQ) Scheduling</a
@@ -327,7 +327,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">Deadlock Questions</li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/Deadlocks/deadlock_topics.html"
+                href="/os/Deadlocks/deadlock_topics.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Deadlock Question</a
@@ -335,7 +335,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/Deadlocks/Bankers_Algorithms.html"
+                href="/os/Deadlocks/Bankers_Algorithms.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Banker's Algorithm question</a
@@ -348,7 +348,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">Memory Management Question</li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/memory_management/Fit_question.html"
+                href="/os/memory_management/Fit_question.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >fit algorithms question</a
@@ -356,7 +356,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/os/memory_management/Buddy_system.html "
+                href="/os/memory_management/Buddy_system.html "
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Buddy System Question</a
@@ -369,7 +369,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">DSA QUESTION</li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/dsa_in_c/Arrays.html"
+                href="/dsa_in_c/Arrays.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Arrays</a
@@ -377,7 +377,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/dsa_in_c/infixtopostfix.html"
+                href="/dsa_in_c/infixtopostfix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix And Postfix Conversion</a
@@ -385,7 +385,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/dsa_in_c/infixtoprefix.html"
+                href="/dsa_in_c/infixtoprefix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix To Prefix Conversion</a
@@ -393,7 +393,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/dsa_in_c/stack2.html"
+                href="/dsa_in_c/stack2.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix And Prefix Conversion</a
@@ -401,7 +401,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/dsa_in_c/postfixprefixofinfix.html"
+                href="/dsa_in_c/postfixprefixofinfix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix To Postfix and Prefix Conversion</a
@@ -409,7 +409,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/dsa_in_c/prefixtopostfix.html"
+                href="/dsa_in_c/prefixtopostfix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Prefix And Postfix Conversion</a
@@ -417,7 +417,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/dsa_in_c/linkedlist1.html"
+                href="/dsa_in_c/linkedlist1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Linkedlist Question</a
@@ -425,7 +425,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/dsa_in_c/queue1.html"
+                href="/dsa_in_c/queue1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Queue Question</a
@@ -433,7 +433,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/dsa_in_c/stack1.html"
+                href="/dsa_in_c/stack1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >stack Question</a
@@ -446,7 +446,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">Digital Fundamentals Questions</li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/Digital Fundamentals/Dgital_funda_topic.html"
+                href="/Digital Fundamentals/Dgital_funda_topic.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Digital Fundamentals Question</a
@@ -454,7 +454,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html"
+                href="/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Boolean Algebra Question</a
@@ -467,7 +467,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">Number System Questions</li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/Digital Fundamentals/Number System/decimaltobinary.html"
+                href="/Digital Fundamentals/Number System/decimaltobinary.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Decimal And Binary Conversion</a
@@ -475,7 +475,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/Digital Fundamentals/Number System/decimaltohexadecimal1.html"
+                href="/Digital Fundamentals/Number System/decimaltohexadecimal1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Decimal And Hexadecimal Conversion</a
@@ -483,7 +483,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/Digital Fundamentals/Number System/decimaltoOctal1.html"
+                href="/Digital Fundamentals/Number System/decimaltoOctal1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Decimal And Octal Conversion</a
@@ -491,7 +491,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/sub_modules/Digital Fundamentals/Number System/octaltohexadecimal1.html"
+                href="/Digital Fundamentals/Number System/octaltohexadecimal1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Octal And Hexadecimal Conversion</a
