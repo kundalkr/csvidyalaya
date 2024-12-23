@@ -64,7 +64,7 @@
             <a href="Arrays.html">array questions</a>
           </li>
           <li class="list-group-item">
-            <a href="/sub_modules/os/operating_System_Topics.html"
+            <a href="/os/operating_System_Topics.html"
               >operating system questions</a
             >
           </li>
@@ -84,115 +84,112 @@
             >Jump To Question</a
           >
           <br /><br />
-          <body>
-            <h2>Prefix and Postfix Notation in DSA</h2>
-            <p>
-              Prefix and postfix are two ways to write expressions in which the
-              operator is positioned either before (prefix) or after (postfix)
-              the operands. These notations are particularly useful in the
-              evaluation of expressions without the need for parentheses to
-              dictate order of operations.
-            </p>
 
-            <h3>Method to Convert Prefix to Postfix and Vice-Versa</h3>
-            <ul>
-              <li>
-                <strong>Prefix to Postfix:</strong>
+          <h2>Prefix and Postfix Notation in DSA</h2>
+          <p>
+            Prefix and postfix are two ways to write expressions in which the
+            operator is positioned either before (prefix) or after (postfix) the
+            operands. These notations are particularly useful in the evaluation
+            of expressions without the need for parentheses to dictate order of
+            operations.
+          </p>
+
+          <h3>Method to Convert Prefix to Postfix and Vice-Versa</h3>
+          <ul>
+            <li>
+              <strong>Prefix to Postfix:</strong>
+              <ul>
+                <li>Read the prefix expression from right to left.</li>
+                <li>If an operand is encountered, push it onto a stack.</li>
+                <li>
+                  If an operator is encountered, pop the top two operands from
+                  the stack.
+                </li>
+                <li>
+                  Combine the operands with the operator in postfix form and
+                  push the result back onto the stack.
+                </li>
+                <li>
+                  The final element left in the stack is the postfix expression.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Postfix to Prefix:</strong>
+              <ul>
+                <li>Read the postfix expression from left to right.</li>
+                <li>If an operand is encountered, push it onto a stack.</li>
+                <li>
+                  If an operator is encountered, pop the top two operands from
+                  the stack.
+                </li>
+                <li>
+                  Combine the operands with the operator in prefix form and push
+                  the result back onto the stack.
+                </li>
+                <li>
+                  The final element left in the stack is the prefix expression.
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <h3>Advantages and Disadvantages</h3>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Notation</th>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>Prefix</td>
+              <td>
                 <ul>
-                  <li>Read the prefix expression from right to left.</li>
-                  <li>If an operand is encountered, push it onto a stack.</li>
+                  <li>No need for parentheses to dictate order.</li>
+                  <li>Evaluation is straightforward using a stack.</li>
+                  <li>Unambiguous, as each operator follows its operands.</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li>Less intuitive for human reading and writing.</li>
+                  <li>More complex parsing compared to infix notation.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Postfix</td>
+              <td>
+                <ul>
+                  <li>Similar advantages to prefix, with easy evaluation.</li>
+                  <li>Allows for easier implementation in calculators.</li>
                   <li>
-                    If an operator is encountered, pop the top two operands from
-                    the stack.
-                  </li>
-                  <li>
-                    Combine the operands with the operator in postfix form and
-                    push the result back onto the stack.
-                  </li>
-                  <li>
-                    The final element left in the stack is the postfix
-                    expression.
+                    Also unambiguous, eliminating confusion with operator
+                    precedence.
                   </li>
                 </ul>
-              </li>
-              <li>
-                <strong>Postfix to Prefix:</strong>
+              </td>
+              <td>
                 <ul>
-                  <li>Read the postfix expression from left to right.</li>
-                  <li>If an operand is encountered, push it onto a stack.</li>
+                  <li>Like prefix, can be less intuitive for humans.</li>
                   <li>
-                    If an operator is encountered, pop the top two operands from
-                    the stack.
-                  </li>
-                  <li>
-                    Combine the operands with the operator in prefix form and
-                    push the result back onto the stack.
-                  </li>
-                  <li>
-                    The final element left in the stack is the prefix
-                    expression.
+                    Requires extra processing to convert to infix for
+                    readability.
                   </li>
                 </ul>
-              </li>
-            </ul>
+              </td>
+            </tr>
+          </table>
 
-            <h3>Advantages and Disadvantages</h3>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Notation</th>
-                <th>Advantages</th>
-                <th>Disadvantages</th>
-              </tr>
-              <tr>
-                <td>Prefix</td>
-                <td>
-                  <ul>
-                    <li>No need for parentheses to dictate order.</li>
-                    <li>Evaluation is straightforward using a stack.</li>
-                    <li>Unambiguous, as each operator follows its operands.</li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Less intuitive for human reading and writing.</li>
-                    <li>More complex parsing compared to infix notation.</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>Postfix</td>
-                <td>
-                  <ul>
-                    <li>Similar advantages to prefix, with easy evaluation.</li>
-                    <li>Allows for easier implementation in calculators.</li>
-                    <li>
-                      Also unambiguous, eliminating confusion with operator
-                      precedence.
-                    </li>
-                  </ul>
-                </td>
-                <td>
-                  <ul>
-                    <li>Like prefix, can be less intuitive for humans.</li>
-                    <li>
-                      Requires extra processing to convert to infix for
-                      readability.
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-
-            <h3>Need for Conversion</h3>
-            <p>
-              Converting between prefix and postfix notation is essential for
-              various applications, including compilers and expression
-              evaluators. The conversion enables different representations of
-              expressions, optimizing them for specific evaluation strategies
-              and improving efficiency in computations where one form might be
-              more advantageous than the other.
-            </p>
-          </body>
+          <h3>Need for Conversion</h3>
+          <p>
+            Converting between prefix and postfix notation is essential for
+            various applications, including compilers and expression evaluators.
+            The conversion enables different representations of expressions,
+            optimizing them for specific evaluation strategies and improving
+            efficiency in computations where one form might be more advantageous
+            than the other.
+          </p>
         </div>
         <h3 id="fstque">
           69. Convert the following prefix expression to postfix: * + A B - C D
@@ -465,7 +462,7 @@
             <a href="Arrays.html">array questions</a>
           </li>
           <li class="list-group-item">
-            <a href="/sub_modules/os/operating_System_Topics.html"
+            <a href="/os/operating_System_Topics.html"
               >operating system questions</a
             >
           </li>
