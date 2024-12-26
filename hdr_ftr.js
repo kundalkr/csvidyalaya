@@ -503,3 +503,9 @@ footer.innerHTML = `
     </div>
 `;
 document.querySelector("body").append(footer);
+
+
+
+if (window.location.href.indexOf('https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/mlfqs.html') === 0) {
+  window.location.href = 'https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html';
+}

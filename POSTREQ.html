@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const url = "https://www.bing.com/indexnow"; // IndexNow API endpoint
+
+      // Replace with your actual data
+      const data = {
+        host: "www.csvidyalaya.com", // Your website's domain
+        key: "52dc76ca093a4794804768838053c8e7", // Your generated API key
+        keyLocation:
+          "https://www.csvidyalaya.com/52dc76ca093a4794804768838053c8e7.txt", // URL where your key is hosted
+        urlList: [
+          "https://csvidyalaya.com/dsa_in_c/array2.html",
+          "https://csvidyalaya.com/dsa_in_c/stack3.html",
+        ],
+      };
+
+      fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+        })
+        .then((result) => {
+          console.log("Success:", result);
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+        });
+    </script>
+  </head>
+  <body></body>
+</html>
