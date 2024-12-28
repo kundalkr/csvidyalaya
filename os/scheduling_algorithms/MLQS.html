@@ -94,6 +94,68 @@
         } */
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html"
+        },
+        "headline": "MLQS Scheduling: Questions and Solutions for TAT, Gantt Chart, and Waiting Time",
+        "description": "Explore Multilevel Queue Scheduling (MLQS) concepts with solved examples on Turnaround Time (TAT), Gantt Chart, and Waiting Time calculations. Ideal for students and professionals.",
+        "image": "https://csvidyalaya.com/assets/MLQS DEFINITIO small.png",
+        "author": {
+          "@type": "Person",
+          "name": "Kundal Kumar",
+          "url": "https://csvidyalaya.com/anotherpage/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "csvidyalaya",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": "2024-12-24",
+        "dateModified": "2024-12-28",
+        "keywords": "MLQS Scheduling, Multilevel Queue Scheduling, Turnaround Time, TAT, Waiting Time, Gantt Chart, CPU Scheduling, MLQS Questions and Solutions",
+        "articleSection": [
+          "Introduction to MLQS Scheduling",
+          "Key Concepts in MLQS: TAT, Waiting Time, Gantt Chart",
+          "Solved Examples on MLQS Scheduling",
+          "Step-by-Step Guide for MLQS Calculations",
+          "Common Mistakes in MLQS Problems",
+          "FAQs on MLQS Scheduling"
+        ],
+
+        "about": {
+          "@type": "Thing",
+          "name": "MLQS Scheduling",
+          "description": "The Multilevel Queue Scheduling (MLQS) algorithm is a CPU scheduling technique that divides processes into different queues based on their specific characteristics. Each queue has its own scheduling policy, and the processes within each queue are managed independently"
+        },
+        "isAccessibleForFree": true,
+        "educationalLevel": "Undergraduate",
+        "hasPart": [
+          {
+            "@type": "CreativeWork",
+            "name": "Example 1: Calculating TAT in MLQS Scheduling",
+            "description": "Learn how to calculate Turnaround Time (TAT) step-by-step using a Gantt chart."
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Example 2: Drawing a Gantt Chart for MLQS Scheduling",
+            "description": "A detailed example of creating a Gantt chart for multilevel queue scheduling."
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Example 3: Finding Waiting Time in MLQS",
+            "description": "Step-by-step solution for calculating Waiting Time in MLQS scheduling problems."
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- upper and down button -->
@@ -155,11 +217,17 @@
             In the Multilevel Queue Scheduling algorithm, the processes are
             divided into multiple queues based on specific characteristics, such
             as process priority or memory requirements. Each queue has its own
-            scheduling algorithm, which could be <a href="/os/scheduling_algorithms/fcfs.html">First-Come-First-Serve (FCFS)</a>,
-            <a href="/os/scheduling_algorithms/sjf1.html">Shortest Job First (SJF)</a>, or <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>, depending on the type
-            of processes it holds. This algorithm is typically used in scenarios
-            where different types of processes need to be managed independently
-            and efficiently.
+            scheduling algorithm, which could be
+            <a href="/os/scheduling_algorithms/fcfs.html"
+              >First-Come-First-Serve (FCFS)</a
+            >,
+            <a href="/os/scheduling_algorithms/sjf1.html"
+              >Shortest Job First (SJF)</a
+            >, or
+            <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>,
+            depending on the type of processes it holds. This algorithm is
+            typically used in scenarios where different types of processes need
+            to be managed independently and efficiently.
           </p>
           <img
             alt="multilevel queue scheduling definiton | "
@@ -167,7 +235,7 @@
             srcset=""
           />
 
-          <h2>Method for solving Multilevel Queue Scheduling (MLQS) in os </h2>
+          <h2>Method for solving Multilevel Queue Scheduling (MLQS) in os</h2>
           <ul>
             <li>
               Step 1: Divide the processes into multiple queues based on
@@ -265,8 +333,11 @@
           <p>
             Multilevel Queue Scheduling is particularly beneficial in
             environments where different categories of tasks require distinct
-            scheduling policies. By allowing separate <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a> per
-            queue and facilitating priority-based processing, it can deliver
+            scheduling policies. By allowing separate
+            <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
+              >scheduling algorithms</a
+            >
+            per queue and facilitating priority-based processing, it can deliver
             more efficient performance compared to a single algorithm for all
             processes. This makes it highly suitable for systems requiring quick
             responses for specific types of processes, as well as in multiuser
@@ -436,8 +507,8 @@
             Arrival Time, Burst Time. Question criteria : <br />
             (1) There are three queue Q1, Q2, Q3<br />
             (2) In Q1 (Priority scheduling, premptive), Q2(sjf, preemptive) ,
-            Q3(Round robin, timestamp=1)
-            (for priority scheduling, take 1 is the highest priority)
+            Q3(Round robin, timestamp=1) (for priority scheduling, take 1 is the
+            highest priority)
           </h2>
 
           <table border="1" class="table table-bordered">
@@ -594,8 +665,9 @@
             scheduling algorithm? Consider the following processes with their
             Arrival Time, Burst Time. Question criteria : <br />
             (1) There are four queue Q1, Q2, Q3, Q4<br />
-            (2) In Q1(Round robin, timestamp=1), Q2(preemptive Priority scheduling), Q3(preemptive sjf ), Q4(FCFS)
-            (for priority scheduling, take 1 is the highest priority)
+            (2) In Q1(Round robin, timestamp=1), Q2(preemptive Priority
+            scheduling), Q3(preemptive sjf ), Q4(FCFS) (for priority scheduling,
+            take 1 is the highest priority)
           </h2>
 
           <table border="1" class="table table-bordered">

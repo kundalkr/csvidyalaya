@@ -103,6 +103,75 @@
         }
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://csvidyalaya.com/os/scheduling_algorithms/sjf2.html"
+        },
+        "headline": "Shortest Remaining Time First (SRTF) Scheduling: Question & Solution",
+        "description": "Learn about the Shortest Remaining Time First (SRTF) scheduling algorithm with detailed questions, solutions, and calculations for TAT, Gantt Chart, and Waiting Time.",
+        "image": "",
+        "author": {
+          "@type": "Person",
+          "name": "Kundal Kumar",
+          "url": "https://csvidyalaya.com/anotherpage/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "csvidyalaya",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": "2024-12-24",
+        "dateModified": "2024-12-28",
+        "keywords": "SRTF Scheduling, Shortest Remaining Time First, Gantt Chart, TAT, Waiting Time, CPU Scheduling, Process Scheduling Algorithms, SRTF Questions",
+        "articleSection": [
+          "Introduction to SRTF Scheduling",
+          "Advantages and Limitations in SRTF Scheduling",
+          "Steps to Perform SRTF Scheduling",
+          "Creating Gantt Chart for SRTF Scheduling",
+          "Calculating Turnaround Time (TAT)",
+          "Example and Solution for SRTF Scheduling",
+          "Practice Problems with Solutions"
+        ],
+        "about": {
+          "@type": "Thing",
+          "name": "SRTF(shortest remaining time first) Scheduling",
+          "description": "The Shortest Remaining Time First (SRTF) algorithm is a scheduling method used in operating systems to manage processes. It works by always selecting the process with the shortest remaining time to complete, giving it priority over others. This ensures that shorter tasks are finished quicker, but can lead to longer processes being delayed if new shorter tasks keep arriving."
+        },
+        "isAccessibleForFree": true,
+        "learningResourceType": [
+          "Educational Article",
+          "Tutorial",
+          "Practice Questions"
+        ],
+        "hasPart": [
+          {
+            "@type": "CreativeWork",
+            "headline": "Question 1: SRTF Scheduling - Finding TAT, Gantt Chart, and Waiting Time",
+            "text": "Given the following processes with their burst times and arrival times, calculate the Turnaround Time (TAT), Waiting Time, and create the Gantt Chart for the Shortest Remaining Time First (SRTF) scheduling algorithm. Show your work step by step.",
+            "creator": {
+              "@type": "Person",
+              "name": "Kundal Kumar"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "SRTF Scheduling: Calculating TAT, Waiting Time, and Gantt Chart",
+            "text": "For a set of processes with different burst times and arrival times, apply the SRTF algorithm and solve the following:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: First, calculate the remaining time for each process, select the process with the shortest remaining time at each scheduling interval, and proceed to calculate the Gantt chart, TAT, and waiting time using the formulas. Example solution would be provided step by step."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- upper and down button -->
@@ -161,12 +230,15 @@
 
           <p>
             Shortest Remaining Time First (SRTF) or Shortest Job Next (SJN) is a
-            <a href="https://www.sciencedirect.com/topics/engineering/preemptive-scheduling">preemptive scheduling algorithm</a> used in operating systems. In this
-            algorithm, the process with the shortest remaining burst time is
-            selected for execution. If a new process arrives with a burst time
-            shorter than the remaining time of the currently running process,
-            the current process is preempted, and the new process starts
-            execution.
+            <a
+              href="https://www.sciencedirect.com/topics/engineering/preemptive-scheduling"
+              >preemptive scheduling algorithm</a
+            >
+            used in operating systems. In this algorithm, the process with the
+            shortest remaining burst time is selected for execution. If a new
+            process arrives with a burst time shorter than the remaining time of
+            the currently running process, the current process is preempted, and
+            the new process starts execution.
           </p>
 
           <h2>Method to Solve SRTF Scheduling Algorithm</h2>
@@ -635,8 +707,11 @@
         <div class="question">
           <h2>
             Question 14: find the average Turn Around Time and Waiting Time of
-            following processes using <a href="#defi">Preemptive SJF or SRTF(SHORTEST REMAINING
-              TIME FIRST)</a> process scheduling algorithm?
+            following processes using
+            <a href="#defi"
+              >Preemptive SJF or SRTF(SHORTEST REMAINING TIME FIRST)</a
+            >
+            process scheduling algorithm?
           </h2>
           <table border="1" class="table table-bordered">
             <tr>

@@ -102,6 +102,72 @@
         }
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://csvidyalaya.com/os/scheduling_algorithms/sjf1.html"
+        },
+        "headline": "Shortest Job First (SJF) Scheduling: Questions and Solutions",
+        "description": "Learn about the Shortest Job First (SJF) scheduling algorithm. Explore example questions on calculating Turnaround Time (TAT), Waiting Time, and Gantt Chart with detailed solutions.",
+        "image": "",
+        "author": {
+          "@type": "Person",
+          "name": "Kundal Kumar",
+          "url": "https://csvidyalaya.com/anotherpage/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "csvidyalaya",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": "2024-12-24",
+        "dateModified": "2024-12-28",
+        "keywords": "Shortest Job First questions, SJF Scheduling questions, Turnaround Time, Waiting Time, Gantt Chart, Process Scheduling questions",
+        "articleSection": [
+          "Introduction to SJF Scheduling",
+          "Advantages and Limitations of Priority Scheduling",
+          "Steps to Perform Priority Scheduling",
+          "Question: Find Turnaround Time (TAT), Waiting Time, and Gantt Chart",
+          "SJF Scheduling Example and Solution"
+        ],
+
+        "about": {
+          "@type": "Thing",
+          "name": "Shortest Job First(SJF) Scheduling",
+          "description": "Shortest Job First (SJF) is a scheduling algorithm that selects the process with the shortest burst time (the time needed to complete) to run next. It aims to minimize waiting time by prioritizing shorter tasks, but it can lead to longer processes being delayed if they are waiting for shorter tasks to finish. SJF can be preemptive (shortest job comes in while another is running) or non-preemptive (the job runs to completion once started)."
+        },
+        "isAccessibleForFree": true,
+        "learningResourceType": [
+          "Educational Article",
+          "Tutorial",
+          "Practice Questions"
+        ],
+        "hasPart": [
+          {
+            "@type": "CreativeWork",
+            "name": "Shortest Job First Scheduling Explanation",
+            "text": "The Shortest Job First (SJF) is a non-preemptive scheduling algorithm that selects the process with the smallest burst time for execution first. This minimizes the average waiting time for all processes in the system."
+          },
+          {
+            "@type": "Question",
+            "name": "Question 1: Calculate Turnaround Time, Waiting Time, and draw Gantt Chart",
+            "text": "Given a set of processes with burst times, calculate the Turnaround Time (TAT), Waiting Time, and draw the corresponding Gantt Chart. Show all the steps involved in the SJF scheduling algorithm.",
+            "suggestedAnswer": "First, calculate the waiting time (WT) for each process. Then calculate the Turnaround Time (TAT) as the sum of the burst time and waiting time. Finally, represent the process execution in a Gantt Chart."
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Solution to SJF Scheduling Question",
+            "text": "Solution for the above question: Calculate the Waiting Time (WT) and Turnaround Time (TAT) for each process. Draw the Gantt chart according to the order in which the processes are executed based on the SJF algorithm."
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- upper and down button -->
@@ -159,8 +225,7 @@
           </h2>
           <p>
             Shortest Job First (SJF) is a
-            <a
-              href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
+            <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
               >process scheduling algorithm</a
             >
             in which the process with the shortest execution time is selected
@@ -248,8 +313,7 @@
             predictable. It prioritizes shorter tasks, which helps optimize the
             utilization of CPU resources. However, it is only optimal when burst
             times can be determined in advance, which is often possible in
-            <a
-              href="https://aws.amazon.com/what-is/batch-processing/"
+            <a href="https://aws.amazon.com/what-is/batch-processing/"
               >batch processing systems</a
             >
             but not in real-time or interactive environments.

@@ -79,6 +79,77 @@
         }
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"
+        },
+        "headline": "MLFQS Scheduling: Questions and Solutions on TAT, Gantt Chart, and Waiting Time",
+        "description": "Explore MLFQS scheduling concepts with step-by-step solutions for calculating Turnaround Time (TAT), Gantt Charts, and Waiting Time. Perfect for students and professionals.",
+        "image": "",
+        "author": {
+          "@type": "Person",
+          "name": "Kundal Kumar",
+          "url": "https://csvidyalaya.com/anotherpage/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "csvidyalaya",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": "2024-12-24",
+        "dateModified": "2024-12-28",
+        "keywords": "MLFQS Scheduling, Multi-Level Feedback Queue Scheduling, TAT Calculation, Gantt Chart, Waiting Time Calculation, Operating System Scheduling Algorithms, Scheduling Questions and Solutions",
+        "articleSection": [
+          "Introduction to MLFQS Scheduling",
+          "Key Concepts of Multi-Level Feedback Queue Scheduling",
+          "MLFQS Scheduling Questions and Solutions",
+          "Turnaround Time (TAT) Calculation Examples",
+          "Gantt Chart Step-by-Step Guide",
+          "Waiting Time Calculation Solutions",
+          "Advantages and Disadvantages of MLFQS Scheduling",
+          "FAQs on MLFQS Scheduling"
+        ],
+        "isAccessibleForFree": true,
+        "about": {
+          "@type": "Thing",
+          "name": "MLFQS Scheduling",
+          "description": "The Multilevel Feedback Queue Scheduling (MLFQS) algorithm is a CPU scheduling method that dynamically adjusts task priority based on their behavior and system performance. Tasks start in a high-priority queue, and their priority changes depending on factors like CPU usage and wait time, ensuring a balance between responsiveness and efficiency. It's designed to give preference to interactive tasks while preventing CPU-intensive ones from starving."
+        },
+        "hasPart": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate Turnaround Time (TAT) in MLFQS scheduling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Turnaround Time (TAT) is calculated as the time from the process arrival to its completion. Formula: TAT = Completion Time - Arrival Time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to draw a Gantt Chart for MLFQS scheduling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To draw a Gantt Chart, allocate processes to queues based on priority, schedule them within queues, and visually represent the process execution timeline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you calculate Waiting Time in MLFQS scheduling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Waiting Time is the total time a process spends waiting in the ready queue. Formula: Waiting Time = Turnaround Time - Burst Time."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- upper and down button -->
@@ -148,7 +219,10 @@
             responsiveness.
           </p>
           <img id="def1" alt="" />
-          <h2>Method to Solve the Multilevel Feedback Queue Scheduling(MLFQS) in os</h2>
+          <h2>
+            Method to Solve the Multilevel Feedback Queue Scheduling(MLFQS) in
+            os
+          </h2>
           <ul>
             <li>
               Step 1: Initialize multiple queues with different priority levels,
@@ -157,7 +231,13 @@
             <li>
               Step 2:Place each new process in the highest-priority queue.
             </li>
-            <li>Step 3: Apply <a href="/os/scheduling_algorithms/RR1.html">Round Robin scheduling</a> in each queue.</li>
+            <li>
+              Step 3: Apply
+              <a href="/os/scheduling_algorithms/RR1.html"
+                >Round Robin scheduling</a
+              >
+              in each queue.
+            </li>
             <li>
               Step 4: If a process uses its entire time quantum without
               completing, it is moved to a lower-priority queue.
@@ -230,14 +310,22 @@
           </h2>
           <p>
             Multilevel Feedback Queue Scheduling is advantageous over simpler
-            algorithms like <a href="/os/scheduling_algorithms/fcfs.html">First-Come-First-Serve (FCFS)</a>, <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>, and
-            <a href="/os/scheduling_algorithms/sjf2.html">Shortest Job Next (SJN)</a> because it adapts dynamically to the varying
-            requirements of processes. By allowing processes to move between
-            different priority queues, MLFQS prevents process starvation,
-            optimizes CPU time usage, and reduces turnaround time for
-            interactive and I/O-bound processes. This adaptability ensures a
-            balanced performance for systems handling diverse workloads, making
-            it an efficient choice for many modern operating systems.
+            algorithms like
+            <a href="/os/scheduling_algorithms/fcfs.html"
+              >First-Come-First-Serve (FCFS)</a
+            >,
+            <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>,
+            and
+            <a href="/os/scheduling_algorithms/sjf2.html"
+              >Shortest Job Next (SJN)</a
+            >
+            because it adapts dynamically to the varying requirements of
+            processes. By allowing processes to move between different priority
+            queues, MLFQS prevents process starvation, optimizes CPU time usage,
+            and reduces turnaround time for interactive and I/O-bound processes.
+            This adaptability ensures a balanced performance for systems
+            handling diverse workloads, making it an efficient choice for many
+            modern operating systems.
           </p>
         </div>
         <div class="question">
@@ -249,7 +337,10 @@
             (1) There are four queue Q1, Q2, Q3, Q4 <br />
             (2) Queue with their time stamp Q1(T.S=4), Q2(T.S=8), Q3(T.S=16),
             Q4(FCFS) <br />
-            (in Q1, Q2, Q3, we use <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a> and in Q4 we use <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a> scheduling
+            (in Q1, Q2, Q3, we use
+            <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a> and in
+            Q4 we use
+            <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a> scheduling
             algorithms)
           </h2>
 
@@ -405,7 +496,10 @@
             (1) There are four queue Q1, Q2, Q3, Q4 <br />
             (2) Queue with their time stamp Q1(T.S=2), Q2(T.S=4), Q3(T.S=8),
             Q4(FCFS) <br />
-            (in Q1, Q2, Q3, we use <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a> and in Q4 we use <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a> scheduling
+            (in Q1, Q2, Q3, we use
+            <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a> and in
+            Q4 we use
+            <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a> scheduling
             algorithms)
           </h2>
 
