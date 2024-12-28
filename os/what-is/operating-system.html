@@ -64,6 +64,48 @@
         }
       }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://csvidyalaya.com/os/what-is/operating-system.html"
+        },
+        "headline": "Understanding Operating Systems: Types, Features, and Architecture Explained",
+        "description": "Explore the types, features, and architecture of operating systems. A comprehensive guide perfect for students, professionals, and tech enthusiasts.",
+        "image": "https://csvidyalaya.com/assets/operating-system-L.webp",
+        "author": {
+          "@type": "Person",
+          "name": "Kundal Kumar",
+          "url": "https://csvidyalaya.com/anotherpage/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "csvidyalaya",
+          "logo": {
+            "@type": "ImageObject",
+            "url": ""
+          }
+        },
+        "datePublished": "2024-12-27",
+        "dateModified": "2024-12-27",
+        "keywords": "Operating Systems, Types of Operating Systems, OS Fundamentals, Operating System Features, OS Architecture, Learn Operating Systems",
+        "articleSection": [
+          "What is an Operating System?",
+          "Key Functions of Operating Systems",
+          "Types of Operating Systems",
+          "Components of an Operating System",
+          "Popular Operating Systems",
+          "How Operating Systems Work",
+          "Evolution of Operating Systems",
+          "Advantages and Limitations of Operating Systems",
+          "Future of Operating Systems",
+          "FAQs about Operating Systems"
+        ],
+        "isAccessibleForFree": true
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -80,9 +122,10 @@
             the computer user and the computer hardware.
           </p>
           <img
-            data-src-mobile="/assets/300.jpg"
-            data-src-desktop="/assets/600.webp"
-            alt="os architecture"
+            data-src-mobile="/assets/operating-system-s.jpg"
+            data-src-desktop="/assets/operating-system-L.webp"
+            alt="operating system"
+            title="operating system architecture image"
             src=""
           />
         </section>
@@ -384,7 +427,9 @@
 
         images.forEach((img) => {
           // Choose the appropriate image based on screen width
-          img.src = isMobile ? img.getAttribute("data-src-mobile") : img.getAttribute("data-src-desktop");
+          img.src = isMobile
+            ? img.getAttribute("data-src-mobile")
+            : img.getAttribute("data-src-desktop");
           // Remove the data attributes for cleanliness
           img.removeAttribute("data-src-mobile");
           img.removeAttribute("data-src-desktop");
