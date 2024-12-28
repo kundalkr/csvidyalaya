@@ -165,7 +165,7 @@ const header=document.createElement("div");header.innerHTML=`
     </div>
     <br>
 `;document.querySelector("body").prepend(header);const footer=document.createElement("div");footer.style.backgroundColor="#FFD1DC";footer.innerHTML=`
-      <div class="container">
+       <div class="container">
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
       >
@@ -217,7 +217,10 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
 
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted" target="_blank"
+              <a
+                href="/anotherpage/about.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >About</a
               >
             </li>
@@ -233,10 +236,61 @@ const header=document.createElement("div");header.innerHTML=`
         </div>
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">What Is</li>
+            <li class="nav-item mb-2">
+              <a
+                href="/os/what-is/operating-system.html#osystem"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="what is operating system"
+                >Operating System</a
+              >
+            </li>
+
+            <li class="nav-item mb-2">
+              <a
+                href="/os/what-is/operating-system.html#how_os_work"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="how operating system work"
+                >how OS work</a
+              >
+            </li>
+
+            <li class="nav-item mb-2">
+              <a
+                href="/os/what-is/operating-system.html#process_management"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="what is process management"
+                >Process Management</a
+              >
+            </li>
+
+            <li class="nav-item mb-2">
+              <a
+                href="/os/what-is/operating-system.html#future_of_os"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="what are future of operating system ?"
+                >Future Of Os</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/anotherpage/privacy_policy.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3" id="foot">
+          <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">Operating System Question</li>
             <li class="nav-item mb-2">
               <a
-                href="/os/operating_System_Topics.html"
+                href="/sub_modules/os/operating_System_Topics.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Operating System Questions</a
@@ -244,7 +298,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
+                href="/sub_modules/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Cpu Scheduling algorithm questions</a
@@ -252,7 +306,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/scheduling_algorithms/fcfs.html"
+                href="/sub_modules/os/scheduling_algorithms/fcfs.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >First Come First Serve (FCFS) Scheduling</a
@@ -260,7 +314,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/scheduling_algorithms/sjf1.html"
+                href="/sub_modules/os/scheduling_algorithms/sjf1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Shortest Job First (SJF) Scheduling</a
@@ -268,7 +322,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/scheduling_algorithms/sjf2.html"
+                href="/sub_modules/os/scheduling_algorithms/sjf2.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Shortest Remaining Time First (Preemptive SJF or SRTF)</a
@@ -276,7 +330,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/scheduling_algorithms/ps1.html"
+                href="/sub_modules/os/scheduling_algorithms/ps1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Priority Scheduling</a
@@ -284,7 +338,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/scheduling_algorithms/ps2.html"
+                href="/sub_modules/os/scheduling_algorithms/ps2.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Preemptive Priority Scheduling</a
@@ -292,7 +346,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/scheduling_algorithms/RR1.html"
+                href="/sub_modules/os/scheduling_algorithms/RR1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Round Robin Scheduling</a
@@ -300,7 +354,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/scheduling_algorithms/mlfqs.html"
+                href="/sub_modules/os/scheduling_algorithms/mlfqs.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Multilevel Feedback Queue Scheduling (MLFQ)</a
@@ -308,7 +362,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/scheduling_algorithms/MLQS.html"
+                href="/sub_modules/os/scheduling_algorithms/MLQS.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Multilevel Queue (MLQ) Scheduling</a
@@ -321,7 +375,7 @@ const header=document.createElement("div");header.innerHTML=`
             <li class="nav-item mb-2 headi">Deadlock Questions</li>
             <li class="nav-item mb-2">
               <a
-                href="/os/Deadlocks/deadlock_topics.html"
+                href="/sub_modules/os/Deadlocks/deadlock_topics.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Deadlock Question</a
@@ -329,7 +383,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/Deadlocks/Bankers_Algorithms.html"
+                href="/sub_modules/os/Deadlocks/Bankers_Algorithms.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Banker's Algorithm question</a
@@ -337,12 +391,13 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
           </ul>
         </div>
+
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">Memory Management Question</li>
             <li class="nav-item mb-2">
               <a
-                href="/os/memory_management/Fit_question.html"
+                href="/sub_modules/os/memory_management/Fit_question.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >fit algorithms question</a
@@ -350,7 +405,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/os/memory_management/Buddy_system.html "
+                href="/sub_modules/os/memory_management/Buddy_system.html "
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Buddy System Question</a
@@ -358,12 +413,13 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
           </ul>
         </div>
+
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">DSA QUESTION</li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/Arrays.html"
+                href="/sub_modules/dsa_in_c/Arrays.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Arrays</a
@@ -371,7 +427,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/infixtopostfix.html"
+                href="/sub_modules/dsa_in_c/infixtopostfix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix And Postfix Conversion</a
@@ -379,7 +435,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/infixtoprefix.html"
+                href="/sub_modules/dsa_in_c/infixtoprefix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix To Prefix Conversion</a
@@ -387,7 +443,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/stack2.html"
+                href="/sub_modules/dsa_in_c/stack2.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix And Prefix Conversion</a
@@ -395,7 +451,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/postfixprefixofinfix.html"
+                href="/sub_modules/dsa_in_c/postfixprefixofinfix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix To Postfix and Prefix Conversion</a
@@ -403,7 +459,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/prefixtopostfix.html"
+                href="/sub_modules/dsa_in_c/prefixtopostfix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Prefix And Postfix Conversion</a
@@ -411,7 +467,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/linkedlist1.html"
+                href="/sub_modules/dsa_in_c/linkedlist1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Linkedlist Question</a
@@ -419,7 +475,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/queue1.html"
+                href="/sub_modules/dsa_in_c/queue1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Queue Question</a
@@ -427,7 +483,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/stack1.html"
+                href="/sub_modules/dsa_in_c/stack1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >stack Question</a
@@ -440,7 +496,7 @@ const header=document.createElement("div");header.innerHTML=`
             <li class="nav-item mb-2 headi">Digital Fundamentals Questions</li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Dgital_funda_topic.html"
+                href="/sub_modules/Digital Fundamentals/Dgital_funda_topic.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Digital Fundamentals Question</a
@@ -448,7 +504,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html"
+                href="/sub_modules/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Boolean Algebra Question</a
@@ -461,7 +517,7 @@ const header=document.createElement("div");header.innerHTML=`
             <li class="nav-item mb-2 headi">Number System Questions</li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Number System/decimaltobinary.html"
+                href="/sub_modules/Digital Fundamentals/Number System/decimaltobinary.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Decimal And Binary Conversion</a
@@ -469,7 +525,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Number System/decimaltohexadecimal1.html"
+                href="/sub_modules/Digital Fundamentals/Number System/decimaltohexadecimal1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Decimal And Hexadecimal Conversion</a
@@ -477,7 +533,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Number System/decimaltoOctal1.html"
+                href="/sub_modules/Digital Fundamentals/Number System/decimaltoOctal1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Decimal And Octal Conversion</a
@@ -485,7 +541,7 @@ const header=document.createElement("div");header.innerHTML=`
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Number System/octaltohexadecimal1.html"
+                href="/sub_modules/Digital Fundamentals/Number System/octaltohexadecimal1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Octal And Hexadecimal Conversion</a

@@ -112,7 +112,7 @@
       <main>
         <h1>Understanding Operating System</h1>
         <section>
-          <h2>Operating System</h2>
+          <h2 id="osystem">Operating System</h2>
           <p>
             An OS is a program that controls the execution of application
             programs and acts as an interface between applications and the
@@ -139,7 +139,7 @@
             <li>Security and user management</li>
           </ul>
 
-          <h3>1. Process Management</h3>
+          <h3 id="process_management">1. Process Management</h3>
           <p>
             A process is a program in execution. A process will need certain
             resources such as CPU time, memory, files, and I/O devices— to
@@ -289,7 +289,7 @@
           </ul>
         </section>
         <section>
-          <h2>How Operating Systems Work ?</h2>
+          <h2 id="how_os_work">How Operating Systems Work ?</h2>
           <p>
             An operating system is like the brain of a computer—it acts as a
             bridge between the hardware (like your CPU, memory, and storage) and
@@ -382,7 +382,7 @@
           </ul>
         </section>
         <section>
-          <h2>Future of Operating Systems</h2>
+          <h2 id="future_of_os">Future of Operating Systems</h2>
           <p>
             As technology rapidly evolves, the future of operating systems (OS)
             is set to experience groundbreaking changes. One key trend is the
@@ -418,19 +418,14 @@
     <script type="text/javascript" src="/hdr_ftr.js"></script>
     <script>
       window.onload = function () {
-        // Select all img tags with a data-src-mobile and data-src-desktop attribute
         const images = document.querySelectorAll(
           "img[data-src-mobile][data-src-desktop]"
         );
-
         const isMobile = window.innerWidth < 700;
-
         images.forEach((img) => {
-          // Choose the appropriate image based on screen width
           img.src = isMobile
             ? img.getAttribute("data-src-mobile")
             : img.getAttribute("data-src-desktop");
-          // Remove the data attributes for cleanliness
           img.removeAttribute("data-src-mobile");
           img.removeAttribute("data-src-desktop");
         });
