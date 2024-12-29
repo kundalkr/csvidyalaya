@@ -223,9 +223,26 @@
         {
             "id": 56,
             "link": "https://csvidyalaya.com/Digital%20Fundamentals/Boolean%20Algebra/booleanalgebra4.html"
-        },  {
+        },
+        {
             "id": 57,
             "link": "https://csvidyalaya.com/Digital%20Fundamentals/Number%20System/octaltohexadecimal5.html"
+        },
+        {
+            "id": 58,
+            "link": "https://csvidyalaya.com/os/what-is/operating-system.html"
+        },
+        {
+            "id": 59,
+            "link": "https://csvidyalaya.com/os/what-is/operating-system.html#process_management"
+        },
+        {
+            "id": 60,
+            "link": "https://csvidyalaya.com/os/what-is/operating-system.html#how_os_work"
+        },
+        {
+            "id": 61,
+            "link": "https://csvidyalaya.com/os/what-is/operating-system.html#future_of_os"
         }
     ]
 }
