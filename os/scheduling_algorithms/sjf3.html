@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="/externalcss.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      SRTF Scheduling Questions: Solved Problems & Step-by-Step Guide
+    </title>
+    <meta
+      name="description"
+      content="Discover solved problems on SJF scheduling algorithm with a step-by-step guide. Ideal for students and professionals looking to master the SJF technique with ease."
+    />
+    <style>
+      #sjf21_1,
+      #sjf21_2 {
+        height: 180px;
+        width: 630px;
+
+      }
+      #sjf21_1 {
+        object-position: -83px -1082px;
+      }
+      #sjf21_2 {
+        object-position: -83px -1331px;
+      }
+
+      @media (width<=770px) {
+        #sjf21_1,
+        #sjf21_2 {
+          height: 150px;
+          width: 400px;
+          /* background-image: url(/assets/SJF2.png); */
+        }
+        #sjf21_1 {
+          object-position: -69px -1552px;
+        }
+        #sjf21_2 {
+          object-position: -57px -1737px;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://csvidyalaya.com/os/scheduling_algorithms/sjf3.html"
+        },
+        "headline": "Shortest Remaining Time First (SRTF) Scheduling: Question & Solution",
+        "description": "Learn about the Shortest Remaining Time First (SRTF) scheduling algorithm with detailed questions, solutions, and calculations for TAT, Gantt Chart, and Waiting Time.",
+        "image": "",
+        "author": {
+          "@type": "Person",
+          "name": "Kundal Kumar",
+          "url": "https://csvidyalaya.com/anotherpage/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "csvidyalaya",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://csvidyalaya.com/assets/logo/main_Logo.jpg"
+          }
+        },
+        "datePublished": "2024-12-24",
+        "dateModified": "2024-12-30",
+        "keywords": "SRTF Scheduling, Shortest Remaining Time First, Gantt Chart, TAT, Waiting Time, CPU Scheduling, Process Scheduling Algorithms, SRTF Questions",
+        "articleSection": [
+          "Example and Solution for SRTF Scheduling",
+          "Practice Problems with Solutions"
+        ],
+        "about": {
+          "@type": "Thing",
+          "name": "SRTF(shortest remaining time first) Scheduling",
+          "description": "The Shortest Remaining Time First (SRTF) algorithm is a scheduling method used in operating systems to manage processes. It works by always selecting the process with the shortest remaining time to complete, giving it priority over others. This ensures that shorter tasks are finished quicker, but can lead to longer processes being delayed if new shorter tasks keep arriving."
+        },
+        "isAccessibleForFree": true,
+        "learningResourceType": [
+          "Educational Article",
+          "Tutorial",
+          "Practice Questions"
+        ],
+        "hasPart": [
+          {
+            "@type": "CreativeWork",
+            "headline": "Question 1: SRTF Scheduling - Finding TAT, Gantt Chart, and Waiting Time",
+            "text": "Given the following processes with their burst times and arrival times, calculate the Turnaround Time (TAT), Waiting Time, and create the Gantt Chart for the Shortest Remaining Time First (SRTF) scheduling algorithm. Show your work step by step.",
+            "creator": {
+              "@type": "Person",
+              "name": "Kundal Kumar"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "SRTF Scheduling: Calculating TAT, Waiting Time, and Gantt Chart",
+            "text": "For a set of processes with different burst times and arrival times, apply the SRTF algorithm and solve the following:",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solution: First, calculate the remaining time for each process, select the process with the shortest remaining time at each scheduling interval, and proceed to calculate the Gantt chart, TAT, and waiting time using the formulas. Example solution would be provided step by step."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <div class="container">
+      <h1 id="upper">
+        SJF(SHORTEST JOB FIRST) premptive and non-premptive question
+      </h1>
+
+      <button
+        type="button"
+        class="btn btn-success"
+        style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+      >
+        <a href="#down"
+          ><span class="material-icons" style="color: antiquewhite">
+            arrow_downward
+          </span></a
+        >
+      </button>
+      <button
+        type="button"
+        class="btn btn-success"
+        style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+      >
+        <a href="#upper"
+          ><span class="material-icons" style="color: antiquewhite">
+            arrow_upward
+          </span></a
+        >
+      </button>
+    </div>
+    <!-- upper and down button end-->
+    <main>
+      <div class="container">
+        <div>
+          <br /><br />
+          <a
+            href="#fstque"
+            class="btn btn-primary btn-lg active"
+            role="button"
+            aria-pressed="true"
+            >Jump To Question</a
+          >
+          <br /><br />
+        </div>
+        <!-- question 11 start -->
+        <div class="question21">
+          <div class="question">
+            <h2 id="fstque">
+              Question 21: Consider the following set of processes, with the
+              length of the CPU-burst time given in milliseconds:
+            </h2>
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>0</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>3</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>P5</td>
+                <td>3</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>P6</td>
+                <td>4</td>
+                <td>1</td>
+              </tr>
+            </table>
+            <p>
+              Draw gantt charts illustrating the execution of these processes
+              using preemptive SJF or SRTF (SHORTEST REMAINING TIME
+              FIRST)scheduling. What is turn around time and waiting time of
+              each process.
+            </p>
+          </div>
+          <div class="solution">
+            <h3>Solution :</h3>
+
+            <p>Formulas:</p>
+            <ul>
+              <li id="avgtat">
+                Turn Around Time (TAT) = Completion Time (CT) - Arrival Time
+                (AT)
+              </li>
+              <br />
+              <li id="avgwt">
+                Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
+              </li>
+              <br />
+            </ul>
+
+            <h4>Gantt Chart</h4>
+
+            <img
+              alt="SJF SCHEDULING | Question 21 Solution | Gantt Chart"
+              title="SJF SCHEDULING | Question 21 Solution | Gantt Chart"
+              id="sjf21_1"
+              srcset=""
+            />
+            <img
+              alt="SJF SCHEDULING | Question 21 Solution | Gantt Chart"
+              title="SJF SCHEDULING | Question 21 Solution | Gantt Chart"
+              id="sjf21_2"
+              srcset=""
+            />
+            <!-- <p>| P1 (0-6) | P3 (6-9) | P5 (9-11) | P2 (11-15) | P4 (15-20) |</p> -->
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Completion Time</th>
+                <th>Turn Around Time (TAT)</th>
+                <th>Waiting Time (WT)</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>24</td>
+                <td>24 - 0 = 24</td>
+                <td>24 - 9 = 15</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>10</td>
+                <td>10 - 1 = 9</td>
+                <td>9 - 5 = 4</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>5</td>
+                <td>5 - 2 = 3</td>
+                <td>3 - 3= 0</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+
+                <td>16</td>
+                <td>16 - 3 = 13</td>
+                <td>13 - 6 = 7</td>
+              </tr>
+              <tr>
+                <td>P5</td>
+
+                <td>32</td>
+                <td>32 - 3 = 29</td>
+                <td>29 - 8 = 21</td>
+              </tr>
+              <tr>
+                <td>P6</td>
+
+                <td>6</td>
+                <td>6 - 4 = 2</td>
+                <td>2 - 1 = 1</td>
+              </tr>
+            </table>
+
+            <p>Formula for average TAT and WT:</p>
+            <ul>
+              <li>
+                Average Turn Around Time (Average TAT) = Σ(TAT) / Number of
+                Processes
+              </li>
+              <li>
+                Average Waiting Time (Average WT) = Σ(WT) / Number of Processes
+              </li>
+            </ul>
+            <p>
+              Average Turn Around Time (TAT) = (24 + 9 + 3 + 13 + 29 + 2)/6 =
+              13.333 units
+            </p>
+            <p>Average Waiting Time (WT) = (15 + 4 + 0 + 7 + 21)/6 = 8 units</p>
+          </div>
+        </div>
+        <!-- question 11 end -->
+      </div>
+    </main>
+
+    <script type="text/javascript" src="/hdr_ftr.js"></script>
+    <script type="text/javascript" src="commonthings.js"></script>
+    <script async>
+      window.onload = function () {
+        let ganttcharts = document.getElementsByTagName("img");
+        for (let index = 0; index < ganttcharts.length; index++) {
+          ganttcharts[index].src = "/assets/SJF3.png";
+        }
+      };
+    </script>
+  </body>
+</html>

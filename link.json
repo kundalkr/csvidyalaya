@@ -234,14 +234,22 @@
         },
         {
             "id": 59,
-            "link": "https://csvidyalaya.com/os/what-is/operating-system.html#process_management"
+            "link": "https://csvidyalaya.com/os/scheduling_algorithms/sjf3.html"
         },
         {
             "id": 60,
-            "link": "https://csvidyalaya.com/os/what-is/operating-system.html#how_os_work"
+            "link": "https://csvidyalaya.com/os/scheduling_algorithms/RR4.html"
         },
         {
             "id": 61,
+            "link": "https://csvidyalaya.com/os/what-is/operating-system.html#process_management"
+        },
+        {
+            "id": 62,
+            "link": "https://csvidyalaya.com/os/what-is/operating-system.html#how_os_work"
+        },
+        {
+            "id": 63,
             "link": "https://csvidyalaya.com/os/what-is/operating-system.html#future_of_os"
         }
     ]

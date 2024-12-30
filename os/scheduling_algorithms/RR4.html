@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="/externalcss.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Round Robin Scheduling Questions | Solved Examples & Answers</title>
+    <meta
+      name="description"
+      content="Explore solved examples and answers for Round Robin scheduling algorithm questions. Ideal for students and professionals preparing for exams or job interviews."
+    />
+    <style>
+      #RR1_1,
+      #RR1_2,
+      #RR1_3,
+      #RR1_4,
+      #RR1_5 {
+        height: 180px;
+        width: 630px;
+        object-fit: none;
+        border: 1px solid red;
+      }
+      #RR1_1 {
+        object-position: -60px -18px;
+      }
+      #RR1_2 {
+        object-position: -60px -219px;
+      }
+      #RR1_3 {
+        object-position: -55px -400px;
+      }
+      #RR1_4 {
+        object-position: -43px -603px;
+      }
+      #RR1_5 {
+        object-position: -53px -822px;
+      }
+
+      @media (width<=770px) {
+        #RR1_1,
+        #RR1_2,
+        #RR1_3,
+        #RR1_4,
+        #RR1_5 {
+          height: 150px;
+          width: 400px;
+        }
+        #RR1_1 {
+          object-position: -89px -1095px;
+        }
+        #RR1_2 {
+          object-position: -92px -1276px;
+        }
+        #RR1_3 {
+          object-position: -56px -1484px;
+        }
+        #RR1_4 {
+          object-position: -56px -1685px;
+        }
+        #RR1_5 {
+          object-position: -64px -1876px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <div class="container">
+      <h1 id="upper">RR(Round Robin) process scheduling algorithms question</h1>
+
+      <button
+        type="button"
+        class="btn btn-success"
+        style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+      >
+        <a href="#down"
+          ><span class="material-icons" style="color: antiquewhite">
+            arrow_downward
+          </span></a
+        >
+      </button>
+      <br />
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" id="down" type="button">
+          <a href="RR2.html" style="color: antiquewhite"
+            >click for previous question 9 to 11 click here</a
+          >
+        </button>
+      </div>
+      <br />
+      <button
+        type="button"
+        class="btn btn-success"
+        style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+      >
+        <a href="#upper"
+          ><span class="material-icons" style="color: antiquewhite">
+            arrow_upward
+          </span></a
+        >
+      </button>
+    </div>
+    <!-- upper and down button end-->
+
+    <p style="margin: 0px 2vw">
+      Here are 30 questions on RR(Round Robin) process scheduling algorithms .
+      Each question is presented in a table format, followed by the solution
+      with Gantt charts, average turnaround time (TAT), and average waiting time
+      (WT).
+    </p>
+    <main>
+      <div class="container">
+        <div id="question14">
+          <div class="question">
+            <h2 id="fstque">
+              Question 21: Consider the following set of processes, with the
+              length of the CPU-burst time given in milliseconds:
+            </h2>
+
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>0</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>1</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>3</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>P5</td>
+                <td>3</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>P6</td>
+                <td>4</td>
+                <td>1</td>
+              </tr>
+            </table>
+            <p>
+              Draw gantt charts illustrating the execution of these processes
+              using preemptive SJF or SRTF (SHORTEST REMAINING TIME
+              FIRST)scheduling. What is turn around time and waiting time of
+              each process.
+            </p>
+          </div>
+          <div class="solution">
+            <h3>Solution:</h3>
+            <p>Given Time Quantum: 1.0</p>
+
+            <h4>Formulas:</h4>
+            <ul>
+              <li>Turnaround Time (TAT) = Completion Time - Arrival Time</li>
+              <li>Waiting Time (WT) = Turnaround Time - Burst Time</li>
+            </ul>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              id="RR1_1"
+              srcset=""
+            />
+            <img
+              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              id="RR1_2"
+              srcset=""
+            />
+            <img
+              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              id="RR1_3"
+              srcset=""
+            />
+            <img
+              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              id="RR1_4"
+              srcset=""
+            />
+            <img
+              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+              id="RR1_5"
+              srcset=""
+            />
+
+            <h4>Calculation:</h4>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+
+                <th>Completion Time</th>
+                <th>Turnaround Time</th>
+                <th>Waiting Time</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+
+                <td>31</td>
+                <td>31 - 0 = 31</td>
+                <td>31 - 9 = 22</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+
+                <td>20</td>
+                <td>20 - 1 = 19</td>
+                <td>19 - 5 = 14</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+
+                <td>15</td>
+                <td>15 - 2 = 13</td>
+                <td>13 - 3 = 10</td>
+              </tr>
+
+              <tr>
+                <td>P4</td>
+
+                <td>27</td>
+                <td>27 - 3 = 24</td>
+                <td>24 - 6 = 18</td>
+              </tr>
+              <tr>
+                <td>P5</td>
+
+                <td>32</td>
+                <td>32 - 3 = 29</td>
+                <td>29 - 8 = 21</td>
+              </tr>
+              <tr>
+                <td>P6</td>
+
+                <td>9</td>
+                <td>9 - 4 = 5</td>
+                <td>5 - 1 = 4</td>
+              </tr>
+            </table>
+
+            <p>
+              Average Turnaround Time = (31 + 19 + 13 + 24 + 29 + 5 ) / 6 =
+              20.16
+            </p>
+
+            <p>
+              Average Waiting Time = (22 + 14 + 10 + 18 + 21 + 4 ) / 6 = 14.833
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <br />
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary" id="down" type="button">
+        <a href="RR2.html" style="color: antiquewhite"
+          >click for previous question 9 to 11 click here</a
+        >
+      </button>
+    </div>
+    <br />
+
+    <script type="text/javascript" src="/hdr_ftr.js"></script>
+    <script type="text/javascript" src="commonthings.js"></script>
+
+    <script async>
+      window.onload = function () {
+        let ganttcharts = document.getElementsByTagName("img");
+        for (let index = 0; index < ganttcharts.length; index++) {
+          ganttcharts[index].src = "/assets/RR3.png";
+        }
+      };
+    </script>
+  </body>
+</html>
