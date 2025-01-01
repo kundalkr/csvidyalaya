@@ -4,21 +4,44 @@
     <script type="text/javascript" src="/externalcss.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Round Robin Scheduling Algorithm Questions: Practice and Learn</title>
-    <meta name="description" content="Practice Round Robin Scheduling Algorithm questions. Improve your understanding of process scheduling with these examples, answers, and detailed explanations.">
-    <meta name="keywords" content="Round Robin Scheduling, Scheduling Algorithm Questions, Process Scheduling Examples, OS Scheduling Problems, Round Robin Practice">
-    <meta name="author" content="Kundal Kumar">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Round Robin Scheduling Algorithm Questions: Practice and Learn">
-    <meta property="og:description" content="Explore Round Robin Scheduling Algorithm questions with detailed solutions and explanations for effective learning.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://csvidyalaya.com/os/scheduling_algorithms/RR4.html">
+    <title>
+      Round Robin Scheduling Algorithm Questions: Practice and Learn
+    </title>
+    <meta
+      name="description"
+      content="Practice Round Robin Scheduling Algorithm questions. Improve your understanding of process scheduling with these examples, answers, and detailed explanations."
+    />
+    <meta
+      name="keywords"
+      content="Round Robin Scheduling, Scheduling Algorithm Questions, Process Scheduling Examples, OS Scheduling Problems, Round Robin Practice"
+    />
+    <meta name="author" content="Kundal Kumar" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Round Robin Scheduling Algorithm Questions: Practice and Learn"
+    />
+    <meta
+      property="og:description"
+      content="Explore Round Robin Scheduling Algorithm questions with detailed solutions and explanations for effective learning."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://csvidyalaya.com/os/scheduling_algorithms/RR4.html"
+    />
     <!-- <meta property="og:image" content="https://yourwebsite.com/images/round-robin-thumbnail.jpg"> -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Round Robin Scheduling Algorithm Questions: Practice and Learn">
-    <meta name="twitter:description" content="Master Round Robin Scheduling Algorithm through practical questions and examples.">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Round Robin Scheduling Algorithm Questions: Practice and Learn"
+    />
+    <meta
+      name="twitter:description"
+      content="Master Round Robin Scheduling Algorithm through practical questions and examples."
+    />
     <!-- <meta name="twitter:image" content="https://yourwebsite.com/images/round-robin-thumbnail.jpg"> -->
-    
+
     <style>
       #RR1_1,
       #RR1_2,
@@ -28,7 +51,7 @@
         height: 180px;
         width: 630px;
         object-fit: none;
-        border: 1px solid red;
+        /* border: 1px solid red; */
       }
       #RR1_1 {
         object-position: -60px -18px;
@@ -73,69 +96,68 @@
       }
     </style>
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "mainEntityOfPage": {
           "@type": "WebPage",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://csvidyalaya.com/os/scheduling_algorithms/RR4.html"
-          },
-          "headline": "Round Robin Scheduling Algorithm Questions: Practice and Learn",
-          "description": "Practice Round Robin Scheduling Algorithm questions. Improve your understanding of process scheduling with these examples, answers, and detailed explanations.",
-          "image": "",
-          "author": {
-            "@type": "Person",
-            "name": "Kundal Kumar",
-            "url": "https://csvidyalaya.com/anotherpage/about.html"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "csvidyalaya",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://csvidyalaya.com/assets/logo/main_Logo.jpg"
+          "@id": "https://csvidyalaya.com/os/scheduling_algorithms/RR4.html"
+        },
+        "headline": "Round Robin Scheduling Algorithm Questions: Practice and Learn",
+        "description": "Practice Round Robin Scheduling Algorithm questions. Improve your understanding of process scheduling with these examples, answers, and detailed explanations.",
+        "image": "",
+        "author": {
+          "@type": "Person",
+          "name": "Kundal Kumar",
+          "url": "https://csvidyalaya.com/anotherpage/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "csvidyalaya",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://csvidyalaya.com/assets/logo/main_Logo.jpg"
+          }
+        },
+        "datePublished": "2024-12-30",
+        "dateModified": "2024-12-30",
+        "keywords": "Round Robin Scheduling, Scheduling Algorithm Questions, Process Scheduling Examples, OS Scheduling Problems, Round Robin Practice",
+        "hasPart": [
+          {
+            "@type": "Question",
+            "name": "What is Round Robin Scheduling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Round Robin Scheduling is a CPU scheduling algorithm where each process gets executed in a cyclic order for a fixed time slice."
             }
           },
-          "datePublished": "2024-12-30",
-          "dateModified": "2024-12-30",
-          "keywords": "Round Robin Scheduling, Scheduling Algorithm Questions, Process Scheduling Examples, OS Scheduling Problems, Round Robin Practice",
-          "hasPart": [
-            {
-              "@type": "Question",
-              "name": "What is Round Robin Scheduling?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Round Robin Scheduling is a CPU scheduling algorithm where each process gets executed in a cyclic order for a fixed time slice."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How to calculate average waiting time in Round Robin Scheduling?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "To calculate average waiting time in Round Robin Scheduling, sum up the waiting times of all processes and divide it by the total number of processes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Practice Problem 1: Calculate Turnaround Time",
-              "text": "Given 5 processes with arrival times and burst times, calculate the Turnaround Time using Round Robin Scheduling with a time quantum of 4."
-            },
-            {
-              "@type": "Question",
-              "name": "Practice Problem 2: Gantt Chart Construction",
-              "text": "Construct a Gantt chart for processes with varying arrival and burst times using Round Robin Scheduling."
+          {
+            "@type": "Question",
+            "name": "How to calculate average waiting time in Round Robin Scheduling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To calculate average waiting time in Round Robin Scheduling, sum up the waiting times of all processes and divide it by the total number of processes."
             }
-          ],
-          "isAccessibleForFree": true
-        }
-        </script>
-        
+          },
+          {
+            "@type": "Question",
+            "name": "Practice Problem 1: Calculate Turnaround Time",
+            "text": "Given 5 processes with arrival times and burst times, calculate the Turnaround Time using Round Robin Scheduling with a time quantum of 4."
+          },
+          {
+            "@type": "Question",
+            "name": "Practice Problem 2: Gantt Chart Construction",
+            "text": "Construct a Gantt chart for processes with varying arrival and burst times using Round Robin Scheduling."
+          }
+        ],
+        "isAccessibleForFree": true
+      }
+    </script>
   </head>
   <body>
     <!-- upper and down button -->
     <div class="container">
-      <h1 id="upper">RR(Round Robin) process scheduling algorithms question</h1>
+      <h1 id="upper">Round Robin scheduling (RR) algorithm question</h1>
 
       <button
         type="button"
@@ -151,8 +173,8 @@
       <br />
       <div class="d-grid gap-2 col-6 mx-auto">
         <button class="btn btn-primary" id="down" type="button">
-          <a href="RR2.html" style="color: antiquewhite"
-            >click for previous question 9 to 11 click here</a
+          <a href="RR3.html" style="color: antiquewhite"
+            >click for previous question 12 & 13 click here</a
           >
         </button>
       </div>
@@ -170,19 +192,12 @@
       </button>
     </div>
     <!-- upper and down button end-->
-
-    <p style="margin: 0px 2vw">
-      Here are 30 questions on RR(Round Robin) process scheduling algorithms .
-      Each question is presented in a table format, followed by the solution
-      with Gantt charts, average turnaround time (TAT), and average waiting time
-      (WT).
-    </p>
     <main>
       <div class="container">
         <div id="question14">
           <div class="question">
             <h2 id="fstque">
-              Question 21: Consider the following set of processes, with the
+              Question 14: Consider the following set of processes, with the
               length of the CPU-burst time given in milliseconds:
             </h2>
 
@@ -225,9 +240,8 @@
             </table>
             <p>
               Draw gantt charts illustrating the execution of these processes
-              using preemptive SJF or SRTF (SHORTEST REMAINING TIME
-              FIRST)scheduling. What is turn around time and waiting time of
-              each process.
+              using RR or round robin(quantum = 1) scheduling. What is turn
+              around time and waiting time of each process.
             </p>
           </div>
           <div class="solution">
@@ -341,8 +355,8 @@
     <br />
     <div class="d-grid gap-2 col-6 mx-auto">
       <button class="btn btn-primary" id="down" type="button">
-        <a href="RR2.html" style="color: antiquewhite"
-          >click for previous question 9 to 11 click here</a
+        <a href="RR3.html" style="color: antiquewhite"
+          >click for previous question 12 & 13 click here</a
         >
       </button>
     </div>
