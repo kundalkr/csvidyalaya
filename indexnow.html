@@ -12,7 +12,7 @@
     <script>
       //access using json start
       // Fetch the JSON file and log its content
-      fetch("link.json")
+      fetch("links.json")
         .then((response) => {
           if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
@@ -21,7 +21,7 @@
         })
         .then((data) => {
           // Access and print the data
-          length = 69;
+          length = 2;
           index = 0;
           setInterval(() => {
             if (index <= length) {
