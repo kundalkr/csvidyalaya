@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <script type="text/javascript" src="/externalcss.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+
     <title>
       Download Previous Year Operating System Questions with Solutions (PDF) -
       Free
@@ -104,7 +104,9 @@
       }
     </script>
     <style>
-      fieldset {
+      iframe {
+        width: 70%;
+        height: 70%;
         border: 1px solid red;
       }
     </style>
@@ -112,27 +114,83 @@
   <body>
     <div class="container">
       <section>
-        <form method="get" onsubmit="event.preventDefault()">
-            <fieldset>
-              <legend>Character selection</legend>
-              <label>
-                <input type="radio" name="fieldset-example" value="2B">
-                2B
-              </label>
-              <label>
-                <input type="radio" name="fieldset-example" value="9S">
-                9S
-              </label>
-              <label>
-                <input type="radio" name="fieldset-example" value="A2">
-                A2
-              </label>
-            </fieldset>
-          </form>
-        <!-- <fieldset>
-          <legend>Operating System</legend>
-          <p>class test (2023 - 2025 ) ---- click here for download</p>
-        </fieldset> -->
+        <h1>Operating System Question</h1>
+
+        <h2>first class-test session [2023-2025]</h2>
+        <ul>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1HWZE-93DQAMMp2wc3B0BZrJKDOWewD9vb9qF12LXR8c/export?format=pdf"
+              >Download Question</a
+            >
+            |
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Launch static backdrop modal
+            </button>
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/document/d/1Ba-HhPQAJ2LNL1SOcchi-XRd0RnG5GvGbslp_dO4eJ0/export?format=pdf"
+              >download question with solution</a
+            >
+          </li>
+
+          <li><a href="">preview</a></li>
+        </ul>
+
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+          style="width: 88vw;"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  Modal title
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <iframe
+                  src="https://docs.google.com/document/d/e/2PACX-1vSeZ9It_pK2E3biVYIL__BzqbIc8A5ZtKNvNrSkQ4FoH_WcRTEehctBwPOWg3kcryK5edukZs18865A/pub?embedded=true"
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Understood
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
 

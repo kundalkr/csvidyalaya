@@ -150,110 +150,126 @@
           >
           <br /><br />
           <body>
-            <h2>
-              What Is Preemptive Priority Scheduling in Operating Systems?
-            </h2>
-            <p>
-              Preemptive Priority Scheduling is a CPU scheduling algorithm where
-              each process is assigned a priority level. The CPU is allocated to
-              the process with the highest priority, and if a new process with a
-              higher priority arrives, the currently running process is
-              preempted and the CPU is allocated to the new process.
-            </p>
+            <section>
+              <h2>
+                What Is Preemptive Priority Scheduling in Operating Systems?
+              </h2>
+              <p>
+                Preemptive Priority Scheduling is a CPU scheduling algorithm
+                where each process is assigned a priority level. The CPU is
+                allocated to the process with the highest priority, and if a new
+                process with a higher priority arrives, the currently running
+                process is preempted and the CPU is allocated to the new
+                process.
+              </p>
+            </section>
 
-            <h2>Method to Solve Preemptive Priority Scheduling Problems</h2>
-            <ul>
-              <li>Assign a priority level to each process.</li>
-              <li>
-                Sort the processes in a priority queue based on their priority
-                levels, with the highest priority first.
-              </li>
-              <li>
-                When the CPU becomes available, allocate it to the process with
-                the highest priority.
-              </li>
-              <li>
-                If a new process arrives with a higher priority than the current
-                running process, preempt the running process and allocate the
-                CPU to the new process.
-              </li>
-              <li>
-                Continue this process until all tasks are completed,
-                re-evaluating the priority queue as new processes arrive or are
-                completed.
-              </li>
-              <li>
-                Calculate metrics like waiting time, turnaround time, and
-                response time for performance analysis.
-              </li>
-            </ul>
+            <section>
+              <h2>Method to Solve Preemptive Priority Scheduling Problems</h2>
+              <ul>
+                <li>Assign a priority level to each process.</li>
+                <li>
+                  Sort the processes in a priority queue based on their priority
+                  levels, with the highest priority first.
+                </li>
+                <li>
+                  When the CPU becomes available, allocate it to the process
+                  with the highest priority.
+                </li>
+                <li>
+                  If a new process arrives with a higher priority than the
+                  current running process, preempt the running process and
+                  allocate the CPU to the new process.
+                </li>
+                <li>
+                  Continue this process until all tasks are completed,
+                  re-evaluating the priority queue as new processes arrive or
+                  are completed.
+                </li>
+                <li>
+                  Calculate metrics like waiting time, turnaround time, and
+                  response time for performance analysis.
+                </li>
+              </ul>
+            </section>
 
-            <h2>
-              Advantages and Disadvantages of Preemptive Priority Scheduling
-            </h2>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Advantages</th>
-                <th>Disadvantages</th>
-              </tr>
-              <tr>
-                <td>Ensures high-priority processes receive CPU time first</td>
-                <td>Can cause starvation of lower-priority processes</td>
-              </tr>
-              <tr>
-                <td>Responsive to critical real-time processes</td>
-                <td>Requires complex priority assignment and management</td>
-              </tr>
-              <tr>
-                <td>Allows higher throughput for important tasks</td>
-                <td>Overhead due to frequent context switching</td>
-              </tr>
-              <tr>
-                <td>Better control over process prioritization</td>
-                <td>Priority inversion can occur without special handling</td>
-              </tr>
-              <tr>
-                <td>Improves resource utilization for important tasks</td>
-                <td>Can increase response time for lower-priority processes</td>
-              </tr>
-              <tr>
-                <td>
-                  Effective in real-time systems requiring strict prioritization
-                </td>
-                <td>
-                  Requires a well-defined priority structure, which can be
-                  challenging
-                </td>
-              </tr>
-            </table>
+            <section>
+              <h2>
+                Advantages and Disadvantages of Preemptive Priority Scheduling
+              </h2>
+              <table border="1" class="table table-bordered">
+                <tr>
+                  <th>Advantages</th>
+                  <th>Disadvantages</th>
+                </tr>
+                <tr>
+                  <td>
+                    Ensures high-priority processes receive CPU time first
+                  </td>
+                  <td>Can cause starvation of lower-priority processes</td>
+                </tr>
+                <tr>
+                  <td>Responsive to critical real-time processes</td>
+                  <td>Requires complex priority assignment and management</td>
+                </tr>
+                <tr>
+                  <td>Allows higher throughput for important tasks</td>
+                  <td>Overhead due to frequent context switching</td>
+                </tr>
+                <tr>
+                  <td>Better control over process prioritization</td>
+                  <td>Priority inversion can occur without special handling</td>
+                </tr>
+                <tr>
+                  <td>Improves resource utilization for important tasks</td>
+                  <td>
+                    Can increase response time for lower-priority processes
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Effective in real-time systems requiring strict
+                    prioritization
+                  </td>
+                  <td>
+                    Requires a well-defined priority structure, which can be
+                    challenging
+                  </td>
+                </tr>
+              </table>
+            </section>
 
-            <h2>
-              Why Preemptive Priority Scheduling is Better Than Other
-              Algorithms?
-            </h2>
-            <p>
-              Preemptive Priority Scheduling is often better than other
-              scheduling algorithms, like First-Come, First-Served (FCFS) or
-              Round Robin, because it can prioritize critical or time-sensitive
-              processes. This feature is beneficial in real-time systems where
-              certain tasks must complete within a specific time frame, making
-              it a flexible and efficient choice for priority-driven
-              environments.
-            </p>
+            <section>
+              <h2>
+                Why Preemptive Priority Scheduling is Better Than Other
+                Algorithms?
+              </h2>
+              <p>
+                Preemptive Priority Scheduling is often better than other
+                scheduling algorithms, like First-Come, First-Served (FCFS) or
+                Round Robin, because it can prioritize critical or
+                time-sensitive processes. This feature is beneficial in
+                real-time systems where certain tasks must complete within a
+                specific time frame, making it a flexible and efficient choice
+                for priority-driven environments.
+              </p>
+            </section>
 
-            <h2>
-              Why Preemptive Priority Scheduling is Not the Best Algorithm for
-              CPU Scheduling
-            </h2>
-            <p>
-              Despite its advantages, Preemptive Priority Scheduling has
-              limitations, such as the risk of starvation for low-priority
-              processes and high context-switching overhead. Additionally,
-              setting and managing priorities can be complex, especially for
-              dynamic workloads. As a result, it may not be the best choice for
-              general-purpose operating systems that require fair and balanced
-              CPU allocation for all processes.
-            </p>
+            <section>
+              <h2>
+                Why Preemptive Priority Scheduling is Not the Best Algorithm for
+                CPU Scheduling
+              </h2>
+              <p>
+                Despite its advantages, Preemptive Priority Scheduling has
+                limitations, such as the risk of starvation for low-priority
+                processes and high context-switching overhead. Additionally,
+                setting and managing priorities can be complex, especially for
+                dynamic workloads. As a result, it may not be the best choice
+                for general-purpose operating systems that require fair and
+                balanced CPU allocation for all processes.
+              </p>
+            </section>
           </body>
         </div>
         <!-- question 11 start -->

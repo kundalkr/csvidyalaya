@@ -265,100 +265,119 @@
             >Jump To Question</a
           >
           <br /><br />
+          <section>
+            <h2>Round Robin Scheduling Algorithm in Operating System</h2>
+            <p>
+              Round Robin (RR) is a preemptive scheduling algorithm that assigns
+              a fixed time slice (or time quantum) to each process in the ready
+              queue. Each process is allowed to run for a time quantum, and if
+              it doesn’t finish within this period, it is sent back to the end
+              of the queue, and the next process in line is executed. This cycle
+              continues until all processes are completed.
+            </p>
+          </section>
 
-          <h2>Round Robin Scheduling Algorithm in Operating System</h2>
-          <p>
-            Round Robin (RR) is a preemptive scheduling algorithm that assigns a
-            fixed time slice (or time quantum) to each process in the ready
-            queue. Each process is allowed to run for a time quantum, and if it
-            doesn’t finish within this period, it is sent back to the end of the
-            queue, and the next process in line is executed. This cycle
-            continues until all processes are completed.
-          </p>
+          <section>
+            <h2>Method to Solve Round Robin Scheduling Algorithm</h2>
+            <ul>
+              <li>
+                Step 1: Determine the time quantum (time slice) for each
+                process.
+              </li>
+              <li>Step 2: Place all processes in the ready queue.</li>
+              <li>
+                Step 3: Assign the first process the CPU for the duration of the
+                time quantum.
+              </li>
+              <li>
+                Step 4: If the process completes within the time quantum, remove
+                it from the queue; otherwise, place it at the end of the queue.
+              </li>
+              <li>
+                Step 5: Move to the next process and repeat the same steps until
+                all processes have completed.
+              </li>
+              <li>
+                Step 6: Calculate the average waiting time and average
+                turnaround time for performance evaluation.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>
+              To better understand the concept of Round Robin (RR) Scheduling
+            </h2>
+            <a
+              href="https://www.youtube.com/live/7S1GCbi5xCk?si=gvSniXDbG7Km6JKW&t=601"
+              >click here for video lecture</a
+            >
+          </section>
 
-          <h2>Method to Solve Round Robin Scheduling Algorithm</h2>
-          <ul>
-            <li>
-              Step 1: Determine the time quantum (time slice) for each process.
-            </li>
-            <li>Step 2: Place all processes in the ready queue.</li>
-            <li>
-              Step 3: Assign the first process the CPU for the duration of the
-              time quantum.
-            </li>
-            <li>
-              Step 4: If the process completes within the time quantum, remove
-              it from the queue; otherwise, place it at the end of the queue.
-            </li>
-            <li>
-              Step 5: Move to the next process and repeat the same steps until
-              all processes have completed.
-            </li>
-            <li>
-              Step 6: Calculate the average waiting time and average turnaround
-              time for performance evaluation.
-            </li>
-          </ul>
+          <section>
+            <h2>Advantages and Disadvantages of Round Robin Scheduling</h2>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+              </tr>
+              <tr>
+                <td>Simple and easy to implement.</td>
+                <td>
+                  Higher turnaround time due to frequent context switching.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Prevents process starvation as each process gets CPU time.
+                </td>
+                <td>Performance is heavily dependent on time quantum.</td>
+              </tr>
+              <tr>
+                <td>Good for time-sharing systems.</td>
+                <td>Not ideal for processes with varying burst times.</td>
+              </tr>
+              <tr>
+                <td>
+                  Ensures fairness by giving each process equal time quantum.
+                </td>
+                <td>
+                  May lead to CPU inefficiency if time quantum is too small.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Responsive to interactive applications due to frequent
+                  preemption.
+                </td>
+                <td>
+                  Higher context switching overhead compared to non-preemptive
+                  algorithms.
+                </td>
+              </tr>
+              <tr>
+                <td>Better for systems requiring real-time responsiveness.</td>
+                <td>
+                  Processes with long burst times may need multiple cycles to
+                  complete.
+                </td>
+              </tr>
+            </table>
+          </section>
 
-          <h2>Advantages and Disadvantages of Round Robin Scheduling</h2>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Advantages</th>
-              <th>Disadvantages</th>
-            </tr>
-            <tr>
-              <td>Simple and easy to implement.</td>
-              <td>Higher turnaround time due to frequent context switching.</td>
-            </tr>
-            <tr>
-              <td>
-                Prevents process starvation as each process gets CPU time.
-              </td>
-              <td>Performance is heavily dependent on time quantum.</td>
-            </tr>
-            <tr>
-              <td>Good for time-sharing systems.</td>
-              <td>Not ideal for processes with varying burst times.</td>
-            </tr>
-            <tr>
-              <td>
-                Ensures fairness by giving each process equal time quantum.
-              </td>
-              <td>
-                May lead to CPU inefficiency if time quantum is too small.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Responsive to interactive applications due to frequent
-                preemption.
-              </td>
-              <td>
-                Higher context switching overhead compared to non-preemptive
-                algorithms.
-              </td>
-            </tr>
-            <tr>
-              <td>Better for systems requiring real-time responsiveness.</td>
-              <td>
-                Processes with long burst times may need multiple cycles to
-                complete.
-              </td>
-            </tr>
-          </table>
-
-          <h2>Why Round Robin is Better Than Other Scheduling Algorithms</h2>
-          <p>
-            Round Robin scheduling is often better than other scheduling
-            algorithms like First Come First Serve (FCFS) and Shortest Job Next
-            (SJN) in scenarios that require fairness and responsiveness. By
-            allocating equal time slices, it ensures that no process is starved
-            of CPU time, making it suitable for time-sharing systems. It also
-            allows for quick response times for interactive processes, making it
-            ideal for real-time applications. Its preemptive nature means that
-            long processes do not monopolize the CPU, improving the overall
-            efficiency of multi-tasking environments.
-          </p>
+          <section>
+            <h2>Why Round Robin is Better Than Other Scheduling Algorithms</h2>
+            <p>
+              Round Robin scheduling is often better than other scheduling
+              algorithms like First Come First Serve (FCFS) and Shortest Job
+              Next (SJN) in scenarios that require fairness and responsiveness.
+              By allocating equal time slices, it ensures that no process is
+              starved of CPU time, making it suitable for time-sharing systems.
+              It also allows for quick response times for interactive processes,
+              making it ideal for real-time applications. Its preemptive nature
+              means that long processes do not monopolize the CPU, improving the
+              overall efficiency of multi-tasking environments.
+            </p>
+          </section>
         </div>
         <!-- question 1 start -->
         <div id="question1">
@@ -552,42 +571,42 @@
             <table border="1" class="table table-bordered">
               <tr>
                 <th>Process</th>
-         
+
                 <th>Completion Time</th>
                 <th>Turnaround Time</th>
                 <th>Waiting Time</th>
               </tr>
               <tr>
                 <td>P1</td>
-            
+
                 <td>17</td>
                 <td>17</td>
                 <td>11</td>
               </tr>
               <tr>
                 <td>P2</td>
-             
+
                 <td>14</td>
                 <td>13</td>
                 <td>9</td>
               </tr>
               <tr>
                 <td>P3</td>
-           
+
                 <td>15</td>
                 <td>13</td>
                 <td>10</td>
               </tr>
               <tr>
                 <td>P4</td>
-             
+
                 <td>20</td>
                 <td>17</td>
                 <td>12</td>
               </tr>
               <tr>
                 <td>P5</td>
-           
+
                 <td>12</td>
                 <td>8</td>
                 <td>16</td>
@@ -667,41 +686,40 @@
               id="RR3_2"
               srcset=""
             />
- 
 
             <h4>Calculation</h4>
             <table border="1" class="table table-bordered">
               <tr>
                 <th>Process</th>
-         
+
                 <th>Completion Time</th>
                 <th>Turnaround Time</th>
                 <th>Waiting Time</th>
               </tr>
               <tr>
                 <td>P1</td>
-           
+
                 <td>14</td>
                 <td>14</td>
                 <td>9</td>
               </tr>
               <tr>
                 <td>P2</td>
-            
+
                 <td>11</td>
                 <td>10</td>
                 <td>17</td>
               </tr>
               <tr>
                 <td>P3</td>
-             
+
                 <td>13</td>
                 <td>11</td>
                 <td>7</td>
               </tr>
               <tr>
                 <td>P4</td>
-         
+
                 <td>10</td>
                 <td>7</td>
                 <td>5</td>
@@ -795,7 +813,6 @@
               id="RR4_4"
               srcset=""
             />
-    
 
             <h4>Calculations:</h4>
             <table border="1" class="table table-bordered">
@@ -917,7 +934,6 @@
               id="RR5"
               srcset=""
             />
-   
 
             <table border="1" class="table table-bordered">
               <tr>
@@ -1034,7 +1050,6 @@
               id="RR6"
               srcset=""
             />
-    
 
             <table border="1" class="table table-bordered">
               <tr>
@@ -1278,35 +1293,35 @@
               </tr>
               <tr>
                 <td>P1</td>
-               
+
                 <td>15</td>
                 <td>15 - 0 = 15</td>
                 <td>15 - 6 = 9</td>
               </tr>
               <tr>
                 <td>P2</td>
-             
+
                 <td>6</td>
                 <td>6 - 1 = 5</td>
                 <td>5 - 3 = 2</td>
               </tr>
               <tr>
                 <td>P3</td>
-            
+
                 <td>25</td>
                 <td>25 - 2 = 23</td>
                 <td>23 - 7 = 16</td>
               </tr>
               <tr>
                 <td>P4</td>
-            
+
                 <td>23</td>
                 <td>23 - 3 = 20</td>
                 <td>20 - 5 = 15</td>
               </tr>
               <tr>
                 <td>P5</td>
-               
+
                 <td>24</td>
                 <td>14 - 4 = 20</td>
                 <td>20 - 4 = 16</td>

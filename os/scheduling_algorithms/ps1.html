@@ -205,7 +205,7 @@
   <body>
     <!-- upper and down button -->
     <div class="container">
-      <h1 id="upper">PS(Priority Scheduling) non-premptive question</h1>
+      <h1 id="upper">Priority Scheduling (PS) non-premptive question</h1>
     </div>
     <button
       type="button"
@@ -252,111 +252,120 @@
             >Jump To Question</a
           >
           <br /><br />
+          <section>
+            <h2 id="defi">
+              What Is Priority Scheduling Algorithm in Operating System?
+            </h2>
 
-          <h2 id="defi">
-            What Is Priority Scheduling Algorithm in Operating System?
-          </h2>
+            <p>
+              The Priority Scheduling algorithm in
+              <a href="/os/operating_System_Topics.html">operating systems</a>
+              allocates CPU to the processes based on priority. Each process is
+              assigned a priority, and the CPU is assigned to the process with
+              the highest priority. Lower-priority processes wait until
+              higher-priority ones finish, ensuring that essential processes get
+              CPU time as needed.
+            </p>
+          </section>
 
-          <p>
-            The Priority Scheduling algorithm in
-            <a href="/os/operating_System_Topics.html">operating systems</a>
-            allocates CPU to the processes based on priority. Each process is
-            assigned a priority, and the CPU is assigned to the process with the
-            highest priority. Lower-priority processes wait until
-            higher-priority ones finish, ensuring that essential processes get
-            CPU time as needed.
-          </p>
-
-          <h2>Method for Priority Scheduling Algorithm</h2>
-          <ul>
-            <li>Step 1: Assign a priority number to each process.</li>
-            <li>
-              Step 2: Compare the priority of each process in the ready queue.
-            </li>
-            <li>
-              Step 3: Select the process with the highest priority and allocate
-              the CPU to it.
-            </li>
-            <li>
-              Step 4: If two processes have the same priority, use an alternate
-              scheduling algorithm (e.g.,
-              <a
-                title="fcfs explained with practice question"
-                href="/os/scheduling_algorithms/fcfs.html"
-                >FCFS</a
-              >
-              ) to decide the order.
-            </li>
-            <li>
-              Step 5: Once the process is completed, move to the next
-              highest-priority process.
-            </li>
-            <li>Repeat until all processes in the queue have executed.</li>
-          </ul>
-
-          <h2>Advantages and Disadvantages of Priority Scheduling Algorithm</h2>
-
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Advantages</th>
-              <th>Disadvantages</th>
-            </tr>
-            <tr>
-              <td>Ensures important processes execute first.</td>
-              <td>
-                Can lead to
+          <section>
+            <h2>Method for Priority Scheduling Algorithm</h2>
+            <ul>
+              <li>Step 1: Assign a priority number to each process.</li>
+              <li>
+                Step 2: Compare the priority of each process in the ready queue.
+              </li>
+              <li>
+                Step 3: Select the process with the highest priority and
+                allocate the CPU to it.
+              </li>
+              <li>
+                Step 4: If two processes have the same priority, use an
+                alternate scheduling algorithm (e.g.,
                 <a
-                  href="https://en.wikipedia.org/wiki/Starvation_(computer_science)"
-                  title="starvation in computer science "
-                  >starvation</a
+                  title="fcfs explained with practice question"
+                  href="/os/scheduling_algorithms/fcfs.html"
+                  >FCFS</a
                 >
-                for lower-priority processes.
-              </td>
-            </tr>
-            <tr>
-              <td>Can be customized to specific needs.</td>
-              <td>Complexity increases with more processes.</td>
-            </tr>
-            <tr>
-              <td>Efficient for real-time systems.</td>
-              <td>May require additional calculations for priority.</td>
-            </tr>
-            <tr>
-              <td>Flexible for process priority adjustments.</td>
-              <td>Risk of priority inversion issues.</td>
-            </tr>
-            <tr>
-              <td>Less overhead for high-priority tasks.</td>
-              <td>CPU utilization can be low for non-essential tasks.</td>
-            </tr>
-            <tr>
-              <td>Reduces wait time for critical processes.</td>
-              <td>Can lead to unpredictable CPU allocation.</td>
-            </tr>
-          </table>
+                ) to decide the order.
+              </li>
+              <li>
+                Step 5: Once the process is completed, move to the next
+                highest-priority process.
+              </li>
+              <li>Repeat until all processes in the queue have executed.</li>
+            </ul>
+          </section>
 
-          <h2>
-            Why Priority Scheduling is Better Than Other Scheduling Algorithms?
-          </h2>
+          <section>
+            <h2>
+              Advantages and Disadvantages of Priority Scheduling Algorithm
+            </h2>
 
-          <p>
-            Priority scheduling is often favored in systems that require high
-            responsiveness for critical tasks, such as
-            <a href="https://en.wikipedia.org/wiki/Real-time_computing"
-              >real-time systems</a
-            >, because it ensures essential processes are given priority access
-            to the CPU. Compared to algorithms like
-            <a href="/os/scheduling_algorithms/fcfs2.html">FCFS</a>
-            or
-            <a
-              href="/os/scheduling_algorithms/RR1.html"
-              title="Round robin explained with practice question"
-              >Round Robin</a
-            >, priority scheduling minimizes the wait time for critical
-            applications and can be optimized further with priority adjustments,
-            making it adaptable and highly effective for time-sensitive
-            applications.
-          </p>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+              </tr>
+              <tr>
+                <td>Ensures important processes execute first.</td>
+                <td>
+                  Can lead to
+                  <a
+                    href="https://en.wikipedia.org/wiki/Starvation_(computer_science)"
+                    title="starvation in computer science "
+                    >starvation</a
+                  >
+                  for lower-priority processes.
+                </td>
+              </tr>
+              <tr>
+                <td>Can be customized to specific needs.</td>
+                <td>Complexity increases with more processes.</td>
+              </tr>
+              <tr>
+                <td>Efficient for real-time systems.</td>
+                <td>May require additional calculations for priority.</td>
+              </tr>
+              <tr>
+                <td>Flexible for process priority adjustments.</td>
+                <td>Risk of priority inversion issues.</td>
+              </tr>
+              <tr>
+                <td>Less overhead for high-priority tasks.</td>
+                <td>CPU utilization can be low for non-essential tasks.</td>
+              </tr>
+              <tr>
+                <td>Reduces wait time for critical processes.</td>
+                <td>Can lead to unpredictable CPU allocation.</td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <h2>
+              Why Priority Scheduling is Better Than Other Scheduling
+              Algorithms?
+            </h2>
+
+            <p>
+              Priority scheduling is often favored in systems that require high
+              responsiveness for critical tasks, such as
+              <a href="https://en.wikipedia.org/wiki/Real-time_computing"
+                >real-time systems</a
+              >, because it ensures essential processes are given priority
+              access to the CPU. Compared to algorithms like
+              <a href="/os/scheduling_algorithms/fcfs2.html">FCFS</a>
+              or
+              <a
+                href="/os/scheduling_algorithms/RR1.html"
+                title="Round robin explained with practice question"
+                >Round Robin</a
+              >, priority scheduling minimizes the wait time for critical
+              applications and can be optimized further with priority
+              adjustments, making it adaptable and highly effective for
+              time-sensitive applications.
+            </p>
+          </section>
         </div>
         <!-- question 1 start -->
         <div class="question">
@@ -1201,35 +1210,35 @@
           <table border="1" class="table table-bordered">
             <tr>
               <th>Process</th>
-          
+
               <th>Completion Time</th>
               <th>Turnaround Time (TAT)</th>
               <th>Waiting Time (WT)</th>
             </tr>
             <tr>
               <td>P1</td>
-         
+
               <td>4</td>
               <td>4 - 1 = 3</td>
               <td>3 - 3 = 0</td>
             </tr>
             <tr>
               <td>P2</td>
-            
+
               <td>14</td>
               <td>14 - 2 = 12</td>
               <td>12 - 6 = 6</td>
             </tr>
             <tr>
               <td>P3</td>
-      
+
               <td>8</td>
               <td>8 - 3 = 5</td>
               <td>5 - 4 = 1</td>
             </tr>
             <tr>
               <td>P4</td>
-          
+
               <td>19</td>
               <td>19 - 5 = 14</td>
               <td>14 - 5 = 9</td>
@@ -1248,9 +1257,9 @@
           <h2>Question 9: Preemptive Priority Scheduling</h2>
           <p>
             find the average Turn Around Time and Waiting Time of following
-            processes using Preemptive PS(Priority Scheduling) process
-            scheduling algorithm? Consider the following processes with their
-            Arrival Time, Burst Time, and Priority:
+            processes using Preemptive Priority Scheduling (PS) algorithm?
+            Consider the following processes with their Arrival Time, Burst
+            Time, and Priority:
           </p>
 
           <table border="1" class="table table-bordered">
@@ -1321,54 +1330,42 @@
           <table border="1" class="table table-bordered">
             <tr>
               <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-              <th>Priority</th>
+         
               <th>Completion Time</th>
               <th>Turnaround Time (TAT)</th>
               <th>Waiting Time (WT)</th>
             </tr>
             <tr>
               <td>P1</td>
-              <td>0</td>
-              <td>8</td>
-              <td>1</td>
+             
               <td>8</td>
               <td>8 - 0 = 8</td>
               <td>8 - 8 = 0</td>
             </tr>
             <tr>
               <td>P2</td>
-              <td>1</td>
-              <td>4</td>
-              <td>3</td>
+             
               <td>21</td>
               <td>21 - 1 = 20</td>
               <td>20 - 4 = 16</td>
             </tr>
             <tr>
               <td>P3</td>
-              <td>2</td>
-              <td>9</td>
-              <td>2</td>
+           
               <td>17</td>
               <td>17 - 2 = 15</td>
               <td>15 - 9 = 6</td>
             </tr>
             <tr>
               <td>P4</td>
-              <td>3</td>
-              <td>5</td>
-              <td>4</td>
+             
               <td>26</td>
               <td>26 - 3 = 23</td>
               <td>23 - 5 = 18</td>
             </tr>
             <tr>
               <td>P5</td>
-              <td>4</td>
-              <td>6</td>
-              <td>5</td>
+             
               <td>32</td>
               <td>32 - 4 = 28</td>
               <td>28 - 6 = 22</td>
@@ -1459,54 +1456,42 @@
           <table border="1" class="table table-bordered">
             <tr>
               <th>Process</th>
-              <th>Arrival Time</th>
-              <th>Burst Time</th>
-              <th>Priority</th>
+         
               <th>Completion Time</th>
               <th>Turnaround Time (TAT)</th>
               <th>Waiting Time (WT)</th>
             </tr>
             <tr>
               <td>P1</td>
-              <td>1</td>
-              <td>5</td>
-              <td>2</td>
+             
               <td>6</td>
               <td>6 - 1 = 5</td>
               <td>5 - 5 = 0</td>
             </tr>
             <tr>
               <td>P2</td>
-              <td>2</td>
-              <td>3</td>
-              <td>1</td>
+             
               <td>9</td>
               <td>9 - 2 = 7</td>
               <td>7 - 3 = 4</td>
             </tr>
             <tr>
               <td>P3</td>
-              <td>3</td>
-              <td>6</td>
-              <td>4</td>
+             
               <td>19</td>
               <td>19 - 3 = 16</td>
               <td>16 - 6 = 10</td>
             </tr>
             <tr>
               <td>P4</td>
-              <td>4</td>
-              <td>4</td>
-              <td>3</td>
+             
               <td>13</td>
               <td>13 - 4 = 9</td>
               <td>19 - 4 = 5</td>
             </tr>
             <tr>
               <td>P5</td>
-              <td>5</td>
-              <td>2</td>
-              <td>5</td>
+           
               <td>21</td>
               <td>21 - 5 = 16</td>
               <td>16 - 2 = 14</td>

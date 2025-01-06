@@ -7,3 +7,11 @@ const head=document.querySelector("head");const metaveri=document.createElement(
 `;document.head.appendChild(jsscript);const cssstyle=document.createElement("style");cssstyle.innerHTML=`
 @media (width<=700px){div#foot:has(ul){display:flex;justify-content:center}div#foot>ul li{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;width:250px;text-align:center;margin:5px 0}}.headi{color:#0b18cf;font-weight:700}.py-5{padding-top:0}@media (width<=800px){#navbarSupportedContent{display:none}#sdbrs_open_button{display:block}#sidebar{padding-top:15px;position:fixed;top:0;background-color:#ffd1dc;z-index:111111111;border:1px solid red;width:100vw;height:90vh;li{list-style-type:none;margin-bottom:10px;a{text-decoration:none;color:#000}}button{border:none;background-color:#ffd1dc}}}.navbar-bran{font-family:"Pacifico",cursive;font-weight:400;font-style:normal}@media (width>=500px){.navbar-bran{font-family:"Pacifico",cursive;font-weight:400;font-style:normal}}li>a{font-family:"Playpen Sans",cursive;font-optical-sizing:auto;font-weight:450;font-style:normal;a,a:hover,a:focus,a:active{text-decoration:none;color:inherit;color:#000}}`;head.appendChild(cssstyle);function opene(){document.getElementById("sidebar").style.display="block"}
 function closee(){document.getElementById("sidebar").style.display="none"}
+
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
