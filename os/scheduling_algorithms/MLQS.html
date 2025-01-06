@@ -981,11 +981,11 @@
       //     MLQS3_2,
       //     MLQS3_3,
       //   ];
-      //   let img = document.querySelector("img#def1");
+      //   let imgi = document.querySelector("img#def1");
       //   if (window.innerWidth >= 770) {
-      //     img.setAttribute("src", "/assets/MLQS DEFINITION nig.png");
+      //     imgi.setAttribute("src", "/assets/MLQS DEFINITION nig.png");
       //   } else {
-      //     img.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
+      //     imgi.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
       //   }
       //   for (let index = 0; index < cars.length; index++) {
       //     cars[index].src = "/assets/MLQS.png";
@@ -1009,6 +1009,13 @@
           img.removeAttribute("data-src-mobile");
           img.removeAttribute("data-src-desktop");
         });
+
+        let imgi = document.querySelector("img#def1");
+         if (window.innerWidth >= 770) {
+           imgi.setAttribute("src", "/assets/MLQS DEFINITION nig.png");
+         } else {
+           imgi.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
+         }
       };
     </script>
   </body>

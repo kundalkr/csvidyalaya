@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "id": 12,
-      "link": "https://csvidyalaya.com/os/scheduling_algorithms/sjf2.html"
-    },
-    {
       "id": 13,
       "link": "https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html"
     }
