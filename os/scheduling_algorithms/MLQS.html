@@ -971,29 +971,7 @@
     <script type="text/javascript" src="/hdr_ftr.js"></script>
     <script type="text/javascript" src="commonthings.js"></script>
     <script>
-      // window.onload = function () {
-      //   const cars = [
-      //     MLQS1_1,
-      //     MLQS1_2,
-      //     MLQS2_1,
-      //     MLQS2_2,
-      //     MLQS3_1,
-      //     MLQS3_2,
-      //     MLQS3_3,
-      //   ];
-      //   let imgi = document.querySelector("img#def1");
-      //   if (window.innerWidth >= 770) {
-      //     imgi.setAttribute("src", "/assets/MLQS DEFINITION nig.png");
-      //   } else {
-      //     imgi.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
-      //   }
-      //   for (let index = 0; index < cars.length; index++) {
-      //     cars[index].src = "/assets/MLQS.png";
-      //   }
-      // };
-      // Wait until the entire page is loaded
       window.onload = function () {
-        // Select all img tags with a data-src-mobile and data-src-desktop attribute
         const images = document.querySelectorAll(
           "img[data-src-mobile][data-src-desktop]"
         );
@@ -1001,21 +979,20 @@
         const isMobile = window.innerWidth < 700;
 
         images.forEach((img) => {
-          // Choose the appropriate image based on screen width
           img.src = isMobile
             ? img.getAttribute("data-src-mobile")
             : img.getAttribute("data-src-desktop");
-          // Remove the data attributes for cleanliness
+
           img.removeAttribute("data-src-mobile");
           img.removeAttribute("data-src-desktop");
         });
 
         let imgi = document.querySelector("img#def1");
-         if (window.innerWidth >= 770) {
-           imgi.setAttribute("src", "/assets/MLQS DEFINITION nig.png");
-         } else {
-           imgi.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
-         }
+        if (window.innerWidth >= 770) {
+          imgi.setAttribute("src", "/assets/MLQS DEFINITION nig.png");
+        } else {
+          imgi.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
+        }
       };
     </script>
   </body>
