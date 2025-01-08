@@ -124,7 +124,8 @@
           text-align: center;
         }
         div {
-          text-align: center;font-size: small;
+          text-align: center;
+          font-size: small;
         }
       }
       #all-cards {
@@ -143,16 +144,6 @@
         object-fit: none;
         border: 1px solid black;
       }
-      #os {
-        object-position: -189px -36px;
-      }
-      #dsainc {
-        object-position: -200px -348px;
-      }
-      #digifunda {
-        object-position: -209px -640px;
-      }
-
       @media (width<=750px) {
         .card {
           width: 180px;
@@ -184,15 +175,6 @@
           height: 160px;
           border: 1px solid;
         }
-        #dsainc {
-          object-position: -17px -363px;
-        }
-        #os {
-          object-position: -19px -37px;
-        }
-        #digifunda {
-          object-position: -24px -653px;
-        }
       }
     </style>
   </head>
@@ -211,7 +193,8 @@
             id="os"
             alt="operating system questions | process scheduling"
             title="operating system questions | process scheduling"
-            srcset=""
+            data-src-mobile="/assets/logo/OS_LOGO_SMALL.png"
+            data-src-desktop="/assets/logo/OS_LOGO_BIG.png"
           />
           <div class="card-body">
             <h5 class="card-title">Operating System Question</h5>
@@ -229,17 +212,13 @@
           </div>
         </div>
         <div class="card">
-          <!-- <img
-            src="assets/images/dsainc_192x192.png"
-            class="card-img-top"
-            alt="operating system question"
-          /> -->
-          <!-- <div id="dsainc"></div> -->
           <img
             id="dsainc"
             alt="data structure question | linked list, stack, tree"
             title="data structure question | linked list, stack, tree"
             srcset=""
+            data-src-mobile="/assets/logo/DSA_IN_C_LOGO_SMALL.png"
+            data-src-desktop="/assets/logo/DSA_IN_C_LOGO_BIG.png"
           />
           <div class="card-body">
             <h5 class="card-title">DSA In C</h5>
@@ -256,16 +235,12 @@
           </div>
         </div>
         <div class="card">
-          <!-- <img
-            src="assets/images/digi_funda_192x192.png"
-            class="card-img-top"
-            alt="operating system question"
-          /> -->
-          <!-- <div id="digifunda"></div> -->
           <img
             id="digifunda"
-            alt="digital fundamentals question | number system, boolean algebra"
-            title="digital fundamentals question | number system, boolean algebra"
+            alt="digital fundamentals question | number system | boolean algebra"
+            title="digital fundamentals question | number system | boolean algebra"
+            data-src-mobile="/assets/logo/DIGITAL_FUNDAMENTAL_LOGO_SMALL.png"
+            data-src-desktop="/assets/logo/DIGITAL_FUNDAMENTAL_LOGO_BIG.png"
           />
           <div class="card-body">
             <h5 class="card-title">Digital Fundamentals</h5>
@@ -289,13 +264,37 @@
     <!-- bootstrap link -->
     <script type="text/javascript" src="/hdr_ftr.js"></script>
 
-    <script async>
+    <script>
       window.onload = function () {
-        let ganttcharts = document.getElementsByTagName("img");
-        for (let index = 0; index < ganttcharts.length; index++) {
-          ganttcharts[index].src = "assets/os_logo.png";
+        const images = document.querySelectorAll(
+          "img[data-src-mobile][data-src-desktop]"
+        );
+
+        const isMobile = window.innerWidth < 700;
+
+        images.forEach((img) => {
+          img.src = isMobile
+            ? img.getAttribute("data-src-mobile")
+            : img.getAttribute("data-src-desktop");
+
+          img.removeAttribute("data-src-mobile");
+          img.removeAttribute("data-src-desktop");
+        });
+
+        let imgi = document.querySelector("img#def1");
+        if (window.innerWidth >= 770) {
+          imgi.setAttribute("src", "/assets/MLFQS DEFINITION BIG.png");
+        } else {
+          imgi.setAttribute("src", "/assets/MLFQS DEFINITION SMALL.png");
         }
       };
+
+      // window.onload = function () {
+      //   let ganttcharts = document.getElementsByTagName("img");
+      //   for (let index = 0; index < ganttcharts.length; index++) {
+      //     ganttcharts[index].src = "assets/os_logo.png";
+      //   }
+      // };
     </script>
     <!-- bootstrap links -->
   </body>

@@ -14,30 +14,18 @@
     <style>
       #sjf21_1,
       #sjf21_2 {
-        height: 180px;
+        height: 200px;
         width: 630px;
         /* border: 1px solid red; */
-        object-fit: none;
-      }
-      #sjf21_1 {
-        object-position: -79px -1087px;
-      }
-      #sjf21_2 {
-        object-position: -185px -1333px;
+        object-fit: contain;
       }
 
       @media (width<=770px) {
         #sjf21_1,
         #sjf21_2 {
-          height: 150px;
+          height: 187px;
           width: 400px;
-          /* background-image: url(/assets/SJF2.png); */
-        }
-        #sjf21_1 {
-          object-position: -69px -1552px;
-        }
-        #sjf21_2 {
-          object-position: -57px -1737px;
+     
         }
       }
     </style>
@@ -110,7 +98,7 @@
     <!-- upper and down button -->
     <div class="container">
       <h1 id="upper">
-        SJF(SHORTEST JOB FIRST) premptive and non-premptive question
+        Shortest Job First (SJF) premptive and non-premptive question
       </h1>
 
       <button
@@ -221,16 +209,20 @@
             <h4>Gantt Chart</h4>
 
             <img
-              alt="SJF SCHEDULING | Question 21 Solution | Gantt Chart"
-              title="SJF SCHEDULING | Question 21 Solution | Gantt Chart"
+              alt="SJF Scheduling | Question 21 Gantt Chart"
+              title="SJF Scheduling | Question 21 Gantt Chart"
               id="sjf21_1"
               srcset=""
+              data-src-mobile="/assets/SJF/sjf3_mob_q21_1.png"
+              data-src-desktop="/assets/SJF/sjf3_comp_q21_1.png"
             />
             <img
-              alt="SJF SCHEDULING | Question 21 Solution | Gantt Chart"
-              title="SJF SCHEDULING | Question 21 Solution | Gantt Chart"
+              alt="SJF Scheduling | Question 21 Gantt Chart"
+              title="SJF Scheduling | Question 21 Gantt Chart"
               id="sjf21_2"
               srcset=""
+              data-src-mobile="/assets/SJF/sjf3_mob_q21_2.png"
+              data-src-desktop="/assets/SJF/sjf3_comp_q21_2.png"
             />
             <!-- <p>| P1 (0-6) | P3 (6-9) | P5 (9-11) | P2 (11-15) | P4 (15-20) |</p> -->
             <table border="1" class="table table-bordered">
@@ -302,17 +294,36 @@
           </div>
         </div>
         <!-- question 11 end -->
+        <br />
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary" id="down" type="button">
+            <a href="sjf2.html" style="color: antiquewhite"
+              >for question 11 to 20 click here</a
+            >
+          </button>
+        </div>
+        <br />
       </div>
     </main>
 
     <script type="text/javascript" src="/hdr_ftr.js"></script>
     <script type="text/javascript" src="commonthings.js"></script>
-    <script async>
+    <script>
       window.onload = function () {
-        let ganttcharts = document.getElementsByTagName("img");
-        for (let index = 0; index < ganttcharts.length; index++) {
-          ganttcharts[index].src = "/assets/SJF3.png";
-        }
+        const images = document.querySelectorAll(
+          "img[data-src-mobile][data-src-desktop]"
+        );
+
+        const isMobile = window.innerWidth < 700;
+
+        images.forEach((img) => {
+          img.src = isMobile
+            ? img.getAttribute("data-src-mobile")
+            : img.getAttribute("data-src-desktop");
+
+          img.removeAttribute("data-src-mobile");
+          img.removeAttribute("data-src-desktop");
+        });
       };
     </script>
   </body>
