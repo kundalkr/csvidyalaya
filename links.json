@@ -2,13 +2,8 @@
   "users": [
     {
       "id": 13,
-      "link": "https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"
-    },
-    {
-      "id": 13,
-      "link": "https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html"
+      "link": "https://csvidyalaya.com/previous_year_question(PYQ)/OS_question.html"
     }
-  
   ],
   "settings": {
     "theme": "dark",
