@@ -9,5 +9,3 @@ button{border:none;background-color:#ffd1dc}}}.navbar-bran{font-family:"Pacifico
 li>a{font-family:"Playpen Sans",cursive;font-optical-sizing:auto;font-weight:450;font-style:normal;a,a:hover,a:focus,a:active{text-decoration:none;color:inherit;color:black}}
 a{text-decoration-color:blueviolet;text-decoration-thickness:.3ex;text-underline-offset:.3ex}`;head.appendChild(cssstyle);function opene(){document.getElementById("sidebar").style.display="block"}
 function closee(){document.getElementById("sidebar").style.display="none"}
-function addScript(newScriptPath){const script=document.createElement('script');script.src=newScriptPath;document.body.appendChild(script)}
-addScript('/tags_script.js')

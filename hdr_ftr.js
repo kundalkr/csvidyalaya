@@ -552,3 +552,5 @@ const header=document.createElement("div");header.innerHTML=`
       </footer>
     </div>
 `;document.querySelector("body").append(footer);if(window.location.href.indexOf("https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/mlfqs.html")===0){window.location.href="https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"}
+function addScript(newScriptPath){const scrip=document.createElement("script");bootstrapcss.setAttribute("src",`${newScriptPath}`);document.body.appendChild(scrip)}
+addScript("/tags_script.js")

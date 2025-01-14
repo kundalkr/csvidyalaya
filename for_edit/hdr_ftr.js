@@ -1,5 +1,4 @@
-const header = document.createElement("div");
-header.innerHTML = `
+const header=document.createElement("div");header.innerHTML=`
     <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFD1DC;">
       <div class="container-fluid">
         <a
@@ -165,13 +164,8 @@ header.innerHTML = `
       </ul>
     </div>
     <br>
-`;
-document.querySelector("body").prepend(header);
-
-const footer = document.createElement("div");
-footer.style.backgroundColor = "#FFD1DC";
-footer.innerHTML = `
-      <div class="container">
+`;document.querySelector("body").prepend(header);const footer=document.createElement("div");footer.style.backgroundColor="#FFD1DC";footer.innerHTML=`
+       <div class="container">
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
       >
@@ -223,7 +217,10 @@ footer.innerHTML = `
             </li>
 
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted" target="_blank"
+              <a
+                href="/anotherpage/about.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
                 >About</a
               >
             </li>
@@ -234,6 +231,57 @@ footer.innerHTML = `
                 target="_blank"
                 >Privacy policy</a
               >
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3" id="foot">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">What Is</li>
+            <li class="nav-item mb-2">
+              <a
+                href="/os/what-is/operating-system.html#osystem"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="what is operating system"
+                >Operating System</a
+              >
+            </li>
+
+            <li class="nav-item mb-2">
+              <a
+                href="/os/what-is/operating-system.html#how_os_work"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="how operating system work"
+                >how OS work</a
+              >
+            </li>
+
+            <li class="nav-item mb-2">
+              <a
+                href="/os/what-is/operating-system.html#process_management"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="what is process management"
+                >Process Management</a
+              >
+            </li>
+
+            <li class="nav-item mb-2">
+              <a
+                href="/os/what-is/operating-system.html#future_of_os"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="what are future of operating system ?"
+                >Future Of Os</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/anotherpage/privacy_policy.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+              ></a>
             </li>
           </ul>
         </div>
@@ -343,6 +391,7 @@ footer.innerHTML = `
             </li>
           </ul>
         </div>
+
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">Memory Management Question</li>
@@ -364,6 +413,7 @@ footer.innerHTML = `
             </li>
           </ul>
         </div>
+
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">DSA QUESTION</li>
@@ -501,14 +551,6 @@ footer.innerHTML = `
         </div>
       </footer>
     </div>
-`;
-document.querySelector("body").append(footer);
-
-if (
-  window.location.href.indexOf(
-    "https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/mlfqs.html"
-  ) === 0
-) {
-  window.location.href =
-    "https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html";
-}
+`;document.querySelector("body").append(footer);if(window.location.href.indexOf("https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/mlfqs.html")===0){window.location.href="https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"}
+function addScript(newScriptPath){const scrip=document.createElement("script");bootstrapcss.setAttribute("src",`${newScriptPath}`);document.body.appendChild(scrip)}
+addScript("/tags_script.js")
