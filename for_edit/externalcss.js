@@ -260,6 +260,11 @@ cssstyle.innerHTML = `
           color: inherit;
           color: black;
         }
+      }
+        a{
+        text-decoration-color: blueviolet;
+    text-decoration-thickness: .3ex;
+    text-underline-offset: .3ex;
       }`;
 head.appendChild(cssstyle);
 function opene() {
