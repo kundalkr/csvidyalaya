@@ -1,48 +1,4 @@
 const head = document.querySelector("head");
-// meta verification
-const metaveri = document.createElement("meta");
-metaveri.setAttribute("name", "yandex-verification");
-metaveri.setAttribute("content", "6cad077691947e7f");
-head.appendChild(metaveri);
-// meta verification end
-
-// google icon
-const googleicon = document.createElement("link");
-googleicon.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/icon?family=Material+Icons"
-);
-googleicon.setAttribute("rel", "stylesheet");
-head.appendChild(googleicon);
-
-/* <link
-href="https://fonts.googleapis.com/icon?family=Material+Icons"
-rel="stylesheet"
-/> */
-
-const googl = document.createElement("link");
-googl.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close"
-);
-googl.setAttribute("rel", "stylesheet");
-head.appendChild(googl);
-
-const googleapi3 = document.createElement("link");
-googleapi3.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
-);
-googleapi3.setAttribute("rel", "stylesheet");
-head.appendChild(googleapi3);
-
-/* <link
-href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
-rel="stylesheet"
-/> */
-
-// google icon end
-
 // bootstrap css
 const bootstrapcss = document.createElement("link");
 bootstrapcss.setAttribute(
@@ -58,58 +14,6 @@ bootstrapcss.setAttribute(
 bootstrapcss.setAttribute("crossorigin", "anonymous");
 head.appendChild(bootstrapcss);
 // bootstrap css end
-// bootstrap icon
-const bootstrapicon = document.createElement("link");
-bootstrapicon.setAttribute("rel", "stylesheet");
-bootstrapicon.setAttribute(
-  "href",
-  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-);
-head.appendChild(bootstrapicon);
-/*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
- */
-// bootstrap icon end
-
-// bootstrap font
-/* <link rel="preconnect" href="https://fonts.googleapis.com" /> */
-const gfont1 = document.createElement("link");
-gfont1.setAttribute("rel", "preconnect");
-gfont1.setAttribute("href", "https://fonts.googleapis.com");
-head.appendChild(gfont1);
-
-const gfont2 = document.createElement("link");
-gfont2.setAttribute("rel", "preconnect");
-gfont2.setAttribute("href", "https://fonts.gstatic.com");
-gfont2.setAttribute("crossorigin", "anonymous");
-head.appendChild(gfont2);
-/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */
-
-const gapi1 = document.createElement("link");
-gapi1.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-);
-gapi1.setAttribute("rel", "stylesheet");
-head.appendChild(gapi1);
-/* <link
-  href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-  rel="stylesheet"
-/> */
-
-const gapi2 = document.createElement("link");
-gapi2.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
-);
-gapi2.setAttribute("rel", "stylesheet");
-head.appendChild(gapi2);
-/*
-<link
-  href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
-  rel="stylesheet"
-/> */
-// bootstrap font end
-
 // favicon start
 const apple_fav1 = document.createElement("link");
 apple_fav1.rel = "apple-touch-icon";
@@ -145,35 +49,69 @@ fav512.setAttribute("sizes", "512x512");
 fav512.href = "/assets/favicon_io/android-chrome-512x512.png";
 head.appendChild(fav512);
 // favicon end
-// bootstrap js script start
-const bootstrapScript = document.createElement("script");
-bootstrapScript.src =
-  "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js";
-bootstrapScript.setAttribute(
-  "integrity",
-  "sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+// bootstrap icon
+const bootstrapicon = document.createElement("link");
+bootstrapicon.setAttribute("rel", "stylesheet");
+bootstrapicon.setAttribute(
+  "href",
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
 );
-bootstrapScript.setAttribute("crossorigin", "anonymous");
-head.appendChild(bootstrapScript);
-// bootstrap js script end
+head.appendChild(bootstrapicon);
+// bootstrap icon end
+// bootstrap font
+const gfont1 = document.createElement("link");
+gfont1.setAttribute("rel", "preconnect");
+gfont1.setAttribute("href", "https://fonts.googleapis.com");
+head.appendChild(gfont1);
 
-// analytics
-const scriptrs = document.createElement("script");
-scriptrs.async = true;
-scriptrs.src = "https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS";
-document.head.appendChild(scriptrs);
+const gfont2 = document.createElement("link");
+gfont2.setAttribute("rel", "preconnect");
+gfont2.setAttribute("href", "https://fonts.gstatic.com");
+gfont2.setAttribute("crossorigin", "anonymous");
+head.appendChild(gfont2);
 
-const jsscript = document.createElement("script");
-jsscript.type = "text/javascript";
-jsscript.text = `
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+const gapi1 = document.createElement("link");
+gapi1.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+);
+gapi1.setAttribute("rel", "stylesheet");
+head.appendChild(gapi1);
+const gapi2 = document.createElement("link");
+gapi2.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
+);
+gapi2.setAttribute("rel", "stylesheet");
+head.appendChild(gapi2);
+/*
+ */
+// bootstrap font end
+// google icon
+const googleicon = document.createElement("link");
+googleicon.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/icon?family=Material+Icons"
+);
+googleicon.setAttribute("rel", "stylesheet");
+head.appendChild(googleicon);
+const googl = document.createElement("link");
+googl.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close"
+);
+googl.setAttribute("rel", "stylesheet");
+head.appendChild(googl);
 
-  gtag('config', 'G-C4M8ZRW6HS');
-`;
-document.head.appendChild(jsscript);
-// analytics end
+const googleapi3 = document.createElement("link");
+googleapi3.setAttribute(
+  "href",
+  "https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+);
+googleapi3.setAttribute("rel", "stylesheet");
+head.appendChild(googleapi3);
+
+// google icon end
 const cssstyle = document.createElement("style");
 cssstyle.innerHTML = `
 @media (width<=700px) {
@@ -274,3 +212,13 @@ function opene() {
 function closee() {
   document.getElementById("sidebar").style.display = "none";
 }
+function addScript(newScriptPath) {
+
+  const script = document.createElement('script');
+
+  script.src = newScriptPath;
+
+  document.body.appendChild(script); 
+
+}
+addScript('/tags_script.js'); 
