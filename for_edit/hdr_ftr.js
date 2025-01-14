@@ -1,4 +1,5 @@
-const header=document.createElement("div");header.innerHTML=`
+const header = document.createElement("div");
+header.innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFD1DC;">
       <div class="container-fluid">
         <a
@@ -164,7 +165,11 @@ const header=document.createElement("div");header.innerHTML=`
       </ul>
     </div>
     <br>
-`;document.querySelector("body").prepend(header);const footer=document.createElement("div");footer.style.backgroundColor="#FFD1DC";footer.innerHTML=`
+`;
+document.querySelector("body").prepend(header);
+const footer = document.createElement("div");
+footer.style.backgroundColor = "#FFD1DC";
+footer.innerHTML = `
        <div class="container">
       <footer
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
@@ -551,6 +556,22 @@ const header=document.createElement("div");header.innerHTML=`
         </div>
       </footer>
     </div>
-`;document.querySelector("body").append(footer);if(window.location.href.indexOf("https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/mlfqs.html")===0){window.location.href="https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"}
-function addScript(newScriptPath){const scrip=document.createElement("script");bootstrapcss.setAttribute("src",`${newScriptPath}`);document.body.appendChild(scrip)}
-addScript("/tags_script.js")
+`;
+document.querySelector("body").append(footer);
+if (
+  window.location.href.indexOf(
+    "https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/mlfqs.html"
+  ) === 0
+) {
+  window.location.href =
+    "https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html";
+}
+
+const script = document.createElement("script");
+script.src = "/tags_script.js";
+script.type = "text/javascript";
+script.async = true;
+document.body.appendChild(script);
+script.onload = () => {
+  console.log("Script loaded and ready to run!");
+};
