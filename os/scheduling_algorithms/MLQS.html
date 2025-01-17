@@ -605,7 +605,206 @@
         <div id="question2">
           <div class="question">
             <h2>
-              Question 2 : find the average Turn Around Time and Waiting Time of
+              Question 2: Consider following process, with the cpu burst time
+              given in milliseconds
+            </h2>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Burst Time</th>
+                <th>Queue name</th>
+                <th>Priority</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>4</td>
+                <td>0.0</td>
+                <td>2</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>2</td>
+                <td>2.0</td>
+                <td>1</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>5</td>
+                <td>3.0</td>
+                <td>3</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>1</td>
+                <td>4.0</td>
+                <td>2</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>P5</td>
+                <td>3</td>
+                <td>5.0</td>
+                <td>1</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td>P6</td>
+                <td>6</td>
+                <td>6.0</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>P7</td>
+                <td>4</td>
+                <td>8</td>
+                <td>1</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td>P8</td>
+                <td>2</td>
+                <td>10.0</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>P9</td>
+                <td>7</td>
+                <td>12.0</td>
+                <td>1</td>
+                <td>----</td>
+              </tr>
+              <tr>
+                <td>P10</td>
+                <td>3</td>
+                <td>12.0</td>
+                <td>2</td>
+                <td>1</td>
+              </tr>
+            </table>
+            <h2>
+              The system has three queues, first queue is having the highest
+              priority with <a href="fcfs.html">FCFS scheduling</a>, seconf
+              queue is having the middle priority with
+              <a href="ps1.html">priority scheduling</a> (1 is highest and 100
+              is lowest priority) and, third queue is having the lowest priority
+              with <a href="RR1.html">Round Robin scheduling</a>(T.S = 3). Draw
+              gantt charts to show execution using Multi Level Queue Scheduling
+              (MLQ). Also determine the process turnAround time and Waiting
+              time.
+            </h2>
+          </div>
+
+          <div class="solution">
+            <h3>Solution:</h3>
+            <h4>Formula:</h4>
+            <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+            <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+
+            <h4>Gantt Chart</h4>
+            <img
+              alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
+              title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
+              id="MLQS1_1"
+              srcset=""
+              data-src-mobile="/assets/MLQ/mlqs_mob_q1_1.png"
+              data-src-desktop="/assets/MLQ/mlqs_comp_q1_1.png"
+            />
+            <img
+              alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
+              title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
+              id="MLQS1_2"
+              srcset=""
+              data-src-mobile="/assets/MLQ/mlqs_mob_q1_2.png"
+              data-src-desktop="/assets/MLQ/mlqs_mob_q1_2.png"
+            />
+
+            <h4>Calculations:</h4>
+            <table border="1" class="table table-bordered">
+              <tr>
+                <th>Process</th>
+                <th>Completion Time</th>
+                <th>Turnaround Time (TAT)</th>
+                <th>Waiting Time (WT)</th>
+              </tr>
+              <tr>
+                <td>P1</td>
+                <td>31</td>
+                <td>31-0 = 31</td>
+                <td>31 - 4 = 27</td>
+              </tr>
+              <tr>
+                <td>P2</td>
+                <td>4</td>
+                <td>4 - 2 = 2</td>
+                <td>2 - 2 = 0 </td>
+              </tr>
+              <tr>
+                <td>P3</td>
+                <td>37 </td>
+                <td>37 - 3 = 34</td>
+                <td>34 - 5 = 29</td>
+              </tr>
+              <tr>
+                <td>P4</td>
+                <td>32 </td>
+                <td>32 - 4 = 28 </td>
+                <td>28 - 1 = 27</td>
+              </tr>
+              <tr>
+                <td>P5</td>
+                <td>8</td>
+                <td>8 - 5 = 3</td>
+                <td>3 - 3 = 0</td>
+              </tr>
+              <tr>
+                <td>P6</td>
+                <td>30</td>
+                <td>30 - 6 = 24 </td>
+                <td>24 - 6 =  18 </td>
+              </tr>
+              <tr>
+                <td>P7</td>
+                <td>12</td>
+                <td>12 - 8 =  4</td>
+                <td>4 - 4 = 0</td>
+              </tr>
+              <tr>
+                <td>P8</td>
+                <td>21 </td>
+                <td>21 - 10 = 11</td>
+                <td>11 - 2 = 9</td>
+              </tr>
+              <tr>
+                <td>P9</td>
+                <td>19</td>
+                <td>19 - 12 = 7</td>
+                <td>7 - 7 = 0</td>
+              </tr>
+              <tr>
+                <td>P10</td>
+                <td>24 </td>
+                <td>24 - 12 = 12</td>
+                <td>12 - 3 = 9</td>
+              </tr>
+            </table>
+
+            <h4>Average Turnaround Time:</h4>
+            <p>(25 + 6 + 28 + 18 + 6 + 19 + 6 + 13) / 8 = 15.125</p>
+
+            <h4>Average Waiting Time:</h4>
+            <p>(17 + 0 + 24 + 15 + 5 + 15 + 5 + 11) / 8 = 11.5</p>
+          </div>
+        </div>
+        <div id="question3">
+          <div class="question">
+            <h2>
+              Question 3 : find the average Turn Around Time and Waiting Time of
               following processes using MULTILEVEL QUEUE Scheduling (MLQ)
               algorithm? Consider the following processes with their Arrival
               Time, Burst Time. Question criteria : <br />
@@ -695,16 +894,16 @@
             title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
             id="MLQS2_1"
             srcset=""
-            data-src-mobile="/assets/MLQ/mlqs_mob_q2_1.png"
-            data-src-desktop="/assets/MLQ/mlqs_comp_q2_1.png"
+            data-src-mobile="/assets/MLQ/mlqs_mob_q3_1.png"
+            data-src-desktop="/assets/MLQ/mlqs_comp_q3_1.png"
           />
           <img
             alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart"
             title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart"
             id="MLQS2_2"
             srcset=""
-            data-src-mobile="/assets/MLQ/mlqs_mob_q2_2.png"
-            data-src-desktop="/assets/MLQ/mlqs_comp_q2_2.png"
+            data-src-mobile="/assets/MLQ/mlqs_mob_q3_2.png"
+            data-src-desktop="/assets/MLQ/mlqs_comp_q3_2.png"
           />
           <h4>Calculations:</h4>
           <table border="1" class="table table-bordered">
@@ -772,7 +971,7 @@
         <div id="question3">
           <div class="question">
             <h2>
-              Question 3 : find the average Turn Around Time and Waiting Time of
+              Question 4 : find the average Turn Around Time and Waiting Time of
               following processes using MULTILEVEL QUEUE Scheduling (MLQ)
               algorithm? Consider the following processes with their Arrival
               Time, Burst Time. Question criteria : <br />
@@ -874,24 +1073,24 @@
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
               id="MLQS3_1"
               srcset=""
-              data-src-mobile="/assets/MLQ/mlqs_mob_q3_1.png"
-              data-src-desktop="/assets/MLQ/mlqs_comp_q3_1.png"
+              data-src-mobile="/assets/MLQ/mlqs_mob_q4_1.png"
+              data-src-desktop="/assets/MLQ/mlqs_comp_q4_1.png"
             />
             <img
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               id="MLQS3_2"
               srcset=""
-              data-src-mobile="/assets/MLQ/mlqs_mob_q3_2.png"
-              data-src-desktop="/assets/MLQ/mlqs_comp_q3_2.png"
+              data-src-mobile="/assets/MLQ/mlqs_mob_q4_2.png"
+              data-src-desktop="/assets/MLQ/mlqs_comp_q4_2.png"
             />
             <img
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               id="MLQS3_3"
               srcset=""
-              data-src-mobile="/assets/MLQ/mlqs_mob_q3_3.png"
-              data-src-desktop="/assets/MLQ/mlqs_comp_q3_3.png"
+              data-src-mobile="/assets/MLQ/mlqs_mob_q4_3.png"
+              data-src-desktop="/assets/MLQ/mlqs_comp_q4_3.png"
             />
 
             <h4>Calculations:</h4>
