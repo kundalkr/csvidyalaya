@@ -209,7 +209,7 @@ const header=document.createElement("div");header.innerHTML=`
 
             <li class="nav-item mb-2">
               <a
-                href="/sitemap.xml"
+                href="/sitemap.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Sitemap</a

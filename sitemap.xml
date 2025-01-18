@@ -10,6 +10,11 @@
     <lastmod>2025-01-01T10:56:57+00:00</lastmod>
     <priority>1.00</priority>
   </url>
+    <url>
+    <loc>https://csvidyalaya.com/sitemap.html</loc>
+    <lastmod>2025-01-18T10:56:57+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
   <url>
     <loc>https://csvidyalaya.com/previous_year_question(PYQ)/OS_question.html</loc>
     <lastmod>2025-01-09T10:56:57+00:00</lastmod>
@@ -82,17 +87,17 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/RR1.html</loc>
-    <lastmod>2025-01-01T10:56:57+00:00</lastmod>
+    <lastmod>2025-01-17T10:00:57+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/ps1.html</loc>
-    <lastmod>2025-01-01T10:56:57+00:00</lastmod>
+    <lastmod>2025-01-17T10:56:57+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/ps2.html</loc>
-    <lastmod>2025-01-01T10:56:57+00:00</lastmod>
+    <lastmod>2025-01-17T10:56:57+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
@@ -102,7 +107,7 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html</loc>
-    <lastmod>2025-01-09T10:56:57+00:00</lastmod>
+    <lastmod>2025-01-17T10:56:57+00:00</lastmod>
     <priority>0.64</priority>
   </url>
   <url>
@@ -212,7 +217,7 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/memory_management/Buddy_system.html</loc>
-    <lastmod>2025-01-01T10:56:57+00:00</lastmod>
+    <lastmod>2025-01-18T10:56:57+00:00</lastmod>
     <priority>0.51</priority>
   </url>
   <url>

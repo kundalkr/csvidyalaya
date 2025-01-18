@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
+    <!-- 
     <title>Buddy System in Operating Systems - Questions and Answers</title>
     <meta
       name="description"
@@ -15,9 +15,108 @@
     <meta
       name="keywords"
       content="Buddy System, Operating System, Memory Allocation, Buddy System Questions, OS Questions, Computer Science, Memory Management Techniques, Buddy System Examples"
+    /> -->
+    <title>
+      Buddy System Questions: Practice Problems with Answers - Computer Science
+      Guide
+    </title>
+    <meta
+      name="description"
+      content="Explore a comprehensive collection of Buddy System questions with detailed answers. Enhance your understanding of memory management in operating systems."
     />
-    <meta name="author" content="Kundal kumar" />
-
+    <meta
+      name="keywords"
+      content="Buddy System questions, Buddy System practice, memory management questions, Operating System questions, Computer Science problems"
+    />
+    <meta name="author" content="Kundal Kumar" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Buddy System Questions: Practice Problems with Answers - Computer Science Guide"
+    />
+    <meta
+      property="og:description"
+      content="A detailed collection of Buddy System questions with step-by-step answers to help you understand memory management concepts in operating systems."
+    />
+    <meta property="og:type" content="article" />
+    <!-- <meta property="og:url" content="https://yourwebsite.com/buddy-system-questions"> -->
+    <!-- <meta property="og:image" content="https://yourwebsite.com/images/buddy-system-thumbnail.jpg"> -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Buddy System Questions: Practice Problems with Answers - Computer Science Guide"
+    />
+    <meta
+      name="twitter:description"
+      content="Learn and practice Buddy System memory management with these solved problems. Perfect for computer science students and enthusiasts."
+    />
+    <!-- <meta name="twitter:image" content="https://yourwebsite.com/images/buddy-system-thumbnail.jpg"> -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://csvidyalaya.com/os/memory_management/Buddy_system.html"
+        },
+        "name": "Buddy System Questions: Practice Problems with Answers",
+        "description": "A curated collection of Buddy System questions with answers, designed to help you understand memory management in operating systems.",
+        "url": "https://csvidyalaya.com/os/memory_management/Buddy_system.html",
+        "author": {
+          "@type": "Person",
+          "name": "Kundal Kumar",
+          "url": "https://csvidyalaya.com/anotherpage/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Cs Vidyalaya",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://csvidyalaya.com/assets/logo/main_Logo.jpg"
+          }
+        },
+        "datePublished": "2025-01-18",
+        "dateModified": "2025-01-18",
+        "hasPart": [
+          {
+            "@type": "Question",
+            "name": "What is the Buddy System in memory management?",
+            "text": "Explain the Buddy System in operating systems and its significance.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Buddy System is a memory allocation technique used in operating systems to manage memory dynamically. It divides memory into partitions to minimize fragmentation by splitting memory into power-of-two sizes. It is efficient for allocating memory in systems where requests vary in size."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does the Buddy System handle memory allocation and deallocation?",
+            "text": "Describe the steps involved in memory allocation and deallocation in the Buddy System.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In the Buddy System, memory allocation involves finding the smallest available block that fits the requested size. If the block is too large, it is split into smaller 'buddies' until a suitable size is found. Deallocation merges adjacent buddies if both are free, reducing fragmentation and freeing larger blocks for future use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the advantages and disadvantages of the Buddy System?",
+            "text": "List the benefits and limitations of using the Buddy System for memory management.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Advantages: 1: Reduces external fragmentation by merging free blocks. 2: Ensures efficient memory use for power-of-two allocations. Disadvantages: 1: Internal fragmentation can occur if allocated memory doesn't fully utilize the block. 2: Limited flexibility for non-power-of-two requests."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Example Problem: Allocating memory using the Buddy System",
+            "text": "Given a 128KB memory block, show how the Buddy System would allocate memory for requests of 50KB, 25KB, and 10KB.",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "1: For the 50KB request, the system allocates a 64KB block (nearest power of two). 2: For the 25KB request, the system allocates a 32KB block. 3: For the 10KB request, the system allocates a 16KB block. Remaining memory is split into buddies for future requests."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- upper and down button -->
@@ -58,17 +157,24 @@
         </p>
         <br />
         <div class="explained">
-          <h2 title="what is buddy system" id="defi">
-            What is Buddy System in Operating System ?
-          </h2>
-          <p>
-            The Buddy System is a memory allocation and management technique
-            used in operating systems. It divides the memory into partitions to
-            satisfy memory allocation requests while trying to minimize
-            fragmentation. In this method, memory is split into blocks of size
-            equal to powers of 2.
-          </p>
-
+          <section>
+            <h2 title="what is buddy system" id="defi">
+              What is Buddy System in Operating System ?
+            </h2>
+            <p>
+              The Buddy System is a memory allocation and management technique
+              used in operating systems. It divides the memory into partitions
+              to satisfy memory allocation requests while trying to minimize
+              fragmentation. In this method, memory is split into blocks of size
+              equal to powers of 2.
+            </p>
+            <img
+              alt="multilevel queue scheduling definiton | "
+              data-src-mobile="/assets/buddy system/buddy system mob.png"
+              data-src-desktop="/assets/buddy system/buddy system comp.png"
+              srcset=""
+            />
+          </section>
           <h2>Method to Solve Buddy System Questions</h2>
           <ul>
             <li>
@@ -190,8 +296,7 @@
             <h2>
               Question 1 : Suppose the OS on your computer uses the
               <a href="#defi">buddy system</a> for
-              <a
-                href="/os/memory_management/memory_management_topics.html"
+              <a href="/os/memory_management/memory_management_topics.html"
                 >memory management</a
               >. Initially, the system has 1 megabyte (1024K) block of memory
               available, which begins at address zero. Show the results of each
@@ -398,8 +503,7 @@
             <h2>
               Question 2 : Suppose the OS on your computer uses the
               <a href="#defi">buddy system</a> for
-              <a
-                href="/os/memory_management/memory_management_topics.html"
+              <a href="/os/memory_management/memory_management_topics.html"
                 >memory management</a
               >. Initially, the system has 1 megabyte (1024K) block of memory
               available, which begins at address zero. Show the results of each
@@ -649,5 +753,30 @@
     </main>
     <div id="down"></div>
     <script type="text/javascript" src="/hdr_ftr.js"></script>
+    <script>
+      window.onload = function () {
+        const images = document.querySelectorAll(
+          "img[data-src-mobile][data-src-desktop]"
+        );
+
+        const isMobile = window.innerWidth < 700;
+
+        images.forEach((img) => {
+          img.src = isMobile
+            ? img.getAttribute("data-src-mobile")
+            : img.getAttribute("data-src-desktop");
+
+          img.removeAttribute("data-src-mobile");
+          img.removeAttribute("data-src-desktop");
+        });
+
+        // let imgi = document.querySelector("img#def1");
+        // if (window.innerWidth >= 770) {
+        //   imgi.setAttribute("src", "/assets/MLQS DEFINITION nig.png");
+        // } else {
+        //   imgi.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
+        // }
+      };
+    </script>
   </body>
 </html>

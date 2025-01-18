@@ -2,7 +2,15 @@
   "users": [
     {
       "id": 13,
-      "link": "https://csvidyalaya.com/previous_year_question(PYQ)/OS_question.html"
+      "link": "https://csvidyalaya.com/sitemap.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/os/memory_management/Buddy_system.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html"
     }
   ],
   "settings": {
