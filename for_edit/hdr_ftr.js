@@ -86,6 +86,15 @@ header.innerHTML = `
                 href="csvidyalaya.com" target="_blank"
                 >About</a
               >
+            </li> <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="csvidyalaya.com" target="_blank"
+                ><span class="material-symbols-outlined">
+linked_services
+</span></a
+              >
             </li>
           </ul>
           <!-- <form class="d-flex">

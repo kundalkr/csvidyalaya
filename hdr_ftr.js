@@ -86,6 +86,16 @@ const header=document.createElement("div");header.innerHTML=`
                 >About</a
               >
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/sitemap.html" target="_blank"
+                ><span class="material-symbols-outlined">
+linked_services
+</span></a
+              >
+            </li>
           </ul>
           <!-- <form class="d-flex">
             <input
