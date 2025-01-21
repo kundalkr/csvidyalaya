@@ -68,7 +68,7 @@
     />
 
     <style>
-      #MLQS1_1,
+      /* #MLQS1_1,
       #MLQS1_2,
       #MLQS2_1,
       #MLQS2_2,
@@ -78,64 +78,17 @@
         height: 180px;
         width: 700px;
         object-fit: contain;
+      } */
+      img {
+        height: 180px;
+        width: 700px;
+        object-fit: contain;
       }
-      /*  
-      #MLQS1_1 {
-        object-position: -23px -7px;
-      }
-      #MLQS1_2 {
-        object-position: -27px -223px;
-      }
-      #MLQS2_1 {
-        object-position: -27px -830px;
-      }
-      #MLQS2_2 {
-        object-position: -27px -1041px;
-      }
-      #MLQS3_1 {
-        object-position: -22px -1725px;
-      }
-      #MLQS3_2 {
-        object-position: -24px -1930px;
-      }
-      #MLQS3_3 {
-        object-position: -30px -2157px;
-      }
-     */
-
       @media (width<=770px) {
-        #MLQS1_1,
-        #MLQS1_2,
-        #MLQS2_1,
-        #MLQS2_2,
-        #MLQS3_1,
-        #MLQS3_2,
-        #MLQS3_3 {
+        img {
           height: 150px;
           width: 400px;
         }
-
-        /* #MLQS1_1 {
-          object-position: -22px -404px;
-        }
-        #MLQS1_2 {
-          object-position: -10px -566px;
-        }
-        #MLQS2_1 {
-          object-position: -18px -1269px;
-        }
-        #MLQS2_2 {
-          object-position: -15px -1450px;
-        }
-        #MLQS3_1 {
-          object-position: -54px -2415px;
-        }
-        #MLQS3_2 {
-          object-position: -51px -2597px;
-        }
-        #MLQS3_3 {
-          object-position: -48px -2785px;
-        } */
       }
     </style>
     <script type="application/ld+json">
@@ -280,12 +233,27 @@
               typically used in scenarios where different types of processes
               need to be managed independently and efficiently.
             </p>
-            <img
+            <!-- <img
               alt="multilevel queue scheduling definiton | "
               data-src-mobile="/assets/MLQ/MLQS DEFINITIO small.png"
               data-src-desktop="/assets/MLQ/MLQS DEFINITION nig.png"
               srcset=""
-            />
+            /> -->
+
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/MLQ/MLQS DEFINITIO small.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/MLQ/MLQS DEFINITION nig.png"
+              />
+              <img
+              alt="multilevel queue scheduling definiton | expplanation of MLQ"
+                title="MULTILEVEL QUEUE SCHEDULING (MLQ) working step"
+              />
+            </picture>
           </section>
 
           <section>
@@ -519,22 +487,51 @@
             <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
             <h4>Gantt Chart</h4>
-            <img
+            <!-- <img
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
               id="MLQS1_1"
               srcset=""
               data-src-mobile="/assets/MLQ/mlqs_mob_q1_1.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q1_1.png"
-            />
-            <img
+            /> -->
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/MLQ/mlqs_mob_q1_1.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/MLQ/mlqs_comp_q1_1.png"
+              />
+              <img
+                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
+                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
+              />
+            </picture>
+            <!-- <img
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
               id="MLQS1_2"
               srcset=""
               data-src-mobile="/assets/MLQ/mlqs_mob_q1_2.png"
               data-src-desktop="/assets/MLQ/mlqs_mob_q1_2.png"
-            />
+            /> -->
+
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/MLQ/mlqs_mob_q1_2.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/MLQ/mlqs_comp_q1_2.png"
+              />
+              <img
+                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
+                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
+              />
+            </picture>
 
             <h4>Calculations:</h4>
             <table border="1" class="table table-bordered">
@@ -707,22 +704,53 @@
             <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
             <h4>Gantt Chart</h4>
-            <img
+            <!-- <img
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
               id="MLQS1_1"
               srcset=""
               data-src-mobile="/assets/MLQ/mlqs_mob_q2_1.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q2_1.png"
-            />
-            <img
+            /> -->
+
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/MLQ/mlqs_mob_q2_1.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/MLQ/mlqs_comp_q2_1.png"
+              />
+              <img
+                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
+                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
+              />
+            </picture>
+
+            <!-- <img
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
               id="MLQS1_2"
               srcset=""
               data-src-mobile="/assets/MLQ/mlqs_mob_q2_2.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q2_2.png"
-            />
+            /> -->
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/MLQ/mlqs_mob_q2_2.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/MLQ/mlqs_comp_q2_2.png"
+              />
+              <img
+                src="/assets/MLQ/mlqs_comp_q2_2.png"
+                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2"
+                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2"
+              />
+            </picture>
 
             <h4>Calculations:</h4>
             <table border="1" class="table table-bordered">
@@ -742,18 +770,18 @@
                 <td>P2</td>
                 <td>4</td>
                 <td>4 - 2 = 2</td>
-                <td>2 - 2 = 0 </td>
+                <td>2 - 2 = 0</td>
               </tr>
               <tr>
                 <td>P3</td>
-                <td>37 </td>
+                <td>37</td>
                 <td>37 - 3 = 34</td>
                 <td>34 - 5 = 29</td>
               </tr>
               <tr>
                 <td>P4</td>
-                <td>32 </td>
-                <td>32 - 4 = 28 </td>
+                <td>32</td>
+                <td>32 - 4 = 28</td>
                 <td>28 - 1 = 27</td>
               </tr>
               <tr>
@@ -765,18 +793,18 @@
               <tr>
                 <td>P6</td>
                 <td>30</td>
-                <td>30 - 6 = 24 </td>
-                <td>24 - 6 =  18 </td>
+                <td>30 - 6 = 24</td>
+                <td>24 - 6 = 18</td>
               </tr>
               <tr>
                 <td>P7</td>
                 <td>12</td>
-                <td>12 - 8 =  4</td>
+                <td>12 - 8 = 4</td>
                 <td>4 - 4 = 0</td>
               </tr>
               <tr>
                 <td>P8</td>
-                <td>21 </td>
+                <td>21</td>
                 <td>21 - 10 = 11</td>
                 <td>11 - 2 = 9</td>
               </tr>
@@ -788,7 +816,7 @@
               </tr>
               <tr>
                 <td>P10</td>
-                <td>24 </td>
+                <td>24</td>
                 <td>24 - 12 = 12</td>
                 <td>12 - 3 = 9</td>
               </tr>
@@ -889,22 +917,55 @@
 
           <h4>Gantt Chart</h4>
 
-          <img
+          <!-- <img
             alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
             title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
             id="MLQS2_1"
             srcset=""
             data-src-mobile="/assets/MLQ/mlqs_mob_q3_1.png"
             data-src-desktop="/assets/MLQ/mlqs_comp_q3_1.png"
-          />
-          <img
+          /> -->
+
+          <picture>
+            <source
+              media="(max-width:700px)"
+              srcset="/assets/MLQ/mlqs_mob_q3_1.png"
+            />
+            <source
+              media="(min-width:701px)"
+              srcset="/assets/MLQ/mlqs_comp_q3_1.png"
+            />
+            <img
+              src="/assets/MLQ/mlqs_comp_q3_1.png"
+              alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
+              title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
+            />
+          </picture>
+
+          <!-- <img
             alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart"
             title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart"
             id="MLQS2_2"
             srcset=""
             data-src-mobile="/assets/MLQ/mlqs_mob_q3_2.png"
             data-src-desktop="/assets/MLQ/mlqs_comp_q3_2.png"
-          />
+          /> -->
+
+          <picture>
+            <source
+              media="(max-width:700px)"
+              srcset="/assets/MLQ/mlqs_mob_q3_2.png"
+            />
+            <source
+              media="(min-width:701px)"
+              srcset="/assets/MLQ/mlqs_comp_q3_2.png"
+            />
+            <img
+              src="/assets/MLQ/mlqs_comp_q3_2.png"
+              alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
+              title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
+            />
+          </picture>
           <h4>Calculations:</h4>
           <table border="1" class="table table-bordered">
             <tr>
@@ -1068,31 +1129,77 @@
             <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
             <h4>Gantt Chart</h4>
-            <img
+            <!-- <img
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
               id="MLQS3_1"
               srcset=""
               data-src-mobile="/assets/MLQ/mlqs_mob_q4_1.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q4_1.png"
-            />
-            <img
+            /> -->
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/MLQ/mlqs_mob_q4_1.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/MLQ/mlqs_comp_q4_1.png"
+              />
+              <img
+                src="/assets/MLQ/mlqs_comp_q4_1.png"
+                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 1"
+                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 1"
+              />
+            </picture>
+
+            <!-- <img
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               id="MLQS3_2"
               srcset=""
               data-src-mobile="/assets/MLQ/mlqs_mob_q4_2.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q4_2.png"
-            />
-            <img
+            /> -->
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/MLQ/mlqs_mob_q4_2.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/MLQ/mlqs_comp_q4_2.png"
+              />
+              <img
+                src="/assets/MLQ/mlqs_comp_q4_2.png"
+                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 2"
+                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 2"
+              />
+            </picture>
+            
+            <!-- <img
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               id="MLQS3_3"
               srcset=""
               data-src-mobile="/assets/MLQ/mlqs_mob_q4_3.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q4_3.png"
-            />
-
+            /> -->
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/MLQ/mlqs_mob_q4_3.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/MLQ/mlqs_comp_q4_3.png"
+              />
+              <img
+                src="/assets/MLQ/mlqs_comp_q4_3.png"
+                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 3"
+                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 3"
+              />
+            </picture>
             <h4>Calculations:</h4>
             <table border="1" class="table table-bordered">
               <tr>
@@ -1175,7 +1282,7 @@
     <div id="down"></div>
     <script type="text/javascript" src="/hdr_ftr.js"></script>
     <script type="text/javascript" src="commonthings.js"></script>
-    <script>
+    <!-- <script>
       window.onload = function () {
         const images = document.querySelectorAll(
           "img[data-src-mobile][data-src-desktop]"
@@ -1199,6 +1306,6 @@
           imgi.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
         }
       };
-    </script>
+    </script> -->
   </body>
 </html>
