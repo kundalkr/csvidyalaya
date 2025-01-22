@@ -69,7 +69,7 @@
     />
 
     <style>
-      /* #MLFQS1_1,
+      #MLFQS1_1,
       #MLFQS1_2,
       #MLFQS1_3,
       #MLFQS3_1,
@@ -85,15 +85,15 @@
         width: 630px;
         object-fit: contain;
         border: 1px solid red;
-      } */
-      img {
+      }
+      /* img {
         height: 200px;
         width: 630px;
         object-fit: contain;
-      }
+      } */
 
       @media (width<=770px) {
-        /* #MLFQS1_1,
+        #MLFQS1_1,
         #MLFQS1_2,
         #MLFQS1_3,
         #MLFQS3_1,
@@ -107,11 +107,11 @@
         #MLFQS2_5 {
           height: 180px;
           width: 400px;
-        } */
-        img {
+        }
+        /* img {
           height: 180px;
           width: 400px;
-        }
+        } */
       }
     </style>
     <script type="application/ld+json">
@@ -266,17 +266,18 @@
 
             <picture>
               <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/MLFQS DEFINITION SMALL.png"
+              media="(max-width:700px)"
+                srcset="/assets/MLFQ/MLFQS_DEFINITION_SMALL.png"
               />
               <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/MLFQS DEFINITION BIG.png"
+              media="(min-width:701px)"
+                srcset="/assets/MLFQ/MLFQS_DEFINITION_BIG.png"
               />
               <img
               src="/assets/MLFQ/MLFQS DEFINITION BIG.png"
                 alt="Multilevel Feedback Queue Scheduling (MLFQ)"
                 title="Multilevel Feedback Queue Scheduling (MLFQ) explanation with question"
+                id="mlfq_def"
               />
             </picture>
           </section>
@@ -519,7 +520,7 @@
                 media="(min-width:701px)"
                 srcset="/assets/MLFQ/mlfqs_comp_q1_1.png"
               />
-              <img 
+              <img
                 alt="MULTILEVEL FEEDBACK QUEUE Scheduling
   (MLFQ) | Question 1 Solution | Gantt Chart Part 1"
                 title="MULTILEVEL FEEDBACK QUEUE Scheduling
