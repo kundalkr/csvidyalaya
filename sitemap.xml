@@ -21,7 +21,7 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html</loc>
-      <image:image>
+    <image:image>
       <image:loc>https://csvidyalaya.com/assets/MLFQ/MLFQS DEFINITION BIG.png</image:loc>
     </image:image>
     <image:image>
@@ -37,7 +37,7 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html</loc>
-      <image:image>
+    <image:image>
       <image:loc>https://csvidyalaya.com/assets/MLQ/MLQS DEFINITION nig.png</image:loc>
     </image:image>
     <image:image>
@@ -139,7 +139,7 @@
 
   </url>
 
-  
+
   <url>
     <loc>https://csvidyalaya.com/os/Deadlocks/deadlock_topics.html</loc>
     <lastmod>2025-01-22</lastmod>
@@ -167,11 +167,17 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/infixtoprefix.html</loc>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/DSA/infix_and_prefix/inf_to_pref_comp_21.png</image:loc>
+    </image:image>
     <lastmod>2025-01-22</lastmod>
 
   </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/infixtopostfix.html</loc>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/DSA/infix_and_postfix/inf_to_post_comp_49.png</image:loc>
+    </image:image>
     <lastmod>2025-01-22</lastmod>
 
   </url>
