@@ -117,6 +117,19 @@
         ]
       }
     </script>
+    <style>
+      #buddy_def {
+        width: 600px;
+        height: auto;
+        object-fit: contain;
+      }
+      @media (width<=770px) {
+        #buddy_def {
+          height: auto;
+          width: 400px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- upper and down button -->
@@ -168,12 +181,28 @@
               fragmentation. In this method, memory is split into blocks of size
               equal to powers of 2.
             </p>
-            <img
+            <!-- <img
               alt="multilevel queue scheduling definiton | "
-              data-src-mobile="/assets/buddy system/buddy system mob.png"
-              data-src-desktop="/assets/buddy system/buddy system comp.png"
+              data-src-mobile="/assets/buddy system/buddy_system_mob.png"
+              data-src-desktop="/assets/buddy system/buddy_system_comp.png"
               srcset=""
-            />
+            /> -->
+
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/buddy system/buddy_system_mob.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/buddy system/buddy_system_comp.png"
+              />
+              <img
+                alt="tree representation of buddy system | real life image of buddy system"
+                title="buddy system working view"
+                id="buddy_def"
+              />
+            </picture>
           </section>
           <h2>Method to Solve Buddy System Questions</h2>
           <ul>
@@ -753,7 +782,7 @@
     </main>
     <div id="down"></div>
     <script type="text/javascript" src="/hdr_ftr.js"></script>
-    <script>
+    <!-- <script>
       window.onload = function () {
         const images = document.querySelectorAll(
           "img[data-src-mobile][data-src-desktop]"
@@ -777,6 +806,6 @@
         //   imgi.setAttribute("src", "/assets/MLQS DEFINITIO small.png");
         // }
       };
-    </script>
+    </script> -->
   </body>
 </html>

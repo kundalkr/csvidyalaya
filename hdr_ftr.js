@@ -563,4 +563,4 @@ linked_services
     </div>
 `;document.querySelector("body").append(footer);if(window.location.href.indexOf("https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/mlfqs.html")===0){window.location.href="https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"}
 if(window.location.href.indexOf("https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/MLQS.html")===0){window.location.href="https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html"}
-const script=document.createElement("script");script.src="/tags_script.js";script.type="text/javascript";script.async=!0;document.body.appendChild(script);script.onload=()=>{console.log("Script loaded and ready to run!")}
+const script=document.createElement("script");script.src="/tags_script.js";script.type="text/javascript";script.async=!0;document.body.appendChild(script);

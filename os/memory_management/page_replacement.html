@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="/externalcss.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>
+      Page Replacement Questions: Concepts, Algorithms, and Practice Problems
+    </title>
+    <meta
+      name="description"
+      content="Find detailed page replacement questions, practice problems, and solutions. Learn about FIFO, LRU, Optimal Page Replacement, and more. Perfect for CS students and exam preparation."
+    />
+    <meta
+      name="keywords"
+      content="Page Replacement Questions, FIFO Page Replacement, LRU Page Replacement, Optimal Page Replacement, Operating System Practice Problems, CS Questions"
+    />
+    <meta name="author" content="Kundal Kumar" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Page Replacement Questions: Concepts, Algorithms, and Practice Problems"
+    />
+    <meta
+      property="og:description"
+      content="Explore detailed page replacement questions with answers. Includes FIFO, LRU, and Optimal algorithms for CS students."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://csvidyalaya.com/os/memory_management/page_replacement.html"
+    />
+    <meta
+      property="og:image"
+      content="https://yourwebsite.com/images/page-replacement-thumbnail.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Page Replacement Questions: Concepts, Algorithms, and Practice Problems"
+    />
+    <meta
+      name="twitter:description"
+      content="Find page replacement questions, solutions, and algorithms to boost your OS knowledge. Learn FIFO, LRU, Optimal, and more."
+    />
+    <meta
+      name="twitter:image"
+      content="https://yourwebsite.com/images/page-replacement-thumbnail.jpg"
+    />
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id":  "https://csvidyalaya.com/os/memory_management/page_replacement.html"
+          },
+          "headline": "Page Replacement Questions: Concepts, Algorithms, and Practice Problems",
+          "description": "Explore page replacement questions, answers, and solutions. Includes FIFO, LRU, and Optimal algorithms for CS learners and exam preparation.",
+          "author": {
+            "@type": "Person",
+            "name": "Kundal Kumar",
+            "url": "https://csvidyalaya.com/anotherpage/about.html"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Your Website Name",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://csvidyalaya.com/assets/logo/main_Logo.jpg"
+            }
+          },
+          "image": "https://yourwebsite.com/images/page-replacement-thumbnail.jpg",
+          "datePublished": "2024-12-27",
+          "dateModified": "2024-12-27",
+          "hasPart": [
+            {
+              "@type": "Question",
+              "name": "What is the FIFO page replacement algorithm?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The FIFO (First-In, First-Out) page replacement algorithm replaces the oldest page in memory that was loaded first. It is simple to implement but may suffer from Belady's anomaly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the LRU page replacement algorithm work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The LRU (Least Recently Used) algorithm replaces the page that has not been used for the longest time. It efficiently uses the past behavior of page references to predict future needs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the Optimal page replacement algorithm?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Optimal page replacement algorithm replaces the page that will not be used for the longest time in the future. It provides the lowest page fault rate but is impractical in real-world scenarios as it requires future knowledge."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between FIFO and LRU?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "FIFO replaces the oldest loaded page, while LRU replaces the least recently used page. LRU generally performs better in most cases as it considers actual usage patterns."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I practice page replacement algorithms?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can practice page replacement algorithms using example problems and test cases. Start with FIFO, LRU, and Optimal algorithms, and solve questions that involve memory references and page faults."
+              }
+            }
+          ]
+        }
+        </script>
+        
+
+    <style>
+      #pg_repl {
+        width: 600px;
+        height: auto;
+        object-fit: contain;
+      }
+      @media (width<=770px) {
+        #pg_repl {
+          height: auto;
+          width: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <main>
+      <div class="container">
+        <h1 id="upper">Buddy System Questions</h1>
+
+        <button
+          type="button"
+          class="btn btn-success"
+          style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+        >
+          <a href="#down"
+            ><span class="material-icons" style="color: antiquewhite">
+              arrow_downward
+            </span></a
+          >
+        </button>
+        <button
+          type="button"
+          class="btn btn-success"
+          style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+        >
+          <a href="#upper"
+            ><span class="material-icons" style="color: antiquewhite">
+              arrow_upward
+            </span></a
+          >
+        </button>
+      </div>
+      <!-- upper and down button end-->
+
+      <div class="container">
+        <br />
+        <p style="margin: 0px 2vw">
+          Here are 11 questions on Buddy System. Each question is presented in a
+          table format. each question is solved in explained form.
+        </p>
+        <br />
+        <div class="explained">
+          <section>
+            <h2 title="what is buddy system" id="defi">
+              What is Buddy System in Operating System ?
+            </h2>
+            <p>
+              The Buddy System is a memory allocation and management technique
+              used in operating systems. It divides the memory into partitions
+              to satisfy memory allocation requests while trying to minimize
+              fragmentation. In this method, memory is split into blocks of size
+              equal to powers of 2.
+            </p>
+            <!-- <img
+              alt="multilevel queue scheduling definiton | "
+              data-src-mobile="/assets/buddy system/buddy_system_mob.png"
+              data-src-desktop="/assets/buddy system/buddy_system_comp.png"
+              srcset=""
+            /> -->
+
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/buddy system/buddy_system_mob.png"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/buddy system/buddy_system_comp.png"
+              />
+              <img
+                alt="tree representation of buddy system | real life image of buddy system"
+                title="buddy system working view"
+                id="buddy_def"
+              />
+            </picture>
+          </section>
+          <h2>Method to Solve Buddy System Questions</h2>
+          <ul>
+            <li>
+              Identify the size of the memory block required for allocation.
+            </li>
+            <li>
+              Find the smallest power of 2 that can accommodate the required
+              memory size.
+            </li>
+            <li>
+              Split the available memory block iteratively into smaller blocks
+              (buddies) until the required block size is obtained.
+            </li>
+            <li>Allocate the memory block to the requesting process.</li>
+            <li>
+              When the process releases the memory, merge it with its buddy if
+              the buddy is free, forming a larger block.
+            </li>
+            <li>
+              Repeat the process for subsequent allocation or deallocation
+              requests.
+            </li>
+          </ul>
+
+          <h2>Advantages and Disadvantages of Buddy System</h2>
+          <table border="1" class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Minimizes internal fragmentation by using power-of-2 blocks.
+                </td>
+                <td>
+                  Leads to
+                  <a
+                    href="https://en.wikipedia.org/wiki/Fragmentation_(computing)#External_fragmentation"
+                    title="what is external fragmentation"
+                    >external fragmentation</a
+                  >
+                  if block merging is not possible.
+                </td>
+              </tr>
+              <tr>
+                <td>Efficient block splitting and merging process.</td>
+                <td>Requires complex implementation logic.</td>
+              </tr>
+              <tr>
+                <td>Supports dynamic memory allocation and deallocation.</td>
+                <td>
+                  Limits memory allocation to power-of-2 sizes, potentially
+                  wasting memory.
+                </td>
+              </tr>
+              <tr>
+                <td>Can handle multiple allocation requests concurrently.</td>
+                <td>Merging and splitting may lead to performance overhead.</td>
+              </tr>
+              <tr>
+                <td>
+                  Enables coalescing of adjacent free blocks for better memory
+                  utilization.
+                </td>
+                <td>May cause fragmentation for varying allocation sizes.</td>
+              </tr>
+              <tr>
+                <td>Easy to track memory usage using buddy indexing.</td>
+                <td>
+                  Wastes memory when small allocations do not fit well in large
+                  blocks.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Why Buddy System is Better Than Other Algorithms</h2>
+          <p>
+            The Buddy System is often preferred over other memory allocation
+            algorithms (like
+            <a
+              href="/os/memory_management/Fit_question.html#first_fit"
+              target="_blank"
+              title="what is first fit ?"
+              >First Fit</a
+            >,
+            <a
+              href="/os/memory_management/Fit_question.html#best_fit"
+              target="_blank"
+              title="what is best fit ?"
+              >Best Fit</a
+            >,
+            <a
+              href="/os/memory_management/Fit_question.html#next_fit"
+              target="_blank"
+              title="what is next fit ?"
+              >Next Fit</a
+            >
+            and
+            <a
+              href="/os/memory_management/Fit_question.html#worst_fit"
+              target="_blank"
+              title="what is worst fit ?"
+              >Worst Fit</a
+            >) due to its efficient block splitting and merging mechanism, which
+            minimizes internal fragmentation and allows for quick allocation and
+            deallocation. Its use of power-of-2 block sizes simplifies memory
+            management and reduces the complexity of maintaining free memory
+            lists. However, it still requires careful management to handle
+            external fragmentation effectively.
+          </p>
+        </div>
+        <div id="question1">
+          <div class="question">
+            <p>question 1: Consider the following page-reference string :</p>
+            <p><strong> 1 2 3 2 1 4 2 3 1 4 3 2 1 4 1 2 3 4</strong></p>
+            <p>
+              How many page fault occur in the LRU and Optimal page replacement
+              algorithms, assuming three frames ?
+            </p>
+          </div>
+          <div class="solution">
+            <p>solutions :</p>
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/page_replacement/for_comp.jpg"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/page_replacement/for_comp.jpg"
+              />
+              <img
+                src="/assets/page_replacement/for_comp.jpg"
+                alt="optimal page replacement answer 1 | question 1 solution"
+                title="optimal page replacement questions"
+                id="pg_repl"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="down"></div>
+    <script type="text/javascript" src="/hdr_ftr.js"></script>
+  </body>
+</html>

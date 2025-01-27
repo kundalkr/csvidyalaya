@@ -205,6 +205,58 @@
           Step 2: Use a stack to evaluate the expression from left to right.
           <br /><br />
           Result: A B + C D - *.
+
+
+
+          <section>
+            <table border="1" cellpadding="5">
+              <thead>
+                <tr>
+                  <th>Step</th>
+                  <th>Element</th>
+                  <th>Stack Content</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>D</td>
+                  <td>D</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>C</td>
+                  <td>C, D</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>-</td>
+                  <td>C D -</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>B</td>
+                  <td>B, C D -</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>A</td>
+                  <td>A, B, C D -</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>+</td>
+                  <td>A B +, C D -</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>*</td>
+                  <td>A B + C D - *</td>
+                </tr>
+              </tbody>
+            </table>
+            
+          </section>
         </p>
 
         <h3>70. Convert the following postfix expression to prefix: AB+CD-*</h3>
