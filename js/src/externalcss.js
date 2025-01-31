@@ -1,4 +1,7 @@
+import {add_head} from "/js/src/utilities.min.js";
+
 const head = document.querySelector("head");
+
 const bootstrapcss = document.createElement("link");
 bootstrapcss.setAttribute(
   "href",
