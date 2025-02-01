@@ -11,15 +11,10 @@ header_footer.setAttribute("type", "module");
 header_footer.async = !0;
 headu.appendChild(header_footer);
 
-
-
-
-
-
-
-
 window.onload = function () {
+
   const bodu = document.querySelector("body");
+  
   const extra_tags = document.createElement("script");
   extra_tags.src = "/js/src/tags_script.min.js";
   extra_tags.setAttribute("type", "module");

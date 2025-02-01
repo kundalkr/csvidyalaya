@@ -584,4 +584,11 @@ if (
   window.location.href =
     "https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html";
 }
+function opene() {
+  document.getElementById("sidebar").style.display = "block";
+}
+function closee() {
+  document.getElementById("sidebar").style.display = "none";
+}
+
 
