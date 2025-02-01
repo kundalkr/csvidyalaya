@@ -16,7 +16,7 @@ header.innerHTML = `
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" onclick="opene()"></span>
+          <span class="navbar-toggler-icon" onclick="c()"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -113,7 +113,7 @@ linked_services
       </div>
     </nav>
     <div id="sidebar" style="display: none">
-      <button onclick="closee()" style="float: right; padding-right: 22px;">
+      <button onclick="d()" style="float: right; padding-right: 22px;">
         <span class="material-symbols-outlined"> close </span>
       </button>
       <ul>
@@ -576,10 +576,10 @@ if (
   window.location.href =
     "https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html";
 }
-function opene() {
+function c() {
   document.getElementById("sidebar").style.display = "block";
 }
-function closee() {
+function d() {
   document.getElementById("sidebar").style.display = "none";
 }
 
