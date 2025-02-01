@@ -266,7 +266,7 @@ footer.innerHTML = `
                 href="/anotherpage/privacy_policy.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
-              ></a>
+              >privacy policy</a>
             </li>
           </ul>
         </div>
