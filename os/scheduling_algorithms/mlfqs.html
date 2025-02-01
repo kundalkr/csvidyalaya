@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <script type="text/javascript" src="/js/src/alljs.min.js"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
@@ -203,7 +203,6 @@
         class="btn btn-success"
         aria-label="last question"
         title="solution of last question"
-    
         style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
       >
         <a href="#down"
@@ -272,15 +271,15 @@
 
             <picture>
               <source
-              media="(max-width:700px)"
+                media="(max-width:700px)"
                 srcset="/assets/MLFQ/MLFQS_DEFINITION_SMALL.png"
               />
               <source
-              media="(min-width:701px)"
+                media="(min-width:701px)"
                 srcset="/assets/MLFQ/MLFQS_DEFINITION_BIG.png"
               />
               <img
-              src="/assets/MLFQ/MLFQS DEFINITION BIG.png"
+                src="/assets/MLFQ/MLFQS DEFINITION BIG.png"
                 alt="Multilevel Feedback Queue Scheduling (MLFQ)"
                 title="Multilevel Feedback Queue Scheduling (MLFQ) explanation with question"
                 id="mlfq_def"
@@ -1146,38 +1145,13 @@
     </main>
     <br />
     <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" id="down" type="button">
-        <a href="RR1.html" style="color: antiquewhite"
+      <button id="down" type="button">
+        <a href="RR1.html"
           >click for Roundrobin question 1 to 15 click here</a
         >
       </button>
     </div>
-    <script type="text/javascript" src="commonthings.min.js"></script>
-
-    <!-- <script>
-      window.onload = function () {
-        const images = document.querySelectorAll(
-          "img[data-src-mobile][data-src-desktop]"
-        );
-
-        const isMobile = window.innerWidth < 700;
-
-        images.forEach((img) => {
-          img.src = isMobile
-            ? img.getAttribute("data-src-mobile")
-            : img.getAttribute("data-src-desktop");
-
-          img.removeAttribute("data-src-mobile");
-          img.removeAttribute("data-src-desktop");
-        });
-
-        // let imgi = document.querySelector("img#def1");
-        // if (window.innerWidth >= 770) {
-        //   imgi.setAttribute("src", "/assets/MLFQS DEFINITION BIG.png");
-        // } else {
-        //   imgi.setAttribute("src", "/assets/MLFQS DEFINITION SMALL.png");
-        // }
-      };
-    </script> -->
+    <br>
   </body>
+  <script type="module" src="commonthings.js"></script>
 </html>

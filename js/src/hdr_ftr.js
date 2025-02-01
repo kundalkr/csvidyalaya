@@ -1,4 +1,4 @@
-const header = document.createElement("div");
+let header = document.createElement("div");
 header.innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFD1DC;">
       <div class="container-fluid">
@@ -64,21 +64,9 @@ header.innerHTML = `
                     >Digital Fundamentals</a
                   >
                 </li>
-                <!-- <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li> -->
+           
               </ul>
             </li>
-            <!-- <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
-            </li> -->
             <li class="nav-item">
               <a
                 class="nav-link active"
@@ -98,17 +86,7 @@ linked_services
               >
             </li>
           </ul>
-          <!-- <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form> -->
+        
         </div>
       </div>
     </nav>
@@ -177,7 +155,7 @@ linked_services
     <br>
 `;
 document.querySelector("body").prepend(header);
-const footer = document.createElement("div");
+let footer = document.createElement("div");
 footer.style.backgroundColor = "#FFD1DC";
 footer.innerHTML = `
        <div class="container">
@@ -576,11 +554,6 @@ if (
   window.location.href =
     "https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html";
 }
-function c() {
-  document.getElementById("sidebar").style.display = "block";
-}
-function d() {
-  document.getElementById("sidebar").style.display = "none";
-}
+
 
 

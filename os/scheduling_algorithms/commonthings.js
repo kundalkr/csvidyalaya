@@ -1,3 +1,9 @@
+import { add_css } from "/js/src/utilities.min.js";
+
+add_css(
+  "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black; }}"
+);
+
 let int_links = document.createElement("div");
 int_links.style.padding = "0px 12px";
 int_links.innerHTML = `
@@ -35,14 +41,17 @@ int_links.innerHTML = `
       <br>
 `;
 
-var questions = document.getElementsByClassName("question");
-questions[0].append(int_links);
+let questions = document.getElementById("question1");
+questions.appendChild(int_links);
 
 let erty = document.querySelector("div#this.card-header");
 erty.style.color = "white";
-erty.style.backgroundColor ="#0A0AFF";
+erty.style.backgroundColor = "#0A0AFF";
 erty.style.fontWeight = "bold";
 
-var sche_topics = document.querySelector(".list-group .list-group-flush");
-sche_topics.style.backgroundColor="red";
-
+let sche_topics = document.querySelectorAll(
+  "#question1 > div:nth-child(3) > div > ul>li"
+);
+for (let index = 0; index < sche_topics.length; index++) {
+  sche_topics[index].style.backgroundColor = "#1AFF53";
+}
