@@ -7,3 +7,8 @@ export function add_css(elmntr) {
   csr.innerHTML = `${elmntr}`;
   add_head(csr);
 }
+
+export function adding_div_child(params) {
+  let divs = document.createElement("div");
+  divs.innerHTML = `${params}`;
+}
