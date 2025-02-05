@@ -177,7 +177,7 @@
     <image:image>
       <image:loc>https://csvidyalaya.com/assets/DSA/infix_and_postfix/inf_to_post_comp_49.png</image:loc>
     </image:image>
-     <image:image>
+    <image:image>
       <image:loc>https://csvidyalaya.com/assets/DSA/infix_and_postfix/inf_to_post_comp_50.png</image:loc>
     </image:image>
     <lastmod>2025-02-04</lastmod>
@@ -255,7 +255,10 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/memory_management/Buddy_system.html</loc>
-      <image:image>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/buddy system/main.jpg</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://csvidyalaya.com/assets/buddy system/buddy_system_comp.png</image:loc>
     </image:image>
 
