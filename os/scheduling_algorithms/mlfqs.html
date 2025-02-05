@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Multilevel Feedback Queue Scheduling (MLFQ) Algorithm Questions - Practice
-      and Learn
-    </title>
-    <!-- <title>MLFQS Scheduling Algorithms: Solved Questions & Answers</title> -->
-    <!-- <meta
+<head>
+  <script type="text/javascript" src="/js/src/alljs.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Multilevel Feedback Queue Scheduling (MLFQ) Algorithm Questions - Practice
+    and Learn
+  </title>
+  <!-- <title>MLFQS Scheduling Algorithms: Solved Questions & Answers</title> -->
+  <!-- <meta
       name="description"
       content="Explore detailed MLFQS scheduling algorithm questions with step-by-step solutions. Master key concepts with practical examples and answers to complex problems."
     /> -->
-    <!-- Title Tag -->
+  <!-- Title Tag -->
 
-    <!-- Meta Description -->
-    <meta
-      name="description"
-      content="Practice Multilevel Feedback Queue Scheduling (MLFQ) algorithm questions with explanations and solutions. Master OS scheduling algorithms now."
-    />
+  <!-- Meta Description -->
+  <meta name="description"
+    content="Practice Multilevel Feedback Queue Scheduling (MLFQ) algorithm questions with explanations and solutions. Master OS scheduling algorithms now." />
 
-    <!-- Meta Keywords -->
-    <meta
-      name="keywords"
-      content="Multilevel Feedback Queue Scheduling Questions, MLFQ Algorithm Questions, OS Scheduling Questions, MLFQ Algorithm Practice, MLFQ Solutions, multilevel feedback queue scheduling"
-    />
+  <!-- Meta Keywords -->
+  <meta name="keywords"
+    content="Multilevel Feedback Queue Scheduling Questions, MLFQ Algorithm Questions, OS Scheduling Questions, MLFQ Algorithm Practice, MLFQ Solutions, multilevel feedback queue scheduling" />
 
-    <!-- Author -->
-    <meta name="author" content="Kundal Kumar" />
+  <!-- Author -->
+  <meta name="author" content="Kundal Kumar" />
 
-    <!-- Robots Meta Tag -->
-    <meta name="robots" content="index, follow" />
+  <!-- Robots Meta Tag -->
+  <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph Tags -->
-    <meta
-      property="og:title"
-      content="Multilevel Feedback Queue Scheduling (MLFQ) Algorithm Questions - Practice and Learn"
-    />
-    <meta
-      property="og:description"
-      content="Dive into MLFQ algorithm questions with detailed solutions to sharpen your understanding of operating system scheduling concepts."
-    />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:url"
-      content="https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"
-    />
-    <meta
-      property="og:image"
-      content="https://csvidyalaya.com/assets/MLFQS DEFINITION BIG.png"
-    />
+  <!-- Open Graph Tags -->
+  <meta property="og:title"
+    content="Multilevel Feedback Queue Scheduling (MLFQ) Algorithm Questions - Practice and Learn" />
+  <meta property="og:description"
+    content="Dive into MLFQ algorithm questions with detailed solutions to sharpen your understanding of operating system scheduling concepts." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html" />
+  <meta property="og:image" content="https://csvidyalaya.com/assets/MLFQS DEFINITION BIG.png" />
 
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Multilevel Feedback Queue Scheduling (MLFQ) Algorithm Questions - Practice and Learn"
-    />
-    <meta
-      name="twitter:description"
-      content="A complete set of MLFQ algorithm questions and answers to master operating system scheduling."
-    />
-    <meta
-      name="twitter:image"
-      content="https://csvidyalaya.com/assets/MLFQS DEFINITION BIG.png"
-    />
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="Multilevel Feedback Queue Scheduling (MLFQ) Algorithm Questions - Practice and Learn" />
+  <meta name="twitter:description"
+    content="A complete set of MLFQ algorithm questions and answers to master operating system scheduling." />
+  <meta name="twitter:image" content="https://csvidyalaya.com/assets/MLFQS DEFINITION BIG.png" />
 
-    <style>
+  <style>
+    #MLFQS1_1,
+    #MLFQS1_2,
+    #MLFQS1_3,
+    #MLFQS3_1,
+    #MLFQS3_2,
+    #MLFQS3_3,
+    #MLFQS3_4,
+    #MLFQS2_1,
+    #MLFQS2_2,
+    #MLFQS2_3,
+    #MLFQS2_4,
+    #MLFQS2_5 {
+      height: 200px;
+      width: 630px;
+      object-fit: contain;
+      /* border: 1px solid red; */
+    }
+
+    /* img {
+        height: 200px;
+        width: 630px;
+        object-fit: contain;
+      } */
+
+    @media (width<=770px) {
+
       #MLFQS1_1,
       #MLFQS1_2,
       #MLFQS1_3,
@@ -81,40 +87,17 @@
       #MLFQS2_3,
       #MLFQS2_4,
       #MLFQS2_5 {
-        height: 200px;
-        width: 630px;
-        object-fit: contain;
-        /* border: 1px solid red; */
+        height: 180px;
+        width: 400px;
       }
-      /* img {
-        height: 200px;
-        width: 630px;
-        object-fit: contain;
-      } */
 
-      @media (width<=770px) {
-        #MLFQS1_1,
-        #MLFQS1_2,
-        #MLFQS1_3,
-        #MLFQS3_1,
-        #MLFQS3_2,
-        #MLFQS3_3,
-        #MLFQS3_4,
-        #MLFQS2_1,
-        #MLFQS2_2,
-        #MLFQS2_3,
-        #MLFQS2_4,
-        #MLFQS2_5 {
-          height: 180px;
-          width: 400px;
-        }
-        /* img {
+      /* img {
           height: 180px;
           width: 400px;
         } */
-      }
-    </style>
-    <!-- <script type="application/ld+json">
+    }
+  </style>
+  <!-- <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -190,550 +173,462 @@
         ]
       }
     </script> -->
-  </head>
-  <body>
-    <!-- upper and down button -->
+</head>
+
+<body>
+  <!-- upper and down button -->
+  <div class="container">
+    <h1 id="upper">
+      MULTILEVEL FEEDBACK QUEUE Scheduling (MLFQ) algorithm questions
+    </h1>
+
+    <button type="button" class="btn btn-success" aria-label="last question" title="solution of last question"
+      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh">
+      <a href="#down"><span class="material-icons" style="color: antiquewhite">
+          arrow_downward
+        </span></a>
+    </button>
+    <button type="button" class="btn btn-success" style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw">
+      <a href="#upper"><span class="material-icons" style="color: antiquewhite">
+          arrow_upward
+        </span></a>
+    </button>
+  </div>
+  <!-- upper and down button end-->
+  <br />
+  <p style="margin: 0px 2vw">
+    Here are 37 questions on MULTILEVEL FEEDBACK QUEUE Scheduling (MLFQ)
+    algorithms . Each question is presented in a table format, followed by the
+    solution with Gantt charts, average turnaround time (TAT), and average
+    waiting time (WT).
+  </p>
+  <br />
+
+  <main>
     <div class="container">
-      <h1 id="upper">
-        MULTILEVEL FEEDBACK QUEUE Scheduling (MLFQ) algorithm questions
-      </h1>
+      <div>
+        <a href="#fstque" class="btn btn-primary btn-lg active" role="button" aria-label="first question"
+          aria-pressed="true" aria-labelledby="fstque" title="solution of first question">Jump To Question</a>
+        <br /><br />
 
-      <button
-        type="button"
-        class="btn btn-success"
-        aria-label="last question"
-        title="solution of last question"
-        style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
-      >
-        <a href="#down"
-          ><span class="material-icons" style="color: antiquewhite">
-            arrow_downward
-          </span></a
-        >
-      </button>
-      <button
-        type="button"
-        class="btn btn-success"
-        style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
-      >
-        <a href="#upper"
-          ><span class="material-icons" style="color: antiquewhite">
-            arrow_upward
-          </span></a
-        >
-      </button>
-    </div>
-    <!-- upper and down button end-->
-    <br />
-    <p style="margin: 0px 2vw">
-      Here are 37 questions on MULTILEVEL FEEDBACK QUEUE Scheduling (MLFQ)
-      algorithms . Each question is presented in a table format, followed by the
-      solution with Gantt charts, average turnaround time (TAT), and average
-      waiting time (WT).
-    </p>
-    <br />
+        <section>
+          <h2>
+            What Is Multilevel Feedback Queue Scheduling Algorithm In
+            Operating System ?
+          </h2>
 
-    <main>
-      <div class="container">
-        <div>
-          <a
-            href="#fstque"
-            class="btn btn-primary btn-lg active"
-            role="button"
-            aria-label="first question"
-            aria-pressed="true"
-            aria-labelledby="fstque"
-            title="solution of first question"
-            >Jump To Question</a
-          >
-          <br /><br />
-
-          <section>
-            <h2>
-              What Is Multilevel Feedback Queue Scheduling Algorithm In
-              Operating System
-            </h2>
-
-            <p>
-              The Multilevel Feedback Queue Scheduling (MLFQ) algorithm is a
-              complex CPU scheduling method in operating systems that improves
-              upon multilevel queue scheduling by allowing processes to move
-              between queues. This algorithm is designed to handle various types
-              of processes, assigning them dynamically based on their behavior
-              and CPU burst time, which helps optimize CPU utilization and
-              responsiveness.
-            </p>
-            <!-- <img
+          <p>
+            Operating systems' multilevel Feedback Queue Scheduling (MLFQ) algorithm is a sophisticated CPU scheduling
+            technique that enhances multilevel queue scheduling by permitting process switching between queues. This
+            approach helps to maximize CPU utilization and responsiveness by handling a variety of process kinds and
+            dynamically allocating them according to their behavior and CPU burst time.
+          </p>
+          <!-- <img
               alt="Multilevel Feedback Queue Scheduling (MLFQ)"
               data-src-desktop="https://csvidyalaya.com/assets/MLFQ/MLFQS DEFINITION BIG.png"
               data-src-mobile="https://csvidyalaya.com/assets/MLFQ/MLFQS DEFINITION SMALL.png"
             /> -->
 
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/MLFQS_DEFINITION_SMALL.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/MLFQS_DEFINITION_BIG.png"
-              />
-              <img
-                src="/assets/MLFQ/MLFQS DEFINITION BIG.png"
-                alt="Multilevel Feedback Queue Scheduling (MLFQ)"
-                title="Multilevel Feedback Queue Scheduling (MLFQ) explanation with question"
-                id="mlfq_def"
-              />
-            </picture>
-          </section>
-          <section>
-            <h2>
-              what are the Method to Solve the Multilevel Feedback Queue
-              Scheduling (MLFQ) in operating system ?
-            </h2>
-            <ul>
-              <li>
-                Step 1: Initialize multiple queues with different priority
-                levels, where higher-priority queues have shorter time quantums.
-              </li>
-              <li>
-                Step 2:Place each new process in the highest-priority queue.
-              </li>
-              <li>
-                Step 3: Apply
-                <a href="/os/scheduling_algorithms/RR1.html"
-                  >Round Robin scheduling</a
-                >
-                in each queue.
-              </li>
-              <li>
-                Step 4: If a process uses its entire time quantum without
-                completing, it is moved to a lower-priority queue.
-              </li>
-              <li>
-                Step 5: If a process in a lower-priority queue does not finish
-                within its time quantum, it moves down again.
-              </li>
-              <li>
-                Step 6: When a process in any queue becomes I/O bound, it can
-                move back up to a higher-priority queue upon resuming.
-              </li>
-              <li>
-                Step 7: Continue this reallocation until each process completes
-                or is terminated.
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h2>
-              what are Advantages and Disadvantages of Multilevel Feedback Queue
-              Scheduling ?
-            </h2>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Advantages</th>
-                <th>Disadvantages</th>
-              </tr>
-              <tr>
-                <td>
-                  Efficient handling of processes with varying CPU burst times.
-                </td>
-                <td>Complex to implement and manage multiple queues.</td>
-              </tr>
-              <tr>
-                <td>
-                  Improved CPU utilization due to dynamic priority adjustment.
-                </td>
-                <td>Starvation can occur for lower-priority processes.</td>
-              </tr>
-              <tr>
-                <td>
-                  Reduces turnaround time for I/O-bound and interactive
-                  processes.
-                </td>
-                <td>
-                  Increased overhead for context switching between queues.
-                </td>
-              </tr>
-              <tr>
-                <td>Allows fair sharing of CPU time based on process needs.</td>
-                <td>
-                  Difficulty in choosing appropriate time quantum for each
-                  queue.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Minimizes response time for short tasks or interactive
-                  processes.
-                </td>
-                <td>
-                  Performance can degrade if too many high-priority processes
-                  exist.
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Adaptable to system load and changes in process behavior.
-                </td>
-                <td>
-                  Requires fine-tuning of parameters to avoid inefficiency.
-                </td>
-              </tr>
-            </table>
-          </section>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/MLFQS_DEFINITION_SMALL.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/MLFQS_DEFINITION_BIG.png" />
+            <img src="/assets/MLFQ/MLFQS DEFINITION BIG.png" alt="Multilevel Feedback Queue Scheduling (MLFQ)"
+              title="Multilevel Feedback Queue Scheduling (MLFQ) explanation with question" id="mlfq_def" />
+          </picture>
+        </section>
+        <section>
+          <h2>
+            what are the Method to Solve the Multilevel Feedback Queue
+            Scheduling (MLFQ) in operating system ?
+          </h2>
+          <ol>
+            <li>
+              Step 1: Set up several queues with varying priorities. The time quantum of higher-priority queues is
+              shorter.
+            </li>
+            <li>
+              Step 2: Assign every new process to the queue with the greatest priority.
+            </li>
+            <li>
+              Step 3: Apply <a href="/os/scheduling_algorithms/RR1.html">Round Robin scheduling</a> to every queue.
+            </li>
+            <li>
+              Step 4: A process is relegated to a lower-priority queue if it consumes its whole time quantum without
+              finishing.
+            </li>
+            <li>
+              Step 5: A process in a lower-priority queue descends once more if it doesn't complete within its allotted
+              time.
+            </li>
+            <li>
+              Step 6: Upon restarting, a process in any queue that has reached an I/O limit may move back up to a
+              higher-priority queue.
+            </li>
+            <li>
+              Step 7: Keep doing this reallocation until every process is finished or shut down.
+            </li>
+          </ol>
+        </section>
+        <section>
+          <h2>
+            what are Advantages and Disadvantages of Multilevel Feedback Queue
+            Scheduling ?
+          </h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+            <tr>
+              <td>
+                Efficient handling of processes with varying CPU burst times.
+              </td>
+              <td>Complex to implement and manage multiple queues.</td>
+            </tr>
+            <tr>
+              <td>
+                Improved CPU utilization due to dynamic priority adjustment.
+              </td>
+              <td>Starvation can occur for lower-priority processes.</td>
+            </tr>
+            <tr>
+              <td>
+                Reduces turnaround time for I/O-bound and interactive
+                processes.
+              </td>
+              <td>
+                Increased overhead for context switching between queues.
+              </td>
+            </tr>
+            <tr>
+              <td>Allows fair sharing of CPU time based on process needs.</td>
+              <td>
+                Difficulty in choosing appropriate time quantum for each
+                queue.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Minimizes response time for short tasks or interactive
+                processes.
+              </td>
+              <td>
+                Performance can degrade if too many high-priority processes
+                exist.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Adaptable to system load and changes in process behavior.
+              </td>
+              <td>
+                Requires fine-tuning of parameters to avoid inefficiency.
+              </td>
+            </tr>
+          </table>
+        </section>
 
-          <section>
-            <h2>
-              Why Multilevel Feedback Queue Scheduling Is Better Than Other
-              Scheduling Algorithms?
-            </h2>
-            <p>
-              Multilevel Feedback Queue Scheduling is advantageous over simpler
-              algorithms like
-              <a href="/os/scheduling_algorithms/fcfs.html"
-                >First-Come-First-Serve (FCFS)</a
-              >,
-              <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>,
-              and
-              <a href="/os/scheduling_algorithms/sjf2.html"
-                >Shortest Job Next (SJN)</a
-              >
-              because it adapts dynamically to the varying requirements of
-              processes. By allowing processes to move between different
-              priority queues, MLFQS prevents process starvation, optimizes CPU
-              time usage, and reduces turnaround time for interactive and
-              I/O-bound processes. This adaptability ensures a balanced
-              performance for systems handling diverse workloads, making it an
-              efficient choice for many modern operating systems.
-            </p>
-          </section>
-          <section>
-            <h2>where multilevel feedback queue scheduling (MLFQ) used?</h2>
-            <p>
-              Multilevel Feedback Queue (MLFQ) scheduling is used in systems
-              where different tasks need to be handled based on their priority.
-              It’s helpful in the following areas:
-            </p>
-            <ul>
-              <li>
-                <strong>1. Operating Systems : </strong>MLFQ is used in
-                operating systems to manage tasks like apps and background
-                processes. It helps make sure important tasks get done quickly
-                while still giving time to less urgent ones.
-              </li>
-              <li>
-                <strong>2. Real-Time Systems: </strong>In systems that need to
-                process things immediately, like in real-time applications, MLFQ
-                ensures critical tasks are handled first.
-              </li>
-              <li>
-                <strong>3. Shared Systems: </strong>On servers or computers used
-                by multiple people, MLFQ makes sure every user’s tasks are given
-                fair attention based on their importance.
-              </li>
-              <li>
-                <strong>4. Shared Systems: </strong>On servers or computers used
-                by multiple people, MLFQ makes sure every user’s tasks are given
-                fair attention based on their importance.
-              </li>
-            </ul>
-          </section>
+        <section>
+          <h2>
+            Why Multilevel Feedback Queue Scheduling Is Better Than Other
+            Scheduling Algorithms?
+          </h2>
+          <p>
+            Multilevel Feedback Queue Scheduling offers several advantages over simpler algorithms such as <a
+              href="/os/scheduling_algorithms/fcfs.html">First-Come-First-Serve (FCFS)</a>, <a
+              href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>, and <a
+              href="/os/scheduling_algorithms/sjf2.html">Shortest Job Next (SJN)</a> due to its ability to adapt
+            dynamically to the changing needs of processes. By enabling processes to shift between various priority
+            queues, MLFQS helps to prevent process starvation, optimizes CPU time utilization, and minimizes turnaround
+            time for interactive and I/O-bound processes. This flexibility ensures balanced performance in systems that
+            manage a variety of workloads, making it a highly efficient option for many contemporary operating systems.
+          </p>
+        </section>
+        <section>
+          <h2>where multilevel feedback queue scheduling (MLFQ) used?</h2>
+          <p>
+            Multilevel Feedback Queue (MLFQ) scheduling is used in systems
+            where different tasks need to be handled based on their priority.
+            It’s helpful in the following areas:
+          </p>
+          <ul>
+            <li>
+              <strong>1. Operating Systems : </strong>MLFQ is utilized in operating systems to handle tasks such as applications and background processes. It ensures that critical tasks are completed promptly while still allowing time for less urgent ones.
+            </li>
+            <li>
+              <strong>2. Real-Time Systems: </strong>In systems that require immediate processing, such as real-time applications, MLFQ prioritizes critical tasks to ensure they are addressed first.
+            </li>
+            <li>
+              <strong>3. Shared Systems: </strong>On servers or computers used
+              by multiple people, MLFQ makes sure every user’s tasks are given
+              fair attention based on their importance.
+            </li>
+        
+          </ul>
+        </section>
+      </div>
+      <div id="question1">
+        <div class="question">
+          <h2 id="fstque">
+            Question 1 : find the average Turn Around Time and Waiting Time of
+            following processes using MULTILEVEL FEEDBACK QUEUE Scheduling
+            (MLFQ) algorithm. Consider the following processes with their
+            Arrival Time, Burst Time. Question criteria :
+            <br />
+            (1) There are four queue Q1, Q2, Q3, Q4 <br />
+            (2) Queue with their time stamp Q1(T.S=4), Q2(T.S=8), Q3(T.S=16),
+            Q4(FCFS) <br />
+            (in Q1, Q2, Q3, we use
+            <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a> and
+            in Q4 we use
+            <a href="/os/scheduling_algorithms/fcfs.html">first come first serve (FCFS)</a>
+            scheduling algorithms)
+          </h2>
+
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Arrival Time</th>
+              <th>Burst Time</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>1</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>4</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>5</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>8</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>12</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>8</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>16</td>
+              <td>6</td>
+            </tr>
+          </table>
         </div>
-        <div id="question1">
-          <div class="question">
-            <h2 id="fstque">
-              Question 1 : find the average Turn Around Time and Waiting Time of
-              following processes using MULTILEVEL FEEDBACK QUEUE Scheduling
-              (MLFQ) algorithm. Consider the following processes with their
-              Arrival Time, Burst Time. Question criteria :
-              <br />
-              (1) There are four queue Q1, Q2, Q3, Q4 <br />
-              (2) Queue with their time stamp Q1(T.S=4), Q2(T.S=8), Q3(T.S=16),
-              Q4(FCFS) <br />
-              (in Q1, Q2, Q3, we use
-              <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a> and
-              in Q4 we use
-              <a href="/os/scheduling_algorithms/fcfs.html"
-                >first come first serve (FCFS)</a
-              >
-              scheduling algorithms)
-            </h2>
+        <div class="solution">
+          <h3>solution :</h3>
+          <h4>Formula:</h4>
+          <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+          <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Arrival Time</th>
-                <th>Burst Time</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>1</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>4</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>5</td>
-                <td>12</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>8</td>
-                <td>14</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>12</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>10</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>8</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>16</td>
-                <td>6</td>
-              </tr>
-            </table>
-          </div>
-          <div class="solution">
-            <h3>solution :</h3>
-            <h4>Formula:</h4>
-            <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-            <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
-
-            <h4>Solution:</h4>
-            <h4>Gantt Chart</h4>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q1_1.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q1_1.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-  (MLFQ) | Question 1 Solution | Gantt Chart Part 1"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-  (MLFQ) | Question 1 Solution | Gantt Chart Part 1"
-                id="MLFQS1_1"
-              />
-            </picture>
-            <!-- data-src-mobile="/assets/MLFQ/mlfqs_mob_q1_1.png"
+          <h4>Solution:</h4>
+          <h4>Gantt Chart</h4>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q1_1.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q1_1.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+  (MLFQ) | Question 1 Solution | Gantt Chart Part 1" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+  (MLFQ) | Question 1 Solution | Gantt Chart Part 1" id="MLFQS1_1" />
+          </picture>
+          <!-- data-src-mobile="/assets/MLFQ/mlfqs_mob_q1_1.png"
             data-src-desktop="/assets/MLFQ/mlfqs_comp_q1_1.png" -->
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q1_2.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q1_2.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 1 Solution | Gantt Chart Part 2"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 1 Solution | Gantt Chart Part 2"
-                id="MLFQS1_2"
-              />
-            </picture>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q1_2.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q1_2.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 1 Solution | Gantt Chart Part 2" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 1 Solution | Gantt Chart Part 2" id="MLFQS1_2" />
+          </picture>
 
-            <!-- data-src-mobile="/assets/MLFQ/mlfqs_mob_q1_2.png"
+          <!-- data-src-mobile="/assets/MLFQ/mlfqs_mob_q1_2.png"
             data-src-desktop="/assets/MLFQ/mlfqs_comp_q1_2.png" -->
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q1_3.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q1_3.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 1 Solution | Gantt Chart Part 2"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 1 Solution | Gantt Chart Part 2"
-                id="MLFQS1_2"
-              />
-            </picture>
-            <!-- <p>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q1_3.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q1_3.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 1 Solution | Gantt Chart Part 2" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 1 Solution | Gantt Chart Part 2" id="MLFQS1_2" />
+          </picture>
+          <!-- <p>
               | P1 (1-5) | P2 (5-9) | P3 (9-13) | P4 (13-17) | P7 (17-21) | P6
               (21-25) | P5 (25-29) | P8 (29-33) | P1 (33-35) | P2(35-39) | P3(39-47)
               | P4(47-55) | P7(55-59) | P6(59-65) | P5(65-67) | P8(67-69) |
               P4(69-71)
             </p> -->
 
-            <h4>Calculations:</h4>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Completion Time</th>
-                <th>Turnaround Time (TAT)</th>
-                <th>Waiting Time (WT)</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>35</td>
-                <td>34</td>
-                <td>28</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>39</td>
-                <td>35</td>
-                <td>27</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>47</td>
-                <td>42</td>
-                <td>30</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>71</td>
-                <td>63</td>
-                <td>49</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>67</td>
-                <td>55</td>
-                <td>49</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>65</td>
-                <td>55</td>
-                <td>45</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>59</td>
-                <td>51</td>
-                <td>43</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>69</td>
-                <td>53</td>
-                <td>47</td>
-              </tr>
-            </table>
+          <h4>Calculations:</h4>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Completion Time</th>
+              <th>Turnaround Time (TAT)</th>
+              <th>Waiting Time (WT)</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>35</td>
+              <td>34</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>39</td>
+              <td>35</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>47</td>
+              <td>42</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>71</td>
+              <td>63</td>
+              <td>49</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>67</td>
+              <td>55</td>
+              <td>49</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>65</td>
+              <td>55</td>
+              <td>45</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>59</td>
+              <td>51</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>69</td>
+              <td>53</td>
+              <td>47</td>
+            </tr>
+          </table>
 
-            <h4>Average Turnaround Time:</h4>
-            <p>(34 + 35 + 42 + 63 + 55 + 55 + 51 + 53) / 8 = 48.5</p>
+          <h4>Average Turnaround Time:</h4>
+          <p>(34 + 35 + 42 + 63 + 55 + 55 + 51 + 53) / 8 = 48.5</p>
 
-            <h4>Average Waiting Time:</h4>
-            <p>(28 + 27 + 30 + 49 + 49 + 45 + 43 + 47) / 8 = 39.75</p>
-          </div>
+          <h4>Average Waiting Time:</h4>
+          <p>(28 + 27 + 30 + 49 + 49 + 45 + 43 + 47) / 8 = 39.75</p>
         </div>
-        <div id="question2">
-          <div class="question">
-            <h2>question 2 :</h2>
-            <p>
-              Consider following process, with the cpu burst time given in
-              milliseconds. The system has three queues. first queue is having
-              the T.S = 2, Second queue is having the T.S = 4 and, third queue
-              is having the FCFS scheduling
-            </p>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Burst Time</th>
-                <th>Arrival Time</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>4</td>
-                <td>0.0</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>7</td>
-                <td>1.0</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>5</td>
-                <td>1.0</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>6</td>
-                <td>2.0</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>12</td>
-                <td>3.0</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>9</td>
-                <td>5.0</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>3</td>
-                <td>6.0</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>10</td>
-                <td>8.0</td>
-              </tr>
-              <tr>
-                <td>P9</td>
-                <td>3</td>
-                <td>12.0</td>
-              </tr>
-              <tr>
-                <td>P10</td>
-                <td>2</td>
-                <td>16.0</td>
-              </tr>
-              <tr>
-                <td>P11</td>
-                <td>4</td>
-                <td>22.0</td>
-              </tr>
-              <tr>
-                <td>P12</td>
-                <td>2</td>
-                <td>24.0</td>
-              </tr>
-            </table>
-            <p>
-              Draw gantt charts to show execution using multi level feedback
-              queue scheduling (MLFQS). Also determine the process turnaround
-              time and waiting time.
-            </p>
-          </div>
-          <div class="solution">
-            <h3>Solution :</h3>
-            <h4>Formula:</h4>
-            <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-            <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
-            <h4>Gantt Chart</h4>
+      </div>
+      <div id="question2">
+        <div class="question">
+          <h2>question 2 :</h2>
+          <p>
+            Consider following process, with the cpu burst time given in
+            milliseconds. The system has three queues. first queue is having
+            the T.S = 2, Second queue is having the T.S = 4 and, third queue
+            is having the FCFS scheduling
+          </p>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Burst Time</th>
+              <th>Arrival Time</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>4</td>
+              <td>0.0</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>7</td>
+              <td>1.0</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>5</td>
+              <td>1.0</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>6</td>
+              <td>2.0</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>12</td>
+              <td>3.0</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>9</td>
+              <td>5.0</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>3</td>
+              <td>6.0</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>10</td>
+              <td>8.0</td>
+            </tr>
+            <tr>
+              <td>P9</td>
+              <td>3</td>
+              <td>12.0</td>
+            </tr>
+            <tr>
+              <td>P10</td>
+              <td>2</td>
+              <td>16.0</td>
+            </tr>
+            <tr>
+              <td>P11</td>
+              <td>4</td>
+              <td>22.0</td>
+            </tr>
+            <tr>
+              <td>P12</td>
+              <td>2</td>
+              <td>24.0</td>
+            </tr>
+          </table>
+          <p>
+            Draw gantt charts to show execution using multi level feedback
+            queue scheduling (MLFQS). Also determine the process turnaround
+            time and waiting time.
+          </p>
+        </div>
+        <div class="solution">
+          <h3>Solution :</h3>
+          <h4>Formula:</h4>
+          <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+          <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+          <h4>Gantt Chart</h4>
 
-            <!-- <img
+          <!-- <img
               alt="MULTILEVEL FEEDBACK QUEUE Scheduling
               (MLFQ) | Question 1 Solution | Gantt Chart part 1"
               title="MULTILEVEL FEEDBACK QUEUE Scheduling
@@ -744,414 +639,323 @@
               data-src-desktop="/assets/MLFQ/mlfqs_comp_q3_1.png"
             /> -->
 
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q3_1.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q3_1.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 3 Solution | Gantt Chart Part 1"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 3 Solution | Gantt Chart Part 1"
-                id="MLFQS1_2"
-              />
-            </picture>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q3_1.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q3_1.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 3 Solution | Gantt Chart Part 1" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 3 Solution | Gantt Chart Part 1" id="MLFQS1_2" />
+          </picture>
 
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q3_2.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q3_2.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 3 Solution | Gantt Chart Part 2"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 3 Solution | Gantt Chart Part 2"
-                id="MLFQS1_2"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q3_3.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q3_3.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 3 Solution | Gantt Chart Part 3"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 3 Solution | Gantt Chart Part 3"
-                id="MLFQS1_2"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q3_4.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q3_4.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 3 Solution | Gantt Chart Part 4"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 3 Solution | Gantt Chart Part 4"
-                id="MLFQS1_2"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q3_5.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q3_5.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 3 Solution | Gantt Chart Part 5"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 3 Solution | Gantt Chart Part 5"
-                id="MLFQS1_2"
-              />
-            </picture>
-            <h4>Calculations:</h4>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Completion Time</th>
-                <th>Turnaround Time (TAT)</th>
-                <th>Waiting Time (WT)</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>22</td>
-                <td>22 - 0 = 22</td>
-                <td>22 - 4 = 18</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>54</td>
-                <td>54 - 1.0 = 53</td>
-                <td>53 - 7 = 46</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>33</td>
-                <td>33 - 1.0 = 32</td>
-                <td>32 - 5 = 27</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>37</td>
-                <td>37 - 2.0 = 35</td>
-                <td>35 - 6 = 29</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>60</td>
-                <td>60 - 3.0 = 57</td>
-                <td>57 - 12 = 45</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>63</td>
-                <td>63 - 5.0 = 58</td>
-                <td>58 - 9 = 49</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>46</td>
-                <td>46 - 6 = 40</td>
-                <td>40 - 3 = 37</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>67</td>
-                <td>67 - 8 = 59</td>
-                <td>59 - 10 = 49</td>
-              </tr>
-              <tr>
-                <td>P9</td>
-                <td>51</td>
-                <td>51 - 12 = 39</td>
-                <td>39 - 3 = 36</td>
-              </tr>
-              <tr>
-                <td>P10</td>
-                <td>20</td>
-                <td>20 - 16 = 4</td>
-                <td>4 - 2 = 2</td>
-              </tr>
-              <tr>
-                <td>P11</td>
-                <td>53</td>
-                <td>53 - 22 = 31</td>
-                <td>31 - 4 = 27</td>
-              </tr>
-              <tr>
-                <td>P12</td>
-                <td>26</td>
-                <td>26 - 24 = 2</td>
-                <td>2 - 2 = 0</td>
-              </tr>
-            </table>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q3_2.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q3_2.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 3 Solution | Gantt Chart Part 2" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 3 Solution | Gantt Chart Part 2" id="MLFQS1_2" />
+          </picture>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q3_3.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q3_3.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 3 Solution | Gantt Chart Part 3" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 3 Solution | Gantt Chart Part 3" id="MLFQS1_2" />
+          </picture>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q3_4.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q3_4.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 3 Solution | Gantt Chart Part 4" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 3 Solution | Gantt Chart Part 4" id="MLFQS1_2" />
+          </picture>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q3_5.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q3_5.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 3 Solution | Gantt Chart Part 5" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 3 Solution | Gantt Chart Part 5" id="MLFQS1_2" />
+          </picture>
+          <h4>Calculations:</h4>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Completion Time</th>
+              <th>Turnaround Time (TAT)</th>
+              <th>Waiting Time (WT)</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>22</td>
+              <td>22 - 0 = 22</td>
+              <td>22 - 4 = 18</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>54</td>
+              <td>54 - 1.0 = 53</td>
+              <td>53 - 7 = 46</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>33</td>
+              <td>33 - 1.0 = 32</td>
+              <td>32 - 5 = 27</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>37</td>
+              <td>37 - 2.0 = 35</td>
+              <td>35 - 6 = 29</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>60</td>
+              <td>60 - 3.0 = 57</td>
+              <td>57 - 12 = 45</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>63</td>
+              <td>63 - 5.0 = 58</td>
+              <td>58 - 9 = 49</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>46</td>
+              <td>46 - 6 = 40</td>
+              <td>40 - 3 = 37</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>67</td>
+              <td>67 - 8 = 59</td>
+              <td>59 - 10 = 49</td>
+            </tr>
+            <tr>
+              <td>P9</td>
+              <td>51</td>
+              <td>51 - 12 = 39</td>
+              <td>39 - 3 = 36</td>
+            </tr>
+            <tr>
+              <td>P10</td>
+              <td>20</td>
+              <td>20 - 16 = 4</td>
+              <td>4 - 2 = 2</td>
+            </tr>
+            <tr>
+              <td>P11</td>
+              <td>53</td>
+              <td>53 - 22 = 31</td>
+              <td>31 - 4 = 27</td>
+            </tr>
+            <tr>
+              <td>P12</td>
+              <td>26</td>
+              <td>26 - 24 = 2</td>
+              <td>2 - 2 = 0</td>
+            </tr>
+          </table>
 
-            <h4>Average Turnaround Time:</h4>
-            <p>
-              ( 22 + 53 + 32 + 35 + 57 + 58 + 40 + 59 + 39 + 4 + 31 + 2 ) / 12 =
-              432/12 = 36
-            </p>
+          <h4>Average Turnaround Time:</h4>
+          <p>
+            ( 22 + 53 + 32 + 35 + 57 + 58 + 40 + 59 + 39 + 4 + 31 + 2 ) / 12 =
+            432/12 = 36
+          </p>
 
-            <h4>Average Waiting Time:</h4>
-            <p>
-              (18 + 46 + 27 + 29 + 45 + 49 + 37 + 49 + 36 + 2 + 27 + 0 ) / 12 =
-              365/12= 30.416
-            </p>
-          </div>
+          <h4>Average Waiting Time:</h4>
+          <p>
+            (18 + 46 + 27 + 29 + 45 + 49 + 37 + 49 + 36 + 2 + 27 + 0 ) / 12 =
+            365/12= 30.416
+          </p>
         </div>
+      </div>
 
-        <div id="question3">
-          <div class="question">
-            <h2>
-              Question 3 : find the average Turn Around Time and Waiting Time of
-              following processes using MULTILEVEL FEEDBACK QUEUE Scheduling
-              (MLFQ) algorithm. Consider the following processes with their
-              Arrival Time, Burst Time. Question criteria :
-              <br />
-              (1) There are four queue Q1, Q2, Q3, Q4 <br />
-              (2) Queue with their time stamp Q1(T.S=2), Q2(T.S=4), Q3(T.S=8),
-              Q4(FCFS) <br />
-              (in Q1, Q2, Q3, we use
-              <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a> and
-              in Q4 we use
-              <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a> scheduling
-              algorithms)
-            </h2>
+      <div id="question3">
+        <div class="question">
+          <h2>
+            Question 3 : find the average Turn Around Time and Waiting Time of
+            following processes using MULTILEVEL FEEDBACK QUEUE Scheduling
+            (MLFQ) algorithm. Consider the following processes with their
+            Arrival Time, Burst Time. Question criteria :
+            <br />
+            (1) There are four queue Q1, Q2, Q3, Q4 <br />
+            (2) Queue with their time stamp Q1(T.S=2), Q2(T.S=4), Q3(T.S=8),
+            Q4(FCFS) <br />
+            (in Q1, Q2, Q3, we use
+            <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a> and
+            in Q4 we use
+            <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a> scheduling
+            algorithms)
+          </h2>
 
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Arrival Time</th>
-                <th>Burst Time</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>0</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>5.0</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>8.0</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>10</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>14</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>18</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>22</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>24</td>
-                <td>10</td>
-              </tr>
-            </table>
-          </div>
-          <div class="solution">
-            <h3>solution :</h3>
-            <h4>Formula:</h4>
-            <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-            <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Arrival Time</th>
+              <th>Burst Time</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>0</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>5.0</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>8.0</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>10</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>14</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>18</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>22</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>24</td>
+              <td>10</td>
+            </tr>
+          </table>
+        </div>
+        <div class="solution">
+          <h3>solution :</h3>
+          <h4>Formula:</h4>
+          <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+          <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
-            <h4>Gantt Chart</h4>
+          <h4>Gantt Chart</h4>
 
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q2_1.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q2_1.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 2 Solution | Gantt Chart Part 1"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 2 Solution | Gantt Chart Part 1"
-                id="MLFQS1_2"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q2_2.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q2_2.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 2 Solution | Gantt Chart Part 2"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 2 Solution | Gantt Chart Part 2"
-                id="MLFQS1_2"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q2_3.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q2_3.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 2 Solution | Gantt Chart Part 3"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 2 Solution | Gantt Chart Part 3"
-                id="MLFQS1_2"
-              />
-            </picture>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLFQ/mlfqs_mob_q2_4.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLFQ/mlfqs_comp_q2_4.png"
-              />
-              <img
-                alt="MULTILEVEL FEEDBACK QUEUE Scheduling
-                           (MLFQ) | Question 2 Solution | Gantt Chart Part 4"
-                title="MULTILEVEL FEEDBACK QUEUE Scheduling
-                            (MLFQ) | Question 2 Solution | Gantt Chart Part 4"
-                id="MLFQS1_2"
-              />
-            </picture>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q2_1.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q2_1.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 2 Solution | Gantt Chart Part 1" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 2 Solution | Gantt Chart Part 1" id="MLFQS1_2" />
+          </picture>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q2_2.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q2_2.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 2 Solution | Gantt Chart Part 2" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 2 Solution | Gantt Chart Part 2" id="MLFQS1_2" />
+          </picture>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q2_3.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q2_3.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 2 Solution | Gantt Chart Part 3" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 2 Solution | Gantt Chart Part 3" id="MLFQS1_2" />
+          </picture>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/MLFQ/mlfqs_mob_q2_4.png" />
+            <source media="(min-width:701px)" srcset="/assets/MLFQ/mlfqs_comp_q2_4.png" />
+            <img alt="MULTILEVEL FEEDBACK QUEUE Scheduling
+                           (MLFQ) | Question 2 Solution | Gantt Chart Part 4" title="MULTILEVEL FEEDBACK QUEUE Scheduling
+                            (MLFQ) | Question 2 Solution | Gantt Chart Part 4" id="MLFQS1_2" />
+          </picture>
 
-            <!-- <p>
+          <!-- <p>
             | P1 (0-5) | P2 (5-7) | P1 (7-8) | P3 (8-10) | P4 (10-12) | P3 (12-14)
             | P5 (14-16) | P4 (16-18) | P6 (18-20) | P3(20-21) | P5(21-22) |
             P7(22-24) | P8(24-26) | P4(26-28) | P6(28-29) | P5(29-30) | P8(30-34)
             | P4(34-36) | P8(36-40)
              </p> -->
 
-            <h4>Calculations:</h4>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Completion Time</th>
-                <th>Turnaround Time (TAT)</th>
-                <th>Waiting Time (WT)</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>8</td>
-                <td>8</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>7</td>
-                <td>2</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>21</td>
-                <td>13</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>36</td>
-                <td>26</td>
-                <td>18</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>30</td>
-                <td>16</td>
-                <td>12</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>29</td>
-                <td>11</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>24</td>
-                <td>2</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>40</td>
-                <td>16</td>
-                <td>6</td>
-              </tr>
-            </table>
+          <h4>Calculations:</h4>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <th>Process</th>
+              <th>Completion Time</th>
+              <th>Turnaround Time (TAT)</th>
+              <th>Waiting Time (WT)</th>
+            </tr>
+            <tr>
+              <td>P1</td>
+              <td>8</td>
+              <td>8</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>P2</td>
+              <td>7</td>
+              <td>2</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>P3</td>
+              <td>21</td>
+              <td>13</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>P4</td>
+              <td>36</td>
+              <td>26</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>P5</td>
+              <td>30</td>
+              <td>16</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>P6</td>
+              <td>29</td>
+              <td>11</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>P7</td>
+              <td>24</td>
+              <td>2</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>P8</td>
+              <td>40</td>
+              <td>16</td>
+              <td>6</td>
+            </tr>
+          </table>
 
-            <h4>Average Turnaround Time:</h4>
-            <p>(8 + 2 + 13 + 26 + 16 + 11 + 2 + 16) / 8 = 11.75</p>
+          <h4>Average Turnaround Time:</h4>
+          <p>(8 + 2 + 13 + 26 + 16 + 11 + 2 + 16) / 8 = 11.75</p>
 
-            <h4>Average Waiting Time:</h4>
-            <p>(2 + 0 + 8 + 18 + 12 + 8 + 0 + 6) / 8 = 6.75</p>
-          </div>
+          <h4>Average Waiting Time:</h4>
+          <p>(2 + 0 + 8 + 18 + 12 + 8 + 0 + 6) / 8 = 6.75</p>
         </div>
       </div>
-    </main>
-    <br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button id="down" type="button">
-        <a href="RR1.html"
-          >click for Roundrobin question 1 to 15 click here</a
-        >
-      </button>
     </div>
-    <br>
-  </body>
-  <script type="module" src="commonthings.min.js"></script>
+  </main>
+  <br />
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button id="down" type="button">
+      <a href="RR1.html">click for Roundrobin question 1 to 15 click here</a>
+    </button>
+  </div>
+  <br>
+</body>
+<script type="module" src="commonthings.min.js"></script>
+
 </html>
