@@ -1,763 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Buddy System Questions: Practice Problems with Answers - Computer Science
-      Guide
-    </title>
-    <meta
-      name="description"
-      content="Explore a comprehensive collection of Buddy System questions with detailed answers. Enhance your understanding of memory management in operating systems."
-    />
-    <meta
-      name="keywords"
-      content="Buddy System questions, Buddy System practice, memory management questions, Operating System questions, Computer Science problems"
-    />
-    <meta name="author" content="Kundal Kumar" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="Buddy System Questions: Practice Problems with Answers - Computer Science Guide"
-    />
-    <meta
-      property="og:description"
-      content="A detailed collection of Buddy System questions with step-by-step answers to help you understand memory management concepts in operating systems."
-    />
-    <meta property="og:type" content="article" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Buddy System Questions: Practice Problems with Answers - Computer Science Guide"
-    />
-    <meta
-      name="twitter:description"
-      content="Learn and practice Buddy System memory management with these solved problems. Perfect for computer science students and enthusiasts."
-    />
-    <style>
+
+<head>
+  <script type="text/javascript" src="/js/src/alljs.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Buddy System Questions: Practice Problems with Answers - Computer Science
+    Guide
+  </title>
+  <meta name="description"
+    content="Explore a comprehensive collection of Buddy System questions with detailed answers. Enhance your understanding of memory management in operating systems." />
+  <meta name="keywords"
+    content="Buddy System questions, Buddy System practice, memory management questions, Operating System questions, Computer Science problems" />
+  <meta name="author" content="Kundal Kumar" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Buddy System Questions: Practice Problems with Answers - Computer Science Guide" />
+  <meta property="og:description"
+    content="A detailed collection of Buddy System questions with step-by-step answers to help you understand memory management concepts in operating systems." />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title"
+    content="Buddy System Questions: Practice Problems with Answers - Computer Science Guide" />
+  <meta name="twitter:description"
+    content="Learn and practice Buddy System memory management with these solved problems. Perfect for computer science students and enthusiasts." />
+  <style>
+    #buddy_def {
+      width: 600px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (width<=770px) {
       #buddy_def {
-        width: 600px;
         height: auto;
-        object-fit: contain;
+        width: 400px;
       }
-      @media (width<=770px) {
-        #buddy_def {
-          height: auto;
-          width: 400px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- upper and down button -->
-    <main>
-      <div class="container">
-        <h1 id="upper">Buddy System Questions</h1>
+    }
+  </style>
+</head>
 
-        <button
-          type="button"
-          class="btn btn-success"
-          style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
-        >
-          <a href="#down"
-            ><span class="material-icons" style="color: antiquewhite">
-              arrow_downward
-            </span></a
-          >
-        </button>
-        <button
-          type="button"
-          class="btn btn-success"
-          style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
-        >
-          <a href="#upper"
-            ><span class="material-icons" style="color: antiquewhite">
-              arrow_upward
-            </span></a
-          >
-        </button>
-      </div>
-      <!-- upper and down button end-->
+<body>
+  <!-- upper and down button -->
+  <main>
+    <div class="container">
+      <h1 id="upper">Buddy System Questions</h1>
 
-      <div class="container">
-        <br />
-        <p style="margin: 0px 2vw">
-          Here are 11 questions on Buddy System. Each question is presented in a
-          table format. each question is solved in explained form.
-        </p>
-        <br />
-        <div class="explained">
-          <section>
-            <h2 title="what is buddy system" id="defi">
-              What is Buddy System in Operating System ?
-            </h2>
-            <p>
-              The Buddy System is a technique for memory allocation and management utilized in operating systems. It works by dividing memory into partitions to meet allocation requests while aiming to reduce fragmentation. In this approach, memory is divided into blocks that are sized in powers of 2.
-            </p>
+      <button type="button" class="btn btn-success" style="z-index: 1111; position: fixed; right: 10vw; top: 9vh">
+        <a href="#down"><span class="material-icons" style="color: antiquewhite">
+            arrow_downward
+          </span></a>
+      </button>
+      <button type="button" class="btn btn-success" style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw">
+        <a href="#upper"><span class="material-icons" style="color: antiquewhite">
+            arrow_upward
+          </span></a>
+      </button>
+    </div>
+    <!-- upper and down button end-->
 
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/buddy system/buddy_system_mob.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/buddy system/buddy_system_comp.png"
-              />
-              <img
-                alt="tree representation of buddy system | real life image of buddy system"
-                src="/assets/buddy system/buddy_system_comp.png"
-                title="buddy system working view"
-                id="buddy_def"
-              />
-            </picture>
-          </section>
-          <h2>Method to Solve Buddy System Questions</h2>
-          <ol>
-            <li>
-              Identify the size of the memory block required for allocation.
-            </li>
-            <li>
-              Find the smallest power of 2 that can accommodate the required
-              memory size.
-            </li>
-            <li>
-              Split the available memory block iteratively into smaller blocks
-              (buddies) until the required block size is obtained.
-            </li>
-            <li>Allocate the memory block to the requesting process.</li>
-            <li>
-              When the process releases the memory, merge it with its buddy if
-              the buddy is free, forming a larger block.
-            </li>
-            <li>
-              Repeat the process for subsequent allocation or deallocation
-              requests.
-            </li>
-          </ol>
-
-          <h2>Advantages and Disadvantages of Buddy System</h2>
-          <table border="1" class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Advantages</th>
-                <th>Disadvantages</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  Minimizes internal fragmentation by using power-of-2 blocks.
-                </td>
-                <td>
-                  Leads to
-                  <a
-                    href="https://en.wikipedia.org/wiki/Fragmentation_(computing)#External_fragmentation"
-                    title="what is external fragmentation"
-                    >external fragmentation</a
-                  >
-                  if block merging is not possible.
-                </td>
-              </tr>
-              <tr>
-                <td>Efficient block splitting and merging process.</td>
-                <td>Requires complex implementation logic.</td>
-              </tr>
-              <tr>
-                <td>Supports dynamic memory allocation and deallocation.</td>
-                <td>
-                  Limits memory allocation to power-of-2 sizes, potentially
-                  wasting memory.
-                </td>
-              </tr>
-              <tr>
-                <td>Can handle multiple allocation requests concurrently.</td>
-                <td>Merging and splitting may lead to performance overhead.</td>
-              </tr>
-              <tr>
-                <td>
-                  Enables coalescing of adjacent free blocks for better memory
-                  utilization.
-                </td>
-                <td>May cause fragmentation for varying allocation sizes.</td>
-              </tr>
-              <tr>
-                <td>Easy to track memory usage using buddy indexing.</td>
-                <td>
-                  Wastes memory when small allocations do not fit well in large
-                  blocks.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <h2>Why Buddy System is Better Than Other Algorithms</h2>
+    <div class="container">
+      <br />
+      <p style="margin: 0px 2vw">
+        Here are 11 questions on Buddy System. Each question is presented in a
+        table format. each question is solved in explained form.
+      </p>
+      <br />
+      <div class="explained">
+        <section>
+          <h2 title="what is buddy system" id="defi">
+            What is Buddy System in Operating System ?
+          </h2>
           <p>
-            The Buddy System is often preferred over other memory allocation
-            algorithms (like
-            <a
-              href="/os/memory_management/Fit_question.html#first_fit"
-              target="_blank"
-              title="what is first fit ?"
-              >First Fit</a
-            >,
-            <a
-              href="/os/memory_management/Fit_question.html#best_fit"
-              target="_blank"
-              title="what is best fit ?"
-              >Best Fit</a
-            >,
-            <a
-              href="/os/memory_management/Fit_question.html#next_fit"
-              target="_blank"
-              title="what is next fit ?"
-              >Next Fit</a
-            >
-            and
-            <a
-              href="/os/memory_management/Fit_question.html#worst_fit"
-              target="_blank"
-              title="what is worst fit ?"
-              >Worst Fit</a
-            >) due to its efficient block splitting and merging mechanism, which
-            minimizes internal fragmentation and allows for quick allocation and
-            deallocation. Its use of power-of-2 block sizes simplifies memory
-            management and reduces the complexity of maintaining free memory
-            lists. However, it still requires careful management to handle
-            external fragmentation effectively.
+            The Buddy System is a technique for memory allocation and management utilized in operating systems. It works
+            by dividing memory into partitions to meet allocation requests while aiming to reduce fragmentation. In this
+            approach, memory is divided into blocks that are sized in powers of 2.
+          </p>
+
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/buddy system/buddy_system_mob.png" />
+            <source media="(min-width:701px)" srcset="/assets/buddy system/buddy_system_comp.png" />
+            <img alt="tree representation of buddy system | real life image of buddy system"
+              src="/assets/buddy system/buddy_system_comp.png" title="buddy system working view" id="buddy_def" />
+          </picture>
+        </section>
+        <h2>Method to Solve Buddy System Questions</h2>
+        <ol>
+          <li>
+            Step 1: Determine the size of the memory block needed for allocation.
+          </li>
+          <li>
+            Step 2: Identify the smallest power of 2 that can fit the required memory size.
+          </li>
+          <li>
+            Step 3: Iteratively divide the available memory block into smaller blocks (buddies) until you reach the
+            desired block size.
+          </li>
+          <li>Step 4: Allocate the memory block to the process that requested it.</li>
+          <li>
+            Step 5: When the process releases the memory, combine it with its buddy if that buddy is free, creating a
+            larger block.
+          </li>
+          <li>
+            Step 6: Continue this process for any future allocation or deallocation requests.
+          </li>
+        </ol>
+
+        <h2>Advantages and Disadvantages of Buddy System</h2>
+        <table border="1" class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Advantages</th>
+              <th>Disadvantages</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Minimizes internal fragmentation by using power-of-2 blocks.
+              </td>
+              <td>
+                Leads to
+                <a href="https://en.wikipedia.org/wiki/Fragmentation_(computing)#External_fragmentation"
+                  title="what is external fragmentation">external fragmentation</a>
+                if block merging is not possible.
+              </td>
+            </tr>
+            <tr>
+              <td>Efficient block splitting and merging process.</td>
+              <td>Requires complex implementation logic.</td>
+            </tr>
+            <tr>
+              <td>Supports dynamic memory allocation and deallocation.</td>
+              <td>
+                Limits memory allocation to power-of-2 sizes, potentially
+                wasting memory.
+              </td>
+            </tr>
+            <tr>
+              <td>Can handle multiple allocation requests concurrently.</td>
+              <td>Merging and splitting may lead to performance overhead.</td>
+            </tr>
+            <tr>
+              <td>
+                Enables coalescing of adjacent free blocks for better memory
+                utilization.
+              </td>
+              <td>May cause fragmentation for varying allocation sizes.</td>
+            </tr>
+            <tr>
+              <td>Easy to track memory usage using buddy indexing.</td>
+              <td>
+                Wastes memory when small allocations do not fit well in large
+                blocks.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Why Buddy System is Better Than Other Algorithms</h2>
+        <p>
+          The Buddy System is often preferred over other memory allocation
+          algorithms (like
+          <a href="/os/memory_management/Fit_question.html#first_fit" target="_blank" title="what is first fit ?">First
+            Fit</a>,
+          <a href="/os/memory_management/Fit_question.html#best_fit" target="_blank" title="what is best fit ?">Best
+            Fit</a>,
+          <a href="/os/memory_management/Fit_question.html#next_fit" target="_blank" title="what is next fit ?">Next
+            Fit</a>
+          and
+          <a href="/os/memory_management/Fit_question.html#worst_fit" target="_blank" title="what is worst fit ?">Worst
+            Fit</a>) due to its efficient block splitting and merging mechanism, which
+          minimizes internal fragmentation and allows for quick allocation and
+          deallocation. Its use of power-of-2 block sizes simplifies memory
+          management and reduces the complexity of maintaining free memory
+          lists. However, it still requires careful management to handle
+          external fragmentation effectively.
+        </p>
+      </div>
+
+      <div id="question1">
+        <div class="question" title="first question on Buddy System">
+          <h2>
+            Question 1 : Suppose the OS on your computer uses the
+            <a href="#defi">buddy system</a> for
+            <a href="/os/memory_management/memory_management_topics.html">memory management</a>. Initially, the system
+            has 1 megabyte (1024K) block of memory
+            available, which begins at address zero. Show the results of each
+            request/release via successive figures.
+          </h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <td>A :Request 28K</td>
+            </tr>
+            <tr>
+              <td>B :Request 232K</td>
+            </tr>
+            <tr>
+              <td>C :Request 60K</td>
+            </tr>
+            <tr>
+              <td>D :Request 100K</td>
+            </tr>
+            <tr>
+              <td>E :Request 30K</td>
+            </tr>
+            <tr>
+              <td>Release A</td>
+            </tr>
+            <tr>
+              <td>Release C</td>
+            </tr>
+            <tr>
+              <td>F : Request 20K</td>
+            </tr>
+            <tr>
+              <td>G : Request 48K</td>
+            </tr>
+          </table>
+          <p>
+            After memory is allocated to process F, how much internal
+            Fragmentation exists in the system?
           </p>
         </div>
+        <div class="solution" title="solution of buddy system question">
+          <h3>Solution :</h3>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <p>A : request 28K</p>
 
-        <div id="question1">
-          <div class="question" title="first question on Buddy System">
-            <h2>
-              Question 1 : Suppose the OS on your computer uses the
-              <a href="#defi">buddy system</a> for
-              <a href="/os/memory_management/memory_management_topics.html"
-                >memory management</a
-              >. Initially, the system has 1 megabyte (1024K) block of memory
-              available, which begins at address zero. Show the results of each
-              request/release via successive figures.
-            </h2>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <td>A :Request 28K</td>
-              </tr>
-              <tr>
-                <td>B :Request 232K</td>
-              </tr>
-              <tr>
-                <td>C :Request 60K</td>
-              </tr>
-              <tr>
-                <td>D :Request 100K</td>
-              </tr>
-              <tr>
-                <td>E :Request 30K</td>
-              </tr>
-              <tr>
-                <td>Release A</td>
-              </tr>
-              <tr>
-                <td>Release C</td>
-              </tr>
-              <tr>
-                <td>F : Request 20K</td>
-              </tr>
-              <tr>
-                <td>G : Request 48K</td>
-              </tr>
-            </table>
-            <p>
-              After memory is allocated to process F, how much internal
-              Fragmentation exists in the system?
-            </p>
-          </div>
-          <div class="solution" title="solution of buddy system question">
-            <h3>Solution :</h3>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <p>A : request 28K</p>
-
-                <td>1024K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>512K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>128K</td>
-                <td>128K</td>
-                <td>256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>64K</td>
-                <td>64K</td>
-                <td>128K</td>
-                <td>256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>32K</td>
-                <td>32K</td>
-                <td>64K</td>
-                <td>128K</td>
-                <td>256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: cadetblue">A = 32K</td>
-                <td>32K</td>
-                <td>64K</td>
-                <td>128K</td>
-                <td>256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 4K</p>
-            <br />
-            <p>B : request 232K</p>
-            <table border="1" class="table text-center">
-              <tr>
-                <td style="background-color: cadetblue">A = 32K</td>
-                <td>32K</td>
-                <td>64K</td>
-                <td>128K</td>
-                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 24K</p>
-            <br />
-            <p>C : request 60K</p>
-            <table border="1" class="table text-center">
-              <tr>
-                <td style="background-color: cadetblue">A = 32K</td>
-                <td>32K</td>
-                <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
-                <td>128K</td>
-                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 4K</p>
-            <br />
-            <p>D : request 100K</p>
-            <table border="1" class="table text-center">
-              <tr>
-                <td style="background-color: cadetblue">A = 32K</td>
-                <td>32K</td>
-                <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
-                <td style="background-color: chocolate">D = 128K</td>
-                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 28K</p>
-            <br />
-            <p>E : request 30K</p>
-            <table border="1" class="table text-center">
-              <tr>
-                <td style="background-color: cadetblue">A = 32K</td>
-                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
-                <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
-                <td style="background-color: chocolate">D = 128K</td>
-                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 2K</p>
-            <br />
-            <p>Release A</p>
-            <table border="1" class="table text-center">
-              <tr>
-                <td>32K</td>
-                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
-                <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
-                <td style="background-color: chocolate">D = 128K</td>
-                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <br />
-            <p>Release C</p>
-            <table border="1" class="table text-center">
-              <tr>
-                <td>32K</td>
-                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
-                <td>64K</td>
-                <td style="background-color: chocolate">D = 128K</td>
-                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <br />
-            <p>F : request 20K</p>
-            <table border="1" class="table text-center">
-              <tr>
-                <td style="background-color: rgba(118, 84, 255, 0.982)">
-                  F = 32K
-                </td>
-                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
-                <td>64K</td>
-                <td style="background-color: chocolate">D = 128K</td>
-                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 12K</p>
-            <br />
-            <p>G : request 48K</p>
-            <table border="1" class="table text-center">
-              <tr>
-                <td style="background-color: rgba(118, 84, 255, 0.982)">
-                  F = 32K
-                </td>
-                <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
-                <td style="background-color: chartreuse">G = 64K</td>
-                <td style="background-color: chocolate">D = 128K</td>
-                <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 16K</p>
-            <br />
-          </div>
-        </div>
-        <div id="question2">
-          <div class="question">
-            <h2>
-              Question 2 : Suppose the OS on your computer uses the
-              <a href="#defi">buddy system</a> for
-              <a href="/os/memory_management/memory_management_topics.html"
-                >memory management</a
-              >. Initially, the system has 1 megabyte (1024K) block of memory
-              available, which begins at address zero. Show the results of each
-              request/release via successive figures.
-            </h2>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <td>A :Request 100K</td>
-              </tr>
-              <tr>
-                <td>B :Request 400K</td>
-              </tr>
-              <tr>
-                <td>C :Request 40K</td>
-              </tr>
-              <tr>
-                <td>D :Request 60K</td>
-              </tr>
-              <tr>
-                <td>E :Request 30K</td>
-              </tr>
-              <tr>
-                <td>F :Request 20K</td>
-              </tr>
-              <tr>
-                <td>G :Request 42K</td>
-              </tr>
-              <tr>
-                <td>Release A</td>
-              </tr>
-              <tr>
-                <td>Release C</td>
-              </tr>
-              <tr>
-                <td>G : Request 20K</td>
-              </tr>
-              <tr>
-                <td>Release B</td>
-              </tr>
-            </table>
-            <p>
-              After memory is allocated to process G, how much internal
-              Fragmentation exists in the system?
-            </p>
-          </div>
-          <div class="solution">
-            <h3>solution :</h3>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <p>A : request 100K</p>
-
-                <td>1024K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>512K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>128K</td>
-                <td>128K</td>
-                <td>256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td>128K</td>
-                <td>256K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 28K</p>
-            <br />
-            <p>B : request 400K</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td>128K</td>
-                <td>256K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 112K</p>
-
-            <p>C : request 40K</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td>128K</td>
-                <td>256K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
-                <td>64K</td>
-                <td>256K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 24K</p>
-            <br />
-            <p>D : Request 60K</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td>256K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 4K</p>
-            <br />
-            <p>E : Request 30K</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td>128K</td>
-                <td>128K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td>64K</td>
-                <td>64K</td>
-                <td>128K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
-                <td>32K</td>
-                <td>64K</td>
-                <td>128K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 2K</p>
-            <br />
-            <p>F : request 20K</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
-                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
-                <td>64K</td>
-                <td>128K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 12K</p>
-            <br />
-            <p>G : request 42K</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td style="background-color: aqua">A = 128K</td>
-                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
-                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
-                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
-                <td>128K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation = 22K</p>
-            <br />
-            <p>Release A</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>128K</td>
-                <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
-                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
-                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
-                <td>128K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <p>Release C</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>128K</td>
-                <td>64K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
-                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
-                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
-                <td>128K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <p>G : request 20K</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>128K</td>
-                <td style="background-color: rgb(255, 45, 147)">G = 32K</td>
-                <td>32K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
-                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
-                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
-                <td>128K</td>
-                <td style="background-color: chartreuse">B = 512K</td>
-              </tr>
-            </table>
-            <p>Internal Fragmentation : 12K</p>
-            <br />
-            <p>Release B</p>
-            <table border="1" class="table table-bordered border-2 text-center">
-              <tr>
-                <td>128K</td>
-                <td style="background-color: rgb(255, 45, 147)">G = 32K</td>
-                <td>32K</td>
-                <td style="background-color: chocolate">D = 64K</td>
-                <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
-                <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
-                <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
-                <td>128K</td>
-                <td>512K</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <div id="question3">
-          <div class="question">
-            <h2>
-              Question 3 : Suppose the OS on your computer uses the
-              <a href="#defi">buddy system</a> for
-              <a href="/os/memory_management/memory_management_topics.html"
-                >memory management</a
-              >. Initially, the system has 1 megabyte (1024K) block of memory
-              available, which begins at address zero. Show the results of each
-              request/release via successive figures.
-            </h2>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <td>A :Request 62K</td>
-              </tr>
-              <tr>
-                <td>B :Request 112K</td>
-              </tr>
-              <tr>
-                <td>C :Request 52K</td>
-              </tr>
-              <tr>
-                <td>D :Request 60K</td>
-              </tr>
-              <tr>
-                <td>E :Request 245K</td>
-              </tr>
-              <tr>
-                <td>F :Request 64K</td>
-              </tr>
-              <tr>
-                <td>Release A</td>
-              </tr>
-              <tr>
-                <td>Release B</td>
-              </tr>
-              <tr>
-                <td>G : Request 40K</td>
-              </tr>
-            </table>
-            <p>
-              After memory is allocated to process G, how much internal
-              Fragmentation exists in the system?
-            </p>
-          </div>
-          <div class="solution">
-            <p>solution :</p>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/buddy system/main.jpg"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/buddy system/main.jpg"
-              />
-              <img
-                src="/assets/buddy system/main.jpg"
-                alt="Multilevel Feedback Queue Scheduling (MLFQ)"
-                title="Multilevel Feedback Queue Scheduling (MLFQ) explanation with question"
-                id="mlfq_def"
-              />
-            </picture>
-          </div>
+              <td>1024K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>512K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>128K</td>
+              <td>128K</td>
+              <td>256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>64K</td>
+              <td>64K</td>
+              <td>128K</td>
+              <td>256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>32K</td>
+              <td>32K</td>
+              <td>64K</td>
+              <td>128K</td>
+              <td>256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: cadetblue">A = 32K</td>
+              <td>32K</td>
+              <td>64K</td>
+              <td>128K</td>
+              <td>256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 4K</p>
+          <br />
+          <p>B : request 232K</p>
+          <table border="1" class="table text-center">
+            <tr>
+              <td style="background-color: cadetblue">A = 32K</td>
+              <td>32K</td>
+              <td>64K</td>
+              <td>128K</td>
+              <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 24K</p>
+          <br />
+          <p>C : request 60K</p>
+          <table border="1" class="table text-center">
+            <tr>
+              <td style="background-color: cadetblue">A = 32K</td>
+              <td>32K</td>
+              <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
+              <td>128K</td>
+              <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 4K</p>
+          <br />
+          <p>D : request 100K</p>
+          <table border="1" class="table text-center">
+            <tr>
+              <td style="background-color: cadetblue">A = 32K</td>
+              <td>32K</td>
+              <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
+              <td style="background-color: chocolate">D = 128K</td>
+              <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 28K</p>
+          <br />
+          <p>E : request 30K</p>
+          <table border="1" class="table text-center">
+            <tr>
+              <td style="background-color: cadetblue">A = 32K</td>
+              <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+              <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
+              <td style="background-color: chocolate">D = 128K</td>
+              <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 2K</p>
+          <br />
+          <p>Release A</p>
+          <table border="1" class="table text-center">
+            <tr>
+              <td>32K</td>
+              <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+              <td style="background-color: rgb(244, 119, 119)">C = 64K</td>
+              <td style="background-color: chocolate">D = 128K</td>
+              <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <br />
+          <p>Release C</p>
+          <table border="1" class="table text-center">
+            <tr>
+              <td>32K</td>
+              <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+              <td>64K</td>
+              <td style="background-color: chocolate">D = 128K</td>
+              <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <br />
+          <p>F : request 20K</p>
+          <table border="1" class="table text-center">
+            <tr>
+              <td style="background-color: rgba(118, 84, 255, 0.982)">
+                F = 32K
+              </td>
+              <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+              <td>64K</td>
+              <td style="background-color: chocolate">D = 128K</td>
+              <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 12K</p>
+          <br />
+          <p>G : request 48K</p>
+          <table border="1" class="table text-center">
+            <tr>
+              <td style="background-color: rgba(118, 84, 255, 0.982)">
+                F = 32K
+              </td>
+              <td style="background-color: rgb(76, 231, 120)">E = 32K</td>
+              <td style="background-color: chartreuse">G = 64K</td>
+              <td style="background-color: chocolate">D = 128K</td>
+              <td style="background-color: rgb(232, 140, 221)">B = 256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 16K</p>
+          <br />
         </div>
       </div>
-    </main>
-    <div id="down"></div>
+      <div id="question2">
+        <div class="question">
+          <h2>
+            Question 2 : Suppose the OS on your computer uses the
+            <a href="#defi">buddy system</a> for
+            <a href="/os/memory_management/memory_management_topics.html">memory management</a>. Initially, the system
+            has 1 megabyte (1024K) block of memory
+            available, which begins at address zero. Show the results of each
+            request/release via successive figures.
+          </h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <td>A :Request 100K</td>
+            </tr>
+            <tr>
+              <td>B :Request 400K</td>
+            </tr>
+            <tr>
+              <td>C :Request 40K</td>
+            </tr>
+            <tr>
+              <td>D :Request 60K</td>
+            </tr>
+            <tr>
+              <td>E :Request 30K</td>
+            </tr>
+            <tr>
+              <td>F :Request 20K</td>
+            </tr>
+            <tr>
+              <td>G :Request 42K</td>
+            </tr>
+            <tr>
+              <td>Release A</td>
+            </tr>
+            <tr>
+              <td>Release C</td>
+            </tr>
+            <tr>
+              <td>G : Request 20K</td>
+            </tr>
+            <tr>
+              <td>Release B</td>
+            </tr>
+          </table>
+          <p>
+            After memory is allocated to process G, how much internal
+            Fragmentation exists in the system?
+          </p>
+        </div>
+        <div class="solution">
+          <h3>solution :</h3>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <p>A : request 100K</p>
 
-    <!-- <script>
+              <td>1024K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>512K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>128K</td>
+              <td>128K</td>
+              <td>256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td>128K</td>
+              <td>256K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 28K</p>
+          <br />
+          <p>B : request 400K</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td>128K</td>
+              <td>256K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 112K</p>
+
+          <p>C : request 40K</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td>128K</td>
+              <td>256K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+              <td>64K</td>
+              <td>256K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 24K</p>
+          <br />
+          <p>D : Request 60K</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td>256K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 4K</p>
+          <br />
+          <p>E : Request 30K</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td>128K</td>
+              <td>128K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td>64K</td>
+              <td>64K</td>
+              <td>128K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+              <td>32K</td>
+              <td>64K</td>
+              <td>128K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 2K</p>
+          <br />
+          <p>F : request 20K</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+              <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+              <td>64K</td>
+              <td>128K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 12K</p>
+          <br />
+          <p>G : request 42K</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td style="background-color: aqua">A = 128K</td>
+              <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+              <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+              <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+              <td>128K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation = 22K</p>
+          <br />
+          <p>Release A</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>128K</td>
+              <td style="background-color: rgb(102, 107, 204)">C = 64K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+              <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+              <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+              <td>128K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <p>Release C</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>128K</td>
+              <td>64K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+              <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+              <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+              <td>128K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <p>G : request 20K</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>128K</td>
+              <td style="background-color: rgb(255, 45, 147)">G = 32K</td>
+              <td>32K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+              <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+              <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+              <td>128K</td>
+              <td style="background-color: chartreuse">B = 512K</td>
+            </tr>
+          </table>
+          <p>Internal Fragmentation : 12K</p>
+          <br />
+          <p>Release B</p>
+          <table border="1" class="table table-bordered border-2 text-center">
+            <tr>
+              <td>128K</td>
+              <td style="background-color: rgb(255, 45, 147)">G = 32K</td>
+              <td>32K</td>
+              <td style="background-color: chocolate">D = 64K</td>
+              <td style="background-color: rgb(255, 54, 54)">E = 32K</td>
+              <td style="background-color: rgb(202, 57, 255)">F = 32K</td>
+              <td style="background-color: rgb(255, 45, 147)">G = 64K</td>
+              <td>128K</td>
+              <td>512K</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="question3">
+        <div class="question">
+          <h2>
+            Question 3 : Suppose the OS on your computer uses the
+            <a href="#defi">buddy system</a> for
+            <a href="/os/memory_management/memory_management_topics.html">memory management</a>. Initially, the system
+            has 1 megabyte (1024K) block of memory
+            available, which begins at address zero. Show the results of each
+            request/release via successive figures.
+          </h2>
+          <table border="1" class="table table-bordered">
+            <tr>
+              <td>A :Request 62K</td>
+            </tr>
+            <tr>
+              <td>B :Request 112K</td>
+            </tr>
+            <tr>
+              <td>C :Request 52K</td>
+            </tr>
+            <tr>
+              <td>D :Request 60K</td>
+            </tr>
+            <tr>
+              <td>E :Request 245K</td>
+            </tr>
+            <tr>
+              <td>F :Request 64K</td>
+            </tr>
+            <tr>
+              <td>Release A</td>
+            </tr>
+            <tr>
+              <td>Release B</td>
+            </tr>
+            <tr>
+              <td>G : Request 40K</td>
+            </tr>
+          </table>
+          <p>
+            After memory is allocated to process G, how much internal
+            Fragmentation exists in the system?
+          </p>
+        </div>
+        <div class="solution">
+          <p>solution :</p>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/buddy system/main.jpg" />
+            <source media="(min-width:701px)" srcset="/assets/buddy system/main.jpg" />
+            <img src="/assets/buddy system/main.jpg" alt="Multilevel Feedback Queue Scheduling (MLFQ)"
+              title="Multilevel Feedback Queue Scheduling (MLFQ) explanation with question" id="mlfq_def" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="down"></div>
+
+  <!-- <script>
       window.onload = function () {
         const images = document.querySelectorAll(
           "img[data-src-mobile][data-src-desktop]"
@@ -782,5 +718,6 @@
         // }
       };
     </script> -->
-  </body>
+</body>
+
 </html>
