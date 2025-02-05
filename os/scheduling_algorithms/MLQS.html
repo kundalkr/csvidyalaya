@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script type="text/javascript" src="/js/src/alljs.min.js"></script>
   <meta charset="UTF-8" />
@@ -140,7 +141,7 @@
   <!-- upper and down button -->
   <div class="container">
     <h1 id="upper">
-      MULTILEVEL QUEUE Scheduling (MLQ) scheduling algorithm question
+      Multilevel Queue Scheduling (MLQ) scheduling algorithm question
     </h1>
 
     <button type="button" class="btn btn-success" style="z-index: 1111; position: fixed; right: 10vw; top: 9vh">
@@ -172,26 +173,12 @@
         <br /><br />
         <section>
           <h2>
-            what is Multilevel Queue Scheduling Algorithm In Operating System
-            ?
+            what is Multilevel Queue Scheduling Algorithm In Operating System ?
           </h2>
-
           <p>
-            In the Multilevel Queue Scheduling algorithm, processes are categorized into several queues based on certain
-            characteristics, like process priority or memory needs. Each queue employs its own scheduling algorithm,
-            which might be <a href="/os/scheduling_algorithms/fcfs.html">First-Come-First-Serve (FCFS)</a>, <a
-              href="/os/scheduling_algorithms/sjf1.html">Shortest Job First (SJF)</a>,or
-            <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a> depending on the nature of the processes
-            it contains. This algorithm is commonly utilized in situations where various types of processes must be
-            handled independently and efficiently.
+            In the Multilevel Queue Scheduling algorithm, processes are divided into multiple queues based on specific characteristics, such as priority or memory requirements. Each queue uses its own scheduling method, which could be <a href="/os/scheduling_algorithms/fcfs.html">First-Come-First-Serve (FCFS)</a>,  <a
+            href="/os/scheduling_algorithms/sjf1.html">Shortest Job First (SJF)</a>, or  <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>, depending on the types of processes it holds. This algorithm is often used in scenarios where different types of processes need to be managed separately and effectively.
           </p>
-          <!-- <img
-              alt="multilevel queue scheduling definiton | "
-              data-src-mobile="/assets/MLQ/MLQS DEFINITIO small.png"
-              data-src-desktop="/assets/MLQ/MLQS DEFINITION nig.png"
-              srcset=""
-            /> -->
-
           <picture>
             <source media="(max-width:700px)" srcset="/assets/MLQ/MLQS_DEFINITIO_small.png" />
             <source media="(min-width:701px)" srcset="/assets/MLQ/MLQS_DEFINITION_nig.png" />
@@ -207,13 +194,16 @@
               Step 1: Organize the processes into different queues based on their priority or type.
             </li>
             <li>
-              Step 2: Choose a scheduling algorithm for each queue that meets the specific needs of the processes it contains.
+              Step 2: Choose a scheduling algorithm for each queue that meets the specific needs of the processes it
+              contains.
             </li>
             <li>
-              Step 3: Establish the priority levels among the queues to decide which one should be prioritized when multiple queues have processes ready to execute.
+              Step 3: Establish the priority levels among the queues to decide which one should be prioritized when
+              multiple queues have processes ready to execute.
             </li>
             <li>
-              Step 4: When a process finishes its execution in its designated queue, it is removed; if not, it may be transferred to another queue according to the system's established rules.
+              Step 4: When a process finishes its execution in its designated queue, it is removed; if not, it may be
+              transferred to another queue according to the system's established rules.
             </li>
             <li>
               Step 5: Continue repeating these steps until all processes in every queue have been completed.
@@ -296,7 +286,12 @@
           </h2>
 
           <p>
-            Multilevel Queue Scheduling is especially advantageous in settings where various types of tasks need different scheduling approaches. By enabling the use of distinct  <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a> for each queue and supporting priority-based processing, it can achieve better performance than a single algorithm applied to all processes. This makes it ideal for systems that need rapid responses for certain types of tasks, as well as in multiuser environments, where prioritizing system tasks can enhance stability and responsiveness.
+            Multilevel Queue Scheduling is especially advantageous in settings where various types of tasks need
+            different scheduling approaches. By enabling the use of distinct <a
+              href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a> for each queue
+            and supporting priority-based processing, it can achieve better performance than a single algorithm applied
+            to all processes. This makes it ideal for systems that need rapid responses for certain types of tasks, as
+            well as in multiuser environments, where prioritizing system tasks can enhance stability and responsiveness.
           </p>
         </section>
         <section>
