@@ -306,12 +306,12 @@
           </table>
           <div id="question1">
             <div class="question">
-              <h2 id="fstque">
-                Question 1 : "Consider 3 processes arriving at time intervals
-                P1, P2, P3. Compute the average waiting time and turnaround time
-                using FCFS scheduling.?
-              </h2>
-
+              <h2>Question 1</h2>
+              <p>
+                find the average Turn Around Time and Waiting Time of following
+                processes using FCFS(FIRST COME FIRST SERVED) process scheduling
+                algorithm?
+              </p>
               <table border="1" class="table table-bordered">
                 <tr>
                   <th>Process</th>
@@ -321,17 +321,22 @@
                 <tr>
                   <td>P1</td>
                   <td>0</td>
-                  <td>4</td>
+                  <td>2</td>
                 </tr>
                 <tr>
                   <td>P2</td>
                   <td>2</td>
-                  <td>3</td>
+                  <td>4</td>
                 </tr>
                 <tr>
                   <td>P3</td>
                   <td>4</td>
-                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>5</td>
+                  <td>1</td>
                 </tr>
               </table>
             </div>
@@ -351,46 +356,55 @@
 
               <h4>Gantt Chart</h4>
               <img
-                alt="FCFS SCHEDULING | Question 1 Solution | Gantt Chart"
-                title="FCFS SCHEDULING | Question 1 Solution | Gantt Chart"
-                id="fcfs1"
+                alt="FCFS SCHEDULING | Question 10 Solution | Gantt Chart"
+                title="FCFS SCHEDULING | Question 10 Solution | Gantt Chart"
+                id="fcfs10"
                 srcset=""
               />
+              <picture>
+                <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q1.jpg" />
+                <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q1.jpg" />
+                <img alt="first-come-first-serve
+                               (fcfs) | Question 1 Solution | Gantt Chart Part 1" title="first-come-first-serve
+                                (fcfs) | Question 1 Solution | Gantt Chart Part 1" id="MLFQS1_2" />
+              </picture>
               <br />
 
-              <!-- <p>P1 (0-4) -> P2 (4-7) -> P3 (7-9)</p> -->
-
               <table border="1" class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th scope="col">Process</th>
+                <tr>
+                  <th>Process</th>
 
-                    <th scope="col">Completion Time</th>
-                    <th scope="col">Turn Around Time</th>
-                    <th scope="col">Waiting Time</th>
-                  </tr>
-                </thead>
-
+                  <th>Completion Time</th>
+                  <th>Turn Around Time</th>
+                  <th>Waiting Time</th>
+                </tr>
                 <tr>
                   <td>P1</td>
 
-                  <td>4</td>
-                  <td>4</td>
+                  <td>2</td>
+                  <td>2</td>
                   <td>0</td>
                 </tr>
                 <tr>
                   <td>P2</td>
 
-                  <td>7</td>
-                  <td>5</td>
-                  <td>2</td>
+                  <td>6</td>
+                  <td>4</td>
+                  <td>0</td>
                 </tr>
                 <tr>
                   <td>P3</td>
 
                   <td>9</td>
                   <td>5</td>
-                  <td>3</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+
+                  <td>10</td>
+                  <td>5</td>
+                  <td>4</td>
                 </tr>
               </table>
 
@@ -407,9 +421,12 @@
               </ul>
 
               <p>
-                Average Turn Around Time = (4 + 5 + 5) / 3 = 14 / 3 = 4.67 units
+                Average Turn Around Time = (2 + 4 + 5 + 5) / 4 = 16 / 4 = 4
+                units
               </p>
-              <p>Average Waiting Time = (0 + 2 + 3) / 3 = 5 / 3 = 1.67 units</p>
+              <p>
+                Average Waiting Time = (0 + 0 + 2 + 4) / 4 = 6 / 4 = 1.5 units
+              </p>
             </div>
           </div>
 
@@ -529,7 +546,8 @@
             <div class="question">
               <h2>Question 3</h2>
               <p>
-                Given 4 processes with arrival and burst times, calculate the Gantt chart, waiting time, and turnaround time using FCFS.?
+                Given 4 processes with arrival and burst times, calculate the
+                Gantt chart, waiting time, and turnaround time using FCFS.?
               </p>
               <table border="1" class="table table-bordered">
                 <tr>
@@ -769,7 +787,8 @@
             <div class="question">
               <h2>Question 5</h2>
               <p>
-                Given 4 processes with arrival and burst times, calculate the Gantt chart, waiting time, and turnaround time using FCFS.
+                Given 4 processes with arrival and burst times, calculate the
+                Gantt chart, waiting time, and turnaround time using FCFS.
               </p>
               <table border="1" class="table table-bordered">
                 <tr>
@@ -1359,12 +1378,12 @@
           <!-- question 10 start -->
           <div id="question10">
             <div class="question">
-              <h2>Question 10</h2>
-              <p>
-                find the average Turn Around Time and Waiting Time of following
-                processes using FCFS(FIRST COME FIRST SERVED) process scheduling
-                algorithm?
-              </p>
+              <h2 id="fstque">
+                Question 10 : "Consider 3 processes arriving at time intervals
+                P1, P2, P3. Compute the average waiting time and turnaround time
+                using FCFS scheduling.?
+              </h2>
+
               <table border="1" class="table table-bordered">
                 <tr>
                   <th>Process</th>
@@ -1374,22 +1393,17 @@
                 <tr>
                   <td>P1</td>
                   <td>0</td>
-                  <td>2</td>
+                  <td>4</td>
                 </tr>
                 <tr>
                   <td>P2</td>
                   <td>2</td>
-                  <td>4</td>
+                  <td>3</td>
                 </tr>
                 <tr>
                   <td>P3</td>
                   <td>4</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>P4</td>
-                  <td>5</td>
-                  <td>1</td>
+                  <td>2</td>
                 </tr>
               </table>
             </div>
@@ -1409,49 +1423,46 @@
 
               <h4>Gantt Chart</h4>
               <img
-                alt="FCFS SCHEDULING | Question 10 Solution | Gantt Chart"
-                title="FCFS SCHEDULING | Question 10 Solution | Gantt Chart"
-                id="fcfs10"
+                alt="FCFS SCHEDULING | Question 1 Solution | Gantt Chart"
+                title="FCFS SCHEDULING | Question 1 Solution | Gantt Chart"
+                id="fcfs1"
                 srcset=""
               />
               <br />
-              <!-- <p>P1 (0-2) -> P2 (2-6) -> P3 (6-9) -> P4 (9-10)</p> -->
+
+              <!-- <p>P1 (0-4) -> P2 (4-7) -> P3 (7-9)</p> -->
 
               <table border="1" class="table table-bordered">
-                <tr>
-                  <th>Process</th>
+                <thead>
+                  <tr>
+                    <th scope="col">Process</th>
 
-                  <th>Completion Time</th>
-                  <th>Turn Around Time</th>
-                  <th>Waiting Time</th>
-                </tr>
+                    <th scope="col">Completion Time</th>
+                    <th scope="col">Turn Around Time</th>
+                    <th scope="col">Waiting Time</th>
+                  </tr>
+                </thead>
+
                 <tr>
                   <td>P1</td>
 
-                  <td>2</td>
-                  <td>2</td>
+                  <td>4</td>
+                  <td>4</td>
                   <td>0</td>
                 </tr>
                 <tr>
                   <td>P2</td>
 
-                  <td>6</td>
-                  <td>4</td>
-                  <td>0</td>
+                  <td>7</td>
+                  <td>5</td>
+                  <td>2</td>
                 </tr>
                 <tr>
                   <td>P3</td>
 
                   <td>9</td>
                   <td>5</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>P4</td>
-
-                  <td>10</td>
-                  <td>5</td>
-                  <td>4</td>
+                  <td>3</td>
                 </tr>
               </table>
 
@@ -1468,19 +1479,14 @@
               </ul>
 
               <p>
-                Average Turn Around Time = (2 + 4 + 5 + 5) / 4 = 16 / 4 = 4
-                units
+                Average Turn Around Time = (4 + 5 + 5) / 3 = 14 / 3 = 4.67 units
               </p>
-              <p>
-                Average Waiting Time = (0 + 0 + 2 + 4) / 4 = 6 / 4 = 1.5 units
-              </p>
+              <p>Average Waiting Time = (0 + 2 + 3) / 3 = 5 / 3 = 1.67 units</p>
             </div>
           </div>
           <div class="d-grid gap-2 col-6 mx-auto">
             <button class="btn btn-primary" id="down" type="button">
-              <a href="fcfs2.html"
-                >for question 11 to 20 click here</a
-              >
+              <a href="fcfs2.html">for question 11 to 20 click here</a>
             </button>
           </div>
           <br /><br />
