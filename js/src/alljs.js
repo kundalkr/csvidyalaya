@@ -7,7 +7,6 @@ headu.appendChild(external_css);
 
 window.onload = function () {
   let bodu = document.querySelector("body");
-
   let extra_tags = document.createElement("script");
   extra_tags.src = "/js/src/tags_script.min.js";
   extra_tags.setAttribute("type", "module");

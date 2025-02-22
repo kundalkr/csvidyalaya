@@ -103,27 +103,37 @@
             empty stack leads to underflow.
           </li>
         </ul>
+        <div id="question1">
+          <div class="question">
+            <h3 id="fstque">
+              1. Convert the infix expression (a-b/c)*(a/c-d) to prefix
+              expression.
+            </h3>
+          </div>
+          <div class="solution">
+            <p><strong>Answer:</strong></p>
+            <p>
+              To convert the infix expression to prefix, we first convert it to
+              postfix and then reverse it. The given infix expression is:
+            </p>
+            <br />
+            (a-b/c)*(a/c-d).
+            <ul>
+              <li>
+                Step 1: Apply operator precedence and associativity rules.
+              </li>
+              <li>Step 2: The postfix expression is: abc/-ac/d-*.</li>
+              <li>
+                Step 3: Reverse the postfix to get the prefix expression:
+                *-a/bc-/acd.
+              </li>
+            </ul>
 
-        <h3 id="fstque">
-          1. Convert the infix expression (a-b/c)*(a/c-d) to prefix expression.
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>
-          To convert the infix expression to prefix, we first convert it to
-          postfix and then reverse it. The given infix expression is:
-        </p>
-        <br />
-        (a-b/c)*(a/c-d).
-        <ul>
-          <li>Step 1: Apply operator precedence and associativity rules.</li>
-          <li>Step 2: The postfix expression is: abc/-ac/d-*.</li>
-          <li>
-            Step 3: Reverse the postfix to get the prefix expression:
-            *-a/bc-/acd.
-          </li>
-        </ul>
-
-        <p>Thus, the prefix expression is <strong> *-a/bc-/acd </strong>.</p>
+            <p>
+              Thus, the prefix expression is <strong> *-a/bc-/acd </strong>.
+            </p>
+          </div>
+        </div>
 
         <h3>2. Evaluate the postfix expression "5 6 2 + * 12 4 / -".</h3>
         <p><strong>Answer:</strong></p>
@@ -471,6 +481,6 @@
     </div>
     <br /><br />
 
- 
+    <script type="module" src="commonthings.min.js"></script>
   </body>
 </html>

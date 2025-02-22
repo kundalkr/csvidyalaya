@@ -190,73 +190,77 @@
             than the other.
           </p>
         </div>
-        <h3 id="fstque">
-          69. Convert the following prefix expression to postfix: * + A B - C D
-        </h3>
-        <p><strong>Answer:</strong></p>
-        <p>
-          The given prefix expression is * + A B - C D. In order to convert it
-          to a postfix expression, we follow the reverse process of the prefix
-          to postfix conversion.
-          <br /><br />
-          Step 1: Reverse the prefix expression: D C - B A + *
-          <br /><br />
-          Step 2: Use a stack to evaluate the expression from left to right.
-          <br /><br />
-          Result: A B + C D - *.
 
-
-
-          <section>
-            <table border="1" cellpadding="5">
-              <thead>
-                <tr>
-                  <th>Step</th>
-                  <th>Element</th>
-                  <th>Stack Content</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>D</td>
-                  <td>D</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>C</td>
-                  <td>C, D</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>-</td>
-                  <td>C D -</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>B</td>
-                  <td>B, C D -</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>A</td>
-                  <td>A, B, C D -</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>+</td>
-                  <td>A B +, C D -</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>*</td>
-                  <td>A B + C D - *</td>
-                </tr>
-              </tbody>
-            </table>
-            
-          </section>
-        </p>
+        <div id="question69">
+          <div class="question">
+            <h3 id="fstque">
+              69. Convert the following prefix expression to postfix: * + A B -
+              C D
+            </h3>
+          </div>
+          <div class="solution">
+            <p><strong>Answer:</strong></p>
+            <p>
+              The given prefix expression is * + A B - C D. In order to convert
+              it to a postfix expression, we follow the reverse process of the
+              prefix to postfix conversion.
+              <br /><br />
+              Step 1: Reverse the prefix expression: D C - B A + *
+              <br /><br />
+              Step 2: Use a stack to evaluate the expression from left to right.
+              <br /><br />
+              Result: A B + C D - *.
+            </p>
+            <section>
+              <table border="1" cellpadding="5">
+                <thead>
+                  <tr>
+                    <th>Step</th>
+                    <th>Element</th>
+                    <th>Stack Content</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>D</td>
+                    <td>D</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>C</td>
+                    <td>C, D</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>-</td>
+                    <td>C D -</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>B</td>
+                    <td>B, C D -</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>A</td>
+                    <td>A, B, C D -</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>+</td>
+                    <td>A B +, C D -</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>*</td>
+                    <td>A B + C D - *</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </div>
 
         <h3>70. Convert the following postfix expression to prefix: AB+CD-*</h3>
         <p><strong>Answer:</strong></p>
@@ -537,6 +541,6 @@
       </button>
     </div>
     <br /><br />
-
+    <script type="module" src="commonthings.min.js"></script>
   </body>
 </html>

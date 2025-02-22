@@ -4,7 +4,20 @@
     <script type="text/javascript" src="/js/src/alljs.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Array address question + solution </title>
+    <style>
+      #q22 {
+        height: 400px;
+        width: 730px;
+        object-fit: contain;
+      }
+      @media (width<=770px) {
+        #q22 {
+          height: 180px;
+          width: 400px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- upper and down button -->
@@ -39,7 +52,7 @@
     <main>
       <div class="container">
         <!-- question 11 start -->
-         
+
         <h3>
           11. Find the address of X[20] if the base address of a one-dimensional
           array X is 5000, each element occupies 4 bytes, and the array indexing
@@ -243,9 +256,36 @@
           is the number of elements in the array.
         </p>
         <!-- question 21 end -->
+        <div id="question22">
+          <div class="question">
+            Let the base address of one dimensional Linear array (LA) is 1000
+            and each element of the array occupies 4 bytes. find the address of
+            LA(41)
+          </div>
+          <div class="solution">
+            <p>solution :</p>
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/DSA/base_address_question.jpg"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/DSA/base_address_question.jpg"
+              />
+              <img
+                loading="lazy"
+                src="/assets/DSA/base_address_question.jpg"
+                alt="find the base address of this postfix expression | solution"
+                title="find the base address of this postfix expression |explained solution"
+                id="q22"
+              />
+            </picture>
+          </div>
+        </div>
       </div>
     </main>
-<div id="down"></div>
-
+    <div id="down"></div>
+    <script type="module" src="commonthings.min.js" ></script>
   </body>
 </html>

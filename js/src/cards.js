@@ -1,4 +1,4 @@
-var octal_to_another = document.getElementsByClassName("octal_to_another");
+let octal_to_another = document.getElementsByClassName("octal_to_another");
 
 for (let index = 0; index <= octal_to_another.length; index++) {
   octal_to_another[index].innerHTML = ` <br>

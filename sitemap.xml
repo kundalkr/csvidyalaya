@@ -99,7 +99,7 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/fcfs.html</loc>
-     <image:image>
+    <image:image>
       <image:loc>https://csvidyalaya.com/assets/fcfs/fcfs1_q1.jpg</image:loc>
     </image:image>
     <image:image>
@@ -160,8 +160,17 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/Arrays.html</loc>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/DSA/base_address_formulaw.jpg</image:loc>
+    </image:image>
     <lastmod>2025-02-12</lastmod>
-
+  </url>
+  <url>
+    <loc>https://csvidyalaya.com/dsa_in_c/array2.html</loc>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/DSA/base_address_question.jpg</image:loc>
+    </image:image>
+    <lastmod>2025-02-12</lastmod>
   </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/stack1.html</loc>
@@ -171,7 +180,13 @@
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/stack2.html</loc>
     <lastmod>2025-02-12</lastmod>
-
+  </url>
+  <url>
+    <loc>https://csvidyalaya.com/dsa_in_c/stack3.html</loc>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/DSA/dsa_q2.jpg</image:loc>
+    </image:image>
+    <lastmod>2025-02-12</lastmod>
   </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/infixtoprefix.html</loc>
@@ -270,20 +285,9 @@
     <image:image>
       <image:loc>https://csvidyalaya.com/assets/buddy system/buddy_system_comp.png</image:loc>
     </image:image>
-
     <lastmod>2025-02-12</lastmod>
-
   </url>
-  <url>
-    <loc>https://csvidyalaya.com/dsa_in_c/array2.html</loc>
-    <lastmod>2025-02-12</lastmod>
 
-  </url>
-  <url>
-    <loc>https://csvidyalaya.com/dsa_in_c/stack3.html</loc>
-    <lastmod>2025-02-12</lastmod>
-
-  </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/queue2.html</loc>
     <lastmod>2025-02-12</lastmod>
