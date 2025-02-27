@@ -116,6 +116,35 @@
     </script>
 
     <style>
+      @media (width<=700px) {
+        .row {
+          display: flex;
+          justify-content: center;
+        }
+        a.btn {
+          font-size: x-small;
+          padding: 6px;
+        }
+        .card {
+          padding: 1px;
+        }
+        h1 {
+          font-size: large;
+          font-family: "Playwrite CU", cursive;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          text-align: center;
+        }
+        h5 {
+          font-size: small;
+        }
+        .card-body {
+          .card-text {
+            font-size: small;
+          }
+        }
+      }
       #headinger {
         h1 {
           font-size: large;
@@ -299,7 +328,6 @@
         </div>
       </div>
     </div>
-
     <!-- cards end -->
     <!-- bootstrap link -->
     <br /><br />
@@ -308,33 +336,21 @@
         const images = document.querySelectorAll(
           "img[data-src-mobile][data-src-desktop]"
         );
-
         const isMobile = window.innerWidth < 700;
-
         images.forEach((img) => {
           img.src = isMobile
             ? img.getAttribute("data-src-mobile")
             : img.getAttribute("data-src-desktop");
-
           img.removeAttribute("data-src-mobile");
           img.removeAttribute("data-src-desktop");
         });
-
-        let imgi = document.querySelector("img#def1");
-        if (window.innerWidth >= 770) {
-          imgi.setAttribute("src", "/assets/MLFQS DEFINITION BIG.png");
-        } else {
-          imgi.setAttribute("src", "/assets/MLFQS DEFINITION SMALL.png");
-        }
+        // let imgi = document.querySelector("img#def1");
+        // if (window.innerWidth >= 770) {
+        //   imgi.setAttribute("src", "/assets/MLFQS DEFINITION BIG.png");
+        // } else {
+        //   imgi.setAttribute("src", "/assets/MLFQS DEFINITION SMALL.png");
+        // }
       };
-
-      // window.onload = function () {
-      //   let ganttcharts = document.getElementsByTagName("img");
-      //   for (let index = 0; index < ganttcharts.length; index++) {
-      //     ganttcharts[index].src = "assets/os_logo.png";
-      //   }
-      // };
     </script>
-    <!-- bootstrap links -->
   </body>
 </html>
