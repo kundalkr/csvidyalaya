@@ -116,36 +116,6 @@
     </script>
 
     <style>
-      @media (width<=700px) {
-        .row {
-          display: flex;
-          justify-content: center;
-          margin: 10px 10px;
-        }
-        a.btn {
-          font-size: x-small;
-          padding: 6px;
-        }
-        .card {
-          padding: 1px;
-        }
-        h1 {
-          font-size: large;
-          font-family: "Playwrite CU", cursive;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-          text-align: center;
-        }
-        h5 {
-          font-size: small;
-        }
-        .card-body {
-          .card-text {
-            font-size: small;
-          }
-        }
-      }
       #headinger {
         h1 {
           font-size: large;
@@ -214,6 +184,20 @@
           border: 1px solid red;
         }
       }
+
+      @media (width<=750px) {
+        #al_card {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+        }
+      }
+      #al_card {
+         display: flex;
+ 
+         flex-direction: row;
+        }
     </style>
   </head>
   <body>
@@ -297,6 +281,8 @@
             >
           </div>
         </div>
+      </div>
+      <div id="al_card">
         <div class="card bg-info" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Software Engineering</h5>
@@ -325,8 +311,6 @@
           </div>
         </div>
       </div>
-
-   
     </div>
     <!-- cards end -->
     <!-- bootstrap link -->
