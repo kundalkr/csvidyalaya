@@ -40,6 +40,19 @@
       name="twitter:description"
       content="Master software engineering concepts with our in-depth questions and answers, designed for interviews and exams."
     />
+    <style>
+      #rad_mod {
+        height: 200px;
+        width: 630px;
+        object-fit: contain;
+      }
+      @media (width<=770px) {
+        #rad_mod {
+          height: 180px;
+          width: 400px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -58,6 +71,23 @@
             </div>
             <div class="solution">
               <p>Solution :</p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/software engineering/final_RAD.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/software engineering/final_RAD.jpg"
+                />
+                <img
+                  loading="lazy"
+                  src="/assets/software engineering/final_RAD.jpg"
+                  alt="how RAD model works"
+                  title="working picture of Rad model"
+                  id="rad_mod"
+                />
+              </picture>
               <p>
                 The rapid application development model is a software
                 development methodology that focuses on building prototypes
@@ -78,8 +108,9 @@
                   feedback
                 </li>
                 <li>
-                  <i>Construction : </i>develop and refine the software based on
-                  user Requirement
+                  <i>Construction : </i>develop and refine the
+                  <a href="https://en.wikipedia.org/wiki/Software">Software</a>
+                  based on user Requirement
                 </li>
                 <li><i>Cutover : </i>Test , implement and train users</li>
               </ol>
@@ -112,7 +143,7 @@
                   change
                 </li>
                 <li>when technical risk is not high</li>
-                <li>when uiser's feedback is readily available</li>
+                <li>when user's feedback is readily available</li>
                 <li>when clients need to be involved in the development</li>
                 <li>when time-to-market is critical</li>
                 <li>when application needs to be developed quickly</li>
