@@ -5,6 +5,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
   <url>
     <loc>https://csvidyalaya.com/</loc>
     <image:image>
@@ -22,23 +23,18 @@
     <loc>https://csvidyalaya.com/Software_Engineering/software_engineering_topic.html</loc>
     <lastmod>2025-03-02</lastmod>
   </url>
-
   <url>
     <loc>https://csvidyalaya.com/previous_year_question(PYQ)/PYQ.html</loc>
     <lastmod>2025-03-02</lastmod>
   </url>
-
   <url>
     <loc>https://csvidyalaya.com/previous_year_question(PYQ)/OS_question.html</loc>
     <lastmod>2025-03-02</lastmod>
   </url>
-
   <url>
     <loc>https://csvidyalaya.com/previous_year_question(PYQ)/software_engineering.html</loc>
     <lastmod>2025-03-02</lastmod>
   </url>
-
-
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html</loc>
     <image:image>

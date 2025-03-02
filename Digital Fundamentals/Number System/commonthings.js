@@ -28,8 +28,6 @@ modal.innerHTML = `
             </div>
         </div>
     </div>
-    
-
 `;
 
 add_body(modal);
