@@ -10,28 +10,28 @@ int_links.innerHTML = `
         <div class="card-header" id="this">Also Try These Question</div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <a href="fcfs.html">practice first come first serve questions</a>
+            <a target="_blank" href="fcfs.html">practice first come first serve questions</a>
           </li>
           <li class="list-group-item">
-            <a href="sjf1.html">practice shortest job first(SJF) question</a>
+            <a target="_blank" href="sjf1.html">practice shortest job first(SJF) question</a>
           </li>
            <li class="list-group-item">
-            <a href="sjf2.html">practice Shortest Remaining Time First (SRTF) question</a>
+            <a target="_blank" href="sjf2.html">practice Shortest Remaining Time First (SRTF) question</a>
           </li>
           <li class="list-group-item">
-            <a href="mlfqs.html">practice Multilevel feedback queue scheduling question</a>
+            <a target="_blank" href="mlfqs.html">practice Multilevel feedback queue scheduling question</a>
           </li>
           <li class="list-group-item">
-            <a href="MLQS.html">practice Multilevel queue scheduling question</a>
+            <a target="_blank" href="MLQS.html">practice Multilevel queue scheduling question</a>
           </li>
           <li class="list-group-item">
-            <a href="ps1.html">practice priority scheduling question</a>
+            <a target="_blank" href="ps1.html">practice priority scheduling question</a>
           </li>
           <li class="list-group-item">
-            <a href="ps2.html">practice peemptive priority scheduling question</a>
+            <a target="_blank" href="ps2.html">practice peemptive priority scheduling question</a>
           </li>
               <li class="list-group-item">
-            <a href="RR1.html">practice Round Robin scheduling question</a>
+            <a target="_blank" href="RR1.html">practice Round Robin scheduling question</a>
           </li>
         </ul>
       </div>
@@ -65,28 +65,28 @@ modal.innerHTML = `
                 <div class="modal-body">
                        <ul class="list-group list-group-flush">
           <li class="list-group-item">
-            <a href="fcfs.html">practice first come first serve questions</a>
+            <a target="_blank" href="fcfs.html">practice first come first serve questions</a>
           </li>
           <li class="list-group-item">
-            <a href="sjf1.html">practice shortest job first(SJF) question</a>
+            <a target="_blank" href="sjf1.html">practice shortest job first(SJF) question</a>
           </li>
            <li class="list-group-item">
-            <a href="sjf2.html">practice Shortest Remaining Time First (SRTF) question</a>
+            <a target="_blank" href="sjf2.html">practice Shortest Remaining Time First (SRTF) question</a>
           </li>
           <li class="list-group-item">
-            <a href="mlfqs.html">practice Multilevel feedback queue scheduling question</a>
+            <a target="_blank" href="mlfqs.html">practice Multilevel feedback queue scheduling question</a>
           </li>
           <li class="list-group-item">
-            <a href="MLQS.html">practice Multilevel queue scheduling question</a>
+            <a target="_blank" href="MLQS.html">practice Multilevel queue scheduling question</a>
           </li>
           <li class="list-group-item">
-            <a href="ps1.html">practice priority scheduling question</a>
+            <a target="_blank" href="ps1.html">practice priority scheduling question</a>
           </li>
           <li class="list-group-item">
-            <a href="ps2.html">practice peemptive priority scheduling question</a>
+            <a target="_blank" href="ps2.html">practice peemptive priority scheduling question</a>
           </li>
               <li class="list-group-item">
-            <a href="RR1.html">practice Round Robin scheduling question</a>
+            <a target="_blank" href="RR1.html">practice Round Robin scheduling question</a>
           </li>
         </ul>
                 </div>
