@@ -1,4 +1,4 @@
-import { add_css,add_body } from "/js/src/utilities.min.js";
+import { add_css, add_body } from "/js/src/utilities.min.js";
 add_css(
   "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black; }}"
 );
@@ -96,14 +96,16 @@ modal.innerHTML = `
 `;
 
 add_body(modal);
-let modal_script = document.createElement("script");
-modal_script.innerHTML = ` 
-        function openModal() {
-            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-            myModal.show();
-        }
-            setTimeout(openModal, 10000);
-            document.getElementById('btn_closeder').addEventListener('click',() => setTimeout(openModal, 12 * 60 * 1000));
-   `;
 
-add_body(modal_script);
+window.onload = function () {
+  let modal_script = document.createElement("script");
+  modal_script.innerHTML = ` 
+          function openModal() {
+              var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+              myModal.show();
+          }
+              setTimeout(openModal, 10000);
+              document.getElementById('btn_closeder').addEventListener('click',() => setTimeout(openModal, 12 * 60 * 1000));
+     `;
+  add_body(modal_script);
+};
