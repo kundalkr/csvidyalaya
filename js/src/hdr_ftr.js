@@ -1,4 +1,4 @@
-import { add_head} from "/js/src/utilities.min.js";
+import { add_head } from "/js/src/utilities.min.js";
 let header = document.createElement("div");
 header.innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFD1DC;">
@@ -271,6 +271,53 @@ footer.innerHTML = `
             </li>
           </ul>
         </div>
+         <!-- previous year question -->  
+
+         <div class="col mb-3" id="foot">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">Previous Year Question(PYQs)</li>
+            <li class="nav-item mb-2">
+              <a
+                href="/previous_year_question(PYQ)/PYQ.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="computer science previous year question"
+                >CS (Previous Year Question)</a
+              >
+            </li>
+
+            <li class="nav-item mb-2">
+              <a
+                href="/previous_year_question(PYQ)/OS_question.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="operating system question"
+                >OS PYQs</a
+              >
+            </li>
+
+            <li class="nav-item mb-2">
+              <a
+                href="/previous_year_question(PYQ)/software_engineering.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="all types of software engineering question"
+                >software engineering question</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/WSN/wireless_sensor_network.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                title="question related to wireless sensor network"
+                >Wireless sensor networks (WSN)</a
+              >
+            </li>
+          </ul>
+        </div>
+
+         <!-- previous year question End  -->
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">Operating System Question</li>

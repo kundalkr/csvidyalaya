@@ -1,59 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <script type="text/javascript" src="/js/src/alljs.min.js"></script>
 
-    <!-- Title Tag -->
-    <title>
-      Infix to Postfix and Postfix to Infix Conversion Questions - DSA Practice
-    </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Meta Description -->
-    <meta
-      name="description"
-      content="Comprehensive collection of questions on infix to postfix and postfix to infix conversions, frequently asked in DSA. Ideal for interviews and exams."
-    />
+  <!-- Title Tag -->
+  <title>
+    Infix to Postfix and Postfix to Infix Conversion Questions - DSA Practice
+  </title>
 
-    <!-- Meta Keywords -->
-    <meta
-      name="keywords"
-      content="Infix to Postfix Questions, Postfix to Infix Conversion, DSA Questions, Conversion Problems, Data Structures and Algorithms, DSA Interview Questions, DSA Practice"
-    />
+  <!-- Meta Description -->
+  <meta name="description" **
+    content="Comprehensive collection of questions on infix to postfix and postfix to infix conversions, frequently asked in DSA. Ideal for interviews and exams." />
 
-    <!-- Robots Meta Tag -->
-    <meta name="robots" content="index, follow" />
+  <!-- Meta Keywords -->
+  <meta name="keywords"
+    content="Infix to Postfix Questions, Postfix to Infix Conversion, DSA Questions, Conversion Problems, Data Structures and Algorithms, DSA Interview Questions, DSA Practice" />
 
-    <!-- Open Graph Tags -->
-    <meta
-      property="og:title"
-      content="Infix to Postfix and Postfix to Infix Conversion Questions - DSA Practice"
-    />
-    <meta
-      property="og:description"
-      content="Explore all questions on infix to postfix and postfix to infix conversions, tailored for DSA learners and interview preparation."
-    />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:url"
-      content="https://csvidyalaya.com/dsa_in_c/infixtopostfix.html"
-    />
-    <!-- <meta property="og:image" content="https://yourwebsite.com/images/infix-postfix-thumbnail.jpg"> -->
+  <!-- Robots Meta Tag -->
+  <meta name="robots" content="index, follow" />
 
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Infix to Postfix and Postfix to Infix Conversion Questions - DSA Practice"
-    />
-    <meta
-      name="twitter:description"
-      content="Master infix and postfix conversions with these top DSA questions, perfect for exams and interviews."
-    />
-    <!-- <meta name="twitter:image" content="https://yourwebsite.com/images/infix-postfix-thumbnail.jpg"> -->
-    <script type="application/ld+json">
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Infix to Postfix and Postfix to Infix Conversion Questions - DSA Practice" />
+  <meta property="og:description"
+    content="Explore all questions on infix to postfix and postfix to infix conversions, tailored for DSA learners and interview preparation." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://csvidyalaya.com/dsa_in_c/infixtopostfix.html" />
+  <!-- <meta property="og:image" content="https://yourwebsite.com/images/infix-postfix-thumbnail.jpg"> -->
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Infix to Postfix and Postfix to Infix Conversion Questions - DSA Practice" />
+  <meta name="twitter:description"
+    content="Master infix and postfix conversions with these top DSA questions, perfect for exams and interviews." />
+  <!-- <meta name="twitter:image" content="https://yourwebsite.com/images/infix-postfix-thumbnail.jpg"> -->
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebPage",
@@ -120,525 +104,493 @@
         ]
       }
     </script>
-    <style>
+  <style>
+    #inf_to_postf49,
+    #inf_to_postf50 {
+      width: 600px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (width<=770px) {
+
       #inf_to_postf49,
       #inf_to_postf50 {
-        width: 600px;
         height: auto;
-        object-fit: contain;
+        width: 400px;
       }
-      @media (width<=770px) {
-        #inf_to_postf49,
-        #inf_to_postf50 {
-          height: auto;
-          width: 400px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <!-- upper and down button -->
-    <div class="container">
-      <h1 id="upper">Infix And Postfix Conversion Questions</h1>
+    }
+  </style>
+</head>
 
-      <p>
-        There are 21 question related to Infix And Postfix conversion for
-        student, so that the students can practice the questions well
-      </p>
-    </div>
-    <button
-      type="button"
-      class="btn btn-success"
-      style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
-    >
-      <a href="#down"
-        ><span class="material-icons" style="color: antiquewhite">
-          arrow_downward
-        </span></a
-      >
-    </button>
-    <button
-      type="button"
-      class="btn btn-success"
-      style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
-    >
-      <a href="#upper"
-        ><span class="material-icons" style="color: antiquewhite">
-          arrow_upward
-        </span></a
-      >
-    </button>
+<body>
+  <!-- upper and down button -->
+  <div class="container">
+    <h1 id="upper">Infix And Postfix Conversion Questions</h1>
 
-    <!-- upper and down button end-->
-    <br /><br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">
-        <a href="stack3.html" style="color: antiquewhite"
-          >back to question no 36 - 48
-        </a>
-      </button>
+    <p>
+      There are 21 question related to Infix And Postfix conversion for
+      student, so that the students can practice the questions well
+    </p>
+  </div>
+  <button type="button" class="btn btn-success" style="z-index: 1111; position: fixed; right: 10vw; top: 9vh">
+    <a href="#down"><span class="material-icons" style="color: antiquewhite">
+        arrow_downward
+      </span></a>
+  </button>
+  <button type="button" class="btn btn-success" style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw">
+    <a href="#upper"><span class="material-icons" style="color: antiquewhite">
+        arrow_upward
+      </span></a>
+  </button>
+
+  <!-- upper and down button end-->
+  <br /><br />
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button">
+      <a href="stack3.html" style="color: antiquewhite">back to question no 36 - 48
+      </a>
+    </button>
+  </div>
+  <br /><br />
+  <div class="container">
+    <div class="card" style="width: 18rem">
+      <div class="card-header">Also try these question</div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <a href="infixtoprefix.html">practice prefix to infix</a>
+        </li>
+        <li class="list-group-item">
+          <a href="infixtoprefix.html">practice infix to prefix</a>
+        </li>
+        <li class="list-group-item">
+          <a href="prefixtopostfix.html">practice prefix to postfix</a>
+        </li>
+        <li class="list-group-item">
+          <a href="Arrays.html">array questions</a>
+        </li>
+        <li class="list-group-item">
+          <a href="/os/operating_System_Topics.html">operating system questions</a>
+        </li>
+      </ul>
     </div>
-    <br /><br />
+  </div>
+  <br />
+  <main>
     <div class="container">
-      <div class="card" style="width: 18rem">
-        <div class="card-header">Also try these question</div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <a href="infixtoprefix.html">practice prefix to infix</a>
-          </li>
-          <li class="list-group-item">
-            <a href="infixtoprefix.html">practice infix to prefix</a>
-          </li>
-          <li class="list-group-item">
-            <a href="prefixtopostfix.html">practice prefix to postfix</a>
-          </li>
-          <li class="list-group-item">
-            <a href="Arrays.html">array questions</a>
-          </li>
-          <li class="list-group-item">
-            <a href="/os/operating_System_Topics.html"
-              >operating system questions</a
-            >
-          </li>
-        </ul>
+      <div>
+        <br />
+        <a href="#fstque" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Jump To Question</a>
+        <br /><br />
+
+        <h2>
+          Infix and Postfix Conversion in <a href="https://csvidyalaya.com/dsa_in_c/dsa_in_c_topic.html">Data Structures
+            and Algorithms (DSA)</a>
+        </h2>
+        <section>
+          <h3>What is Infix and Postfix Notation?</h3>
+          <p>
+            <strong>Infix Notation:</strong> This is the conventional way of
+            writing expressions, where operators are placed between operands.
+            For example, <code>A + B</code>.
+          </p>
+          <p>
+            <strong>Postfix Notation:</strong> Also known as Reverse Polish
+            Notation, in postfix notation, operators are placed after the
+            operands. For example, the infix expression
+            <code>A + B</code> would be written as <code>AB+</code> in
+            postfix.
+          </p>
+        </section>
+
+        <section>
+          <h3>Advantages and Disadvantages of Infix and Postfix Notation</h3>
+
+          <p><strong>Infix:</strong></p>
+          <ul>
+            <li>
+              <strong>Advantages:</strong> Familiar and easy for humans to
+              read and write.
+            </li>
+            <li>
+              <strong>Disadvantages:</strong> Requires precedence rules and
+              parentheses to determine the order of operations, which can be
+              complex to parse in programming.
+            </li>
+          </ul>
+
+          <p><strong>Postfix:</strong></p>
+          <ul>
+            <li>
+              <strong>Advantages:</strong> Eliminates the need for
+              parentheses, making it easier for computers to evaluate
+              expressions.
+            </li>
+            <li>
+              <strong>Disadvantages:</strong> Less intuitive for humans to
+              interpret compared to infix notation.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>
+            Why is There a Need to Convert Infix to Postfix and Postfix to
+            Infix?
+          </h3>
+          <p>
+            Converting infix expressions to postfix is necessary because
+            postfix notation simplifies the computation process by eliminating
+            ambiguity related to operator precedence. Additionally, <a
+              href="https://simple.wikipedia.org/wiki/Postfix_notation"> postfix
+              expressions</a> are easily processed by stack-based algorithms.
+            Converting back to infix can make expressions more readable for
+            humans.
+          </p>
+        </section>
+        <section>
+          <h3>Method to Convert Infix to Postfix</h3>
+          <ul>
+            <li>
+              Initialize an empty stack for operators and an empty list for
+              the output.
+            </li>
+            <li>Scan the infix expression from left to right.</li>
+            <li>
+              If the character is an operand, add it to the output list.
+            </li>
+            <li>
+              If the character is an operator:
+              <ul>
+                <li>
+                  Pop operators from the stack with higher or equal precedence
+                  and add them to the output list.
+                </li>
+                <li>Push the current operator onto the stack.</li>
+              </ul>
+            </li>
+            <li>
+              If the character is an opening parenthesis, push it onto the
+              stack.
+            </li>
+            <li>
+              If the character is a closing parenthesis, pop operators from
+              the stack to the output list until an opening parenthesis is
+              encountered.
+            </li>
+            <li>
+              After scanning the expression, pop any remaining operators on
+              the stack to the output list.
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Method to Convert Postfix to Infix</h3>
+          <ul>
+            <li>Initialize an empty stack.</li>
+            <li>Scan the postfix expression from left to right.</li>
+            <li>If the character is an operand, push it onto the stack.</li>
+            <li>
+           
+              If the character is an operator:
+              <ul>
+                <li>Pop the two topmost elements from the <a
+                    href="https://csvidyalaya.com/dsa_in_c/stack1.html">stack</a>.</li>
+                <li>
+                  Form a new expression by placing the operator between the
+                  two operands.
+                </li>
+                <li>Push the new expression back onto the stack.</li>
+              </ul>
+            </li>
+            <li>
+              After scanning the expression, the stack should contain the
+              complete <a href="https://simple.wikipedia.org/wiki/Infix_notation">infix expression.</a>
+            </li>
+          </ul>
+        </section>
       </div>
-    </div>
-    <br />
-    <main>
-      <div class="container">
-        <div>
-          <br />
-          <a
-            href="#fstque"
-            class="btn btn-primary btn-lg active"
-            role="button"
-            aria-pressed="true"
-            >Jump To Question</a
-          >
-          <br /><br />
-
-          <h2>
-            Infix and Postfix Conversion in Data Structures and Algorithms (DSA)
-          </h2>
-          <section>
-            <h3>What is Infix and Postfix Notation?</h3>
-            <p>
-              <strong>Infix Notation:</strong> This is the conventional way of
-              writing expressions, where operators are placed between operands.
-              For example, <code>A + B</code>.
-            </p>
-            <p>
-              <strong>Postfix Notation:</strong> Also known as Reverse Polish
-              Notation, in postfix notation, operators are placed after the
-              operands. For example, the infix expression
-              <code>A + B</code> would be written as <code>AB+</code> in
-              postfix.
-            </p>
-          </section>
-
-          <section>
-            <h3>Advantages and Disadvantages of Infix and Postfix Notation</h3>
-
-            <p><strong>Infix:</strong></p>
-            <ul>
-              <li>
-                <strong>Advantages:</strong> Familiar and easy for humans to
-                read and write.
-              </li>
-              <li>
-                <strong>Disadvantages:</strong> Requires precedence rules and
-                parentheses to determine the order of operations, which can be
-                complex to parse in programming.
-              </li>
-            </ul>
-
-            <p><strong>Postfix:</strong></p>
-            <ul>
-              <li>
-                <strong>Advantages:</strong> Eliminates the need for
-                parentheses, making it easier for computers to evaluate
-                expressions.
-              </li>
-              <li>
-                <strong>Disadvantages:</strong> Less intuitive for humans to
-                interpret compared to infix notation.
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>
-              Why is There a Need to Convert Infix to Postfix and Postfix to
-              Infix?
-            </h3>
-            <p>
-              Converting infix expressions to postfix is necessary because
-              postfix notation simplifies the computation process by eliminating
-              ambiguity related to operator precedence. Additionally, postfix
-              expressions are easily processed by stack-based algorithms.
-              Converting back to infix can make expressions more readable for
-              humans.
-            </p>
-          </section>
-          <section>
-            <h3>Method to Convert Infix to Postfix</h3>
-            <ul>
-              <li>
-                Initialize an empty stack for operators and an empty list for
-                the output.
-              </li>
-              <li>Scan the infix expression from left to right.</li>
-              <li>
-                If the character is an operand, add it to the output list.
-              </li>
-              <li>
-                If the character is an operator:
-                <ul>
-                  <li>
-                    Pop operators from the stack with higher or equal precedence
-                    and add them to the output list.
-                  </li>
-                  <li>Push the current operator onto the stack.</li>
-                </ul>
-              </li>
-              <li>
-                If the character is an opening parenthesis, push it onto the
-                stack.
-              </li>
-              <li>
-                If the character is a closing parenthesis, pop operators from
-                the stack to the output list until an opening parenthesis is
-                encountered.
-              </li>
-              <li>
-                After scanning the expression, pop any remaining operators on
-                the stack to the output list.
-              </li>
-            </ul>
-          </section>
-
-          <section>
-            <h3>Method to Convert Postfix to Infix</h3>
-            <ul>
-              <li>Initialize an empty stack.</li>
-              <li>Scan the postfix expression from left to right.</li>
-              <li>If the character is an operand, push it onto the stack.</li>
-              <li>
-                If the character is an operator:
-                <ul>
-                  <li>Pop the two topmost elements from the stack.</li>
-                  <li>
-                    Form a new expression by placing the operator between the
-                    two operands.
-                  </li>
-                  <li>Push the new expression back onto the stack.</li>
-                </ul>
-              </li>
-              <li>
-                After scanning the expression, the stack should contain the
-                complete infix expression.
-              </li>
-            </ul>
-          </section>
-        </div>
-        <div class="question1" id="fstque">
-          <div class="question">
-            <h3>
-              49. Convert the infix expression (A + B) * (C + D) to postfix
-              expression.
-            </h3>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>
-              To convert the infix expression (A + B) * (C + D) to postfix, we
-              follow the precedence of operators and associativity.
-            </p>
-            <p>Step-by-step conversion:</p>
-            <p>
-              1. (A + B) becomes AB+<br />2. (C + D) becomes CD+<br />3. Now the
-              entire expression becomes AB+CD+*.
-            </p>
-            <p>The postfix expression is: <strong>AB+CD+*</strong></p>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/DSA/infix_and_postfix/inf_to_post_mob_49.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/DSA/infix_and_postfix/inf_to_post_comp_49.png"
-              />
-              <img
-                alt="infix and postfix conversion | Question 1 Solution | step-by-step solution"
-                id="inf_to_postf49"
-                title="infix and postfix conversion solution "
-              />
-            </picture>
-          </div>
-        </div>
-        <div class="question">
-          <div class="question">
-            <h3>
-              50. Convert the infix expression A * (B + C) / D to postfix
-              expression.
-            </h3>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>Step-by-step conversion:</p>
-            <p>
-              1. A * (B + C) becomes ABC+*<br />2. Now, divide the result by D.
-            </p>
-            <p>The postfix expression is: <strong>ABC+*D/</strong></p>
-
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/DSA/infix_and_postfix/inf_to_post_mob_50.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/DSA/infix_and_postfix/inf_to_post_comp_50.png"
-              />
-              <img
-                alt="infix and postfix conversion | Question 50 Solution | step-by-step solution"
-                title="infix and postfix conversion solution "
-                id="inf_to_postf50"
-              />
-            </picture>
-          </div>
-        </div>
-        <div class="question">
-          <h3>51. Convert the postfix expression AB+C* to infix expression.</h3>
-          <p><strong>Answer:</strong></p>
-          <p>
-            In postfix, operands appear before operators, so the order of
-            operations is important.
-          </p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. A and B are operands, and + is an operator, so combine them as (A
-            + B).<br />2. C is the next operand, and * is the operator, so
-            multiply (A + B) with C.
-          </p>
-          <p>The infix expression is: <strong>(A + B) * C</strong></p>
-        </div>
+      <div class="question1" id="fstque">
         <div class="question">
           <h3>
-            52. Convert the infix expression (A / B) + (C * D) - E to postfix
+            49. Convert the infix expression (A + B) * (C + D) to postfix
             expression.
           </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. (A / B) becomes AB/<br />2. (C * D) becomes CD*<br />3. Now add
-            AB/ and CD*<br />4. Finally, subtract E.
-          </p>
-          <p>The postfix expression is: <strong>AB/CD*+E-</strong></p>
         </div>
-        <div class="question">
-          <h3>
-            53. Convert the postfix expression AB+CD+*E- to infix expression.
-          </h3>
+        <div class="solution">
           <p><strong>Answer:</strong></p>
+          <p>
+            To convert the infix expression (A + B) * (C + D) to postfix, we
+            follow the precedence of operators and associativity.
+          </p>
           <p>Step-by-step conversion:</p>
           <p>
-            1. AB+ becomes (A + B)<br />2. CD+ becomes (C + D)<br />3. Now
-            multiply (A + B) with (C + D) to get (A + B) * (C + D)<br />4.
-            Subtract E from the result.
+            1. (A + B) becomes AB+<br />2. (C + D) becomes CD+<br />3. Now the
+            entire expression becomes AB+CD+*.
           </p>
-          <p>
-            The infix expression is: <strong>((A + B) * (C + D)) - E</strong>
-          </p>
-        </div>
-        <div class="question">
-          <h3>
-            54. Convert the infix expression A * B + C / D to postfix
-            expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. A * B becomes AB*<br />2. C / D becomes CD/<br />3. Now add AB*
-            and CD/.
-          </p>
-          <p>The postfix expression is: <strong>AB*CD/+</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            55. Convert the postfix expression AB*C+D/ to infix expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. AB* becomes (A * B)<br />2. C and D are operands, and / is the
-            operator, so combine them as (C / D)<br />3. Now add (A * B) and (C
-            / D).
-          </p>
-          <p>The infix expression is: <strong>(A * B) + (C / D)</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            56. Convert the infix expression (A - B) * (C + D) / E to postfix
-            expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. (A - B) becomes AB-<br />2. (C + D) becomes CD+<br />3. Multiply
-            AB- with CD+, then divide by E.
-          </p>
-          <p>The postfix expression is: <strong>AB-CD+*E/</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            57. Convert the postfix expression AB-CD+*E/ to infix expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. AB- becomes (A - B)<br />2. CD+ becomes (C + D)<br />3. Multiply
-            (A - B) with (C + D), then divide by E.
-          </p>
-          <p>
-            The infix expression is: <strong>((A - B) * (C + D)) / E</strong>
-          </p>
-        </div>
-        <div class="question">
-          <h3>
-            58. Convert the infix expression A + B * (C - D) to postfix
-            expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>1. B * (C - D) becomes BCD-*<br />2. Now add A to the result.</p>
-          <p>The postfix expression is: <strong>ABCD-*+</strong></p>
-        </div>
-
-        <div class="question">
-          <h3>
-            59. Convert the postfix expression ABCD-*+ to infix expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>1. BCD-* becomes B * (C - D)<br />2. Now add A to the result.</p>
-          <p>The infix expression is: <strong>A + (B * (C - D))</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            60. Convert the infix expression A * B + C - D to postfix
-            expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>1. A * B becomes AB*<br />2. Now add C, and then subtract D.</p>
-          <p>The postfix expression is: <strong>AB*C+D-</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            61. Convert the postfix expression AB*C+D- to infix expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. AB* becomes (A * B)<br />2. Add C to the result, then subtract D.
-          </p>
-          <p>The infix expression is: <strong>(A * B) + C - D</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            62. Convert the infix expression A + (B * C) - D to postfix
-            expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. B * C becomes BC*<br />2. Now add A to BC* and then subtract D.
-          </p>
-          <p>The postfix expression is: <strong>ABC*+D-</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            63. Convert the postfix expression ABC*+D- to infix expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. BC* becomes (B * C)<br />2. Add A to (B * C), then subtract D.
-          </p>
-          <p>The infix expression is: <strong>A + (B * C) - D</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            64. Convert the infix expression (A - B) * (C / D) + E to postfix
-            expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. (A - B) becomes AB-<br />2. (C / D) becomes CD/<br />3. Multiply
-            AB- with CD/ and then add E.
-          </p>
-          <p>The postfix expression is: <strong>AB-CD/*E+</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            65. Convert the postfix expression AB-CD/*E+ to infix expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. AB- becomes (A - B)<br />2. CD/ becomes (C / D)<br />3. Multiply
-            (A - B) with (C / D), then add E.
-          </p>
-          <p>
-            The infix expression is: <strong>((A - B) * (C / D)) + E</strong>
-          </p>
-        </div>
-        <div class="question">
-          <h3>
-            66. Convert the infix expression A * (B + C) - D / E to postfix
-            expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. (B + C) becomes BC+<br />2. Multiply A with BC+, then divide D by
-            E and subtract.
-          </p>
-          <p>The postfix expression is: <strong>ABC+*DE/-</strong></p>
-        </div>
-        <div class="question">
-          <h3>
-            67. Convert the postfix expression ABC+*DE/- to infix expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. BC+ becomes (B + C)<br />2. Multiply A with (B + C), then
-            subtract (D / E).
-          </p>
-          <p>
-            The infix expression is: <strong>(A * (B + C)) - (D / E)</strong>
-          </p>
-        </div>
-        <div class="question">
-          <h3>
-            68. Convert the infix expression A / B + (C * D) - E to postfix
-            expression.
-          </h3>
-          <p><strong>Answer:</strong></p>
-          <p>Step-by-step conversion:</p>
-          <p>
-            1. A / B becomes AB/<br />2. C * D becomes CD*<br />3. Add AB/ and
-            CD*, then subtract E.
-          </p>
-          <p>The postfix expression is: <strong>AB/CD*+E-</strong></p>
+          <p>The postfix expression is: <strong>AB+CD+*</strong></p>
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/DSA/infix_and_postfix/inf_to_post_mob_49.png" />
+            <source media="(min-width:701px)" srcset="/assets/DSA/infix_and_postfix/inf_to_post_comp_49.png" />
+            <img alt="infix and postfix conversion | Question 1 Solution | step-by-step solution" id="inf_to_postf49"
+              title="infix and postfix conversion solution " />
+          </picture>
         </div>
       </div>
-    </main>
-    <!-- 
+      <div class="question">
+        <div class="question">
+          <h3>
+            50. Convert the infix expression A * (B + C) / D to postfix
+            expression.
+          </h3>
+        </div>
+        <div class="solution">
+          <p><strong>Answer:</strong></p>
+          <p>Step-by-step conversion:</p>
+          <p>
+            1. A * (B + C) becomes ABC+*<br />2. Now, divide the result by D.
+          </p>
+          <p>The postfix expression is: <strong>ABC+*D/</strong></p>
+
+          <picture>
+            <source media="(max-width:700px)" srcset="/assets/DSA/infix_and_postfix/inf_to_post_mob_50.png" />
+            <source media="(min-width:701px)" srcset="/assets/DSA/infix_and_postfix/inf_to_post_comp_50.png" />
+            <img alt="infix and postfix conversion | Question 50 Solution | step-by-step solution"
+              title="infix and postfix conversion solution " id="inf_to_postf50" />
+          </picture>
+        </div>
+      </div>
+      <div class="question">
+        <h3>51. Convert the postfix expression AB+C* to infix expression.</h3>
+        <p><strong>Answer:</strong></p>
+        <p>
+          In postfix, operands appear before operators, so the order of
+          operations is important.
+        </p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. A and B are operands, and + is an operator, so combine them as (A
+          + B).<br />2. C is the next operand, and * is the operator, so
+          multiply (A + B) with C.
+        </p>
+        <p>The infix expression is: <strong>(A + B) * C</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          52. Convert the infix expression (A / B) + (C * D) - E to postfix
+          expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. (A / B) becomes AB/<br />2. (C * D) becomes CD*<br />3. Now add
+          AB/ and CD*<br />4. Finally, subtract E.
+        </p>
+        <p>The postfix expression is: <strong>AB/CD*+E-</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          53. Convert the postfix expression AB+CD+*E- to infix expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. AB+ becomes (A + B)<br />2. CD+ becomes (C + D)<br />3. Now
+          multiply (A + B) with (C + D) to get (A + B) * (C + D)<br />4.
+          Subtract E from the result.
+        </p>
+        <p>
+          The infix expression is: <strong>((A + B) * (C + D)) - E</strong>
+        </p>
+      </div>
+      <div class="question">
+        <h3>
+          54. Convert the infix expression A * B + C / D to postfix
+          expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. A * B becomes AB*<br />2. C / D becomes CD/<br />3. Now add AB*
+          and CD/.
+        </p>
+        <p>The postfix expression is: <strong>AB*CD/+</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          55. Convert the postfix expression AB*C+D/ to infix expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. AB* becomes (A * B)<br />2. C and D are operands, and / is the
+          operator, so combine them as (C / D)<br />3. Now add (A * B) and (C
+          / D).
+        </p>
+        <p>The infix expression is: <strong>(A * B) + (C / D)</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          56. Convert the infix expression (A - B) * (C + D) / E to postfix
+          expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. (A - B) becomes AB-<br />2. (C + D) becomes CD+<br />3. Multiply
+          AB- with CD+, then divide by E.
+        </p>
+        <p>The postfix expression is: <strong>AB-CD+*E/</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          57. Convert the postfix expression AB-CD+*E/ to infix expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. AB- becomes (A - B)<br />2. CD+ becomes (C + D)<br />3. Multiply
+          (A - B) with (C + D), then divide by E.
+        </p>
+        <p>
+          The infix expression is: <strong>((A - B) * (C + D)) / E</strong>
+        </p>
+      </div>
+      <div class="question">
+        <h3>
+          58. Convert the infix expression A + B * (C - D) to postfix
+          expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>1. B * (C - D) becomes BCD-*<br />2. Now add A to the result.</p>
+        <p>The postfix expression is: <strong>ABCD-*+</strong></p>
+      </div>
+
+      <div class="question">
+        <h3>
+          59. Convert the postfix expression ABCD-*+ to infix expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>1. BCD-* becomes B * (C - D)<br />2. Now add A to the result.</p>
+        <p>The infix expression is: <strong>A + (B * (C - D))</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          60. Convert the infix expression A * B + C - D to postfix
+          expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>1. A * B becomes AB*<br />2. Now add C, and then subtract D.</p>
+        <p>The postfix expression is: <strong>AB*C+D-</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          61. Convert the postfix expression AB*C+D- to infix expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. AB* becomes (A * B)<br />2. Add C to the result, then subtract D.
+        </p>
+        <p>The infix expression is: <strong>(A * B) + C - D</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          62. Convert the infix expression A + (B * C) - D to postfix
+          expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. B * C becomes BC*<br />2. Now add A to BC* and then subtract D.
+        </p>
+        <p>The postfix expression is: <strong>ABC*+D-</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          63. Convert the postfix expression ABC*+D- to infix expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. BC* becomes (B * C)<br />2. Add A to (B * C), then subtract D.
+        </p>
+        <p>The infix expression is: <strong>A + (B * C) - D</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          64. Convert the infix expression (A - B) * (C / D) + E to postfix
+          expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. (A - B) becomes AB-<br />2. (C / D) becomes CD/<br />3. Multiply
+          AB- with CD/ and then add E.
+        </p>
+        <p>The postfix expression is: <strong>AB-CD/*E+</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          65. Convert the postfix expression AB-CD/*E+ to infix expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. AB- becomes (A - B)<br />2. CD/ becomes (C / D)<br />3. Multiply
+          (A - B) with (C / D), then add E.
+        </p>
+        <p>
+          The infix expression is: <strong>((A - B) * (C / D)) + E</strong>
+        </p>
+      </div>
+      <div class="question">
+        <h3>
+          66. Convert the infix expression A * (B + C) - D / E to postfix
+          expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. (B + C) becomes BC+<br />2. Multiply A with BC+, then divide D by
+          E and subtract.
+        </p>
+        <p>The postfix expression is: <strong>ABC+*DE/-</strong></p>
+      </div>
+      <div class="question">
+        <h3>
+          67. Convert the postfix expression ABC+*DE/- to infix expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. BC+ becomes (B + C)<br />2. Multiply A with (B + C), then
+          subtract (D / E).
+        </p>
+        <p>
+          The infix expression is: <strong>(A * (B + C)) - (D / E)</strong>
+        </p>
+      </div>
+      <div class="question">
+        <h3>
+          68. Convert the infix expression A / B + (C * D) - E to postfix
+          expression.
+        </h3>
+        <p><strong>Answer:</strong></p>
+        <p>Step-by-step conversion:</p>
+        <p>
+          1. A / B becomes AB/<br />2. C * D becomes CD*<br />3. Add AB/ and
+          CD*, then subtract E.
+        </p>
+        <p>The postfix expression is: <strong>AB/CD*+E-</strong></p>
+      </div>
+    </div>
+  </main>
+  <!-- 
     <div class="container">
       <div class="card" style="width: 18rem">
         <div class="card-header">Also try these question</div>
@@ -664,23 +616,21 @@
       </div>
     </div> -->
 
-    <br /><br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" id="down" type="button">
-        <a href="stack3.html" style="color: antiquewhite"
-          >back to question no 36 - 48
-        </a>
-      </button>
-    </div>
-    <br /><br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-success" id="down" type="button">
-        <a href="prefixtopostfix.html" style="color: antiquewhite"
-          >click here for next 69 to 88 question</a
-        >
-      </button>
-    </div>
-    <br /><br />
-    <script type="module" src="commonthings.min.js" ></script>
-  </body>
+  <br /><br />
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" id="down" type="button">
+      <a href="stack3.html" style="color: antiquewhite">back to question no 36 - 48
+      </a>
+    </button>
+  </div>
+  <br /><br />
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-success" id="down" type="button">
+      <a href="prefixtopostfix.html" style="color: antiquewhite">click here for next 69 to 88 question</a>
+    </button>
+  </div>
+  <br /><br />
+  <script type="module" src="commonthings.min.js"></script>
+</body>
+
 </html>
