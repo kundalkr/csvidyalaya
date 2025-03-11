@@ -1,4 +1,4 @@
-import {add_body} from "/js/src/utilities.min.js";
+import { add_body } from "/js/src/utilities.min.js";
 
 let int_links = document.createElement("div");
 int_links.style.border = "1px solid red";
@@ -38,7 +38,7 @@ for (let index = 0; index <= questions.length; index++) {
 }
 let modal = document.createElement("div");
 modal.innerHTML = `
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">

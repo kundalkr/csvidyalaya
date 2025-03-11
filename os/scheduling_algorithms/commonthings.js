@@ -55,7 +55,7 @@ for (let index = 0; index < sche_topics.length; index++) {
 
 let modal = document.createElement("div");
 modal.innerHTML = `
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel">
+      <div class="modal fade" id="myModal" tabindex="-1" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
