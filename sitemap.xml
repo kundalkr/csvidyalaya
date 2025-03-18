@@ -17,7 +17,7 @@
     <image:image>
       <image:loc>https://csvidyalaya.com/assets/logo/DIGITAL_FUNDAMENTAL_LOGO_BIG.png</image:loc>
     </image:image>
-        <lastmod>2025-03-10</lastmod>
+    <lastmod>2025-03-10</lastmod>
   </url>
   <url>
     <loc>https://csvidyalaya.com/Software_Engineering/software_engineering_topic.html</loc>
@@ -35,7 +35,7 @@
     <loc>https://csvidyalaya.com/previous_year_question(PYQ)/software_engineering.html</loc>
     <lastmod>2025-03-10</lastmod>
   </url>
-    <url>
+  <url>
     <loc>https://csvidyalaya.com/WSN/wireless_sensor_network.html</loc>
     <lastmod>2025-03-10</lastmod>
   </url>
@@ -214,7 +214,6 @@
       <image:loc>https://csvidyalaya.com/assets/DSA/infix_and_prefix/inf_to_pref_comp_21.png</image:loc>
     </image:image>
     <lastmod>2025-03-10</lastmod>
-
   </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/infixtopostfix.html</loc>
@@ -280,7 +279,6 @@
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/fcfs2.html</loc>
     <lastmod>2025-03-10</lastmod>
-
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/scheduling_algorithms/RR2.html</loc>
@@ -289,6 +287,18 @@
   </url>
   <url>
     <loc>https://csvidyalaya.com/os/Deadlocks/Bankers_Algorithms.html</loc>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/bankers_algo/1_final.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/bankers_algo/2_final.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/bankers_algo/3_final.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://csvidyalaya.com/assets/bankers_algo/4_final.jpg</image:loc>
+    </image:image>
     <lastmod>2025-03-10</lastmod>
 
   </url>
