@@ -17,73 +17,22 @@
     />
     <meta name="author" content="Kundal Kumar" />
 
-
     <style>
-      #MLFQS1_1,
-      #MLFQS1_2,
-      #MLFQS1_3,
-      #MLFQS2_1,
-      #MLFQS2_2,
-      #MLFQS2_3,
-      #MLFQS2_4 {
-        height: 180px;
+      #final_1_1,
+      #final_1_2,
+      #final_1_3,
+      #final_1_4 {
+        height: auto;
         width: 630px;
-        object-fit: none;
+        object-fit: contain;
       }
-
-      #MLFQS1_1 {
-        object-position: -55px -31px;
-      }
-      #MLFQS1_2 {
-        object-position: -60px -269px;
-      }
-      #MLFQS1_3 {
-        object-position: -52px -495px;
-      }
-      #MLFQS2_1 {
-        object-position: -36px -1296px;
-      }
-      #MLFQS2_2 {
-        object-position: -30px -1514px;
-      }
-      #MLFQS2_3 {
-        object-position: -54px -1734px;
-      }
-      #MLFQS2_4 {
-        object-position: -42px -1946px;
-      }
-
       @media (width<=770px) {
-        #MLFQS1_1,
-        #MLFQS1_2,
-        #MLFQS1_3,
-        #MLFQS2_1,
-        #MLFQS2_2,
-        #MLFQS2_3,
-        #MLFQS2_4 {
-          height: 150px;
+        #final_1_1,
+        #final_1_2,
+        #final_1_3,
+        #final_1_4 {
+          height: auto;
           width: 400px;
-        }
-        #MLFQS1_1 {
-          object-position: -32px -698px;
-        }
-        #MLFQS1_2 {
-          object-position: -41px -874px;
-        }
-        #MLFQS1_3 {
-          object-position: -47px -1061px;
-        }
-        #MLFQS2_1 {
-          object-position: -73px -2200px;
-        }
-        #MLFQS2_2 {
-          object-position: -82px -2380px;
-        }
-        #MLFQS2_3 {
-          object-position: -76px -2596px;
-        }
-        #MLFQS2_4 {
-          object-position: -54px -2803px;
         }
       }
     </style>
@@ -170,7 +119,9 @@
             </li>
           </ul>
 
-          <h2>What are the Advantages and Disadvantages of Banker's Algorithm</h2>
+          <h2>
+            What are the Advantages and Disadvantages of Banker's Algorithm
+          </h2>
           <table border="1" class="table table-bordered">
             <tr>
               <th>Advantages</th>
@@ -333,11 +284,112 @@
             <p>Available = Resources - Σ (allocation)</p>
             <p>Need = maximum - Allocation</p>
             <p>
-              No , it is not in safe state <br />
-              the all safe sequences are : <br />
+              It is in safe state <br />
+              the safe sequences are : <br />
+            </p>
+            <div style="border: 2px solid green; text-align: center;">
+              <p>
+                after assigning the resources to any process we do this
+                calculation for finding the available resources
+              </p>
+              <p>available = available + Allocation[process that you assign]</p>
+              <p>or</p>
+              <p>
+                [new available resources] = [available resource before
+                assigning] + [value of process at allocation time].
+              </p>
+
+              <p>
+                we assign the available resources to P2 then available resource
+                is
+              </p>
+              <p>new available resources = (0,2,1,1) + (2,0,1,2) = (2,2,2,3)</p>
+            </div>
+            <br />
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/bankers_algo/1_final.jpg"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/bankers_algo/1_final.jpg"
+              />
+
+              <img
+                loading="lazy"
+                src="/assets/bankers_algo/1_final.jpg"
+                alt="bankers algorithms 1st question solution"
+                title="bankers algorithms questions solution"
+                id="final_1_1"
+              />
+            </picture>
+            <br />
+            <p>
+              after assigning the resources to process P2 we do this calculation
+            </p>
+            <p>
+              available = available + Allocation[P2] = (0,2,1,1) + (2,0,1,2) =
+              (2,2,2,3)
             </p>
 
-            <p>(1): P1 > P6 > P4 > P5 > P2 > P3</p>
+            <br />
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/bankers_algo/2_final.jpg"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/bankers_algo/2_final.jpg"
+              />
+
+              <img
+                loading="lazy"
+                src="/assets/bankers_algo/2_final.jpg"
+                alt="bankers algorithms 1st question solution"
+                title="bankers algorithms questions solution"
+                id="final_1_2"
+              /> </picture
+            ><br />
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/bankers_algo/3_final.jpg"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/bankers_algo/3_final.jpg"
+              />
+
+              <img
+                loading="lazy"
+                src="/assets/bankers_algo/3_final.jpg"
+                alt="bankers algorithms 1st question solution"
+                title="bankers algorithms questions solution"
+                id="final_1_3"
+              />
+            </picture>
+            <br />
+            <picture>
+              <source
+                media="(max-width:700px)"
+                srcset="/assets/bankers_algo/4_final.jpg"
+              />
+              <source
+                media="(min-width:701px)"
+                srcset="/assets/bankers_algo/4_final.jpg"
+              />
+
+              <img
+                loading="lazy"
+                src="/assets/bankers_algo/4_final.jpg"
+                alt="bankers algorithms 1st question solution"
+                title="bankers algorithms questions solution"
+                id="final_1_4"
+              />
+            </picture>
+            <!-- <p>(1): P1 > P6 > P4 > P5 > P2 > P3</p> -->
             <table border="1" class="table table-bordered">
               <tr>
                 <th colspan="5" style="text-align: center">Maximum Demand</th>
@@ -514,7 +566,5 @@
         <!-- <h2>Available</h2> -->
       </div>
     </main>
-
-
   </body>
 </html>
