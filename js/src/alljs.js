@@ -25,6 +25,7 @@ headu.appendChild(header_footer);
 function c() {
   document.getElementById("sidebar").style.display = "block";
 }
+
 function d() {
   document.getElementById("sidebar").style.display = "none";
-}
+};
