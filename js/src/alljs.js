@@ -5,7 +5,7 @@ external_css.setAttribute("type", "module");
 headu.appendChild(external_css);
 
 window.onload = function () {
-  if (!window.location.href.startsWith("http://127.0.0.1:/")) {
+  if (!window.location.href.startsWith("http://127.0.0.1")||!window.location.href.startsWith("127.0.0.1:5500")) {
     let bodu = document.querySelector("body");
     let extra_tags = document.createElement("script");
     extra_tags.src = "/js/src/tags_script.min.js";
