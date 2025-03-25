@@ -2,7 +2,6 @@ let headu = document.querySelector("head");
 let external_css = document.createElement("script");
 external_css.src = "/js/src/externalcss.min.js";
 external_css.setAttribute("type", "module");
-// external_css.async = !0;
 headu.appendChild(external_css);
 
 window.onload = function () {
@@ -15,13 +14,11 @@ window.onload = function () {
     bodu.appendChild(extra_tags);
   }
 };
-
 let header_footer = document.createElement("script");
 header_footer.src = "/js/src/hdr_ftr.min.js";
 header_footer.setAttribute("type", "module");
 header_footer.async = !0;
 headu.appendChild(header_footer);
-
 function c() {
   document.getElementById("sidebar").style.display = "block";
 }
@@ -29,3 +26,6 @@ function c() {
 function d() {
   document.getElementById("sidebar").style.display = "none";
 };
+function name(params) {
+  
+}
