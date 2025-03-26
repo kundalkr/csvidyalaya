@@ -13,7 +13,6 @@ export function adding_div_child(params) {
   divs.innerHTML = `${params}`;
 }
 
-
 export function add_body(elmnt) {
   document.querySelector("body").appendChild(elmnt);
 }
