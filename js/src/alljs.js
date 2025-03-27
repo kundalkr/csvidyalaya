@@ -14,6 +14,7 @@ window.onload = function () {
     bodu.appendChild(extra_tags);
   }
 };
+
 let header_footer = document.createElement("script");
 header_footer.src = "/js/src/hdr_ftr.min.js";
 header_footer.setAttribute("type", "module");
