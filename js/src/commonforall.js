@@ -46,7 +46,7 @@ modal2.innerHTML = `
                         href="/dsa_in_c/dsa_in_c_topic.html"
                         class="btn btn-secondary"
                         role="button"
-                        >DSA</a
+                        >Data Structure And Algorithms</a
                       >
                     </div>         
                     <br />     <br />
