@@ -93,7 +93,7 @@ modal_script2.innerHTML = `
               var myModal = new bootstrap.Modal(document.getElementById('myModal'));
               myModal.show();
           }
-              setTimeout(openModal, 8000);
+              setTimeout(openModal, 15000);
               document.getElementById('btn_closeder').addEventListener('click',() => setTimeout(openModal, 12 * 60 * 1000));
      `;
 add_body(modal_script2);
