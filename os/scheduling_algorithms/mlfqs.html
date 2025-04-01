@@ -97,82 +97,7 @@
         } */
     }
   </style>
-  <!-- <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"
-        },
-        "headline": "MLFQ Scheduling: Questions and Solutions on TAT, Gantt Chart, and Waiting Time",
-        "description": "Explore MLFQ scheduling concepts with step-by-step solutions for calculating Turnaround Time (TAT), Gantt Charts, and Waiting Time. Perfect for students and professionals.",
-        "image": "",
-        "author": {
-          "@type": "Person",
-          "name": "Kundal Kumar",
-          "url": "https://csvidyalaya.com/anotherpage/about.html"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "csvidyalaya",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://csvidyalaya.com/assets/logo/main_Logo.jpg"
-          }
-        },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://csvidyalaya.com/assets/MLFQ/MLFQS DEFINITION BIG.png",
-          "description": "Multilevel Feedback Queue Scheduling (MLFQ) Algorithm Questions"
-        },
-        "datePublished": "2024-12-24",
-        "dateModified": "2025-1-14",
-        "keywords": "MLFQ Scheduling, multilevel feedback queue scheduling algorithm, Multi-Level Feedback Queue Scheduling Question, TAT Calculation, Gantt Chart, Waiting Time Calculation, Operating System Scheduling Algorithms, Scheduling Questions and Solutions",
-        "articleSection": [
-          "Introduction to MLFQ Scheduling",
-          "Key Concepts of Multi-Level Feedback Queue Scheduling",
-          "MLFQ Scheduling Questions and Solutions",
-          "Turnaround Time (TAT) Calculation Examples",
-          "Gantt Chart Step-by-Step Guide",
-          "Waiting Time Calculation Solutions",
-          "Advantages and Disadvantages of MLFQ Scheduling",
-          "FAQs on MLFQ Scheduling"
-        ],
-        "isAccessibleForFree": true,
-        "about": {
-          "@type": "Thing",
-          "name": "MLFQ Scheduling",
-          "description": "The Multilevel Feedback Queue Scheduling (MLFQ) algorithm is a CPU scheduling method that dynamically adjusts task priority based on their behavior and system performance. Tasks start in a high-priority queue, and their priority changes depending on factors like CPU usage and wait time, ensuring a balance between responsiveness and efficiency. It's designed to give preference to interactive tasks while preventing CPU-intensive ones from starving."
-        },
-        "hasPart": [
-          {
-            "@type": "Question",
-            "name": "How do you calculate Turnaround Time (TAT) in MLFQ scheduling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Turnaround Time (TAT) is calculated as the time from the process arrival to its completion. Formula: TAT = Completion Time - Arrival Time."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How to draw a Gantt Chart for MLFQ scheduling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "To draw a Gantt Chart, allocate processes to queues based on priority, schedule them within queues, and visually represent the process execution timeline."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How do you calculate Waiting Time in MLFQ scheduling?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Waiting Time is the total time a process spends waiting in the ready queue. Formula: Waiting Time = Turnaround Time - Burst Time."
-            }
-          }
-        ]
-      }
-    </script> -->
+
 </head>
 
 <body>
@@ -206,167 +131,7 @@
 
   <main>
     <div class="container">
-      <div>
-        <a href="#fstque" class="btn btn-primary btn-lg active" role="button" aria-label="first question"
-          aria-pressed="true" aria-labelledby="fstque" title="solution of first question">Jump To Question</a>
-        <br /><br />
-
-        <section>
-          <h2>
-            What Is Multilevel Feedback Queue Scheduling Algorithm In
-            Operating System ?
-          </h2>
-
-          <p>
-            Operating systems' multilevel Feedback Queue Scheduling (MLFQ) algorithm is a sophisticated CPU scheduling
-            technique that enhances multilevel queue scheduling by permitting process switching between queues. This
-            approach helps to maximize CPU utilization and responsiveness by handling a variety of process kinds and
-            dynamically allocating them according to their behavior and CPU burst time.
-          </p>
-          <!-- <img
-              alt="Multilevel Feedback Queue Scheduling (MLFQ)"
-              data-src-desktop="https://csvidyalaya.com/assets/MLFQ/MLFQS DEFINITION BIG.png"
-              data-src-mobile="https://csvidyalaya.com/assets/MLFQ/MLFQS DEFINITION SMALL.png"
-            /> -->
-
-          <picture>
-            <source media="(max-width:700px)" srcset="/assets/MLFQ/MLFQS_DEFINITION_SMALL.png" />
-            <source media="(min-width:701px)" srcset="/assets/MLFQ/MLFQS_DEFINITION_BIG.png" />
-            <img src="/assets/MLFQ/MLFQS DEFINITION BIG.png" alt="Multilevel Feedback Queue Scheduling (MLFQ)"
-              title="Multilevel Feedback Queue Scheduling (MLFQ) explanation with question" id="mlfq_def" />
-          </picture>
-        </section>
-        <section>
-          <h2>
-            what are the Method to Solve the Multilevel Feedback Queue
-            Scheduling (MLFQ) in operating system ?
-          </h2>
-          <ol>
-            <li>
-              Step 1: Set up several queues with varying priorities. The time quantum of higher-priority queues is
-              shorter.
-            </li>
-            <li>
-              Step 2: Assign every new process to the queue with the greatest priority.
-            </li>
-            <li>
-              Step 3: Apply <a href="/os/scheduling_algorithms/RR1.html">Round Robin scheduling</a> to every queue.
-            </li>
-            <li>
-              Step 4: A process is relegated to a lower-priority queue if it consumes its whole time quantum without
-              finishing.
-            </li>
-            <li>
-              Step 5: A process in a lower-priority queue descends once more if it doesn't complete within its allotted
-              time.
-            </li>
-            <li>
-              Step 6: Upon restarting, a process in any queue that has reached an I/O limit may move back up to a
-              higher-priority queue.
-            </li>
-            <li>
-              Step 7: Keep doing this reallocation until every process is finished or shut down.
-            </li>
-          </ol>
-        </section>
-        <section>
-          <h2>
-            what are Advantages and Disadvantages of Multilevel Feedback Queue
-            Scheduling ?
-          </h2>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Advantages</th>
-              <th>Disadvantages</th>
-            </tr>
-            <tr>
-              <td>
-                Efficient handling of processes with varying CPU burst times.
-              </td>
-              <td>Complex to implement and manage multiple queues.</td>
-            </tr>
-            <tr>
-              <td>
-                Improved CPU utilization due to dynamic priority adjustment.
-              </td>
-              <td>Starvation can occur for lower-priority processes.</td>
-            </tr>
-            <tr>
-              <td>
-                Reduces turnaround time for I/O-bound and interactive
-                processes.
-              </td>
-              <td>
-                Increased overhead for context switching between queues.
-              </td>
-            </tr>
-            <tr>
-              <td>Allows fair sharing of CPU time based on process needs.</td>
-              <td>
-                Difficulty in choosing appropriate time quantum for each
-                queue.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Minimizes response time for short tasks or interactive
-                processes.
-              </td>
-              <td>
-                Performance can degrade if too many high-priority processes
-                exist.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Adaptable to system load and changes in process behavior.
-              </td>
-              <td>
-                Requires fine-tuning of parameters to avoid inefficiency.
-              </td>
-            </tr>
-          </table>
-        </section>
-
-        <section>
-          <h2>
-            Why Multilevel Feedback Queue Scheduling Is Better Than Other
-            Scheduling Algorithms?
-          </h2>
-          <p>
-            Multilevel Feedback Queue Scheduling offers several advantages over simpler algorithms such as <a
-              href="/os/scheduling_algorithms/fcfs.html">First-Come-First-Serve (FCFS)</a>, <a
-              href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>, and <a
-              href="/os/scheduling_algorithms/sjf2.html">Shortest Job Next (SJN)</a> due to its ability to adapt
-            dynamically to the changing needs of processes. By enabling processes to shift between various priority
-            queues, MLFQS helps to prevent process starvation, optimizes CPU time utilization, and minimizes turnaround
-            time for interactive and I/O-bound processes. This flexibility ensures balanced performance in systems that
-            manage a variety of workloads, making it a highly efficient option for many contemporary operating systems.
-          </p>
-        </section>
-        <section>
-          <h2>where multilevel feedback queue scheduling (MLFQ) used?</h2>
-          <p>
-            Multilevel Feedback Queue (MLFQ) scheduling is used in systems
-            where different tasks need to be handled based on their priority.
-            It’s helpful in the following areas:
-          </p>
-          <ul>
-            <li>
-              <strong>1. Operating Systems : </strong>MLFQ is utilized in operating systems to handle tasks such as applications and background processes. It ensures that critical tasks are completed promptly while still allowing time for less urgent ones.
-            </li>
-            <li>
-              <strong>2. Real-Time Systems: </strong>In systems that require immediate processing, such as real-time applications, MLFQ prioritizes critical tasks to ensure they are addressed first.
-            </li>
-            <li>
-              <strong>3. Shared Systems: </strong>On servers or computers used
-              by multiple people, MLFQ makes sure every user’s tasks are given
-              fair attention based on their importance.
-            </li>
-        
-          </ul>
-        </section>
-      </div>
+    
       <div id="question1">
         <div class="question">
           <h2 id="fstque">
@@ -947,6 +712,169 @@
         </div>
       </div>
     </div>
+    <!-- definition section -->
+    <div>
+      <a href="#fstque" class="btn btn-primary btn-lg active" role="button" aria-label="first question"
+        aria-pressed="true" aria-labelledby="fstque" title="solution of first question">Jump To Question</a>
+      <br /><br />
+
+      <section>
+        <h2>
+          What Is Multilevel Feedback Queue Scheduling Algorithm In
+          Operating System ?
+        </h2>
+
+        <p>
+          Operating systems' multilevel Feedback Queue Scheduling (MLFQ) algorithm is a sophisticated CPU scheduling
+          technique that enhances multilevel queue scheduling by permitting process switching between queues. This
+          approach helps to maximize CPU utilization and responsiveness by handling a variety of process kinds and
+          dynamically allocating them according to their behavior and CPU burst time.
+        </p>
+        <!-- <img
+            alt="Multilevel Feedback Queue Scheduling (MLFQ)"
+            data-src-desktop="https://csvidyalaya.com/assets/MLFQ/MLFQS DEFINITION BIG.png"
+            data-src-mobile="https://csvidyalaya.com/assets/MLFQ/MLFQS DEFINITION SMALL.png"
+          /> -->
+
+        <picture>
+          <source media="(max-width:700px)" srcset="/assets/MLFQ/MLFQS_DEFINITION_SMALL.png" />
+          <source media="(min-width:701px)" srcset="/assets/MLFQ/MLFQS_DEFINITION_BIG.png" />
+          <img src="/assets/MLFQ/MLFQS DEFINITION BIG.png" alt="Multilevel Feedback Queue Scheduling (MLFQ)"
+            title="Multilevel Feedback Queue Scheduling (MLFQ) explanation with question" id="mlfq_def" />
+        </picture>
+      </section>
+      <section>
+        <h2>
+          what are the Method to Solve the Multilevel Feedback Queue
+          Scheduling (MLFQ) in operating system ?
+        </h2>
+        <ol>
+          <li>
+            Step 1: Set up several queues with varying priorities. The time quantum of higher-priority queues is
+            shorter.
+          </li>
+          <li>
+            Step 2: Assign every new process to the queue with the greatest priority.
+          </li>
+          <li>
+            Step 3: Apply <a href="/os/scheduling_algorithms/RR1.html">Round Robin scheduling</a> to every queue.
+          </li>
+          <li>
+            Step 4: A process is relegated to a lower-priority queue if it consumes its whole time quantum without
+            finishing.
+          </li>
+          <li>
+            Step 5: A process in a lower-priority queue descends once more if it doesn't complete within its allotted
+            time.
+          </li>
+          <li>
+            Step 6: Upon restarting, a process in any queue that has reached an I/O limit may move back up to a
+            higher-priority queue.
+          </li>
+          <li>
+            Step 7: Keep doing this reallocation until every process is finished or shut down.
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>
+          what are Advantages and Disadvantages of Multilevel Feedback Queue
+          Scheduling ?
+        </h2>
+        <table border="1" class="table table-bordered">
+          <tr>
+            <th>Advantages</th>
+            <th>Disadvantages</th>
+          </tr>
+          <tr>
+            <td>
+              Efficient handling of processes with varying CPU burst times.
+            </td>
+            <td>Complex to implement and manage multiple queues.</td>
+          </tr>
+          <tr>
+            <td>
+              Improved CPU utilization due to dynamic priority adjustment.
+            </td>
+            <td>Starvation can occur for lower-priority processes.</td>
+          </tr>
+          <tr>
+            <td>
+              Reduces turnaround time for I/O-bound and interactive
+              processes.
+            </td>
+            <td>
+              Increased overhead for context switching between queues.
+            </td>
+          </tr>
+          <tr>
+            <td>Allows fair sharing of CPU time based on process needs.</td>
+            <td>
+              Difficulty in choosing appropriate time quantum for each
+              queue.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Minimizes response time for short tasks or interactive
+              processes.
+            </td>
+            <td>
+              Performance can degrade if too many high-priority processes
+              exist.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Adaptable to system load and changes in process behavior.
+            </td>
+            <td>
+              Requires fine-tuning of parameters to avoid inefficiency.
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section>
+        <h2>
+          Why Multilevel Feedback Queue Scheduling Is Better Than Other
+          Scheduling Algorithms?
+        </h2>
+        <p>
+          Multilevel Feedback Queue Scheduling offers several advantages over simpler algorithms such as <a
+            href="/os/scheduling_algorithms/fcfs.html">First-Come-First-Serve (FCFS)</a>, <a
+            href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>, and <a
+            href="/os/scheduling_algorithms/sjf2.html">Shortest Job Next (SJN)</a> due to its ability to adapt
+          dynamically to the changing needs of processes. By enabling processes to shift between various priority
+          queues, MLFQS helps to prevent process starvation, optimizes CPU time utilization, and minimizes turnaround
+          time for interactive and I/O-bound processes. This flexibility ensures balanced performance in systems that
+          manage a variety of workloads, making it a highly efficient option for many contemporary operating systems.
+        </p>
+      </section>
+      <section>
+        <h2>where multilevel feedback queue scheduling (MLFQ) used?</h2>
+        <p>
+          Multilevel Feedback Queue (MLFQ) scheduling is used in systems
+          where different tasks need to be handled based on their priority.
+          It’s helpful in the following areas:
+        </p>
+        <ul>
+          <li>
+            <strong>1. Operating Systems : </strong>MLFQ is utilized in operating systems to handle tasks such as applications and background processes. It ensures that critical tasks are completed promptly while still allowing time for less urgent ones.
+          </li>
+          <li>
+            <strong>2. Real-Time Systems: </strong>In systems that require immediate processing, such as real-time applications, MLFQ prioritizes critical tasks to ensure they are addressed first.
+          </li>
+          <li>
+            <strong>3. Shared Systems: </strong>On servers or computers used
+            by multiple people, MLFQ makes sure every user’s tasks are given
+            fair attention based on their importance.
+          </li>
+      
+        </ul>
+      </section>
+    </div>
+     <!-- definition section end -->
   </main>
   <br />
   <div class="d-grid gap-2 col-6 mx-auto">
