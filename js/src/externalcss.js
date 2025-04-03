@@ -99,8 +99,6 @@ add_head(googleicon4);
 
 // linked_services icon
 
-
-
 let cssstyle = document.createElement("style");
 cssstyle.innerHTML = `
 @media(width<=700px){div#foot:has(ul){display:flex;justify-content:center}
