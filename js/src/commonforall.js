@@ -98,45 +98,7 @@ modal_script2.innerHTML = `
      `;
 add_body(modal_script2);
 
-let bar_style = document.createElement("div");
-bar_style.innerHTML = `   
-<style>
-      #bar1 {
-        display: none;
-      }
-      @media (min-width: 700px) {
-        #bar1 {
-            display: flex;
-        }
-      }
-</style> `;
-add_head(bar_style);
 
-let bar = document.createElement("div");
-bar.innerHTML = `<div
-      id="bar1"
-      style="
-        background-color: palegreen;
 
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 10px;
-        padding-right: 10px;
-      "
-    >
-      <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a>
-      <a href="/os/scheduling_algorithms/sjf1.html">SJF</a>
-      <a href="/os/scheduling_algorithms/sjf2.html">preemptive SJF</a>
-      <a href="/os/scheduling_algorithms/ps1.html">Priority Scheduling</a>
-      <a href="/os/scheduling_algorithms/ps2.html"
-        >Preemptive Priority Scheduling</a
-      >
-      <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a>
-      <a href="/os/scheduling_algorithms/mlfqs.html">MLFQ</a>
-      <a href="/os/scheduling_algorithms/MLQS.html">MLQ</a>
-    </div>`;
 
-  let qs = document.querySelector("h1");
-
-  
     

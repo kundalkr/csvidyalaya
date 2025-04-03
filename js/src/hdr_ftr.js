@@ -1,13 +1,13 @@
 import { add_head } from "/js/src/utilities.min.js";
 let header = document.createElement("div");
+header.setAttribute("id","fheader");
 header.innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFD1DC;">
       <div class="container-fluid">
         <a
           class="navbar-brand navbar-bran"
           href=" https://csvidyalaya.com/" target="_blank"
-          >CSvidyalaya.com</a
-        >
+          >CSvidyalaya.com</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -154,6 +154,7 @@ linked_services
       </ul>
     </div>
     <br>
+
 `;
 document.querySelector("body").prepend(header);
 let footer = document.createElement("div");
