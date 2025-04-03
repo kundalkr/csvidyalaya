@@ -5,7 +5,6 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
   <url>
     <loc>https://csvidyalaya.com/</loc>
     <image:image>
@@ -194,7 +193,6 @@
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/stack1.html</loc>
     <lastmod>2025-04-01</lastmod>
-
   </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/stack2.html</loc>
@@ -233,22 +231,18 @@
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/postfixprefixofinfix.html</loc>
     <lastmod>2025-04-01</lastmod>
-
   </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/queue1.html</loc>
     <lastmod>2025-04-01</lastmod>
-
   </url>
   <url>
     <loc>https://csvidyalaya.com/dsa_in_c/linkedlist1.html</loc>
     <lastmod>2025-04-01</lastmod>
-
   </url>
   <url>
     <loc>https://csvidyalaya.com/Digital%20Fundamentals/Number%20System/decimaltobinary.html</loc>
     <lastmod>2025-04-01</lastmod>
-
   </url>
   <url>
     <loc>https://csvidyalaya.com/Digital%20Fundamentals/Number%20System/decimaltohexadecimal1.html</loc>

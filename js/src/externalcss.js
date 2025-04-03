@@ -1,4 +1,4 @@
-import {add_head} from "/js/src/utilities.min.js";
+import { add_head } from "/js/src/utilities.min.js";
 
 let head = document.querySelector("head");
 
