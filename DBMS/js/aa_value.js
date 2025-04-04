@@ -2,7 +2,6 @@ fetch(
   "https://script.google.com/macros/s/AKfycbwQ5XGf8-vSQa4dwio4lDatODcjPqGQNsUYY04QSW4O5pMpGEwsOs1-sWDu3J7eY7Fzew/exec"
 )
   .then(function (response) {
-    // console.log(response.json());
     return response.json();
   })
   .then(function (questions) {
@@ -16,10 +15,6 @@ fetch(
       let ans = document.createElement("div");
       ans.setAttribute("class", "solution");
     //   qusn.innerHtml = `${question.question_no}`;
-   
-
-      
-
       document.querySelector("body").appendChild(divs);
       divs.appendChild(qusn);
       divs.appendChild(ans);
