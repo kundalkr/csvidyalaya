@@ -23,12 +23,8 @@ window.onload = function () {
     let commonthings = document.createElement("script");
     commonthings.src = "/os/scheduling_algorithms/commonthings.min.js";
     commonthings.setAttribute("type", "module");
-    commonthings.async = !0;
-    commonthings.defer=true;
     headu.appendChild(commonthings);
   }
-
-
   if (
     window.location.hostname !== "localhost" &&
     window.location.hostname !== "127.0.0.1"
@@ -39,9 +35,6 @@ window.onload = function () {
     extra_tags.async = !0;
     bodu.appendChild(extra_tags);
   }
-
-
-
 };
 
 

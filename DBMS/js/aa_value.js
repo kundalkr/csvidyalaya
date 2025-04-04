@@ -19,8 +19,6 @@ fetch(
       divs.appendChild(qusn);
       divs.appendChild(ans);
         qusn.innerHTML = `${question.question}`;
-
-
       i++;
     }
   });
