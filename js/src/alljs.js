@@ -14,6 +14,12 @@ function hdr_ftr(params) {
   headu.appendChild(header_footer);
 }
 
+function execution(hdr_ftr, fn1) {
+  hdr_ftr();
+  fn1();
+}
+execution(hdr_ftr,external_css);
+
 if (window.location.pathname.startsWith("/os/scheduling_algorithms/")) {
   let commonthings = document.createElement("script");
   commonthings.src = "/os/scheduling_algorithms/commonthings.min.js";
@@ -41,25 +47,8 @@ window.onload = function () {
   }
 };
 
-function aa_value(params) {
-  if (
-    window.location.pathname.startsWith(
-      "/DBMS/DBMS_topics/relational_algebra/projection_operation.html"
-    )
-  ) {
-    let aa_value = document.createElement("script");
-    aa_value.src = "/DBMS/js/aa_value.min.js";
-    aa_value.setAttribute("type", "module");
-    headu.appendChild(aa_value);
-  }
-}
 
-function execution(hdr_ftr, fn1,fn2) {
-  hdr_ftr();
-  fn1();
-  fn2();
-}
-execution(hdr_ftr,external_css,aa_value);
+
 
 function c() {
   document.getElementById("sidebar").style.display = "block";

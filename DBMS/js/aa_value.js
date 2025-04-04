@@ -5,20 +5,20 @@ fetch(
     return response.json();
   })
   .then(function (questions) {
+    let i = 1;
     for (let question of questions.questions) {
         console.log(question.question)
-      let i = 1;
+   
       let divs = document.createElement("div");
       divs.setAttribute("id", `question${i}`);
       let qusn = document.createElement("div");
       qusn.setAttribute("class", "question");
       let ans = document.createElement("div");
       ans.setAttribute("class", "solution");
-    //   qusn.innerHtml = `${question.question_no}`;
-      document.querySelector("#fheader").appendChild(divs);
+      document.querySelector("#rq_data").appendChild(divs);
       divs.appendChild(qusn);
       divs.appendChild(ans);
-        qusn.innerHTML = `${question.question}`;
+      qusn.innerHTML = `${i} ) --> ${question.question}`;
       i++;
     }
   });

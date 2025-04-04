@@ -166,7 +166,7 @@ footer.innerHTML = `
       >
         <div class="col mb-3">
           <p class="text-muted">
-            © 2024 <span class="navbar-bran">csvidyalaya.com</span>
+            © 2025 <span class="navbar-bran">csvidyalaya.com</span>
           </p>
           <p>
             Here student can practice university core subject question like OS,
