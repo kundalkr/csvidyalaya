@@ -15,7 +15,7 @@ fetch(
       let ans = document.createElement("div");
       ans.setAttribute("class", "solution");
     //   qusn.innerHtml = `${question.question_no}`;
-      document.querySelector("body").appendChild(divs);
+      document.querySelector("#fheader").appendChild(divs);
       divs.appendChild(qusn);
       divs.appendChild(ans);
         qusn.innerHTML = `${question.question}`;
