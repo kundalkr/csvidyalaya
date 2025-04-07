@@ -1,4 +1,48 @@
-import { add_css, add_body,add_head } from "/js/src/utilities.min.js";
+import { add_css, add_body, add_head } from "/js/src/utilities.min.js";
+
+let bar_style = document.createElement("style");
+bar_style.innerHTML = `   
+      #bar1 {
+      a {
+            color: rgb(255, 255, 255);
+          text-decoration-color: rgb(255, 255, 255);
+          text-decoration-thickness: 0.3ex;
+          text-underline-offset: 0.3ex;
+        }
+        display: none;
+      }
+      @media (min-width: 950px) {
+        #bar1 {
+            display: flex;
+        }
+      }
+ `;
+add_head(bar_style);
+
+let bar = document.createElement("div");
+bar.innerHTML = `<div
+      id="bar1"
+      style="
+        background-color: rgb(5, 148, 79);
+        flex-direction: row;
+        justify-content: space-between;
+       padding: 10px 10px;color:"black";
+      "
+    >
+      <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a>
+      <a href="/os/scheduling_algorithms/sjf1.html">SJF</a>
+      <a href="/os/scheduling_algorithms/sjf2.html">preemptive SJF</a>
+      <a href="/os/scheduling_algorithms/ps1.html">Priority Scheduling</a>
+      <a href="/os/scheduling_algorithms/ps2.html">Preemptive Priority Scheduling</a>
+      <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a>
+      <a href="/os/scheduling_algorithms/mlfqs.html">MLFQ</a>
+      <a href="/os/scheduling_algorithms/MLQS.html">MLQ</a>
+    </div>     <br>`;
+
+let body = document.querySelector("body");
+let h1 = document.querySelector("body>div");
+body.insertBefore(bar, h1);
+
 add_css(
   "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black; }}"
 );
@@ -109,46 +153,3 @@ window.onload = function () {
      `;
   add_body(modal_script);
 };
-
-let bar_style = document.createElement("style");
-bar_style.innerHTML = `   
-      #bar1 {
-      a {
-            color: rgb(255, 255, 255);
-          text-decoration-color: rgb(255, 255, 255);
-          text-decoration-thickness: 0.3ex;
-          text-underline-offset: 0.3ex;
-        }
-        display: none;
-      }
-      @media (min-width: 950px) {
-        #bar1 {
-            display: flex;
-        }
-      }
- `;
-add_head(bar_style);
-
-let bar = document.createElement("div");
-bar.innerHTML = `<div
-      id="bar1"
-      style="
-        background-color: rgb(5, 148, 79);
-        flex-direction: row;
-        justify-content: space-between;
-       padding: 10px 10px;color:"black";
-      "
-    >
-      <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a>
-      <a href="/os/scheduling_algorithms/sjf1.html">SJF</a>
-      <a href="/os/scheduling_algorithms/sjf2.html">preemptive SJF</a>
-      <a href="/os/scheduling_algorithms/ps1.html">Priority Scheduling</a>
-      <a href="/os/scheduling_algorithms/ps2.html">Preemptive Priority Scheduling</a>
-      <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a>
-      <a href="/os/scheduling_algorithms/mlfqs.html">MLFQ</a>
-      <a href="/os/scheduling_algorithms/MLQS.html">MLQ</a>
-    </div>     <br>`;
-
-    let fheader = document.querySelector("#fheader");  
-    fheader.appendChild(bar);
-    
