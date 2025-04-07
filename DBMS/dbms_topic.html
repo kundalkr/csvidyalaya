@@ -47,6 +47,20 @@
           }
         }
       }
+      .container > .row > .card:hover {
+        /* css card hover */
+      animation: myAnim 0s ease 0s 1 normal forwards;
+      transform-origin: center;
+    }
+
+    @keyframes myAnim {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(10deg);
+      }
+    }
     </style>
   </head>
   <body>

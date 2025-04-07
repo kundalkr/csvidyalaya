@@ -7,8 +7,6 @@ fetch(
   .then(function (questions) {
     let i = 1;
     for (let question of questions.questions) {
-      console.log(question.question);
-
       let divs = document.createElement("div");
       divs.setAttribute("id", `question${i}`);
       let qusn = document.createElement("div");
@@ -18,33 +16,20 @@ fetch(
       document.querySelector("#req_data").appendChild(divs);
       divs.appendChild(qusn);
       divs.appendChild(ans);
-      qusn.innerHTML = ` <h2>${i} ) --> ${question.question} </h2> `;
-
-      ans.innerHTML = `  
-         <div class="accordion" id="accordionPanelsStayOpenExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-          <div class="accordion-body  bg-danger-subtle">
-            <p style="font-size: x-large;">${question.answer}</p>
+      qusn.innerHTML = `<h2>${i}) ${question.question}</h2>`;
+      if (i!=1) {
+        ans.innerHTML = `  
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample${i}" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">click here for answer</a>
+        <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample${i}">
+          <div class="card card-body bg-danger-subtle">
+           <p style="font-size: x-large;">${question.answer}</p>
           </div>
         </div>
       </div>
-    </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      `;
-
+        </div><br />`;
+      }
       i++;
     }
   });
