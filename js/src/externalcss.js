@@ -109,6 +109,6 @@ div#foot>ul li{display:flex;justify-content:center;align-items:center;flex-wrap:
 button{border:none;background-color:#ffd1dc}}}.navbar-bran{font-family:"Pacifico",cursive;font-weight:400;font-style:normal}
 @media(width>=500px){.navbar-bran{font-family:"Pacifico",cursive;font-weight:400;font-style:normal}}
 li>a{font-family:"Playpen Sans",cursive;font-optical-sizing:auto;font-weight:450;font-style:normal;a,a:hover,a:focus,a:active{text-decoration:none;color:inherit;color:black}}
-a{text-decoration-color:blueviolet;text-decoration-thickness:.3ex;text-underline-offset:.3ex}.container>.row>.card:hover{animation:myAnim 0s ease 0s 1 normal forwards;transform-origin:center}@keyframes myAnim{0%{transform:rotate(0deg)}100%{transform:rotate(10deg)}}
+a{text-decoration-color:blueviolet;text-decoration-thickness:.3ex;text-underline-offset:.3ex}.container .card:hover{animation:myAnim 0s ease 0s 1 normal forwards;transform-origin:center}@keyframes myAnim{0%{transform:rotate(0deg)}100%{transform:rotate(10deg)}}
 `;
 add_head(cssstyle);
