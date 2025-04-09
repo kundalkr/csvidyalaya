@@ -6,7 +6,7 @@ fetch(
   })
   .then(function (questions) {
     for (let question of questions.questions) {
-        console.log(question.question)
+      console.log(question.question);
       let i = 1;
       let divs = document.createElement("div");
       divs.setAttribute("id", `question${i}`);
@@ -14,11 +14,10 @@ fetch(
       qusn.setAttribute("class", "question");
       let ans = document.createElement("div");
       ans.setAttribute("class", "solution");
-    //   qusn.innerHtml = `${question.question_no}`;
       document.querySelector("body").appendChild(divs);
       divs.appendChild(qusn);
       divs.appendChild(ans);
-        qusn.innerHTML = `${question.question}`;
+      qusn.innerHTML = `${question.question}`;
       i++;
     }
   });
