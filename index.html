@@ -184,19 +184,16 @@
           border: 1px solid red;
         }
       }
-
-      @media (width<=750px) {
-        #al_card {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-        }
-      }
       #al_card {
         display: flex;
-
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
+      }
+      @media (width<=750px) {
+        #al_card {
+          flex-direction: column;
+        }
       }
     </style>
   </head>
@@ -310,7 +307,7 @@
           </div>
         </div>
         <br />
-        <div class="card  bg-danger-subtle" style="width: 18rem">
+        <div class="card bg-danger-subtle" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Database Management System (DBMS)</h5>
             <p class="card-text">
