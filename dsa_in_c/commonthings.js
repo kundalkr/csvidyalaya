@@ -1,4 +1,48 @@
-import { add_body } from "/js/src/utilities.min.js";
+import { add_body,add_head } from "/js/src/utilities.min.js";
+
+let bar_style = document.createElement("style");
+bar_style.innerHTML = `   
+      #bar1 {
+      a {
+            color: rgb(255, 255, 255);
+          text-decoration-color: rgb(255, 255, 255);
+          text-decoration-thickness: 0.3ex;
+          text-underline-offset: 0.3ex;
+        }
+        display: none;
+      }
+      @media (min-width: 950px) {
+        #bar1 {
+            display: flex;
+        }
+      }
+ `;
+add_head(bar_style);
+
+let bar = document.createElement("div");
+bar.innerHTML = `<div
+      id="bar1"
+      style="
+        background-color: rgb(5, 148, 79);
+        flex-direction: row;
+        justify-content: space-between;
+       padding: 10px 10px;color:"black";
+      "
+    >
+      <a href="/DBMS/dbms_topic.html">DBMS Question</a>
+      <a href="/Digital Fundamentals/Dgital_funda_topic.html">Digital fundamental</a>
+      <a href="/Software_Engineering/software_engineering_topic.html">software engineering</a>
+      <a href="/WSN/wireless_sensor_network.html">wireless sensor network</a>
+      <a href="/dsa_in_c/dsa_in_c_topic.html">Data structure</a>
+       <a href="/os/operating_System_Topics.html">Operating System</a>
+      <a href="/os/memory_management/Buddy_system.html">Memory Management</a>
+    </div>     <br>`;
+
+let body = document.querySelector("body");
+let h1 = document.querySelector("body>div");
+body.insertBefore(bar, h1);
+
+
 
 let int_links = document.createElement("div");
 int_links.style.border = "1px solid red";
@@ -77,8 +121,6 @@ modal.innerHTML = `
 
 `;
 
-// let bd = document.querySelector("body");
-// bd.appendChild(modal);
 add_body(modal);
 
 let scriptss = document.createElement("script");

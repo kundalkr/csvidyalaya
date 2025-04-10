@@ -1,4 +1,4 @@
-import { add_body,add_head } from "/js/src/utilities.min.js";
+import {add_body} from "/js/src/utilities.min.js";
 
 let modal2 = document.createElement("div");
 modal2.innerHTML = `
@@ -66,7 +66,7 @@ modal2.innerHTML = `
                         >Software Engineering</a
                       >
                     </div>
-                    <br />     <br />
+                    <br /><br />
                     <div class="col-4 col-sm-6">
                         <a
                           href="/WSN/wireless_sensor_network.html"
@@ -84,7 +84,6 @@ modal2.innerHTML = `
       </div>
     </div>
 `;
-
 add_body(modal2);
 
 let modal_script2 = document.createElement("script");
@@ -97,8 +96,3 @@ modal_script2.innerHTML = `
               document.getElementById('btn_closeder').addEventListener('click',() => setTimeout(openModal, 12 * 60 * 1000));
      `;
 add_body(modal_script2);
-
-
-
-
-    
