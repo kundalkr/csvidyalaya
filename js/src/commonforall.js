@@ -4,7 +4,7 @@ let modal2 = document.createElement("div");
 modal2.innerHTML = `
      <div
       class="modal fade"
-      id="myModal"
+      id="wholepageModal"
       tabindex="-1"
       id="staticBackdrop"
       data-bs-backdrop="static"
@@ -89,8 +89,8 @@ add_body(modal2);
 let modal_script2 = document.createElement("script");
 modal_script2.innerHTML = ` 
           function openModal() {
-              var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-              myModal.show();
+              var wholepageModal = new bootstrap.Modal(document.getElementById('wholepageModal'));
+              wholepageModal.show();
           }
               setTimeout(openModal, 15000);
               document.getElementById('btn_closeder').addEventListener('click',() => setTimeout(openModal, 12 * 60 * 1000));

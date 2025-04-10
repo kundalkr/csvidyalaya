@@ -6,7 +6,7 @@ header.innerHTML = `
       <div class="container-fluid">
         <a
           class="navbar-brand navbar-bran"
-          href=" https://csvidyalaya.com/" target="_blank"
+          href="/index.html" target="_blank"
           >CSvidyalaya.com</a>
         <button
           class="navbar-toggler"
