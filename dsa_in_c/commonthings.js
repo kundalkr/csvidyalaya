@@ -45,7 +45,7 @@ body.insertBefore(bar, h1);
 
 
 let int_links = document.createElement("div");
-int_links.style.border = "1px solid red";
+// int_links.style.border = "1px solid red";
 // int_links.style.padding = "0px 12px";
 
 int_links.innerHTML = `

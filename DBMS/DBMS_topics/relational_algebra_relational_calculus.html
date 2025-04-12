@@ -9,7 +9,10 @@
       name="keywords"
       content="Relational Algebra question of DBMS, Relational Calculus Question of DBMS, DBMS algebra question, DBMS join operation question, DBMS selection operation, projection operation,rename operation"
     />
-    <meta name="description" content="question of Relational Algebra ,Relational Calculus in DBMS,which is related to join operation, DBMS selection operation, projection operation,rename operation">
+    <meta
+      name="description"
+      content="question of Relational Algebra ,Relational Calculus in DBMS,which is related to join operation, DBMS selection operation, projection operation,rename operation"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
@@ -19,9 +22,68 @@
           height: auto;
         }
       }
+      /* loader start */
+      #loadering {
+        position: relative;
+        width: 120px;
+        height: 90px;
+        display: block;
+        margin: 50px auto;
+        /* border: 1px solid red; */
+      }
+      #loadering:before {
+        content: "";
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #ff3d00;
+        animation: loading-bounce 0.5s ease-in-out infinite alternate;
+      }
+      #loadering:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 7px;
+        width: 45px;
+        border-radius: 4px;
+        box-shadow: 0 5px 0 #028637, -35px 50px 0 #028637, -70px 95px 0 #028637;
+        animation: loading-step 1s ease-in-out infinite;
+      }
+
+      @keyframes loading-bounce {
+        0% {
+          transform: scale(1, 0.7);
+        }
+        40% {
+          transform: scale(0.8, 1.2);
+        }
+        60% {
+          transform: scale(1, 1);
+        }
+        100% {
+          bottom: 140px;
+        }
+      }
+      @keyframes loading-step {
+        0% {
+          box-shadow: 0 10px 0 rgba(0, 0, 0, 0), 0 10px 0 #028637,
+            -35px 50px 0 #028637, -70px 90px 0 #028637;
+        }
+        100% {
+          box-shadow: 0 10px 0 #028637, -35px 50px 0 #028637,
+            -70px 90px 0 #028637, -70px 90px 0 rgba(0, 0, 0, 0);
+        }
+      }
+
+      /* loadering end */
     </style>
   </head>
   <body>
+    <span id="loadering"></span>
     <div class="container">
       <div id="req_data"></div>
     </div>

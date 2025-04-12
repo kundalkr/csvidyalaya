@@ -1,3 +1,5 @@
+
+
 fetch(
   "https://script.google.com/macros/s/AKfycbwQ5XGf8-vSQa4dwio4lDatODcjPqGQNsUYY04QSW4O5pMpGEwsOs1-sWDu3J7eY7Fzew/exec"
 )
@@ -5,25 +7,17 @@ fetch(
     return response.json();
   })
   .then(function (questions) {
+    let loader = document.getElementById('loadering');
+    console.log(loader);
+    loader.style.display = 'none';
     let i = 1;
     for (let question of questions.questions) {
-<<<<<<< HEAD
-      console.log(question.question);
-      let i = 1;
-=======
->>>>>>> cbaae5c01126baa4b81a8bf7a45dcaab05e596bd
       let divs = document.createElement("div");
       divs.setAttribute("id", `question${i}`);
       let qusn = document.createElement("div");
       qusn.setAttribute("class", "question");
       let ans = document.createElement("div");
       ans.setAttribute("class", "solution");
-<<<<<<< HEAD
-      document.querySelector("body").appendChild(divs);
-      divs.appendChild(qusn);
-      divs.appendChild(ans);
-      qusn.innerHTML = `${question.question}`;
-=======
       document.querySelector("#req_data").appendChild(divs);
       divs.appendChild(qusn);
       divs.appendChild(ans);
@@ -41,7 +35,6 @@ fetch(
       </div>
         </div><br />`;
       }
->>>>>>> cbaae5c01126baa4b81a8bf7a45dcaab05e596bd
       i++;
     }
   });
