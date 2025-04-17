@@ -466,6 +466,14 @@ footer.innerHTML = `
                 >Tuple Relational Calculus</a
               >
             </li>
+                 <li class="nav-item mb-2">
+              <a
+                href="/DBMS/DBMS_topics/relational_algebra_relational_calculus.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Relation algebra + tuple relational</a
+              >
+            </li>
           </ul>
         </div>
 
