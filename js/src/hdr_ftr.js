@@ -1,6 +1,6 @@
 import { add_head } from "/js/src/utilities.min.js";
 let header = document.createElement("div");
-header.setAttribute("id","fheader");
+header.setAttribute("id", "fheader");
 header.innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-light"style="background-color: #FFD1DC;">
       <div class="container-fluid">
@@ -443,6 +443,27 @@ footer.innerHTML = `
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Buddy System Question</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3" id="foot">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2 headi">DBMS</li>
+            <li class="nav-item mb-2">
+              <a
+                href="/DBMS/DBMS_topics/Relational_algebra.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >relational algebra</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a
+                href="/DBMS/DBMS_topics/tuple_relational_calculus.html"
+                class="nav-link p-0 text-muted"
+                target="_blank"
+                >Tuple Relational Calculus</a
               >
             </li>
           </ul>
