@@ -29,14 +29,15 @@ bar.innerHTML = `<div
        padding: 10px 10px;color:"black";
       "
     >
-      <a href="/os/scheduling_algorithms/fcfs.html">FCFS</a>
-      <a href="/os/scheduling_algorithms/sjf1.html">SJF</a>
-      <a href="/os/scheduling_algorithms/sjf2.html">preemptive SJF</a>
-      <a href="/os/scheduling_algorithms/ps1.html">Priority Scheduling</a>
-      <a href="/os/scheduling_algorithms/ps2.html">Preemptive Priority Scheduling</a>
-      <a href="/os/scheduling_algorithms/RR1.html">Round Robin</a>
-      <a href="/os/scheduling_algorithms/mlfqs.html">MLFQ</a>
-      <a href="/os/scheduling_algorithms/MLQS.html">MLQ</a>
+   <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a>
+           <a href="/dsa_in_c/dsa_in_c_topic.html">Dsa</a>
+           <a href="/DBMS/dbms_topic.html">DBMS</a>
+           <a href="/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html">Boolean algebra</a>
+           <a href="/DBMS/DBMS_topics/relational_algebra_relational_calculus.html">relational algebra</a> 
+           <a href="/dsa_in_c/dsa_in_c_topic.html">DSA</a>
+           <a href="/dsa_in_c/stack1.html">Stack</a>
+           <a href="/Digital_Fundamentals/Dgital_funda_topic.html">Digital Fundamentals</a>
+   
     </div>     <br>`;
 
 let body = document.querySelector("body");

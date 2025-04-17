@@ -61,7 +61,7 @@ header.innerHTML = `
                 <li>
                   <a
                     class="dropdown-item"
-                    href="/Digital%20Fundamentals/Dgital_funda_topic.html"
+                    href="/Digital_Fundamentals/Dgital_funda_topic.html"
                     >Digital Fundamentals</a
                   >
                 </li>
@@ -147,7 +147,7 @@ linked_services
           >
         </li>
         <li>
-          <a href="/Digital Fundamentals/Dgital_funda_topic.html"
+          <a href="/Digital_Fundamentals/Dgital_funda_topic.html"
             >Dgital fundamental</a
           >
         </li>
@@ -559,7 +559,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">Digital Fundamentals Questions</li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Dgital_funda_topic.html"
+                href="/Digital_Fundamentals/Dgital_funda_topic.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Digital Fundamentals Question</a
@@ -567,7 +567,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html"
+                href="/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Boolean Algebra Question</a
@@ -580,7 +580,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">Number System Questions</li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Number System/decimaltobinary.html"
+                href="/Digital_Fundamentals/Number_System/decimaltobinary.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Decimal And Binary Conversion</a
@@ -588,7 +588,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Number System/decimaltohexadecimal1.html"
+                href="/Digital_Fundamentals/Number_System/decimaltohexadecimal1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Decimal And Hexadecimal Conversion</a
@@ -596,7 +596,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Number System/decimaltoOctal1.html"
+                href="/Digital_Fundamentals/Number_System/decimaltoOctal1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Decimal And Octal Conversion</a
@@ -604,7 +604,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/Digital Fundamentals/Number System/octaltohexadecimal1.html"
+                href="/Digital_Fundamentals/Number_System/octaltohexadecimal1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Octal And Hexadecimal Conversion</a

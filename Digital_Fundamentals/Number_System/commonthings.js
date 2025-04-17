@@ -28,18 +28,14 @@ bar.innerHTML = `<div
        padding: 10px 10px;color:"black";
       "
     >
-           <a href="/Digital Fundamentals/Number System/decimaltobinary.html"
-        >Decimal & Binary</a
-      >
-      <a href="/Digital Fundamentals/Number System/decimaltohexadecimal1.html"
-        >Decimal & Hexadecimal</a
-      >
-      <a href="/Digital Fundamentals/Number System/decimaltoOctal1.html">Decimal & Octal</a>
-      <a href="/Digital Fundamentals/Number System/octaltohexadecimal1.html">Octal & Hexadecimal</a>
-      <a href="/Digital Fundamentals/Boolean Algebra/booleanalgebra1.html">Boolean algebra question </a>
-      <a href="/dsa_in_c/dsa_in_c_topic.html">Dsa question </a>
-      <a href="/DBMS/dbms_topic.html">DBMS</a>
-      <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a>
+           <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a>
+           <a href="/dsa_in_c/dsa_in_c_topic.html">Dsa</a>
+           <a href="/DBMS/dbms_topic.html">DBMS</a>
+           <a href="/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html">Boolean algebra</a>
+           <a href="/DBMS/DBMS_topics/relational_algebra_relational_calculus.html">relational algebra</a> 
+           <a href="/dsa_in_c/dsa_in_c_topic.html">DSA</a>
+           <a href="/dsa_in_c/stack1.html">Stack</a>
+           <a href="/Digital_Fundamentals/Dgital_funda_topic.html">Digital Fundamentals</a>
     </div>     <br>`;
 
 let body = document.querySelector("body");

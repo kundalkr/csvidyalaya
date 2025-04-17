@@ -52,7 +52,7 @@ modal2.innerHTML = `
                     <br />     <br />
                     <div class="col-8 col-sm-6">
                      <a
-                        href="/Digital Fundamentals/Dgital_funda_topic.html"
+                        href="/Digital_Fundamentals/Dgital_funda_topic.html"
                         class="btn btn-danger "
                         role="button"
                         >Digital Fundamentals</a

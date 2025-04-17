@@ -30,7 +30,7 @@ bar.innerHTML = `<div
       "
     >
       <a href="/DBMS/dbms_topic.html">DBMS Question</a>
-      <a href="/Digital Fundamentals/Dgital_funda_topic.html">Digital fundamental</a>
+      <a href="/Digital_Fundamentals/Dgital_funda_topic.html">Digital fundamental</a>
       <a href="/Software_Engineering/software_engineering_topic.html">software engineering</a>
       <a href="/WSN/wireless_sensor_network.html">wireless sensor network</a>
       <a href="/dsa_in_c/dsa_in_c_topic.html">Data structure</a>
