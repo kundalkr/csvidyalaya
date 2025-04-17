@@ -7,7 +7,7 @@ User-agent: AndiBot
 User-agent: ExaBot
 User-agent: PhindBot
 User-agent: YouBot
-Allow: /
+Disallow: /
 
 # Disallow AI training data collection  
 User-agent: GPTBot  
