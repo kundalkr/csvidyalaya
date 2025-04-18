@@ -25,4 +25,10 @@ User-agent: *
 Disallow: /admin/  
 Disallow: /internal/  
 
+# Disallow access to admin areas for all bots  
+User-agent: *  
+Disallow: /Digital Fundamentals/  
+Disallow: /Digital Fundamentals/Boolean Algebra/ 
+Disallow: /Digital Fundamentals/Number System/  
+
 Sitemap: https://www.csvidyalaya.com/sitemap.xml
