@@ -2,15 +2,102 @@
   "users": [
     {
       "id": 13,
-      "link": "https://csvidyalaya.com/os/scheduling_algorithms/fcfs.html"
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Dgital_funda_topic.html"
     },
     {
       "id": 13,
-      "link": "https://csvidyalaya.com/dsa_in_c/infixtoprefix.html"
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltobinary.html"
     },
     {
       "id": 13,
-      "link": "https://csvidyalaya.com/dsa_in_c/infixtopostfix.html"
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltohexadecimal1.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltoOctal1.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltodecimal4.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal1.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltobinary2.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltohexadecimal2.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltoOctal2.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltoOctal3.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltodecimal5.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal2.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltobinary3.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltohexadecimal3.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltodecimal6.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal3.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal4.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal5.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra4.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra3.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra2.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html"
+    },   {
+      "id": 13,
+      "link": "https://csvidyalaya.com/os/memory_management/Fit_question.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/os/memory_management/Buddy_system.html"
+    },
+    {
+      "id": 13,
+      "link": "https://csvidyalaya.com/os/memory_management/memory_management_topics.html"
     }
   ],
   "settings": {
