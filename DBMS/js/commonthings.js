@@ -1,4 +1,4 @@
-import { add_css, bar} from "/js/src/utilities.min.js";
+import { bar} from "/js/src/utilities.min.js";
 
 
 const data = {
@@ -38,9 +38,3 @@ const data = {
   ],
 };
 bar(data);
-
-add_css(
-  "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black; }}"
-);
-
-
