@@ -30,7 +30,7 @@ export function bar(link_arr) {
     >`;
   let loopt = "";
   for (const users of link_arr.users) {
-    console.log(users.link + "" + users.name);
+    // console.log(users.link + "" + users.name);
     loopt += `<a href="${users.link}">${users.name}</a>`;
   }
   
