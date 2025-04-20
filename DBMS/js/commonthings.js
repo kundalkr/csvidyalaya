@@ -1,6 +1,4 @@
-import { bar} from "/js/src/utilities.min.js";
-
-
+import { bar } from "/js/src/utilities.min.js";
 const data = {
   users: [
     {

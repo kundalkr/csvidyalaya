@@ -1,0 +1,218 @@
+[
+  {
+    "Question": "select the EMPLOYEE tuples whose department is 4 , write a relational algebra for this question",
+    "Solution": "<b> σ</b> <sub><small> Dno=4</small></sub><b> (EMPLOYEE)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "ctshb"
+  },
+  {
+    "Question": "select the EMPLOYEE tuples whose salary is greater than 30000 , write a relational algebra for this question",
+    "Solution": "<b> σ</b><sub><small>Salary>30000</small></sub><b> (EMPLOYEE)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "R4aEa"
+  },
+  {
+    "Question": "select those tuples of the instructor relation where the instructor is in\n the “Physics” department, , write a relational algebra for this question",
+    "Solution": "<b> σ</b><sub><small>dept_name = 'Physics'</small></sub><b>(instructor)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "qPaXg"
+  },
+  {
+    "Question": "all instructors with salary greater than $90,000 ,write a relational algebra for this question",
+    "Solution": "<b> σ</b><sub><small>salary>90000</small></sub><b>(instructor)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "Y6f29"
+  },
+  {
+    "Question": "find the instructors in Physics with a salary greater than $90,000, write a relational algebra for this question",
+    "Solution": "<b> σ</b><sub><small>dept name = 'Physics' ∧ salary>90000</small></sub><b>(instructor)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "gtOkN"
+  },
+  {
+    "Question": "To find all departments whose name is the same as their building name, write a relational algebra for this question",
+    "Solution": "<b>σ</b> <sub><small>Salary>30000</small></sub> <b>(EMPLOYEE)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "JHlwQ"
+  },
+  {
+    "Question": "<picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n\n      />\n    </picture><br />\nselect those tuples of the instructor is in the \"physics\" department",
+    "Solution": "<b>σ</b><sub><small>dept_name=\"physics\"</small></sub><b>(INSTRUCTOR)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "wBVa2"
+  },
+  {
+    "Question": "<picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n \n      />\n    </picture> <br />\nfind all instructors with salary greater than $90000",
+    "Solution": "<b>σ</b> <sub><small>Salary>90000</small></sub> <b>(INSTRUCTOR)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "C2Unb"
+  },
+  {
+    "Question": "<picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n\n      />\n    </picture><br />\nfind all instructors in physics with salary greater than $90000",
+    "Solution": "<b>σ</b> <sub><small>dept_name=\"physics\"^Salary>90000</small></sub> <b>(INSTRUCTOR)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "DKKM4"
+  },
+  {
+    "Question": "consider the department relation\nfind all departments whose name is the same as their building name",
+    "Solution": "<b>σ</b> <sub><small>dept_name=building</small></sub> <b>(department)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "AYQrZ"
+  },
+  {
+    "Question": "<picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/instructor_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n\n      />\n    </picture><br />\nfind the ID, name and salary of instructor",
+    "Solution": "<b>π</b> <sub><small>ID, name, salary</small></sub> <b>(INSTRUCTOR)</b><br />",
+    "Tags": "#RA  #PO",
+    "QuestionID": "Tzhey"
+  },
+  {
+    "Question": "<picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n \n      />\n    </picture><br />\nfind the set of all courses taught in the fall 2009 semester",
+    "Solution": "<b>π</b><sub><small>course_id</small></sub><b>(σ</b> <sub><small>semester=\"fall\"^year=2009</small></sub><b>(section))</b>",
+    "Tags": "#RA",
+    "QuestionID": "sYsQX"
+  },
+  {
+    "Question": "<picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n \n      />\n    </picture><br />\nfind the set of all courses taught in the spring 2010 semester",
+    "Solution": "<b>π</b><sub><small>course_id</small></sub><b>(σ</b> <sub><small>semester=\"spring\"^year=2010</small></sub><b>(section))</b>",
+    "Tags": "#RA",
+    "QuestionID": "kogRd"
+  },
+  {
+    "Question": "<picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n\n      />\n    </picture><br />\nfind the courses offered in either fall 2009, spring 2010 or both semester",
+    "Solution": "<b>π</b><sub><small>course_id</small></sub><b>(σ</b> <sub><small>semester=\"fall\"^year=2009</small></sub><b>(section))∪</b><b>π</b><sub><small>course_id</small></sub><b>(σ</b> <sub><small>semester=\"spring\"^year=2010</small></sub><b>(section))</b>",
+    "Tags": "#RA",
+    "QuestionID": "svsdP"
+  },
+  {
+    "Question": "<picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n\n      />\n    </picture> <br />\nfind the courses offered in either fall 2009 but not in the spring 2010",
+    "Solution": "<b>π</b><sub><small>course_id</small></sub><b>(σ</b> <sub><small>semester=\"fall\"^year=2009</small></sub><b>(section))-</b><b>π</b><sub><small>course_id</small></sub><b>(σ</b> <sub><small>semester=\"spring\"^year=2010</small></sub><b>(section))</b>",
+    "Tags": "#RA",
+    "QuestionID": "UFi7p"
+  },
+  {
+    "Question": "<picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/teaches_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/teaches_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/teaches_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n       \n      />\n    </picture><br />\n    <picture>\n      <source\n        media=\"(max-width:700px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <source\n        media=\"(min-width:701px)\"\n        srcset=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n      />\n      <img\n        loading=\"lazy\"\n        src=\"/assets/DBMS/question_picture/section_relation_final.jpg\"\n        alt=\"relational algebra question 7\"\n        title=\"relational algebra question 7\"\n      \n      /><br />\n    </picture>\nfind the name of all instructors in the physics department together with the course_id of all courses they taught",
+    "Solution": "<b>σ</b><sub><small>dept_name=\"physics\"</small></sub><b>(instructor × teaches)</b>",
+    "Tags": "#RA",
+    "QuestionID": "DIckV"
+  },
+  {
+    "Question": "",
+    "Solution": "",
+    "Tags": "",
+    "QuestionID": "9rXtK"
+  },
+  {
+    "Question": "<picture>\n                <source\n                  media=\"(max-width:700px)\"\n                  srcset=\"https://csvidyalaya.com/assets/DBMS/RELATIONAL_ALGEBRA/GR4376TWWGE.png\"\n                />\n                <source\n                  media=\"(min-width:701px)\"\n                  srcset=\"https://csvidyalaya.com/assets/DBMS/RELATIONAL_ALGEBRA/GR4376TWWGE.png\"\n                />\n                <img\n                  loading=\"lazy\"  src=\"https://csvidyalaya.com/assets/DBMS/RELATIONAL_ALGEBRA/GR4376TWWGE.png\"\n                  alt=\"relational algebra question \"\n                  title=\"relational algebra question \"\n  \n                />\n              </picture> <br />\n\na) select only those employees who are in cs department      <br />\nb) select only those employees with last name Saleem and who are assistant professors     <br />\nc) select only those employees who are assistant professors or in economics department     <br />\nd) select only those employees who are not in the CS department or lecturer     <br />\nwrite a relational algebra for this question",
+    "Solution": "a) <b> σ</b><sub><small>dept = 'CS'</small></sub><b>(EMP)</b> <br />\nb) <b> σ</b><sub><small>name='salem' ∧ Rank='Assistant'</small></sub><b>(EMP)</b> <br />\nc) <b> σ</b><sub><small>Rank='Assistant' ∨ Dept='Ecom'</small></sub><b>(EMP)</b><br />\nd) <b> σ¬</b><sub><small>(Rank='Lecturer' ∨ Dept='cs')</small></sub><b>(EMP)</b>",
+    "Tags": "#RA",
+    "QuestionID": "RP9XI"
+  },
+  {
+    "Question": "select the EMPLOYEE all tuples     <br />\na) write relational algebra     <br />\nb) write the tuple relational calculus",
+    "Solution": "a) <b>π(EMPLOYEE)</b> <br />\nb) {t | t ∈ EMPLOYEE}",
+    "Tags": "#TRC #RA",
+    "QuestionID": "tQFy7"
+  },
+  {
+    "Question": "select the EMPLOYEE all tuples , write the tuple relational calculus",
+    "Solution": "<b> {t | t ∈ EMPLOYEE} </b>",
+    "Tags": "#TRA",
+    "QuestionID": "6xDV0"
+  },
+  {
+    "Question": "select the EMPLOYEE all tuples , write relational algebra",
+    "Solution": "<b>π(EMPLOYEE)</b>",
+    "Tags": "#RA  #PO",
+    "QuestionID": "obitB"
+  },
+  {
+    "Question": "select distinct Ename from EMPLOYEE  relation     <br />\na) write relational algebra     <br />\nb) write the tuple relational calculus",
+    "Solution": "a) <b>π</b> <sub><small>Ename</small></sub> <b>(EMPLOYEE)</b><br />\nb) <b> {t.Ename | t ∈ EMPLOYEE} </b>",
+    "Tags": "#TRC #RA",
+    "QuestionID": "aodRj"
+  },
+  {
+    "Question": "select distinct Ename from EMPLOYEE  relation, write relational algebra",
+    "Solution": "<b>π</b> <sub><small>Ename</small></sub> <b>(EMPLOYEE)</b>",
+    "Tags": "#RA, #PO",
+    "QuestionID": "HXuEo"
+  },
+  {
+    "Question": "select distinct Ename from relation EMPLOYEE  , write the tuple relational calculus",
+    "Solution": "<b> {t.Ename | t ∈ EMPLOYEE} </b>",
+    "Tags": "#TRC",
+    "QuestionID": "nH7m3"
+  },
+  {
+    "Question": "select all from employee where eno = 101;     <br />\na) write relational algebra     <br />\nb) write the tuple relational calculus",
+    "Solution": "a) <b>π</b><b> σ</b><sub><small>eno=101</small></sub> <b>(EMPLOYEE)</b><br />\nb) <b> {t | EMPLOYEE(t) ∧ t.Eno=101 } </b>",
+    "Tags": "#TRC #RA",
+    "QuestionID": "Qm7y3"
+  },
+  {
+    "Question": "select all from employee where eno = 101; write relational algebra",
+    "Solution": "<b>π</b><b> σ</b><sub><small>eno=101</small></sub> <b>(EMPLOYEE)</b>",
+    "Tags": "#RA",
+    "QuestionID": "DTnds"
+  },
+  {
+    "Question": "select all from employee where eno = 101;write the tuple relational calculus",
+    "Solution": "<b> {t | t ∈ EMPLOYEE ∧ t.Eno=101 } </b>",
+    "Tags": "#TRC",
+    "QuestionID": "XaQFh"
+  },
+  {
+    "Question": "select Ename, Salary, from Employee , where salary > 1000 and dno=10;     <br />\na) write relational algebra     <br />\nb) write the tuple relational calculus",
+    "Solution": "a) <b>π</b><sub><small>Ename, Salary</small></sub> <b> σ</b><sub><small>Salary>1000 ∧ dno=10</small></sub> <b>(EMPLOYEE)</b> <br />\nb) <b> {t.Ename, t.Salary | t ∈ EMPLOYEE ∧ t.Salary>1000 ∧ t.dno=10} </b>",
+    "Tags": "#TRC #RA",
+    "QuestionID": "FHw6s"
+  },
+  {
+    "Question": "select Ename, Salary, from Employee , where salary > 1000 and dno=10; write relational algebra",
+    "Solution": "<b>π</b><sub><small>Ename, Salary</small></sub> <b> σ</b><sub><small>Salary>1000 ∧ dno=10</small></sub> <b>(EMPLOYEE)</b>",
+    "Tags": "#RA",
+    "QuestionID": "xCNHW"
+  },
+  {
+    "Question": "select Ename, Salary, from Employee , where salary > 1000 and dno=10; write the tuple relational calculus",
+    "Solution": "<b> {t.Ename, t.Salary | t ∈ EMPLOYEE ∧ t.Salary>1000 ∧ t.dno=10} </b>",
+    "Tags": "#TRC",
+    "QuestionID": "rpkap"
+  },
+  {
+    "Question": "Employee(fname, lname, dob, salary, address, Dno)\nfind the details of all employees whole salary is more than 5000, write tuple relational calculus",
+    "Solution": "<b> {t | t ∈ EMPLOYEE ∧ t.Salary > 5000} </b>",
+    "Tags": "#TRC",
+    "QuestionID": "8cXvw"
+  },
+  {
+    "Question": "find the name of EMPLOYEES whose salary is more than 5000 , write tuple relational calculus expression",
+    "Solution": "<b> {t.fname, t.lname | t ∈ EMPLOYEES ∧ t.Salary > 5000} </b>",
+    "Tags": "#TRC",
+    "QuestionID": "Uicz6"
+  },
+  {
+    "Question": "select the tuples for all employees who either work in department 4 and make over $25,000 per year, or work in department 5 and make over $30,000",
+    "Solution": "<b> σ</b><sub><small>(Dno=4 AND Salary>25000) OR (Dno=5 AND Salary>30000)</small></sub><b>(EMPLOYEE)</b>",
+    "Tags": "#RA  #SO",
+    "QuestionID": "TZg0p"
+  },
+  {
+    "Question": "list each employee’s first and last name and salary",
+    "Solution": "<b>π</b><sub><small>Lname, Fname, Salary</small></sub><b>(EMPLOYEE)</b>",
+    "Tags": "#RA  #PO",
+    "QuestionID": "UjiFR"
+  },
+  {
+    "Question": "retrieve the first name, last name, and salary of all employees who work in department number 5,",
+    "Solution": "<b>π</b><sub><small>Lname, Fname, Salary</small></sub><b>(σ</b><sub><small>Dno=5</small></sub> <b>(EMPLOYEE))</b>  <br /><br />\n<b>or, assignment operations</b><br /><br />\n   <b>DEP5_EMPS ← σ</b><sub><small> Dno=5</small></sub> <b>(EMPLOYEE)</b>\n    <br />\n    <b>RESULT ← π</b><sub><small>Fname, Lname, Salary</small></sub>\n    <b>(DEP5_EMPS)</b>",
+    "Tags": "#RA",
+    "QuestionID": "zeMbX"
+  },
+  {
+    "Question": "Employee(Fname, Lname, SSN, Bdate, Address, Sex, Salary, Super SSN, Dno)<br />\nDepartment(Dname, Dnumber, Mgr SSN, Mgr Start Date) <br />\nDept Locations(Dnumber1, Docation)<br />\nProject(Pname, Pnumber, Plocation, Dnum)<br />\nWorks On(ESSN, Pno, Hours)<br />\nDependent(ESSN, Dependent name, Sex, Bdate, Relationship)<br />\n(Foreign key, Primary key) = {(Dno,Dnumber), (Dnum,Dnumber), (Dnumber1, Dnumber), (ESSN, SSN), (Super SSN, SSN), (Pno,Pnumber)}<br />\nUse the above tables for solving the following problems.<br />\n(a) Write a TRC formula that retrieve the names of employee who have no dependent.<br />\n(b) Write a relational algebra expression that list the names of managers who have at least one dependent.<br />",
+    "Solution": "(a) {t.fname, t.lname | Employee(t) ^ (¬(∃D)Dependent(D) ^ D.ESSN = t.SSN}<br />\n<b>¬</b>(this is not sysmbol)<br />\n(b) <b> Managers ← π</b><sub><small> SSN, Fname, Lname</small></sub> <b> (Employee ⨝</b><sub><small> SSN = Mgr_SSN </small></sub> <b>Department)</b>  <br />\n <b>ManagersWithDeps ← Managers ⨝</b><sub><small> SSN = ESSN</small></sub> <b>Dependent)</b> <br />\n<b>π</b><sub><small> Fname, Lname </small></sub> <b>(ManagersWithDeps)</b>",
+    "Tags": "#TRC #RA",
+    "QuestionID": "PnsQv"
+  }
+]
