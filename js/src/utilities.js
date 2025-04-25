@@ -33,7 +33,7 @@ export function bar(link_arr) {
     // console.log(users.link + "" + users.name);
     loopt += `<a href="${users.link}">${users.name}</a>`;
   }
-  
+
   bar.innerHTML = irhtml + loopt + ` </div><br>`;
 
   let bar_style = document.createElement("style");
@@ -58,4 +58,43 @@ export function bar(link_arr) {
   let body = document.querySelector("body");
   let h1 = document.querySelector("body>div");
   body.insertBefore(bar, h1);
+}
+
+export function popup_links(linksarr) {
+  let modal = document.createElement("div");
+  let inrHTML = ` <div class="modal fade" id="myModal" tabindex="-1" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Also try these question</h5>
+                    <button type="button" id="btn_closeder" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                       <ul class="list-group list-group-flush">`;
+
+  let loopt = "";
+  for (const users of linksarr.users) {
+    loopt += `   <li class="list-group-item">
+            <a href="${users.link}">${users.name}</a>
+          </li>`;
+  }
+  modal.innerHTML =
+    inrHTML +
+    loopt +
+    `     </ul>
+                </div>
+            </div>
+        </div>
+    </div>`;
+  add_body(modal);
+  let scriptss = document.createElement("script");
+  scriptss.innerHTML = ` 
+ function openModal() {
+            var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+            myModal.show();
+        }
+            setTimeout(openModal, 10000);
+            document.getElementById('btn_closeder').addEventListener('click',() => setTimeout(openModal, 12 * 60 * 1000));
+    `;
+  add_body(scriptss);
 }
