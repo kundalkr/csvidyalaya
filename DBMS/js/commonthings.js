@@ -1,4 +1,4 @@
-import { bar } from "/js/src/utilities.min.js";
+import { bar,popup_links } from "/js/src/utilities.min.js";
 const data = {
   users: [
     {
@@ -36,3 +36,32 @@ const data = {
   ],
 };
 bar(data);
+
+
+const pop_link = {
+  users: [
+    {
+      name: "selection operation questions",
+      link: "https://csvidyalaya.com/DBMS/DBMS_topics/relational_algebra/selection_operation.html",
+    },
+    {
+      name: "projection operation question",
+      link: "https://csvidyalaya.com/DBMS/DBMS_topics/relational_algebra/projection_operation.html",
+    },
+    {
+      name: "realational algebra question",
+      link: "https://csvidyalaya.com/DBMS/DBMS_topics/relational_algebra/relational_algebra_question.html",
+    },
+    {
+      name: "tuple relational question",
+      link: "https://csvidyalaya.com/DBMS/DBMS_topics/relational_calculus/tuple_relational_calculus.html",
+    },
+    {
+      name: "relational algebra + relational calculus question",
+      link: "https://csvidyalaya.com/DBMS/DBMS_topics/relational_algebra_relational_calculus.html",
+    }
+  ]
+};
+popup_links(pop_link);
+
+
