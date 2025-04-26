@@ -74,18 +74,9 @@ export function popup_links(linksarr) {
 
   let loopt = "";
   for (const users of linksarr.users) {
-    loopt += `   <li class="list-group-item">
-            <a href="${users.link}">${users.name}</a>
-          </li>`;
+    loopt += `<li class="list-group-item" style="background-color: #FFD1DC;"><a href="${users.link}">${users.name}</a></li>`;
   }
-  modal.innerHTML =
-    inrHTML +
-    loopt +
-    `     </ul>
-                </div>
-            </div>
-        </div>
-    </div>`;
+  modal.innerHTML = inrHTML + loopt + `</ul></div></div></div></div>`;
   add_body(modal);
   let scriptss = document.createElement("script");
   scriptss.innerHTML = ` 

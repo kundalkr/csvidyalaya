@@ -1,4 +1,4 @@
-import { add_css, add_body, bar } from "/js/src/utilities.min.js";
+import { add_css, add_body, bar,popup_links } from "/js/src/utilities.min.js";
 
 const data = {
   users: [
@@ -38,6 +38,43 @@ const data = {
 };
 bar(data);
 
+const pop_link = {
+  users: [
+    {
+      name: "first-come-first-serve questions",
+      link: "fcfs.html",
+    },
+    {
+      name: "shortest job first(SJF) question",
+      link: "sjf1.html",
+    },
+    {
+      name: "Shortest Remaining Time First (SRTF) question",
+      link: "sjf2.html",
+    },
+    {
+      name: " Multilevel feedback queue scheduling question",
+      link: "mlfqs.html",
+    },
+    {
+      name: "Multilevel queue scheduling question",
+      link: "MLQS.html",
+    },
+    {
+      name: "priority scheduling question",
+      link: "ps1.html",
+    },
+    {
+      name: "peemptive priority scheduling question",
+      link: "ps2.html",
+    },
+    {
+      name: "Round Robin scheduling question",
+      link: "RR1.html",
+    },
+  ],
+};
+popup_links(pop_link);
 add_css(
   "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black; }}"
 );
@@ -91,60 +128,3 @@ let sche_topics = document.querySelectorAll(
 for (let index = 0; index < sche_topics.length; index++) {
   sche_topics[index].style.backgroundColor = "#1AFF53";
 }
-
-let modal = document.createElement("div");
-modal.innerHTML = `
-      <div class="modal fade" id="myModal" tabindex="-1" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Also try these question</h5>
-                    <button type="button" id="btn_closeder" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                       <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <a target="_blank" href="fcfs.html">practice first come first serve questions</a>
-          </li>
-          <li class="list-group-item">
-            <a target="_blank" href="sjf1.html">practice shortest job first(SJF) question</a>
-          </li>
-           <li class="list-group-item">
-            <a target="_blank" href="sjf2.html">practice Shortest Remaining Time First (SRTF) question</a>
-          </li>
-          <li class="list-group-item">
-            <a target="_blank" href="mlfqs.html">practice Multilevel feedback queue scheduling question</a>
-          </li>
-          <li class="list-group-item">
-            <a target="_blank" href="MLQS.html">practice Multilevel queue scheduling question</a>
-          </li>
-          <li class="list-group-item">
-            <a target="_blank" href="ps1.html">practice priority scheduling question</a>
-          </li>
-          <li class="list-group-item">
-            <a target="_blank" href="ps2.html">practice peemptive priority scheduling question</a>
-          </li>
-              <li class="list-group-item">
-            <a target="_blank" href="RR1.html">practice Round Robin scheduling question</a>
-          </li>
-        </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-`;
-
-add_body(modal);
-
-window.onload = function () {
-  let modal_script = document.createElement("script");
-  modal_script.innerHTML = ` 
-          function openModal() {
-              var myModal = new bootstrap.Modal(document.getElementById('myModal'));
-              myModal.show();
-          }
-              setTimeout(openModal, 10000);
-              document.getElementById('btn_closeder').addEventListener('click',() => setTimeout(openModal, 12 * 60 * 1000));
-     `;
-  add_body(modal_script);
-};
