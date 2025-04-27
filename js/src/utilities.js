@@ -40,7 +40,7 @@ export function bar(link_arr) {
   bar_style.innerHTML = `   
           #bar1 {
           a {
-                color: rgb(255, 255, 255);
+              color: rgb(255, 255, 255);
               text-decoration-color: rgb(255, 255, 255);
               text-decoration-thickness: 0.3ex;
               text-underline-offset: 0.3ex;
