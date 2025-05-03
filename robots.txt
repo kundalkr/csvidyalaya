@@ -30,6 +30,7 @@ User-agent: *
 Disallow: /Digital Fundamentals/  
 Disallow: /Digital Fundamentals/Boolean Algebra/ 
 Disallow: /Digital Fundamentals/Number System/  
+Disallow: /Digital%20Fundamentals/
 
 Sitemap: https://www.csvidyalaya.com/sitemap.xml
 

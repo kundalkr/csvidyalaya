@@ -1,5 +1,6 @@
 let headu = document.querySelector("head");
 let bodu = document.querySelector("body");
+
 function external_css(params) {
   let external_css = document.createElement("script");
   external_css.src = "/js/src/externalcss.min.js";
@@ -11,28 +12,13 @@ function hdr_ftr(params) {
   header_footer.src = "/js/src/hdr_ftr.min.js";
   header_footer.setAttribute("type", "module");
   header_footer.async = !0;
-  // header_footer.defer = true;
   headu.appendChild(header_footer);
 }
-// function bar(params) {
-//   if (window.location.pathname.startsWith("/os/scheduling_algorithms/")) {
-//     let commonthings = document.createElement("script");
-//     commonthings.src = "/os/scheduling_algorithms/commonthings.min.js";
-//     commonthings.setAttribute("type", "module");
-//     headu.appendChild(commonthings);
-//   }
-// }
-
 function execution(hdr_ftr, fn1) {
   hdr_ftr();
   fn1();
-  // fn2();
 }
 execution(hdr_ftr,external_css);
-
-
-
-
 window.onload = function () {
   let bodu = document.querySelector("body");
   let commonforall = document.createElement("script");
@@ -52,14 +38,9 @@ window.onload = function () {
     bodu.appendChild(extra_tags);
   }
 };
-
-
-
-
 function c() {
   document.getElementById("sidebar").style.display = "block";
 }
-
 function d() {
   document.getElementById("sidebar").style.display = "none";
 }
