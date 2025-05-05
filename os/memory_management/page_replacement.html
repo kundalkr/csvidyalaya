@@ -50,76 +50,7 @@
       content="https://yourwebsite.com/images/page-replacement-thumbnail.jpg"
     />
 
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://csvidyalaya.com/os/memory_management/page_replacement.html"
-        },
-        "headline": "Page Replacement Questions: Concepts, Algorithms, and Practice Problems",
-        "description": "Explore page replacement questions, answers, and solutions. Includes FIFO, LRU, and Optimal algorithms for CS learners and exam preparation.",
-        "author": {
-          "@type": "Person",
-          "name": "Kundal Kumar",
-          "url": "https://csvidyalaya.com/anotherpage/about.html"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Your Website Name",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://csvidyalaya.com/assets/logo/main_Logo.jpg"
-          }
-        },
-        "image": "https://yourwebsite.com/images/page-replacement-thumbnail.jpg",
-        "datePublished": "2024-12-27",
-        "dateModified": "2024-12-27",
-        "hasPart": [
-          {
-            "@type": "Question",
-            "name": "What is the FIFO page replacement algorithm?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The FIFO (First-In, First-Out) page replacement algorithm replaces the oldest page in memory that was loaded first. It is simple to implement but may suffer from Belady's anomaly."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does the LRU page replacement algorithm work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The LRU (Least Recently Used) algorithm replaces the page that has not been used for the longest time. It efficiently uses the past behavior of page references to predict future needs."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the Optimal page replacement algorithm?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The Optimal page replacement algorithm replaces the page that will not be used for the longest time in the future. It provides the lowest page fault rate but is impractical in real-world scenarios as it requires future knowledge."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between FIFO and LRU?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "FIFO replaces the oldest loaded page, while LRU replaces the least recently used page. LRU generally performs better in most cases as it considers actual usage patterns."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How can I practice page replacement algorithms?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can practice page replacement algorithms using example problems and test cases. Start with FIFO, LRU, and Optimal algorithms, and solve questions that involve memory references and page faults."
-            }
-          }
-        ]
-      }
-    </script>
+
 
     <style>
       #pg_repl {
@@ -142,28 +73,24 @@
       <main>
         <h1 id="upper">Buddy System Questions</h1>
 
-        <button
-          type="button"
-          class="btn btn-success"
-          style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
-        >
-          <a href="#down"
-            ><span class="material-icons" style="color: antiquewhite">
-              arrow_downward
-            </span></a
-          >
-        </button>
-        <button
-          type="button"
-          class="btn btn-success"
-          style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
-        >
-          <a href="#upper"
-            ><span class="material-icons" style="color: antiquewhite">
-              arrow_upward
-            </span></a
-          >
-        </button>
+        <a
+        class="btn btn-primary"
+        href="#down"
+        role="button"
+        style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+        ><span class="material-icons" style="color: rgb(255, 255, 255)">
+          arrow_downward
+        </span></a
+      >
+      <a
+        class="btn btn-primary"
+        href="#upper"
+        role="button"
+        style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+        ><span class="material-icons" style="color: rgb(255, 255, 255)">
+          arrow_upward
+        </span></a
+      >
 
         <!-- upper and down button end-->
 
