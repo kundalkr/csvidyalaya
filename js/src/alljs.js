@@ -38,9 +38,3 @@ window.onload = function () {
     bodu.appendChild(extra_tags);
   }
 };
-function c() {
-  document.getElementById("sidebar").style.display = "block";
-}
-function d() {
-  document.getElementById("sidebar").style.display = "none";
-}
