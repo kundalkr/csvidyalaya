@@ -1,6 +1,26 @@
 let headu = document.querySelector("head");
 let bodu = document.querySelector("body");
 
+  if (
+    window.location.hostname !== "localhost" &&
+    window.location.hostname !== "127.0.0.1"
+  ) {
+  let script1 = document.createElement("script");
+  script1.async = !0;
+  script1.src = "https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS";
+  headu.appendChild(script1);
+  
+  let script2 = document.createElement("script");
+  
+  script2.innerHTML=`window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'G-C4M8ZRW6HS');`
+    headu.appendChild(script2);
+  }
+
+
 function external_css(params) {
   let external_css = document.createElement("script");
   external_css.src = "/js/src/externalcss.min.js";
@@ -27,14 +47,14 @@ window.onload = function () {
   commonforall.async = !0;
   bodu.appendChild(commonforall);
 
-  if (
-    window.location.hostname !== "localhost" &&
-    window.location.hostname !== "127.0.0.1"
-  ) {
-    let extra_tags = document.createElement("script");
-    extra_tags.src = "/js/src/tags_script.min.js";
-    extra_tags.setAttribute("type", "module");
-    extra_tags.async = !0;
-    bodu.appendChild(extra_tags);
-  }
+  // if (
+  //   window.location.hostname !== "localhost" &&
+  //   window.location.hostname !== "127.0.0.1"
+  // ) {
+  //   let extra_tags = document.createElement("script");
+  //   extra_tags.src = "/js/src/tags_script.min.js";
+  //   extra_tags.setAttribute("type", "module");
+  //   extra_tags.async = !0;
+  //   bodu.appendChild(extra_tags);
+  // }
 };
