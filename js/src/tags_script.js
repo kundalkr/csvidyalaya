@@ -8,10 +8,10 @@ add_head(script1);
 
 let script2 = document.createElement("script");
 
-script2.innerHTML=`  window.dataLayer = window.dataLayer || [];
+script2.innerHTML=`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
+  
   gtag('config', 'G-C4M8ZRW6HS');`
   add_head(script2);
 
