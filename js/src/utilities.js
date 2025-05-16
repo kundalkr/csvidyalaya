@@ -89,3 +89,12 @@ export function popup_links(linksarr) {
     `;
   add_body(scriptss);
 }
+
+export function google_font(element) {
+  for (const users of element.users) {
+    let fontes = document.createElement("link");
+    fontes.setAttribute("href", `${users.link}`);
+    fontes.setAttribute("rel", "stylesheet");
+    add_head(fontes);
+  }
+}

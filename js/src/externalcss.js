@@ -1,4 +1,4 @@
-import { add_head } from "/js/src/utilities.min.js";
+import { add_head, google_font } from "/js/src/utilities.min.js";
 
 let head = document.querySelector("head");
 
@@ -43,61 +43,6 @@ fav512.setAttribute("type", "image/png");
 fav512.setAttribute("sizes", "512x512");
 fav512.href = "/assets/favicon_io/android-chrome-512x512.png";
 add_head(fav512);
-let gfont1 = document.createElement("link");
-gfont1.setAttribute("rel", "preconnect");
-gfont1.setAttribute("href", "https://fonts.googleapis.com");
-add_head(gfont1);
-let gfont2 = document.createElement("link");
-gfont2.setAttribute("rel", "preconnect");
-gfont2.setAttribute("href", "https://fonts.gstatic.com");
-gfont2.setAttribute("crossorigin", "anonymous");
-add_head(gfont2);
-let gapi1 = document.createElement("link");
-gapi1.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-);
-gapi1.setAttribute("rel", "stylesheet");
-add_head(gapi1);
-let gapi2 = document.createElement("link");
-gapi2.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
-);
-gapi2.setAttribute("rel", "stylesheet");
-add_head(gapi2);
-let googleicon = document.createElement("link");
-googleicon.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/icon?family=Material+Icons"
-);
-googleicon.setAttribute("rel", "stylesheet");
-add_head(googleicon);
-let googl = document.createElement("link");
-googl.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close"
-);
-googl.setAttribute("rel", "stylesheet");
-add_head(googl);
-let googleapi3 = document.createElement("link");
-googleapi3.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
-);
-googleapi3.setAttribute("rel", "stylesheet");
-add_head(googleapi3);
-
-// linked_services icon
-let googleicon4 = document.createElement("link");
-googleicon4.setAttribute(
-  "href",
-  "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=linked_services"
-);
-googleicon4.setAttribute("rel", "stylesheet");
-add_head(googleicon4);
-
-// linked_services icon
 
 let cssstyle = document.createElement("style");
 cssstyle.innerHTML = `
@@ -105,10 +50,31 @@ cssstyle.innerHTML = `
 div#foot>ul li{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;width:250px;text-align:center;margin:5px 0}}.headi{color:rgb(11,24,207);font-weight:bold}.py-5{padding-top:0px}
 @media(width<=800px){#navbarSupportedContent{display:none}
 #sdbrs_open_button{display:block}
-#sidebar{padding-top:15px;position:fixed;top:0px;background-color:#ffd1dc;z-index:111111111;border:1px solid red;width:100vw;height:90vh;li{list-style-type:none;margin-bottom:10px;a{text-decoration:none;color:black}}
+#sidebar{padding-top:15px;position:fixed;top:0px;background-color:#ffd1dc;z-index:111111111;border:1px solid red;width:100vw;height:99vh;overflow: scroll;li{list-style-type:none;margin-bottom:10px;a{text-decoration:none;color:black}}
 button{border:none;background-color:#ffd1dc}}}.navbar-bran{font-family:"Pacifico",cursive;font-weight:400;font-style:normal}
 @media(width>=500px){.navbar-bran{font-family:"Pacifico",cursive;font-weight:400;font-style:normal}}
 li>a{font-family:"Playpen Sans",cursive;font-optical-sizing:auto;font-weight:450;font-style:normal;a,a:hover,a:focus,a:active{text-decoration:none;color:inherit;color:black}}
 a{text-decoration-color:blueviolet;text-decoration-thickness:.3ex;text-underline-offset:.3ex}.container .card:hover{animation:myAnim 0s ease 0s 1 normal forwards;transform-origin:center}@keyframes myAnim{0%{transform:rotate(0deg)}100%{transform:rotate(10deg)}}
 `;
 add_head(cssstyle);
+
+const gfont = {
+  users: [
+    {
+      about: "",
+      link: "https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap",
+    },
+    {
+      link: "https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap",
+    },
+    {
+      link: "https://fonts.googleapis.com/css2?family=Pacifico&display=swap",
+    },
+    {
+      link:"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_downward,arrow_upward,close,hub&display=block"
+    }
+
+  ],
+};
+
+google_font(gfont);

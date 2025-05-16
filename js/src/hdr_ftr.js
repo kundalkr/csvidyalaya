@@ -65,6 +65,13 @@ header.innerHTML = `
                     >Digital Fundamentals</a
                   >
                 </li>
+                  <li>
+                  <a
+                    class="dropdown-item"
+                    href="/DBMS/dbms_topic.html"
+                    >Database Management System (DBMS)</a
+                  >
+                </li>
            
               </ul>
             </li>
@@ -81,17 +88,14 @@ header.innerHTML = `
                 class="nav-link active"
                 aria-current="page"
                 href="/sitemap.html" target="_blank"
-                ><span class="material-symbols-outlined">
-linked_services
-</span></a
-              >
+                >
+                <span class="material-symbols-outlined">hub</span></a>
             </li>
           </ul>
-        
         </div>
       </div>
     </nav>
-    <div id="sidebar" style="display: none">
+    <div id="sidebar" style="display:none">
       <button onclick="d()" style="float: right; padding-right: 22px;">
         <span class="material-symbols-outlined"> close </span>
       </button>
@@ -107,11 +111,48 @@ linked_services
             href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
             >Scheduling Algorithms Question</a
           >
+            <ul>
+             <li>
+          <a href="https://csvidyalaya.com/os/scheduling_algorithms/fcfs.html"
+            >first-come-first-serve(FCFS) </a
+          >
+        </li> <li>
+          <a href="https://csvidyalaya.com/os/scheduling_algorithms/sjf1.html"
+            >Shortest Job First(SJF) </a
+          >
+        </li> <li>
+          <a href="https://csvidyalaya.com/os/scheduling_algorithms/sjf2.html"
+            >SRTF (Shortest Remaining Time First)</a
+          >
+        </li> <li>
+          <a href="https://csvidyalaya.com/os/scheduling_algorithms/RR1.html"
+            >Round Robin(RR)</a
+          >
+        </li> <li>
+          <a href="https://csvidyalaya.com/os/scheduling_algorithms/ps1.html"
+            >priority scheduling</a
+          >
+        </li>
+            <li>
+          <a href="https://csvidyalaya.com/os/scheduling_algorithms/ps2.html"
+            >preemptive priority scheduling</a
+          >
+        </li>
+        <li>
+          <a href="https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"
+            >multi-level feedback Queue (MLFQ) scheduling</a
+          >
+        </li><li>
+          <a href="https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html"
+            >multi-level Queue (MLQ) scheduling</a
+          >
+        </li>
+            </ul>
+
         </li>
         <li>
           <a href="/dsa_in_c/dsa_in_c_topic.html">Dsa In C</a>
-        </li>
-        <li>
+          <ul><li>
           <a href="/dsa_in_c/infixtopostfix.html"
             >Infix And Postfix question</a
           >
@@ -145,12 +186,40 @@ linked_services
           <a href="/dsa_in_c/linkedlist1.html"
             >linkedlist question</a
           >
+        </li></ul>
         </li>
+        
         <li>
-          <a href="/Digital_Fundamentals/Dgital_funda_topic.html"
-            >Dgital fundamental</a
+          <a href="/DBMS/dbms_topic.html"
+            >DBMS</a
+          >
+          <ul>
+          <li>
+          <a href="/DBMS/DBMS_topics/Relational_algebra_topics.html"
+            >Relational Algebra Topics</a
           >
         </li>
+
+         <li>
+          <a href=" https://csvidyalaya.com/DBMS/DBMS_topics/relational_algebra/relational_algebra_question.html"
+            >Relational Algebra question</a
+          >
+        </li>
+
+           <li>
+          <a href="https://csvidyalaya.com/DBMS/DBMS_topics/relational_calculus_topic.html"
+            >Relational calculus</a
+          >
+        </li>
+
+            <li>
+          <a href="https://csvidyalaya.com/DBMS/DBMS_topics/relational_algebra_relational_calculus.html"
+            >Relational Algebra + relational calculus</a
+          >
+        </li>
+          </ul>
+        </li>
+         
       </ul>
     </div>
     <br>
@@ -222,9 +291,6 @@ footer.innerHTML = `
           </ul>
         </div>
 
-
-
-
 <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">DBMS</li>
@@ -282,10 +348,6 @@ footer.innerHTML = `
           </ul>
         </div>
 
-      
-
-
-        
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
             <li class="nav-item mb-2 headi">What Is</li>
@@ -698,13 +760,6 @@ if (
     "https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html";
 }
 
-let bootstrapicon = document.createElement("link");
-bootstrapicon.setAttribute("rel", "stylesheet");
-bootstrapicon.setAttribute(
-  "href",
-  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-);
-add_head(bootstrapicon);
 let bootstrapScript = document.createElement("script");
 bootstrapScript.src =
   "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js";
@@ -714,3 +769,14 @@ bootstrapScript.setAttribute(
 );
 bootstrapScript.setAttribute("crossorigin", "anonymous");
 add_head(bootstrapScript);
+
+if (window.innerWidth <= 815) {
+  let sctt = document.createElement("script");
+  sctt.innerHTML = `function d() {
+    document.getElementById("sidebar").style.display = "none";
+  } 
+     function c() {
+    document.getElementById("sidebar").style.display = "block";
+  }`;
+  add_head(sctt);
+}

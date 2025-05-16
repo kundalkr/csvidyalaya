@@ -38,7 +38,9 @@ function execution(hdr_ftr, fn1) {
   hdr_ftr();
   fn1();
 }
-execution(hdr_ftr,external_css);
+execution(external_css,hdr_ftr);
+
+
 window.onload = function () {
   let bodu = document.querySelector("body");
   let commonforall = document.createElement("script");
