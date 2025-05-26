@@ -54,6 +54,4 @@ for (let indexi = 0; indexi <= decimal_to_another.length; indexi++) {
       </ul>
     </div><br>`;
 }
-function name(params) {
-  
-}
+

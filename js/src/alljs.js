@@ -48,15 +48,5 @@ window.onload = function () {
   commonforall.setAttribute("type", "module");
   commonforall.async = !0;
   bodu.appendChild(commonforall);
-
-  // if (
-  //   window.location.hostname !== "localhost" &&
-  //   window.location.hostname !== "127.0.0.1"
-  // ) {
-  //   let extra_tags = document.createElement("script");
-  //   extra_tags.src = "/js/src/tags_script.min.js";
-  //   extra_tags.setAttribute("type", "module");
-  //   extra_tags.async = !0;
-  //   bodu.appendChild(extra_tags);
-  // }
 };
+wewswdededrfr
