@@ -96,4 +96,3 @@ modal_script2.innerHTML = `
               document.getElementById('btn_closeder').addEventListener('click',() => setTimeout(openModal, 12 * 60 * 1000));
      `;
 add_body(modal_script2);
-vvfjffhjhfdjkhgjkkdfhgjkewrwerwerwerewrdsfweferefrefrereferfrrf

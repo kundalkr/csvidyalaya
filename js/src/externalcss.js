@@ -1,6 +1,6 @@
 import { add_head, google_font } from "/js/src/utilities.min.js";
 
-let head = document.querySelector("head");
+
 
 let bootstrapcss = document.createElement("link");
 bootstrapcss.setAttribute(

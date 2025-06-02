@@ -1,6 +1,4 @@
 let headu = document.querySelector("head");
-let bodu = document.querySelector("body");
-
   if (
     window.location.hostname !== "localhost" &&
     window.location.hostname !== "127.0.0.1"
@@ -21,13 +19,13 @@ let bodu = document.querySelector("body");
   }
 
 
-function external_css(params) {
+function external_css() {
   let external_css = document.createElement("script");
   external_css.src = "/js/src/externalcss.min.js";
   external_css.setAttribute("type", "module");
   headu.appendChild(external_css);
 }
-function hdr_ftr(params) {
+function hdr_ftr() {
   let header_footer = document.createElement("script");
   header_footer.src = "/js/src/hdr_ftr.min.js";
   header_footer.setAttribute("type", "module");
@@ -49,4 +47,3 @@ window.onload = function () {
   commonforall.async = !0;
   bodu.appendChild(commonforall);
 };
-wewswdededrfr

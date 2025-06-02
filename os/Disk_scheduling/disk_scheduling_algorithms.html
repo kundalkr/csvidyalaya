@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Learn Disk Scheduling : 11 Solved Questions + PYQs with Solutions
+    </title>
+    <meta
+      name="description"
+      content="Practice Disk Scheduling Algorithm questions with detailed explanations. Perfect for students and professionals preparing for computer science exams or interviews."
+    />
+    <meta
+      name="keywords"
+      content="Disk Scheduling Algorithm, Disk Scheduling Questions,Disk Scheduling PYQs, OS Algorithms, Computer Science Questions, Interview Questions on Disk Scheduling, Disk Scheduling question with PYQ"
+    />
+    <meta name="author" content="Kundal Kumar" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Disk Scheduling Algorithm Questions with Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Explore a collection of Disk Scheduling Algorithm questions with answers, designed to help you ace your exams or job interviews."
+    />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Disk Scheduling Algorithm Questions with Solutions"
+    />
+    <meta
+      name="twitter:description"
+      content="Solve Disk Scheduling Algorithm questions with detailed answers. Ideal for exam preparation and technical interviews."
+    />
+    <style>
+      img {
+        height: auto;
+        width: 630px;
+        @media (width<=770px) {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- upper and down button -->
+    <div class="container">
+      <a
+        class="btn btn-primary"
+        href="#down"
+        role="button"
+        style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
+      >
+        <span
+          class="material-symbols-outlined"
+          style="color: rgb(255, 255, 255)"
+        >
+          arrow_downward
+        </span></a
+      >
+
+      <a
+        class="btn btn-primary"
+        href="#upper"
+        role="button"
+        style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
+        ><span
+          class="material-symbols-outlined"
+          style="color: rgb(255, 255, 255)"
+        >
+          arrow_upward
+        </span></a
+      >
+    </div>
+    <!-- upper and down button end-->
+    <main>
+      <div class="container">
+        <h1>
+          Mastering Disk Scheduling: 11 Solved Questions + PYQs with Solutions
+        </h1>
+        <p>
+          Disk Scheduling is a key concept in operating systems, and if you're
+          preparing for exams or interviews, mastering this topic can seriously
+          boost your knowledge level. Whether you’re a computer science student,
+          an OS enthusiast, or someone tackling semester exams—this post is your
+          go-to guide!
+        </p>
+        <p>
+          We’ve compiled 11 solved disk scheduling problems that cover various
+          algorithms(for example FCFS, SSTF, LOOK, SCAN, C-SCAN), plus Previous
+          Year Questions (PYQs) with detailed step-by-step solutions. You’ll
+          learn, practice, and clear your doubts in one place. Let’s dive in!
+        </p>
+        <p>
+          few days ago, I’ve shared solved questions and previous year questions
+          (PYQs) for
+          <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
+            >CPU Scheduling</a
+          >,
+          <a href="/os/Deadlocks/deadlock_topics.html">Banker’s Algorithm</a>,
+          and
+          <a href="/os/memory_management/Buddy_system.html">The Buddy System</a
+          >.
+        </p>
+        <p style="font-size: x-large; font-weight: 800">
+          Popular Disk Scheduling Algorithms :
+        </p>
+        <ul>
+          <li>FCFS (First Come First Serve)</li>
+          <li>SSTF (Shortest Seek Time First)</li>
+          <li>SCAN (Elevator Algorithm)</li>
+          <li>C-SCAN (Circular SCAN)</li>
+          <li>LOOK and C-LOOK</li>
+        </ul>
+
+        <section>
+          <div id="question1">
+            <div class="question">
+              <h2>
+                Question 1: Suppose the head of moving disk with 200 tracks,
+                numbered 0 to 199 is currently serving a request at track 132
+                and has just finished a request at track 120. If the queue of
+                requests is kept in the FIFO order 38, 55, 86, 123, 147, 91,
+                177, 115, 94, 150, 100, 175 and 130, 185. What is total head
+                movement to satisfy these request for the following disk
+                scheduling algorithms? (a) FCFS (b) LOOK
+              </h2>
+            </div>
+            <div class="solution">
+              <p>Answer :</p>
+              <p>(A) FCFS :</p>
+              <p>
+                Step-by-step movement: <br />
+                132 -> 38 -> 55 -> 86 -> 123 -> 147 -> 91 -> 177 -> 115 -> 94 ->
+                150 -> 100 -> 175 -> 130 -> 185
+              </p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/disk_scheduling/FCFS_2023-25.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/disk_scheduling/FCFS_2023-25.jpg"
+                />
+                <img
+                  src="/assets/disk_scheduling/FCFS_2023-25.jpg"
+                  alt="disk scheduling QUESTION WITH solution | first come first serve (FCFS)"
+                  title="first come first serve (FCFS algorithm)"
+                />
+              </picture>
+              <p>
+                Total head Movement : <br />
+                (132 - 138 ) + (55 - 38) + (86 - 55) + (123 - 86 ) + (147 - 123)
+                + (147 - 91) + (177 - 91) + (177 - 115) + (115 - 94) + (150 -
+                94) + (150 - 100) + (175 - 100) + (175 - 130) + (185 - 130)
+                <br />
+                = 709
+              </p>
+              <p>(B) LOOK :</p>
+              <p>
+                Step-by-step movement: <br />
+                132 -> 147 -> 150 -> 175 -> 177 -> 185 -> 130 -> 123 -> 115 ->
+                100 -> 94 -> 91 -> 86 -> 55 -> 38
+              </p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/disk_scheduling/LOOK_2023-25.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/disk_scheduling/LOOK_2023-25.jpg"
+                />
+                <img
+                  src="/assets/disk_scheduling/LOOK_2023-25.jpg"
+                  alt="disk scheduling (LOOK algorithm) QUESTION WITH solution"
+                  title="LOOK algorithm solution | disk scheduling question"
+                />
+              </picture>
+              <p>
+                Total head Movement : <br />
+                (147 - 132) + (150 - 147) + (175 - 150) + (177 - 175) + (185 -
+                177) + (185 - 130) + (130 - 123) + (123 - 115) + (115 - 100) +
+                (100 - 94) + (94 - 91) + (91 - 86) + (86 - 55) + (55 - 38)
+                <br />
+                = 200
+              </p>
+            </div>
+          </div>
+          <div id="question2">
+            <div class="question">
+              <h2>
+                Question 2: Suppose the head of moving disk with 200 tracks,
+                numbered 0 to 199 is currently serving a request at track 143
+                and has just finished a request at track 125. If the queue of
+                requests is kept in the FIFO order 55, 86, 147, 91, 177, 115,94,
+                150, 100, 175 and 130, what is total head movement to satisfy
+                these request for the following disk scheduling algorithms? (a)
+                SCAN (b) LOOK
+              </h2>
+            </div>
+            <div class="solution">
+              <p>
+                solution : <br />
+                (A) SCAN :
+              </p>
+              <p>
+                Step-by-step movement: <br />
+                143 -> 147 -> 150 -> 175 -> 177 -> 199 -> 130 -> 115 -> 100 ->
+                94 -> 91 -> 86 -> 55
+              </p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/disk_scheduling/scan_2022-24.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/disk_scheduling/scan_2022-24.jpg"
+                />
+                <img
+                  src="/assets/disk_scheduling/scan_2022-24.jpg"
+                  alt="disk scheduling (SCAN algorithm) second QUESTION WITH solution"
+                  title="SCAN algorithm solution | disk scheduling question solution"
+                />
+              </picture>
+              <p>
+                total head movement :- <br />
+                (147 - 143) + (150 - 147) + (175 - 150) + (177 - 175) + (199 -
+                177) + (199 - 130) + (130 - 115) + (115 - 100) + (100 - 94) +
+                (94 - 91) + (91 - 86) + (86 - 55) <br />
+                = 200
+              </p>
+              <p>(B) LOOK :</p>
+              <p>
+                Step-by-step movement: <br />
+                143 -> 147 -> 150 -> 175 -> 177 -> 130 -> 115 -> 100 -> 94 -> 91
+                -> 86 -> 55
+              </p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/disk_scheduling/LOOK_2022-24.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/disk_scheduling/LOOK_2022-24.jpg"
+                />
+                <img
+                  src="/assets/disk_scheduling/LOOK_2022-24.jpg"
+                  alt="disk scheduling (LOOK algorithm), second QUESTION WITH solution"
+                  title="LOOK algorithm solution | disk scheduling question solution"
+                />
+              </picture>
+              <p>
+                total head movement :- <br />
+                (147 - 143) + (150 - 147) + (175 - 150) + (177 - 175) + (177 -
+                130) + (130 - 115) + (115 - 100) + (100 - 94) + (94 - 91) + (91
+                - 86) + (86 - 55) <br />
+                = 156
+              </p>
+            </div>
+          </div>
+          <div id="question3">
+            <div class="question">
+              <h2>
+                Question 3: Suppose the head of moving disk with 1000 tracks,
+                numbered 0 to 999 is currently serving a request at track 132
+                and has just finished a request at track 120. If the queue of
+                requests is kept in the FIFO order 358, 555, 861, 123, 147,
+                911,177, 115, 994, 150 , 100, 175, and 130, 185 what is total
+                head movement to satisfy these request for the following disk
+                scheduling algorithms? (a) FCFS (b)LOOK (C) SCAN
+              </h2>
+            </div>
+            <div class="solution">
+              <p>solution : (a) FCFS</p>
+              <p>
+                Step-by-step movement: <br />
+                132 -> 358 -> 555 -> 861 -> 123 -> 147 -> 911 -> 177 -> 115 ->
+                994 -> 150 -> 100 -> 175 -> 130 -> 185
+              </p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/disk_scheduling/FCFS_2024-26.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/disk_scheduling/FCFS_2024-26.jpg"
+                />
+                <img
+                  src="/assets/disk_scheduling/FCFS_2024-26.jpg"
+                  alt="disk scheduling (FCFS algorithm) QUESTION WITH solution"
+                  title="fcfs algorithm solution | disk scheduling question solution"
+                />
+              </picture>
+              <p>
+                total head movement :- <br />
+                <br />
+                (358 - 132) + (555 - 358) + (861 - 555) + (861 - 123) + (147 -
+                123) + (911 - 147) + (911 - 177) + (177 - 115) + (994 - 150) +
+                (150 - 100) + (175 - 100) + (175 - 130) + (185 - 130) <br />
+                = 4120
+              </p>
+              <p>(B) LOOK</p>
+              <p>
+                Step-by-step movement: <br />
+                132 -> 147 -> 150 -> 175 -> 177 -> 185 -> 358 -> 555 -> 861 ->
+                911 -> 994 -> 130 -> 123 -> 115 -> 100
+              </p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/disk_scheduling/LOOK_2024-26.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/disk_scheduling/LOOK_2024-26.jpg"
+                />
+                <img
+                  src="/assets/disk_scheduling/LOOK_2024-26.jpg"
+                  alt="disk scheduling (LOOK algorithm), third QUESTION WITH solution"
+                  title="LOOK algorithm solution | disk scheduling question solution"
+                />
+              </picture>
+              <p>
+                total head movement :- <br />
+                (147 - 132) + (150 - 147) + (175 - 150) + (177 - 175) + (185 -
+                177) + (358 - 185) + (555 - 358) + (861 - 555) + (911 - 861) +
+                (994 - 911) + (994 - 130) + (130 - 123) + (123 - 115) + (115 -
+                100)
+                <br />
+                = 1756
+              </p>
+              <p>(C) SCAN :</p>
+              <p>
+                Step-by-step movement: <br />
+                Step-by-step movement: <br />
+                132 -> 147 -> 150 -> 175 -> 177 -> 185 -> 358 -> 555 -> 861 ->
+                911 -> 994 -> 999 -> 130 -> 123 -> 115 -> 100
+              </p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/disk_scheduling/scan_2024-26.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/disk_scheduling/scan_2024-26.jpg"
+                />
+                <img
+                  src="/assets/disk_scheduling/scan_2024-26.jpg"
+                  alt="disk scheduling (SCAN algorithm),third QUESTION WITH solution"
+                  title="SCAN algorithm solution | disk scheduling question solution"
+                />
+              </picture>
+              <p>
+                total head movement :- <br />
+                (147 - 132) + (150 - 147) + (175 - 150) + (177 - 175) + (185 -
+                177) + (358 - 185) + (555 - 358) + (861 - 555) + (911 - 861) +
+                (994 - 911) + (999 - 994) + (999 - 130) + (130 - 123) + (123 -
+                115) + (115 -100)
+                <br />
+                = 1766
+              </p>
+              <br />
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2>Previous year Question</h2>
+
+          <picture>
+            <source
+              media="(max-width:700px)"
+              srcset="/assets/disk_scheduling/PYQ_2022_24.jpg"
+            />
+            <source
+              media="(min-width:701px)"
+              srcset="/assets/disk_scheduling/PYQ_2022_24.jpg"
+            />
+            <img
+              src="/assets/disk_scheduling/PYQ_2022_24.jpg"
+              alt="previous year question of session 2022-24"
+            />
+          </picture>
+          <br /><br />
+          <picture>
+            <source
+              media="(max-width:700px)"
+              srcset="/assets/disk_scheduling/PYQ_2023_25.jpg"
+            />
+            <source
+              media="(min-width:701px)"
+              srcset="/assets/disk_scheduling/PYQ_2023_25.jpg"
+            />
+            <img
+              src="/assets/disk_scheduling/PYQ_2023_25.jpg"
+              alt="previous year question of session 2023-25"
+            /> </picture
+          ><br /><br />
+          <picture>
+            <source
+              media="(max-width:700px)"
+              srcset="/assets/disk_scheduling/PYQ_2024_26.jpg"
+            />
+            <source
+              media="(min-width:701px)"
+              srcset="/assets/disk_scheduling/PYQ_2024_26.jpg"
+            />
+            <img
+              src="/assets/disk_scheduling/PYQ_2024_26.jpg"
+              alt="previous year question of session 2024-26"
+            />
+          </picture>
+        </section>
+        <br /><br />
+      </div>
+    </main>
+
+    <script type="module" src="commonthings.min.js"></script>
+  </body>
+</html>
