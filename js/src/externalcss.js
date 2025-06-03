@@ -1,7 +1,5 @@
 import { add_head, google_font } from "/js/src/utilities.min.js";
 
-
-
 let bootstrapcss = document.createElement("link");
 bootstrapcss.setAttribute(
   "href",
@@ -14,35 +12,8 @@ bootstrapcss.setAttribute(
 );
 bootstrapcss.setAttribute("crossorigin", "anonymous");
 add_head(bootstrapcss);
-let apple_fav1 = document.createElement("link");
-apple_fav1.rel = "apple-touch-icon";
-apple_fav1.setAttribute("sizes", "180x180");
-apple_fav1.href = "/assets/favicon_io/apple-touch-icon.png";
-add_head(apple_fav1);
-let android_chrome_fav1 = document.createElement("link");
-android_chrome_fav1.rel = "icon";
-android_chrome_fav1.setAttribute("type", "image/png");
-android_chrome_fav1.setAttribute("sizes", "192x192");
-android_chrome_fav1.href = "/assets/favicon_io/android-chrome-192x192.png";
-add_head(android_chrome_fav1);
-let fav32 = document.createElement("link");
-fav32.rel = "icon";
-fav32.setAttribute("type", "image/png");
-fav32.setAttribute("sizes", "32x32");
-fav32.href = "/assets/favicon_io/favicon-32x32.png";
-add_head(fav32);
-let fav16 = document.createElement("link");
-fav16.rel = "icon";
-fav16.setAttribute("type", "image/png");
-fav16.setAttribute("sizes", "16x16");
-fav16.href = "/assets/favicon_io/favicon-16x16.png";
-add_head(fav16);
-let fav512 = document.createElement("link");
-fav512.rel = "icon";
-fav512.setAttribute("type", "image/png");
-fav512.setAttribute("sizes", "512x512");
-fav512.href = "/assets/favicon_io/android-chrome-512x512.png";
-add_head(fav512);
+
+
 
 let cssstyle = document.createElement("style");
 cssstyle.innerHTML = `
@@ -71,11 +42,9 @@ const gfont = {
       link: "https://fonts.googleapis.com/css2?family=Pacifico&display=swap",
     },
     {
-      link:"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_downward,arrow_upward,close,hub&display=block"
-    }
-
+      link: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_downward,arrow_upward,close,hub&display=block",
+    },
   ],
 };
 
 google_font(gfont);
-
