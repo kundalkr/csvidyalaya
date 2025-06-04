@@ -21,7 +21,6 @@
     />
     <meta name="author" content="Kundal Kumar" />
 
-
     <!-- Open Graph Meta Tags -->
     <meta
       property="og:title"
@@ -69,19 +68,9 @@
       #all-cards {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;align-content: space-between;
         margin: 10px 10px;
-      }
-
-      .card {
-        width: 18rem;
-        margin-right: 10px;
-      }
-      #os,
-      #dsainc,
-      #digifunda {
-        width: 262px;
-        height: 262px;
-        border: 1px solid black;
       }
       @media (width<=750px) {
         .card {
@@ -110,16 +99,7 @@
           font-size: x-small;
         }
 
-        #os,
-        #dsainc,
-        #digifunda {
-          /* align-self: center; */
-          margin-left: 20px;
-          object-fit: cover;
-          width: 230px;
-          height: 160px;
-          border: 1px solid red;
-        }
+   
       }
       #al_card {
         display: flex;
@@ -141,17 +121,10 @@
       <div>Computer Science Vidyalaya</div>
     </div>
 
-    <br />
+
     <div class="container">
       <div id="all-cards">
-        <div class="card">
-          <img
-            id="os"
-            alt="operating system questions | process scheduling"
-            title="operating system questions | process scheduling"
-            data-src-mobile="/assets/logo/OS_LOGO_SMALL.png"
-            data-src-desktop="/assets/logo/OS_LOGO_BIG.png"
-          />
+        <div class="card bg-warning" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Operating System Question</h5>
             <p class="card-text">
@@ -159,47 +132,26 @@
               disk system, I/O system, Definition and functions and many more
               related question available
             </p>
-            <a
-              href="/os/operating_System_Topics.html"
-              class="btn btn-primary"
-              target="_blank"
+            <a href="/WSN/wireless_sensor_network.html" class="btn btn-success"
               >practice here -></a
             >
           </div>
         </div>
-        <div class="card">
-          <img
-            id="dsainc"
-            alt="data structure question | linked list, stack, tree"
-            title="data structure question | linked list, stack, tree"
-            srcset=""
-            data-src-mobile="/assets/logo/DSA_IN_C_LOGO_SMALL.png"
-            data-src-desktop="/assets/logo/DSA_IN_C_LOGO_BIG.png"
-          />
 
+        <div class="card bg-warning" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">DSA In C</h5>
             <p class="card-text">
               You can practice here Array question, stack, linkedlist, Queue and
               all other data structure question .....
             </p>
-            <a
-              href="/dsa_in_c/dsa_in_c_topic.html"
-              class="btn btn-primary"
-              target="_blank"
+            <a href="/WSN/wireless_sensor_network.html" class="btn btn-success"
               >practice here -></a
             >
           </div>
         </div>
 
-        <div class="card">
-          <img
-            id="digifunda"
-            alt="digital fundamentals question | number system | boolean algebra"
-            title="digital fundamentals question | number system | boolean algebra"
-            data-src-mobile="/assets/logo/DIGITAL_FUNDAMENTAL_LOGO_SMALL.png"
-            data-src-desktop="/assets/logo/DIGITAL_FUNDAMENTAL_LOGO_BIG.png"
-          />
+        <div class="card bg-warning" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Digital Fundamentals</h5>
             <p class="card-text">
@@ -207,16 +159,12 @@
               Computer Arithmetic, Logic Gates, Boolean Algebra and all others
               ......
             </p>
-            <a
-              href="/Digital_Fundamentals/Dgital_funda_topic.html"
-              class="btn btn-primary"
-              target="_blank"
+            <a href="/WSN/wireless_sensor_network.html" class="btn btn-success"
               >practice here -></a
             >
           </div>
         </div>
-      </div>
-      <div id="al_card">
+
         <div class="card bg-info" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Software Engineering</h5>
@@ -230,7 +178,7 @@
             >
           </div>
         </div>
-        <br />
+
         <div class="card bg-warning" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Wireless Sensor Network (WSN)</h5>
@@ -243,7 +191,7 @@
             >
           </div>
         </div>
-        <br />
+
         <div class="card bg-danger-subtle" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Database Management System (DBMS)</h5>
@@ -256,7 +204,7 @@
             >
           </div>
         </div>
-        <br />
+
         <div class="card bg-danger" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Previous Year Question (PYQ)</h5>
@@ -270,8 +218,21 @@
             >
           </div>
         </div>
+              <div class="card bg-danger" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Previous Year Question (PYQ)</h5>
+            <p class="card-text">
+              you can find here previous year question of computer science.
+            </p>
+            <a
+              href="/previous_year_question(PYQ)/PYQ.html"
+              class="btn btn-success"
+              >practice here -></a
+            >
+          </div>
+        </div>
       </div>
-      <br />
+
       <div id="al_card">
         <div class="card" style="width: 18rem">
           <div class="card-header bg-primary text-bg-primary">
