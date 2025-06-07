@@ -2,11 +2,9 @@
 <html lang="en">
   <head>
     <script type="text/javascript" src="/js/src/alljs.min.js"></script>
-
     <meta name="yandex-verification" content="6cad077691947e7f" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title>
       Explore Computer Science Topics: DSA, Computer Networks, Operating
       Systems, DBMS and many more
@@ -69,7 +67,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;align-content: space-between;
+        justify-content: space-between;
+        align-content: space-between;
         margin: 10px 10px;
       }
       @media (width<=750px) {
@@ -89,17 +88,14 @@
           font-size: 10px;
           margin-bottom: 1px;
         }
-        #all-cards {
-          display: flex;
-          align-items: center;
+        .all-cards {
+          align-content: center;
           flex-direction: column;
         }
         a.btn {
           padding: 4px;
           font-size: x-small;
         }
-
-   
       }
       #al_card {
         display: flex;
@@ -120,11 +116,9 @@
       <h1>CSvidyalaya.com</h1>
       <div>Computer Science Vidyalaya</div>
     </div>
-
-
     <div class="container">
       <div class="all-cards">
-        <div class="card bg-warning" style="width: 18rem">
+        <div class="card bg-primary-subtle" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Operating System Question</h5>
             <p class="card-text">
@@ -151,7 +145,7 @@
           </div>
         </div>
 
-        <div class="card bg-warning" style="width: 18rem">
+        <div class="card bg-secondary-subtle" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Digital Fundamentals</h5>
             <p class="card-text">
@@ -178,9 +172,9 @@
             >
           </div>
         </div>
-    </div>
-<div class="all-cards">
-        <div class="card bg-warning" style="width: 18rem">
+      </div>
+      <div class="all-cards">
+        <div class="card bg-success-subtle" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Wireless Sensor Network (WSN)</h5>
             <p class="card-text">
@@ -219,7 +213,7 @@
             >
           </div>
         </div>
-              <div class="card bg-danger" style="width: 18rem">
+        <div class="card bg-warning-subtle" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">Previous Year Question (PYQ)</h5>
             <p class="card-text">
@@ -232,20 +226,25 @@
             >
           </div>
         </div>
-  
-</div>
+      </div>
+
       <div id="al_card">
         <div class="card" style="width: 18rem">
           <div class="card-header bg-primary text-bg-primary">
             <h5>Newly Added content</h5>
           </div>
-          <ul class="list-group list-group-flush"></ul>
+          <marquee direction="up" scrollamount="2">
+            <ul></ul>
+          </marquee>
         </div>
+        &nbsp; &nbsp;
         <div class="card" style="width: 18rem">
           <div class="card-header bg-primary text-bg-primary">
-            <h5>Upcoming Content</h5>
+            <h5>Upcoming content</h5>
           </div>
-          <ul class="list-group list-group-flush"></ul>
+          <marquee direction="up" scrollamount="2">
+            <ul></ul>
+          </marquee>
         </div>
       </div>
     </div>

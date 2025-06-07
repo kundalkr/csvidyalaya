@@ -27,7 +27,7 @@ const newly_added = {
   ],
 };
 function newly_add(newly_added) {
-    let newly_add = document.querySelector("#al_card > div:nth-child(1) > ul");
+    let newly_add = document.querySelector("#al_card > div:nth-child(1) > marquee > ul");
   let links = "";
   for (const users of newly_added.all_links) {
     links += `<li class="list-group-item"><a href="${users.link}">${users.name}</a></li>`;
@@ -67,7 +67,7 @@ const upcoming = {
 };
 
 function upcomings(upcoming) {
-    let newly_add = document.querySelector("#al_card > div:nth-child(2) > ul");
+    let newly_add = document.querySelector("#al_card > div:nth-child(2) > marquee > ul");
   let links = "";
   for (const users of upcoming.all_links) {
     links += `<li class="list-group-item"><a href="${users.link}">${users.name}</a></li>`;
