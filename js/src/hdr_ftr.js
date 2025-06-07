@@ -574,35 +574,6 @@ footer.innerHTML = `
             </li>
           </ul>
         </div>
-        <div class="col mb-3" id="foot">
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2 headi">DBMS</li>
-            <li class="nav-item mb-2">
-              <a
-                href="/DBMS/DBMS_topics/Relational_algebra.html"
-                class="nav-link p-0 text-muted"
-                target="_blank"
-                >relational algebra</a
-              >
-            </li>
-            <li class="nav-item mb-2">
-              <a
-                href="/DBMS/DBMS_topics/tuple_relational_calculus.html"
-                class="nav-link p-0 text-muted"
-                target="_blank"
-                >Tuple Relational Calculus</a
-              >
-            </li>
-                 <li class="nav-item mb-2">
-              <a
-                href="/DBMS/DBMS_topics/relational_algebra_relational_calculus.html"
-                class="nav-link p-0 text-muted"
-                target="_blank"
-                >Relation algebra + tuple relational</a
-              >
-            </li>
-          </ul>
-        </div>
 
         <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
