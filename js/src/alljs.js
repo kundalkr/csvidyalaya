@@ -42,22 +42,41 @@
 // last modified
 function last_modified() {
   const lastModified = new Date(document.lastModified);
-let lastup= lastModified.toDateString().split(" ");
+  let lastup = lastModified.toDateString().split(" ");
 
   let hh1 = document.querySelector("h1");
- let lastupdate = document.createElement('div');
- lastupdate.setAttribute("id","last_updated_parent");
-lastupdate.innerHTML = ` 
+  let lastupdate = document.createElement("div");
+  lastupdate.setAttribute("id", "last_updated_parent");
+  lastupdate.innerHTML = ` 
           <div>
-            <span>Last updated : </span><span>${lastup[1]+" "+lastup[2]+", "+lastup[3]}</span>
+            <span>Last updated : </span><span>${
+              lastup[1] + " " + lastup[2] + ", " + lastup[3]
+            }</span>
           </div>
           <hr>
         `;
-        hh1.insertAdjacentElement("afterend",lastupdate);
+  hh1.insertAdjacentElement("afterend", lastupdate);
 }
 
-
 // last modified
+const scriptTag = document.createElement("script");
+scriptTag.type = "application/ld+json";
+scriptTag.innerHTML = `{
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "CSvidyalaya",
+              "url": "https://www.csvidyalaya.com/",
+              "logo": "https://www.csvidyalaya.com/assets/logo/main_Logo.jpg",
+              "description": "Your Ultimate Learning Hub: Master CS Fundamentals with Ease - Welcome to your one-stop educational platform designed to empower learners at every level. Our website offers a rich collection of resources focused on Data Structures and Algorithms (DSA), CPU and Disk Scheduling Algorithms, Deadlock Concepts, Computer Fundamentals, and Computer Network Questions. Whether you're a student preparing for competitive exams, a beginner strengthening your core computer science concepts, or someone brushing up on technical interviews, our curated content is crafted to simplify learning and support your success.",
+              "founder": [
+                {
+                  "@type": "Person",
+                  "name": "Kundal Kumar",
+                  "url": "www.linkedin.com/in/kundal-kumar"
+                }
+              ]
+            }`;
+document.head.appendChild(scriptTag);
 
 let headu = document.querySelector("head");
 if (
@@ -95,7 +114,6 @@ function hdr_ftr() {
 function execution(hdr_ftr, fn1) {
   hdr_ftr();
   fn1();
- 
 }
 execution(external_css, hdr_ftr);
 
@@ -106,5 +124,5 @@ window.onload = function () {
   commonforall.setAttribute("type", "module");
   commonforall.async = !0;
   bodu.appendChild(commonforall);
-   last_modified(); 
+  last_modified();
 };
