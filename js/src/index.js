@@ -36,7 +36,10 @@ function newly_add(newly_added) {
   );
   let links = "";
   for (const users of newly_added.all_links) {
-    links += `<li class="list-group-item"><a href="${users.link}">${users.name}</a></li>`;
+    links += `<li class="list-group-item">
+    <a href="${users.link}">${users.name}</a>
+    </li> 
+    <br>`;
   }
   newly_add.innerHTML = links;
 }
@@ -77,7 +80,10 @@ function upcomings(upcoming) {
   );
   let links = "";
   for (const users of upcoming.all_links) {
-    links += `<li class="list-group-item"><a href="${users.link}">${users.name}</a></li>`;
+    links += `<li class="list-group-item" ">
+    <a href="${users.link}">${users.name}</a>
+    </li>  
+    <br>`;
   }
   newly_add.innerHTML = links;
 }

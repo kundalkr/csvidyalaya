@@ -39,6 +39,26 @@
   }
 })();
 
+// last modified
+function last_modified() {
+  const lastModified = new Date(document.lastModified);
+let lastup= lastModified.toDateString().split(" ");
+
+  let hh1 = document.querySelector("h1");
+ let lastupdate = document.createElement('div');
+ lastupdate.setAttribute("id","last_updated_parent");
+lastupdate.innerHTML = ` 
+          <div>
+            <span>Last updated : </span><span>${lastup[1]+" "+lastup[2]+", "+lastup[3]}</span>
+          </div>
+          <hr>
+        `;
+        hh1.insertAdjacentElement("afterend",lastupdate);
+}
+
+
+// last modified
+
 let headu = document.querySelector("head");
 if (
   window.location.hostname !== "localhost" &&
@@ -75,6 +95,7 @@ function hdr_ftr() {
 function execution(hdr_ftr, fn1) {
   hdr_ftr();
   fn1();
+ 
 }
 execution(external_css, hdr_ftr);
 
@@ -85,4 +106,5 @@ window.onload = function () {
   commonforall.setAttribute("type", "module");
   commonforall.async = !0;
   bodu.appendChild(commonforall);
+   last_modified(); 
 };

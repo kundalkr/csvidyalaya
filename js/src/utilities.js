@@ -98,3 +98,5 @@ export function google_font(element) {
     add_head(fontes);
   }
 }
+
+
