@@ -44,7 +44,7 @@ function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");
 
-  let hh1 = document.querySelector("h1");
+  let hh1 = document.getElementsByTagName("h1")[0];
   let lastupdate = document.createElement("div");
   lastupdate.setAttribute("id", "last_updated_parent");
   lastupdate.innerHTML = ` 
@@ -114,6 +114,7 @@ function hdr_ftr() {
 function execution(hdr_ftr, fn1) {
   hdr_ftr();
   fn1();
+
 }
 execution(external_css, hdr_ftr);
 
@@ -126,3 +127,4 @@ window.onload = function () {
   bodu.appendChild(commonforall);
   last_modified();
 };
+  

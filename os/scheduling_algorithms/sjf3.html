@@ -258,12 +258,10 @@
           "img[data-src-mobile][data-src-desktop]"
         );
         const isMobile = window.innerWidth < 700;
-
         images.forEach((img) => {
           img.src = isMobile
             ? img.getAttribute("data-src-mobile")
             : img.getAttribute("data-src-desktop");
-
           img.removeAttribute("data-src-mobile");
           img.removeAttribute("data-src-desktop");
         });
