@@ -253,7 +253,6 @@
 
     <script type="module" src="commonthings.min.js"></script>
     <script>
-      window.onload = function () {
         const images = document.querySelectorAll(
           "img[data-src-mobile][data-src-desktop]"
         );
@@ -265,7 +264,7 @@
           img.removeAttribute("data-src-mobile");
           img.removeAttribute("data-src-desktop");
         });
-      };
+      
     </script>
   </body>
 </html>
