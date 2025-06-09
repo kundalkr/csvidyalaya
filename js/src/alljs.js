@@ -114,7 +114,6 @@ function hdr_ftr() {
 function execution(hdr_ftr, fn1) {
   hdr_ftr();
   fn1();
-
 }
 execution(external_css, hdr_ftr);
 
