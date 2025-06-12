@@ -18,9 +18,12 @@
   "homepage": "https://github.com/kundalkr/csvidyalaya#readme",
   "devDependencies": {
     "@eslint/js": "^9.28.0",
+    "cssnano": "^7.0.7",
     "eslint": "^9.28.0",
     "globals": "^16.2.0",
     "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-postcss": "^10.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2"
   },

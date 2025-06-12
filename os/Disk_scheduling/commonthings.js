@@ -1,5 +1,4 @@
-import { add_css, bar} from "/js/src/utilities.min.js";
-
+import { add_css, bar } from "/js/src/utilities.min.js";
 
 const data = {
   users: [
@@ -37,14 +36,13 @@ const data = {
     },
   ],
 };
-bar(data);
+document.addEventListener("DOMContentLoaded", function () {
+  const fheader = document.getElementById("fheader");
+  if (fheader) {
+    bar(data);
+  }
+});
 
 add_css(
   "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black; }}"
 );
-
-
-
-
-
-

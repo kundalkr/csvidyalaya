@@ -1,59 +1,60 @@
 const gulp = require("gulp");
 const uglify = require("gulp-uglify");
-const renames = require("gulp-rename");
+const rename = require("gulp-rename");
+const postcss = require("gulp-postcss");
+const cssnano = require("cssnano");
+const path = require("path");
 
-function cards(src,dest) {
+// CSS Task
+function cssTask(src, dest) {
   return gulp
     .src(`${src}`)
-    .pipe(uglify())
-    .pipe(renames({ suffix: ".min" }))
+    .pipe(postcss([cssnano()]))
+    .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest(`${dest}`));
 }
-const dest = "C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/";
-gulp.watch("C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/alljs.js", () => {
-  return cards("C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/alljs.js",dest);
-});
 
-gulp.watch("C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/cards.js", () => {
-  return cards("C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/cards.js",dest);
-});
+// JS Task
+function jsTask(src, dest) {
+  return function () {
+    return gulp
+      .src(`${src}`)
+      .pipe(uglify())
+      .pipe(rename({ suffix: ".min" }))
+      .pipe(gulp.dest(`${dest}`));
+  };
+}
 
-gulp.watch(
-  "C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/commonforall.js",
-  () => {
-    return cards(
-      "C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/commonforall.js",dest
-    );
-  }
-);
+// Watch Task
+function watchTask() {
+  const cssFiles = [
+    "css/headings-footer.css",
+    "css/main_content.css",
+    "css/universal-css.css",
+  ];
 
-gulp.watch(
-  "C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/externalcss.js",
-  () => {
-    return cards(
-      "C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/externalcss.js",dest
-    );
-  }
-);
+  cssFiles.forEach((file) => {
+    const dest = path.dirname(file);
+    gulp.watch(`${file}`, () => cssTask(`${file}`, dest));
+  });
 
-gulp.watch(
-  "C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/hdr_ftr.js",
-  () => {
-    return cards("C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/hdr_ftr.js",dest);
-  }
-);
+  const jsFiles = [
+    "js/src/alljs.js",
+    "js/src/cards.js",
+    "js/src/commonforall.js",
+    "js/src/externalcss.js",
+    "js/src/hdr_ftr.js",
+    "js/src/index.js",
+    "js/src/utilities.js",
+    "os/scheduling_algorithms/commonthings.js",
+  ];
+  // let dest = `js/src/`;
 
-gulp.watch("C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/index.js", () => {
-  return cards("C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/index.js",dest);
-});
+  jsFiles.forEach((file) => {
+    const dest = path.dirname(file);
+    gulp.watch(`${file}`, jsTask(`${file}`, dest));
+  });
+}
 
-gulp.watch(
-  "C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/utilities.js",
-  () => {
-    return cards(
-      "C:/Users/kundal kumar/Desktop/csvidyalaya/js/src/utilities.js",dest
-    );
-  }
-);
-
-exports.default = gulp.series(cards);
+// Default task
+exports.default = watchTask;

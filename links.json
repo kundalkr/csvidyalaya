@@ -1,104 +1,306 @@
 {
   "users": [
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Dgital_funda_topic.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltobinary.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Software_Engineering/software_engineering_topic.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltohexadecimal1.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/previous_year_question(PYQ)/OS_question.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltoOctal1.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/previous_year_question(PYQ)/PYQ.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltodecimal4.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/previous_year_question(PYQ)/OS_question.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal1.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/previous_year_question(PYQ)/software_engineering.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltobinary2.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/previous_year_question(PYQ)/OS_question.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltohexadecimal2.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/WSN/wireless_sensor_network.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltoOctal2.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/operating_System_Topics.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltoOctal3.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/what-is/operating-system.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltodecimal5.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/what-is/operating-system.html#process_management"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal2.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/what-is/operating-system.html#future_of_os"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltobinary3.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltohexadecimal3.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/fcfs2.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltodecimal6.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/fcfs.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal3.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/sjf1.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal4.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/sjf3.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal5.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/RR4.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra4.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/RR1.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra3.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/RR2.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra2.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/RR3.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html"
-    },   {
-      "id": 13,
-      "link": "https://csvidyalaya.com/os/memory_management/Fit_question.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/ps1.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/os/memory_management/Buddy_system.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/ps2.html"
     },
     {
-      "id": 13,
-      "link": "https://csvidyalaya.com/os/memory_management/memory_management_topics.html"
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/scheduling_algorithms/MLQS.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/memory_management/Fit_question.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/memory_management/Buddy_system.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/memory_management/memory_management_topics.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/Deadlocks/deadlock_topics.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/Deadlocks/Bankers_Algorithms.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/os/Disk_scheduling/disk_scheduling_algorithms.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/DBMS/dbms_topic.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/DBMS/how_we_install_mysql_2025.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/DBMS/DBMS_topics/Relational_algebra_topics.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/DBMS/DBMS_topics/relational_algebra/selection_operation.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/DBMS/DBMS_topics/relational_algebra/projection_operation.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/DBMS/DBMS_topics/relational_algebra/relational_algebra_question.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/DBMS/DBMS_topics/relational_calculus_topic.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/DBMS/DBMS_topics/relational_calculus/tuple_relational_calculus.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/DBMS/DBMS_topics/relational_algebra_relational_calculus.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Dgital_funda_topic.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltobinary.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltohexadecimal1.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltoOctal1.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/octaltodecimal4.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal1.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltobinary2.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltohexadecimal2.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltoOctal2.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltoOctal3.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/octaltodecimal5.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal2.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltobinary3.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/decimaltohexadecimal3.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal4.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Number_System/octaltohexadecimal5.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra4.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra3.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra2.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/sitemap.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/dsa_in_c_topic.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/Arrays.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/array2.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/stack1.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/stack2.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/stack3.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/infixtoprefix.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/infixtopostfix.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/prefixtopostfix.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/postfixprefixofinfix.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/queue1.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/linkedlist1.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/queue2.html"
+    },
+    {
+      "id": "",
+      "link": "https://www.csvidyalaya.com/dsa_in_c/linkedlist2.html"
     }
+    
   ],
   "settings": {
     "theme": "dark",

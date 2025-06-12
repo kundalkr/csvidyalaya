@@ -222,8 +222,7 @@ header.innerHTML = `
          
       </ul>
     </div>
-    <br>
-
+<br>
 `;
 document.querySelector("body").prepend(header);
 let footer = document.createElement("div");
@@ -399,7 +398,7 @@ footer.innerHTML = `
             </li>
           </ul>
         </div>
-         <!-- previous year question -->  
+         <!-- previous year questio -->  
 
          <div class="col mb-3" id="foot">
           <ul class="nav flex-column">
@@ -741,7 +740,7 @@ bootstrapScript.setAttribute(
 bootstrapScript.setAttribute("crossorigin", "anonymous");
 add_head(bootstrapScript);
 
-if (window.innerWidth <= 815) {
+if (window.innerWidth <= 900) {
   let sctt = document.createElement("script");
   sctt.innerHTML = `function d() {
     document.getElementById("sidebar").style.display = "none";

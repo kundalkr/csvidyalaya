@@ -37,8 +37,23 @@
     favicon.setAttribute("href", `${user.link}`);
     hd.appendChild(favicon);
   }
-})();
 
+  //  <link rel="stylesheet" href="main_content.css" />
+})();
+// all css  adding
+const cssFiles = [
+  "/css/headings-footer.min.css",
+  "/css/main_content.min.css",
+  "/css/universal-css.min.css",
+];
+let heads = document.querySelector("head");
+cssFiles.forEach((file) => {
+  let cssf = document.createElement("link");
+  cssf.setAttribute("rel", "stylesheet");
+  cssf.setAttribute("href", `${file}`);
+  heads.appendChild(cssf);
+});
+//  all css adding end
 // last modified
 function last_modified() {
   const lastModified = new Date(document.lastModified);
@@ -126,4 +141,3 @@ window.onload = function () {
   bodu.appendChild(commonforall);
   last_modified();
 };
-  

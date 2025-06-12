@@ -57,6 +57,8 @@ export function bar(link_arr) {
 
   let body = document.querySelector("body");
   let h1 = document.querySelector("body>div");
+  // bodys.insertAdjacentElement("afterend", bar);
+
   body.insertBefore(bar, h1);
 }
 
@@ -99,4 +101,14 @@ export function google_font(element) {
   }
 }
 
+
+export function sdbar_Links(params) {
+  let left_content = document.querySelector("#left_content > ul");
+
+  for (const user of params.users) {
+    left_content.innerHTML += `<li style="list-style: none;">
+    <a style="text-decoration: none;" href="${user.link}">${user.name}</a>
+    </li>`;
+  }
+}
 
