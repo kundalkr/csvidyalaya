@@ -50,7 +50,7 @@ const pop_link = {
       link: "sjf1.html",
     },
     {
-      name: "Shortest Remaining Time First (SRTF) question",
+      name: "Shortest Remaining Time First (SRTF) or preemptive SJF question",
       link: "sjf2.html",
     },
     {

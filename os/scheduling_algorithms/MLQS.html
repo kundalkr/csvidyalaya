@@ -8,28 +8,17 @@
     <title>
       Multilevel Queue Scheduling (MLQ) Algorithm comprehensive guide + question
     </title>
-
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_downward,arrow_upward,hub&display=block" /> -->
-
-    <!-- https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=home,palette,settings&display=block -->
-
-    <!-- Meta Description -->
     <meta
       name="description"
       content="Get detailed MULTILEVEL QUEUE Scheduling (MLQ) algorithm questions with solutions and explanations. Ideal for computer science learners and professionals."
     />
 
-    <!-- Meta Keywords -->
     <meta
       name="keywords"
       content="MULTILEVEL QUEUE Scheduling question, MLQ algorithm, MLQ Scheduling questions, CPU Scheduling algorithms, Computer Science questions"
     />
-    <!-- Author -->
     <meta name="author" content="Kundal Kumar" />
-
-    <!-- Robots Meta Tag -->
     <meta name="robots" content="index, follow" />
-
     <!-- Open Graph Tags -->
     <meta
       property="og:title"
@@ -81,107 +70,320 @@
   </head>
 
   <body>
-
-    <div class="title_date">
-      <h1>
-        Multilevel Queue Scheduling (MLQ) Algorithm question with step-by-step
-        solution + explanation
-      </h1>
-
-      
-    </div>
-   
-    <br />
-    <p style="margin: 0px 2vw">
-      Here are 27 questions on MULTILEVEL QUEUE SCHEDULING (MLQ) algorithms.
-      Each question is presented in a table format, followed by the solution
-      with Gantt charts, average turnaround time (TAT), and average waiting time
-      (WT).
-    </p>
-    <br />
-
-    <main>
-      <div class="container">
-        <br />
-        <br />
-        <br />
-        <div id="question1">
-          <div class="question">
-            <h2 id="fstque">
-              Question 1 : find the average Turn Around Time and Waiting Time of
-              following processes using MULTILEVEL QUEUE Scheduling (MLQ)
-              algorithm? Consider the following processes with their Arrival
-              Time, Burst Time. Question criteria : <br />
-              (1) There are three queue Q1, Q2, Q3<br />
-              (2) In Q1 (sjf, non-preemptive), Q2(Round robin,
-              timestamp=2),Q3(FCFS)
-            </h2>
-
-            <table style="border: 1px solid black" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Arrival Time</th>
-                <th>Burst Time</th>
-                <th>Queue name</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>0</td>
-                <td>8</td>
-                <td>Q2</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>1</td>
-                <td>6</td>
-                <td>Q1</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>1</td>
-                <td>4</td>
-                <td>Q3</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>2</td>
-                <td>3</td>
-                <td>Q2</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>2</td>
-                <td>1</td>
-                <td>Q1</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>3</td>
-                <td>4</td>
-                <td>Q2</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>3</td>
-                <td>1</td>
-                <td>Q1</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>4</td>
-                <td>2</td>
-                <td>Q2</td>
-              </tr>
-            </table>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
+      </div>
+      <div id="main_content">
+        <main>
+          <div class="title_date">
+            <h1>
+              Multilevel Queue Scheduling (MLQ) Algorithm question with
+              step-by-step solution + PYQs
+            </h1>
           </div>
-          <div class="solution">
-            <h3>Solution:</h3>
-            <h4>Formula:</h4>
-            <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-            <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+          <article>
+            <p>
+              If you're diving into the world of CPU scheduling algorithms, the
+              Multilevel Queue (MLQ) Scheduling Algorithm is very important
+              concept. In real-life operating systems, processes aren’t all the
+              same—they can be system processes, interactive tasks, or
+              background jobs. That's where MLQ shines—it organizes processes
+              into multiple queues based on their priority or type, each with
+              its own scheduling strategy.
+            </p>
+            <p>
+              In this article, we simplify MLQ Scheduling with clear
+              explanations and 15 solved questions to help you fully grasp the
+              concept. Whether you're preparing for college exams, competitive
+              tests, or just brushing up your Operating System concepts, this
+              guide is tailored for you.
+            </p>
+            <a
+              href="#fstque"
+              class="btn btn-primary btn-lg active"
+              role="button"
+              aria-pressed="true"
+              >Jump To Question</a
+            >
+            <br /><br />
+            <section>
+              <h2>
+                what is Multilevel Queue Scheduling Algorithm In Operating
+                System ?
+              </h2>
+              <p>
+                In the Multilevel Queue Scheduling algorithm, processes are
+                divided into multiple queues based on specific characteristics,
+                such as priority or memory requirements. Each queue uses its own
+                scheduling method, which could be
+                <a href="/os/scheduling_algorithms/fcfs.html"
+                  >First-Come-First-Serve (FCFS)</a
+                >,
+                <a href="/os/scheduling_algorithms/sjf1.html"
+                  >Shortest Job First (SJF)</a
+                >, or
+                <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a
+                >, depending on the types of processes it holds. This algorithm
+                is often used in scenarios where different types of processes
+                need to be managed separately and effectively.
+              </p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/MLQ/MLQS_DEFINITIO_small.png"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/MLQ/MLQS_DEFINITION_nig.png"
+                />
+                <img
+                  loading="lazy"
+                  alt="multilevel queue scheduling definiton | expplanation of MLQ"
+                  title="MULTILEVEL QUEUE SCHEDULING (MLQ) working step"
+                />
+              </picture>
+            </section>
 
-            <h4>Gantt Chart</h4>
-            <!-- <img  loading="lazy"
+            <section>
+              <h2>
+                Method for solving Multilevel Queue Scheduling (MLQ) in os
+              </h2>
+              <ol>
+                <li>
+                  Step 1: Organize the processes into different queues based on
+                  their priority or type.
+                </li>
+                <li>
+                  Step 2: Choose a scheduling algorithm for each queue that
+                  meets the specific needs of the processes it contains.
+                </li>
+                <li>
+                  Step 3: Establish the priority levels among the queues to
+                  decide which one should be prioritized when multiple queues
+                  have processes ready to execute.
+                </li>
+                <li>
+                  Step 4: When a process finishes its execution in its
+                  designated queue, it is removed; if not, it may be transferred
+                  to another queue according to the system's established rules.
+                </li>
+                <li>
+                  Step 5: Continue repeating these steps until all processes in
+                  every queue have been completed.
+                </li>
+              </ol>
+            </section>
+            <section>
+              <h2>
+                what are Advantages and Disadvantages of Multilevel Queue
+                Scheduling ?
+              </h2>
+              <table
+                style="border: 1px solid black"
+                class="table table-bordered"
+              >
+                <tr>
+                  <th>Advantages</th>
+                  <th>Disadvantages</th>
+                </tr>
+                <tr>
+                  <td>
+                    Enables specific scheduling policies for different types of
+                    processes, improving efficiency.
+                  </td>
+                  <td>
+                    Static division of queues may lead to underutilization of
+                    resources if queues are imbalanced.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Allows easy prioritization of system processes over user
+                    processes, enhancing system performance.
+                  </td>
+                  <td>
+                    Higher-priority queues can lead to starvation of processes
+                    in lower-priority queues.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Each queue can be customized to meet specific needs,
+                    offering flexibility.
+                  </td>
+                  <td>
+                    Complex to implement and maintain, especially with a large
+                    number of queues and processes.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Reduces the turnaround time for certain high-priority
+                    processes.
+                  </td>
+                  <td>
+                    Lack of interaction among queues can cause inefficiencies in
+                    overall CPU utilization.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Supports separation of long-term and short-term tasks.
+                  </td>
+                  <td>
+                    Static assignment of processes means changes to process
+                    priorities are challenging.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Helps manage processes that require different resources
+                    effectively.
+                  </td>
+                  <td>
+                    Once a process is assigned to a queue, it generally cannot
+                    be moved, reducing adaptability.
+                  </td>
+                </tr>
+              </table>
+            </section>
+            <section>
+              <h2>
+                Why Multilevel Queue Scheduling Is Better than Other Scheduling
+                Algorithms?
+              </h2>
+
+              <p>
+                Multilevel Queue Scheduling is especially advantageous in
+                settings where various types of tasks need different scheduling
+                approaches. By enabling the use of distinct
+                <a
+                  href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
+                  >scheduling algorithms</a
+                >
+                for each queue and supporting priority-based processing, it can
+                achieve better performance than a single algorithm applied to
+                all processes. This makes it ideal for systems that need rapid
+                responses for certain types of tasks, as well as in multiuser
+                environments, where prioritizing system tasks can enhance
+                stability and responsiveness.
+              </p>
+            </section>
+            <section>
+              <h2>where multilevel queue scheduling (MLQ) used ?</h2>
+              <p>
+                Multilevel Queue Scheduling (MLQ) is used in computer systems
+                where different types of tasks need to be managed efficiently.
+                It's like organizing tasks into separate "queues" based on their
+                priority or type. <br />
+                for example :
+              </p>
+              <ul>
+                <li>
+                  <strong>1. Real-Time Systems: </strong>Tasks that need
+                  immediate attention, like handling incoming video streams or
+                  medical devices, can be placed in a high-priority queue.
+                </li>
+                <li>
+                  <strong>2. Interactive Systems: </strong>Tasks like typing on
+                  a keyboard or moving the mouse are placed in another queue to
+                  ensure they respond quickly.
+                </li>
+                <li>
+                  <strong>3. Batch Systems: </strong>Background tasks, such as
+                  file downloads or backups, are placed in a lower-priority
+                  queue since they don’t need instant results.
+                </li>
+              </ul>
+              <p>
+                By keeping tasks in separate queues, MLQ scheduling helps
+                systems run smoothly and prioritize the most critical tasks
+                first. It’s often used in operating systems and servers to
+                manage resources efficiently.
+              </p>
+            </section>
+
+            <div id="question1">
+              <div class="question">
+                <h2 id="fstque">
+                  Question 1 : find the average Turn Around Time and Waiting
+                  Time of following processes using MULTILEVEL QUEUE Scheduling
+                  (MLQ) algorithm? Consider the following processes with their
+                  Arrival Time, Burst Time. Question criteria : <br />
+                  (1) There are three queue Q1, Q2, Q3<br />
+                  (2) In Q1 (sjf, non-preemptive), Q2(Round robin,
+                  timestamp=2),Q3(FCFS)
+                </h2>
+
+                <table
+                  style="border: 1px solid black"
+                  class="table table-bordered"
+                >
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Queue name</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td>Q2</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>Q1</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>Q3</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>Q2</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>Q1</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>Q2</td>
+                  </tr>
+                  <tr>
+                    <td>P7</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>Q1</td>
+                  </tr>
+                  <tr>
+                    <td>P8</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>Q2</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="solution">
+                <h3>Solution:</h3>
+                <h4>Formula:</h4>
+                <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+                <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+
+                <h4>Gantt Chart</h4>
+                <!-- <img  loading="lazy"
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
               id="MLQS1_1"
@@ -189,23 +391,23 @@
               data-src-mobile="/assets/MLQ/mlqs_mob_q1_1.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q1_1.png"
             /> -->
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLQ/mlqs_mob_q1_1.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLQ/mlqs_comp_q1_1.png"
-              />
-              <img
-                loading="lazy"
-                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
-                id="MLQS1_1"
-                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
-              />
-            </picture>
-            <!-- <img  loading="lazy"
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/MLQ/mlqs_mob_q1_1.png"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/MLQ/mlqs_comp_q1_1.png"
+                  />
+                  <img
+                    loading="lazy"
+                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
+                    id="MLQS1_1"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
+                  />
+                </picture>
+                <!-- <img  loading="lazy"
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
               id="MLQS1_2"
@@ -214,195 +416,202 @@
               data-src-desktop="/assets/MLQ/mlqs_mob_q1_2.png"
             /> -->
 
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLQ/mlqs_mob_q1_2.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLQ/mlqs_comp_q1_2.png"
-              />
-              <img
-                loading="lazy"
-                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
-                id="MLQS1_2"
-                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
-              />
-            </picture>
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/MLQ/mlqs_mob_q1_2.png"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/MLQ/mlqs_comp_q1_2.png"
+                  />
+                  <img
+                    loading="lazy"
+                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
+                    id="MLQS1_2"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
+                  />
+                </picture>
 
-            <h4>Calculations:</h4>
-            <table style="border: 1px solid black" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Completion Time</th>
-                <th>Turnaround Time (TAT)</th>
-                <th>Waiting Time (WT)</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>25</td>
-                <td>25</td>
-                <td>17</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>7</td>
-                <td>6</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>29</td>
-                <td>28</td>
-                <td>24</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>20</td>
-                <td>18</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>8</td>
-                <td>6</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>22</td>
-                <td>19</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>9</td>
-                <td>6</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>17</td>
-                <td>13</td>
-                <td>11</td>
-              </tr>
-            </table>
+                <h4>Calculations:</h4>
+                <table
+                  style="border: 1px solid black"
+                  class="table table-bordered"
+                >
+                  <tr>
+                    <th>Process</th>
+                    <th>Completion Time</th>
+                    <th>Turnaround Time (TAT)</th>
+                    <th>Waiting Time (WT)</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>17</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>29</td>
+                    <td>28</td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>20</td>
+                    <td>18</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>22</td>
+                    <td>19</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>P7</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>P8</td>
+                    <td>17</td>
+                    <td>13</td>
+                    <td>11</td>
+                  </tr>
+                </table>
 
-            <h4>Average Turnaround Time:</h4>
-            <p>(25 + 6 + 28 + 18 + 6 + 19 + 6 + 13) / 8 = 15.125</p>
+                <h4>Average Turnaround Time:</h4>
+                <p>(25 + 6 + 28 + 18 + 6 + 19 + 6 + 13) / 8 = 15.125</p>
 
-            <h4>Average Waiting Time:</h4>
-            <p>(17 + 0 + 24 + 15 + 5 + 15 + 5 + 11) / 8 = 11.5</p>
-          </div>
-        </div>
+                <h4>Average Waiting Time:</h4>
+                <p>(17 + 0 + 24 + 15 + 5 + 15 + 5 + 11) / 8 = 11.5</p>
+              </div>
+            </div>
 
-        <div id="question2">
-          <div class="question">
-            <h2>
-              Question 2: Consider following process, with the cpu burst time
-              given in milliseconds
-            </h2>
-            <table style="border: 1px solid black" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Burst Time</th>
-                <th>Arrival Time</th>
-                <th>Queue name</th>
-                <th>Priority</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>4</td>
-                <td>0.0</td>
-                <td>2</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>2</td>
-                <td>2.0</td>
-                <td>1</td>
-                <td>----</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>5</td>
-                <td>3.0</td>
-                <td>3</td>
-                <td>----</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>1</td>
-                <td>4.0</td>
-                <td>2</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>3</td>
-                <td>5.0</td>
-                <td>1</td>
-                <td>----</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>6</td>
-                <td>6.0</td>
-                <td>2</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>4</td>
-                <td>8</td>
-                <td>1</td>
-                <td>----</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>2</td>
-                <td>10.0</td>
-                <td>2</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>P9</td>
-                <td>7</td>
-                <td>12.0</td>
-                <td>1</td>
-                <td>----</td>
-              </tr>
-              <tr>
-                <td>P10</td>
-                <td>3</td>
-                <td>12.0</td>
-                <td>2</td>
-                <td>1</td>
-              </tr>
-            </table>
-            <h2>
-              The system has three queues, first queue is having the highest
-              priority with <a href="fcfs.html">FCFS scheduling</a>, seconf
-              queue is having the middle priority with
-              <a href="ps1.html">priority scheduling</a> (1 is highest and 100
-              is lowest priority) and, third queue is having the lowest priority
-              with <a href="RR1.html">Round Robin scheduling</a>(T.S = 3). Draw
-              gantt charts to show execution using Multi Level Queue Scheduling
-              (MLQ). Also determine the process turnAround time and Waiting
-              time.
-            </h2>
-          </div>
+            <div id="question2">
+              <div class="question">
+                <h2>
+                  Question 2: Consider following process, with the cpu burst
+                  time given in milliseconds
+                </h2>
+                <table
+                  style="border: 1px solid black"
+                  class="table table-bordered"
+                >
+                  <tr>
+                    <th>Process</th>
+                    <th>Burst Time</th>
+                    <th>Arrival Time</th>
+                    <th>Queue name</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>4</td>
+                    <td>0.0</td>
+                    <td>2</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>2</td>
+                    <td>2.0</td>
+                    <td>1</td>
+                    <td>----</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>5</td>
+                    <td>3.0</td>
+                    <td>3</td>
+                    <td>----</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>1</td>
+                    <td>4.0</td>
+                    <td>2</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>3</td>
+                    <td>5.0</td>
+                    <td>1</td>
+                    <td>----</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>6</td>
+                    <td>6.0</td>
+                    <td>2</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>P7</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>----</td>
+                  </tr>
+                  <tr>
+                    <td>P8</td>
+                    <td>2</td>
+                    <td>10.0</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P9</td>
+                    <td>7</td>
+                    <td>12.0</td>
+                    <td>1</td>
+                    <td>----</td>
+                  </tr>
+                  <tr>
+                    <td>P10</td>
+                    <td>3</td>
+                    <td>12.0</td>
+                    <td>2</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                <h2>
+                  The system has three queues, first queue is having the highest
+                  priority with <a href="fcfs.html">FCFS scheduling</a>, seconf
+                  queue is having the middle priority with
+                  <a href="ps1.html">priority scheduling</a> (1 is highest and
+                  100 is lowest priority) and, third queue is having the lowest
+                  priority with
+                  <a href="RR1.html">Round Robin scheduling</a>(T.S = 3). Draw
+                  gantt charts to show execution using Multi Level Queue
+                  Scheduling (MLQ). Also determine the process turnAround time
+                  and Waiting time.
+                </h2>
+              </div>
 
-          <div class="solution">
-            <h3>Solution:</h3>
-            <h4>Formula:</h4>
-            <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-            <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+              <div class="solution">
+                <h3>Solution:</h3>
+                <h4>Formula:</h4>
+                <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+                <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
-            <h4>Gantt Chart</h4>
-            <!-- <img  loading="lazy"
+                <h4>Gantt Chart</h4>
+                <!-- <img  loading="lazy"
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
               id="MLQS1_1"
@@ -411,24 +620,24 @@
               data-src-desktop="/assets/MLQ/mlqs_comp_q2_1.png"
             /> -->
 
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLQ/mlqs_mob_q2_1.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLQ/mlqs_comp_q2_1.png"
-              />
-              <img
-                loading="lazy"
-                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
-                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
-                id="MLQS2_1"
-              />
-            </picture>
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/MLQ/mlqs_mob_q2_1.png"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/MLQ/mlqs_comp_q2_1.png"
+                  />
+                  <img
+                    loading="lazy"
+                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
+                    id="MLQS2_1"
+                  />
+                </picture>
 
-            <!-- <img  loading="lazy"
+                <!-- <img  loading="lazy"
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
               id="MLQS1_2"
@@ -436,190 +645,196 @@
               data-src-mobile="/assets/MLQ/mlqs_mob_q2_2.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q2_2.png"
             /> -->
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLQ/mlqs_mob_q2_2.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLQ/mlqs_comp_q2_2.png"
-              />
-              <img
-                loading="lazy"
-                src="/assets/MLQ/mlqs_comp_q2_2.png"
-                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2"
-                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2"
-                id="MLQS2_2"
-              />
-            </picture>
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/MLQ/mlqs_mob_q2_2.png"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/MLQ/mlqs_comp_q2_2.png"
+                  />
+                  <img
+                    loading="lazy"
+                    src="/assets/MLQ/mlqs_comp_q2_2.png"
+                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2"
+                    id="MLQS2_2"
+                  />
+                </picture>
 
-            <h4>Calculations:</h4>
-            <table style="border: 1px solid black" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Completion Time</th>
-                <th>Turnaround Time (TAT)</th>
-                <th>Waiting Time (WT)</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>31</td>
-                <td>31-0 = 31</td>
-                <td>31 - 4 = 27</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>4</td>
-                <td>4 - 2 = 2</td>
-                <td>2 - 2 = 0</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>37</td>
-                <td>37 - 3 = 34</td>
-                <td>34 - 5 = 29</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>32</td>
-                <td>32 - 4 = 28</td>
-                <td>28 - 1 = 27</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>8</td>
-                <td>8 - 5 = 3</td>
-                <td>3 - 3 = 0</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>30</td>
-                <td>30 - 6 = 24</td>
-                <td>24 - 6 = 18</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>12</td>
-                <td>12 - 8 = 4</td>
-                <td>4 - 4 = 0</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>21</td>
-                <td>21 - 10 = 11</td>
-                <td>11 - 2 = 9</td>
-              </tr>
-              <tr>
-                <td>P9</td>
-                <td>19</td>
-                <td>19 - 12 = 7</td>
-                <td>7 - 7 = 0</td>
-              </tr>
-              <tr>
-                <td>P10</td>
-                <td>24</td>
-                <td>24 - 12 = 12</td>
-                <td>12 - 3 = 9</td>
-              </tr>
-            </table>
+                <h4>Calculations:</h4>
+                <table
+                  style="border: 1px solid black"
+                  class="table table-bordered"
+                >
+                  <tr>
+                    <th>Process</th>
+                    <th>Completion Time</th>
+                    <th>Turnaround Time (TAT)</th>
+                    <th>Waiting Time (WT)</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>31</td>
+                    <td>31-0 = 31</td>
+                    <td>31 - 4 = 27</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>4</td>
+                    <td>4 - 2 = 2</td>
+                    <td>2 - 2 = 0</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>37</td>
+                    <td>37 - 3 = 34</td>
+                    <td>34 - 5 = 29</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>32</td>
+                    <td>32 - 4 = 28</td>
+                    <td>28 - 1 = 27</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>8</td>
+                    <td>8 - 5 = 3</td>
+                    <td>3 - 3 = 0</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>30</td>
+                    <td>30 - 6 = 24</td>
+                    <td>24 - 6 = 18</td>
+                  </tr>
+                  <tr>
+                    <td>P7</td>
+                    <td>12</td>
+                    <td>12 - 8 = 4</td>
+                    <td>4 - 4 = 0</td>
+                  </tr>
+                  <tr>
+                    <td>P8</td>
+                    <td>21</td>
+                    <td>21 - 10 = 11</td>
+                    <td>11 - 2 = 9</td>
+                  </tr>
+                  <tr>
+                    <td>P9</td>
+                    <td>19</td>
+                    <td>19 - 12 = 7</td>
+                    <td>7 - 7 = 0</td>
+                  </tr>
+                  <tr>
+                    <td>P10</td>
+                    <td>24</td>
+                    <td>24 - 12 = 12</td>
+                    <td>12 - 3 = 9</td>
+                  </tr>
+                </table>
 
-            <h4>Average Turnaround Time:</h4>
-            <p>(25 + 6 + 28 + 18 + 6 + 19 + 6 + 13) / 8 = 15.125</p>
+                <h4>Average Turnaround Time:</h4>
+                <p>(25 + 6 + 28 + 18 + 6 + 19 + 6 + 13) / 8 = 15.125</p>
 
-            <h4>Average Waiting Time:</h4>
-            <p>(17 + 0 + 24 + 15 + 5 + 15 + 5 + 11) / 8 = 11.5</p>
-          </div>
-        </div>
-        <div id="question3">
-          <div class="question">
-            <h2>
-              Question 3 : find the average Turn Around Time and Waiting Time of
-              following processes using MULTILEVEL QUEUE Scheduling (MLQ)
-              algorithm? Consider the following processes with their Arrival
-              Time, Burst Time. Question criteria : <br />
-              (1) There are three queue Q1, Q2, Q3<br />
-              (2) In Q1 (Priority scheduling, premptive), Q2(sjf, preemptive) ,
-              Q3(Round robin, timestamp=1) (for priority scheduling, take 1 is
-              the highest priority)
-            </h2>
+                <h4>Average Waiting Time:</h4>
+                <p>(17 + 0 + 24 + 15 + 5 + 15 + 5 + 11) / 8 = 11.5</p>
+              </div>
+            </div>
+            <div id="question3">
+              <div class="question">
+                <h2>
+                  Question 3 : find the average Turn Around Time and Waiting
+                  Time of following processes using MULTILEVEL QUEUE Scheduling
+                  (MLQ) algorithm? Consider the following processes with their
+                  Arrival Time, Burst Time. Question criteria : <br />
+                  (1) There are three queue Q1, Q2, Q3<br />
+                  (2) In Q1 (Priority scheduling, premptive), Q2(sjf,
+                  preemptive) , Q3(Round robin, timestamp=1) (for priority
+                  scheduling, take 1 is the highest priority)
+                </h2>
 
-            <table style="border: 1px solid black" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Arrival Time</th>
-                <th>Burst Time</th>
-                <th>Queue Name</th>
-                <th>Priority</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>0</td>
-                <td>8</td>
-                <td>Q2</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>1</td>
-                <td>6</td>
-                <td>Q1</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>1</td>
-                <td>4</td>
-                <td>Q3</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>2</td>
-                <td>3</td>
-                <td>Q2</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>2</td>
-                <td>1</td>
-                <td>Q1</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>3</td>
-                <td>4</td>
-                <td>Q2</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>3</td>
-                <td>1</td>
-                <td>Q1</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>4</td>
-                <td>2</td>
-                <td>Q2</td>
-                <td></td>
-              </tr>
-            </table>
-          </div>
-          <div class="solution"></div>
+                <table
+                  style="border: 1px solid black"
+                  class="table table-bordered"
+                >
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Queue Name</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td>Q2</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>1</td>
+                    <td>6</td>
+                    <td>Q1</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>Q3</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>Q2</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>Q1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>Q2</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>P7</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>Q1</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>P8</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>Q2</td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="solution"></div>
 
-          <h3>Solution:</h3>
-          <h4>Formula:</h4>
-          <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-          <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+              <h3>Solution:</h3>
+              <h4>Formula:</h4>
+              <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+              <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
-          <h4>Gantt Chart</h4>
+              <h4>Gantt Chart</h4>
 
-          <!-- <img  loading="lazy"
+              <!-- <img  loading="lazy"
             alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
             title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
             id="MLQS2_1"
@@ -628,25 +843,25 @@
             data-src-desktop="/assets/MLQ/mlqs_comp_q3_1.png"
           /> -->
 
-          <picture>
-            <source
-              media="(max-width:700px)"
-              srcset="/assets/MLQ/mlqs_mob_q3_1.png"
-            />
-            <source
-              media="(min-width:701px)"
-              srcset="/assets/MLQ/mlqs_comp_q3_1.png"
-            />
-            <img
-              loading="lazy"
-              src="/assets/MLQ/mlqs_comp_q3_1.png"
-              alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
-              title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
-              id="MLQS3_1"
-            />
-          </picture>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/MLQ/mlqs_mob_q3_1.png"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/MLQ/mlqs_comp_q3_1.png"
+                />
+                <img
+                  loading="lazy"
+                  src="/assets/MLQ/mlqs_comp_q3_1.png"
+                  alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
+                  title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
+                  id="MLQS3_1"
+                />
+              </picture>
 
-          <!-- <img  loading="lazy"
+              <!-- <img  loading="lazy"
             alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart"
             title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart"
             id="MLQS2_2"
@@ -655,187 +870,193 @@
             data-src-desktop="/assets/MLQ/mlqs_comp_q3_2.png"
           /> -->
 
-          <picture>
-            <source
-              media="(max-width:700px)"
-              srcset="/assets/MLQ/mlqs_mob_q3_2.png"
-            />
-            <source
-              media="(min-width:701px)"
-              srcset="/assets/MLQ/mlqs_comp_q3_2.png"
-            />
-            <img
-              loading="lazy"
-              src="/assets/MLQ/mlqs_comp_q3_2.png"
-              alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
-              title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
-              id="MLQS3_2"
-            />
-          </picture>
-          <h4>Calculations:</h4>
-          <table style="border: 1px solid black" class="table table-bordered">
-            <tr>
-              <th>Process</th>
-              <th>Completion Time</th>
-              <th>Turnaround Time (TAT)</th>
-              <th>Waiting Time (WT)</th>
-            </tr>
-            <tr>
-              <td>P1</td>
-              <td>25</td>
-              <td>25</td>
-              <td>17</td>
-            </tr>
-            <tr>
-              <td>P2</td>
-              <td>8</td>
-              <td>7</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>P3</td>
-              <td>29</td>
-              <td>28</td>
-              <td>24</td>
-            </tr>
-            <tr>
-              <td>P4</td>
-              <td>14</td>
-              <td>12</td>
-              <td>9</td>
-            </tr>
-            <tr>
-              <td>P5</td>
-              <td>3</td>
-              <td>1</td>
-              <td>0</td>
-            </tr>
-            <tr>
-              <td>P6</td>
-              <td>18</td>
-              <td>15</td>
-              <td>11</td>
-            </tr>
-            <tr>
-              <td>P7</td>
-              <td>9</td>
-              <td>6</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>P8</td>
-              <td>11</td>
-              <td>7</td>
-              <td>5</td>
-            </tr>
-          </table>
-          <h4>Average Turnaround Time:</h4>
-          <p>(25 + 7 + 28 + 12 + 1 + 15 + 6 + 7) / 8 = 12.625</p>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/MLQ/mlqs_mob_q3_2.png"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/MLQ/mlqs_comp_q3_2.png"
+                />
+                <img
+                  loading="lazy"
+                  src="/assets/MLQ/mlqs_comp_q3_2.png"
+                  alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
+                  title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
+                  id="MLQS3_2"
+                />
+              </picture>
+              <h4>Calculations:</h4>
+              <table
+                style="border: 1px solid black"
+                class="table table-bordered"
+              >
+                <tr>
+                  <th>Process</th>
+                  <th>Completion Time</th>
+                  <th>Turnaround Time (TAT)</th>
+                  <th>Waiting Time (WT)</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>25</td>
+                  <td>25</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>8</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>29</td>
+                  <td>28</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>14</td>
+                  <td>12</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>P6</td>
+                  <td>18</td>
+                  <td>15</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>P7</td>
+                  <td>9</td>
+                  <td>6</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>P8</td>
+                  <td>11</td>
+                  <td>7</td>
+                  <td>5</td>
+                </tr>
+              </table>
+              <h4>Average Turnaround Time:</h4>
+              <p>(25 + 7 + 28 + 12 + 1 + 15 + 6 + 7) / 8 = 12.625</p>
 
-          <h4>Average Waiting Time:</h4>
-          <p>(17 + 1 + 24 + 9 + 0 + 11 + 5 + 5) / 8 = 9</p>
-        </div>
-        <div id="question4">
-          <div class="question">
-            <h2>
-              Question 4 : find the average Turn Around Time and Waiting Time of
-              following processes using MULTILEVEL QUEUE Scheduling (MLQ)
-              algorithm? Consider the following processes with their Arrival
-              Time, Burst Time. Question criteria : <br />
-              (1) There are four queue Q1, Q2, Q3, Q4<br />
-              (2) In Q1(Round robin, timestamp=1), Q2(preemptive Priority
-              scheduling), Q3(preemptive sjf ), Q4(FCFS) (for priority
-              scheduling, take 1 is the highest priority)
-            </h2>
+              <h4>Average Waiting Time:</h4>
+              <p>(17 + 1 + 24 + 9 + 0 + 11 + 5 + 5) / 8 = 9</p>
+            </div>
+            <div id="question4">
+              <div class="question">
+                <h2>
+                  Question 4 : find the average Turn Around Time and Waiting
+                  Time of following processes using MULTILEVEL QUEUE Scheduling
+                  (MLQ) algorithm? Consider the following processes with their
+                  Arrival Time, Burst Time. Question criteria : <br />
+                  (1) There are four queue Q1, Q2, Q3, Q4<br />
+                  (2) In Q1(Round robin, timestamp=1), Q2(preemptive Priority
+                  scheduling), Q3(preemptive sjf ), Q4(FCFS) (for priority
+                  scheduling, take 1 is the highest priority)
+                </h2>
 
-            <table style="border: 1px solid black" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Arrival Time</th>
-                <th>Burst Time</th>
-                <th>Queue name</th>
-                <th>Priority</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>0</td>
-                <td>6</td>
-                <td>Q2</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>2</td>
-                <td>1</td>
-                <td>Q1</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>6</td>
-                <td>4</td>
-                <td>Q2</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>10</td>
-                <td>6</td>
-                <td>Q3</td>
-                <td>7</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>18</td>
-                <td>12</td>
-                <td>Q4</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>24</td>
-                <td>4</td>
-                <td>Q1</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>26</td>
-                <td>3</td>
-                <td>Q1</td>
-                <td>12</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>32</td>
-                <td>8</td>
-                <td>Q2</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>P9</td>
-                <td>36</td>
-                <td>6</td>
-                <td>Q2</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <td>P10</td>
-                <td>40</td>
-                <td>10</td>
-                <td>Q3</td>
-                <td>6</td>
-              </tr>
-            </table>
-          </div>
-          <div class="solution">
-            <h3>Solution:</h3>
-            <h4>Formula:</h4>
-            <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-            <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+                <table
+                  style="border: 1px solid black"
+                  class="table table-bordered"
+                >
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Queue name</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>Q2</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>Q1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>Q2</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>Q3</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>18</td>
+                    <td>12</td>
+                    <td>Q4</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>24</td>
+                    <td>4</td>
+                    <td>Q1</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>P7</td>
+                    <td>26</td>
+                    <td>3</td>
+                    <td>Q1</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>P8</td>
+                    <td>32</td>
+                    <td>8</td>
+                    <td>Q2</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>P9</td>
+                    <td>36</td>
+                    <td>6</td>
+                    <td>Q2</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>P10</td>
+                    <td>40</td>
+                    <td>10</td>
+                    <td>Q3</td>
+                    <td>6</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="solution">
+                <h3>Solution:</h3>
+                <h4>Formula:</h4>
+                <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+                <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
-            <h4>Gantt Chart</h4>
-            <!-- <img  loading="lazy"
+                <h4>Gantt Chart</h4>
+                <!-- <img  loading="lazy"
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
               id="MLQS3_1"
@@ -843,25 +1064,25 @@
               data-src-mobile="/assets/MLQ/mlqs_mob_q4_1.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q4_1.png"
             /> -->
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLQ/mlqs_mob_q4_1.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLQ/mlqs_comp_q4_1.png"
-              />
-              <img
-                loading="lazy"
-                src="/assets/MLQ/mlqs_comp_q4_1.png"
-                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 1"
-                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 1"
-                id="MLQS4_1"
-              />
-            </picture>
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/MLQ/mlqs_mob_q4_1.png"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/MLQ/mlqs_comp_q4_1.png"
+                  />
+                  <img
+                    loading="lazy"
+                    src="/assets/MLQ/mlqs_comp_q4_1.png"
+                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 1"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 1"
+                    id="MLQS4_1"
+                  />
+                </picture>
 
-            <!-- <img  loading="lazy"
+                <!-- <img  loading="lazy"
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               id="MLQS3_2"
@@ -869,25 +1090,25 @@
               data-src-mobile="/assets/MLQ/mlqs_mob_q4_2.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q4_2.png"
             /> -->
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLQ/mlqs_mob_q4_2.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLQ/mlqs_comp_q4_2.png"
-              />
-              <img
-                loading="lazy"
-                src="/assets/MLQ/mlqs_comp_q4_2.png"
-                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 2"
-                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 2"
-                id="MLQS4_2"
-              />
-            </picture>
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/MLQ/mlqs_mob_q4_2.png"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/MLQ/mlqs_comp_q4_2.png"
+                  />
+                  <img
+                    loading="lazy"
+                    src="/assets/MLQ/mlqs_comp_q4_2.png"
+                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 2"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 2"
+                    id="MLQS4_2"
+                  />
+                </picture>
 
-            <!-- <img  loading="lazy"
+                <!-- <img  loading="lazy"
               alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
               id="MLQS3_3"
@@ -895,353 +1116,161 @@
               data-src-mobile="/assets/MLQ/mlqs_mob_q4_3.png"
               data-src-desktop="/assets/MLQ/mlqs_comp_q4_3.png"
             /> -->
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/MLQ/mlqs_mob_q4_3.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/MLQ/mlqs_comp_q4_3.png"
-              />
-              <img
-                loading="lazy"
-                src="/assets/MLQ/mlqs_comp_q4_3.png"
-                alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 3"
-                title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 3"
-                id="MLQS4_3"
-              />
-            </picture>
-            <h4>Calculations:</h4>
-            <table style="border: 1px solid black" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Completion Time</th>
-                <th>Turnaround Time (TAT)</th>
-                <th>Waiting Time (WT)</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>7</td>
-                <td>7</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>3</td>
-                <td>1</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>11</td>
-                <td>5</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>17</td>
-                <td>7</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>61</td>
-                <td>43</td>
-                <td>31</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>31</td>
-                <td>7</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>P7</td>
-                <td>29</td>
-                <td>3</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>P8</td>
-                <td>46</td>
-                <td>14</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>P9</td>
-                <td>42</td>
-                <td>6</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>P10</td>
-                <td>56</td>
-                <td>16</td>
-                <td>6</td>
-              </tr>
-            </table>
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/MLQ/mlqs_mob_q4_3.png"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/MLQ/mlqs_comp_q4_3.png"
+                  />
+                  <img
+                    loading="lazy"
+                    src="/assets/MLQ/mlqs_comp_q4_3.png"
+                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 3"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 3"
+                    id="MLQS4_3"
+                  />
+                </picture>
+                <h4>Calculations:</h4>
+                <table
+                  style="border: 1px solid black"
+                  class="table table-bordered"
+                >
+                  <tr>
+                    <th>Process</th>
+                    <th>Completion Time</th>
+                    <th>Turnaround Time (TAT)</th>
+                    <th>Waiting Time (WT)</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>11</td>
+                    <td>5</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>17</td>
+                    <td>7</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>61</td>
+                    <td>43</td>
+                    <td>31</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>31</td>
+                    <td>7</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>P7</td>
+                    <td>29</td>
+                    <td>3</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>P8</td>
+                    <td>46</td>
+                    <td>14</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>P9</td>
+                    <td>42</td>
+                    <td>6</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>P10</td>
+                    <td>56</td>
+                    <td>16</td>
+                    <td>6</td>
+                  </tr>
+                </table>
 
-            <h4>Average Turnaround Time:</h4>
-            <p>(7 + 1 + 5 + 7 + 43 + 7 + 3 + 14 + 6 + 16) / 10 = 10.9</p>
+                <h4>Average Turnaround Time:</h4>
+                <p>(7 + 1 + 5 + 7 + 43 + 7 + 3 + 14 + 6 + 16) / 10 = 10.9</p>
 
-            <h4>Average Waiting Time:</h4>
-            <p>(1 + 0 + 1 + 1 + 31 + 3 + 0 + 6 + 0 + 6) / 10 = 4.9</p>
-          </div>
-        </div>
-        <section>
-          <h2>
-            Previous Year Questions (PYQs) Of Multilevel Queue Scheduling (MLQ)
-          </h2>
-          <p>
-            Below is a scanned image of a question on multilevel queue
-            Scheduling (MLQ) in operating system
-          </p>
-          <div id="PYQ1">
-            <div class="question">
-              <picture>
-                <source
-                  media="(max-width:700px)"
-                  srcset="/assets/MLQ/MLQ_pyq.jpg"
-                />
-                <source
-                  media="(min-width:701px)"
-                  srcset="/assets/MLQ/MLQ_pyq.jpg"
-                />
-                <img
-                  loading="lazy"
-                  src="/assets/MLQ/MLQ_pyq.jpg"
-                  alt="Previous Year class test question from session 2023-25 on multilevel queue Scheduling (MLQ) in operating system"
-                  title="MLQ scheduling question | PYQs"
-                />
-              </picture>
+                <h4>Average Waiting Time:</h4>
+                <p>(1 + 0 + 1 + 1 + 31 + 3 + 0 + 6 + 0 + 6) / 10 = 4.9</p>
+              </div>
             </div>
-          </div>
-          <br /><br />
-          <div id="PYQ2">
-            <div class="question">
-              <picture>
-                <source
-                  media="(max-width:700px)"
-                  srcset="/assets/MLQ/MLQ_pyq2.jpg"
-                />
-                <source
-                  media="(min-width:701px)"
-                  srcset="/assets/MLQ/MLQ_pyq2.jpg"
-                />
-                <img
-                  loading="lazy"
-                  src="/assets/MLQ/MLQ_pyq2.jpg"
-                  alt="Previous Year Question from session 2023-25 on multilevel queue Scheduling (MLQ) in operating system"
-                  title="MLQ scheduling question | PYQs"
-                  id="pyq1"
-                />
-              </picture>
-            </div>
-          </div>
-        </section>
+            <section>
+              <h2>
+                Previous Year Questions (PYQs) Of Multilevel Queue Scheduling
+                (MLQ)
+              </h2>
+              <p>
+                Below is a scanned image of a question on multilevel queue
+                Scheduling (MLQ) in operating system
+              </p>
+              <div id="PYQ1">
+                <div class="question">
+                  <picture>
+                    <source
+                      media="(max-width:700px)"
+                      srcset="/assets/MLQ/MLQ_pyq.jpg"
+                    />
+                    <source
+                      media="(min-width:701px)"
+                      srcset="/assets/MLQ/MLQ_pyq.jpg"
+                    />
+                    <img
+                      loading="lazy"
+                      src="/assets/MLQ/MLQ_pyq.jpg"
+                      alt="Previous Year class test question from session 2023-25 on multilevel queue Scheduling (MLQ) in operating system"
+                      title="MLQ scheduling question | PYQs"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <br /><br />
+              <div id="PYQ2">
+                <div class="question">
+                  <picture>
+                    <source
+                      media="(max-width:700px)"
+                      srcset="/assets/MLQ/MLQ_pyq2.jpg"
+                    />
+                    <source
+                      media="(min-width:701px)"
+                      srcset="/assets/MLQ/MLQ_pyq2.jpg"
+                    />
+                    <img
+                      loading="lazy"
+                      src="/assets/MLQ/MLQ_pyq2.jpg"
+                      alt="Previous Year Question from session 2023-25 on multilevel queue Scheduling (MLQ) in operating system"
+                      title="MLQ scheduling question | PYQs"
+                      id="pyq1"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </section>
+          </article>
+        </main>
       </div>
+      <div id="right_content"></div>
+    </div>
 
-      <!-- definition part  -->
-      <div class="container">
-        <a
-          href="#fstque"
-          class="btn btn-primary btn-lg active"
-          role="button"
-          aria-pressed="true"
-          >Jump To Question</a
-        >
-        <br /><br />
-        <section>
-          <h2>
-            what is Multilevel Queue Scheduling Algorithm In Operating System ?
-          </h2>
-          <p>
-            In the Multilevel Queue Scheduling algorithm, processes are divided
-            into multiple queues based on specific characteristics, such as
-            priority or memory requirements. Each queue uses its own scheduling
-            method, which could be
-            <a href="/os/scheduling_algorithms/fcfs.html"
-              >First-Come-First-Serve (FCFS)</a
-            >,
-            <a href="/os/scheduling_algorithms/sjf1.html"
-              >Shortest Job First (SJF)</a
-            >, or
-            <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>,
-            depending on the types of processes it holds. This algorithm is
-            often used in scenarios where different types of processes need to
-            be managed separately and effectively.
-          </p>
-          <picture>
-            <source
-              media="(max-width:700px)"
-              srcset="/assets/MLQ/MLQS_DEFINITIO_small.png"
-            />
-            <source
-              media="(min-width:701px)"
-              srcset="/assets/MLQ/MLQS_DEFINITION_nig.png"
-            />
-            <img
-              loading="lazy"
-              alt="multilevel queue scheduling definiton | expplanation of MLQ"
-              title="MULTILEVEL QUEUE SCHEDULING (MLQ) working step"
-            />
-          </picture>
-        </section>
-
-        <section>
-          <h2>Method for solving Multilevel Queue Scheduling (MLQ) in os</h2>
-          <ol>
-            <li>
-              Step 1: Organize the processes into different queues based on
-              their priority or type.
-            </li>
-            <li>
-              Step 2: Choose a scheduling algorithm for each queue that meets
-              the specific needs of the processes it contains.
-            </li>
-            <li>
-              Step 3: Establish the priority levels among the queues to decide
-              which one should be prioritized when multiple queues have
-              processes ready to execute.
-            </li>
-            <li>
-              Step 4: When a process finishes its execution in its designated
-              queue, it is removed; if not, it may be transferred to another
-              queue according to the system's established rules.
-            </li>
-            <li>
-              Step 5: Continue repeating these steps until all processes in
-              every queue have been completed.
-            </li>
-          </ol>
-        </section>
-        <section>
-          <h2>
-            what are Advantages and Disadvantages of Multilevel Queue Scheduling
-            ?
-          </h2>
-          <table style="border: 1px solid black" class="table table-bordered">
-            <tr>
-              <th>Advantages</th>
-              <th>Disadvantages</th>
-            </tr>
-            <tr>
-              <td>
-                Enables specific scheduling policies for different types of
-                processes, improving efficiency.
-              </td>
-              <td>
-                Static division of queues may lead to underutilization of
-                resources if queues are imbalanced.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Allows easy prioritization of system processes over user
-                processes, enhancing system performance.
-              </td>
-              <td>
-                Higher-priority queues can lead to starvation of processes in
-                lower-priority queues.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Each queue can be customized to meet specific needs, offering
-                flexibility.
-              </td>
-              <td>
-                Complex to implement and maintain, especially with a large
-                number of queues and processes.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Reduces the turnaround time for certain high-priority processes.
-              </td>
-              <td>
-                Lack of interaction among queues can cause inefficiencies in
-                overall CPU utilization.
-              </td>
-            </tr>
-            <tr>
-              <td>Supports separation of long-term and short-term tasks.</td>
-              <td>
-                Static assignment of processes means changes to process
-                priorities are challenging.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Helps manage processes that require different resources
-                effectively.
-              </td>
-              <td>
-                Once a process is assigned to a queue, it generally cannot be
-                moved, reducing adaptability.
-              </td>
-            </tr>
-          </table>
-        </section>
-        <section>
-          <h2>
-            Why Multilevel Queue Scheduling Is Better than Other Scheduling
-            Algorithms?
-          </h2>
-
-          <p>
-            Multilevel Queue Scheduling is especially advantageous in settings
-            where various types of tasks need different scheduling approaches.
-            By enabling the use of distinct
-            <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
-              >scheduling algorithms</a
-            >
-            for each queue and supporting priority-based processing, it can
-            achieve better performance than a single algorithm applied to all
-            processes. This makes it ideal for systems that need rapid responses
-            for certain types of tasks, as well as in multiuser environments,
-            where prioritizing system tasks can enhance stability and
-            responsiveness.
-          </p>
-        </section>
-        <section>
-          <h2>where multilevel queue scheduling (MLQ) used ?</h2>
-          <p>
-            Multilevel Queue Scheduling (MLQ) is used in computer systems where
-            different types of tasks need to be managed efficiently. It's like
-            organizing tasks into separate "queues" based on their priority or
-            type. <br />
-            for example :
-          </p>
-          <ul>
-            <li>
-              <strong>1. Real-Time Systems: </strong>Tasks that need immediate
-              attention, like handling incoming video streams or medical
-              devices, can be placed in a high-priority queue.
-            </li>
-            <li>
-              <strong>2. Interactive Systems: </strong>Tasks like typing on a
-              keyboard or moving the mouse are placed in another queue to ensure
-              they respond quickly.
-            </li>
-            <li>
-              <strong>3. Batch Systems: </strong>Background tasks, such as file
-              downloads or backups, are placed in a lower-priority queue since
-              they don’t need instant results.
-            </li>
-          </ul>
-          <p>
-            By keeping tasks in separate queues, MLQ scheduling helps systems
-            run smoothly and prioritize the most critical tasks first. It’s
-            often used in operating systems and servers to manage resources
-            efficiently.
-          </p>
-        </section>
-      </div>
-      <!-- definition part end -->
-    </main>
-    <div id="down"></div>
 
     <script type="module" src="commonthings.min.js"></script>
   </body>

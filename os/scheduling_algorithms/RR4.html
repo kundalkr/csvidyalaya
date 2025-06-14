@@ -97,198 +97,214 @@
     </style>
   </head>
   <body>
-
-    <div class="title_date">
-      <h1> Round Robin Scheduling Algorithm Questions: Practice and Learn + PYQs</h1>
-     
-
-      <br />
-      <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="button">
-          <a href="RR3.html" style="color: antiquewhite"
-            >click for previous question 12 & 13 click here</a
-          >
-        </button>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
       </div>
-      <br />
-    </div>
-   
-    <main>
-      <div class="container">
-        <div id="question1">
-          <div class="question">
-            <h2 id="fstque">
-              Question 14: Consider the following set of processes, with the
-              length of the CPU-burst time given in milliseconds:
-            </h2>
-
-            <table style="border: 1px solid black" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th>Arrival Time</th>
-                <th>Burst Time</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-                <td>0</td>
-                <td>9</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-                <td>1</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <td>P4</td>
-                <td>3</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-                <td>3</td>
-                <td>8</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-                <td>4</td>
-                <td>1</td>
-              </tr>
-            </table>
-            <p>
-              Draw gantt charts illustrating the execution of these processes
-              using RR or round robin(quantum = 1) scheduling. What is turn
-              around time and waiting time of each process.
-            </p>
+      <div id="main_content">
+        <main>
+          <div class="title_date">
+            <h1>
+              Round Robin Scheduling Algorithm Questions: Practice and Learn +
+              PYQs
+            </h1>
           </div>
-          <div class="solution">
-            <h3>Solution:</h3>
-            <p>Given Time Quantum: 1.0</p>
-
-            <h4>Formulas:</h4>
-            <ul>
-              <li>Turnaround Time (TAT) = Completion Time - Arrival Time</li>
-              <li>Waiting Time (WT) = Turnaround Time - Burst Time</li>
-            </ul>
-
-            <h4>Gantt Chart</h4>
-            <img  loading="lazy"
-              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              id="RR1_1"
-              srcset=""
-            />
-            <img  loading="lazy"
-              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              id="RR1_2"
-              srcset=""
-            />
-            <img  loading="lazy"
-              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              id="RR1_3"
-              srcset=""
-            />
-            <img  loading="lazy"
-              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              id="RR1_4"
-              srcset=""
-            />
-            <img  loading="lazy"
-              alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
-              id="RR1_5"
-              srcset=""
-            />
-
-            <h4>Calculation:</h4>
-            <table style="border: 1px solid black" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-
-                <th>Completion Time</th>
-                <th>Turnaround Time</th>
-                <th>Waiting Time</th>
-              </tr>
-              <tr>
-                <td>P1</td>
-
-                <td>31</td>
-                <td>31 - 0 = 31</td>
-                <td>31 - 9 = 22</td>
-              </tr>
-              <tr>
-                <td>P2</td>
-
-                <td>20</td>
-                <td>20 - 1 = 19</td>
-                <td>19 - 5 = 14</td>
-              </tr>
-              <tr>
-                <td>P3</td>
-
-                <td>15</td>
-                <td>15 - 2 = 13</td>
-                <td>13 - 3 = 10</td>
-              </tr>
-
-              <tr>
-                <td>P4</td>
-
-                <td>27</td>
-                <td>27 - 3 = 24</td>
-                <td>24 - 6 = 18</td>
-              </tr>
-              <tr>
-                <td>P5</td>
-
-                <td>32</td>
-                <td>32 - 3 = 29</td>
-                <td>29 - 8 = 21</td>
-              </tr>
-              <tr>
-                <td>P6</td>
-
-                <td>9</td>
-                <td>9 - 4 = 5</td>
-                <td>5 - 1 = 4</td>
-              </tr>
-            </table>
-
-            <p>
-              Average Turnaround Time = (31 + 19 + 13 + 24 + 29 + 5 ) / 6 =
-              20.16
-            </p>
-            <p>
-              Average Waiting Time = (22 + 14 + 10 + 18 + 21 + 4 ) / 6 = 14.833
-            </p>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">
+              <a href="RR3.html" style="color: antiquewhite"
+                >click for previous question 12 & 13 click here</a
+              >
+            </button>
           </div>
-        </div>
+          <article>
+            <div id="question14">
+              <div class="question">
+                <h2 id="fstque">
+                  Question 14: Consider the following set of processes, with the
+                  length of the CPU-burst time given in milliseconds:
+                </h2>
+
+                <table
+                  style="border: 1px solid black"
+                  class="table table-bordered"
+                >
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>0</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>1</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>3</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>3</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>4</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                <p>
+                  Draw gantt charts illustrating the execution of these
+                  processes using RR or round robin(quantum = 1) scheduling.
+                  What is turn around time and waiting time of each process.
+                </p>
+              </div>
+              <div class="solution">
+                <h3>Solution:</h3>
+                <p>Given Time Quantum: 1.0</p>
+
+                <h4>Formulas:</h4>
+                <ul>
+                  <li>
+                    Turnaround Time (TAT) = Completion Time - Arrival Time
+                  </li>
+                  <li>Waiting Time (WT) = Turnaround Time - Burst Time</li>
+                </ul>
+
+                <h4>Gantt Chart</h4>
+                <img
+                  loading="lazy"
+                  alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  id="RR1_1"
+                  srcset=""
+                />
+                <img
+                  loading="lazy"
+                  alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  id="RR1_2"
+                  srcset=""
+                />
+                <img
+                  loading="lazy"
+                  alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  id="RR1_3"
+                  srcset=""
+                />
+                <img
+                  loading="lazy"
+                  alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  id="RR1_4"
+                  srcset=""
+                />
+                <img
+                  loading="lazy"
+                  alt="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  title="Round Robin SCHEDULING | Question 14 Solution | Gantt Chart"
+                  id="RR1_5"
+                  srcset=""
+                />
+
+                <h4>Calculation:</h4>
+                <table
+                  style="border: 1px solid black"
+                  class="table table-bordered"
+                >
+                  <tr>
+                    <th>Process</th>
+
+                    <th>Completion Time</th>
+                    <th>Turnaround Time</th>
+                    <th>Waiting Time</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+
+                    <td>31</td>
+                    <td>31 - 0 = 31</td>
+                    <td>31 - 9 = 22</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+
+                    <td>20</td>
+                    <td>20 - 1 = 19</td>
+                    <td>19 - 5 = 14</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+
+                    <td>15</td>
+                    <td>15 - 2 = 13</td>
+                    <td>13 - 3 = 10</td>
+                  </tr>
+
+                  <tr>
+                    <td>P4</td>
+
+                    <td>27</td>
+                    <td>27 - 3 = 24</td>
+                    <td>24 - 6 = 18</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+
+                    <td>32</td>
+                    <td>32 - 3 = 29</td>
+                    <td>29 - 8 = 21</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+
+                    <td>9</td>
+                    <td>9 - 4 = 5</td>
+                    <td>5 - 1 = 4</td>
+                  </tr>
+                </table>
+
+                <p>
+                  Average Turnaround Time = (31 + 19 + 13 + 24 + 29 + 5 ) / 6 =
+                  20.16
+                </p>
+                <p>
+                  Average Waiting Time = (22 + 14 + 10 + 18 + 21 + 4 ) / 6 =
+                  14.833
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary" id="down" type="button">
+                <a href="RR3.html"
+                  >click for previous question 12 & 13 click here</a
+                >
+              </button>
+            </div>
+          </article>
+        </main>
       </div>
-    </main>
-
-    <br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" id="down" type="button">
-        <a href="RR3.html">click for previous question 12 & 13 click here</a>
-      </button>
+      <div id="right_content"></div>
     </div>
-    <br />
-
     <script type="module" src="commonthings.min.js"></script>
-    <script >
-  
-        let ganttcharts = document.getElementsByTagName("img");
-        for (let index = 0; index < ganttcharts.length; index++) {
-          ganttcharts[index].src = "/assets/RR3.png";
-        }
-    
+    <script>
+      let ganttcharts = document.getElementsByTagName("img");
+      for (let index = 0; index < ganttcharts.length; index++) {
+        ganttcharts[index].src = "/assets/RR3.png";
+      }
     </script>
   </body>
 </html>
