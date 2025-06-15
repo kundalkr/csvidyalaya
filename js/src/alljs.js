@@ -59,7 +59,7 @@ function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");
 
-  let hh1 = document.getElementsByTagName("h1")[0];
+  let hh1 = document.querySelector("#title_date > h1")[0];
   let lastupdate = document.createElement("div");
   lastupdate.setAttribute("id", "last_updated_parent");
   lastupdate.innerHTML = ` 
