@@ -191,149 +191,7 @@
                   <p>Average Waiting Time (WT) = (7+0+16+1+8)/5 = 6.4 units</p>
                 </div>
               </div>
-              <div id="question2">
-                <div class="question">
-                  <h2>
-                    Question 2: Consider a set of processes with given Arrival
-                    and Burst Times. Apply Preemptive SJF Scheduling to compute
-                    the Gantt chart and determine the average Turnaround Time,
-                    Waiting Time, and Completion Time.
-                  </h2>
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Arrival Time</th>
-                      <th>Burst Time</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>0</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>1</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>3</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>4</td>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <td>P5</td>
-                      <td>5</td>
-                      <td>6</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="solution">
-                  <h3>Solution :</h3>
-                  <p>Formulas:</p>
-                  <ul>
-                    <li>
-                      Turn Around Time (TAT) = Completion Time (CT) - Arrival
-                      Time (AT)
-                    </li>
-                    <li>
-                      Waiting Time (WT) = Turn Around Time (TAT) - Burst Time
-                      (BT)
-                    </li>
-                  </ul>
 
-                  <h4>Gantt Chart</h4>
-
-                  <picture>
-                    <source
-                      media="(max-width:700px)"
-                      srcset="/assets/SJF/preemptive/p_2.jpg"
-                    />
-                    <source
-                      media="(min-width:701px)"
-                      srcset="/assets/SJF/preemptive/p_2.jpg"
-                    />
-                    <img
-                      loading="lazy"
-                      alt=" Gantt Chart of preemptive SJF SCHEDULING | Question 2 Solution "
-                      title="Gantt Chart of question 2"
-                      src="/assets/SJF/preemptive/p_2.jpg"
-                    />
-                  </picture>
-                  <!-- <p> | P1 (0-1) | P2 (1-3) | P1 (3-7) | P4 (7-10) | P3 (10-14) | P5 (14-20) | </p> -->
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Arrival Time</th>
-                      <th>Burst Time</th>
-                      <th>Completion Time</th>
-                      <th>Turn Around Time (TAT)</th>
-                      <th>Waiting Time (WT)</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-
-                      <td>7</td>
-                      <td>7</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-
-                      <td>3</td>
-                      <td>2</td>
-                      <td>0</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-
-                      <td>14</td>
-                      <td>11</td>
-                      <td>7</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-
-                      <td>10</td>
-                      <td>6</td>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <td>P5</td>
-
-                      <td>20</td>
-                      <td>15</td>
-                      <td>9</td>
-                    </tr>
-                  </table>
-
-                  <p>Formula for average TAT and WT:</p>
-                  <ul>
-                    <li>
-                      Average Turn Around Time (Average TAT) = Σ(TAT) / Number
-                      of Processes
-                    </li>
-                    <li>
-                      Average Waiting Time (Average WT) = Σ(WT) / Number of
-                      Processes
-                    </li>
-                  </ul>
-                  <p>
-                    Average Turn Around Time (TAT) = (7+2+11+6+15)/5 = 8.2 units
-                  </p>
-                  <p>Average Waiting Time (WT) = (2+0+7+3+9)/5 = 4.2 units</p>
-                </div>
-              </div>
               <div id="question3">
                 <div class="question">
                   <h2>
@@ -1049,6 +907,7 @@
                   </p>
                 </div>
               </div>
+
               <div id="question8">
                 <div class="question">
                   <h2>
@@ -1351,7 +1210,149 @@
                   </p>
                 </div>
               </div>
+              <div id="question2">
+                <div class="question">
+                  <h2>
+                    Question 2: Consider a set of processes with given Arrival
+                    and Burst Times. Apply Preemptive SJF Scheduling to compute
+                    the Gantt chart and determine the average Turnaround Time,
+                    Waiting Time, and Completion Time.
+                  </h2>
+                  <table
+                    style="border: 1px solid black"
+                    class="table table-bordered"
+                  >
+                    <tr>
+                      <th>Process</th>
+                      <th>Arrival Time</th>
+                      <th>Burst Time</th>
+                    </tr>
+                    <tr>
+                      <td>P1</td>
+                      <td>0</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>P2</td>
+                      <td>1</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>P3</td>
+                      <td>3</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>P4</td>
+                      <td>4</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>P5</td>
+                      <td>5</td>
+                      <td>6</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="solution">
+                  <h3>Solution :</h3>
+                  <p>Formulas:</p>
+                  <ul>
+                    <li>
+                      Turn Around Time (TAT) = Completion Time (CT) - Arrival
+                      Time (AT)
+                    </li>
+                    <li>
+                      Waiting Time (WT) = Turn Around Time (TAT) - Burst Time
+                      (BT)
+                    </li>
+                  </ul>
 
+                  <h4>Gantt Chart</h4>
+
+                  <picture>
+                    <source
+                      media="(max-width:700px)"
+                      srcset="/assets/SJF/preemptive/p_2.jpg"
+                    />
+                    <source
+                      media="(min-width:701px)"
+                      srcset="/assets/SJF/preemptive/p_2.jpg"
+                    />
+                    <img
+                      loading="lazy"
+                      alt=" Gantt Chart of preemptive SJF SCHEDULING | Question 2 Solution "
+                      title="Gantt Chart of question 2"
+                      src="/assets/SJF/preemptive/p_2.jpg"
+                    />
+                  </picture>
+                  <!-- <p> | P1 (0-1) | P2 (1-3) | P1 (3-7) | P4 (7-10) | P3 (10-14) | P5 (14-20) | </p> -->
+                  <table
+                    style="border: 1px solid black"
+                    class="table table-bordered"
+                  >
+                    <tr>
+                      <th>Process</th>
+                      <th>Arrival Time</th>
+                      <th>Burst Time</th>
+                      <th>Completion Time</th>
+                      <th>Turn Around Time (TAT)</th>
+                      <th>Waiting Time (WT)</th>
+                    </tr>
+                    <tr>
+                      <td>P1</td>
+
+                      <td>7</td>
+                      <td>7</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>P2</td>
+
+                      <td>3</td>
+                      <td>2</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>P3</td>
+
+                      <td>14</td>
+                      <td>11</td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td>P4</td>
+
+                      <td>10</td>
+                      <td>6</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>P5</td>
+
+                      <td>20</td>
+                      <td>15</td>
+                      <td>9</td>
+                    </tr>
+                  </table>
+
+                  <p>Formula for average TAT and WT:</p>
+                  <ul>
+                    <li>
+                      Average Turn Around Time (Average TAT) = Σ(TAT) / Number
+                      of Processes
+                    </li>
+                    <li>
+                      Average Waiting Time (Average WT) = Σ(WT) / Number of
+                      Processes
+                    </li>
+                  </ul>
+                  <p>
+                    Average Turn Around Time (TAT) = (7+2+11+6+15)/5 = 8.2 units
+                  </p>
+                  <p>Average Waiting Time (WT) = (2+0+7+3+9)/5 = 4.2 units</p>
+                </div>
+              </div>
               <div>
                 <br /><br />
                 <a
