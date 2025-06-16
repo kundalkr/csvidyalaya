@@ -222,7 +222,6 @@ header.innerHTML = `
          
       </ul>
     </div>
-<br>
 `;
 document.querySelector("body").prepend(header);
 let footer = document.createElement("div");
