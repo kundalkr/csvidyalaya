@@ -1,4 +1,4 @@
-import {bar,popup_links } from "/js/src/utilities.min.js";
+import {bar,popup_links,sdbar_Links } from "/js/src/utilities.min.js";
 
 const bar_data = {
   users: [
@@ -75,37 +75,51 @@ const popup_link = {
 };
 popup_links(popup_link);
 
+const sidebar_links = {
+  users: [
+      {
+      name: "All DSA Topic question",
+      link: "dsa_in_c_topic.html",
+    },
+    {
+      name: "Array question",
+      link: "Arrays.html",
+    },
+     {
+      name: "Address finding array based question",
+      link: "Array2.html",
+    },
+    {
+      name: "infix to postfix conversion question",
+      link: "infixtopostfix.html",
+    },
+    {
+      name: "infix to prefix conversion question",
+      link: "infixtoprefix.html",
+    },
+    {
+      name: "linkedlist question",
+      link: "linkedlist1.html",
+    },
+    {
+      name: "postfix, prefix of infix conversion question",
+      link: "postfixprefixofinfix.html",
+    },
+    {
+      name: "prefix to postfix conversion question",
+      link: "ps1.html",
+    },
+    {
+      name: "queue question",
+      link: "ps2.html",
+    },
+    {
+      name: "stack question",
+      link: "stack1.html",
+    },
+  
+  ],
+};
 
-let int_links = document.createElement("div");
-int_links.innerHTML = `
-   <div class="card" style="width: 18rem">
-        <div class="card-header">Also try these question</div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            <a href="infixtoprefix.html">practice prefix to infix</a>
-          </li>
-          <li class="list-group-item">
-            <a href="infixtoprefix.html">practice infix to prefix</a>
-          </li>
-          <li class="list-group-item">
-            <a href="prefixtopostfix.html">practice prefix to postfix</a>
-          </li>
-          <li class="list-group-item">
-            <a href="Arrays.html">array questions</a>
-          </li>
-          <li class="list-group-item">
-            <a href="../os/os_topic.html">operating system questions</a>
-          </li>
-        </ul>
-      </div>
-`;
 
-let questions = document.getElementsByClassName("question");
-for (let index = 0; index <= questions.length; index++) {
-  if (index == 0) {
-    questions[index].insertBefore(int_links, questions[index].firstChild);
-  }
-  if (index % 2 == 0) {
-    questions[index].insertBefore(int_links, questions[index].firstChild);
-  }
-}
+sdbar_Links(sidebar_links);

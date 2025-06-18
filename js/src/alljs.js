@@ -1,3 +1,5 @@
+
+
 (function () {
   const favi_size = {
     users: [
@@ -40,6 +42,28 @@
 
   //  <link rel="stylesheet" href="main_content.css" />
 })();
+
+
+// last modified
+function last_modified() {
+  const lastModified = new Date(document.lastModified);
+  let lastup = lastModified.toDateString().split(" ");
+
+  let hh1 = document.querySelector("#main_content > main > div > h1");
+  let lastupdate = document.createElement("div");
+  lastupdate.setAttribute("id", "last_updated_parent");
+  lastupdate.innerHTML = ` 
+          <div>
+            <span>Last updated : </span><span>${
+              lastup[1] + " " + lastup[2] + ", " + lastup[3]
+            }</span>
+          </div>
+          <hr>
+        `;
+  hh1.insertAdjacentElement("afterend", lastupdate);
+};
+
+// last modified
 // all css  adding
 const cssFiles = [
   "/css/headings-footer.min.css",
@@ -54,26 +78,7 @@ cssFiles.forEach((file) => {
   heads.appendChild(cssf);
 });
 //  all css adding end
-// last modified
-function last_modified() {
-  const lastModified = new Date(document.lastModified);
-  let lastup = lastModified.toDateString().split(" ");
 
-  let hh1 = document.querySelector("#title_date > h1")[0];
-  let lastupdate = document.createElement("div");
-  lastupdate.setAttribute("id", "last_updated_parent");
-  lastupdate.innerHTML = ` 
-          <div>
-            <span>Last updated : </span><span>${
-              lastup[1] + " " + lastup[2] + ", " + lastup[3]
-            }</span>
-          </div>
-          <hr>
-        `;
-  hh1.insertAdjacentElement("afterend", lastupdate);
-}
-
-// last modified
 const scriptTag = document.createElement("script");
 scriptTag.type = "application/ld+json";
 scriptTag.innerHTML = `{
@@ -139,5 +144,5 @@ window.onload = function () {
   commonforall.setAttribute("type", "module");
   commonforall.async = !0;
   bodu.appendChild(commonforall);
-  last_modified();
+    last_modified();
 };

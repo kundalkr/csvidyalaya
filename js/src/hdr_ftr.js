@@ -749,3 +749,4 @@ if (window.innerWidth <= 900) {
   }`;
   add_head(sctt);
 }
+    

@@ -21,281 +21,305 @@
     </style>
   </head>
   <body>
-
-    <div class="title_date">
-      <h1>Stack Questions</h1>
-      <p>These questions are generally asked in university exam</p>
-      <p>convert infix to prefix based stack question</p>
-    </div>
-    
-
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">
-        <a href="stack2.html" style="color: antiquewhite"
-          >back to question no 21 - 35
-        </a>
-      </button>
-    </div>
-    <br />
-   
-    <main>
-      <div class="container">
-        <div class="d-grid gap-2 col-6 mx-auto">
-          <button class="btn btn-primary" type="button">
-            <a href="infixtoprefix.html" style="color: antiquewhite"
-              >click here for more question on infix to prefix</a
-            >
-          </button>
-        </div>
-        <div id="question36">
-          <div class="question">
-            <h2>
-              36. Convert the infix expression (A+B)*C-D to its prefix
-              expression.
-            </h2>
-          </div>
-          <div class="solution">
-            <p>
-              <strong>Answer:</strong> To convert the infix expression (A+B)*C-D
-              to prefix notation, follow these steps: <br />
-              1. First, convert the innermost expression (A+B) to prefix, which
-              becomes +AB. <br />
-              2. Next, apply the * operator to +AB and C, resulting in *+ABC.
-              <br />
-              3. Finally, apply the - operator to *+ABC and D, resulting in -
-              *+ABC D. So, the prefix expression is - *+ABC D.
-            </p>
-          </div>
-        </div>
-
-        <h2>
-          37. Convert the prefix expression *+AB-CD to its infix expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the prefix expression *+AB-CD to
-          infix notation, follow these steps: <br />
-          1. Start with the prefix expression *+AB-CD. The first operator is *,
-          so split the expression into * and the remaining part +AB-CD. <br />
-          2. Convert +AB to infix, which results in (A+B). <br />
-          3. Convert -CD to infix, which results in (C-D). <br />
-          4. Combine the results with *, resulting in (A+B)* (C-D). So, the
-          infix expression is (A+B)*(C-D).
-        </p>
-
-        <h2>
-          <br />
-          38. Convert the infix expression A*(B+C)/D to its prefix expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the infix expression A*(B+C)/D to
-          prefix notation, follow these steps: <br />
-          1. First, convert the inner expression (B+C) to prefix, which is +BC.
-          <br />
-          2. Apply the * operator to A and +BC, resulting in *A+BC. <br />
-          3. Finally, apply the / operator to *A+BC and D, resulting in / *A+BC
-          D. So, the prefix expression is / *A+BC D.
-        </p>
-
-        <h2>
-          39. Convert the prefix expression /+A*BCD to its infix expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the prefix expression /+A*BCD to
-          infix notation, follow these steps: <br />
-          1. Start with the prefix expression /+A*BCD. The first operator is /,
-          so split the expression into / and +A*BCD. <br />
-          2. Convert +A*BCD to infix: - The first operator in +A*BCD is +, so
-          split into + and A*BCD. - Convert *BCD to infix, which is (B*C). -
-          Combine with +, resulting in (A+(B*C)). <br />
-          3. Combine with /, resulting in ((A+(B*C))/D). So, the infix
-          expression is ((A+(B*C))/D).
-        </p>
-
-        <h2>
-          40. Convert the infix expression (A-B)/(C+D) to its prefix expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the infix expression (A-B)/(C+D)
-          to prefix notation, follow these steps: <br />
-          1. First, convert the inner expressions (A-B) and (C+D) to prefix: -
-          (A-B) becomes -AB. - (C+D) becomes +CD. <br />
-          2. Apply the / operator to -AB and +CD, resulting in / -AB +CD. So,
-          the prefix expression is / -AB +CD.
-        </p>
-
-        <h2>
-          42. Convert the infix expression A+B-C*D to its prefix expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the infix expression A+B-C*D to
-          prefix notation, follow these steps: <br />
-        </p>
-        <ul>
-          <li>
-            First, identify the highest precedence operation, which is
-            multiplication. Thus, <strong>C * D</strong> becomes
-            <strong>* C D</strong>.
-          </li>
-          <li>
-            Next, substitute <strong>* C D</strong> back into the expression,
-            resulting in <strong>A + B - * C D</strong>. This can be viewed as
-            <strong>(A + B) - (* C D)</strong>.
-          </li>
-          <li>
-            Now, handle the addition: <strong>A + B</strong> becomes
-            <strong>+ A B</strong>, giving us
-            <strong>- (+ A B) (* C D)</strong>.
-          </li>
-          <li>
-            Finally, combine everything to form the prefix expression:
-            <strong>- + A B * C D</strong>.
-          </li>
-        </ul>
-
-        <h2>
-          43. Convert the prefix expression *+AB-CDE to its infix expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the prefix expression *+AB-CDE to
-          infix notation, follow these steps: <br />
-          1. Start with the prefix expression *+AB-CDE. The first operator is *,
-          so split the expression into * and +AB-CDE. <br />
-          2. Convert +AB to infix, which is (A+B). <br />
-          3. Convert -CDE to infix: - The first operator in -CDE is -, so split
-          into - and CDE. - Convert CDE to infix, which is (C-D). - Combine with
-          -, resulting in (C-D). <br />
-          4. Combine with *, resulting in ((A+B)*(C-D)). So, the infix
-          expression is ((A+B)*(C-D)).
-        </p>
-
-        <h2>
-          44. Convert the infix expression (A+B)*(C-D) to its prefix expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the infix expression (A+B)*(C-D)
-          to prefix notation, follow these steps: <br />
-          1. Convert the inner expressions (A+B) and (C-D) to prefix: - (A+B)
-          becomes +AB. - (C-D) becomes -CD. <br />
-          2. Apply the * operator to +AB and -CD, resulting in *+AB -CD. So, the
-          prefix expression is *+AB -CD.
-        </p>
-
-        <h2>
-          45. Convert the prefix expression *-A/BCD to its infix expression.
-        </h2>
-        <p>
-          <strong>Answer: ((A−(B/C))∗D)</strong> To convert the prefix
-          expression *-A/BCD to infix notation, follow these steps: <br />
-          1. Start from the rightmost side and find the operators and operands:
-          <br />
-          2. Identify the operands first and group them with operators as per
-          the operator precedence.<br />
-          3. Start applying operators from left to right:<br />
-        </p>
-
-        <ul>
-          <li>First, /BC becomes (B / C)</li>
-          <li>Next, -A/BC becomes (A - (B / C))</li>
-          <li>Finally, *(A - (B / C))D becomes ((A - (B / C)) * D)</li>
-        </ul>
-
-        <h2>
-          46. Convert the infix expression A/(B+C-D) to its prefix expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the infix expression A/(B+C-D) to
-          prefix notation, follow these steps: <br />
-          1. Convert the inner expression (B+C-D) to prefix: - First, convert
-          B+C to prefix, which is +BC. - Next, convert +BC-D to prefix, which is
-          -+BCD. <br />
-          2. Apply the / operator to A and -+BCD, resulting in /A-+BCD. So, the
-          prefix expression is /A-+BCD.
-        </p>
-
-        <h2>
-          47. Convert the prefix expression +A/B*CD to its infix expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the prefix expression +A/B*CD to
-          infix notation, follow these steps: <br />
-          1.Start from the rightmost operator and go to the left.<br />
-          2.Apply operators to operands following prefix notation rules.<br />
-        </p>
-        <ul>
-          <li>* C D becomes (C * D)</li>
-          <li>/ B (C * D) becomes (B / (C * D))</li>
-          <li>+ A (B / (C * D)) becomes A + (B / (C * D))</li>
-        </ul>
-
-        <h2>
-          48. Convert the infix expression (A-(B/C))*D+E to its prefix
-          expression.
-        </h2>
-        <p>
-          <strong>Answer:</strong> To convert the infix expression (A-(B/C))*D+E
-          to prefix notation, follow these steps: <br />
-          1. Convert the inner expression (B/C) to prefix, which is /BC. <br />
-          2. Apply the - operator to A and /BC, resulting in -A/BC. <br />
-          3. Apply the * operator to -A/BC and D, resulting in *-A/BCD. <br />
-          4. Finally, apply the + operator to *-A/BCD and E, resulting in
-          +*-A/BCDE. So, the prefix expression is +*-A/BCDE.
-        </p>
-        <div id="question49">
-          <div class="question">
-            <h2>
-              49. Evaluate following postfix expression using stack <br /><b
-                >ab*cd*+ , where a=2, b=2, c=3, d=4</b
-              >
-            </h2>
-          </div>
-          <div class="solution">
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/DSA/dsa_q2.jpg"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/DSA/dsa_q2.jpg"
-              />
-              <img
-                loading="lazy"
-                src="/assets/DSA/dsa_q2.jpg"
-                alt="evaluate postfix expression using stack | answer "
-                title="evaluate postfix expression using stack | question solution"
-                id="q49"
-              />
-            </picture>
-          </div>
-        </div>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
       </div>
-    </main>
+      <div id="main_content">
+        <main>
+          <div class="title_date">
+            <h1>Stack Questions</h1>
+          </div>
+          <article>
+            <section>
+              <p>These questions are generally asked in university exam</p>
+              <p>convert infix to prefix based stack question</p>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">
+                  <a href="stack2.html" style="color: antiquewhite"
+                    >back to question no 21 - 35
+                  </a>
+                </button>
+              </div>
+              <br />
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">
+                  <a href="infixtoprefix.html" style="color: antiquewhite"
+                    >click here for more question on infix to prefix</a
+                  >
+                </button>
+              </div>
+            </section>
+            <section>
+              <div id="question36">
+                <div class="question">
+                  <h2>
+                    36. Convert the infix expression (A+B)*C-D to its prefix
+                    expression.
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p>
+                    <strong>Answer:</strong> To convert the infix expression
+                    (A+B)*C-D to prefix notation, follow these steps: <br />
+                    1. First, convert the innermost expression (A+B) to prefix,
+                    which becomes +AB. <br />
+                    2. Next, apply the * operator to +AB and C, resulting in
+                    *+ABC.
+                    <br />
+                    3. Finally, apply the - operator to *+ABC and D, resulting
+                    in - *+ABC D. So, the prefix expression is - *+ABC D.
+                  </p>
+                </div>
+              </div>
 
-    <br /><br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">
-        <a href="stack2.html" style="color: antiquewhite"
-          >back to question no 21 - 35
-        </a>
-      </button>
+              <h2>
+                37. Convert the prefix expression *+AB-CD to its infix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the prefix expression
+                *+AB-CD to infix notation, follow these steps: <br />
+                1. Start with the prefix expression *+AB-CD. The first operator
+                is *, so split the expression into * and the remaining part
+                +AB-CD. <br />
+                2. Convert +AB to infix, which results in (A+B). <br />
+                3. Convert -CD to infix, which results in (C-D). <br />
+                4. Combine the results with *, resulting in (A+B)* (C-D). So,
+                the infix expression is (A+B)*(C-D).
+              </p>
+
+              <h2>
+                <br />
+                38. Convert the infix expression A*(B+C)/D to its prefix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the infix expression
+                A*(B+C)/D to prefix notation, follow these steps: <br />
+                1. First, convert the inner expression (B+C) to prefix, which is
+                +BC.
+                <br />
+                2. Apply the * operator to A and +BC, resulting in *A+BC. <br />
+                3. Finally, apply the / operator to *A+BC and D, resulting in /
+                *A+BC D. So, the prefix expression is / *A+BC D.
+              </p>
+
+              <h2>
+                39. Convert the prefix expression /+A*BCD to its infix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the prefix expression
+                /+A*BCD to infix notation, follow these steps: <br />
+                1. Start with the prefix expression /+A*BCD. The first operator
+                is /, so split the expression into / and +A*BCD. <br />
+                2. Convert +A*BCD to infix: - The first operator in +A*BCD is +,
+                so split into + and A*BCD. - Convert *BCD to infix, which is
+                (B*C). - Combine with +, resulting in (A+(B*C)). <br />
+                3. Combine with /, resulting in ((A+(B*C))/D). So, the infix
+                expression is ((A+(B*C))/D).
+              </p>
+
+              <h2>
+                40. Convert the infix expression (A-B)/(C+D) to its prefix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the infix expression
+                (A-B)/(C+D) to prefix notation, follow these steps: <br />
+                1. First, convert the inner expressions (A-B) and (C+D) to
+                prefix: - (A-B) becomes -AB. - (C+D) becomes +CD. <br />
+                2. Apply the / operator to -AB and +CD, resulting in / -AB +CD.
+                So, the prefix expression is / -AB +CD.
+              </p>
+
+              <h2>
+                42. Convert the infix expression A+B-C*D to its prefix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the infix expression A+B-C*D
+                to prefix notation, follow these steps: <br />
+              </p>
+              <ul>
+                <li>
+                  First, identify the highest precedence operation, which is
+                  multiplication. Thus, <strong>C * D</strong> becomes
+                  <strong>* C D</strong>.
+                </li>
+                <li>
+                  Next, substitute <strong>* C D</strong> back into the
+                  expression, resulting in <strong>A + B - * C D</strong>. This
+                  can be viewed as <strong>(A + B) - (* C D)</strong>.
+                </li>
+                <li>
+                  Now, handle the addition: <strong>A + B</strong> becomes
+                  <strong>+ A B</strong>, giving us
+                  <strong>- (+ A B) (* C D)</strong>.
+                </li>
+                <li>
+                  Finally, combine everything to form the prefix expression:
+                  <strong>- + A B * C D</strong>.
+                </li>
+              </ul>
+
+              <h2>
+                43. Convert the prefix expression *+AB-CDE to its infix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the prefix expression
+                *+AB-CDE to infix notation, follow these steps: <br />
+                1. Start with the prefix expression *+AB-CDE. The first operator
+                is *, so split the expression into * and +AB-CDE. <br />
+                2. Convert +AB to infix, which is (A+B). <br />
+                3. Convert -CDE to infix: - The first operator in -CDE is -, so
+                split into - and CDE. - Convert CDE to infix, which is (C-D). -
+                Combine with -, resulting in (C-D). <br />
+                4. Combine with *, resulting in ((A+B)*(C-D)). So, the infix
+                expression is ((A+B)*(C-D)).
+              </p>
+
+              <h2>
+                44. Convert the infix expression (A+B)*(C-D) to its prefix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the infix expression
+                (A+B)*(C-D) to prefix notation, follow these steps: <br />
+                1. Convert the inner expressions (A+B) and (C-D) to prefix: -
+                (A+B) becomes +AB. - (C-D) becomes -CD. <br />
+                2. Apply the * operator to +AB and -CD, resulting in *+AB -CD.
+                So, the prefix expression is *+AB -CD.
+              </p>
+
+              <h2>
+                45. Convert the prefix expression *-A/BCD to its infix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer: ((A−(B/C))∗D)</strong> To convert the prefix
+                expression *-A/BCD to infix notation, follow these steps: <br />
+                1. Start from the rightmost side and find the operators and
+                operands:
+                <br />
+                2. Identify the operands first and group them with operators as
+                per the operator precedence.<br />
+                3. Start applying operators from left to right:<br />
+              </p>
+
+              <ul>
+                <li>First, /BC becomes (B / C)</li>
+                <li>Next, -A/BC becomes (A - (B / C))</li>
+                <li>Finally, *(A - (B / C))D becomes ((A - (B / C)) * D)</li>
+              </ul>
+
+              <h2>
+                46. Convert the infix expression A/(B+C-D) to its prefix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the infix expression
+                A/(B+C-D) to prefix notation, follow these steps: <br />
+                1. Convert the inner expression (B+C-D) to prefix: - First,
+                convert B+C to prefix, which is +BC. - Next, convert +BC-D to
+                prefix, which is -+BCD. <br />
+                2. Apply the / operator to A and -+BCD, resulting in /A-+BCD.
+                So, the prefix expression is /A-+BCD.
+              </p>
+
+              <h2>
+                47. Convert the prefix expression +A/B*CD to its infix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the prefix expression
+                +A/B*CD to infix notation, follow these steps: <br />
+                1.Start from the rightmost operator and go to the left.<br />
+                2.Apply operators to operands following prefix notation
+                rules.<br />
+              </p>
+              <ul>
+                <li>* C D becomes (C * D)</li>
+                <li>/ B (C * D) becomes (B / (C * D))</li>
+                <li>+ A (B / (C * D)) becomes A + (B / (C * D))</li>
+              </ul>
+
+              <h2>
+                48. Convert the infix expression (A-(B/C))*D+E to its prefix
+                expression.
+              </h2>
+              <p>
+                <strong>Answer:</strong> To convert the infix expression
+                (A-(B/C))*D+E to prefix notation, follow these steps: <br />
+                1. Convert the inner expression (B/C) to prefix, which is /BC.
+                <br />
+                2. Apply the - operator to A and /BC, resulting in -A/BC. <br />
+                3. Apply the * operator to -A/BC and D, resulting in *-A/BCD.
+                <br />
+                4. Finally, apply the + operator to *-A/BCD and E, resulting in
+                +*-A/BCDE. So, the prefix expression is +*-A/BCDE.
+              </p>
+              <div id="question49">
+                <div class="question">
+                  <h2>
+                    49. Evaluate following postfix expression using stack
+                    <br /><b>ab*cd*+ , where a=2, b=2, c=3, d=4</b>
+                  </h2>
+                </div>
+                <div class="solution">
+                  <picture>
+                    <source
+                      media="(max-width:700px)"
+                      srcset="/assets/DSA/dsa_q2.jpg"
+                    />
+                    <source
+                      media="(min-width:701px)"
+                      srcset="/assets/DSA/dsa_q2.jpg"
+                    />
+                    <img
+                      loading="lazy"
+                      src="/assets/DSA/dsa_q2.jpg"
+                      alt="evaluate postfix expression using stack | answer "
+                      title="evaluate postfix expression using stack | question solution"
+                      id="q49"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">
+                  <a href="stack2.html" style="color: antiquewhite"
+                    >back to question no 21 - 35
+                  </a>
+                </button>
+              </div>
+              <br /><br />
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">
+                  <a href="infixtoprefix.html" style="color: antiquewhite"
+                    >click here for more question on infix to prefix</a
+                  >
+                </button>
+              </div>
+              <br /><br />
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-success" id="down" type="button">
+                  <a href="infixtopostfix.html  " style="color: antiquewhite"
+                    >click here for next 49 to 68 question</a
+                  >
+                </button>
+              </div>
+            </section>
+          </article>
+        </main>
+      </div>
+      <div id="right_content"></div>
     </div>
-    <br /><br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">
-        <a href="infixtoprefix.html" style="color: antiquewhite"
-          >click here for more question on infix to prefix</a
-        >
-      </button>
-    </div>
-    <br /><br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-success" id="down" type="button">
-        <a href="infixtopostfix.html  " style="color: antiquewhite"
-          >click here for next 49 to 68 question</a
-        >
-      </button>
-    </div>
-    <br /><br />
+
     <script type="module" src="commonthings.min.js"></script>
   </body>
 </html>

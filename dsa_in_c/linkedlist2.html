@@ -7,236 +7,253 @@
     <title>Document</title>
   </head>
   <body>
-
-    <div class="title_date">
-      <h1>Queue Questions</h1>
-      <p>These questions are generally asked in university exam</p>
-    </div>
-    
-    <br /><br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">
-        <a href="queue1.html" style="color: antiquewhite"
-          >click for previous question 1 to 15 click here</a
-        >
-      </button>
-    </div>
-    <br /><br />
-   
-    <main>
-      <div class="container">
-        <div id="question16">
-          <div class="question">
-            <h2>
-              Question 16: Write an algorithm to merge two sorted linked lists.
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Solution:</strong></p>
-            <ol>
-              <li>Initialize a dummy node to start the merged list.</li>
-              <li>
-                Compare the data of the two lists, and add the smaller node to
-                the merged list.
-              </li>
-              <li>Continue merging until one of the lists is empty.</li>
-              <li>Append the remaining nodes from the non-empty list.</li>
-            </ol>
-          </div>
-        </div>
-
-        <h2>
-          Question 17: What is the time complexity for inserting an element at
-          the beginning of a singly linked list?
-        </h2>
-        <p>
-          <strong>Solution:</strong> The time complexity for inserting an
-          element at the beginning of a singly linked list is O(1), as you only
-          need to update the pointer of the new node to the current head.
-        </p>
-
-        <h2>
-          Question 18: Describe a real-world application where a LinkedList is
-          preferable over an array.
-        </h2>
-        <p>
-          <strong>Solution:</strong> LinkedLists are preferable in applications
-          like music playlists, where songs can be dynamically added or removed,
-          and continuous traversal through the list is required.
-        </p>
-
-        <h2>
-          Question 19: Can we use a LinkedList to implement a priority queue?
-          Explain how.
-        </h2>
-        <p>
-          <strong>Solution:</strong> Yes, a priority queue can be implemented
-          using a LinkedList by maintaining the list in sorted order based on
-          priority. Insertion involves traversing the list and inserting the new
-          element at the appropriate position.
-        </p>
-
-        <h2>
-          Question 20: Write two advantages of a doubly linked list over a
-          singly linked list.
-        </h2>
-        <p><strong>Solution:</strong></p>
-        <ul>
-          <li>
-            Efficient traversal in both directions (forward and backward).
-          </li>
-          <li>
-            Deletions can be done more efficiently as you have access to both
-            the next and previous nodes.
-          </li>
-        </ul>
-
-        <h2>
-          Question 21: Explain the concept of a circular doubly linked list.
-        </h2>
-        <p>
-          <strong>Solution:</strong> A circular doubly linked list is a
-          variation of a doubly linked list where the last node’s next pointer
-          points to the first node, and the first node’s previous pointer points
-          to the last node. This allows traversal in both directions without
-          needing a NULL reference.
-        </p>
-
-        <h2>
-          Question 22: How do you delete the last node of a singly linked list?
-        </h2>
-        <p><strong>Solution:</strong></p>
-        <ol>
-          <li>Traverse the list to the second-to-last node.</li>
-          <li>Set its next pointer to NULL.</li>
-          <li>Free the memory of the last node.</li>
-        </ol>
-
-        <h2>
-          Question 23: How does garbage collection work in the context of
-          LinkedLists?
-        </h2>
-        <p>
-          <strong>Solution:</strong> Garbage collection automatically frees up
-          memory by removing nodes that are no longer referenced. When a node in
-          a LinkedList is deleted, its memory is deallocated if no other
-          references to that node exist.
-        </p>
-
-        <h2>
-          Question 24: Describe how you would implement a circular queue using a
-          LinkedList.
-        </h2>
-        <p>
-          <strong>Solution:</strong> In a circular queue using a LinkedList, the
-          rear node’s next pointer is set to the front node to maintain the
-          circular nature of the queue. Insertions are done at the rear, and
-          deletions occur at the front.
-        </p>
-
-        <h2>
-          Question 25: Write an algorithm to find the middle node of a singly
-          linked list in one traversal.
-        </h2>
-        <p><strong>Solution:</strong></p>
-        <ol>
-          <li>Initialize two pointers: a slow pointer and a fast pointer.</li>
-          <li>
-            Move the slow pointer one step and the fast pointer two steps at a
-            time.
-          </li>
-          <li>
-            When the fast pointer reaches the end of the list, the slow pointer
-            will be at the middle node.
-          </li>
-        </ol>
-
-        <h2>
-          Question 26: How would you detect a loop in a LinkedList without using
-          extra memory?
-        </h2>
-        <p>
-          <strong>Solution:</strong> Floyd’s Cycle-Finding Algorithm (also known
-          as the Tortoise and Hare algorithm) can detect a loop using two
-          pointers (slow and fast) without extra memory. The fast pointer moves
-          two steps, and the slow pointer moves one step. If they meet, a loop
-          exists.
-        </p>
-
-        <h2>
-          Question 27: Explain why LinkedLists are not ideal for random access
-          of elements.
-        </h2>
-        <p>
-          <strong>Solution:</strong> LinkedLists are not ideal for random access
-          because, unlike arrays, there is no direct index-based access. To
-          access an element, you must traverse the list from the head, which
-          takes O(n) time.
-        </p>
-
-        <h2>
-          Question 28: Write the advantages and disadvantages of a singly linked
-          list.
-        </h2>
-        <p><strong>Solution:</strong></p>
-        <ul>
-          <li>
-            <strong>Advantages:</strong> Efficient memory usage, dynamic
-            resizing, and fast insertions/deletions at the beginning.
-          </li>
-          <li>
-            <strong>Disadvantages:</strong> No backward traversal, slow random
-            access (O(n)), and higher memory usage due to pointers.
-          </li>
-        </ul>
-
-        <h2>
-          Question 29: Describe a scenario where a circular linked list would be
-          more efficient than a singly linked list.
-        </h2>
-        <p>
-          <strong>Solution:</strong> A circular linked list is more efficient in
-          scenarios like implementing a round-robin scheduler in operating
-          systems, where processes are cycled through repeatedly, as it allows
-          continuous looping without needing to restart from the head.
-        </p>
-
-        <h2>
-          Question 30: How do you insert a node at a specific position in a
-          singly linked list?
-        </h2>
-        <p><strong>Solution:</strong></p>
-        <ol>
-          <li>
-            Traverse the list to the node just before the desired position.
-          </li>
-          <li>
-            Create a new node and set its next pointer to the next node in the
-            list.
-          </li>
-          <li>Set the next pointer of the previous node to the new node.</li>
-        </ol>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
       </div>
-    </main>
-    <br /><br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">
-        <a href="queue1.html" style="color: antiquewhite"
-          >click for previous question 1 to 15 click here</a
-        >
-      </button>
-    </div>
-    <br /><br />
+      <div id="main_content">
+        <main>
+          <div class="title_date">
+            <h1>practice Queue Questions with solution</h1>
+          </div>
+          <article>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary" type="button">
+                <a href="queue1.html" style="color: antiquewhite"
+                  >click for previous question 1 to 15 click here</a
+                >
+              </button>
+            </div>
+        
+            <div class="container">
+                  <p>These questions are generally asked in university exam</p> 
+              <div id="question16">
+                <div class="question">
+                  <h2>
+                    Question 16: Write an algorithm to merge two sorted linked
+                    lists.
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Solution:</strong></p>
+                  <ol>
+                    <li>Initialize a dummy node to start the merged list.</li>
+                    <li>
+                      Compare the data of the two lists, and add the smaller
+                      node to the merged list.
+                    </li>
+                    <li>Continue merging until one of the lists is empty.</li>
+                    <li>Append the remaining nodes from the non-empty list.</li>
+                  </ol>
+                </div>
+              </div>
 
-    <br /><br />
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-success" id="down" type="button">
-        <a href="queue2.html" style="color: antiquewhite"
-          >click for next question 16 to 30 click here</a
-        >
-      </button>
+              <h2>
+                Question 17: What is the time complexity for inserting an
+                element at the beginning of a singly linked list?
+              </h2>
+              <p>
+                <strong>Solution:</strong> The time complexity for inserting an
+                element at the beginning of a singly linked list is O(1), as you
+                only need to update the pointer of the new node to the current
+                head.
+              </p>
+
+              <h2>
+                Question 18: Describe a real-world application where a
+                LinkedList is preferable over an array.
+              </h2>
+              <p>
+                <strong>Solution:</strong> LinkedLists are preferable in
+                applications like music playlists, where songs can be
+                dynamically added or removed, and continuous traversal through
+                the list is required.
+              </p>
+
+              <h2>
+                Question 19: Can we use a LinkedList to implement a priority
+                queue? Explain how.
+              </h2>
+              <p>
+                <strong>Solution:</strong> Yes, a priority queue can be
+                implemented using a LinkedList by maintaining the list in sorted
+                order based on priority. Insertion involves traversing the list
+                and inserting the new element at the appropriate position.
+              </p>
+
+              <h2>
+                Question 20: Write two advantages of a doubly linked list over a
+                singly linked list.
+              </h2>
+              <p><strong>Solution:</strong></p>
+              <ul>
+                <li>
+                  Efficient traversal in both directions (forward and backward).
+                </li>
+                <li>
+                  Deletions can be done more efficiently as you have access to
+                  both the next and previous nodes.
+                </li>
+              </ul>
+
+              <h2>
+                Question 21: Explain the concept of a circular doubly linked
+                list.
+              </h2>
+              <p>
+                <strong>Solution:</strong> A circular doubly linked list is a
+                variation of a doubly linked list where the last node’s next
+                pointer points to the first node, and the first node’s previous
+                pointer points to the last node. This allows traversal in both
+                directions without needing a NULL reference.
+              </p>
+
+              <h2>
+                Question 22: How do you delete the last node of a singly linked
+                list?
+              </h2>
+              <p><strong>Solution:</strong></p>
+              <ol>
+                <li>Traverse the list to the second-to-last node.</li>
+                <li>Set its next pointer to NULL.</li>
+                <li>Free the memory of the last node.</li>
+              </ol>
+
+              <h2>
+                Question 23: How does garbage collection work in the context of
+                LinkedLists?
+              </h2>
+              <p>
+                <strong>Solution:</strong> Garbage collection automatically
+                frees up memory by removing nodes that are no longer referenced.
+                When a node in a LinkedList is deleted, its memory is
+                deallocated if no other references to that node exist.
+              </p>
+
+              <h2>
+                Question 24: Describe how you would implement a circular queue
+                using a LinkedList.
+              </h2>
+              <p>
+                <strong>Solution:</strong> In a circular queue using a
+                LinkedList, the rear node’s next pointer is set to the front
+                node to maintain the circular nature of the queue. Insertions
+                are done at the rear, and deletions occur at the front.
+              </p>
+
+              <h2>
+                Question 25: Write an algorithm to find the middle node of a
+                singly linked list in one traversal.
+              </h2>
+              <p><strong>Solution:</strong></p>
+              <ol>
+                <li>
+                  Initialize two pointers: a slow pointer and a fast pointer.
+                </li>
+                <li>
+                  Move the slow pointer one step and the fast pointer two steps
+                  at a time.
+                </li>
+                <li>
+                  When the fast pointer reaches the end of the list, the slow
+                  pointer will be at the middle node.
+                </li>
+              </ol>
+
+              <h2>
+                Question 26: How would you detect a loop in a LinkedList without
+                using extra memory?
+              </h2>
+              <p>
+                <strong>Solution:</strong> Floyd’s Cycle-Finding Algorithm (also
+                known as the Tortoise and Hare algorithm) can detect a loop
+                using two pointers (slow and fast) without extra memory. The
+                fast pointer moves two steps, and the slow pointer moves one
+                step. If they meet, a loop exists.
+              </p>
+
+              <h2>
+                Question 27: Explain why LinkedLists are not ideal for random
+                access of elements.
+              </h2>
+              <p>
+                <strong>Solution:</strong> LinkedLists are not ideal for random
+                access because, unlike arrays, there is no direct index-based
+                access. To access an element, you must traverse the list from
+                the head, which takes O(n) time.
+              </p>
+
+              <h2>
+                Question 28: Write the advantages and disadvantages of a singly
+                linked list.
+              </h2>
+              <p><strong>Solution:</strong></p>
+              <ul>
+                <li>
+                  <strong>Advantages:</strong> Efficient memory usage, dynamic
+                  resizing, and fast insertions/deletions at the beginning.
+                </li>
+                <li>
+                  <strong>Disadvantages:</strong> No backward traversal, slow
+                  random access (O(n)), and higher memory usage due to pointers.
+                </li>
+              </ul>
+
+              <h2>
+                Question 29: Describe a scenario where a circular linked list
+                would be more efficient than a singly linked list.
+              </h2>
+              <p>
+                <strong>Solution:</strong> A circular linked list is more
+                efficient in scenarios like implementing a round-robin scheduler
+                in operating systems, where processes are cycled through
+                repeatedly, as it allows continuous looping without needing to
+                restart from the head.
+              </p>
+
+              <h2>
+                Question 30: How do you insert a node at a specific position in
+                a singly linked list?
+              </h2>
+              <p><strong>Solution:</strong></p>
+              <ol>
+                <li>
+                  Traverse the list to the node just before the desired
+                  position.
+                </li>
+                <li>
+                  Create a new node and set its next pointer to the next node in
+                  the list.
+                </li>
+                <li>
+                  Set the next pointer of the previous node to the new node.
+                </li>
+              </ol>
+            </div>
+          </article>
+          <br /><br />
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button">
+              <a href="queue1.html" style="color: antiquewhite"
+                >click for previous question 1 to 15 click here</a
+              >
+            </button>
+          </div>
+          <br /><br />
+
+          <br /><br />
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-success" id="down" type="button">
+              <a href="queue2.html" style="color: antiquewhite"
+                >click for next question 16 to 30 click here</a
+              >
+            </button>
+          </div>
+          <br /><br />
+        </main>
+      </div>
+      <div id="right_content"></div>
     </div>
-    <br /><br />
 
     <script type="module" src="commonthings.min.js"></script>
   </body>

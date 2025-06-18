@@ -57,299 +57,321 @@
     </style>
   </head>
   <body>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
+      </div>
+      <div id="main_content">
+        <main>
+          <div class="title_date">
+            <h1>DSA Array Questions</h1>
+          </div>
+          <article>
+            <p>These questions are generally asked in university exam</p>
+            <p>Indexed based Array question from topic DSA IN C</p>
+            <div class="container">
+              <section>
+                <h2>Formula for finding address of element in array</h2>
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/DSA/base_address_formulaw.jpg"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/DSA/base_address_formulaw.jpg"
+                  />
+                  <img
+                    loading="lazy"
+                    src="/assets/DSA/base_address_formulaw.jpg"
+                    alt="find the base address of this postfix expression | solution"
+                    title="find the base address of this postfix expression |explained solution"
+                    id="expl"
+                  />
+                </picture>
+              </section>
+            </div>
+            <div class="container">
+              <!-- question 1 start -->
+              <div id="question1">
+                <div class="question">
+                  <h2>
+                    1. Find the address of LA[25], if the base address of a
+                    one-dimensional linear array (LA) is 5000, and each element
+                    of the array occupies 4 bytes.
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Answer:</strong></p>
+                  <p>
+                    To find the address of LA[25], we use the formula for
+                    calculating the address of an element in a one-dimensional
+                    array:
+                  </p>
+                  <p>
+                    <strong>
+                      Address of LA[i] = Base Address + (i * Size of each
+                      element)
+                    </strong>
+                  </p>
+                  <p>
+                    Here, the base address = 5000, i = 25, and the size of each
+                    element = 4 bytes.
+                  </p>
+                  <p>
+                    <strong
+                      >Address of LA[25] = 5000 + (25 * 4) = 5000 + 100 =
+                      5100</strong
+                    >
+                  </p>
+                  <p>So, the address of LA[25] is 5100.</p>
+                </div>
+              </div>
 
-    <div class="title_date">
-      <h1>DSA Array Questions</h1>
-      <p>These questions are generally asked in university exam</p>
-      <p>Indexed based Array question from topic DSA IN C</p>
+              <!-- question 1 end -->
+              <!-- question 2 start -->
+
+              <div id="question2">
+                <div class="question">
+                  <h2>
+                    2. Given an array of size 10, what would be the index of the
+                    7th element in 0-based indexing?
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Answer:</strong></p>
+                  <p>
+                    In 0-based indexing, the first element has index 0.
+                    Therefore, the 7th element in the array would have index 6.
+                  </p>
+                </div>
+              </div>
+
+              <!-- question 2 end -->
+              <!-- question 3 start -->
+              <div id="question">
+                <div class="question">
+                  <h2>
+                    3. Given a 1D array of size 10, what will be the address of
+                    the 5th element if the base address is 2000 and each element
+                    occupies 2 bytes?
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Answer:</strong></p>
+                  <p>
+                    To find the address , we use the formula for calculating the
+                    address of an element in a one-dimensional array:
+                  </p>
+                  <p>
+                    <strong
+                      >Address of LA[i] = Base Address + (i * Size of each
+                      element)</strong
+                    >
+                  </p>
+                  <p>
+                    Here, base address = 2000, i = 5, and size of each element =
+                    2 bytes.
+                  </p>
+                  <p>
+                    <strong
+                      >Address of LA[5] = 2000 + (5 * 2) = 2000 + 10 =
+                      2010</strong
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <!-- question 3 end -->
+              <!-- question 4 start -->
+              <div id="question4">
+                <div class="question">
+                  <h2>
+                    4. What is the difference between row-major and column-major
+                    order in the context of arrays?
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Answer:</strong></p>
+                  <p>
+                    In <strong>row-major order</strong>, elements of a
+                    multi-dimensional array are stored row by row, meaning
+                    elements of the first row are stored first, followed by the
+                    second row, and so on.
+                  </p>
+                  <p>
+                    In <strong>column-major order</strong>, elements are stored
+                    column by column, meaning elements of the first column are
+                    stored first, followed by the second column, and so on.
+                  </p>
+                </div>
+              </div>
+
+              <!-- question 4 end -->
+              <!-- question 5 start -->
+              <div id="question5">
+                <div class="question">
+                  <h2>
+                    5. Find the address of LA[12] if the base address of a
+                    one-dimensional array LA is 1200, and each element occupies
+                    8 bytes. Assume that array indexing starts from 5 instead of
+                    0.
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Answer:</strong></p>
+                  <p>
+                    To find the address of LA[12], we use the formula for
+                    calculating the address of an element in a one-dimensional
+                    array:
+                  </p>
+                  <p>
+                    <strong
+                      >Address of LA[i] = Base Address + ((i - Starting Index) *
+                      Size of each element)</strong
+                    >
+                  </p>
+                  <p>
+                    Here, base address = 1200, starting index = 5, i = 12, and
+                    size of each element = 8 bytes.
+                  </p>
+                  <p>
+                    <strong
+                      >Address of LA[12] = 1200 + ((12 - 5) * 8) = 1200 + (7 *
+                      8) = 1200 + 56 = 1256</strong
+                    >
+                  </p>
+                  <p>So, the address of LA[12] is 1256.</p>
+                </div>
+              </div>
+
+              <!-- question 5 end -->
+              <!-- question 6 start -->
+              <div id="question6">
+                <div class="question">
+                  <h2>
+                    6. What will be the index of the 100th element in a 1D array
+                    of size 200, given that the array uses negative indexing
+                    starting from -50?
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Answer:</strong></p>
+                  <p>
+                    To find the index of the 100th element, we add 99 to the
+                    starting index:
+                  </p>
+                  <p>
+                    <strong>Index of the 100th element = -50 + 99 = 49</strong>
+                  </p>
+                  <p>So, the index of the 100th element is 49.</p>
+                </div>
+              </div>
+
+              <!-- question 6 end -->
+              <!-- question 7 start -->
+              <div id="question7">
+                <div class="question">
+                  <h2>
+                    7. Find the address of A[20] if the base address of a
+                    one-dimensional array A is 3000, each element occupies 4
+                    bytes, and the array uses 1-based indexing.
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Answer:</strong></p>
+
+                  <p>
+                    Using 1-based indexing, the address is calculated using:
+                  </p>
+                  <p>
+                    <strong
+                      >Address of A[i] = Base Address + ((i - 1) * Size of each
+                      element)</strong
+                    >
+                  </p>
+                  <p>
+                    Here, base address = 3000, i = 20, and size of each element
+                    = 4 bytes.
+                  </p>
+                  <p>
+                    <strong
+                      >Address of A[20] = 3000 + ((20 - 1) * 4) = 3000 + (19 *
+                      4) = 3000 + 76 = 3076</strong
+                    >
+                  </p>
+                  <p>So, the address of A[20] is 3076.</p>
+                </div>
+              </div>
+
+              <!-- question 7 end -->
+              <!-- question 8 start -->
+              <div id="question8">
+                <div class="question">
+                  <h2>
+                    8. In an array of size 50, what will be the index of the
+                    element in the 30th position if the array indexing starts at
+                    10 (0-based)?
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Answer:</strong></p>
+                  <p>
+                    To find the index of the 30th element, we add 29 to the
+                    starting index:
+                  </p>
+                  <p>
+                    <strong>Index of the 30th element = 10 + 29 = 39</strong>
+                  </p>
+                  <p>
+                    So, the index of the element in the 30th position is 39.
+                  </p>
+                </div>
+              </div>
+
+              <!-- question 8 end -->
+              <!-- question 9 start -->
+              <div id="question9">
+                <div class="question">
+                  <h2>
+                    9. Find the address of B[50] if the base address of a
+                    one-dimensional array B is 4000, each element occupies 2
+                    bytes, and the array is indexed from -10.
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Answer:</strong></p>
+                  <p>
+                    To find the address of, we use the formula for calculating
+                    the address of an element in a one-dimensional array:
+                  </p>
+                  <p>
+                    <strong
+                      >Address of B[i] = Base Address + ((i - Starting Index) *
+                      Size of each element)</strong
+                    >
+                  </p>
+                  <p>
+                    Here, base address = 4000, starting index = -10, i = 50, and
+                    size of each element = 2 bytes.
+                  </p>
+                  <p>
+                    <strong
+                      >Address of B[50] = 4000 + ((50 - (-10)) * 2) = 4000 + (60
+                      * 2) = 4000 + 120 = 4120</strong
+                    >
+                  </p>
+                  <p>So, the address of B[50] is 4120.</p>
+                </div>
+              </div>
+
+              <!-- question 9 end -->
+            </div>
+          </article>
+        </main>
+      </div>
+      <div id="right_content"></div>
     </div>
-    
-   
-    <main>
-      <div id="explain" class="container">
-        <section>
-          <h2>Formula for finding address of element in array</h2>
-          <picture>
-            <source
-              media="(max-width:700px)"
-              srcset="/assets/DSA/base_address_formulaw.jpg"
-            />
-            <source
-              media="(min-width:701px)"
-              srcset="/assets/DSA/base_address_formulaw.jpg"
-            />
-            <img
-              loading="lazy"
-              src="/assets/DSA/base_address_formulaw.jpg"
-              alt="find the base address of this postfix expression | solution"
-              title="find the base address of this postfix expression |explained solution"
-              id="expl"
-            />
-          </picture>
-        </section>
-      </div>
-      <div class="container">
-        <!-- question 1 start -->
-        <div id="question1">
-          <div class="question">
-            <h2>
-              1. Find the address of LA[25], if the base address of a
-              one-dimensional linear array (LA) is 5000, and each element of the
-              array occupies 4 bytes.
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>
-              To find the address of LA[25], we use the formula for calculating
-              the address of an element in a one-dimensional array:
-            </p>
-            <p>
-              <strong>
-                Address of LA[i] = Base Address + (i * Size of each element)
-              </strong>
-            </p>
-            <p>
-              Here, the base address = 5000, i = 25, and the size of each
-              element = 4 bytes.
-            </p>
-            <p>
-              <strong
-                >Address of LA[25] = 5000 + (25 * 4) = 5000 + 100 = 5100</strong
-              >
-            </p>
-            <p>So, the address of LA[25] is 5100.</p>
-          </div>
-        </div>
-
-        <!-- question 1 end -->
-        <!-- question 2 start -->
-
-        <div id="question2">
-          <div class="question">
-            <h2>
-              2. Given an array of size 10, what would be the index of the 7th
-              element in 0-based indexing?
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>
-              In 0-based indexing, the first element has index 0. Therefore, the
-              7th element in the array would have index 6.
-            </p>
-          </div>
-        </div>
-
-        <!-- question 2 end -->
-        <!-- question 3 start -->
-        <div id="question">
-          <div class="question">
-            <h2>
-              3. Given a 1D array of size 10, what will be the address of the
-              5th element if the base address is 2000 and each element occupies
-              2 bytes?
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>
-              To find the address , we use the formula for calculating the
-              address of an element in a one-dimensional array:
-            </p>
-            <p>
-              <strong
-                >Address of LA[i] = Base Address + (i * Size of each
-                element)</strong
-              >
-            </p>
-            <p>
-              Here, base address = 2000, i = 5, and size of each element = 2
-              bytes.
-            </p>
-            <p>
-              <strong
-                >Address of LA[5] = 2000 + (5 * 2) = 2000 + 10 = 2010</strong
-              >
-            </p>
-          </div>
-        </div>
-
-        <!-- question 3 end -->
-        <!-- question 4 start -->
-        <div id="question4">
-          <div class="question">
-            <h2>
-              4. What is the difference between row-major and column-major order
-              in the context of arrays?
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>
-              In <strong>row-major order</strong>, elements of a
-              multi-dimensional array are stored row by row, meaning elements of
-              the first row are stored first, followed by the second row, and so
-              on.
-            </p>
-            <p>
-              In <strong>column-major order</strong>, elements are stored column
-              by column, meaning elements of the first column are stored first,
-              followed by the second column, and so on.
-            </p>
-          </div>
-        </div>
-
-        <!-- question 4 end -->
-        <!-- question 5 start -->
-        <div id="question5">
-          <div class="question">
-            <h2>
-              5. Find the address of LA[12] if the base address of a
-              one-dimensional array LA is 1200, and each element occupies 8
-              bytes. Assume that array indexing starts from 5 instead of 0.
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>
-              To find the address of LA[12], we use the formula for calculating
-              the address of an element in a one-dimensional array:
-            </p>
-            <p>
-              <strong
-                >Address of LA[i] = Base Address + ((i - Starting Index) * Size
-                of each element)</strong
-              >
-            </p>
-            <p>
-              Here, base address = 1200, starting index = 5, i = 12, and size of
-              each element = 8 bytes.
-            </p>
-            <p>
-              <strong
-                >Address of LA[12] = 1200 + ((12 - 5) * 8) = 1200 + (7 * 8) =
-                1200 + 56 = 1256</strong
-              >
-            </p>
-            <p>So, the address of LA[12] is 1256.</p>
-          </div>
-        </div>
-
-        <!-- question 5 end -->
-        <!-- question 6 start -->
-        <div id="question6">
-          <div class="question">
-            <h2>
-              6. What will be the index of the 100th element in a 1D array of
-              size 200, given that the array uses negative indexing starting
-              from -50?
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>
-              To find the index of the 100th element, we add 99 to the starting
-              index:
-            </p>
-            <p><strong>Index of the 100th element = -50 + 99 = 49</strong></p>
-            <p>So, the index of the 100th element is 49.</p>
-          </div>
-        </div>
-
-        <!-- question 6 end -->
-        <!-- question 7 start -->
-        <div id="question7">
-          <div class="question">
-            <h2>
-              7. Find the address of A[20] if the base address of a
-              one-dimensional array A is 3000, each element occupies 4 bytes,
-              and the array uses 1-based indexing.
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-
-            <p>Using 1-based indexing, the address is calculated using:</p>
-            <p>
-              <strong
-                >Address of A[i] = Base Address + ((i - 1) * Size of each
-                element)</strong
-              >
-            </p>
-            <p>
-              Here, base address = 3000, i = 20, and size of each element = 4
-              bytes.
-            </p>
-            <p>
-              <strong
-                >Address of A[20] = 3000 + ((20 - 1) * 4) = 3000 + (19 * 4) =
-                3000 + 76 = 3076</strong
-              >
-            </p>
-            <p>So, the address of A[20] is 3076.</p>
-          </div>
-        </div>
-
-        <!-- question 7 end -->
-        <!-- question 8 start -->
-        <div id="question8">
-          <div class="question">
-            <h2>
-              8. In an array of size 50, what will be the index of the element
-              in the 30th position if the array indexing starts at 10 (0-based)?
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>
-              To find the index of the 30th element, we add 29 to the starting
-              index:
-            </p>
-            <p><strong>Index of the 30th element = 10 + 29 = 39</strong></p>
-            <p>So, the index of the element in the 30th position is 39.</p>
-          </div>
-        </div>
-
-        <!-- question 8 end -->
-        <!-- question 9 start -->
-        <div id="question9">
-          <div class="question">
-            <h2>
-              9. Find the address of B[50] if the base address of a
-              one-dimensional array B is 4000, each element occupies 2 bytes,
-              and the array is indexed from -10.
-            </h2>
-          </div>
-          <div class="solution">
-            <p><strong>Answer:</strong></p>
-            <p>
-              To find the address of, we use the formula for calculating the
-              address of an element in a one-dimensional array:
-            </p>
-            <p>
-              <strong
-                >Address of B[i] = Base Address + ((i - Starting Index) * Size
-                of each element)</strong
-              >
-            </p>
-            <p>
-              Here, base address = 4000, starting index = -10, i = 50, and size
-              of each element = 2 bytes.
-            </p>
-            <p>
-              <strong
-                >Address of B[50] = 4000 + ((50 - (-10)) * 2) = 4000 + (60 * 2)
-                = 4000 + 120 = 4120</strong
-              >
-            </p>
-            <p>So, the address of B[50] is 4120.</p>
-          </div>
-        </div>
-
-        <!-- question 9 end -->
-      </div>
-    </main>
 
     <div class="d-grid gap-2 col-6 mx-auto">
       <button class="btn btn-primary" id="down" type="button">
@@ -359,6 +381,6 @@
       </button>
     </div>
     <br /><br />
-    <script src="commonthings.min.js"></script>
+ <script type="module" src="commonthings.min.js"></script>
   </body>
 </html>

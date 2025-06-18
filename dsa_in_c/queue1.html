@@ -12,301 +12,331 @@
     />
   </head>
   <body>
-
-    <div class="title_date">
-      <h1>Queue Questions</h1>
-      <p>These questions are generally asked in university exam</p>
-    </div>
-    
-   
-    <main>
-      <div class="container">
-        <div>
-          <br />
-          <a
-            href="#fstque"
-            class="btn btn-primary btn-lg active"
-            role="button"
-            aria-pressed="true"
-            >Jump To Question</a
-          >
-
-          <h2>What Is Queue in Data Structures and Algorithms</h2>
-          <p>
-            A Queue is a linear data structure that follows the First In First
-            Out (FIFO) principle. This means that the first element added to the
-            queue will be the first one to be removed. Queues are used in
-            various applications such as scheduling tasks, handling requests in
-            web servers, and managing resources in concurrent programming.
-          </p>
-
-          <h3>Methods of Queue</h3>
-          <ul>
-            <li>Enqueue: Adds an element to the end of the queue.</li>
-            <li>Dequeue: Removes an element from the front of the queue.</li>
-            <li>
-              Peek: Returns the front element of the queue without removing it.
-            </li>
-            <li>isEmpty: Checks whether the queue is empty.</li>
-            <li>Size: Returns the number of elements in the queue.</li>
-            <li>Clear: Removes all elements from the queue.</li>
-          </ul>
-
-          <h3>Advantages and Disadvantages of Queue</h3>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Advantages</th>
-              <th>Disadvantages</th>
-            </tr>
-            <tr>
-              <td>Simple and easy to implement.</td>
-              <td>
-                Limited size in static implementations (e.g., array-based
-                queues).
-              </td>
-            </tr>
-            <tr>
-              <td>Efficient for managing data in a FIFO manner.</td>
-              <td>Not suitable for random access of elements.</td>
-            </tr>
-            <tr>
-              <td>
-                Used in many algorithms and applications (e.g., breadth-first
-                search).
-              </td>
-              <td>
-                Overhead of maintaining pointers in linked list implementations.
-              </td>
-            </tr>
-            <tr>
-              <td>Supports multiple operations efficiently.</td>
-              <td>
-                Can lead to increased memory usage in dynamic implementations.
-              </td>
-            </tr>
-            <tr>
-              <td>Facilitates task scheduling and resource management.</td>
-              <td>
-                Requires careful handling of underflow and overflow conditions.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Provides better performance in scenarios where elements are
-                processed in order.
-              </td>
-              <td>
-                Potentially slower than stacks in certain applications due to
-                the FIFO nature.
-              </td>
-            </tr>
-          </table>
-
-          <h3>Need of Queue in Linked List</h3>
-          <p>
-            Queues are often implemented using linked lists because linked lists
-            allow for dynamic sizing and efficient insertion and deletion of
-            elements. Using a linked list for a queue can help avoid the issues
-            of overflow that may occur with array-based implementations, as the
-            size of the queue can grow and shrink as needed without the
-            constraints of a predefined limit. This is especially beneficial in
-            applications where the number of elements cannot be predicted in
-            advance.
-          </p>
-
-          <br /><br />
-        </div>
-        <div id="question1">
-          <div class="question">
-            <h2 id="fstque">Question 1: What is a Queue data structure?</h2>
-          </div>
-          <div class="solution">
-            <p><strong>Solution : </strong></p>
-            <p>
-              A queue is a linear data structure that follows the First In First
-              Out (FIFO) principle. This means that the element that is added
-              first is the one to be removed first. It is analogous to a
-              real-world queue where the first person in line is the first one
-              to be served. It supports two main operations: enqueue (to add an
-              element) and dequeue (to remove an element).
-            </p>
-          </div>
-        </div>
-
-        <h2>Question 2: Explain the difference between a queue and a stack.</h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          A queue follows the FIFO principle, whereas a stack follows the Last
-          In First Out (LIFO) principle. In a queue, the element inserted first
-          is the one removed first, while in a stack, the element added last is
-          the one removed first. For example, in a stack, items are added and
-          removed from the same end, but in a queue, elements are added at one
-          end (rear) and removed from the other (front).
-        </p>
-
-        <h2>
-          Question 3: Describe the enqueue and dequeue operations in a queue.
-        </h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          In the enqueue operation, an element is added to the rear of the
-          queue. In the dequeue operation, the element at the front of the queue
-          is removed. If the queue is empty, dequeue operation cannot be
-          performed. Both operations maintain the FIFO structure of the queue.
-        </p>
-
-        <h2>Question 4: Write two applications of the queue data structure.</h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          1. Job scheduling in operating systems.<br />2. Managing tasks in a
-          printer queue where the first document submitted is printed first.
-        </p>
-
-        <h2>Question 5: What is a circular queue?</h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          A circular queue is a type of queue where the last position is
-          connected back to the first position to make a circle. It overcomes
-          the limitations of a linear queue by making use of unused space. In a
-          circular queue, the front and rear pointers wrap around when they
-          reach the end of the queue.
-        </p>
-
-        <h2>
-          Question 6: How does a circular queue handle the enqueue operation
-          when the rear pointer reaches the end of the array?
-        </h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          In a circular queue, when the rear pointer reaches the end of the
-          array, it wraps around to the beginning of the array if there is space
-          available (i.e., if the front pointer is not at the start). This
-          wrap-around is handled using modulo arithmetic (rear = (rear + 1) %
-          size).
-        </p>
-
-        <h2>
-          Question 7: Explain how a priority queue differs from a regular queue.
-        </h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          In a priority queue, each element has a priority, and elements are
-          dequeued based on their priority rather than their order of arrival.
-          The element with the highest priority is dequeued first. In contrast,
-          a regular queue follows the FIFO order, where the first element added
-          is the first one removed, regardless of priority.
-        </p>
-
-        <h2>
-          Question 8: What is the time complexity of the enqueue and dequeue
-          operations in a queue implemented using an array?
-        </h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          The time complexity of both enqueue and dequeue operations in a queue
-          implemented using an array is O(1) because these operations only
-          involve incrementing or decrementing pointers (rear and front) without
-          the need to traverse the array.
-        </p>
-
-        <h2>
-          Question 9: In what situations is a circular queue more efficient than
-          a linear queue?
-        </h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          A circular queue is more efficient than a linear queue in situations
-          where memory utilization is critical, such as in embedded systems or
-          memory-constrained environments. Since a circular queue allows the
-          reuse of space freed by dequeued elements, it makes better use of the
-          allocated memory.
-        </p>
-
-        <h2>Question 10: What is a dequeue (double-ended queue)?</h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          A dequeue, or double-ended queue, is a data structure that allows
-          insertion and removal of elements from both ends (front and rear). It
-          supports operations like enqueue at the front, enqueue at the rear,
-          dequeue from the front, and dequeue from the rear.
-        </p>
-
-        <h2>
-          Question 11: Describe a situation where a queue would be a better
-          choice than a stack.
-        </h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          A queue is a better choice than a stack in situations where order
-          matters. For example, in a customer service system where customers are
-          served in the order they arrive, a queue ensures that the first
-          customer is served first (FIFO). In contrast, a stack would serve the
-          last customer first (LIFO), which is not suitable in this case.
-        </p>
-
-        <h2>
-          Question 12: Explain how a breadth-first search (BFS) algorithm uses a
-          queue.
-        </h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          The BFS algorithm uses a queue to explore nodes level by level in a
-          graph or tree. Initially, the root node is enqueued. Then, nodes are
-          dequeued one by one, and their unvisited neighbors are enqueued. This
-          ensures that nodes are explored in the order of their distance from
-          the starting node, following the FIFO principle.
-        </p>
-
-        <h2>
-          Question 13: How can a queue be used to implement a cache mechanism?
-        </h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          A queue can be used to implement a First In, First Out (FIFO) cache
-          mechanism. When a new item is added to the cache and the cache is
-          full, the oldest item (the one that was added first) is removed from
-          the front of the queue, and the new item is added to the rear. This
-          ensures that the cache always contains the most recently added items.
-        </p>
-
-        <h2>Question 14: >What is the purpose of a rear pointer in a queue?</h2>
-
-        <p><strong>Solution : </strong></p>
-        <p>
-          The rear pointer in a queue keeps track of the position where the next
-          element will be inserted. In a queue implemented using an array, the
-          rear pointer is incremented after each enqueue operation. In a
-          circular queue, the rear pointer wraps around to the beginning of the
-          array when it reaches the end.
-        </p>
-
-        <h2>
-          Question 15: What will happen if you try to dequeue an element from an
-          empty queue?
-        </h2>
-        <p></p>
-        <p><strong>Solution : </strong></p>
-        <p>
-          If you try to dequeue an element from an empty queue, it will result
-          in an underflow condition. In such cases, there is no element to
-          remove, and the operation cannot be performed. Proper error handling
-          should be implemented to avoid underflow issues.
-        </p>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
       </div>
-    </main>
-    <br /><br />
+      <div id="main_content">
+        <main>
+          <div class="title_date">
+            <h1>learn Queue data structure with solved question</h1>
+          </div>
+          <article>
+            <section>
+              <br />
+              <a
+                href="#fstque"
+                class="btn btn-primary btn-lg active"
+                role="button"
+                aria-pressed="true"
+                >Jump To Question</a
+              >
+
+              <h2>What Is Queue in Data Structures and Algorithms</h2>
+              <p>
+                A Queue is a linear data structure that follows the First In
+                First Out (FIFO) principle. This means that the first element
+                added to the queue will be the first one to be removed. Queues
+                are used in various applications such as scheduling tasks,
+                handling requests in web servers, and managing resources in
+                concurrent programming.
+              </p>
+
+              <h3>Methods of Queue</h3>
+              <ul>
+                <li>Enqueue: Adds an element to the end of the queue.</li>
+                <li>
+                  Dequeue: Removes an element from the front of the queue.
+                </li>
+                <li>
+                  Peek: Returns the front element of the queue without removing
+                  it.
+                </li>
+                <li>isEmpty: Checks whether the queue is empty.</li>
+                <li>Size: Returns the number of elements in the queue.</li>
+                <li>Clear: Removes all elements from the queue.</li>
+              </ul>
+
+              <h3>Advantages and Disadvantages of Queue</h3>
+              <table border="1" class="table table-bordered">
+                <tr>
+                  <th>Advantages</th>
+                  <th>Disadvantages</th>
+                </tr>
+                <tr>
+                  <td>Simple and easy to implement.</td>
+                  <td>
+                    Limited size in static implementations (e.g., array-based
+                    queues).
+                  </td>
+                </tr>
+                <tr>
+                  <td>Efficient for managing data in a FIFO manner.</td>
+                  <td>Not suitable for random access of elements.</td>
+                </tr>
+                <tr>
+                  <td>
+                    Used in many algorithms and applications (e.g.,
+                    breadth-first search).
+                  </td>
+                  <td>
+                    Overhead of maintaining pointers in linked list
+                    implementations.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Supports multiple operations efficiently.</td>
+                  <td>
+                    Can lead to increased memory usage in dynamic
+                    implementations.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Facilitates task scheduling and resource management.</td>
+                  <td>
+                    Requires careful handling of underflow and overflow
+                    conditions.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Provides better performance in scenarios where elements are
+                    processed in order.
+                  </td>
+                  <td>
+                    Potentially slower than stacks in certain applications due
+                    to the FIFO nature.
+                  </td>
+                </tr>
+              </table>
+
+              <h3>Need of Queue in Linked List</h3>
+              <p>
+                Queues are often implemented using linked lists because linked
+                lists allow for dynamic sizing and efficient insertion and
+                deletion of elements. Using a linked list for a queue can help
+                avoid the issues of overflow that may occur with array-based
+                implementations, as the size of the queue can grow and shrink as
+                needed without the constraints of a predefined limit. This is
+                especially beneficial in applications where the number of
+                elements cannot be predicted in advance.
+              </p>
+            </section>
+            <section>
+              <div id="question1">
+                <div class="question">
+                  <h2 id="fstque">
+                    Question 1: What is a Queue data structure?
+                  </h2>
+                </div>
+                <div class="solution">
+                  <p><strong>Solution : </strong></p>
+                  <p>
+                    A queue is a linear data structure that follows the First In
+                    First Out (FIFO) principle. This means that the element that
+                    is added first is the one to be removed first. It is
+                    analogous to a real-world queue where the first person in
+                    line is the first one to be served. It supports two main
+                    operations: enqueue (to add an element) and dequeue (to
+                    remove an element).
+                  </p>
+                </div>
+              </div>
+
+              <h2>
+                Question 2: Explain the difference between a queue and a stack.
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                A queue follows the FIFO principle, whereas a stack follows the
+                Last In First Out (LIFO) principle. In a queue, the element
+                inserted first is the one removed first, while in a stack, the
+                element added last is the one removed first. For example, in a
+                stack, items are added and removed from the same end, but in a
+                queue, elements are added at one end (rear) and removed from the
+                other (front).
+              </p>
+
+              <h2>
+                Question 3: Describe the enqueue and dequeue operations in a
+                queue.
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                In the enqueue operation, an element is added to the rear of the
+                queue. In the dequeue operation, the element at the front of the
+                queue is removed. If the queue is empty, dequeue operation
+                cannot be performed. Both operations maintain the FIFO structure
+                of the queue.
+              </p>
+
+              <h2>
+                Question 4: Write two applications of the queue data structure.
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                1. Job scheduling in operating systems.<br />2. Managing tasks
+                in a printer queue where the first document submitted is printed
+                first.
+              </p>
+
+              <h2>Question 5: What is a circular queue?</h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                A circular queue is a type of queue where the last position is
+                connected back to the first position to make a circle. It
+                overcomes the limitations of a linear queue by making use of
+                unused space. In a circular queue, the front and rear pointers
+                wrap around when they reach the end of the queue.
+              </p>
+
+              <h2>
+                Question 6: How does a circular queue handle the enqueue
+                operation when the rear pointer reaches the end of the array?
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                In a circular queue, when the rear pointer reaches the end of
+                the array, it wraps around to the beginning of the array if
+                there is space available (i.e., if the front pointer is not at
+                the start). This wrap-around is handled using modulo arithmetic
+                (rear = (rear + 1) % size).
+              </p>
+
+              <h2>
+                Question 7: Explain how a priority queue differs from a regular
+                queue.
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                In a priority queue, each element has a priority, and elements
+                are dequeued based on their priority rather than their order of
+                arrival. The element with the highest priority is dequeued
+                first. In contrast, a regular queue follows the FIFO order,
+                where the first element added is the first one removed,
+                regardless of priority.
+              </p>
+
+              <h2>
+                Question 8: What is the time complexity of the enqueue and
+                dequeue operations in a queue implemented using an array?
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                The time complexity of both enqueue and dequeue operations in a
+                queue implemented using an array is O(1) because these
+                operations only involve incrementing or decrementing pointers
+                (rear and front) without the need to traverse the array.
+              </p>
+
+              <h2>
+                Question 9: In what situations is a circular queue more
+                efficient than a linear queue?
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                A circular queue is more efficient than a linear queue in
+                situations where memory utilization is critical, such as in
+                embedded systems or memory-constrained environments. Since a
+                circular queue allows the reuse of space freed by dequeued
+                elements, it makes better use of the allocated memory.
+              </p>
+
+              <h2>Question 10: What is a dequeue (double-ended queue)?</h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                A dequeue, or double-ended queue, is a data structure that
+                allows insertion and removal of elements from both ends (front
+                and rear). It supports operations like enqueue at the front,
+                enqueue at the rear, dequeue from the front, and dequeue from
+                the rear.
+              </p>
+
+              <h2>
+                Question 11: Describe a situation where a queue would be a
+                better choice than a stack.
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                A queue is a better choice than a stack in situations where
+                order matters. For example, in a customer service system where
+                customers are served in the order they arrive, a queue ensures
+                that the first customer is served first (FIFO). In contrast, a
+                stack would serve the last customer first (LIFO), which is not
+                suitable in this case.
+              </p>
+
+              <h2>
+                Question 12: Explain how a breadth-first search (BFS) algorithm
+                uses a queue.
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                The BFS algorithm uses a queue to explore nodes level by level
+                in a graph or tree. Initially, the root node is enqueued. Then,
+                nodes are dequeued one by one, and their unvisited neighbors are
+                enqueued. This ensures that nodes are explored in the order of
+                their distance from the starting node, following the FIFO
+                principle.
+              </p>
+
+              <h2>
+                Question 13: How can a queue be used to implement a cache
+                mechanism?
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                A queue can be used to implement a First In, First Out (FIFO)
+                cache mechanism. When a new item is added to the cache and the
+                cache is full, the oldest item (the one that was added first) is
+                removed from the front of the queue, and the new item is added
+                to the rear. This ensures that the cache always contains the
+                most recently added items.
+              </p>
+
+              <h2>
+                Question 14: >What is the purpose of a rear pointer in a queue?
+              </h2>
+
+              <p><strong>Solution : </strong></p>
+              <p>
+                The rear pointer in a queue keeps track of the position where
+                the next element will be inserted. In a queue implemented using
+                an array, the rear pointer is incremented after each enqueue
+                operation. In a circular queue, the rear pointer wraps around to
+                the beginning of the array when it reaches the end.
+              </p>
+
+              <h2>
+                Question 15: What will happen if you try to dequeue an element
+                from an empty queue?
+              </h2>
+              <p></p>
+              <p><strong>Solution : </strong></p>
+              <p>
+                If you try to dequeue an element from an empty queue, it will
+                result in an underflow condition. In such cases, there is no
+                element to remove, and the operation cannot be performed. Proper
+                error handling should be implemented to avoid underflow issues.
+              </p>
+            </section>
+          </article>
+        </main>
+      </div>
+      <div id="right_content"></div>
+    </div>
     <div class="d-grid gap-2 col-6 mx-auto">
       <button class="btn btn-success" id="down" type="button">
         <a href="queue2.html" style="color: antiquewhite"
@@ -314,8 +344,6 @@
         >
       </button>
     </div>
-    <br /><br />
-
     <script type="module" src="commonthings.min.js"></script>
   </body>
 </html>

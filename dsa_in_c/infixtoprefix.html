@@ -25,303 +25,347 @@
     </style>
   </head>
   <body>
-
-    <div class="title_date">
-      <h1>Infix To Prefix Conversion Questions</h1>
-      <p>These questions are generally asked in university exam</p>
-      <p>infix, prefix based stack question</p>
-    </div>
-    
-   
-    <main>
-      <div class="container">
-        <div>
-          <br />
-          <a
-            href="#fstque"
-            class="btn btn-primary btn-lg active"
-            role="button"
-            aria-pressed="true"
-            >Jump To Question</a
-          >
-          <br /><br />
-
-          <h2>Infix to Prefix Conversion in DSA</h2>
-
-          <h2>What is Infix to Prefix Conversion?</h2>
-          <p>
-            Infix to Prefix conversion is a process in Data Structures and
-            Algorithms (DSA) where an expression written in infix notation
-            (e.g., A + B) is converted to prefix notation (e.g., +AB). In prefix
-            notation, also known as Polish notation, operators precede their
-            operands.
-          </p>
-
-          <h2>Why is There a Need to Convert Infix to Prefix?</h2>
-          <p>
-            Infix notation is how expressions are commonly written, but it
-            requires precedence rules and parentheses to determine the order of
-            operations. Converting infix to prefix simplifies the evaluation
-            process, particularly for computer programs and calculators, as it
-            removes the need for precedence and associativity rules, ensuring
-            faster processing and less ambiguity in mathematical expressions.
-          </p>
-
-          <h2>Advantages of Prefix Notation</h2>
-          <ul>
-            <li>
-              Removes the need for parentheses, as the order of operations is
-              clear in prefix notation.
-            </li>
-            <li>
-              Evaluation of expressions is faster and more straightforward for
-              computers.
-            </li>
-            <li>
-              Improves the efficiency of compilers and interpreters in parsing
-              expressions.
-            </li>
-          </ul>
-
-          <h2>Disadvantages of Prefix Notation</h2>
-          <ul>
-            <li>
-              Not as intuitive for humans to read compared to infix notation.
-            </li>
-            <li>
-              Conversion from infix to prefix may be complex and time-consuming
-              for beginners.
-            </li>
-            <li>
-              Less commonly used outside of programming and computer science
-              contexts.
-            </li>
-          </ul>
-
-          <h2>Method to Convert Infix to Prefix Notation</h2>
-          <ul>
-            <li>
-              Reverse the infix expression (e.g., if the infix expression is
-              <code>A + B * C</code>, the reversed form would be
-              <code>C * B + A</code>).
-            </li>
-            <li>
-              Replace every '(' with ')' and every ')' with '(' in the reversed
-              expression.
-            </li>
-            <li>
-              Convert the modified expression to postfix notation using standard
-              infix to postfix rules.
-            </li>
-            <li>Reverse the result to obtain the prefix expression.</li>
-          </ul>
-        </div>
-        <div id="question21">
-          <div class="question">
-            <h3 id="fstque">
-              21. Convert infix expression (a-b/c)*(a/c-d) to prefix expression.
-            </h3>
-          </div>
-          <div class="solution">
-            <p>
-              <strong>Answer:</strong> The infix expression is (a-b/c)*(a/c-d).
-              The corresponding prefix expression is *-a/bc-/ac-d.
-            </p>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/DSA/infix_and_prefix/inf_to_pref_mob_21.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/DSA/infix_and_prefix/inf_to_pref_comp_21.png"
-              />
-              <img
-                alt="infix and prefix conversion | Question 21 Solution | step-by-step solution"
-                title="infix and prefix conversion solution "
-                class="inf_to_pref21"
-              />
-            </picture>
-          </div>
-        </div>
-
-        <h3>22. Convert infix expression (x+y)*(z-w) to prefix expression.</h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (x+y)*(z-w). The
-          corresponding prefix expression is *+xy-zw.
-        </p>
-
-        <h3>
-          23. Convert infix expression (a+b/c)*(d-e) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (a+b/c)*(d-e). The
-          corresponding prefix expression is *+a/bcd-e.
-        </p>
-
-        <h3>24. Convert infix expression (p*q)/(r-s) to prefix expression.</h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (p*q)/(r-s). The
-          corresponding prefix expression is /*pq-rs.
-        </p>
-
-        <h3>
-          25. Convert infix expression (a-b)*(c+d)/e to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (a-b)*(c+d)/e. The
-          corresponding prefix expression is /*-ab+cd e.
-        </p>
-
-        <h3>26. Convert infix expression a+(b*c-d/e) to prefix expression.</h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is a+(b*c-d/e). The
-          corresponding prefix expression is +a-*bc/de.
-        </p>
-
-        <h3>
-          27. Convert infix expression (a+b)*(c/(d-e)) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (a+b)*(c/(d-e)). The
-          corresponding prefix expression is *+ab/c-de.
-        </p>
-
-        <h3>28. Convert infix expression a*(b+c/d)-e to prefix expression.</h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is a*(b+c/d)-e. The
-          corresponding prefix expression is -*a+bc/de.
-        </p>
-
-        <h3>
-          29. Convert infix expression (x/y+z)*(p-q) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (x/y+z)*(p-q). The
-          corresponding prefix expression is *+/xyz-pq.
-        </p>
-
-        <h3>
-          30. Convert infix expression (p+q)/(r-s+t) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (p+q)/(r-s+t). The
-          corresponding prefix expression is /+pq-rt+s.
-        </p>
-
-        <h3>
-          31. Convert infix expression ((a+b)*c-d)/e to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is ((a+b)*c-d)/e. The
-          corresponding prefix expression is /-*+abcde.
-        </p>
-
-        <h3>
-          32. Convert infix expression (a/b-c)+(d*e-f) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (a/b-c)+(d*e-f). The
-          corresponding prefix expression is +-ab/c-*def.
-        </p>
-
-        <h3>33. Convert infix expression a+(b/(c-d)) to prefix expression.</h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is a+(b/(c-d)). The
-          corresponding prefix expression is +a/bc-d.
-        </p>
-
-        <h3>
-          34. Convert infix expression (x+y)/(z-w)*(p+q) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (x+y)/(z-w)*(p+q).
-          The corresponding prefix expression is *+/xy-zw+pq.
-        </p>
-
-        <h3>
-          35. Convert infix expression a-(b+c)/(d-e*f) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is a-(b+c)/(d-e*f). The
-          corresponding prefix expression is -a/+bc-*def.
-        </p>
-
-        <h3>
-          36. Convert infix expression a*(b-c)/(d+e) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is a*(b-c)/(d+e). The
-          corresponding prefix expression is /*a-bc+de.
-        </p>
-
-        <h3>
-          37. Convert infix expression (p-q+r)*(s/t-u) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is (p-q+r)*(s/t-u). The
-          corresponding prefix expression is *+-pqr-/st u.
-        </p>
-
-        <h3>
-          38. Convert infix expression ((a*b)+c-d)/(e+f) to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is ((a*b)+c-d)/(e+f).
-          The corresponding prefix expression is /-+*abcd+ef.
-        </p>
-
-        <h3>
-          39. Convert infix expression ((x+y)*(z-w))/p to prefix expression.
-        </h3>
-        <p>
-          <strong>Answer:</strong> The infix expression is ((x+y)*(z-w))/p. The
-          corresponding prefix expression is /*+xy-zw p.
-        </p>
-        <div id="question40">
-          <div class="question">
-            <h3>
-              40. Convert infix expression (a*b+c)/(d-e+f) to prefix expression.
-            </h3>
-          </div>
-          <div class="solution">
-            <p>
-              <strong>Answer:</strong> The infix expression is (a*b+c)/(d-e+f).
-              The corresponding prefix expression is /+*abc-+def.
-            </p>
-          </div>
-        </div>
-        <div id="question41">
-          <div class="question">
-            41. Convert infix expression (a+(b/c)*(d^e)-f) to prefix expression.
-          </div>
-          <div class="solution">
-            <p>
-              <strong>Answer:</strong> The infix expression is
-              (a+(b/c)*(d^e)-f). The corresponding prefix expression is
-              -+a*/bc^def.
-            </p>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/DSA/infix_and_prefix/inf_to_pref_mob_41.png"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/DSA/infix_and_prefix/inf_to_pref_comp_41.png"
-              />
-              <img
-                alt="infix and prefix conversion | Question 21 Solution | step-by-step solution"
-                title="infix and prefix conversion solution "
-                class="inf_to_pref21"
-              />
-            </picture>
-            <br />
-          </div>
-        </div>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
       </div>
-    </main>
-    <div id="down"></div>
+      <div id="main_content">
+        <main>
+          <div class="title_date">
+            <h1>Master Infix To Prefix Conversion with step by step solution</h1>
+          </div>
+          <article>
+            <div class="container">
+              <div>
+                <br />
+                <a
+                  href="#fstque"
+                  class="btn btn-primary btn-lg active"
+                  role="button"
+                  aria-pressed="true"
+                  >Jump To Question</a
+                >
+                <br /><br />
+
+                <h2>Infix to Prefix Conversion in DSA</h2>
+
+                <h2>What is Infix to Prefix Conversion?</h2>
+                <p>
+                  Infix to Prefix conversion is a process in Data Structures and
+                  Algorithms (DSA) where an expression written in infix notation
+                  (e.g., A + B) is converted to prefix notation (e.g., +AB). In
+                  prefix notation, also known as Polish notation, operators
+                  precede their operands.
+                </p>
+
+                <h2>Why is There a Need to Convert Infix to Prefix?</h2>
+                <p>
+                  Infix notation is how expressions are commonly written, but it
+                  requires precedence rules and parentheses to determine the
+                  order of operations. Converting infix to prefix simplifies the
+                  evaluation process, particularly for computer programs and
+                  calculators, as it removes the need for precedence and
+                  associativity rules, ensuring faster processing and less
+                  ambiguity in mathematical expressions.
+                </p>
+
+                <h2>Advantages of Prefix Notation</h2>
+                <ul>
+                  <li>
+                    Removes the need for parentheses, as the order of operations
+                    is clear in prefix notation.
+                  </li>
+                  <li>
+                    Evaluation of expressions is faster and more straightforward
+                    for computers.
+                  </li>
+                  <li>
+                    Improves the efficiency of compilers and interpreters in
+                    parsing expressions.
+                  </li>
+                </ul>
+
+                <h2>Disadvantages of Prefix Notation</h2>
+                <ul>
+                  <li>
+                    Not as intuitive for humans to read compared to infix
+                    notation.
+                  </li>
+                  <li>
+                    Conversion from infix to prefix may be complex and
+                    time-consuming for beginners.
+                  </li>
+                  <li>
+                    Less commonly used outside of programming and computer
+                    science contexts.
+                  </li>
+                </ul>
+
+                <h2>Method to Convert Infix to Prefix Notation</h2>
+                <ul>
+                  <li>
+                    Reverse the infix expression (e.g., if the infix expression
+                    is
+                    <code>A + B * C</code>, the reversed form would be
+                    <code>C * B + A</code>).
+                  </li>
+                  <li>
+                    Replace every '(' with ')' and every ')' with '(' in the
+                    reversed expression.
+                  </li>
+                  <li>
+                    Convert the modified expression to postfix notation using
+                    standard infix to postfix rules.
+                  </li>
+                  <li>Reverse the result to obtain the prefix expression.</li>
+                </ul>
+              </div>
+              <div id="question21">
+                <div class="question">
+                  <h3 id="fstque">
+                    21. Convert infix expression (a-b/c)*(a/c-d) to prefix
+                    expression.
+                  </h3>
+                </div>
+                <div class="solution">
+                  <p>
+                    <strong>Answer:</strong> The infix expression is
+                    (a-b/c)*(a/c-d). The corresponding prefix expression is
+                    *-a/bc-/ac-d.
+                  </p>
+                  <picture>
+                    <source
+                      media="(max-width:700px)"
+                      srcset="
+                        /assets/DSA/infix_and_prefix/inf_to_pref_mob_21.png
+                      "
+                    />
+                    <source
+                      media="(min-width:701px)"
+                      srcset="
+                        /assets/DSA/infix_and_prefix/inf_to_pref_comp_21.png
+                      "
+                    />
+                    <img
+                      alt="infix and prefix conversion | Question 21 Solution | step-by-step solution"
+                      title="infix and prefix conversion solution "
+                      class="inf_to_pref21"
+                    />
+                  </picture>
+                </div>
+              </div>
+
+              <h3>
+                22. Convert infix expression (x+y)*(z-w) to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is (x+y)*(z-w).
+                The corresponding prefix expression is *+xy-zw.
+              </p>
+
+              <h3>
+                23. Convert infix expression (a+b/c)*(d-e) to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is (a+b/c)*(d-e).
+                The corresponding prefix expression is *+a/bcd-e.
+              </p>
+
+              <h3>
+                24. Convert infix expression (p*q)/(r-s) to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is (p*q)/(r-s).
+                The corresponding prefix expression is /*pq-rs.
+              </p>
+
+              <h3>
+                25. Convert infix expression (a-b)*(c+d)/e to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is (a-b)*(c+d)/e.
+                The corresponding prefix expression is /*-ab+cd e.
+              </p>
+
+              <h3>
+                26. Convert infix expression a+(b*c-d/e) to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is a+(b*c-d/e).
+                The corresponding prefix expression is +a-*bc/de.
+              </p>
+
+              <h3>
+                27. Convert infix expression (a+b)*(c/(d-e)) to prefix
+                expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is
+                (a+b)*(c/(d-e)). The corresponding prefix expression is
+                *+ab/c-de.
+              </p>
+
+              <h3>
+                28. Convert infix expression a*(b+c/d)-e to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is a*(b+c/d)-e.
+                The corresponding prefix expression is -*a+bc/de.
+              </p>
+
+              <h3>
+                29. Convert infix expression (x/y+z)*(p-q) to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is (x/y+z)*(p-q).
+                The corresponding prefix expression is *+/xyz-pq.
+              </p>
+
+              <h3>
+                30. Convert infix expression (p+q)/(r-s+t) to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is (p+q)/(r-s+t).
+                The corresponding prefix expression is /+pq-rt+s.
+              </p>
+
+              <h3>
+                31. Convert infix expression ((a+b)*c-d)/e to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is ((a+b)*c-d)/e.
+                The corresponding prefix expression is /-*+abcde.
+              </p>
+
+              <h3>
+                32. Convert infix expression (a/b-c)+(d*e-f) to prefix
+                expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is
+                (a/b-c)+(d*e-f). The corresponding prefix expression is
+                +-ab/c-*def.
+              </p>
+
+              <h3>
+                33. Convert infix expression a+(b/(c-d)) to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is a+(b/(c-d)).
+                The corresponding prefix expression is +a/bc-d.
+              </p>
+
+              <h3>
+                34. Convert infix expression (x+y)/(z-w)*(p+q) to prefix
+                expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is
+                (x+y)/(z-w)*(p+q). The corresponding prefix expression is
+                *+/xy-zw+pq.
+              </p>
+
+              <h3>
+                35. Convert infix expression a-(b+c)/(d-e*f) to prefix
+                expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is
+                a-(b+c)/(d-e*f). The corresponding prefix expression is
+                -a/+bc-*def.
+              </p>
+
+              <h3>
+                36. Convert infix expression a*(b-c)/(d+e) to prefix expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is a*(b-c)/(d+e).
+                The corresponding prefix expression is /*a-bc+de.
+              </p>
+
+              <h3>
+                37. Convert infix expression (p-q+r)*(s/t-u) to prefix
+                expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is
+                (p-q+r)*(s/t-u). The corresponding prefix expression is
+                *+-pqr-/st u.
+              </p>
+
+              <h3>
+                38. Convert infix expression ((a*b)+c-d)/(e+f) to prefix
+                expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is
+                ((a*b)+c-d)/(e+f). The corresponding prefix expression is
+                /-+*abcd+ef.
+              </p>
+
+              <h3>
+                39. Convert infix expression ((x+y)*(z-w))/p to prefix
+                expression.
+              </h3>
+              <p>
+                <strong>Answer:</strong> The infix expression is
+                ((x+y)*(z-w))/p. The corresponding prefix expression is /*+xy-zw
+                p.
+              </p>
+              <div id="question40">
+                <div class="question">
+                  <h3>
+                    40. Convert infix expression (a*b+c)/(d-e+f) to prefix
+                    expression.
+                  </h3>
+                </div>
+                <div class="solution">
+                  <p>
+                    <strong>Answer:</strong> The infix expression is
+                    (a*b+c)/(d-e+f). The corresponding prefix expression is
+                    /+*abc-+def.
+                  </p>
+                </div>
+              </div>
+              <div id="question41">
+                <div class="question">
+                  41. Convert infix expression (a+(b/c)*(d^e)-f) to prefix
+                  expression.
+                </div>
+                <div class="solution">
+                  <p>
+                    <strong>Answer:</strong> The infix expression is
+                    (a+(b/c)*(d^e)-f). The corresponding prefix expression is
+                    -+a*/bc^def.
+                  </p>
+                  <picture>
+                    <source
+                      media="(max-width:700px)"
+                      srcset="
+                        /assets/DSA/infix_and_prefix/inf_to_pref_mob_41.png
+                      "
+                    />
+                    <source
+                      media="(min-width:701px)"
+                      srcset="
+                        /assets/DSA/infix_and_prefix/inf_to_pref_comp_41.png
+                      "
+                    />
+                    <img
+                      alt="infix and prefix conversion | Question 21 Solution | step-by-step solution"
+                      title="infix and prefix conversion solution "
+                      class="inf_to_pref21"
+                    />
+                  </picture>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </article>
+        </main>
+      </div>
+      <div id="right_content"></div>
+    </div>
     <script type="module" src="commonthings.min.js"></script>
   </body>
 </html>
