@@ -1,5 +1,6 @@
-import { add_css, bar, sdbar_Links } from "/js/src/utilities.min.js";
-
+import { add_css, bar, sdbar_Links,book_name_recommender } from "/js/src/utilities.min.js";
+import book_suggest from "/os/Disk_scheduling/book_suggest.json" with {type : "json"};
+  book_name_recommender(book_suggest);
 const data = {
   users: [
     {
@@ -16,7 +17,7 @@ const data = {
     },
     {
       name: "Boolean algebra",
-      link: "/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html",
+      link: "/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html"
     },
     {
       name: "relational algebra",

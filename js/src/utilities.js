@@ -114,8 +114,8 @@ export function book_name_recommender(object) {
   let p1 = "";
 for (let filename of object) {
     if (filename.file_name.includes(`${file_name_viewer()}`)) {
-      h2i = `<h2 class="text-center text-decoration-underline" style=" text-underline-offset: 5px;">list of books which help to learn ${filename.topic_name} scheduling algorithm</h2>`;
-      p1 = `<p class="text-center text-decoration-underline" style="text-underline-offset: 5px;color:#000000;background-color:#FF6B6F;padding:5px;">list of books which help to learn ${filename.topic_name} scheduling algorithm</p>`;
+      h2i = `<h2 class="text-center text-decoration-underline" style=" text-underline-offset: 5px;">List of books which help to learn ${filename.topic_name} </h2>`;
+      p1 = `<p class="text-center text-decoration-underline" style="text-underline-offset: 5px;color:#000000;background-color:#FF6B6F;padding:5px;">List of books which help to learn ${filename.topic_name} </p>`;
       for (let book of filename.book) {
         books += ` <a  href="${book.book_link}"><img loading="lazy" class="w-100 h-auto" style="padding:15px;"src="${book.book_image}" alt="${book.image_alt}"/></a>`;
       }

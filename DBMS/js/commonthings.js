@@ -1,4 +1,6 @@
-import { bar,popup_links,sdbar_Links } from "/js/src/utilities.min.js";
+import { bar,popup_links,sdbar_Links, book_name_recommender} from "/js/src/utilities.min.js";
+import book_suggest from "/DBMS/DBMS_books.json" with {type : "json"};
+  book_name_recommender(book_suggest);
 const data = {
   users: [
     {
