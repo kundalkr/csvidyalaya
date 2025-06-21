@@ -94,7 +94,11 @@ scriptTag.innerHTML = `{
                   "name": "Kundal Kumar",
                   "url": "www.linkedin.com/in/kundal-kumar"
                 }
-              ]
+              ],
+  "sameAs": [
+    "https://www.facebook.com/csvidyalaya1/",
+    "https://www.instagram.com/csvidyalaya/"
+  ]
             }`;
 document.head.appendChild(scriptTag);
 // founder json ld end
