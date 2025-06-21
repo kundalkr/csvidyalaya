@@ -18,14 +18,19 @@ const gfont = {
       link: "https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap",
     },
     {
-      link: "https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap",
+      link: "https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap"
     },
     {
-      link: "https://fonts.googleapis.com/css2?family=Pacifico&display=swap",
+      link: "https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
     },
     {
       link: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_downward,arrow_upward,close,hub&display=block",
     },
+    {
+      link:"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    }
   ],
 };
 google_font(gfont);
+
+

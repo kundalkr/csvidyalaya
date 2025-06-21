@@ -1,5 +1,3 @@
-
-
 (function () {
   const favi_size = {
     users: [
@@ -43,7 +41,6 @@
   //  <link rel="stylesheet" href="main_content.css" />
 })();
 
-
 // last modified
 function last_modified() {
   const lastModified = new Date(document.lastModified);
@@ -59,12 +56,14 @@ function last_modified() {
             }</span>
           </div>
           <hr>
-        `;
+            <div>
+            <p style="margin:0;">
+       Like & Follow our page and show your love
+       </p><a style="font-size: xx-large;" href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> &nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i  class="bi bi-instagram"></i></a>
+          </div>`;
   hh1.insertAdjacentElement("afterend", lastupdate);
-};
+}
 
-// last modified
-// all css  adding
 const cssFiles = [
   "/css/headings-footer.min.css",
   "/css/main_content.min.css",
@@ -79,6 +78,7 @@ cssFiles.forEach((file) => {
 });
 //  all css adding end
 
+// founder json ld
 const scriptTag = document.createElement("script");
 scriptTag.type = "application/ld+json";
 scriptTag.innerHTML = `{
@@ -97,6 +97,7 @@ scriptTag.innerHTML = `{
               ]
             }`;
 document.head.appendChild(scriptTag);
+// founder json ld end
 
 let headu = document.querySelector("head");
 if (
@@ -118,11 +119,11 @@ if (
   headu.appendChild(script2);
 }
 
-function external_css() {
-  let external_css = document.createElement("script");
-  external_css.src = "/js/src/externalcss.min.js";
-  external_css.setAttribute("type", "module");
-  headu.appendChild(external_css);
+function for_all_page() {
+  let for_all_page = document.createElement("script");
+  for_all_page.src = "/js/src/for_all_page.min.js";
+  for_all_page.setAttribute("type", "module");
+  headu.appendChild(for_all_page);
 }
 function hdr_ftr() {
   let header_footer = document.createElement("script");
@@ -135,7 +136,7 @@ function execution(hdr_ftr, fn1) {
   hdr_ftr();
   fn1();
 }
-execution(external_css, hdr_ftr);
+execution(for_all_page, hdr_ftr);
 
 window.onload = function () {
   let bodu = document.querySelector("body");
@@ -144,5 +145,5 @@ window.onload = function () {
   commonforall.setAttribute("type", "module");
   commonforall.async = !0;
   bodu.appendChild(commonforall);
-    last_modified();
+  last_modified();
 };

@@ -43,7 +43,7 @@ function watchTask() {
     "js/src/alljs.js",
     "js/src/cards.js",
     "js/src/commonforall.js",
-    "js/src/externalcss.js",
+    "js/src/for_all_page.js",
     "js/src/hdr_ftr.js",
     "js/src/index.js",
     "js/src/utilities.js",
