@@ -4,6 +4,7 @@ const rename = require("gulp-rename");
 const postcss = require("gulp-postcss");
 const cssnano = require("cssnano");
 const path = require("path");
+const terser = require('gulp-terser');
 
 // CSS Task
 function cssTask(src, dest) {
@@ -19,7 +20,7 @@ function jsTask(src, dest) {
   return function () {
     return gulp
       .src(`${src}`)
-      .pipe(uglify())
+      .pipe(terser())
       .pipe(rename({ suffix: ".min" }))
       .pipe(gulp.dest(`${dest}`));
   };
@@ -48,7 +49,9 @@ function watchTask() {
     "js/src/utilities.js",
     "os/scheduling_algorithms/commonthings.js",
     "os/Disk_scheduling/commonthings.js",
-    "dsa_in_c/commonthings.js"
+    "dsa_in_c/commonthings.js",
+    "DBMS/DBMS_topics/relational_calculus/js/trc.js",
+    "DBMS/js/commonthings.js"
   ];
   // let dest = `js/src/`;
 

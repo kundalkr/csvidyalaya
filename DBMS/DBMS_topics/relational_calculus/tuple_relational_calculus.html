@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tuple Relational calculus Question + solution</title>
     <style>
+          img {
+        margin-bottom: 2em;
+        width: 600px;
+        height: auto;
+        @media (width<=770px) {
+          width: 400px;
+          height: auto;
+        }
+      }
       @media (width<=770px) {
         img {
           width: 450px;
@@ -86,16 +95,58 @@
 
       /* loadering end */
     </style>
+    <script type="module">
+      import Questions from "/DBMS/DBMS_question.json" with {type : "json"};
+            let i = 1;
+            let j = 1;
+            for (let question of Questions) {
+              if (question.Tags.includes('#TRC')) {
+                         let divs = document.createElement("div");
+              divs.setAttribute("id", `question${i}`);
+              let qusn = document.createElement("div");
+              qusn.setAttribute("class", "question");
+              let ans = document.createElement("div");
+              ans.setAttribute("class", "solution");
+              document.querySelector("#main_content > main > article").appendChild(divs);
+              divs.appendChild(qusn);
+              divs.appendChild(ans);
+                qusn.innerHTML = `<h2>${j}) ${question.Question}</h2>`;
+                if (i != 0) {
+                  ans.innerHTML = `
+                      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample${i}" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">click here for answer</a>
+                      <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample${i}">
+                        <div class="card card-body bg-danger-subtle">
+                         <p style="font-size: x-large;">${question.Solution}</p>
+                        </div>
+                      </div>
+                    </div>
+                      </div><br />`;
+                }
+                j++;
+              }
+
+              i++;
+
+            }
+    </script>
   </head>
   <body>
-    <div class="container">
-      <main>
-        <h1>Tuple Relational calculus Question + solution</h1>
-        <span id="loadering"></span>
-        <div id="req_data"></div>
-      </main>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
+      </div>
+      <div id="main_content">
+        <main>
+          <div id="title_date">
+            <h1>Learn Tuple Relational calculus with solved question</h1>
+          </div>
+          <article></article>
+        </main>
+      </div>
+      <div id="right_content"></div>
     </div>
-    <script type="module" src="js/trc.min.js"></script>
     <script type="module" src="../../js/commonthings.min.js"></script>
   </body>
 </html>

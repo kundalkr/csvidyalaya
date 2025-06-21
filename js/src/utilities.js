@@ -38,15 +38,8 @@ export function bar(link_arr) {
 
   let bar_style = document.createElement("style");
   bar_style.innerHTML = `   
-          #bar1 {
-          a {
-              color: rgb(255, 255, 255);
-              text-decoration-color: rgb(255, 255, 255);
-              text-decoration-thickness: 0.3ex;
-              text-underline-offset: 0.3ex;
-            }
-            display: none;
-          }
+          #bar1{a{color: rgb(255, 255, 255);text-decoration-color: rgb(255, 255, 255);text-decoration-thickness: 0.3ex;text-underline-offset: 0.3ex;}
+            display: none;}
           @media (min-width: 950px) {
             #bar1 {
                 display: flex;
@@ -101,7 +94,6 @@ export function google_font(element) {
   }
 }
 
-
 export function sdbar_Links(params) {
   let left_content = document.querySelector("#left_content > ul");
 
@@ -112,3 +104,46 @@ export function sdbar_Links(params) {
   }
 }
 
+function file_name_viewer() {
+  let url = window.location.pathname;
+  return url.substring(url.lastIndexOf("/") + 1);
+}
+export function book_name_recommender(object) {
+  let books = "";
+  let h2i = "";
+  let p1 = "";
+
+      
+
+   
+
+  for (let filename of object) {
+    if (filename.file_name.includes(`${file_name_viewer()}`)) {
+      h2i = `<h2 style="text-align:center;text-decoration: underline; text-underline-offset: 5px;">list of books which help to learn ${filename.topic_name} scheduling algorithm</h2>`;
+      p1 = `<p class="list-group-item-active" style="text-align: center; text-decoration: underline;text-underline-offset: 5px;color:#000000;background-color:#FF6B6F;padding:5px;">list of books which help to learn ${filename.topic_name} scheduling algorithm</p>`;
+      for (let book of filename.book) {
+        books += ` <a  href="${book.book_link}"><img style="width: 100%;height:auto;padding:15px;"src="${book.book_image}" alt="${book.image_alt}"/></a>`;
+      }
+    }
+  }
+
+
+
+  if (window.innerWidth <= 1000) {
+    let article = document.querySelector("#main_content > main > article");
+    let article_book_recommendation = document.createElement("section");
+    article_book_recommendation.setAttribute("id", "book_recommendation");
+    article_book_recommendation.setAttribute("class", "border border-danger");
+    article_book_recommendation.style.padding="5px";
+     article_book_recommendation.style.alignContent="center";
+    article_book_recommendation.innerHTML = `${h2i}<div style="width: 90%;">${books} </div>`;
+    article.appendChild(article_book_recommendation);
+  } else {
+    let article = document.querySelector("#right_content");
+    let right_content = document.createElement("section");
+    right_content.setAttribute("id", "book_recommendation");
+    right_content.setAttribute("class", "border border-danger");
+    right_content.innerHTML = `${p1}<div style="width: 100%; ">${books} </div>`;
+    article.appendChild(right_content);
+  }
+}

@@ -1,4 +1,9 @@
-import { add_css, bar, popup_links,sdbar_Links } from "/js/src/utilities.min.js";
+
+
+import { add_css, bar, popup_links,sdbar_Links ,book_name_recommender} from "/js/src/utilities.min.js";
+
+    import book_sugget from "/os/scheduling_algorithms/recommended_book.json" with {type : "json"};
+      book_name_recommender(book_sugget);
 
 const data = {
   users: [

@@ -4,18 +4,23 @@
     <script type="text/javascript" src="/js/src/alljs.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relational Algebra Question + solution</title>
+    <title>Learn Relational algebra in DBMS with solved question</title>
     <style>
-      @media (width<=770px) {
-        img {
-          width: 450px;
+      img {
+        margin-bottom: 2em;
+        width: 650px;
+        height: auto;
+        @media (width<=770px) {
+          width: 400px;
           height: auto;
         }
+      }
+      @media (width<=770px) {
         h1 {
           font-size: large;
           font-family: "Playwrite CU", cursive;
           font-optical-sizing: auto;
-          font-weight: 400;
+          font-weight: 250;
           font-style: normal;
           text-align: center;
         }
@@ -23,7 +28,7 @@
       h1 {
         font-family: "Playwrite CU", cursive;
         font-optical-sizing: auto;
-        font-weight: 400;
+        font-weight: 350;
         font-style: normal;
         text-align: center;
       }
@@ -83,22 +88,116 @@
             -70px 90px 0 #028637, -70px 90px 0 rgba(0, 0, 0, 0);
         }
       }
-
-      /* loadering end */
     </style>
+    <script type="module">
+      import Questions from "/DBMS/DBMS_question.json" with {type : "json"};
+            let i = 1;
+            let j = 1;
+            for (let question of Questions) {
+              if (question.Tags.includes('#RA')) {
+                         let divs = document.createElement("div");
+              divs.setAttribute("id", `question${i}`);
+              let qusn = document.createElement("div");
+              qusn.setAttribute("class", "question");
+              let ans = document.createElement("div");
+              ans.setAttribute("class", "solution");
+              document.querySelector("#main_content > main > article > section:nth-child(1)").appendChild(divs);
+              divs.appendChild(qusn);
+              divs.appendChild(ans);
+                qusn.innerHTML = `<h2>${j}) ${question.Question}</h2>`;
+                if (i != 0) {
+                  ans.innerHTML = `
+                      <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample${i}" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">click here for answer</a>
+                      <div class="row">
+                    <div class="col">
+                      <div class="collapse multi-collapse" id="multiCollapseExample${i}">
+                        <div class="card card-body bg-danger-subtle">
+                         <p style="font-size: x-large;">${question.Solution}</p>
+                        </div>
+                      </div>
+                    </div>
+                      </div><br />`;
+                }
+                j++;
+              }
+
+              i++;
+
+            }
+    </script>
   </head>
   <body>
-  
-    <div class="container">
-    
-      <main>
-        <h1>Relational Algebra Question + solution</h1>
-        <span id="loadering"></span>
-        <div id="req_data"></div>
-      </main>
-    </div>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
+      </div>
+      <div id="main_content">
+        <main>
+          <div id="title_date">
+            <h1>
+              Learn Relational algebra in DBMS with solved question + PYQs
+            </h1>
+          </div>
+          <article>
+            <section></section>
+            <section>
+              <h2>Previous year question Realated to Relational Algebra</h2>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-cl-tst1-22-24.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-cl-tst1-22-24.jpg"
+                />
+                <img
+                  loading="lazy"
+                  src="/assets/DBMS/RELATIONAL_ALGEBRA/RA-cl-tst1-22-24.jpg"
+                  alt="Previous year class test Question of relational algebra"
+                  title="relational algebra question | PYQs"
+                />
+              </picture>
 
-    <script type="module" src="js/raq.min.js"></script>
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-DBMS-PYQ-22-24.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-DBMS-PYQ-22-24.jpg"
+                />
+                <img
+                  loading="lazy"
+                  src="/assets/DBMS/RELATIONAL_ALGEBRA/RA-DBMS-PYQ-22-24.jpg"
+                  alt="Previous semester exam Question of relational algebra"
+                  title="relational algebra question | PYQs"
+                />
+              </picture>
+            </section>
+            <section id="book_recommendation">
+              <h2></h2>
+              <ul>
+                <li>
+                  <a href=""
+                    ><img
+                      style="width: 400"
+                      src="https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg"
+                      alt=""
+                  /></a>
+                </li>
+                <li></li>
+                <li></li>
+              </ul>
+            </section>
+          </article>
+        </main>
+      </div>
+      <div id="right_content">
+   
+      </div>
+    </div>
     <script type="module" src="../../js/commonthings.min.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-import { bar,popup_links } from "/js/src/utilities.min.js";
+import { bar,popup_links,sdbar_Links } from "/js/src/utilities.min.js";
 const data = {
   users: [
     {
@@ -64,4 +64,64 @@ const pop_link = {
 };
 popup_links(pop_link);
 
+
+const sidebar_links = {
+  users: [
+    {
+      name: "first-come-first-serve questions",
+      link: "fcfs.html",
+    },
+    {
+      name: "shortest job first(SJF) question",
+      link: "sjf1.html",
+    },
+    {
+      name: "Shortest Remaining Time First (SRTF) question",
+      link: "sjf2.html",
+    },
+    {
+      name: "Multilevel feedback queue scheduling question",
+      link: "mlfqs.html",
+    },
+    {
+      name: "Multilevel queue scheduling question",
+      link: "MLQS.html",
+    },
+    {
+      name: "priority scheduling question",
+      link: "ps1.html",
+    },
+    {
+      name: "peemptive priority scheduling question",
+      link: "ps2.html",
+    },
+    {
+      name: "Round Robin scheduling question",
+      link: "RR1.html",
+    },
+    {
+      name: "Bankers algorithms question",
+      link: "/os/Deadlocks/Bankers_Algorithms.html",
+    },
+    {
+      name: "Disk scheduling algorithms question",
+      link: "/os/Disk_scheduling/disk_scheduling_algorithms.html",
+    },
+    {
+      name: "Memory management question",
+      link: "/os/memory_management/memory_management_topics.html",
+    },
+    {
+      name: "Buddy System question",
+      link: "/os/memory_management/Buddy_system.html",
+    },
+    {
+      name: "Fit question",
+      link: "/os/memory_management/Fit_question.html",
+    },
+  ],
+};
+
+
+sdbar_Links(sidebar_links);
 

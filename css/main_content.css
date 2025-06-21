@@ -15,7 +15,7 @@
       }
     }
   }
-  @media (width>=800px) {
+  @media (width>=1000px) {
     #left_content {
       width: 15%;
       /* border: 1px solid red; */
@@ -35,7 +35,7 @@
       /* border: 1px solid red; */
     }
   }
-  @media (700px<=width<=800px) {
+  @media (700px<=width<=1000px) {
     #left_content {
       width: 30%;
       overflow-y: auto;

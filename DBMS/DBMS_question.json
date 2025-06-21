@@ -96,12 +96,6 @@
     "QuestionID": "DIckV"
   },
   {
-    "Question": "",
-    "Solution": "",
-    "Tags": "",
-    "QuestionID": "9rXtK"
-  },
-  {
     "Question": "<picture>\n                <source\n                  media=\"(max-width:700px)\"\n                  srcset=\"https://csvidyalaya.com/assets/DBMS/RELATIONAL_ALGEBRA/GR4376TWWGE.png\"\n                />\n                <source\n                  media=\"(min-width:701px)\"\n                  srcset=\"https://csvidyalaya.com/assets/DBMS/RELATIONAL_ALGEBRA/GR4376TWWGE.png\"\n                />\n                <img\n                  loading=\"lazy\"  src=\"https://csvidyalaya.com/assets/DBMS/RELATIONAL_ALGEBRA/GR4376TWWGE.png\"\n                  alt=\"relational algebra question \"\n                  title=\"relational algebra question \"\n  \n                />\n              </picture> <br />\n\na) select only those employees who are in cs department      <br />\nb) select only those employees with last name Saleem and who are assistant professors     <br />\nc) select only those employees who are assistant professors or in economics department     <br />\nd) select only those employees who are not in the CS department or lecturer     <br />\nwrite a relational algebra for this question",
     "Solution": "a) <b> σ</b><sub><small>dept = 'CS'</small></sub><b>(EMP)</b> <br />\nb) <b> σ</b><sub><small>name='salem' ∧ Rank='Assistant'</small></sub><b>(EMP)</b> <br />\nc) <b> σ</b><sub><small>Rank='Assistant' ∨ Dept='Ecom'</small></sub><b>(EMP)</b><br />\nd) <b> σ¬</b><sub><small>(Rank='Lecturer' ∨ Dept='cs')</small></sub><b>(EMP)</b>",
     "Tags": "#RA",
@@ -116,7 +110,7 @@
   {
     "Question": "select the EMPLOYEE all tuples , write the tuple relational calculus",
     "Solution": "<b> {t | t ∈ EMPLOYEE} </b>",
-    "Tags": "#TRA",
+    "Tags": "#TRC",
     "QuestionID": "6xDV0"
   },
   {
