@@ -1,96 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <title>MLQ Scheduling Algorithms: Solved Questions & Answers</title> -->
-    <title>
-      Multilevel Queue Scheduling (MLQ) Algorithm comprehensive guide + question
-    </title>
-    <meta
-      name="description"
-      content="Get detailed MULTILEVEL QUEUE Scheduling (MLQ) algorithm questions with solutions and explanations. Ideal for computer science learners and professionals."
-    />
 
-    <meta
-      name="keywords"
-      content="MULTILEVEL QUEUE Scheduling question, MLQ algorithm, MLQ Scheduling questions, CPU Scheduling algorithms, Computer Science questions"
-    />
-    <meta name="author" content="Kundal Kumar" />
-    <meta name="robots" content="index, follow" />
-    <!-- Open Graph Tags -->
-    <meta
-      property="og:title"
-      content="MULTILEVEL QUEUE Scheduling (MLQ) Algorithm Questions - Comprehensive Guide"
-    />
-    <meta
-      property="og:description"
-      content="Explore comprehensive MULTILEVEL QUEUE Scheduling (MLQ) algorithm questions with detailed solutions and explanations. Perfect for computer science students and professionals."
-    />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:url"
-      content="https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html"
-    />
-    <meta
-      property="og:image"
-      content="https://csvidyalaya.com/assets/MLQS DEFINITION nig.png"
-    />
+<head>
+  <script type="text/javascript" src="/js/src/alljs.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <title>MLQ Scheduling Algorithms: Solved Questions & Answers</title> -->
+  <title>
+    Multilevel Queue Scheduling (MLQ) Algorithm comprehensive guide + question
+  </title>
+  <meta name="description"
+    content="Get detailed MULTILEVEL QUEUE Scheduling (MLQ) algorithm questions with solutions and explanations. Ideal for computer science learners and professionals." />
 
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="MULTILEVEL QUEUE Scheduling (MLQ) Algorithm Questions - Comprehensive Guide"
-    />
-    <meta
-      name="twitter:description"
-      content="Get detailed MULTILEVEL QUEUE Scheduling (MLQ) algorithm questions with solutions and explanations. Ideal for computer science learners and professionals."
-    />
-    <meta
-      name="twitter:image"
-      content="https://csvidyalaya.com/assets/MLQS DEFINITION nig.png"
-    />
+  <meta name="keywords"
+    content="MULTILEVEL QUEUE Scheduling question, MLQ algorithm, MLQ Scheduling questions, CPU Scheduling algorithms, Computer Science questions" />
+  <meta name="author" content="Kundal Kumar" />
+  <meta name="robots" content="index, follow" />
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="MULTILEVEL QUEUE Scheduling (MLQ) Algorithm Questions - Comprehensive Guide" />
+  <meta property="og:description"
+    content="Explore comprehensive MULTILEVEL QUEUE Scheduling (MLQ) algorithm questions with detailed solutions and explanations. Perfect for computer science students and professionals." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html" />
+  <meta property="og:image" content="https://csvidyalaya.com/assets/MLQS DEFINITION nig.png" />
 
-    <style>
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MULTILEVEL QUEUE Scheduling (MLQ) Algorithm Questions - Comprehensive Guide" />
+  <meta name="twitter:description"
+    content="Get detailed MULTILEVEL QUEUE Scheduling (MLQ) algorithm questions with solutions and explanations. Ideal for computer science learners and professionals." />
+  <meta name="twitter:image" content="https://csvidyalaya.com/assets/MLQS DEFINITION nig.png" />
+
+  <style>
+    img {
+      height: auto;
+      width: 700px;
+      object-fit: contain;
+    }
+
+    @media (width<=770px) {
       img {
         height: auto;
-        width: 700px;
-        object-fit: contain;
+        width: 400px;
       }
+    }
+  </style>
+</head>
 
-      @media (width<=770px) {
-        img {
-          height: auto;
-          width: 400px;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="three_section">
-      <div id="left_content" class="sticky-top">
-        <ul></ul>
-      </div>
-      <div id="main_content">
-        <main>
-          <div class="title_date">
-            <h1>
-              Multilevel Queue Scheduling (MLQ) Algorithm question with
-              step-by-step solution + PYQs
-            </h1>
-          </div>
-          <article>
+<body>
+  <div id="three_section">
+    <div id="left_content" class="sticky-top">
+      <ul></ul>
+    </div>
+    <div id="main_content">
+      <main>
+        <div class="title_date">
+          <h1>
+            Multilevel Queue Scheduling (MLQ) Algorithm question with
+            step-by-step solution + PYQs
+          </h1>
+        </div>
+        <article>
+          <section>
             <p>
-              If you're diving into the world of CPU scheduling algorithms, the
-              Multilevel Queue (MLQ) Scheduling Algorithm is very important
-              concept. In real-life operating systems, processes aren’t all the
-              same—they can be system processes, interactive tasks, or
-              background jobs. That's where MLQ shines—it organizes processes
-              into multiple queues based on their priority or type, each with
-              its own scheduling strategy.
+              If you're diving into the world of CPU scheduling algorithms,
+              the Multilevel Queue (MLQ) Scheduling Algorithm is very
+              important concept. In real-life operating systems, processes
+              aren’t all the same—they can be system processes, interactive
+              tasks, or background jobs. That's where MLQ shines—it organizes
+              processes into multiple queues based on their priority or type,
+              each with its own scheduling strategy.
             </p>
             <p>
               In this article, we simplify MLQ Scheduling with clear
@@ -99,227 +78,200 @@
               tests, or just brushing up your Operating System concepts, this
               guide is tailored for you.
             </p>
-            <a
-              href="#fstque"
-              class="btn btn-primary btn-lg active"
-              role="button"
-              aria-pressed="true"
-              >Jump To Question</a
-            >
-            <br /><br />
-            <section>
-              <h2>
-                what is Multilevel Queue Scheduling Algorithm In Operating
-                System ?
-              </h2>
-              <p>
-                In the Multilevel Queue Scheduling algorithm, processes are
-                divided into multiple queues based on specific characteristics,
-                such as priority or memory requirements. Each queue uses its own
-                scheduling method, which could be
-                <a href="/os/scheduling_algorithms/fcfs.html"
-                  >First-Come-First-Serve (FCFS)</a
-                >,
-                <a href="/os/scheduling_algorithms/sjf1.html"
-                  >Shortest Job First (SJF)</a
-                >, or
-                <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a
-                >, depending on the types of processes it holds. This algorithm
-                is often used in scenarios where different types of processes
-                need to be managed separately and effectively.
-              </p>
-              <picture>
-                <source
-                  media="(max-width:700px)"
-                  srcset="/assets/MLQ/MLQS_DEFINITIO_small.png"
-                />
-                <source
-                  media="(min-width:701px)"
-                  srcset="/assets/MLQ/MLQS_DEFINITION_nig.png"
-                />
-                <img
-                  loading="lazy"
-                  alt="multilevel queue scheduling definiton | expplanation of MLQ"
-                  title="MULTILEVEL QUEUE SCHEDULING (MLQ) working step"
-                />
-              </picture>
-            </section>
+            <a href="#fstque" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Jump To
+              Question</a>
+            <br><br>
+            <h2>
+              what is Multilevel Queue Scheduling Algorithm In Operating
+              System ?
+            </h2>
+            <p>
+              In the Multilevel Queue Scheduling algorithm, processes are
+              divided into multiple queues based on specific characteristics,
+              such as priority or memory requirements. Each queue uses its own
+              scheduling method, which could be
+              <a href="/os/scheduling_algorithms/fcfs.html">First-Come-First-Serve (FCFS)</a>,
+              <a href="/os/scheduling_algorithms/sjf1.html">Shortest Job First (SJF)</a>, or
+              <a href="/os/scheduling_algorithms/RR1.html">Round Robin (RR)</a>, depending on the types of processes it
+              holds. This algorithm
+              is often used in scenarios where different types of processes
+              need to be managed separately and effectively.
+            </p>
+            <picture>
+              <source media="(max-width:700px)" srcset="/assets/MLQ/MLQS_DEFINITIO_small.png">
+              <source media="(min-width:701px)" srcset="/assets/MLQ/MLQS_DEFINITION_nig.png">
+              <img loading="lazy" alt="multilevel queue scheduling definiton | expplanation of MLQ"
+                title="MULTILEVEL QUEUE SCHEDULING (MLQ) working step" />
+            </picture>
+          </section>
 
-            <section>
-              <h2>
-                Method for solving Multilevel Queue Scheduling (MLQ) in os
-              </h2>
-              <ol>
-                <li>
-                  Step 1: Organize the processes into different queues based on
-                  their priority or type.
-                </li>
-                <li>
-                  Step 2: Choose a scheduling algorithm for each queue that
-                  meets the specific needs of the processes it contains.
-                </li>
-                <li>
-                  Step 3: Establish the priority levels among the queues to
-                  decide which one should be prioritized when multiple queues
-                  have processes ready to execute.
-                </li>
-                <li>
-                  Step 4: When a process finishes its execution in its
-                  designated queue, it is removed; if not, it may be transferred
-                  to another queue according to the system's established rules.
-                </li>
-                <li>
-                  Step 5: Continue repeating these steps until all processes in
-                  every queue have been completed.
-                </li>
-              </ol>
-            </section>
-            <section>
-              <h2>
-                what are Advantages and Disadvantages of Multilevel Queue
-                Scheduling ?
-              </h2>
-              <table
-                style="border: 1px solid black"
-                class="table table-bordered"
-              >
-                <tr>
-                  <th>Advantages</th>
-                  <th>Disadvantages</th>
-                </tr>
-                <tr>
-                  <td>
-                    Enables specific scheduling policies for different types of
-                    processes, improving efficiency.
-                  </td>
-                  <td>
-                    Static division of queues may lead to underutilization of
-                    resources if queues are imbalanced.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Allows easy prioritization of system processes over user
-                    processes, enhancing system performance.
-                  </td>
-                  <td>
-                    Higher-priority queues can lead to starvation of processes
-                    in lower-priority queues.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Each queue can be customized to meet specific needs,
-                    offering flexibility.
-                  </td>
-                  <td>
-                    Complex to implement and maintain, especially with a large
-                    number of queues and processes.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Reduces the turnaround time for certain high-priority
-                    processes.
-                  </td>
-                  <td>
-                    Lack of interaction among queues can cause inefficiencies in
-                    overall CPU utilization.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Supports separation of long-term and short-term tasks.
-                  </td>
-                  <td>
-                    Static assignment of processes means changes to process
-                    priorities are challenging.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Helps manage processes that require different resources
-                    effectively.
-                  </td>
-                  <td>
-                    Once a process is assigned to a queue, it generally cannot
-                    be moved, reducing adaptability.
-                  </td>
-                </tr>
-              </table>
-            </section>
-            <section>
-              <h2>
-                Why Multilevel Queue Scheduling Is Better than Other Scheduling
-                Algorithms?
-              </h2>
+          <section>
+            <h2>
+              Method for solving Multilevel Queue Scheduling (MLQ) in os
+            </h2>
+            <ol>
+              <li>
+                Step 1: Organize the processes into different queues based on
+                their priority or type.
+              </li>
+              <li>
+                Step 2: Choose a scheduling algorithm for each queue that
+                meets the specific needs of the processes it contains.
+              </li>
+              <li>
+                Step 3: Establish the priority levels among the queues to
+                decide which one should be prioritized when multiple queues
+                have processes ready to execute.
+              </li>
+              <li>
+                Step 4: When a process finishes its execution in its
+                designated queue, it is removed; if not, it may be transferred
+                to another queue according to the system's established rules.
+              </li>
+              <li>
+                Step 5: Continue repeating these steps until all processes in
+                every queue have been completed.
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h2>
+              what are Advantages and Disadvantages of Multilevel Queue
+              Scheduling ?
+            </h2>
+            <table style="border: 1px solid black" class="table table-bordered">
+              <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+              </tr>
+              <tr>
+                <td>
+                  Enables specific scheduling policies for different types of
+                  processes, improving efficiency.
+                </td>
+                <td>
+                  Static division of queues may lead to underutilization of
+                  resources if queues are imbalanced.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Allows easy prioritization of system processes over user
+                  processes, enhancing system performance.
+                </td>
+                <td>
+                  Higher-priority queues can lead to starvation of processes
+                  in lower-priority queues.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Each queue can be customized to meet specific needs,
+                  offering flexibility.
+                </td>
+                <td>
+                  Complex to implement and maintain, especially with a large
+                  number of queues and processes.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Reduces the turnaround time for certain high-priority
+                  processes.
+                </td>
+                <td>
+                  Lack of interaction among queues can cause inefficiencies in
+                  overall CPU utilization.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Supports separation of long-term and short-term tasks.
+                </td>
+                <td>
+                  Static assignment of processes means changes to process
+                  priorities are challenging.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Helps manage processes that require different resources
+                  effectively.
+                </td>
+                <td>
+                  Once a process is assigned to a queue, it generally cannot
+                  be moved, reducing adaptability.
+                </td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <h2>
+              Why Multilevel Queue Scheduling Is Better than Other Scheduling
+              Algorithms?
+            </h2>
 
-              <p>
-                Multilevel Queue Scheduling is especially advantageous in
-                settings where various types of tasks need different scheduling
-                approaches. By enabling the use of distinct
-                <a
-                  href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html"
-                  >scheduling algorithms</a
-                >
-                for each queue and supporting priority-based processing, it can
-                achieve better performance than a single algorithm applied to
-                all processes. This makes it ideal for systems that need rapid
-                responses for certain types of tasks, as well as in multiuser
-                environments, where prioritizing system tasks can enhance
-                stability and responsiveness.
-              </p>
-            </section>
-            <section>
-              <h2>where multilevel queue scheduling (MLQ) used ?</h2>
-              <p>
-                Multilevel Queue Scheduling (MLQ) is used in computer systems
-                where different types of tasks need to be managed efficiently.
-                It's like organizing tasks into separate "queues" based on their
-                priority or type. <br />
-                for example :
-              </p>
-              <ul>
-                <li>
-                  <strong>1. Real-Time Systems: </strong>Tasks that need
-                  immediate attention, like handling incoming video streams or
-                  medical devices, can be placed in a high-priority queue.
-                </li>
-                <li>
-                  <strong>2. Interactive Systems: </strong>Tasks like typing on
-                  a keyboard or moving the mouse are placed in another queue to
-                  ensure they respond quickly.
-                </li>
-                <li>
-                  <strong>3. Batch Systems: </strong>Background tasks, such as
-                  file downloads or backups, are placed in a lower-priority
-                  queue since they don’t need instant results.
-                </li>
-              </ul>
-              <p>
-                By keeping tasks in separate queues, MLQ scheduling helps
-                systems run smoothly and prioritize the most critical tasks
-                first. It’s often used in operating systems and servers to
-                manage resources efficiently.
-              </p>
-            </section>
-
+            <p>
+              Multilevel Queue Scheduling is especially advantageous in
+              settings where various types of tasks need different scheduling
+              approaches. By enabling the use of distinct
+              <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a>
+              for each queue and supporting priority-based processing, it can
+              achieve better performance than a single algorithm applied to
+              all processes. This makes it ideal for systems that need rapid
+              responses for certain types of tasks, as well as in multiuser
+              environments, where prioritizing system tasks can enhance
+              stability and responsiveness.
+            </p>
+          </section>
+          <section>
+            <h2>where multilevel queue scheduling (MLQ) used ?</h2>
+            <p>
+              Multilevel Queue Scheduling (MLQ) is used in computer systems
+              where different types of tasks need to be managed efficiently.
+              It's like organizing tasks into separate "queues" based on their
+              priority or type. <br>
+              for example :
+            </p>
+            <ul>
+              <li>
+                <strong>1. Real-Time Systems: </strong>Tasks that need
+                immediate attention, like handling incoming video streams or
+                medical devices, can be placed in a high-priority queue.
+              </li>
+              <li>
+                <strong>2. Interactive Systems: </strong>Tasks like typing on
+                a keyboard or moving the mouse are placed in another queue to
+                ensure they respond quickly.
+              </li>
+              <li>
+                <strong>3. Batch Systems: </strong>Background tasks, such as
+                file downloads or backups, are placed in a lower-priority
+                queue since they don’t need instant results.
+              </li>
+            </ul>
+            <p>
+              By keeping tasks in separate queues, MLQ scheduling helps
+              systems run smoothly and prioritize the most critical tasks
+              first. It’s often used in operating systems and servers to
+              manage resources efficiently.
+            </p>
+          </section>
+          <section>
             <div id="question1">
               <div class="question">
                 <h2 id="fstque">
                   Question 1 : find the average Turn Around Time and Waiting
-                  Time of following processes using MULTILEVEL QUEUE Scheduling
-                  (MLQ) algorithm? Consider the following processes with their
-                  Arrival Time, Burst Time. Question criteria : <br />
-                  (1) There are three queue Q1, Q2, Q3<br />
+                  Time of following processes using MULTILEVEL QUEUE
+                  Scheduling (MLQ) algorithm? Consider the following processes
+                  with their Arrival Time, Burst Time. Question criteria :
+                  <br>
+                  (1) There are three queue Q1, Q2, Q3<br>
                   (2) In Q1 (sjf, non-preemptive), Q2(Round robin,
                   timestamp=2),Q3(FCFS)
                 </h2>
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
+                <table style="border: 1px solid black" class="table table-bordered">
                   <tr>
                     <th>Process</th>
                     <th>Arrival Time</th>
@@ -383,47 +335,23 @@
                 <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
                 <h4>Gantt Chart</h4>
-     
-                <picture>
-                  <source
-                    media="(max-width:700px)"
-                    srcset="/assets/MLQ/mlqs_mob_q1_1.png"
-                  />
-                  <source
-                    media="(min-width:701px)"
-                    srcset="/assets/MLQ/mlqs_comp_q1_1.png"
-                  />
-                  <img
-                    loading="lazy"
-                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
-                    id="MLQS1_1"
-                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
-                  />
-                </picture>
-      
 
                 <picture>
-                  <source
-                    media="(max-width:700px)"
-                    srcset="/assets/MLQ/mlqs_mob_q1_2.png"
-                  />
-                  <source
-                    media="(min-width:701px)"
-                    srcset="/assets/MLQ/mlqs_comp_q1_2.png"
-                  />
-                  <img
-                    loading="lazy"
-                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
-                    id="MLQS1_2"
-                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
-                  />
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/mlqs_mob_q1_1.png">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/mlqs_comp_q1_1.png">
+                  <img loading="lazy" alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1"
+                    id="MLQS1_1" title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 1" />
+                </picture>
+
+                <picture>
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/mlqs_mob_q1_2.png">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/mlqs_comp_q1_2.png">
+                  <img loading="lazy" alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2"
+                    id="MLQS1_2" title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 1 Solution | Gantt Chart part 2" />
                 </picture>
 
                 <h4>Calculations:</h4>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
+                <table style="border: 1px solid black" class="table table-bordered">
                   <tr>
                     <th>Process</th>
                     <th>Completion Time</th>
@@ -494,10 +422,7 @@
                   Question 2: Consider following process, with the cpu burst
                   time given in milliseconds
                 </h2>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
+                <table style="border: 1px solid black" class="table table-bordered">
                   <tr>
                     <th>Process</th>
                     <th>Burst Time</th>
@@ -577,12 +502,13 @@
                   </tr>
                 </table>
                 <h2>
-                  The system has three queues, first queue is having the highest
-                  priority with <a href="fcfs.html">FCFS scheduling</a>, seconf
-                  queue is having the middle priority with
+                  The system has three queues, first queue is having the
+                  highest priority with
+                  <a href="fcfs.html">FCFS scheduling</a>, seconf queue is
+                  having the middle priority with
                   <a href="ps1.html">priority scheduling</a> (1 is highest and
-                  100 is lowest priority) and, third queue is having the lowest
-                  priority with
+                  100 is lowest priority) and, third queue is having the
+                  lowest priority with
                   <a href="RR1.html">Round Robin scheduling</a>(T.S = 3). Draw
                   gantt charts to show execution using Multi Level Queue
                   Scheduling (MLQ). Also determine the process turnAround time
@@ -597,49 +523,24 @@
                 <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
                 <h4>Gantt Chart</h4>
-       
 
                 <picture>
-                  <source
-                    media="(max-width:700px)"
-                    srcset="/assets/MLQ/mlqs_mob_q2_1.png"
-                  />
-                  <source
-                    media="(min-width:701px)"
-                    srcset="/assets/MLQ/mlqs_comp_q2_1.png"
-                  />
-                  <img
-                    loading="lazy"
-                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
-                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
-                    id="MLQS2_1"
-                  />
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/mlqs_mob_q2_1.png">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/mlqs_comp_q2_1.png">
+                  <img loading="lazy" alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 1" id="MLQS2_1" />
                 </picture>
 
-       
                 <picture>
-                  <source
-                    media="(max-width:700px)"
-                    srcset="/assets/MLQ/mlqs_mob_q2_2.png"
-                  />
-                  <source
-                    media="(min-width:701px)"
-                    srcset="/assets/MLQ/mlqs_comp_q2_2.png"
-                  />
-                  <img
-                    loading="lazy"
-                    src="/assets/MLQ/mlqs_comp_q2_2.png"
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/mlqs_mob_q2_2.png">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/mlqs_comp_q2_2.png">
+                  <img loading="lazy" src="/assets/MLQ/mlqs_comp_q2_2.png"
                     alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2"
-                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2"
-                    id="MLQS2_2"
-                  />
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 2 Solution | Gantt Chart part 2" id="MLQS2_2" />
                 </picture>
 
                 <h4>Calculations:</h4>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
+                <table style="border: 1px solid black" class="table table-bordered">
                   <tr>
                     <th>Process</th>
                     <th>Completion Time</th>
@@ -719,19 +620,17 @@
               <div class="question">
                 <h2>
                   Question 3 : find the average Turn Around Time and Waiting
-                  Time of following processes using MULTILEVEL QUEUE Scheduling
-                  (MLQ) algorithm? Consider the following processes with their
-                  Arrival Time, Burst Time. Question criteria : <br />
-                  (1) There are three queue Q1, Q2, Q3<br />
+                  Time of following processes using MULTILEVEL QUEUE
+                  Scheduling (MLQ) algorithm? Consider the following processes
+                  with their Arrival Time, Burst Time. Question criteria :
+                  <br>
+                  (1) There are three queue Q1, Q2, Q3<br>
                   (2) In Q1 (Priority scheduling, premptive), Q2(sjf,
                   preemptive) , Q3(Round robin, timestamp=1) (for priority
                   scheduling, take 1 is the highest priority)
                 </h2>
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
+                <table style="border: 1px solid black" class="table table-bordered">
                   <tr>
                     <th>Process</th>
                     <th>Arrival Time</th>
@@ -797,134 +696,107 @@
                   </tr>
                 </table>
               </div>
-              <div class="solution"></div>
+              <div class="solution">
+                <h3>Solution:</h3>
+                <h4>Formula:</h4>
+                <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+                <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
 
-              <h3>Solution:</h3>
-              <h4>Formula:</h4>
-              <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-              <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+                <h4>Gantt Chart</h4>
 
-              <h4>Gantt Chart</h4>
+                <picture>
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/mlqs_mob_q3_1.png">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/mlqs_comp_q3_1.png">
+                  <img loading="lazy" src="/assets/MLQ/mlqs_comp_q3_1.png"
+                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1" id="MLQS3_1">
+                </picture>
+                <picture>
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/mlqs_mob_q3_2.png">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/mlqs_comp_q3_2.png">
+                  <img loading="lazy" src="/assets/MLQ/mlqs_comp_q3_2.png"
+                    alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2" id="MLQS3_2" />
+                </picture>
+                <h4>Calculations:</h4>
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th>Completion Time</th>
+                    <th>Turnaround Time (TAT)</th>
+                    <th>Waiting Time (WT)</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>25</td>
+                    <td>25</td>
+                    <td>17</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>29</td>
+                    <td>28</td>
+                    <td>24</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>14</td>
+                    <td>12</td>
+                    <td>9</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>18</td>
+                    <td>15</td>
+                    <td>11</td>
+                  </tr>
+                  <tr>
+                    <td>P7</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>P8</td>
+                    <td>11</td>
+                    <td>7</td>
+                    <td>5</td>
+                  </tr>
+                </table>
+                <h4>Average Turnaround Time:</h4>
+                <p>(25 + 7 + 28 + 12 + 1 + 15 + 6 + 7) / 8 = 12.625</p>
 
-
-
-              <picture>
-                <source
-                  media="(max-width:700px)"
-                  srcset="/assets/MLQ/mlqs_mob_q3_1.png"
-                />
-                <source
-                  media="(min-width:701px)"
-                  srcset="/assets/MLQ/mlqs_comp_q3_1.png"
-                />
-                <img
-                  loading="lazy"
-                  src="/assets/MLQ/mlqs_comp_q3_1.png"
-                  alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
-                  title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 1"
-                  id="MLQS3_1"
-                />
-              </picture>
-              <picture>
-                <source
-                  media="(max-width:700px)"
-                  srcset="/assets/MLQ/mlqs_mob_q3_2.png"
-                />
-                <source
-                  media="(min-width:701px)"
-                  srcset="/assets/MLQ/mlqs_comp_q3_2.png"
-                />
-                <img
-                  loading="lazy"
-                  src="/assets/MLQ/mlqs_comp_q3_2.png"
-                  alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
-                  title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 3 Solution | Gantt Chart part 2"
-                  id="MLQS3_2"
-                />
-              </picture>
-              <h4>Calculations:</h4>
-              <table
-                style="border: 1px solid black"
-                class="table table-bordered"
-              >
-                <tr>
-                  <th>Process</th>
-                  <th>Completion Time</th>
-                  <th>Turnaround Time (TAT)</th>
-                  <th>Waiting Time (WT)</th>
-                </tr>
-                <tr>
-                  <td>P1</td>
-                  <td>25</td>
-                  <td>25</td>
-                  <td>17</td>
-                </tr>
-                <tr>
-                  <td>P2</td>
-                  <td>8</td>
-                  <td>7</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>P3</td>
-                  <td>29</td>
-                  <td>28</td>
-                  <td>24</td>
-                </tr>
-                <tr>
-                  <td>P4</td>
-                  <td>14</td>
-                  <td>12</td>
-                  <td>9</td>
-                </tr>
-                <tr>
-                  <td>P5</td>
-                  <td>3</td>
-                  <td>1</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <td>P6</td>
-                  <td>18</td>
-                  <td>15</td>
-                  <td>11</td>
-                </tr>
-                <tr>
-                  <td>P7</td>
-                  <td>9</td>
-                  <td>6</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td>P8</td>
-                  <td>11</td>
-                  <td>7</td>
-                  <td>5</td>
-                </tr>
-              </table>
-              <h4>Average Turnaround Time:</h4>
-              <p>(25 + 7 + 28 + 12 + 1 + 15 + 6 + 7) / 8 = 12.625</p>
-
-              <h4>Average Waiting Time:</h4>
-              <p>(17 + 1 + 24 + 9 + 0 + 11 + 5 + 5) / 8 = 9</p>
+                <h4>Average Waiting Time:</h4>
+                <p>(17 + 1 + 24 + 9 + 0 + 11 + 5 + 5) / 8 = 9</p>
+              </div>
             </div>
             <div id="question4">
               <div class="question">
                 <h2>
                   Question 4 : find the average Turn Around Time and Waiting
-                  Time of following processes using MULTILEVEL QUEUE Scheduling
-                  (MLQ) algorithm? Consider the following processes with their
-                  Arrival Time, Burst Time. Question criteria : <br />
-                  (1) There are four queue Q1, Q2, Q3, Q4<br />
+                  Time of following processes using MULTILEVEL QUEUE
+                  Scheduling (MLQ) algorithm? Consider the following processes
+                  with their Arrival Time, Burst Time. Question criteria :
+                  <br>
+                  (1) There are four queue Q1, Q2, Q3, Q4<br>
                   (2) In Q1(Round robin, timestamp=1), Q2(preemptive Priority
                   scheduling), Q3(preemptive sjf ), Q4(FCFS) (for priority
                   scheduling, take 1 is the highest priority)
                 </h2>
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
+                <table style="border: 1px solid black" class="table table-bordered">
                   <tr>
                     <th>Process</th>
                     <th>Arrival Time</th>
@@ -1013,64 +885,30 @@
                 <h4>Gantt Chart</h4>
 
                 <picture>
-                  <source
-                    media="(max-width:700px)"
-                    srcset="/assets/MLQ/mlqs_mob_q4_1.png"
-                  />
-                  <source
-                    media="(min-width:701px)"
-                    srcset="/assets/MLQ/mlqs_comp_q4_1.png"
-                  />
-                  <img
-                    loading="lazy"
-                    src="/assets/MLQ/mlqs_comp_q4_1.png"
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/mlqs_mob_q4_1.png">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/mlqs_comp_q4_1.png">
+                  <img loading="lazy" src="/assets/MLQ/mlqs_comp_q4_1.png"
                     alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 1"
-                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 1"
-                    id="MLQS4_1"
-                  />
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 1" id="MLQS4_1" />
                 </picture>
 
                 <picture>
-                  <source
-                    media="(max-width:700px)"
-                    srcset="/assets/MLQ/mlqs_mob_q4_2.png"
-                  />
-                  <source
-                    media="(min-width:701px)"
-                    srcset="/assets/MLQ/mlqs_comp_q4_2.png"
-                  />
-                  <img
-                    loading="lazy"
-                    src="/assets/MLQ/mlqs_comp_q4_2.png"
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/mlqs_mob_q4_2.png">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/mlqs_comp_q4_2.png">
+                  <img loading="lazy" src="/assets/MLQ/mlqs_comp_q4_2.png"
                     alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 2"
-                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 2"
-                    id="MLQS4_2"
-                  />
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 2" id="MLQS4_2" />
                 </picture>
 
-
                 <picture>
-                  <source
-                    media="(max-width:700px)"
-                    srcset="/assets/MLQ/mlqs_mob_q4_3.png"
-                  />
-                  <source
-                    media="(min-width:701px)"
-                    srcset="/assets/MLQ/mlqs_comp_q4_3.png"
-                  />
-                  <img
-                    loading="lazy"
-                    src="/assets/MLQ/mlqs_comp_q4_3.png"
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/mlqs_mob_q4_3.png">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/mlqs_comp_q4_3.png">
+                  <img loading="lazy" src="/assets/MLQ/mlqs_comp_q4_3.png"
                     alt="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 3"
-                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 3"
-                    id="MLQS4_3"
-                  />
+                    title="MULTILEVEL QUEUE SCHEDULING (MLQ) | Question 4 Solution | Gantt Chart part 3" id="MLQS4_3" />
                 </picture>
                 <h4>Calculations:</h4>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
+                <table style="border: 1px solid black" class="table table-bordered">
                   <tr>
                     <th>Process</th>
                     <th>Completion Time</th>
@@ -1146,67 +984,47 @@
                 <p>(1 + 0 + 1 + 1 + 31 + 3 + 0 + 6 + 0 + 6) / 10 = 4.9</p>
               </div>
             </div>
-            <section>
-              <h2>
-                Previous Year Questions (PYQs) Of Multilevel Queue Scheduling
-                (MLQ)
-              </h2>
-              <p>
-                Below is a scanned image of a question on multilevel queue
-                Scheduling (MLQ) in operating system
-              </p>
-              <div id="PYQ1">
-                <div class="question">
-                  <picture>
-                    <source
-                      media="(max-width:700px)"
-                      srcset="/assets/MLQ/MLQ_pyq.jpg"
-                    />
-                    <source
-                      media="(min-width:701px)"
-                      srcset="/assets/MLQ/MLQ_pyq.jpg"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/MLQ/MLQ_pyq.jpg"
-                      alt="Previous Year class test question from session 2023-25 on multilevel queue Scheduling (MLQ) in operating system"
-                      title="MLQ scheduling question | PYQs"
-                    />
-                  </picture>
-                </div>
+          </section>
+          <section>
+            <h2>
+              Previous Year Questions (PYQs) Of Multilevel Queue Scheduling
+              (MLQ)
+            </h2>
+            <p>
+              Below is a scanned image of a question on multilevel queue
+              Scheduling (MLQ) in operating system
+            </p>
+            <div id="PYQ1">
+              <div class="question">
+                <picture>
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/MLQ_pyq.jpg">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/MLQ_pyq.jpg">
+                  <img loading="lazy" src="/assets/MLQ/MLQ_pyq.jpg"
+                    alt="Previous Year class test question from session 2023-25 on multilevel queue Scheduling (MLQ) in operating system"
+                    title="MLQ scheduling question | PYQs" />
+                </picture>
               </div>
-              <br /><br />
-              <div id="PYQ2">
-                <div class="question">
-                  <picture>
-                    <source
-                      media="(max-width:700px)"
-                      srcset="/assets/MLQ/MLQ_pyq2.jpg"
-                    />
-                    <source
-                      media="(min-width:701px)"
-                      srcset="/assets/MLQ/MLQ_pyq2.jpg"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/MLQ/MLQ_pyq2.jpg"
-                      alt="Previous Year Question from session 2023-25 on multilevel queue Scheduling (MLQ) in operating system"
-                      title="MLQ scheduling question | PYQs"
-                      id="pyq1"
-                    />
-                  </picture>
-                </div>
+            </div>
+            <br><br>
+            <div id="PYQ2">
+              <div class="question">
+                <picture>
+                  <source media="(max-width:700px)" srcset="/assets/MLQ/MLQ_pyq2.jpg">
+                  <source media="(min-width:701px)" srcset="/assets/MLQ/MLQ_pyq2.jpg">
+                  <img loading="lazy" src="/assets/MLQ/MLQ_pyq2.jpg"
+                    alt="Previous Year Question from session 2023-25 on multilevel queue Scheduling (MLQ) in operating system"
+                    title="MLQ scheduling question | PYQs" id="pyq1" />
+                </picture>
               </div>
-            </section>
-          </article>
-        </main>
-      </div>
-      <div id="right_content">
-        
-      </div>
+            </div>
+          </section>
+        </article>
+      </main>
     </div>
+    <div id="right_content"></div>
+  </div>
 
+  <script type="module" src="commonthings.min.js"></script>
+</body>
 
-    <script type="module" src="commonthings.min.js"></script>
-  </body>
 </html>
