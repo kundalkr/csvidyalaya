@@ -21,13 +21,13 @@
       #final_1_4 {
         height: auto;
         width: 630px;
-      
       }
       @media (width<=770px) {
         #final_1_1,
         #final_1_2,
         #final_1_3,
-        #final_1_4,img {
+        #final_1_4,
+        img {
           height: auto;
           width: 400px;
         }
@@ -35,512 +35,537 @@
     </style>
   </head>
   <body>
-
-    <div class="title_date">
-      <h1>Banker's Algorithm Questions and step by step solution</h1>
-
-      
-    </div>
-   
-    <br />
-    <p>
-      Here are 17 questions on Bankers algorithms . Each question is presented
-      in a table format. each question is solved in explained form.
-    </p>
-    <br />
-
-    <main>
-      <div class="container">
-        <div>
-          <a
-            href="#fstque"
-            class="btn btn-primary btn-lg active"
-            role="button"
-            aria-pressed="true"
-            >Jump To Question</a
-          >
-          <br /><br />
-
-          <h2>What Is Banker's Algorithm in Operating System ?</h2>
-          <p>
-            The Banker's Algorithm is a resource allocation and deadlock
-            avoidance algorithm that tests whether the system can allocate
-            resources to each process in a safe sequence. It works by simulating
-            the allocation of predetermined maximum resources to each process
-            and checking the system's state to prevent deadlock.
-          </p>
-
-          <h2>What are the Method to Solve Banker's Algorithm ?</h2>
-          <ul>
-            <li>
-              Step 1: Identify the available resources and maximum demand of
-              each process.
-            </li>
-            <li>
-              Step 2: Calculate the "Need" matrix by subtracting the allocated
-              resources from the maximum demand for each process.
-            </li>
-            <li>
-              Step 3: Check if the system has a safe state by allocating
-              resources based on the "Need" matrix while ensuring the system
-              remains in a safe state.
-            </li>
-            <li>
-              Step 4: Allocate resources to processes only if they satisfy the
-              "Need" matrix and resources are available.
-            </li>
-            <li>
-              Step 5: If a safe sequence is found, allocate resources; if not,
-              resources remain unallocated to prevent deadlock.
-            </li>
-          </ul>
-
-          <h2>
-            What are the Advantages and Disadvantages of Banker's Algorithm
-          </h2>
-          <table border="1" class="table table-bordered">
-            <tr>
-              <th>Advantages</th>
-              <th>Disadvantages</th>
-            </tr>
-            <tr>
-              <td>Effective in preventing deadlocks</td>
-              <td>Works only with known resources and maximum demand</td>
-            </tr>
-            <tr>
-              <td>Ensures the system remains in a safe state</td>
-              <td>Complex and time-consuming calculations</td>
-            </tr>
-            <tr>
-              <td>Prevents the starvation of processes</td>
-              <td>Not suitable for systems with unpredictable resources</td>
-            </tr>
-            <tr>
-              <td>Maintains system stability and availability</td>
-              <td>Requires significant memory and CPU time</td>
-            </tr>
-            <tr>
-              <td>Identifies safe and unsafe states</td>
-              <td>Inapplicable to real-time systems</td>
-            </tr>
-            <tr>
-              <td>Applicable in systems with fixed resources</td>
-              <td>Does not allow resource sharing flexibility</td>
-            </tr>
-          </table>
-
-          <h2>Why Banker's Algorithm is Better than Other Algorithms?</h2>
-          <p>
-            Banker's Algorithm is better than other deadlock prevention
-            algorithms as it dynamically checks for safe and unsafe states based
-            on each process's resource needs, ensuring efficient resource
-            utilization. Unlike static resource allocation methods, it provides
-            a safe sequence, preventing deadlock while allowing processes to
-            request resources flexibly. This adaptability makes it effective in
-            multi-process systems with stable resources.
-          </p>
-        </div>
-        <div id="question1">
-          <div class="question">
-            <h2 id="fstque">
-              question 1 : Answer the question using banker's algorithms. <br />
-              consider the following snapshot(Available in table form) of a
-              system:
-            </h2>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th colspan="4" style="text-align: center">Available</th>
-              </tr>
-              <tr>
-                <th>R1</th>
-                <th>R2</th>
-                <th>R3</th>
-                <th>R4</th>
-              </tr>
-              <tr>
-                <td>0</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th colspan="4">Current Allocation</th>
-                <th colspan="4">Maximum Demand</th>
-              </tr>
-              <tr>
-                <th></th>
-                <th>R1</th>
-                <th>R2</th>
-                <th>R3</th>
-                <th>R4</th>
-                <th>R1</th>
-                <th>R2</th>
-                <th>R3</th>
-                <th>R4</th>
-              </tr>
-              <tr>
-                <th>P1</th>
-                <td>2</td>
-                <td>0</td>
-                <td>1</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <th>P2</th>
-                <td>2</td>
-                <td>1</td>
-                <td>2</td>
-                <td>0</td>
-                <td>2</td>
-                <td>4</td>
-                <td>3</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <th>P3</th>
-                <td>1</td>
-                <td>0</td>
-                <td>3</td>
-                <td>3</td>
-                <td>4</td>
-                <td>2</td>
-                <td>4</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <th>P4</th>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>3</td>
-                <td>4</td>
-                <td>3</td>
-                <td>5</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <th>P5</th>
-                <td>1</td>
-                <td>3</td>
-                <td>3</td>
-                <td>2</td>
-                <td>2</td>
-                <td>5</td>
-                <td>4</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <th>P6</th>
-                <td>0</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-              </tr>
-            </table>
-            <p>
-              Is the system is in Safe state? If yes, then find out the safe
-              sequences.
-            </p>
-          </div>
-          <div class="solution">
-            <h2>solution :</h2>
-            <h3>All Formulas</h3>
-            <p>Resources = Available + Σ (allocation)</p>
-            <p>Available = Resources - Σ (allocation)</p>
-            <p>Need = maximum - Allocation</p>
-            <p>
-              It is in safe state <br />
-              the safe sequences are : <br />
-            </p>
-            <div style="border: 2px solid green; text-align: center">
-              <p>
-                after assigning the resources to any process we do this
-                calculation for finding the available resources
-              </p>
-              <p>available = available + Allocation[process that you assign]</p>
-              <p><b>or</b></p>
-              <p>
-                [new available resources] = [available resource before
-                assigning] + [value of process at allocation time].
-              </p>
-              <p>
-                we assign the available resources to P1 then available resource
-                is
-              </p>
-              <p>new available resources = (0,2,1,1) + (2,0,1,2) = (2,2,2,3)</p>
-            </div>
-            <br />
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/bankers_algo/1_final.jpg"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/bankers_algo/1_final.jpg"
-              />
-
-              <img  loading="lazy"
-                loading="lazy"
-                src="/assets/bankers_algo/1_final.jpg"
-                alt="bankers algorithms 1st question solution"
-                title="bankers algorithms questions solution"
-                id="final_1_1"
-              />
-            </picture>
-            <br />
-            <p>
-              after assigning the resources to process P1 we do this calculation
-            </p>
-            <p>
-              available = available + Allocation[P1] = (0,2,1,1) + (2,0,1,2) =
-              (2,2,2,3)
-            </p>
-
-            <br />
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/bankers_algo/2_final.jpg"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/bankers_algo/2_final.jpg"
-              />
-
-              <img  loading="lazy"
-                loading="lazy"
-                src="/assets/bankers_algo/2_final.jpg"
-                alt="bankers algorithms 1st question solution"
-                title="bankers algorithms questions solution"
-                id="final_1_2"
-              /> </picture
-            ><br /><br />
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/bankers_algo/3_final.jpg"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/bankers_algo/3_final.jpg"
-              />
-
-              <img  loading="lazy"
-                loading="lazy"
-                src="/assets/bankers_algo/3_final.jpg"
-                alt="bankers algorithms 1st question solution"
-                title="bankers algorithms questions solution"
-                id="final_1_3"
-              />
-            </picture>
-            <br /><br />
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/bankers_algo/4_final.jpg"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/bankers_algo/4_final.jpg"
-              />
-
-              <img  loading="lazy"
-                loading="lazy"
-                src="/assets/bankers_algo/4_final.jpg"
-                alt="bankers algorithms 1st question solution"
-                title="bankers algorithms questions solution"
-                id="final_1_4"
-              />
-            </picture>
-            <p>
-              one of the safe sequences is :- <b>P1 > P4 > P2 > P3 > P5 > P6</b>
-            </p>
-          </div>
-        </div>
-        <div id="question2">
-          <div class="question">
-            <h2>
-              Question 2 : consider the following snapshot(Available in table
-              form) of a system:
-            </h2>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th colspan="4" style="text-align: center">Available</th>
-              </tr>
-              <tr>
-                <th>R1</th>
-                <th>R2</th>
-                <th>R3</th>
-                <th>R4</th>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-              </tr>
-            </table>
-            <table border="1" class="table table-bordered">
-              <tr>
-                <th>Process</th>
-                <th colspan="4">Current Allocation</th>
-                <th colspan="4">Maximum Demand</th>
-              </tr>
-              <tr>
-                <th></th>
-                <th>R1</th>
-                <th>R2</th>
-                <th>R3</th>
-                <th>R4</th>
-                <th>R1</th>
-                <th>R2</th>
-                <th>R3</th>
-                <th>R4</th>
-              </tr>
-              <tr>
-                <th>P1</th>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>2</td>
-                <td>1</td>
-                <td>3</td>
-                <td>3</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <th>P2</th>
-                <td>1</td>
-                <td>3</td>
-                <td>0</td>
-                <td>0</td>
-                <td>2</td>
-                <td>4</td>
-                <td>3</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <th>P3</th>
-                <td>2</td>
-                <td>0</td>
-                <td>3</td>
-                <td>4</td>
-                <td>4</td>
-                <td>3</td>
-                <td>5</td>
-                <td>6</td>
-              </tr>
-              <tr>
-                <th>P4</th>
-                <td>2</td>
-                <td>1</td>
-                <td>2</td>
-                <td>2</td>
-                <td>4</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <th>P5</th>
-                <td>0</td>
-                <td>3</td>
-                <td>3</td>
-                <td>2</td>
-                <td>0</td>
-                <td>6</td>
-                <td>5</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <th>P6</th>
-                <td>1</td>
-                <td>2</td>
-                <td>4</td>
-                <td>4</td>
-                <td>4</td>
-                <td>3</td>
-                <td>5</td>
-                <td>4</td>
-              </tr>
-            </table>
-            <p>Answer the following question using the Banker's algorithm :</p>
-            <p>(a) Is the system in a safe state ?</p>
-            <p>
-              (b) If a request from process p3 arrives for (0, 1, 1, 0), can the
-              request be granted immediately?
-            </p>
-          </div>
-          <div class="solution"></div>
-        </div>
-        <div id="down"></div>
-        <!-- <h2>Available</h2> -->
-        <section>
-          <h2>Previous Year Question (PYQs) of Bankers Algorithms</h2>
-
-          <picture>
-            <source
-              media="(max-width:700px)"
-              srcset="/assets/bankers_algo/bankers_algo2022-24.jpg"
-            />
-            <source
-              media="(min-width:701px)"
-              srcset="/assets/bankers_algo/bankers_algo2022-24.jpg"
-            />
-            <img  loading="lazy"
-              src="/assets/bankers_algo/bankers_algo2022-24.jpg"
-              alt="Previous Year class test question from session 2022-24 on bankers algorithms in operating system"
-              title="MLQ scheduling question | PYQs"
-            />
-          </picture>
-          <br /><br />
-          <picture>
-            <source
-              media="(max-width:700px)"
-              srcset="/assets/bankers_algo/bankers_algo2023_25.jpg"
-            />
-            <source
-              media="(min-width:701px)"
-              srcset="/assets/bankers_algo/bankers_algo2023_25.jpg"
-            />
-            <img  loading="lazy"
-              src="/assets/bankers_algo/bankers_algo2023_25.jpg"
-              alt="Previous Year class test question from session 2023-25 on bankers algorithms in operating system"
-              title="MLQ scheduling question | PYQs"
-            />
-          </picture>
-          <br /><br />
-          <picture>
-            <source
-              media="(max-width:700px)"
-              srcset="/assets/bankers_algo/bankers_algo2024-26.jpg"
-            />
-            <source
-              media="(min-width:701px)"
-              srcset="/assets/bankers_algo/bankers_algo2024-26.jpg"
-            />
-            <img  loading="lazy"
-              src="/assets/bankers_algo/bankers_algo2024-26.jpg"
-              alt="Previous Year class test question from session 2024-26 on bankers algorithms in operating system"
-              title="MLQ scheduling question | PYQs"
-            />
-          </picture>
-          <br /><br />
-        </section>
+    <div id="three_section">
+      <div id="left_content" class="sticky-top">
+        <ul></ul>
       </div>
-    </main>
+      <div id="main_content">
+        <main>
+          <div id="title_date">
+            <h1>Banker's Algorithm Questions and step by step solution</h1>
+          </div>
+          <section>
+            <p>
+              Here are 17 questions on Bankers algorithms . Each question is
+              presented in a table format. each question is solved in explained
+              form.
+            </p>
+            <div>
+              <a
+                href="#fstque"
+                class="btn btn-primary btn-lg active"
+                role="button"
+                aria-pressed="true"
+                >Jump To Question</a
+              >
+              <br /><br />
+
+              <h2>What Is Banker's Algorithm in Operating System ?</h2>
+              <p>
+                The Banker's Algorithm is a resource allocation and deadlock
+                avoidance algorithm that tests whether the system can allocate
+                resources to each process in a safe sequence. It works by
+                simulating the allocation of predetermined maximum resources to
+                each process and checking the system's state to prevent
+                deadlock.
+              </p>
+
+              <h2>What are the Method to Solve Banker's Algorithm ?</h2>
+              <ul>
+                <li>
+                  Step 1: Identify the available resources and maximum demand of
+                  each process.
+                </li>
+                <li>
+                  Step 2: Calculate the "Need" matrix by subtracting the
+                  allocated resources from the maximum demand for each process.
+                </li>
+                <li>
+                  Step 3: Check if the system has a safe state by allocating
+                  resources based on the "Need" matrix while ensuring the system
+                  remains in a safe state.
+                </li>
+                <li>
+                  Step 4: Allocate resources to processes only if they satisfy
+                  the "Need" matrix and resources are available.
+                </li>
+                <li>
+                  Step 5: If a safe sequence is found, allocate resources; if
+                  not, resources remain unallocated to prevent deadlock.
+                </li>
+              </ul>
+
+              <h2>
+                What are the Advantages and Disadvantages of Banker's Algorithm
+              </h2>
+              <table border="1" class="table table-bordered">
+                <tr>
+                  <th>Advantages</th>
+                  <th>Disadvantages</th>
+                </tr>
+                <tr>
+                  <td>Effective in preventing deadlocks</td>
+                  <td>Works only with known resources and maximum demand</td>
+                </tr>
+                <tr>
+                  <td>Ensures the system remains in a safe state</td>
+                  <td>Complex and time-consuming calculations</td>
+                </tr>
+                <tr>
+                  <td>Prevents the starvation of processes</td>
+                  <td>Not suitable for systems with unpredictable resources</td>
+                </tr>
+                <tr>
+                  <td>Maintains system stability and availability</td>
+                  <td>Requires significant memory and CPU time</td>
+                </tr>
+                <tr>
+                  <td>Identifies safe and unsafe states</td>
+                  <td>Inapplicable to real-time systems</td>
+                </tr>
+                <tr>
+                  <td>Applicable in systems with fixed resources</td>
+                  <td>Does not allow resource sharing flexibility</td>
+                </tr>
+              </table>
+
+              <h2>Why Banker's Algorithm is Better than Other Algorithms?</h2>
+              <p>
+                Banker's Algorithm is better than other deadlock prevention
+                algorithms as it dynamically checks for safe and unsafe states
+                based on each process's resource needs, ensuring efficient
+                resource utilization. Unlike static resource allocation methods,
+                it provides a safe sequence, preventing deadlock while allowing
+                processes to request resources flexibly. This adaptability makes
+                it effective in multi-process systems with stable resources.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div id="question1">
+              <div class="question">
+                <h2 id="fstque">
+                  question 1 : Answer the question using banker's algorithms.
+                  <br />
+                  consider the following snapshot(Available in table form) of a
+                  system:
+                </h2>
+                <table border="1" class="table table-bordered">
+                  <tr>
+                    <th colspan="4" style="text-align: center">Available</th>
+                  </tr>
+                  <tr>
+                    <th>R1</th>
+                    <th>R2</th>
+                    <th>R3</th>
+                    <th>R4</th>
+                  </tr>
+                  <tr>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                <table border="1" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th colspan="4">Current Allocation</th>
+                    <th colspan="4">Maximum Demand</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>R1</th>
+                    <th>R2</th>
+                    <th>R3</th>
+                    <th>R4</th>
+                    <th>R1</th>
+                    <th>R2</th>
+                    <th>R3</th>
+                    <th>R4</th>
+                  </tr>
+                  <tr>
+                    <th>P1</th>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <th>P2</th>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <th>P3</th>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <th>P4</th>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <th>P5</th>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <th>P6</th>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                <p>
+                  Is the system is in Safe state? If yes, then find out the safe
+                  sequences.
+                </p>
+              </div>
+              <div class="solution">
+                <h2>solution :</h2>
+                <h3>All Formulas</h3>
+                <p>Resources = Available + Σ (allocation)</p>
+                <p>Available = Resources - Σ (allocation)</p>
+                <p>Need = maximum - Allocation</p>
+                <p>
+                  It is in safe state <br />
+                  the safe sequences are : <br />
+                </p>
+                <div style="border: 2px solid green; text-align: center">
+                  <p>
+                    after assigning the resources to any process we do this
+                    calculation for finding the available resources
+                  </p>
+                  <p>
+                    available = available + Allocation[process that you assign]
+                  </p>
+                  <p><b>or</b></p>
+                  <p>
+                    [new available resources] = [available resource before
+                    assigning] + [value of process at allocation time].
+                  </p>
+                  <p>
+                    we assign the available resources to P1 then available
+                    resource is
+                  </p>
+                  <p>
+                    new available resources = (0,2,1,1) + (2,0,1,2) = (2,2,2,3)
+                  </p>
+                </div>
+                <br />
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/bankers_algo/1_final.jpg"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/bankers_algo/1_final.jpg"
+                  />
+
+                  <img
+                    loading="lazy"
+                    loading="lazy"
+                    src="/assets/bankers_algo/1_final.jpg"
+                    alt="bankers algorithms 1st question solution"
+                    title="bankers algorithms questions solution"
+                    id="final_1_1"
+                  />
+                </picture>
+                <br />
+                <p>
+                  after assigning the resources to process P1 we do this
+                  calculation
+                </p>
+                <p>
+                  available = available + Allocation[P1] = (0,2,1,1) + (2,0,1,2)
+                  = (2,2,2,3)
+                </p>
+
+                <br />
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/bankers_algo/2_final.jpg"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/bankers_algo/2_final.jpg"
+                  />
+
+                  <img
+                    loading="lazy"
+                    loading="lazy"
+                    src="/assets/bankers_algo/2_final.jpg"
+                    alt="bankers algorithms 1st question solution"
+                    title="bankers algorithms questions solution"
+                    id="final_1_2"
+                  /> </picture
+                ><br /><br />
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/bankers_algo/3_final.jpg"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/bankers_algo/3_final.jpg"
+                  />
+
+                  <img
+                    loading="lazy"
+                    loading="lazy"
+                    src="/assets/bankers_algo/3_final.jpg"
+                    alt="bankers algorithms 1st question solution"
+                    title="bankers algorithms questions solution"
+                    id="final_1_3"
+                  />
+                </picture>
+                <br /><br />
+                <picture>
+                  <source
+                    media="(max-width:700px)"
+                    srcset="/assets/bankers_algo/4_final.jpg"
+                  />
+                  <source
+                    media="(min-width:701px)"
+                    srcset="/assets/bankers_algo/4_final.jpg"
+                  />
+
+                  <img
+                    loading="lazy"
+                    loading="lazy"
+                    src="/assets/bankers_algo/4_final.jpg"
+                    alt="bankers algorithms 1st question solution"
+                    title="bankers algorithms questions solution"
+                    id="final_1_4"
+                  />
+                </picture>
+                <p>
+                  one of the safe sequences is :-
+                  <b>P1 > P4 > P2 > P3 > P5 > P6</b>
+                </p>
+              </div>
+            </div>
+            <div id="question2">
+              <div class="question">
+                <h2>
+                  Question 2 : consider the following snapshot(Available in
+                  table form) of a system:
+                </h2>
+                <table border="1" class="table table-bordered">
+                  <tr>
+                    <th colspan="4" style="text-align: center">Available</th>
+                  </tr>
+                  <tr>
+                    <th>R1</th>
+                    <th>R2</th>
+                    <th>R3</th>
+                    <th>R4</th>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+                <table border="1" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th colspan="4">Current Allocation</th>
+                    <th colspan="4">Maximum Demand</th>
+                  </tr>
+                  <tr>
+                    <th></th>
+                    <th>R1</th>
+                    <th>R2</th>
+                    <th>R3</th>
+                    <th>R4</th>
+                    <th>R1</th>
+                    <th>R2</th>
+                    <th>R3</th>
+                    <th>R4</th>
+                  </tr>
+                  <tr>
+                    <th>P1</th>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <th>P2</th>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th>P3</th>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>6</td>
+                  </tr>
+                  <tr>
+                    <th>P4</th>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <th>P5</th>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <th>P6</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>4</td>
+                  </tr>
+                </table>
+                <p>
+                  Answer the following question using the Banker's algorithm :
+                </p>
+                <p>(a) Is the system in a safe state ?</p>
+                <p>
+                  (b) If a request from process p3 arrives for (0, 1, 1, 0), can
+                  the request be granted immediately?
+                </p>
+              </div>
+              <div class="solution"></div>
+            </div>
+            <div id="down"></div>
+            <!-- <h2>Available</h2> -->
+            <section>
+              <h2>Previous Year Question (PYQs) of Bankers Algorithms</h2>
+
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/bankers_algo/bankers_algo2022-24.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/bankers_algo/bankers_algo2022-24.jpg"
+                />
+                <img
+                  loading="lazy"
+                  src="/assets/bankers_algo/bankers_algo2022-24.jpg"
+                  alt="Previous Year class test question from session 2022-24 on bankers algorithms in operating system"
+                  title="MLQ scheduling question | PYQs"
+                />
+              </picture>
+              <br /><br />
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/bankers_algo/bankers_algo2023_25.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/bankers_algo/bankers_algo2023_25.jpg"
+                />
+                <img
+                  loading="lazy"
+                  src="/assets/bankers_algo/bankers_algo2023_25.jpg"
+                  alt="Previous Year class test question from session 2023-25 on bankers algorithms in operating system"
+                  title="MLQ scheduling question | PYQs"
+                />
+              </picture>
+              <br /><br />
+              <picture>
+                <source
+                  media="(max-width:700px)"
+                  srcset="/assets/bankers_algo/bankers_algo2024-26.jpg"
+                />
+                <source
+                  media="(min-width:701px)"
+                  srcset="/assets/bankers_algo/bankers_algo2024-26.jpg"
+                />
+                <img
+                  loading="lazy"
+                  src="/assets/bankers_algo/bankers_algo2024-26.jpg"
+                  alt="Previous Year class test question from session 2024-26 on bankers algorithms in operating system"
+                  title="MLQ scheduling question | PYQs"
+                />
+              </picture>
+              <br /><br />
+            </section>
+          </section>
+        </main>
+      </div>
+      <div id="right_content"></div>
+    </div>
+
+    <br />
+
+    <main></main>
   </body>
   <script type="module" src="commonthings.min.js"></script>
 </html>
