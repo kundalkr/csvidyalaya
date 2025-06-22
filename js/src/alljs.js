@@ -135,6 +135,7 @@ function hdr_ftr() {
   header_footer.setAttribute("type", "module");
   header_footer.async = !0;
   headu.appendChild(header_footer);
+  
 }
 function execution(hdr_ftr, fn1) {
   hdr_ftr();

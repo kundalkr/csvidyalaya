@@ -33,9 +33,7 @@ export function bar(link_arr) {
     // console.log(users.link + "" + users.name);
     loopt += `<a href="${users.link}">${users.name}</a>`;
   }
-
   bar.innerHTML = irhtml + loopt + ` </div><br>`;
-
   let bar_style = document.createElement("style");
   bar_style.innerHTML = `   
           #bar1{a{color: rgb(255, 255, 255);text-decoration-color: rgb(255, 255, 255);text-decoration-thickness: 0.3ex;text-underline-offset: 0.3ex;}

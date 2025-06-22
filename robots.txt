@@ -1,4 +1,4 @@
-# Allow AI search and agent use
+# Allow AI search bots
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User  
 User-agent: PerplexityBot
@@ -9,30 +9,23 @@ User-agent: PhindBot
 User-agent: YouBot
 Disallow: /
 
-# Disallow AI training data collection  
+# Disallow AI model training bots
 User-agent: GPTBot  
 User-agent: CCBot  
 User-agent: Google-Extended  
 Disallow: /
 
-# Allow traditional search indexing  
+# Allow search engine indexing
 User-agent: Googlebot  
+Allow: /
+
 User-agent: Bingbot  
 Allow: /
 
-# Disallow access to admin areas for all bots  
+# Disallow sensitive areas from all bots (including Googlebot)
 User-agent: *  
-Disallow: /admin/  
-Disallow: /internal/  
+Disallow: /admin/
+Disallow: /internal/
 
-# Disallow access to admin areas for all bots  
-User-agent: *  
-Disallow: /Digital Fundamentals/  
-Disallow: /Digital Fundamentals/Boolean Algebra/ 
-Disallow: /Digital Fundamentals/Number System/  
-Disallow: /Digital%20Fundamentals/
 
 Sitemap: https://www.csvidyalaya.com/sitemap.xml
-
-
-

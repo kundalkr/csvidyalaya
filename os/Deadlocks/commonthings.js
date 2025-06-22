@@ -11,7 +11,7 @@ const data = {
     },
     {
       name: "Dsa",
-      link: "/dsa_in_c/dsa_in_c_topic.html",
+      link: "/dsa_in_c/dsa_in_c_topic.html"
     },
     {
       name: "DBMS",
@@ -159,3 +159,4 @@ const sidebar_links = {
   ],
 };
 sdbar_Links(sidebar_links);
+
