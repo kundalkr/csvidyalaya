@@ -1,165 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
 
-    <title>
-      Page Replacement Questions: Concepts, Algorithms, and Practice Problems
-    </title>
-    <meta
-      name="description"
-      content="Find detailed page replacement questions, practice problems, and solutions. Learn about FIFO, LRU, Optimal Page Replacement, and more. Perfect for CS students and exam preparation."
-    />
-    <meta
-      name="keywords"
-      content="Page Replacement Questions, FIFO Page Replacement, LRU Page Replacement, Optimal Page Replacement, Operating System Practice Problems, CS Questions"
-    />
-    <meta name="author" content="Kundal Kumar" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="Page Replacement Questions: Concepts, Algorithms, and Practice Problems"
-    />
-    <meta
-      property="og:description"
-      content="Explore detailed page replacement questions with answers. Includes FIFO, LRU, and Optimal algorithms for CS students."
-    />
-    <meta property="og:type" content="article" />
-    <meta
-      property="og:url"
-      content="https://csvidyalaya.com/os/memory_management/page_replacement.html"
-    />
-    <meta
-      property="og:image"
-      content="https://yourwebsite.com/images/page-replacement-thumbnail.jpg"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Page Replacement Questions: Concepts, Algorithms, and Practice Problems"
-    />
-    <meta
-      name="twitter:description"
-      content="Find page replacement questions, solutions, and algorithms to boost your OS knowledge. Learn FIFO, LRU, Optimal, and more."
-    />
-    <meta
-      name="twitter:image"
-      content="https://yourwebsite.com/images/page-replacement-thumbnail.jpg"
-    />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
+  <title>
+    Page Replacement Questions: Concepts, Algorithms, and Practice Problems
+  </title>
+  <meta name="description"
+    content="Find detailed page replacement questions, practice problems, and solutions. Learn about FIFO, LRU, Optimal Page Replacement, and more. Perfect for CS students and exam preparation." />
+  <meta name="keywords"
+    content="Page Replacement Questions, FIFO Page Replacement, LRU Page Replacement, Optimal Page Replacement, Operating System Practice Problems, CS Questions" />
+  <meta name="author" content="Kundal Kumar" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Page Replacement Questions: Concepts, Algorithms, and Practice Problems" />
+  <meta property="og:description"
+    content="Explore detailed page replacement questions with answers. Includes FIFO, LRU, and Optimal algorithms for CS students." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://csvidyalaya.com/os/memory_management/page_replacement.html" />
+  <meta property="og:image" content="" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Page Replacement Questions: Concepts, Algorithms, and Practice Problems" />
+  <meta name="twitter:description"
+    content="Find page replacement questions, solutions, and algorithms to boost your OS knowledge. Learn FIFO, LRU, Optimal, and more." />
+  <meta name="twitter:image" content="" />
+
+  <style>
+    #pg_repl {
+      width: 600px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    @media (width<=770px) {
       #pg_repl {
-        width: 600px;
         height: auto;
-        object-fit: contain;
+        width: 400px;
       }
-      @media (width<=770px) {
-        #pg_repl {
-          height: auto;
-          width: 400px;
-        }
-      }
-    </style>
-  </head>
-  <body>
+    }
+  </style>
+</head>
 
+<body>
 
-    <div class="container">
+  <div id="three_section">
+    <div id="left_content" class="sticky-top">
+      <ul></ul>
+    </div>
+    <div id="main_content">
       <main>
-        <h1>
-          Page Replacement : Concepts, Algorithms, and Practice Problems with
-          solution
-        </h1>
-
-        <a
-          class="btn btn-primary"
-          href="#down"
-          role="button"
-          style="z-index: 1111; position: fixed; right: 10vw; top: 9vh"
-        >
-          <span
-            class="material-symbols-outlined"
-            style="color: rgb(255, 255, 255)"
-          >
-            arrow_downward
-          </span></a
-        >
-
-        <a
-          class="btn btn-primary"
-          href="#upper"
-          role="button"
-          style="z-index: 1111; position: fixed; bottom: 10vh; right: 10vw"
-          ><span
-            class="material-symbols-outlined"
-            style="color: rgb(255, 255, 255)"
-          >
-            arrow_upward
-          </span></a
-        >
-
-       
-
-        <br />
-        <p>
-          Here are 11 questions on Buddy System. Each question is presented in a
-          table format. each question is solved in explained form.
-        </p>
-        <br />
-        <div class="explained"></div>
-        <div id="question1">
-          <div class="question">
-            <p>question 1: Consider the following page-reference string :</p>
-            <p><strong> 1 2 3 2 1 4 2 3 1 4 3 2 1 4 1 2 3 4</strong></p>
-            <p>
-              How many page fault occur in the LRU and Optimal page replacement
-              algorithms, assuming three frames ?
-            </p>
-          </div>
-          <div class="solution">
-            <p>solutions :</p>
-            <p>optimal page replacement question</p>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/page_replacement/for_comp.jpg"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/page_replacement/for_comp.jpg"
-              />
-              <img  loading="lazy"
-                src="/assets/page_replacement/for_comp.jpg"
-                alt="optimal page replacement answer 1 | question 1 solution"
-                title="optimal page replacement questions"
-                id="pg_repl"
-              />
-            </picture>
-            <p>Least recently used (LRU)</p>
-            <picture>
-              <source
-                media="(max-width:700px)"
-                srcset="/assets/page_replacement/lru_comp.jpg"
-              />
-              <source
-                media="(min-width:701px)"
-                srcset="/assets/page_replacement/lru_comp.jpg"
-              />
-              <img  loading="lazy"
-                src="/assets/page_replacement/lru_comp.jpg"
-                alt="least recently used (LRU) answer 1 | question 1 solution"
-                title="least recently used (LRU) questions"
-                id="pg_repl"
-              />
-            </picture>
-          </div>
+        <div id="title_date">
+          <h1>
+            Page Replacement : Concepts, Algorithms, and Practice Problems with
+            solution
+          </h1>
         </div>
+        <section>
+          <p>
+            Here are 9 questions on Buddy System. Each question is presented in a
+            table format. each question is solved in explained form.
+          </p>
+        </section>
+        <section>
+          <div id="question1">
+            <div class="question">
+              <h2>question 1: Consider the following page-reference string :
+                <strong> 1 2 3 2 1 4 2 3 1 4 3 2 1 4 1 2 3 4</strong>
+
+                How many page fault occur in the LRU and Optimal page replacement
+                algorithms, assuming three frames ?
+              </h2>
+            </div>
+            <div class="solution">
+              <p>solutions :</p>
+              <p>optimal page replacement question</p>
+              <picture>
+                <source media="(max-width:700px)" srcset="/assets/page_replacement/for_comp.jpg" />
+                <source media="(min-width:701px)" srcset="/assets/page_replacement/for_comp.jpg" />
+                <img loading="lazy" src="/assets/page_replacement/for_comp.jpg"
+                  alt="optimal page replacement answer 1 | question 1 solution"
+                  title="optimal page replacement questions" id="pg_repl" />
+              </picture>
+              <p>Least recently used (LRU)</p>
+              <picture>
+                <source media="(max-width:700px)" srcset="/assets/page_replacement/lru_comp.jpg" />
+                <source media="(min-width:701px)" srcset="/assets/page_replacement/lru_comp.jpg" />
+                <img loading="lazy" src="/assets/page_replacement/lru_comp.jpg"
+                  alt="least recently used (LRU) answer 1 | question 1 solution"
+                  title="least recently used (LRU) questions" id="pg_repl" />
+              </picture>
+            </div>
+          </div>
+        </section>
+        <article>
+        </article>
       </main>
     </div>
-    <script type="module" src="commonthings.min.js"></script>
-    <div id="down"></div>
-  </body>
+    <div id="right_content"></div>
+  </div>
+  <script type="module" src="commonthings.min.js"></script>
+</body>
+
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
+    <script type="module" src="/js/src/alljs.min.js"></script>
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,13 +21,13 @@
         <main>
           <div class="title_date">
             <h1>Infix And Prefix Conversion Questions</h1>
-          </div>
-          <article>
+          </div><article>
+          
             <section>
               <p>These questions are generally asked in university exam</p>
               <p>infix, prefix based stack question</p>
               <div>
-                <br />
+                <br>
                 <a
                   href="#fstque"
                   class="btn btn-primary btn-lg active"
@@ -35,7 +35,7 @@
                   aria-pressed="true"
                   >Jump To Question</a
                 >
-                <br /><br />
+                <br><br>
 
                 <h2>What Is Infix and Prefix Conversion in DSA?</h2>
                 <p>
@@ -170,11 +170,11 @@
                       To convert the infix expression (A+B)*(C-D) to prefix
                       expression, we need to follow the operator precedence and
                       associativity rules.
-                      <br />
+                      <br>
                       The steps are as follows:
-                      <br />1. First, convert (A+B) and (C-D) to prefix.
-                      <br />2. (A+B) becomes +AB and (C-D) becomes -CD. <br />3.
-                      Now, multiply these two sub-expressions. <br />4. The
+                      <br>1. First, convert (A+B) and (C-D) to prefix.
+                      <br>2. (A+B) becomes +AB and (C-D) becomes -CD. <br>3.
+                      Now, multiply these two sub-expressions. <br>4. The
                       final prefix expression is *+AB-CD.
                     </p>
                   </div>
@@ -186,9 +186,9 @@
                 <p><strong>Answer:</strong></p>
                 <p>
                   The given prefix expression is *+AB-CD.
-                  <br />1. Start from the rightmost operator and process each
-                  one sequentially. <br />2. First, we identify * as the
-                  operator. So, the infix form would be (A+B)*(C-D). <br />3.
+                  <br>1. Start from the rightmost operator and process each
+                  one sequentially. <br>2. First, we identify * as the
+                  operator. So, the infix form would be (A+B)*(C-D). <br>3.
                   Therefore, the infix expression is (A+B)*(C-D).
                 </p>
 
@@ -200,9 +200,9 @@
                 <p>
                   To convert the infix expression A*(B+C/D) to prefix, follow
                   these steps:
-                  <br />1. First, deal with the sub-expression inside
-                  parentheses (B+C/D). <br />2. C/D becomes /CD, and then
-                  (B+C/D) becomes +B/CD. <br />3. Finally, multiply this
+                  <br>1. First, deal with the sub-expression inside
+                  parentheses (B+C/D). <br>2. C/D becomes /CD, and then
+                  (B+C/D) becomes +B/CD. <br>3. Finally, multiply this
                   sub-expression with A, which gives us *A+B/CD.
                 </p>
 
@@ -212,10 +212,10 @@
                 <p><strong>Answer:</strong></p>
                 <p>
                   The given prefix expression is -+ABC.
-                  <br />1. Start from the leftmost operator and process each one
-                  sequentially. <br />2. First, apply +AB, which becomes (A+B).
-                  <br />3. Next, apply the operator -, which gives us (A+B)-C.
-                  <br />4. Therefore, the infix expression is (A+B)-C.
+                  <br>1. Start from the leftmost operator and process each one
+                  sequentially. <br>2. First, apply +AB, which becomes (A+B).
+                  <br>3. Next, apply the operator -, which gives us (A+B)-C.
+                  <br>4. Therefore, the infix expression is (A+B)-C.
                 </p>
 
                 <h3>
@@ -226,9 +226,9 @@
                 <p>
                   To convert the infix expression (X+Y)/(Z-W) to prefix, follow
                   these steps:
-                  <br />1. First, convert (X+Y) and (Z-W) to prefix. <br />2.
-                  (X+Y) becomes +XY and (Z-W) becomes -ZW. <br />3. Now divide
-                  these two sub-expressions. <br />4. The final prefix
+                  <br>1. First, convert (X+Y) and (Z-W) to prefix. <br>2.
+                  (X+Y) becomes +XY and (Z-W) becomes -ZW. <br>3. Now divide
+                  these two sub-expressions. <br>4. The final prefix
                   expression is /+XY-ZW.
                 </p>
 
@@ -240,9 +240,9 @@
                 <p>
                   To convert the infix expression (P/Q)+(R-S) to prefix, follow
                   these steps:
-                  <br />1. First, convert (P/Q) and (R-S) to prefix. <br />2.
-                  (P/Q) becomes /PQ and (R-S) becomes -RS. <br />3. Now add
-                  these two sub-expressions. <br />4. The final prefix
+                  <br>1. First, convert (P/Q) and (R-S) to prefix. <br>2.
+                  (P/Q) becomes /PQ and (R-S) becomes -RS. <br>3. Now add
+                  these two sub-expressions. <br>4. The final prefix
                   expression is +/PQ-RS.
                 </p>
 
@@ -252,9 +252,9 @@
                 <p><strong>Answer:</strong></p>
                 <p>
                   The given prefix expression is +*AB/CD.
-                  <br />1. Start from the leftmost operator and process each one
-                  sequentially. <br />2. First, apply *AB, which becomes (A*B).
-                  <br />3. Then, apply /CD, which becomes (C/D). <br />4.
+                  <br>1. Start from the leftmost operator and process each one
+                  sequentially. <br>2. First, apply *AB, which becomes (A*B).
+                  <br>3. Then, apply /CD, which becomes (C/D). <br>4.
                   Finally, apply +, giving the infix expression as
                   ((A*B)+(C/D)).
                 </p>
@@ -267,9 +267,9 @@
                 <p>
                   To convert the infix expression A/(B*C+D) to prefix, follow
                   these steps:
-                  <br />1. First, deal with the sub-expression inside
-                  parentheses (B*C+D). <br />2. B*C becomes *BC, and then
-                  (B*C+D) becomes +*BCD. <br />3. Finally, divide this
+                  <br>1. First, deal with the sub-expression inside
+                  parentheses (B*C+D). <br>2. B*C becomes *BC, and then
+                  (B*C+D) becomes +*BCD. <br>3. Finally, divide this
                   sub-expression by A, which gives us /A+*BCD.
                 </p>
 
@@ -279,9 +279,9 @@
                 <p><strong>Answer:</strong></p>
                 <p>
                   The given prefix expression is -*AB/CD.
-                  <br />1. Start from the leftmost operator and process each one
-                  sequentially. <br />2. First, apply *AB, which becomes (A*B).
-                  <br />3. Then, apply /CD, which becomes (C/D). <br />4.
+                  <br>1. Start from the leftmost operator and process each one
+                  sequentially. <br>2. First, apply *AB, which becomes (A*B).
+                  <br>3. Then, apply /CD, which becomes (C/D). <br>4.
                   Finally, apply -, giving the infix expression as
                   ((A*B)-(C/D)).
                 </p>
@@ -294,9 +294,9 @@
                 <p>
                   To convert the infix expression (X-Y)*(Z+W) to prefix, follow
                   these steps:
-                  <br />1. First, convert (X-Y) and (Z+W) to prefix. <br />2.
-                  (X-Y) becomes -XY and (Z+W) becomes +ZW. <br />3. Now multiply
-                  these two sub-expressions. <br />4. The final prefix
+                  <br>1. First, convert (X-Y) and (Z+W) to prefix. <br>2.
+                  (X-Y) becomes -XY and (Z+W) becomes +ZW. <br>3. Now multiply
+                  these two sub-expressions. <br>4. The final prefix
                   expression is *-XY+ZW.
                 </p>
 
@@ -306,9 +306,9 @@
                 <p><strong>Answer:</strong></p>
                 <p>
                   The given prefix expression is /-AB*CD.
-                  <br />1. Start from the leftmost operator and process each one
-                  sequentially. <br />2. First, apply -AB, which becomes (A-B).
-                  <br />3. Then, apply *CD, which becomes (C*D). <br />4.
+                  <br>1. Start from the leftmost operator and process each one
+                  sequentially. <br>2. First, apply -AB, which becomes (A-B).
+                  <br>3. Then, apply *CD, which becomes (C*D). <br>4.
                   Finally, apply /, giving the infix expression as
                   ((A-B)/(C*D)).
                 </p>
@@ -320,8 +320,8 @@
                 <p>
                   To convert the infix expression A+B*C-D to prefix, follow
                   these steps:
-                  <br />1. First, multiply B and C to get *BC. <br />2. Then,
-                  add A to *BC to get +A*BC. <br />3. Finally, subtract D from
+                  <br>1. First, multiply B and C to get *BC. <br>2. Then,
+                  add A to *BC to get +A*BC. <br>3. Finally, subtract D from
                   +A*BC, which gives -+A*BCD.
                 </p>
 
@@ -333,9 +333,9 @@
                 <p>
                   To convert the infix expression (M+N)*(P-Q)/R to prefix,
                   follow these steps:
-                  <br />1. First, convert (M+N) and (P-Q) to prefix. <br />2.
-                  (M+N) becomes +MN and (P-Q) becomes -PQ. <br />3. Multiply +MN
-                  and -PQ, which gives *+MN-PQ. <br />4. Finally, divide by R to
+                  <br>1. First, convert (M+N) and (P-Q) to prefix. <br>2.
+                  (M+N) becomes +MN and (P-Q) becomes -PQ. <br>3. Multiply +MN
+                  and -PQ, which gives *+MN-PQ. <br>4. Finally, divide by R to
                   get / *+MN-PQ R.
                 </p>
               </div>
@@ -348,9 +348,9 @@
               </a>
             </button>
           </div>
-          <br />
+          <br>
 
-          <br />
+          <br>
           <div class="d-grid gap-2 col-6 mx-auto">
             <button class="btn btn-primary" type="button">
               <a href="stack1.html" style="color: antiquewhite"
@@ -358,7 +358,7 @@
               </a>
             </button>
           </div>
-          <br />
+          <br>
           <!-- main content end-->
           <div class="d-grid gap-2 col-6 mx-auto">
             <button class="btn btn-success" id="down" type="button">
@@ -367,7 +367,7 @@
               </a>
             </button>
           </div>
-          <br /><br />
+          <br><br>
         </main>
       </div>
       <div id="right_content"></div>

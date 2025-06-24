@@ -52,7 +52,7 @@ function watchTask() {
     "dsa_in_c/commonthings.js",
     "DBMS/DBMS_topics/relational_calculus/js/trc.js",
     "DBMS/js/commonthings.js",
-    "os/Deadlocks/commonthings.js"
+    "os/Deadlocks/commonthings.js","os/memory_management/commonthings.js"
   ];
   // let dest = `js/src/`;
 

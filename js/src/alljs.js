@@ -1,59 +1,23 @@
-(function () {
-  const favi_size = {
-    users: [
-      {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        link: "/assets/favicon_io/apple-touch-icon.png",
-      },
-      {
-        rel: "icon",
-        sizes: "192x192",
-        link: "/assets/favicon_io/android-chrome-192x192.png",
-      },
-      {
-        rel: "icon",
-        sizes: "32x32",
-        link: "/assets/favicon_io/favicon-32x32.png",
-      },
-      {
-        rel: "icon",
-        sizes: "16x16",
-        link: "/assets/favicon_io/favicon-16x16.png",
-      },
-      {
-        rel: "icon",
-        sizes: "512x512",
-        link: "/assets/favicon_io/android-chrome-512x512.png",
-      },
-    ],
-  };
-  let hd = document.querySelector("head");
-  for (const user of favi_size.users) {
-    let favicon = document.createElement("link");
-    favicon.setAttribute("type", "image/png");
-    favicon.setAttribute("rel", `${user.rel}`);
-    favicon.setAttribute("sizes", `${user.sizes}`);
-    favicon.setAttribute("href", `${user.link}`);
-    hd.appendChild(favicon);
-  }
+function loadScript(src, callback) {
+  const script = document.createElement('script');
+  script.src = src;
+  script.type = "module";
+  script.onload = callback;
+  document.head.appendChild(script);
+}
 
-  //  <link rel="stylesheet" href="main_content.css" />
-})();
 
-// last modified
 function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");
 
-  let hh1 = document.querySelector("#main_content > main > div > h1");
+  let hh1 = document.querySelector("#main_content > main > div.title_date > h1");
   let lastupdate = document.createElement("div");
   lastupdate.setAttribute("id", "last_updated_parent");
   lastupdate.innerHTML = ` 
           <div>
-            <span>Last updated : </span><span>${
-              lastup[1] + " " + lastup[2] + ", " + lastup[3]
-            }</span>
+            <span>Last updated : </span><span>${lastup[1] + " " + lastup[2] + ", " + lastup[3]
+    }</span>
           </div>
           <hr>
             <div>
@@ -64,24 +28,29 @@ function last_modified() {
   hh1.insertAdjacentElement("afterend", lastupdate);
 }
 
-const cssFiles = [
-  "/css/headings-footer.min.css",
-  "/css/main_content.min.css",
-  "/css/universal-css.min.css",
-];
-let heads = document.querySelector("head");
-cssFiles.forEach((file) => {
-  let cssf = document.createElement("link");
-  cssf.setAttribute("rel", "stylesheet");
-  cssf.setAttribute("href", `${file}`);
-  heads.appendChild(cssf);
-});
-//  all css adding end
+function css_files() {
+  const cssFiles = [
+    "/css/headings-footer.min.css",
+    "/css/main_content.min.css",
+    "/css/universal-css.min.css",
+  ];
+  let heads = document.querySelector("head");
+  cssFiles.forEach((file) => {
+    let cssf = document.createElement("link");
+    cssf.setAttribute("rel", "stylesheet");
+    cssf.setAttribute("href", `${file}`);
+    heads.appendChild(cssf);
+  });
+}
 
-// founder json ld
-const scriptTag = document.createElement("script");
-scriptTag.type = "application/ld+json";
-scriptTag.innerHTML = `{
+//  all css adding end
+function founder_schemas() {
+
+
+  // founder json ld
+  const founder_schema = document.createElement("script");
+  founder_schema.type = "application/ld+json";
+  founder_schema.innerHTML = `{
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "CSvidyalaya",
@@ -100,55 +69,30 @@ scriptTag.innerHTML = `{
     "https://www.instagram.com/csvidyalaya/"
   ]
             }`;
-document.head.appendChild(scriptTag);
-// founder json ld end
-
-let headu = document.querySelector("head");
-if (
-  window.location.hostname !== "localhost" &&
-  window.location.hostname !== "127.0.0.1"
-) {
-  let script1 = document.createElement("script");
-  script1.async = !0;
-  script1.src = "https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS";
-  headu.appendChild(script1);
-
-  let script2 = document.createElement("script");
-
-  script2.innerHTML = `window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-C4M8ZRW6HS');`;
-  headu.appendChild(script2);
+  document.head.appendChild(founder_schema);
+  // founder json ld
 }
 
-function for_all_page() {
-  let for_all_page = document.createElement("script");
-  for_all_page.src = "/js/src/for_all_page.min.js";
-  for_all_page.setAttribute("type", "module");
-  headu.appendChild(for_all_page);
-}
-function hdr_ftr() {
-  let header_footer = document.createElement("script");
-  header_footer.src = "/js/src/hdr_ftr.min.js";
-  header_footer.setAttribute("type", "module");
-  header_footer.async = !0;
-  headu.appendChild(header_footer);
-  
-}
-function execution(hdr_ftr, fn1) {
-  hdr_ftr();
-  fn1();
-}
-execution(for_all_page, hdr_ftr);
 
-window.onload = function () {
-  let bodu = document.querySelector("body");
-  let commonforall = document.createElement("script");
-  commonforall.src = "/js/src/commonforall.min.js";
-  commonforall.setAttribute("type", "module");
-  commonforall.async = !0;
-  bodu.appendChild(commonforall);
-  last_modified();
-};
+loadScript('/js/src/for_all_page.min.js', () => {
+  loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); });
+});
+function bar(link_arr) {
+  let bar = document.createElement("div");
+  let irhtml = `<div
+        id="bar1"
+        class="p-2 d-none d-lg-flex flex-row justify-content-between"
+        style="
+          background-color:rgb(248, 21, 21);
+        "
+      >`;
+  let loopt = "";
+  for (const users of link_arr.users) {
+    // console.log(users.link + "" + users.name);
+    loopt += `<a class="text-black text-decoration-underline" style="text-decoration-color: rgb(255, 255, 255);text-decoration-thickness: 0.3ex;text-underline-offset: 0.3ex;"   href="${users.link}">${users.name}</a>`;
+  }
+  bar.innerHTML = irhtml + loopt + ` </div>`;
+
+  let h12 = document.querySelector("#fheader");
+  h12.insertAdjacentElement("afterend", bar);
+}

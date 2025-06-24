@@ -1,55 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title Tag -->
-    <title>
-      Non-Preemptive Priority Scheduling Algorithm Questions & Practice
-    </title>
 
-    <!-- Meta Description -->
-    <meta
-      name="description"
-      content="Practice Non-Preemptive Priority Scheduling Algorithm questions with solutions. Improve your understanding of priority scheduling in operating systems."
-    />
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title Tag -->
+  <title>
+    Non-Preemptive Priority Scheduling Algorithm Questions & Practice
+  </title>
 
-    <!-- Meta Keywords -->
-    <meta
-      name="keywords"
-      content="Non Preemptive Priority Scheduling Algorithm, Priority Scheduling Questions, OS Scheduling Algorithms, Practice Questions, Operating System Algorithms"
-    />
+  <!-- Meta Description -->
+  <meta name="description"
+    content="Practice Non-Preemptive Priority Scheduling Algorithm questions with solutions. Improve your understanding of priority scheduling in operating systems." />
 
-    <!-- Author -->
-    <meta name="author" content="Kundal Kumar" />
+  <!-- Meta Keywords -->
+  <meta name="keywords"
+    content="Non Preemptive Priority Scheduling Algorithm, Priority Scheduling Questions, OS Scheduling Algorithms, Practice Questions, Operating System Algorithms" />
 
-    <!-- Robots Meta Tag -->
-    <meta name="robots" content="index, follow" />
+  <!-- Author -->
+  <meta name="author" content="Kundal Kumar" />
 
-    <!-- Open Graph Tags -->
-    <meta
-      property="og:title"
-      content="Non-Preemptive Priority Scheduling Algorithm Questions & Practice"
-    />
-    <meta
-      property="og:description"
-      content="Explore Non-Preemptive Priority Scheduling Algorithm questions, solutions, and examples to master OS scheduling algorithms."
-    />
-    <meta property="og:type" content="article" />
+  <!-- Robots Meta Tag -->
+  <meta name="robots" content="index, follow" />
 
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Non-Preemptive Priority Scheduling Algorithm Questions & Practice"
-    />
-    <meta
-      name="twitter:description"
-      content="Practice and learn Non-Preemptive Priority Scheduling Algorithm with detailed examples and solutions."
-    />
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Non-Preemptive Priority Scheduling Algorithm Questions & Practice" />
+  <meta property="og:description"
+    content="Explore Non-Preemptive Priority Scheduling Algorithm questions, solutions, and examples to master OS scheduling algorithms." />
+  <meta property="og:type" content="article" />
 
-    <style>
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Non-Preemptive Priority Scheduling Algorithm Questions & Practice" />
+  <meta name="twitter:description"
+    content="Practice and learn Non-Preemptive Priority Scheduling Algorithm with detailed examples and solutions." />
+
+  <style>
+    #ps1,
+    #ps2,
+    #ps3,
+    #ps4,
+    #ps5,
+    #ps6,
+    #ps7,
+    #ps8,
+    #ps9,
+    #ps10 {
+      height: 180px;
+      width: 630px;
+      object-fit: none;
+      /* border: 1px solid red; */
+    }
+
+    #ps1 {
+      object-position: -67px -41px;
+    }
+
+    #ps2 {
+      object-position: -99px -508px;
+    }
+
+    #ps3 {
+      object-position: -57px -935px;
+    }
+
+    #ps4 {
+      object-position: -44px -1395px;
+    }
+
+    #ps5 {
+      object-position: -48px -1839px;
+    }
+
+    #ps6 {
+      object-position: -55px -2270px;
+    }
+
+    #ps7 {
+      object-position: -51px -2710px;
+    }
+
+    #ps8 {
+      object-position: -30px -3113px;
+    }
+
+    #ps9 {
+      object-position: -904px -68px;
+    }
+
+    #ps10 {
+      object-position: -867px -496px;
+    }
+
+    @media (width<=770px) {
+
       #ps1,
       #ps2,
       #ps3,
@@ -60,854 +105,261 @@
       #ps8,
       #ps9,
       #ps10 {
-        height: 180px;
-        width: 630px;
-        object-fit: none;
-        /* border: 1px solid red; */
+        height: 150px;
+        width: 400px;
+        /* background-image: url(/assets/SJF1.png); */
       }
 
       #ps1 {
-        object-position: -67px -41px;
+        object-position: -87px -272px;
       }
 
       #ps2 {
-        object-position: -99px -508px;
+        object-position: -67px -726px;
       }
 
       #ps3 {
-        object-position: -57px -935px;
+        object-position: -57px -1144px;
       }
 
       #ps4 {
-        object-position: -44px -1395px;
+        object-position: -50px -1657px;
       }
 
       #ps5 {
-        object-position: -48px -1839px;
+        object-position: -46px -2051px;
       }
 
       #ps6 {
-        object-position: -55px -2270px;
+        object-position: -64px -2492px;
       }
 
       #ps7 {
-        object-position: -51px -2710px;
+        object-position: -57px -2929px;
       }
 
       #ps8 {
-        object-position: -30px -3113px;
+        object-position: -33px -3333px;
       }
 
       #ps9 {
-        object-position: -904px -68px;
+        object-position: -896px -270px;
       }
 
       #ps10 {
-        object-position: -867px -496px;
+        object-position: -857px -718px;
       }
+    }
+  </style>
+</head>
 
-      @media (width<=770px) {
-        #ps1,
-        #ps2,
-        #ps3,
-        #ps4,
-        #ps5,
-        #ps6,
-        #ps7,
-        #ps8,
-        #ps9,
-        #ps10 {
-          height: 150px;
-          width: 400px;
-          /* background-image: url(/assets/SJF1.png); */
-        }
-
-        #ps1 {
-          object-position: -87px -272px;
-        }
-
-        #ps2 {
-          object-position: -67px -726px;
-        }
-
-        #ps3 {
-          object-position: -57px -1144px;
-        }
-
-        #ps4 {
-          object-position: -50px -1657px;
-        }
-
-        #ps5 {
-          object-position: -46px -2051px;
-        }
-
-        #ps6 {
-          object-position: -64px -2492px;
-        }
-
-        #ps7 {
-          object-position: -57px -2929px;
-        }
-
-        #ps8 {
-          object-position: -33px -3333px;
-        }
-
-        #ps9 {
-          object-position: -896px -270px;
-        }
-
-        #ps10 {
-          object-position: -857px -718px;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div id="three_section">
-      <div id="left_content" class="sticky-top">
-        <ul></ul>
-      </div>
-      <div id="main_content">
-        <main>
-          <div class="title_date">
-            <h1>
-              Non-Preemptive Priority Scheduling Algorithm Questions with
-              solution + explanation
-            </h1>
-          </div>
-          <article>
+<body>
+  <div id="three_section">
+    <div id="left_content" class="sticky-top">
+      <ul></ul>
+    </div>
+    <div id="main_content">
+      <main>
+        <div class="title_date">
+          <h1>
+            Non-Preemptive Priority Scheduling Algorithm Questions with
+            solution + explanation
+          </h1>
+        </div>
+        <article>
+<section>
+  
+</section>
+          <p>
+            In the world of operating systems, efficient CPU scheduling plays
+            a crucial role in determining how processes are managed and
+            executed. Among several scheduling techniques, Priority Scheduling
+            is widely used due to its ability to assign importance levels to
+            different processes. This page is dedicated to Non-Preemptive
+            Priority Scheduling, and includes 18 carefully selected and solved
+            questions, including previous year questions, to help you fully
+            understand the concept.
+          </p>
+          <p>
+            Before diving into the questions, let’s briefly understand what
+            preemptive and non-preemptive scheduling mean, and how
+            priority-based scheduling fits into the picture.
+          </p>
+          <br>
+          <a href="#fstque" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Jump To Question</a>
+          <br>
+          <section>
+            <h2>What is Preemptive and Non-Preemptive Scheduling?</h2>
             <p>
-              In the world of operating systems, efficient CPU scheduling plays
-              a crucial role in determining how processes are managed and
-              executed. Among several scheduling techniques, Priority Scheduling
-              is widely used due to its ability to assign importance levels to
-              different processes. This page is dedicated to Non-Preemptive
-              Priority Scheduling, and includes 18 carefully selected and solved
-              questions, including previous year questions, to help you fully
-              understand the concept.
+              Answer : Preemptive Scheduling means that the operating system
+              can interrupt a currently running process if a higher priority
+              process arrives into ready queue. It ensures faster execution of
+              important tasks but can lead to more context switches and
+              increased overhead.
             </p>
             <p>
-              Before diving into the questions, let’s briefly understand what
-              preemptive and non-preemptive scheduling mean, and how
-              priority-based scheduling fits into the picture.
+              Non-Preemptive Scheduling, it does not interrupt the running
+              process. Once a process starts execution, it runs untill
+              completion — even if a higher priority process arrives in the
+              queue. This makes it simpler and more predictable but might
+              delay urgent tasks.
             </p>
-            <br />
-            <a
-              href="#fstque"
-              class="btn btn-primary btn-lg active"
-              role="button"
-              aria-pressed="true"
-              >Jump To Question</a
-            >
-            <br />
-            <section>
-              <h2>What is Preemptive and Non-Preemptive Scheduling?</h2>
-              <p>
-                Answer : Preemptive Scheduling means that the operating system
-                can interrupt a currently running process if a higher priority
-                process arrives into ready queue. It ensures faster execution of
-                important tasks but can lead to more context switches and
-                increased overhead.
-              </p>
-              <p>
-                Non-Preemptive Scheduling, it does not interrupt the running
-                process. Once a process starts execution, it runs untill
-                completion — even if a higher priority process arrives in the
-                queue. This makes it simpler and more predictable but might
-                delay urgent tasks.
-              </p>
-            </section>
-            <section>
-              <h2>
-                What Is Non Preemptive Priority Scheduling Algorithm in
-                Operating System?
-              </h2>
-              <p>
-                The Non Preemptive Priority Scheduling algorithm in
-                <a href="/os/operating_System_Topics.html">operating systems</a>
-                allocates CPU to the processes based on priority. Each process
-                is assigned a priority, and the CPU is assigned to the process
-                with the highest priority. Lower-priority processes wait until
-                higher-priority ones finish, ensuring that essential processes
-                get CPU time as needed.
-              </p>
-            </section>
-            <section>
-              <h2>
-                Method for solving Non-Preemptive Priority Scheduling Algorithm
-              </h2>
-              <ul>
-                <li>
-                  Step 1: First of all you decide whether you want to give
-                  highest priority to the lower priority number or higher
-                  priority to the higher priority number? (for ex: we give
-                  highest priority to the lower number) (every process will
-                  already be given a priority number in the question)
-                </li>
-                <li>
-                  Step 2: Compare the priority number of each process of the
-                  question , and accordingly we will assign the process to ready
-                  .
-                </li>
-                <li>
-                  Step 3: now we will select the process according to highest
-                  priority from ready queue and allocate the CPU to it.
-                </li>
-                <li>
-                  Step 4: If two processes have the same priority, use an
-                  alternate scheduling algorithm (e.g.,
-                  <a
-                    title="fcfs explained with practice question"
-                    href="/os/scheduling_algorithms/fcfs.html"
-                    >FCFS</a
-                  >
-                  ) to decide the order. (or we will assign the process which
-                  comes first in the question, to the cpu)
-                </li>
-                <li>
-                  Step 5: Once the process is completed, move to the next
-                  highest-priority process.
-                </li>
-                <li>Repeat until all processes in the queue have executed.</li>
-              </ul>
-            </section>
-            <section>
-              <h2>
-                Advantages and Disadvantages of Priority Scheduling Algorithm
-              </h2>
+          </section>
+          <section>
+            <h2>
+              What Is Non Preemptive Priority Scheduling Algorithm in
+              Operating System?
+            </h2>
+            <p>
+              The Non Preemptive Priority Scheduling algorithm in
+              <a href="/os/operating_System_Topics.html">operating systems</a>
+              allocates CPU to the processes based on priority. Each process
+              is assigned a priority, and the CPU is assigned to the process
+              with the highest priority. Lower-priority processes wait until
+              higher-priority ones finish, ensuring that essential processes
+              get CPU time as needed.
+            </p>
+          </section>
+          <section>
+            <h2>
+              Method for solving Non-Preemptive Priority Scheduling Algorithm
+            </h2>
+            <ul>
+              <li>
+                Step 1: First of all you decide whether you want to give
+                highest priority to the lower priority number or higher
+                priority to the higher priority number? (for ex: we give
+                highest priority to the lower number) (every process will
+                already be given a priority number in the question)
+              </li>
+              <li>
+                Step 2: Compare the priority number of each process of the
+                question , and accordingly we will assign the process to ready
+                .
+              </li>
+              <li>
+                Step 3: now we will select the process according to highest
+                priority from ready queue and allocate the CPU to it.
+              </li>
+              <li>
+                Step 4: If two processes have the same priority, use an
+                alternate scheduling algorithm (e.g.,
+                <a title="fcfs explained with practice question" href="/os/scheduling_algorithms/fcfs.html">FCFS</a>
+                ) to decide the order. (or we will assign the process which
+                comes first in the question, to the cpu)
+              </li>
+              <li>
+                Step 5: Once the process is completed, move to the next
+                highest-priority process.
+              </li>
+              <li>Repeat until all processes in the queue have executed.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>
+              Advantages and Disadvantages of Priority Scheduling Algorithm
+            </h2>
 
-              <table
-                style="border: 1px solid black"
-                class="table table-bordered"
-              >
-                <tr>
-                  <th>Advantages</th>
-                  <th>Disadvantages</th>
-                </tr>
-                <tr>
-                  <td>Ensures important processes execute first.</td>
-                  <td>
-                    Can lead to
-                    <a
-                      href="https://en.wikipedia.org/wiki/Starvation_(computer_science)"
-                      title="starvation in computer science "
-                      >starvation</a
-                    >
-                    for lower-priority processes.
-                  </td>
-                </tr>
-                <tr>
-                  <td>Can be customized to specific needs.</td>
-                  <td>Complexity increases with more processes.</td>
-                </tr>
-                <tr>
-                  <td>Efficient for real-time systems.</td>
-                  <td>May require additional calculations for priority.</td>
-                </tr>
-                <tr>
-                  <td>Flexible for process priority adjustments.</td>
-                  <td>Risk of priority inversion issues.</td>
-                </tr>
-                <tr>
-                  <td>Less overhead for high-priority tasks.</td>
-                  <td>CPU utilization can be low for non-essential tasks.</td>
-                </tr>
-                <tr>
-                  <td>Reduces wait time for critical processes.</td>
-                  <td>Can lead to unpredictable CPU allocation.</td>
-                </tr>
-              </table>
-            </section>
-            <section>
-              <h2>
-                Why Priority Scheduling is Better Than Other Scheduling
-                Algorithms?
-              </h2>
+            <table style="border: 1px solid black" class="table table-bordered">
+              <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+              </tr>
+              <tr>
+                <td>Ensures important processes execute first.</td>
+                <td>
+                  Can lead to
+                  <a href="https://en.wikipedia.org/wiki/Starvation_(computer_science)"
+                    title="starvation in computer science ">starvation</a>
+                  for lower-priority processes.
+                </td>
+              </tr>
+              <tr>
+                <td>Can be customized to specific needs.</td>
+                <td>Complexity increases with more processes.</td>
+              </tr>
+              <tr>
+                <td>Efficient for real-time systems.</td>
+                <td>May require additional calculations for priority.</td>
+              </tr>
+              <tr>
+                <td>Flexible for process priority adjustments.</td>
+                <td>Risk of priority inversion issues.</td>
+              </tr>
+              <tr>
+                <td>Less overhead for high-priority tasks.</td>
+                <td>CPU utilization can be low for non-essential tasks.</td>
+              </tr>
+              <tr>
+                <td>Reduces wait time for critical processes.</td>
+                <td>Can lead to unpredictable CPU allocation.</td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <h2>
+              Why Priority Scheduling is Better Than Other Scheduling
+              Algorithms?
+            </h2>
 
-              <p>
-                Priority scheduling is often favored in systems that require
-                high responsiveness for critical tasks, such as
-                <a href="https://en.wikipedia.org/wiki/Real-time_computing"
-                  >real-time systems</a
-                >, because it ensures essential processes are given priority
-                access to the CPU. Compared to algorithms like
-                <a href="/os/scheduling_algorithms/fcfs2.html">FCFS</a>
-                or
-                <a
-                  href="/os/scheduling_algorithms/RR1.html"
-                  title="Round robin explained with practice question"
-                  >Round Robin</a
-                >, priority scheduling minimizes the wait time for critical
-                applications and can be optimized further with priority
-                adjustments, making it adaptable and highly effective for
-                time-sensitive applications.
-              </p>
-            </section>
-            <section>
-              <div id="question1">
-                <div class="question">
-                  <h2 id="fstque">
-                    Question 1 : find the average Turn Around Time and Waiting
-                    Time of following processes using Non-Preemptive priority
-                    scheduling process scheduling algorithm?
-                  </h2>
+            <p>
+              Priority scheduling is often favored in systems that require
+              high responsiveness for critical tasks, such as
+              <a href="https://en.wikipedia.org/wiki/Real-time_computing">real-time systems</a>, because it ensures
+              essential processes are given priority
+              access to the CPU. Compared to algorithms like
+              <a href="/os/scheduling_algorithms/fcfs2.html">FCFS</a>
+              or
+              <a href="/os/scheduling_algorithms/RR1.html" title="Round robin explained with practice question">Round
+                Robin</a>, priority scheduling minimizes the wait time for critical
+              applications and can be optimized further with priority
+              adjustments, making it adaptable and highly effective for
+              time-sensitive applications.
+            </p>
+          </section>
+          <section>
+            <div id="question1">
+              <div class="question">
+                <h2 id="fstque">
+                  Question 1 : find the average Turn Around Time and Waiting
+                  Time of following processes using Non-Preemptive priority
+                  scheduling process scheduling algorithm?
+                </h2>
 
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Arrival Time</th>
-                      <th>Burst Time</th>
-                      <th>Priority</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>0</td>
-                      <td>8</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>1</td>
-                      <td>4</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>2</td>
-                      <td>9</td>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>3</td>
-                      <td>5</td>
-                      <td>4</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="solution">
-                  <h3>Solution :</h3>
-                  <p>
-                    lower number represents higher priority (here i take 1 as a
-                    highest priority)
-                  </p>
-                  <p><strong>Formula:</strong></p>
-                  <ul>
-                    <li>Turnaround Time = Completion Time - Arrival Time</li>
-                    <li>Waiting Time = Turnaround Time - Burst Time</li>
-                    <li>
-                      Average Turnaround Time = Sum of Turnaround Times / Number
-                      of Processes
-                    </li>
-                    <li>
-                      Average Waiting Time = Sum of Waiting Times / Number of
-                      Processes
-                    </li>
-                  </ul>
-
-                  <h4>Gantt Chart</h4>
-                  <img
-                    loading="lazy"
-                    src="/assets/PS1.png"
-                    id="ps1"
-                    alt="Priority Scheduling | Question 1 Solution | Gantt Chart"
-                    title="Priority Scheduling | Question 1 Solution | Gantt Chart"
-                    srcset=""
-                  />
-                  <!-- <p>| P1 (0-8) | P2 (8-12) | P3 (12-21) | P4 (21-26) |</p> -->
-
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Completion Time</th>
-                      <th>Turnaround Time</th>
-                      <th>Waiting Time</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>8</td>
-                      <td>8</td>
-                      <td>0</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>12</td>
-                      <td>11</td>
-                      <td>7</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>21</td>
-                      <td>19</td>
-                      <td>10</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>26</td>
-                      <td>23</td>
-                      <td>18</td>
-                    </tr>
-                  </table>
-
-                  <p>Average Turnaround Time: (8+11+19+23)/4 = 15.25</p>
-                  <p>Average Waiting Time: (0+7+10+18)/4 = 8.75</p>
-                </div>
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>0</td>
+                    <td>8</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>4</td>
+                  </tr>
+                </table>
               </div>
-              <!-- question 1 end -->
-              <!-- q 2 -->
-              <div id="question2">
-                <div class="question">
-                  <h2>
-                    Question 2: Calculate the average Turnaround Time,
-                    Completion Time, and Waiting Time for the processes listed
-                    in the table using the Non-Preemptive Priority Scheduling
-                    algorithm.
-                  </h2>
-
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Arrival Time</th>
-                      <th>Burst Time</th>
-                      <th>Priority</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>1</td>
-                      <td>3</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>2</td>
-                      <td>4</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>3</td>
-                      <td>6</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>4</td>
-                      <td>2</td>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <td>P5</td>
-                      <td>5</td>
-                      <td>5</td>
-                      <td>5</td>
-                    </tr>
-                    <tr>
-                      <td>P6</td>
-                      <td>6</td>
-                      <td>1</td>
-                      <td>6</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="solution">
-                  <h3>Solution :</h3>
-                  <p>
-                    lower number represents higher priority (here i take 1 as a
-                    highest priority)
-                  </p>
-                  <p><strong>Formula:</strong></p>
-                  <ul>
-                    <li>Turnaround Time = Completion Time - Arrival Time</li>
-                    <li>Waiting Time = Turnaround Time - Burst Time</li>
-                    <li>
-                      Average Turnaround Time = Sum of Turnaround Times / Number
-                      of Processes
-                    </li>
-                    <li>
-                      Average Waiting Time = Sum of Waiting Times / Number of
-                      Processes
-                    </li>
-                  </ul>
-
-                  <h4>Gantt Chart</h4>
-                  <p>
-                    | P1 (1-4) | P2 (4-8) | P3 (8-14) | P4 (14-16) | P5 (16-21)
-                    | P6 (21-22) |
-                  </p>
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-
-                      <th>Completion Time</th>
-                      <th>Turnaround Time (TAT)</th>
-                      <th>Waiting Time (WT)</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-
-                      <td>4</td>
-                      <td>4 - 1 = 3</td>
-                      <td>3 - 3 = 0</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-
-                      <td>8</td>
-                      <td>8 - 2 = 6</td>
-                      <td>6 - 4 = 2</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-
-                      <td>14</td>
-                      <td>14 - 3 = 11</td>
-                      <td>11 - 6 = 5</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-
-                      <td>16</td>
-                      <td>16 - 4 = 12</td>
-                      <td>12 - 2 = 10</td>
-                    </tr>
-                    <tr>
-                      <td>P5</td>
-
-                      <td>21</td>
-                      <td>21 - 5 = 16</td>
-                      <td>16 - 5 = 11</td>
-                    </tr>
-                    <tr>
-                      <td>P6</td>
-
-                      <td>22</td>
-                      <td>22 - 6 = 16</td>
-                      <td>16 - 1 = 15</td>
-                    </tr>
-                  </table>
-
-                  <h5>Average Turnaround Time :</h5>
-                  <p>(3 + 6 + 11 + 12 + 16 + 16) / 6 = 10.67 units</p>
-
-                  <h5>Average Waiting Time:</h5>
-                  <p>(0 + 2 + 5 + 10 + 11 + 15) / 6 = 7.17 units</p>
-
-                  <h4>Gantt Chart</h4>
-                  <p>
-                    | P1 (1-4) | P2 (4-8) | P3 (8-14) | P4 (14-16) | P5 (16-21)
-                    | P6 (21-22) |
-                  </p>
-                </div>
-              </div>
-              <!-- q2 end -->
-
-              <!-- question 3 start -->
-
-              <!-- question 6 start -->
-              <div id="question3">
-                <div class="question">
-                  <h2>
-                    Question 3: Given a list of processes with their respective
-                    Arrival Times, Burst Times, and Priorities in the table, use
-                    the Non-Preemptive Priority Scheduling algorithm to
-                    determine the Completion Time, Turnaround Time, and Waiting
-                    Time for each process.
-                  </h2>
-
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Arrival Time</th>
-                      <th>Burst Time</th>
-                      <th>Priority</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>0</td>
-                      <td>5</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>2</td>
-                      <td>3</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>4</td>
-                      <td>1</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>6</td>
-                      <td>2</td>
-                      <td>3</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="solution">
-                  <h3>Solution :</h3>
-                  <p>
-                    lower number represents higher priority (here i take 1 as a
-                    highest priority)
-                  </p>
-                  <p><strong>Formula:</strong></p>
-                  <ul>
-                    <li>Turnaround Time = Completion Time - Arrival Time</li>
-                    <li>Waiting Time = Turnaround Time - Burst Time</li>
-                    <li>
-                      Average Turnaround Time = Sum of Turnaround Times / Number
-                      of Processes
-                    </li>
-                    <li>
-                      Average Waiting Time = Sum of Waiting Times / Number of
-                      Processes
-                    </li>
-                  </ul>
-
-                  <h4>Gantt Chart</h4>
-                  <img
-                    loading="lazy"
-                    id="ps6"
-                    alt="Priority Scheduling | Question 6 Solution | Gantt Chart"
-                    title="Priority Scheduling | Question 6 Solution | Gantt Chart"
-                    srcset=""
-                  />
-                  <!-- <p>| P1 (0-5) | P2 (5-8) | P4 (8-10) | P3 (10-11) |</p> -->
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-
-                      <th>Completion Time</th>
-                      <th>Turnaround Time (TAT)</th>
-                      <th>Waiting Time (WT)</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-
-                      <td>5</td>
-                      <td>5 - 0 = 5</td>
-                      <td>5 - 5 = 0</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-
-                      <td>8</td>
-                      <td>8 - 2 = 6</td>
-                      <td>6 - 3 = 3</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-
-                      <td>11</td>
-                      <td>11 - 4 = 7</td>
-                      <td>7 - 1 = 6</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-
-                      <td>10</td>
-                      <td>10 - 6 = 4</td>
-                      <td>4 - 2 = 2</td>
-                    </tr>
-                  </table>
-
-                  <h5>Average Turnaround Time:</h5>
-                  <p>(5 + 6 + 7 + 4) / 4 = 5.5 units</p>
-
-                  <h5>Average Waiting Time:</h5>
-                  <p>(0 + 3 + 6 + 2) / 4 = 2.75 units</p>
-                </div>
-              </div>
-              <!-- question 6 end -->
-
-              <!-- question 5 start -->
-              <div id="question4">
-                <div class="question">
-                  <h2>
-                    Question 4 : Apply the Non-Preemptive Priority Scheduling
-                    method to the processes in the table and compute the average
-                    Waiting Time, Completion Time, and Turnaround Time.
-                  </h2>
-
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Arrival Time</th>
-                      <th>Burst Time</th>
-                      <th>Priority</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>0</td>
-                      <td>3</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>2</td>
-                      <td>5</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>4</td>
-                      <td>8</td>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>6</td>
-                      <td>6</td>
-                      <td>4</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="solution">
-                  <h3>Solution :</h3>
-                  <p><strong>Formula:</strong></p>
-                  <ul>
-                    <li>Turnaround Time = Completion Time - Arrival Time</li>
-                    <li>Waiting Time = Turnaround Time - Burst Time</li>
-                    <li>
-                      Average Turnaround Time = Sum of Turnaround Times / Number
-                      of Processes
-                    </li>
-                    <li>
-                      Average Waiting Time = Sum of Waiting Times / Number of
-                      Processes
-                    </li>
-                  </ul>
-
-                  <h4>Gantt Chart</h4>
-                  <img
-                    loading="lazy"
-                    id="ps5"
-                    alt="Priority Scheduling | Question 5 Solution | Gantt Chart"
-                    title="Priority Scheduling | Question 5 Solution | Gantt Chart"
-                    srcset=""
-                  />
-                  <!-- <p>| P1 (0-3) | P2 (3-8) | P3 (8-16) | P4 (16-22) |</p> -->
-
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Completion Time</th>
-                      <th>Turnaround Time</th>
-                      <th>Waiting Time</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>3</td>
-                      <td>3</td>
-                      <td>0</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>8</td>
-                      <td>6</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>16</td>
-                      <td>12</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>22</td>
-                      <td>16</td>
-                      <td>10</td>
-                    </tr>
-                  </table>
-
-                  <p>
-                    <strong>Average Turnaround Time:</strong> (3+6+12+16)/4 =
-                    9.25
-                  </p>
-                  <p>
-                    <strong>Average Waiting Time:</strong> (0+1+4+10)/4 = 3.75
-                  </p>
-                </div>
-              </div>
-              <!-- question 5 end -->
-
-              <div id="question5">
-                <div class="question">
-                  <h2>
-                    Question 5 :Calculate the average Turnaround Time,
-                    Completion Time, and Waiting Time for the given set of
-                    processes using the Non-Preemptive Priority Scheduling
-                    algorithm. The Arrival Time, Burst Time, and Priority of
-                    each process are provided in the table.
-                  </h2>
-
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Arrival Time</th>
-                      <th>Burst Time</th>
-                      <th>Priority</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>0</td>
-                      <td>5</td>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>1</td>
-                      <td>3</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>2</td>
-                      <td>4</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>3</td>
-                      <td>6</td>
-                      <td>4</td>
-                    </tr>
-                  </table>
-                </div>
+              <div class="solution">
                 <h3>Solution :</h3>
                 <p>
                   lower number represents higher priority (here i take 1 as a
@@ -928,19 +380,12 @@
                 </ul>
 
                 <h4>Gantt Chart</h4>
-                <img
-                  loading="lazy"
-                  id="ps3"
-                  alt="Priority Scheduling | Question 3 Solution | Gantt Chart"
-                  title="Priority Scheduling | Question 3 Solution | Gantt Chart"
-                  srcset=""
-                />
-                <!-- <p>| P1 (0-5) | P2 (5-8) | P3 (8-12) | P4 (12-18) |</p> -->
+                <img loading="lazy" src="/assets/PS1.png" id="ps1"
+                  alt="Priority Scheduling | Question 1 Solution | Gantt Chart"
+                  title="Priority Scheduling | Question 1 Solution | Gantt Chart" srcset="" />
+                <!-- <p>| P1 (0-8) | P2 (8-12) | P3 (12-21) | P4 (21-26) |</p> -->
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
+                <table style="border: 1px solid black" class="table table-bordered">
                   <tr>
                     <th>Process</th>
                     <th>Completion Time</th>
@@ -949,319 +394,774 @@
                   </tr>
                   <tr>
                     <td>P1</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>7</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>21</td>
+                    <td>19</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>26</td>
+                    <td>23</td>
+                    <td>18</td>
+                  </tr>
+                </table>
+
+                <p>Average Turnaround Time: (8+11+19+23)/4 = 15.25</p>
+                <p>Average Waiting Time: (0+7+10+18)/4 = 8.75</p>
+              </div>
+            </div>
+            <!-- question 1 end -->
+            <!-- q 2 -->
+            <div id="question2">
+              <div class="question">
+                <h2>
+                  Question 2: Calculate the average Turnaround Time,
+                  Completion Time, and Waiting Time for the processes listed
+                  in the table using the Non-Preemptive Priority Scheduling
+                  algorithm.
+                </h2>
+
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
                     <td>5</td>
                     <td>5</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+                    <td>6</td>
+                    <td>1</td>
+                    <td>6</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="solution">
+                <h3>Solution :</h3>
+                <p>
+                  lower number represents higher priority (here i take 1 as a
+                  highest priority)
+                </p>
+                <p><strong>Formula:</strong></p>
+                <ul>
+                  <li>Turnaround Time = Completion Time - Arrival Time</li>
+                  <li>Waiting Time = Turnaround Time - Burst Time</li>
+                  <li>
+                    Average Turnaround Time = Sum of Turnaround Times / Number
+                    of Processes
+                  </li>
+                  <li>
+                    Average Waiting Time = Sum of Waiting Times / Number of
+                    Processes
+                  </li>
+                </ul>
+
+                <h4>Gantt Chart</h4>
+                <p>
+                  | P1 (1-4) | P2 (4-8) | P3 (8-14) | P4 (14-16) | P5 (16-21)
+                  | P6 (21-22) |
+                </p>
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+
+                    <th>Completion Time</th>
+                    <th>Turnaround Time (TAT)</th>
+                    <th>Waiting Time (WT)</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+
+                    <td>4</td>
+                    <td>4 - 1 = 3</td>
+                    <td>3 - 3 = 0</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+
+                    <td>8</td>
+                    <td>8 - 2 = 6</td>
+                    <td>6 - 4 = 2</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+
+                    <td>14</td>
+                    <td>14 - 3 = 11</td>
+                    <td>11 - 6 = 5</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+
+                    <td>16</td>
+                    <td>16 - 4 = 12</td>
+                    <td>12 - 2 = 10</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+
+                    <td>21</td>
+                    <td>21 - 5 = 16</td>
+                    <td>16 - 5 = 11</td>
+                  </tr>
+                  <tr>
+                    <td>P6</td>
+
+                    <td>22</td>
+                    <td>22 - 6 = 16</td>
+                    <td>16 - 1 = 15</td>
+                  </tr>
+                </table>
+
+                <h5>Average Turnaround Time :</h5>
+                <p>(3 + 6 + 11 + 12 + 16 + 16) / 6 = 10.67 units</p>
+
+                <h5>Average Waiting Time:</h5>
+                <p>(0 + 2 + 5 + 10 + 11 + 15) / 6 = 7.17 units</p>
+
+                <h4>Gantt Chart</h4>
+                <p>
+                  | P1 (1-4) | P2 (4-8) | P3 (8-14) | P4 (14-16) | P5 (16-21)
+                  | P6 (21-22) |
+                </p>
+              </div>
+            </div>
+            <!-- q2 end -->
+
+            <!-- question 3 start -->
+
+            <!-- question 6 start -->
+            <div id="question3">
+              <div class="question">
+                <h2>
+                  Question 3: Given a list of processes with their respective
+                  Arrival Times, Burst Times, and Priorities in the table, use
+                  the Non-Preemptive Priority Scheduling algorithm to
+                  determine the Completion Time, Turnaround Time, and Waiting
+                  Time for each process.
+                </h2>
+
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>3</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="solution">
+                <h3>Solution :</h3>
+                <p>
+                  lower number represents higher priority (here i take 1 as a
+                  highest priority)
+                </p>
+                <p><strong>Formula:</strong></p>
+                <ul>
+                  <li>Turnaround Time = Completion Time - Arrival Time</li>
+                  <li>Waiting Time = Turnaround Time - Burst Time</li>
+                  <li>
+                    Average Turnaround Time = Sum of Turnaround Times / Number
+                    of Processes
+                  </li>
+                  <li>
+                    Average Waiting Time = Sum of Waiting Times / Number of
+                    Processes
+                  </li>
+                </ul>
+
+                <h4>Gantt Chart</h4>
+                <img loading="lazy" id="ps6" alt="Priority Scheduling | Question 6 Solution | Gantt Chart"
+                  title="Priority Scheduling | Question 6 Solution | Gantt Chart" srcset="" />
+                <!-- <p>| P1 (0-5) | P2 (5-8) | P4 (8-10) | P3 (10-11) |</p> -->
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+
+                    <th>Completion Time</th>
+                    <th>Turnaround Time (TAT)</th>
+                    <th>Waiting Time (WT)</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+
+                    <td>5</td>
+                    <td>5 - 0 = 5</td>
+                    <td>5 - 5 = 0</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+
+                    <td>8</td>
+                    <td>8 - 2 = 6</td>
+                    <td>6 - 3 = 3</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+
+                    <td>11</td>
+                    <td>11 - 4 = 7</td>
+                    <td>7 - 1 = 6</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+
+                    <td>10</td>
+                    <td>10 - 6 = 4</td>
+                    <td>4 - 2 = 2</td>
+                  </tr>
+                </table>
+
+                <h5>Average Turnaround Time:</h5>
+                <p>(5 + 6 + 7 + 4) / 4 = 5.5 units</p>
+
+                <h5>Average Waiting Time:</h5>
+                <p>(0 + 3 + 6 + 2) / 4 = 2.75 units</p>
+              </div>
+            </div>
+            <!-- question 6 end -->
+
+            <!-- question 5 start -->
+            <div id="question4">
+              <div class="question">
+                <h2>
+                  Question 4 : Apply the Non-Preemptive Priority Scheduling
+                  method to the processes in the table and compute the average
+                  Waiting Time, Completion Time, and Turnaround Time.
+                </h2>
+
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>0</td>
+                    <td>3</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>4</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="solution">
+                <h3>Solution :</h3>
+                <p><strong>Formula:</strong></p>
+                <ul>
+                  <li>Turnaround Time = Completion Time - Arrival Time</li>
+                  <li>Waiting Time = Turnaround Time - Burst Time</li>
+                  <li>
+                    Average Turnaround Time = Sum of Turnaround Times / Number
+                    of Processes
+                  </li>
+                  <li>
+                    Average Waiting Time = Sum of Waiting Times / Number of
+                    Processes
+                  </li>
+                </ul>
+
+                <h4>Gantt Chart</h4>
+                <img loading="lazy" id="ps5" alt="Priority Scheduling | Question 5 Solution | Gantt Chart"
+                  title="Priority Scheduling | Question 5 Solution | Gantt Chart" srcset="" />
+                <!-- <p>| P1 (0-3) | P2 (3-8) | P3 (8-16) | P4 (16-22) |</p> -->
+
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th>Completion Time</th>
+                    <th>Turnaround Time</th>
+                    <th>Waiting Time</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>3</td>
+                    <td>3</td>
                     <td>0</td>
                   </tr>
                   <tr>
                     <td>P2</td>
                     <td>8</td>
-                    <td>7</td>
-                    <td>4</td>
+                    <td>6</td>
+                    <td>1</td>
                   </tr>
                   <tr>
                     <td>P3</td>
+                    <td>16</td>
                     <td>12</td>
-                    <td>10</td>
-                    <td>6</td>
+                    <td>4</td>
                   </tr>
                   <tr>
                     <td>P4</td>
-                    <td>18</td>
-                    <td>15</td>
-                    <td>9</td>
+                    <td>22</td>
+                    <td>16</td>
+                    <td>10</td>
                   </tr>
                 </table>
 
                 <p>
-                  <strong>Average Turnaround Time:</strong> (5+7+10+15)/4 = 9.25
+                  <strong>Average Turnaround Time:</strong> (3+6+12+16)/4 =
+                  9.25
                 </p>
-                <p><strong>Average Waiting Time:</strong> (0+4+6+9)/4 = 4.75</p>
+                <p>
+                  <strong>Average Waiting Time:</strong> (0+1+4+10)/4 = 3.75
+                </p>
               </div>
-              <!-- question 8 start -->
-              <div id="question6">
-                <div class="question">
-                  <h2>Question 6: Non-Preemptive Priority Scheduling</h2>
-                  <p>
-                    find the average Turn Around Time and Waiting Time of
-                    following processes using Non-Preemptive priority scheduling
-                    process scheduling algorithm? Consider the following
-                    processes with their Arrival Time, Burst Time, and Priority
-                    which is given in the table.
-                  </p>
-
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Arrival Time</th>
-                      <th>Burst Time</th>
-                      <th>Priority</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>1</td>
-                      <td>3</td>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>2</td>
-                      <td>6</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>3</td>
-                      <td>4</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>5</td>
-                      <td>5</td>
-                      <td>4</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="solution">
-                  <h3>Solution :</h3>
-                  <p>
-                    lower number represents higher priority (here i take 1 as a
-                    highest priority)
-                  </p>
-                  <p><strong>Formula:</strong></p>
-                  <ul>
-                    <li>Turnaround Time = Completion Time - Arrival Time</li>
-                    <li>Waiting Time = Turnaround Time - Burst Time</li>
-                    <li>
-                      Average Turnaround Time = Sum of Turnaround Times / Number
-                      of Processes
-                    </li>
-                    <li>
-                      Average Waiting Time = Sum of Waiting Times / Number of
-                      Processes
-                    </li>
-                  </ul>
-
-                  <h4>Gantt Chart</h4>
-                  <img
-                    loading="lazy"
-                    id="ps8"
-                    alt="Priority Scheduling | Question 8 Solution | Gantt Chart"
-                    title="Priority Scheduling | Question 8 Solution | Gantt Chart"
-                    srcset=""
-                  />
-                  <!-- <p>| P1 (1-4) | P3 (4-8) | P2 (8-14) | P4 (14-19) |</p> -->
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-
-                      <th>Completion Time</th>
-                      <th>Turnaround Time (TAT)</th>
-                      <th>Waiting Time (WT)</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-
-                      <td>4</td>
-                      <td>4 - 1 = 3</td>
-                      <td>3 - 3 = 0</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-
-                      <td>14</td>
-                      <td>14 - 2 = 12</td>
-                      <td>12 - 6 = 6</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-
-                      <td>8</td>
-                      <td>8 - 3 = 5</td>
-                      <td>5 - 4 = 1</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-
-                      <td>19</td>
-                      <td>19 - 5 = 14</td>
-                      <td>14 - 5 = 9</td>
-                    </tr>
-                  </table>
-
-                  <h5>Average Turnaround Time:</h5>
-                  <p>(3 + 12 + 5 + 14) / 4 = 8.5 units</p>
-
-                  <h5>Average Waiting Time:</h5>
-                  <p>(0 + 6 + 1 + 9) / 4 = 4 units</p>
-                </div>
-              </div>
-              <!-- question 8 end -->
-
-              <!-- question 10 start -->
-              <div id="question7">
-                <div class="question">
-                  <h2>
-                    Question 7: A set of processes is given with Arrival Time,
-                    Burst Time, and Priority values in the table. Use the
-                    Non-Preemptive Priority Scheduling algorithm to calculate
-                    each process's Completion Time, Turnaround Time, and Waiting
-                    Time.
-                  </h2>
-
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-                      <th>Arrival Time</th>
-                      <th>Burst Time</th>
-                      <th>Priority</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-                      <td>1</td>
-                      <td>5</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-                      <td>2</td>
-                      <td>3</td>
-                      <td>1</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-                      <td>3</td>
-                      <td>6</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-                      <td>4</td>
-                      <td>4</td>
-                      <td>3</td>
-                    </tr>
-                    <tr>
-                      <td>P5</td>
-                      <td>5</td>
-                      <td>2</td>
-                      <td>5</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="solution">
-                  <h3>Solution :</h3>
-                  <p>
-                    lower number represents higher priority (here i take 1 as a
-                    highest priority)
-                  </p>
-                  <p><strong>Formula:</strong></p>
-                  <ul>
-                    <li>Turnaround Time = Completion Time - Arrival Time</li>
-                    <li>Waiting Time = Turnaround Time - Burst Time</li>
-                    <li>
-                      Average Turnaround Time = Sum of Turnaround Times / Number
-                      of Processes
-                    </li>
-                    <li>
-                      Average Waiting Time = Sum of Waiting Times / Number of
-                      Processes
-                    </li>
-                  </ul>
-                  <h4>Gantt Chart</h4>
-                  <img
-                    loading="lazy"
-                    id="ps10"
-                    alt="Priority Scheduling | Question 10 Solution | Gantt Chart"
-                    title="Priority Scheduling | Question 10 Solution | Gantt Chart"
-                    srcset=""
-                  />
-                  <!-- <p>| P1 (1-6) | P2 (6-9) | P4 (9-13) | P3 (139) | P5 (19-21) |</p> -->
-                  <table
-                    style="border: 1px solid black"
-                    class="table table-bordered"
-                  >
-                    <tr>
-                      <th>Process</th>
-
-                      <th>Completion Time</th>
-                      <th>Turnaround Time (TAT)</th>
-                      <th>Waiting Time (WT)</th>
-                    </tr>
-                    <tr>
-                      <td>P1</td>
-
-                      <td>6</td>
-                      <td>6 - 1 = 5</td>
-                      <td>5 - 5 = 0</td>
-                    </tr>
-                    <tr>
-                      <td>P2</td>
-
-                      <td>9</td>
-                      <td>9 - 2 = 7</td>
-                      <td>7 - 3 = 4</td>
-                    </tr>
-                    <tr>
-                      <td>P3</td>
-
-                      <td>19</td>
-                      <td>19 - 3 = 16</td>
-                      <td>16 - 6 = 10</td>
-                    </tr>
-                    <tr>
-                      <td>P4</td>
-
-                      <td>13</td>
-                      <td>13 - 4 = 9</td>
-                      <td>19 - 4 = 5</td>
-                    </tr>
-                    <tr>
-                      <td>P5</td>
-
-                      <td>21</td>
-                      <td>21 - 5 = 16</td>
-                      <td>16 - 2 = 14</td>
-                    </tr>
-                  </table>
-
-                  <h5>Average Turnaround Time:</h5>
-                  <p>(5 + 7 + 16 + 9 + 16) / 5 = 10.6 units</p>
-
-                  <h5>Average Waiting Time:</h5>
-                  <p>(0 + 4 + 10 + 5+ 14) / 5 = 6.6 units</p>
-                </div>
-              </div>
-              <!-- question  10 end -->
-            </section>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <button class="btn btn-success" id="down" type="button">
-                <a href="ps2.html">for question 11 to 20 click here</a>
-              </button>
             </div>
-            <br />
-          </article>
-        </main>
-      </div>
-      <div id="right_content"></div>
+            <!-- question 5 end -->
+
+            <div id="question5">
+              <div class="question">
+                <h2>
+                  Question 5 :Calculate the average Turnaround Time,
+                  Completion Time, and Waiting Time for the given set of
+                  processes using the Non-Preemptive Priority Scheduling
+                  algorithm. The Arrival Time, Burst Time, and Priority of
+                  each process are provided in the table.
+                </h2>
+
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>4</td>
+                  </tr>
+                </table>
+              </div>
+              <h3>Solution :</h3>
+              <p>
+                lower number represents higher priority (here i take 1 as a
+                highest priority)
+              </p>
+              <p><strong>Formula:</strong></p>
+              <ul>
+                <li>Turnaround Time = Completion Time - Arrival Time</li>
+                <li>Waiting Time = Turnaround Time - Burst Time</li>
+                <li>
+                  Average Turnaround Time = Sum of Turnaround Times / Number
+                  of Processes
+                </li>
+                <li>
+                  Average Waiting Time = Sum of Waiting Times / Number of
+                  Processes
+                </li>
+              </ul>
+
+              <h4>Gantt Chart</h4>
+              <img loading="lazy" id="ps3" alt="Priority Scheduling | Question 3 Solution | Gantt Chart"
+                title="Priority Scheduling | Question 3 Solution | Gantt Chart" srcset="" />
+              <!-- <p>| P1 (0-5) | P2 (5-8) | P3 (8-12) | P4 (12-18) |</p> -->
+
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Completion Time</th>
+                  <th>Turnaround Time</th>
+                  <th>Waiting Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>8</td>
+                  <td>7</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>12</td>
+                  <td>10</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>18</td>
+                  <td>15</td>
+                  <td>9</td>
+                </tr>
+              </table>
+
+              <p>
+                <strong>Average Turnaround Time:</strong> (5+7+10+15)/4 = 9.25
+              </p>
+              <p><strong>Average Waiting Time:</strong> (0+4+6+9)/4 = 4.75</p>
+            </div>
+            <!-- question 8 start -->
+            <div id="question6">
+              <div class="question">
+                <h2>Question 6: Non-Preemptive Priority Scheduling</h2>
+                <p>
+                  find the average Turn Around Time and Waiting Time of
+                  following processes using Non-Preemptive priority scheduling
+                  process scheduling algorithm? Consider the following
+                  processes with their Arrival Time, Burst Time, and Priority
+                  which is given in the table.
+                </p>
+
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>4</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="solution">
+                <h3>Solution :</h3>
+                <p>
+                  lower number represents higher priority (here i take 1 as a
+                  highest priority)
+                </p>
+                <p><strong>Formula:</strong></p>
+                <ul>
+                  <li>Turnaround Time = Completion Time - Arrival Time</li>
+                  <li>Waiting Time = Turnaround Time - Burst Time</li>
+                  <li>
+                    Average Turnaround Time = Sum of Turnaround Times / Number
+                    of Processes
+                  </li>
+                  <li>
+                    Average Waiting Time = Sum of Waiting Times / Number of
+                    Processes
+                  </li>
+                </ul>
+
+                <h4>Gantt Chart</h4>
+                <img loading="lazy" id="ps8" alt="Priority Scheduling | Question 8 Solution | Gantt Chart"
+                  title="Priority Scheduling | Question 8 Solution | Gantt Chart" srcset="" />
+                <!-- <p>| P1 (1-4) | P3 (4-8) | P2 (8-14) | P4 (14-19) |</p> -->
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+
+                    <th>Completion Time</th>
+                    <th>Turnaround Time (TAT)</th>
+                    <th>Waiting Time (WT)</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+
+                    <td>4</td>
+                    <td>4 - 1 = 3</td>
+                    <td>3 - 3 = 0</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+
+                    <td>14</td>
+                    <td>14 - 2 = 12</td>
+                    <td>12 - 6 = 6</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+
+                    <td>8</td>
+                    <td>8 - 3 = 5</td>
+                    <td>5 - 4 = 1</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+
+                    <td>19</td>
+                    <td>19 - 5 = 14</td>
+                    <td>14 - 5 = 9</td>
+                  </tr>
+                </table>
+
+                <h5>Average Turnaround Time:</h5>
+                <p>(3 + 12 + 5 + 14) / 4 = 8.5 units</p>
+
+                <h5>Average Waiting Time:</h5>
+                <p>(0 + 6 + 1 + 9) / 4 = 4 units</p>
+              </div>
+            </div>
+            <!-- question 8 end -->
+
+            <!-- question 10 start -->
+            <div id="question7">
+              <div class="question">
+                <h2>
+                  Question 7: A set of processes is given with Arrival Time,
+                  Burst Time, and Priority values in the table. Use the
+                  Non-Preemptive Priority Scheduling algorithm to calculate
+                  each process's Completion Time, Turnaround Time, and Waiting
+                  Time.
+                </h2>
+
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst Time</th>
+                    <th>Priority</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>5</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="solution">
+                <h3>Solution :</h3>
+                <p>
+                  lower number represents higher priority (here i take 1 as a
+                  highest priority)
+                </p>
+                <p><strong>Formula:</strong></p>
+                <ul>
+                  <li>Turnaround Time = Completion Time - Arrival Time</li>
+                  <li>Waiting Time = Turnaround Time - Burst Time</li>
+                  <li>
+                    Average Turnaround Time = Sum of Turnaround Times / Number
+                    of Processes
+                  </li>
+                  <li>
+                    Average Waiting Time = Sum of Waiting Times / Number of
+                    Processes
+                  </li>
+                </ul>
+                <h4>Gantt Chart</h4>
+                <img loading="lazy" id="ps10" alt="Priority Scheduling | Question 10 Solution | Gantt Chart"
+                  title="Priority Scheduling | Question 10 Solution | Gantt Chart" srcset="" />
+                <!-- <p>| P1 (1-6) | P2 (6-9) | P4 (9-13) | P3 (139) | P5 (19-21) |</p> -->
+                <table style="border: 1px solid black" class="table table-bordered">
+                  <tr>
+                    <th>Process</th>
+
+                    <th>Completion Time</th>
+                    <th>Turnaround Time (TAT)</th>
+                    <th>Waiting Time (WT)</th>
+                  </tr>
+                  <tr>
+                    <td>P1</td>
+
+                    <td>6</td>
+                    <td>6 - 1 = 5</td>
+                    <td>5 - 5 = 0</td>
+                  </tr>
+                  <tr>
+                    <td>P2</td>
+
+                    <td>9</td>
+                    <td>9 - 2 = 7</td>
+                    <td>7 - 3 = 4</td>
+                  </tr>
+                  <tr>
+                    <td>P3</td>
+
+                    <td>19</td>
+                    <td>19 - 3 = 16</td>
+                    <td>16 - 6 = 10</td>
+                  </tr>
+                  <tr>
+                    <td>P4</td>
+
+                    <td>13</td>
+                    <td>13 - 4 = 9</td>
+                    <td>19 - 4 = 5</td>
+                  </tr>
+                  <tr>
+                    <td>P5</td>
+
+                    <td>21</td>
+                    <td>21 - 5 = 16</td>
+                    <td>16 - 2 = 14</td>
+                  </tr>
+                </table>
+
+                <h5>Average Turnaround Time:</h5>
+                <p>(5 + 7 + 16 + 9 + 16) / 5 = 10.6 units</p>
+
+                <h5>Average Waiting Time:</h5>
+                <p>(0 + 4 + 10 + 5+ 14) / 5 = 6.6 units</p>
+              </div>
+            </div>
+            <!-- question  10 end -->
+          </section>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-success" id="down" type="button">
+              <a href="ps2.html">for question 11 to 20 click here</a>
+            </button>
+          </div>
+          <br>
+        </article>
+      </main>
     </div>
+    <div id="right_content"></div>
+  </div>
 
-    <script type="module" src="commonthings.min.js"></script>
-    <script>
-      let ganttcharts = document.getElementsByTagName("img");
-      for (let index = 0; index < ganttcharts.length; index++) {
-        ganttcharts[index].src = "/assets/PS1.png";
-      }
-    </script>
+  <script type="module" src="commonthings.min.js"></script>
+  <script>
+    let ganttcharts = document.getElementsByTagName("img");
+    for (let index = 0; index < ganttcharts.length; index++) {
+      ganttcharts[index].src = "/assets/PS1.png";
+    }
+  </script>
 
-  </body>
+</body>
+
 </html>

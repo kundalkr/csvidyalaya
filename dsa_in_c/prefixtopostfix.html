@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
+    <script type="module" src="/js/src/alljs.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prefix to Postfix & Postfix to Prefix Conversions Questions</title>
@@ -19,13 +19,13 @@
         <main>
           <div class="title_date">
             <h1>Prefix And Postfix Conversion Questions</h1>
-          </div>
-          <article>
+          </div><article>
+          
             <p>These questions are generally asked in university exam</p>
             <p>infix, prefix based stack question</p>
 
             <div>
-              <br />
+              <br>
               <a
                 href="#fstque"
                 class="btn btn-primary btn-lg active"
@@ -33,7 +33,7 @@
                 aria-pressed="true"
                 >Jump To Question</a
               >
-              <br /><br />
+              <br><br>
 
               <h2>Prefix and Postfix Notation in DSA</h2>
               <p>
@@ -87,7 +87,7 @@
               </ul>
 
               <h3>Advantages and Disadvantages</h3>
-              <table border="1" class="table table-bordered">
+              <table class="table table-bordered border-2 border-black">
                 <tr>
                   <th>Notation</th>
                   <th>Advantages</th>
@@ -161,12 +161,12 @@
                     The given prefix expression is * + A B - C D. In order to
                     convert it to a postfix expression, we follow the reverse
                     process of the prefix to postfix conversion.
-                    <br /><br />
+                    <br><br>
                     Step 1: Reverse the prefix expression: D C - B A + *
-                    <br /><br />
+                    <br><br>
                     Step 2: Use a stack to evaluate the expression from left to
                     right.
-                    <br /><br />
+                    <br><br>
                     Result: A B + C D - *.
                   </p>
                   <section>
@@ -226,14 +226,14 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is AB+CD-*.
-                <br /><br />
+                <br><br>
                 Step 1: Read the postfix expression from left to right and use a
                 stack to evaluate it.
-                <br /><br />
+                <br><br>
                 Step 2: Push operands onto the stack. When encountering an
                 operator, pop the required number of operands, and create a new
                 prefix expression.
-                <br /><br />
+                <br><br>
                 Final prefix expression: * + A B - C D.
               </p>
 
@@ -244,11 +244,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The prefix expression is / * A B + C D.
-                <br /><br />
+                <br><br>
                 Step 1: Reverse the prefix expression: D C + B A * /
-                <br /><br />
+                <br><br>
                 Step 2: Evaluate from left to right using a stack.
-                <br /><br />
+                <br><br>
                 Postfix expression: A B * C D + /.
               </p>
 
@@ -256,13 +256,13 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is ABC+*D/.
-                <br /><br />
+                <br><br>
                 Step 1: Read the postfix expression from left to right, pushing
                 operands onto the stack.
-                <br /><br />
+                <br><br>
                 Step 2: When encountering operators, pop operands and form a
                 prefix expression.
-                <br /><br />
+                <br><br>
                 Prefix expression: / * A + B C D.
               </p>
 
@@ -272,11 +272,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The prefix expression is - * A B + C D.
-                <br /><br />
+                <br><br>
                 Step 1: Reverse the prefix expression: D C + B A * -
-                <br /><br />
+                <br><br>
                 Step 2: Using a stack, evaluate from left to right.
-                <br /><br />
+                <br><br>
                 Postfix expression: A B * C D + -.
               </p>
 
@@ -284,12 +284,12 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is AB*CD+/.
-                <br /><br />
+                <br><br>
                 Step 1: Read the expression from left to right, push operands
                 onto a stack.
-                <br /><br />
+                <br><br>
                 Step 2: Use the stack to evaluate when encountering operators.
-                <br /><br />
+                <br><br>
                 Prefix expression: / * A B + C D.
               </p>
 
@@ -297,11 +297,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The prefix expression is + A / B C.
-                <br /><br />
+                <br><br>
                 Step 1: Reverse the prefix expression: C B / A +
-                <br /><br />
+                <br><br>
                 Step 2: Use a stack to evaluate.
-                <br /><br />
+                <br><br>
                 Postfix expression: A B C / +.
               </p>
 
@@ -309,12 +309,12 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is ABC+/D*.
-                <br /><br />
+                <br><br>
                 Step 1: Push operands onto the stack.
-                <br /><br />
+                <br><br>
                 Step 2: Pop operands and create prefix expressions as operators
                 appear.
-                <br /><br />
+                <br><br>
                 Prefix expression: * + A B / C D.
               </p>
 
@@ -324,11 +324,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The prefix expression is - / A B + C D.
-                <br /><br />
+                <br><br>
                 Step 1: Reverse the prefix expression: D C + B A / -
-                <br /><br />
+                <br><br>
                 Step 2: Evaluate using a stack.
-                <br /><br />
+                <br><br>
                 Postfix expression: A B / C D + -.
               </p>
 
@@ -336,12 +336,12 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is ABC+D/-.
-                <br /><br />
+                <br><br>
                 Step 1: Push operands onto the stack.
-                <br /><br />
+                <br><br>
                 Step 2: Use the stack to create prefix expressions as operators
                 appear.
-                <br /><br />
+                <br><br>
                 Prefix expression: - / A B + C D.
               </p>
 
@@ -349,11 +349,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The prefix expression is * A + B C.
-                <br /><br />
+                <br><br>
                 Step 1: Reverse the prefix expression: C B + A *
-                <br /><br />
+                <br><br>
                 Step 2: Evaluate using a stack.
-                <br /><br />
+                <br><br>
                 Postfix expression: A B C + *.
               </p>
 
@@ -361,11 +361,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is AB+CD-*.
-                <br /><br />
+                <br><br>
                 Step 1: Push operands onto the stack.
-                <br /><br />
+                <br><br>
                 Step 2: Pop operands and form prefix expressions.
-                <br /><br />
+                <br><br>
                 Prefix expression: * + A B - C D.
               </p>
 
@@ -375,11 +375,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The prefix expression is / - A B + C D.
-                <br /><br />
+                <br><br>
                 Step 1: Reverse the prefix expression: D C + B A - /
-                <br /><br />
+                <br><br>
                 Step 2: Evaluate using a stack.
-                <br /><br />
+                <br><br>
                 Postfix expression: A B - C D + /.
               </p>
 
@@ -387,12 +387,12 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is AB-CD+*.
-                <br /><br />
+                <br><br>
                 Step 1: Push operands onto the stack.
-                <br /><br />
+                <br><br>
                 Step 2: Use the stack to form prefix expressions as operators
                 appear.
-                <br /><br />
+                <br><br>
                 Prefix expression: * - A B + C D.
               </p>
 
@@ -400,11 +400,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The prefix expression is + A * B C.
-                <br /><br />
+                <br><br>
                 Step 1: Reverse the prefix expression: C B * A +
-                <br /><br />
+                <br><br>
                 Step 2: Evaluate using a stack.
-                <br /><br />
+                <br><br>
                 Postfix expression: A B C * +.
               </p>
 
@@ -412,12 +412,12 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is ABC*-.
-                <br /><br />
+                <br><br>
                 Step 1: Push operands onto the stack.
-                <br /><br />
+                <br><br>
                 Step 2: Use the stack to form prefix expressions as operators
                 appear.
-                <br /><br />
+                <br><br>
                 Prefix expression: - A * B C.
               </p>
 
@@ -427,11 +427,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The prefix expression is * - A B + C D.
-                <br /><br />
+                <br><br>
                 Step 1: Reverse the prefix expression: D C + B A - *
-                <br /><br />
+                <br><br>
                 Step 2: Evaluate using a stack.
-                <br /><br />
+                <br><br>
                 Postfix expression: A B - C D + *.
               </p>
 
@@ -439,12 +439,12 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is AB*CD+/.
-                <br /><br />
+                <br><br>
                 Step 1: Push operands onto the stack.
-                <br /><br />
+                <br><br>
                 Step 2: Use the stack to form prefix expressions as operators
                 appear.
-                <br /><br />
+                <br><br>
                 Prefix expression: / * A B + C D.
               </p>
 
@@ -454,11 +454,11 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The prefix expression is / + A B - C D.
-                <br /><br />
+                <br><br>
                 Step 1: Reverse the prefix expression: D C - B A + /
-                <br /><br />
+                <br><br>
                 Step 2: Use a stack to evaluate.
-                <br /><br />
+                <br><br>
                 Postfix expression: A B + C D - /.
               </p>
 
@@ -466,12 +466,12 @@
               <p><strong>Answer:</strong></p>
               <p>
                 The given postfix expression is AB+CD-*.
-                <br /><br />
+                <br><br>
                 Step 1: Push operands onto the stack.
-                <br /><br />
+                <br><br>
                 Step 2: Use the stack to form prefix expressions as operators
                 appear.
-                <br /><br />
+                <br><br>
                 Prefix expression: * + A B - C D.
               </p>
             </section>
@@ -482,7 +482,7 @@
                 </a>
               </button>
             </div>
-            <br />
+            <br>
             <div class="d-grid gap-2 col-6 mx-auto">
               <button class="btn btn-success" id="down" type="button">
                 <a href="postfixprefixofinfix.html" style="color: antiquewhite"
@@ -490,7 +490,7 @@
                 </a>
               </button>
             </div>
-            <br />
+            <br>
           </article>
         </main>
       </div>

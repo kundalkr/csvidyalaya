@@ -1,0 +1,8 @@
+{
+  "alt-require": true,
+  "attr-lowercase": true,
+  "tag-self-close": false,
+  "tagname-lowercase": true,
+  "doctype-html5": true,
+  "title-require": true
+}

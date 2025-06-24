@@ -1,112 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn Relational algebra in DBMS with solved question</title>
-    <style>
-      img {
-        margin-bottom: 2em;
-        width: 650px;
-        height: auto;
-        @media (width<=770px) {
-          width: 400px;
-          height: auto;
-        }
-      }
+
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Essential Meta Tags -->
+  <title>Relational Algebra Questions with Answers | DBMS | CS Vidyalaya</title>
+  <meta name="description"
+    content="Explore important Relational Algebra questions with answers for DBMS exams and interviews. Perfect for students and competitive exam preparation.">
+  <meta name="keywords"
+    content="Relational Algebra, DBMS, Relational Algebra Questions, DBMS Questions, Relational Algebra Examples, CS Vidyalaya">
+  <meta name="author" content="CS Vidyalaya">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph Meta Tags (for Facebook, LinkedIn) -->
+  <meta property="og:title" content="Relational Algebra Questions with Answers | DBMS | CS Vidyalaya">
+  <meta property="og:description"
+    content="Explore a wide range of Relational Algebra questions with detailed answers, tailored for DBMS exams and interviews.">
+  <meta property="og:url" content="https://www.csvidyalaya.com/DBMS/DBMS_topics/Relational_algebra_topics.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="CS Vidyalaya">
+  <meta property="og:image" content="https://www.csvidyalaya.com/assets/relational_algebra_banner.jpg">
+  <!-- replace with actual image -->
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Relational Algebra Questions with Answers | CS Vidyalaya">
+  <meta name="twitter:description"
+    content="Practice top Relational Algebra questions to master DBMS concepts. Free resource by CS Vidyalaya.">
+  <meta name="twitter:image" content="https://www.csvidyalaya.com/assets/relational_algebra_banner.jpg">
+  <!-- replace with actual image -->
+  <!-- json ld -->
+  <script  id="structured-data" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.csvidyalaya.com/DBMS/DBMS_topics/Relational_algebra_topics.html"
+  },
+  "headline": "Relational Algebra Questions with Answers",
+  "description": "Explore top Relational Algebra questions and answers for DBMS preparation. A must-read for students and interview candidates.",
+  "image": "https://www.csvidyalaya.com/assets/relational_algebra_banner.jpg", 
+  "author": {
+    "@type": "Organization",
+    "name": "CS Vidyalaya",
+    "url": "https://www.csvidyalaya.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CS Vidyalaya",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.csvidyalaya.com/assets/logo.png"
+    }
+  },
+  "datePublished": "2024-01-15",
+  "dateModified": "2025-06-10"
+}
+</script>
+  <!-- json ld end -->
+  <style>
+    img {
+      margin-bottom: 2em;
+      width: 650px;
+      height: auto;
+
       @media (width<=770px) {
-        h1 {
-          font-size: large;
-          font-family: "Playwrite CU", cursive;
-          font-optical-sizing: auto;
-          font-weight: 250;
-          font-style: normal;
-          text-align: center;
-        }
+        width: 400px;
+        height: auto;
       }
+    }
+
+    @media (width<=770px) {
       h1 {
+        font-size: large;
         font-family: "Playwrite CU", cursive;
         font-optical-sizing: auto;
-        font-weight: 350;
+        font-weight: 250;
         font-style: normal;
         text-align: center;
       }
-      /* loader start */
-      #loadering {
-        position: relative;
-        width: 120px;
-        height: 90px;
-        display: block;
-        margin: 50px auto;
-        /* border: 1px solid red; */
-      }
-      #loadering:before {
-        content: "";
-        position: absolute;
-        bottom: 30px;
-        left: 50px;
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-        background: #ff3d00;
-        animation: loading-bounce 0.5s ease-in-out infinite alternate;
-      }
-      #loadering:after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 7px;
-        width: 45px;
-        border-radius: 4px;
-        box-shadow: 0 5px 0 #028637, -35px 50px 0 #028637, -70px 95px 0 #028637;
-        animation: loading-step 1s ease-in-out infinite;
+    }
+
+    h1 {
+      font-family: "Playwrite CU", cursive;
+      font-optical-sizing: auto;
+      font-weight: 350;
+      font-style: normal;
+      text-align: center;
+    }
+
+    /* loader start */
+    #loadering {
+      position: relative;
+      width: 120px;
+      height: 90px;
+      display: block;
+      margin: 50px auto;
+      /* border: 1px solid red; */
+    }
+
+    #loadering:before {
+      content: "";
+      position: absolute;
+      bottom: 30px;
+      left: 50px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background: #ff3d00;
+      animation: loading-bounce 0.5s ease-in-out infinite alternate;
+    }
+
+    #loadering:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 7px;
+      width: 45px;
+      border-radius: 4px;
+      box-shadow: 0 5px 0 #028637, -35px 50px 0 #028637, -70px 95px 0 #028637;
+      animation: loading-step 1s ease-in-out infinite;
+    }
+
+    @keyframes loading-bounce {
+      0% {
+        transform: scale(1, 0.7);
       }
 
-      @keyframes loading-bounce {
-        0% {
-          transform: scale(1, 0.7);
-        }
-        40% {
-          transform: scale(0.8, 1.2);
-        }
-        60% {
-          transform: scale(1, 1);
-        }
-        100% {
-          bottom: 140px;
-        }
+      40% {
+        transform: scale(0.8, 1.2);
       }
-      @keyframes loading-step {
-        0% {
-          box-shadow: 0 10px 0 rgba(0, 0, 0, 0), 0 10px 0 #028637,
-            -35px 50px 0 #028637, -70px 90px 0 #028637;
-        }
-        100% {
-          box-shadow: 0 10px 0 #028637, -35px 50px 0 #028637,
-            -70px 90px 0 #028637, -70px 90px 0 rgba(0, 0, 0, 0);
-        }
+
+      60% {
+        transform: scale(1, 1);
       }
-    </style>
-    <script type="module">
-      import Questions from "/DBMS/DBMS_question.json" with {type : "json"};
-            let i = 1;
-            let j = 1;
-            for (let question of Questions) {
-              if (question.Tags.includes('#RA')) {
-                         let divs = document.createElement("div");
-              divs.setAttribute("id", `question${i}`);
-              let qusn = document.createElement("div");
-              qusn.setAttribute("class", "question");
-              let ans = document.createElement("div");
-              ans.setAttribute("class", "solution");
-              document.querySelector("#main_content > main > article > section:nth-child(1)").appendChild(divs);
-              divs.appendChild(qusn);
-              divs.appendChild(ans);
-                qusn.innerHTML = `<h2>${j}) ${question.Question}</h2>`;
-                if (i != 0) {
-                  ans.innerHTML = `
+
+      100% {
+        bottom: 140px;
+      }
+    }
+
+    @keyframes loading-step {
+      0% {
+        box-shadow: 0 10px 0 rgba(0, 0, 0, 0), 0 10px 0 #028637,
+          -35px 50px 0 #028637, -70px 90px 0 #028637;
+      }
+
+      100% {
+        box-shadow: 0 10px 0 #028637, -35px 50px 0 #028637,
+          -70px 90px 0 #028637, -70px 90px 0 rgba(0, 0, 0, 0);
+      }
+    }
+  </style>
+  <script type="module">
+    import Questions from "/DBMS/DBMS_question.json" with {type: "json"};
+    let i = 1;
+    let j = 1;
+    for (let question of Questions) {
+      if (question.Tags.includes('#RA')) {
+        let divs = document.createElement("div");
+        divs.setAttribute("id", `question${i}`);
+        let qusn = document.createElement("div");
+        qusn.setAttribute("class", "question");
+        let ans = document.createElement("div");
+        ans.setAttribute("class", "solution");
+        document.querySelector("#main_content > main > article > section:nth-child(1)").appendChild(divs);
+        divs.appendChild(qusn);
+        divs.appendChild(ans);
+        qusn.innerHTML = `<h2>${j}) ${question.Question}</h2>`;
+        if (i != 0) {
+          ans.innerHTML = `
                       <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample${i}" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">click here for answer</a>
                       <div class="row">
                     <div class="col">
@@ -116,74 +184,58 @@
                         </div>
                       </div>
                     </div>
-                      </div><br />`;
-                }
-                j++;
-              }
+                      </div><br>`;
+        }
+        j++;
+      }
 
-              i++;
+      i++;
 
-            }
-    </script>
-  </head>
-  <body>
-    <div id="three_section">
-      <div id="left_content" class="sticky-top">
-        <ul></ul>
-      </div>
-      <div id="main_content">
-        <main>
-          <div id="title_date">
-            <h1>
-              Learn Relational algebra in DBMS with solved question + PYQs
-            </h1>
-          </div>
-          <article>
-            <section></section>
-            <section>
-              <h2>Previous year question Realated to Relational Algebra</h2>
-              <picture>
-                <source
-                  media="(max-width:700px)"
-                  srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-cl-tst1-22-24.jpg"
-                />
-                <source
-                  media="(min-width:701px)"
-                  srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-cl-tst1-22-24.jpg"
-                />
-                <img
-                  loading="lazy"
-                  src="/assets/DBMS/RELATIONAL_ALGEBRA/RA-cl-tst1-22-24.jpg"
-                  alt="Previous year class test Question of relational algebra"
-                  title="relational algebra question | PYQs"
-                />
-              </picture>
+    }
+  </script>
+</head>
 
-              <picture>
-                <source
-                  media="(max-width:700px)"
-                  srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-DBMS-PYQ-22-24.jpg"
-                />
-                <source
-                  media="(min-width:701px)"
-                  srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-DBMS-PYQ-22-24.jpg"
-                />
-                <img
-                  loading="lazy"
-                  src="/assets/DBMS/RELATIONAL_ALGEBRA/RA-DBMS-PYQ-22-24.jpg"
-                  alt="Previous semester exam Question of relational algebra"
-                  title="relational algebra question | PYQs"
-                />
-              </picture>
-            </section>
-         
-          </article>
-        </main>
-      </div>
-      <div id="right_content">
-   
-      </div>
+<body>
+  <div id="three_section">
+    <div id="left_content" class="sticky-top">
+      <ul></ul>
     </div>
-    <script type="module" src="../../js/commonthings.min.js"></script>
-  </body>
+    <div id="main_content">
+      <main>
+        <div id="title_date">
+          <h1>
+            Learn Relational algebra in DBMS with solved question + PYQs
+          </h1>
+        </div>
+        <article>
+          <section></section>
+          <section>
+            <h2>Previous year question Realated to Relational Algebra</h2>
+            <picture>
+              <source media="(max-width:700px)" srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-cl-tst1-22-24.jpg" />
+              <source media="(min-width:701px)" srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-cl-tst1-22-24.jpg" />
+              <img loading="lazy" src="/assets/DBMS/RELATIONAL_ALGEBRA/RA-cl-tst1-22-24.jpg"
+                alt="Previous year class test Question of relational algebra"
+                title="relational algebra question | PYQs" />
+            </picture>
+
+            <picture>
+              <source media="(max-width:700px)" srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-DBMS-PYQ-22-24.jpg" />
+              <source media="(min-width:701px)" srcset="/assets/DBMS/RELATIONAL_ALGEBRA/RA-DBMS-PYQ-22-24.jpg" />
+              <img loading="lazy" src="/assets/DBMS/RELATIONAL_ALGEBRA/RA-DBMS-PYQ-22-24.jpg"
+                alt="Previous semester exam Question of relational algebra"
+                title="relational algebra question | PYQs" />
+            </picture>
+          </section>
+
+        </article>
+      </main>
+    </div>
+    <div id="right_content">
+
+    </div>
+  </div>
+  <script type="module" src="../../js/commonthings.min.js"></script>
+</body>
+
 </html>

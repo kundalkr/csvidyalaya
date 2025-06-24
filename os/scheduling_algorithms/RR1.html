@@ -1,43 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="text/javascript" src="/js/src/alljs.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Round Robin Scheduling Algorithm Questions with Solutions - Practice &
-      Learn
-    </title>
-    <meta
-      name="description"
-      content="Practice Round Robin Scheduling Algorithm questions with detailed explanations. Perfect for students and professionals preparing for computer science exams or interviews."
-    />
-    <meta
-      name="keywords"
-      content="Round Robin Scheduling Algorithm, Round Robin Questions, scheduling algorithm round robin, OS Algorithms, Computer Science Questions, Interview Questions on Round Robin, round robin with priority scheduling algorithm"
-    />
-    <meta name="author" content="Kundal Kumar" />
-    <meta name="robots" content="index, follow" />
-    <meta
-      property="og:title"
-      content="Round Robin Scheduling Algorithm Questions with Solutions"
-    />
-    <meta
-      property="og:description"
-      content="Explore a collection of Round Robin Scheduling Algorithm questions with answers, designed to help you ace your exams or job interviews."
-    />
-    <meta property="og:type" content="article" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Round Robin Scheduling Algorithm Questions with Solutions"
-    />
-    <meta
-      name="twitter:description"
-      content="Solve Round Robin Scheduling Algorithm questions with detailed answers. Ideal for exam preparation and technical interviews."
-    />
 
-    <style>
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Round Robin Scheduling Algorithm Questions with Solutions - Practice &
+    Learn
+  </title>
+  <meta name="description"
+    content="Practice Round Robin Scheduling Algorithm questions with detailed explanations. Perfect for students and professionals preparing for computer science exams or interviews." />
+  <meta name="keywords"
+    content="Round Robin Scheduling Algorithm, Round Robin Questions, scheduling algorithm round robin, OS Algorithms, Computer Science Questions, Interview Questions on Round Robin, round robin with priority scheduling algorithm" />
+  <meta name="author" content="Kundal Kumar" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Round Robin Scheduling Algorithm Questions with Solutions" />
+  <meta property="og:description"
+    content="Explore a collection of Round Robin Scheduling Algorithm questions with answers, designed to help you ace your exams or job interviews." />
+  <meta property="og:type" content="article" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Round Robin Scheduling Algorithm Questions with Solutions" />
+  <meta name="twitter:description"
+    content="Solve Round Robin Scheduling Algorithm questions with detailed answers. Ideal for exam preparation and technical interviews." />
+
+  <style>
+    #RR1,
+    #RR2_1,
+    #RR2_2,
+    #RR3_1,
+    #RR3_2,
+    #RR4_1,
+    #RR4_2,
+    #RR4_3,
+    #RR4_4,
+    #RR5,
+    #RR6,
+    #RR7,
+    #RR8_1,
+    #RR8_2 {
+      height: 180px;
+      width: 630px;
+      object-fit: none;
+    }
+
+    #RR1 {
+      object-position: -70px -43px;
+    }
+
+    #RR2_1 {
+      object-position: -43px -485px;
+    }
+
+    #RR2_2 {
+      object-position: -46px -683px;
+    }
+
+    #RR3_1 {
+      object-position: -54px -1251px;
+    }
+
+    #RR3_2 {
+      object-position: -48px -1460px;
+    }
+
+    #RR4_1 {
+      object-position: -66px -2085px;
+    }
+
+    #RR4_2 {
+      object-position: -63px -2283px;
+    }
+
+    #RR4_3 {
+      object-position: -56px -2500px;
+    }
+
+    #RR4_4 {
+      object-position: -56px -2712px;
+    }
+
+    #RR5 {
+      object-position: -1002px -42px;
+    }
+
+    #RR6 {
+      object-position: -958px -511px;
+    }
+
+    #RR7 {
+      object-position: -945px -992px;
+    }
+
+    #RR8_1 {
+      object-position: -957px -1429px;
+    }
+
+    #RR8_2 {
+      object-position: -957px -1656px;
+    }
+
+    @media (width<=770px) {
+
       #RR1,
       #RR2_1,
       #RR2_2,
@@ -52,1312 +116,1141 @@
       #RR7,
       #RR8_1,
       #RR8_2 {
-        height: 180px;
-        width: 630px;
-        object-fit: none;
+        height: 150px;
+        width: 400px;
       }
 
       #RR1 {
-        object-position: -70px -43px;
+        object-position: -64px -240px;
       }
+
       #RR2_1 {
-        object-position: -43px -485px;
+        object-position: -50px -889px;
       }
+
       #RR2_2 {
-        object-position: -46px -683px;
+        object-position: -52px -1040px;
       }
+
       #RR3_1 {
-        object-position: -54px -1251px;
+        object-position: -50px -1690px;
       }
+
       #RR3_2 {
-        object-position: -48px -1460px;
+        object-position: -50px -1883px;
       }
+
       #RR4_1 {
-        object-position: -66px -2085px;
+        object-position: -59px -2899px;
       }
+
       #RR4_2 {
-        object-position: -63px -2283px;
+        object-position: -54px -3067px;
       }
+
       #RR4_3 {
-        object-position: -56px -2500px;
+        object-position: -54px -3240px;
       }
+
       #RR4_4 {
-        object-position: -56px -2712px;
+        object-position: -472px -2899px;
       }
+
       #RR5 {
-        object-position: -1002px -42px;
+        object-position: -1003px -264px;
       }
+
       #RR6 {
-        object-position: -958px -511px;
+        object-position: -971px -748px;
       }
+
       #RR7 {
-        object-position: -945px -992px;
+        object-position: -953px -1195px;
       }
+
       #RR8_1 {
-        object-position: -957px -1429px;
+        object-position: -983px -1889px;
       }
+
       #RR8_2 {
-        object-position: -957px -1656px;
+        object-position: -920px -2048px;
       }
-      @media (width<=770px) {
-        #RR1,
-        #RR2_1,
-        #RR2_2,
-        #RR3_1,
-        #RR3_2,
-        #RR4_1,
-        #RR4_2,
-        #RR4_3,
-        #RR4_4,
-        #RR5,
-        #RR6,
-        #RR7,
-        #RR8_1,
-        #RR8_2 {
-          height: 150px;
-          width: 400px;
-        }
-        #RR1 {
-          object-position: -64px -240px;
-        }
-        #RR2_1 {
-          object-position: -50px -889px;
-        }
-        #RR2_2 {
-          object-position: -52px -1040px;
-        }
-        #RR3_1 {
-          object-position: -50px -1690px;
-        }
-        #RR3_2 {
-          object-position: -50px -1883px;
-        }
-        #RR4_1 {
-          object-position: -59px -2899px;
-        }
-        #RR4_2 {
-          object-position: -54px -3067px;
-        }
-        #RR4_3 {
-          object-position: -54px -3240px;
-        }
-        #RR4_4 {
-          object-position: -472px -2899px;
-        }
-        #RR5 {
-          object-position: -1003px -264px;
-        }
-        #RR6 {
-          object-position: -971px -748px;
-        }
-        #RR7 {
-          object-position: -953px -1195px;
-        }
-        #RR8_1 {
-          object-position: -983px -1889px;
-        }
-        #RR8_2 {
-          object-position: -920px -2048px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="three_section">
-      <div id="left_content" class="sticky-top">
-        <ul></ul>
-      </div>
-      <div id="main_content">
-        <main>
-          <div id="title_date">
-            <h1>
-              Round Robin Scheduling Algorithm Questions with Solutions -
-              Practice & Learn
-            </h1>
+    }
+  </style>
+</head>
+
+<body>
+  <div id="three_section">
+    <div id="left_content" class="sticky-top">
+      <ul></ul>
+    </div>
+    <div id="main_content">
+      <main>
+        <div id="title_date">
+          <h1>
+            Round Robin Scheduling Algorithm Questions with Solutions -
+            Practice & Learn
+          </h1>
+        </div>
+        <article>
+
+
+          <p>
+            Here are 30 questions on RR(Round Robin) process scheduling
+            algorithms . Each question is presented in a table format,
+            followed by the solution with Gantt charts, average turnaround
+            time (TAT), and average waiting time (WT).
+          </p>
+          <div>
+            <a href="#fstque" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Jump To
+              Question</a>
+            <br><br>
+
+            <section>
+              <h2>Round Robin Scheduling Algorithm in Operating System</h2>
+              <p>
+                Round Robin (RR) is a preemptive scheduling algorithm that
+                assigns a fixed time slice (or time quantum) to each process
+                in the ready queue. Each process is allowed to run for a time
+                quantum, and if it doesn’t finish within this period, it is
+                sent back to the end of the queue, and the next process in
+                line is executed. This cycle continues until all processes are
+                completed.
+              </p>
+            </section>
+            <section>
+              <h2>Method to Solve Round Robin Scheduling Algorithm</h2>
+              <ul>
+                <li>
+                  Step 1: Determine the time quantum (time slice) for each
+                  process.
+                </li>
+                <li>Step 2: Place all processes in the ready queue.</li>
+                <li>
+                  Step 3: Assign the first process the CPU for the duration of
+                  the time quantum.
+                </li>
+                <li>
+                  Step 4: If the process completes within the time quantum,
+                  remove it from the queue; otherwise, place it at the end of
+                  the queue.
+                </li>
+                <li>
+                  Step 5: Move to the next process and repeat the same steps
+                  until all processes have completed.
+                </li>
+                <li>
+                  Step 6: Calculate the average waiting time and average
+                  turnaround time for performance evaluation.
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>
+                To better understand the concept of Round Robin (RR)
+                Scheduling
+              </h2>
+              <a href="https://www.youtube.com/live/7S1GCbi5xCk?si=gvSniXDbG7Km6JKW&t=601">click here for video
+                lecture</a>
+            </section>
+
+            <section>
+              <h2>Advantages and Disadvantages of Round Robin Scheduling</h2>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Advantages</th>
+                  <th>Disadvantages</th>
+                </tr>
+                <tr>
+                  <td>Simple and easy to implement.</td>
+                  <td>
+                    Higher turnaround time due to frequent context switching.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Prevents process starvation as each process gets CPU time.
+                  </td>
+                  <td>Performance is heavily dependent on time quantum.</td>
+                </tr>
+                <tr>
+                  <td>Good for time-sharing systems.</td>
+                  <td>Not ideal for processes with varying burst times.</td>
+                </tr>
+                <tr>
+                  <td>
+                    Ensures fairness by giving each process equal time
+                    quantum.
+                  </td>
+                  <td>
+                    May lead to CPU inefficiency if time quantum is too small.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Responsive to interactive applications due to frequent
+                    preemption.
+                  </td>
+                  <td>
+                    Higher context switching overhead compared to
+                    non-preemptive algorithms.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Better for systems requiring real-time responsiveness.
+                  </td>
+                  <td>
+                    Processes with long burst times may need multiple cycles
+                    to complete.
+                  </td>
+                </tr>
+              </table>
+            </section>
+
+            <section>
+              <h2>
+                Why Round Robin is Better Than Other Scheduling Algorithms
+              </h2>
+              <p>
+                Round Robin scheduling is often better than other scheduling
+                algorithms like First Come First Serve (FCFS) and Shortest Job
+                Next (SJN) in scenarios that require fairness and
+                responsiveness. By allocating equal time slices, it ensures
+                that no process is starved of CPU time, making it suitable for
+                time-sharing systems. It also allows for quick response times
+                for interactive processes, making it ideal for real-time
+                applications. Its preemptive nature means that long processes
+                do not monopolize the CPU, improving the overall efficiency of
+                multi-tasking environments.
+              </p>
+            </section>
           </div>
 
-          <article>
-            <p>
-              Here are 30 questions on RR(Round Robin) process scheduling
-              algorithms . Each question is presented in a table format,
-              followed by the solution with Gantt charts, average turnaround
-              time (TAT), and average waiting time (WT).
-            </p>
-            <div>
-              <a
-                href="#fstque"
-                class="btn btn-primary btn-lg active"
-                role="button"
-                aria-pressed="true"
-                >Jump To Question</a
-              >
-              <br /><br />
+          <!-- definition section end -->
+          <!-- question 1 start -->
+          <div id="question1">
+            <div class="question">
+              <h2 id="fstque">
+                Question 1 : find the average Turn Around Time and Waiting
+                Time of following processes using RR(Round Robin) process
+                scheduling algorithm? Consider the following processes with
+                their Arrival Time, Burst Time (take Quantum Time = 2).
+              </h2>
 
-              <section>
-                <h2>Round Robin Scheduling Algorithm in Operating System</h2>
-                <p>
-                  Round Robin (RR) is a preemptive scheduling algorithm that
-                  assigns a fixed time slice (or time quantum) to each process
-                  in the ready queue. Each process is allowed to run for a time
-                  quantum, and if it doesn’t finish within this period, it is
-                  sent back to the end of the queue, and the next process in
-                  line is executed. This cycle continues until all processes are
-                  completed.
-                </p>
-              </section>
-              <section>
-                <h2>Method to Solve Round Robin Scheduling Algorithm</h2>
-                <ul>
-                  <li>
-                    Step 1: Determine the time quantum (time slice) for each
-                    process.
-                  </li>
-                  <li>Step 2: Place all processes in the ready queue.</li>
-                  <li>
-                    Step 3: Assign the first process the CPU for the duration of
-                    the time quantum.
-                  </li>
-                  <li>
-                    Step 4: If the process completes within the time quantum,
-                    remove it from the queue; otherwise, place it at the end of
-                    the queue.
-                  </li>
-                  <li>
-                    Step 5: Move to the next process and repeat the same steps
-                    until all processes have completed.
-                  </li>
-                  <li>
-                    Step 6: Calculate the average waiting time and average
-                    turnaround time for performance evaluation.
-                  </li>
-                </ul>
-              </section>
-              <section>
-                <h2>
-                  To better understand the concept of Round Robin (RR)
-                  Scheduling
-                </h2>
-                <a
-                  href="https://www.youtube.com/live/7S1GCbi5xCk?si=gvSniXDbG7Km6JKW&t=601"
-                  >click here for video lecture</a
-                >
-              </section>
-
-              <section>
-                <h2>Advantages and Disadvantages of Round Robin Scheduling</h2>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Advantages</th>
-                    <th>Disadvantages</th>
-                  </tr>
-                  <tr>
-                    <td>Simple and easy to implement.</td>
-                    <td>
-                      Higher turnaround time due to frequent context switching.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Prevents process starvation as each process gets CPU time.
-                    </td>
-                    <td>Performance is heavily dependent on time quantum.</td>
-                  </tr>
-                  <tr>
-                    <td>Good for time-sharing systems.</td>
-                    <td>Not ideal for processes with varying burst times.</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Ensures fairness by giving each process equal time
-                      quantum.
-                    </td>
-                    <td>
-                      May lead to CPU inefficiency if time quantum is too small.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Responsive to interactive applications due to frequent
-                      preemption.
-                    </td>
-                    <td>
-                      Higher context switching overhead compared to
-                      non-preemptive algorithms.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Better for systems requiring real-time responsiveness.
-                    </td>
-                    <td>
-                      Processes with long burst times may need multiple cycles
-                      to complete.
-                    </td>
-                  </tr>
-                </table>
-              </section>
-
-              <section>
-                <h2>
-                  Why Round Robin is Better Than Other Scheduling Algorithms
-                </h2>
-                <p>
-                  Round Robin scheduling is often better than other scheduling
-                  algorithms like First Come First Serve (FCFS) and Shortest Job
-                  Next (SJN) in scenarios that require fairness and
-                  responsiveness. By allocating equal time slices, it ensures
-                  that no process is starved of CPU time, making it suitable for
-                  time-sharing systems. It also allows for quick response times
-                  for interactive processes, making it ideal for real-time
-                  applications. Its preemptive nature means that long processes
-                  do not monopolize the CPU, improving the overall efficiency of
-                  multi-tasking environments.
-                </p>
-              </section>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Arrival Time</th>
+                  <th>Burst Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>0</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>1</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>2</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>3</td>
+                  <td>1</td>
+                </tr>
+              </table>
             </div>
 
-            <!-- definition section end -->
-            <!-- question 1 start -->
-            <div id="question1">
-              <div class="question">
-                <h2 id="fstque">
-                  Question 1 : find the average Turn Around Time and Waiting
-                  Time of following processes using RR(Round Robin) process
-                  scheduling algorithm? Consider the following processes with
-                  their Arrival Time, Burst Time (take Quantum Time = 2).
-                </h2>
+            <div class="solution">
+              <h3>Solution :</h3>
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Arrival Time</th>
-                    <th>Burst Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>0</td>
-                    <td>4</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>1</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>2</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>3</td>
-                    <td>1</td>
-                  </tr>
-                </table>
-              </div>
+              <p><strong>Formula:</strong></p>
+              <ul>
+                <li>Turnaround Time = Completion Time - Arrival Time</li>
+                <li>Waiting Time = Turnaround Time - Burst Time</li>
+                <li>
+                  Average Turnaround Time = Sum of Turnaround Times / Number
+                  of Processes
+                </li>
+                <li>
+                  Average Waiting Time = Sum of Waiting Times / Number of
+                  Processes
+                </li>
+              </ul>
 
-              <div class="solution">
-                <h3>Solution :</h3>
+              <h4>Gantt Chart</h4>
 
-                <p><strong>Formula:</strong></p>
-                <ul>
-                  <li>Turnaround Time = Completion Time - Arrival Time</li>
-                  <li>Waiting Time = Turnaround Time - Burst Time</li>
-                  <li>
-                    Average Turnaround Time = Sum of Turnaround Times / Number
-                    of Processes
-                  </li>
-                  <li>
-                    Average Waiting Time = Sum of Waiting Times / Number of
-                    Processes
-                  </li>
-                </ul>
-
-                <h4>Gantt Chart</h4>
-
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
-                  title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
-                  id="RR1"
-                  srcset=""
-                />
-                <!-- <p>
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart"
+                title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart" id="RR1" srcset="" />
+              <!-- <p>
             | P1 (0-2) | P2 (2-4) | P3 (4-6) | P1 (6-8) | P4 (8-9) | P2 (9-10) |
           </p> -->
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
 
-                    <th>Completion Time</th>
-                    <th>Turnaround Time</th>
-                    <th>Waiting Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
+                  <th>Completion Time</th>
+                  <th>Turnaround Time</th>
+                  <th>Waiting Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
 
-                    <td>8</td>
-                    <td>8</td>
-                    <td>4</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
+                  <td>8</td>
+                  <td>8</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
 
-                    <td>10</td>
-                    <td>9</td>
-                    <td>6</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
+                  <td>10</td>
+                  <td>9</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
 
-                    <td>6</td>
-                    <td>4</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
+                  <td>6</td>
+                  <td>4</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
 
-                    <td>9</td>
-                    <td>6</td>
-                    <td>5</td>
-                  </tr>
-                </table>
+                  <td>9</td>
+                  <td>6</td>
+                  <td>5</td>
+                </tr>
+              </table>
 
-                <p>Average Turnaround Time = (8 + 9 + 4 + 6) / 4 = 6.75</p>
-                <p>Average Waiting Time = (4 + 6 + 2 + 5) / 4 = 4.25</p>
-              </div>
+              <p>Average Turnaround Time = (8 + 9 + 4 + 6) / 4 = 6.75</p>
+              <p>Average Waiting Time = (4 + 6 + 2 + 5) / 4 = 4.25</p>
             </div>
-            <!-- question 1 end -->
+          </div>
+          <!-- question 1 end -->
 
-            <!-- question 2 start -->
-            <div id="question2">
-              <div class="question">
-                <h2>
-                  Question 2: find the average Turn Around Time and Waiting Time
-                  of following processes using RR(Round Robin) process
-                  scheduling algorithm? Consider the following processes with
-                  their Arrival Time, Burst Time (take Quantum Time = 2).
-                </h2>
+          <!-- question 2 start -->
+          <div id="question2">
+            <div class="question">
+              <h2>
+                Question 2: find the average Turn Around Time and Waiting Time
+                of following processes using RR(Round Robin) process
+                scheduling algorithm? Consider the following processes with
+                their Arrival Time, Burst Time (take Quantum Time = 2).
+              </h2>
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Arrival Time</th>
-                    <th>Burst Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>0</td>
-                    <td>6</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>1</td>
-                    <td>4</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>2</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>3</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>4</td>
-                    <td>2</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="solution">
-                <h3>Solution :</h3>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Arrival Time</th>
+                  <th>Burst Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>0</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>1</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>3</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>4</td>
+                  <td>2</td>
+                </tr>
+              </table>
+            </div>
+            <div class="solution">
+              <h3>Solution :</h3>
 
-                <p><strong>Formula:</strong></p>
-                <ul>
-                  <li>Turnaround Time = Completion Time - Arrival Time</li>
-                  <li>Waiting Time = Turnaround Time - Burst Time</li>
-                  <li>
-                    Average Turnaround Time = Sum of Turnaround Times / Number
-                    of Processes
-                  </li>
-                  <li>
-                    Average Waiting Time = Sum of Waiting Times / Number of
-                    Processes
-                  </li>
-                </ul>
+              <p><strong>Formula:</strong></p>
+              <ul>
+                <li>Turnaround Time = Completion Time - Arrival Time</li>
+                <li>Waiting Time = Turnaround Time - Burst Time</li>
+                <li>
+                  Average Turnaround Time = Sum of Turnaround Times / Number
+                  of Processes
+                </li>
+                <li>
+                  Average Waiting Time = Sum of Waiting Times / Number of
+                  Processes
+                </li>
+              </ul>
 
-                <h4>Gantt Chart</h4>
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 1"
-                  title="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 1"
-                  id="RR2_1"
-                  srcset=""
-                />
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 2"
-                  title="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 2"
-                  id="RR2_2"
-                  srcset=""
-                />
-                <!-- <p>
+              <h4>Gantt Chart</h4>
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 1"
+                title="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 1" id="RR2_1" srcset="" />
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 2"
+                title="Round Robin SCHEDULING | Question 2 Solution | Gantt Chart part 2" id="RR2_2" srcset="" />
+              <!-- <p>
             | P1 (0-2) | P2 (2-4) | P3 (4-6) | P1 (6-8) | P4 (8-10) | P5 (10-12) |
             P2 (12-14) | P3 (14-15) | P1 (15-17) | P4(17-20)
           </p> -->
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
 
-                    <th>Completion Time</th>
-                    <th>Turnaround Time</th>
-                    <th>Waiting Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
+                  <th>Completion Time</th>
+                  <th>Turnaround Time</th>
+                  <th>Waiting Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
 
-                    <td>17</td>
-                    <td>17</td>
-                    <td>11</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
+                  <td>17</td>
+                  <td>17</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
 
-                    <td>14</td>
-                    <td>13</td>
-                    <td>9</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
+                  <td>14</td>
+                  <td>13</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
 
-                    <td>15</td>
-                    <td>13</td>
-                    <td>10</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
+                  <td>15</td>
+                  <td>13</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
 
-                    <td>20</td>
-                    <td>17</td>
-                    <td>12</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
+                  <td>20</td>
+                  <td>17</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
 
-                    <td>12</td>
-                    <td>8</td>
-                    <td>16</td>
-                  </tr>
-                </table>
+                  <td>12</td>
+                  <td>8</td>
+                  <td>16</td>
+                </tr>
+              </table>
 
-                <p>
-                  Average Turnaround Time = (17 + 13 + 13 + 17 + 8) / 5 = 13.6
-                </p>
-                <p>Average Waiting Time = (11 + 9 + 10 + 12 + 6) / 5 = 9.6</p>
-              </div>
+              <p>
+                Average Turnaround Time = (17 + 13 + 13 + 17 + 8) / 5 = 13.6
+              </p>
+              <p>Average Waiting Time = (11 + 9 + 10 + 12 + 6) / 5 = 9.6</p>
             </div>
-            <!-- question 2 end -->
-            <!-- question 3 start -->
-            <div id="question3">
-              <div class="question">
-                <h2>
-                  Question 3: find the average Turn Around Time and Waiting Time
-                  of following processes using RR(Round Robin) process
-                  scheduling algorithm? Consider the following processes with
-                  their Arrival Time, Burst Time (take Quantum Time = 2).
-                </h2>
+          </div>
+          <!-- question 2 end -->
+          <!-- question 3 start -->
+          <div id="question3">
+            <div class="question">
+              <h2>
+                Question 3: find the average Turn Around Time and Waiting Time
+                of following processes using RR(Round Robin) process
+                scheduling algorithm? Consider the following processes with
+                their Arrival Time, Burst Time (take Quantum Time = 2).
+              </h2>
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Arrival Time</th>
-                    <th>Burst Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>0</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>1</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>2</td>
-                    <td>4</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>3</td>
-                    <td>2</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="solution">
-                <h3>Solution :</h3>
-
-                <p><strong>Formula:</strong></p>
-                <ul>
-                  <li>Turnaround Time = Completion Time - Arrival Time</li>
-                  <li>Waiting Time = Turnaround Time - Burst Time</li>
-                  <li>
-                    Average Turnaround Time = Sum of Turnaround Times / Number
-                    of Processes
-                  </li>
-                  <li>
-                    Average Waiting Time = Sum of Waiting Times / Number of
-                    Processes
-                  </li>
-                </ul>
-
-                <h4>Gantt Chart</h4>
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 1"
-                  title="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 1"
-                  id="RR3_1"
-                  srcset=""
-                />
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 2"
-                  title="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 2"
-                  id="RR3_2"
-                  srcset=""
-                />
-
-                <h4>Calculation</h4>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-
-                    <th>Completion Time</th>
-                    <th>Turnaround Time</th>
-                    <th>Waiting Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-
-                    <td>14</td>
-                    <td>14</td>
-                    <td>9</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-
-                    <td>11</td>
-                    <td>10</td>
-                    <td>17</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-
-                    <td>13</td>
-                    <td>11</td>
-                    <td>7</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-
-                    <td>10</td>
-                    <td>7</td>
-                    <td>5</td>
-                  </tr>
-                </table>
-
-                <p>Average Turnaround Time = (14 + 10 + 11 + 7) / 4 = 10.5</p>
-                <p>Average Waiting Time = (9 + 7 + 7 + 5) / 4 = 7</p>
-              </div>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Arrival Time</th>
+                  <th>Burst Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>0</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>1</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>2</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>3</td>
+                  <td>2</td>
+                </tr>
+              </table>
             </div>
-            <!-- question 3 end -->
-            <!--question 4 start  -->
-            <div id="question4">
-              <div class="question">
-                <h3>
-                  Question 4 : find the average Turn Around Time and Waiting
-                  Time of following processes using RR(Round Robin) process
-                  scheduling algorithm? Consider the following processes with
-                  their Arrival Time, Burst Time (take Quantum Time = 1).
-                </h3>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Arrival Time</th>
-                    <th>Burst Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>5</td>
-                    <td>4</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>1</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>0</td>
-                    <td>6</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>3</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>4</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>P6</td>
-                    <td>2</td>
-                    <td>7</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="solution">
-                <h3>Solution :</h3>
-                <h4>Formula:</h4>
-                <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
-                <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
-                <h4>Solution:</h4>
-                <h4>Gantt Chart</h4>
+            <div class="solution">
+              <h3>Solution :</h3>
 
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 1"
-                  title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 1"
-                  id="RR4_1"
-                  srcset=""
-                />
+              <p><strong>Formula:</strong></p>
+              <ul>
+                <li>Turnaround Time = Completion Time - Arrival Time</li>
+                <li>Waiting Time = Turnaround Time - Burst Time</li>
+                <li>
+                  Average Turnaround Time = Sum of Turnaround Times / Number
+                  of Processes
+                </li>
+                <li>
+                  Average Waiting Time = Sum of Waiting Times / Number of
+                  Processes
+                </li>
+              </ul>
 
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 2"
-                  title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 2"
-                  id="RR4_2"
-                  srcset=""
-                />
+              <h4>Gantt Chart</h4>
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 1"
+                title="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 1" id="RR3_1" srcset="" />
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 2"
+                title="Round Robin SCHEDULING | Question 3 Solution | Gantt Chart part 2" id="RR3_2" srcset="" />
 
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 3"
-                  title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 3"
-                  id="RR4_3"
-                  srcset=""
-                />
+              <h4>Calculation</h4>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
 
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 4Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
-                  title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart part 4Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
-                  id="RR4_4"
-                  srcset=""
-                />
+                  <th>Completion Time</th>
+                  <th>Turnaround Time</th>
+                  <th>Waiting Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
 
-                <h4>Calculations:</h4>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Completion Time</th>
-                    <th>Turnaround Time (TAT)</th>
-                    <th>Waiting Time (WT)</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>25</td>
-                    <td>20</td>
-                    <td>16</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>22</td>
-                    <td>21</td>
-                    <td>16</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>23</td>
-                    <td>23</td>
-                    <td>17</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>12</td>
-                    <td>9</td>
-                    <td>7</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>19</td>
-                    <td>15</td>
-                    <td>12</td>
-                  </tr>
-                  <tr>
-                    <td>P6</td>
-                    <td>27</td>
-                    <td>25</td>
-                    <td>18</td>
-                  </tr>
-                </table>
+                  <td>14</td>
+                  <td>14</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
 
-                <h4>Average Turnaround Time:</h4>
-                <p>(20+21+23+9+15+25) / 6 = 18.83</p>
+                  <td>11</td>
+                  <td>10</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
 
-                <h4>Average Waiting Time:</h4>
-                <p>(16+16+17+7+12+18) / 6 = 14.33</p>
-              </div>
+                  <td>13</td>
+                  <td>11</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+
+                  <td>10</td>
+                  <td>7</td>
+                  <td>5</td>
+                </tr>
+              </table>
+
+              <p>Average Turnaround Time = (14 + 10 + 11 + 7) / 4 = 10.5</p>
+              <p>Average Waiting Time = (9 + 7 + 7 + 5) / 4 = 7</p>
             </div>
-            <!--question 4 end  -->
-            <!-- question 5 start -->
-            <div id="question5">
-              <div class="question">
-                <h2>
-                  Question 5 : find the average Turn Around Time and Waiting
-                  Time of following processes using RR(Round Robin) process
-                  scheduling algorithm? Consider the following processes with
-                  their Arrival Time, Burst Time (take Quantum Time = 2)
-                </h2>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Arrival Time</th>
-                    <th>Burst Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>0</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>1</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>2</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>3</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>4</td>
-                    <td>3</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="solution">
-                <h3>Solution :</h3>
-
-                <p><strong>Formula:</strong></p>
-                <ul>
-                  <li>Turnaround Time = Completion Time - Arrival Time</li>
-                  <li>Waiting Time = Turnaround Time - Burst Time</li>
-                  <li>
-                    Average Turnaround Time = Sum of Turnaround Times / Number
-                    of Processes
-                  </li>
-                  <li>
-                    Average Waiting Time = Sum of Waiting Times / Number of
-                    Processes
-                  </li>
-                </ul>
-
-                <h4>Gantt Chart</h4>
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
-                  title="Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
-                  id="RR5"
-                  srcset=""
-                />
-
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Completion Time</th>
-                    <th>Turnaround Time</th>
-                    <th>Waiting Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>2</td>
-                    <td>2 - 0 = 2</td>
-                    <td>2 - 2 = 0</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>10</td>
-                    <td>10 - 1 = 9</td>
-                    <td>9 - 3 = 6</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>5</td>
-                    <td>5 - 2 = 3</td>
-                    <td>3 - 1 = 2</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>7</td>
-                    <td>7 - 3 = 4</td>
-                    <td>4 - 2 = 2</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>11</td>
-                    <td>11 - 4 = 7</td>
-                    <td>7 - 3 = 4</td>
-                  </tr>
-                </table>
-
-                <p>Average Turnaround Time:</p>
-                <p>(2 + 9 + 3 + 4 + 7) / 5 = 5</p>
-
-                <p>Average Waiting Time:</p>
-                <p>(0 + 6 + 2 + 2 + 4) / 5 = 2.8</p>
-              </div>
+          </div>
+          <!-- question 3 end -->
+          <!--question 4 start  -->
+          <div id="question4">
+            <div class="question">
+              <h3>
+                Question 4 : find the average Turn Around Time and Waiting
+                Time of following processes using RR(Round Robin) process
+                scheduling algorithm? Consider the following processes with
+                their Arrival Time, Burst Time (take Quantum Time = 1).
+              </h3>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Arrival Time</th>
+                  <th>Burst Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>5</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>1</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>0</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>3</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>P6</td>
+                  <td>2</td>
+                  <td>7</td>
+                </tr>
+              </table>
             </div>
-            <!-- question 5 end -->
+            <div class="solution">
+              <h3>Solution :</h3>
+              <h4>Formula:</h4>
+              <p>Turnaround Time (TAT) = Completion Time - Arrival Time</p>
+              <p>Waiting Time (WT) = Turnaround Time - Burst Time</p>
+              <h4>Solution:</h4>
+              <h4>Gantt Chart</h4>
 
-            <!-- question 6 start -->
-            <div id="question6">
-              <div class="question">
-                <h2>
-                  Question 6: find the average Turn Around Time and Waiting Time
-                  of following processes using RR(Round Robin) process
-                  scheduling algorithm? Consider the following processes with
-                  their Arrival Time, Burst Time (take Quantum Time = 2).
-                </h2>
-                <p></p>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Arrival Time</th>
-                    <th>Burst Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>0</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>1</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>2</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>3</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>4</td>
-                    <td>3</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="solution">
-                <h3>Solution :</h3>
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 1"
+                title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 1" id="RR4_1" srcset="" />
 
-                <p><strong>Formula:</strong></p>
-                <ul>
-                  <li>Turnaround Time = Completion Time - Arrival Time</li>
-                  <li>Waiting Time = Turnaround Time - Burst Time</li>
-                  <li>
-                    Average Turnaround Time = Sum of Turnaround Times / Number
-                    of Processes
-                  </li>
-                  <li>
-                    Average Waiting Time = Sum of Waiting Times / Number of
-                    Processes
-                  </li>
-                </ul>
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 2"
+                title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 2" id="RR4_2" srcset="" />
 
-                <h4>Gantt Chart</h4>
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 6 Solution | Gantt Chart"
-                  title="Round Robin SCHEDULING | Question 6 Solution | Gantt Chart"
-                  id="RR6"
-                  srcset=""
-                />
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 3"
+                title="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 3" id="RR4_3" srcset="" />
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Completion Time</th>
-                    <th>Turnaround Time</th>
-                    <th>Waiting Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>6</td>
-                    <td>6 - 0 = 6</td>
-                    <td>6 - 3 = 3</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>4</td>
-                    <td>4 - 1 = 3</td>
-                    <td>3 - 2 = 1</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>5</td>
-                    <td>5 - 2 = 3</td>
-                    <td>3 - 1 = 2</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>8</td>
-                    <td>8- 3 = 5</td>
-                    <td>5 - 2 = 3</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>11</td>
-                    <td>11 - 4 = 7</td>
-                    <td>7 - 3 = 4</td>
-                  </tr>
-                </table>
+              <img loading="lazy"
+                alt="Round Robin SCHEDULING | Question 4 Solution | Gantt Chart part 4Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
+                title="Round Robin SCHEDULING | Question 1 Solution | Gantt Chart part 4Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
+                id="RR4_4" srcset="" />
 
-                <p>Average Turnaround Time = (6 + 3 + 3 + 5 + 7) / 5 = 4.8</p>
-                <p>Average Waiting Time = (3 + 1 + 2 + 3 + 4) / 5 = 2.6</p>
-              </div>
+              <h4>Calculations:</h4>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Completion Time</th>
+                  <th>Turnaround Time (TAT)</th>
+                  <th>Waiting Time (WT)</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>25</td>
+                  <td>20</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>22</td>
+                  <td>21</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>23</td>
+                  <td>23</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>12</td>
+                  <td>9</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>19</td>
+                  <td>15</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>P6</td>
+                  <td>27</td>
+                  <td>25</td>
+                  <td>18</td>
+                </tr>
+              </table>
+
+              <h4>Average Turnaround Time:</h4>
+              <p>(20+21+23+9+15+25) / 6 = 18.83</p>
+
+              <h4>Average Waiting Time:</h4>
+              <p>(16+16+17+7+12+18) / 6 = 14.33</p>
             </div>
-            <!-- question 6 end -->
-            <!-- question 7 start -->
-            <div class="question7">
-              <div class="question">
-                <h2>
-                  Question 7: find the average Turn Around Time and Waiting Time
-                  of following processes using RR(Round Robin) process
-                  scheduling algorithm? Consider the following processes with
-                  their Arrival Time, Burst Time (take Quantum Time = 2)
-                </h2>
+          </div>
+          <!--question 4 end  -->
+          <!-- question 5 start -->
+          <div id="question5">
+            <div class="question">
+              <h2>
+                Question 5 : find the average Turn Around Time and Waiting
+                Time of following processes using RR(Round Robin) process
+                scheduling algorithm? Consider the following processes with
+                their Arrival Time, Burst Time (take Quantum Time = 2)
+              </h2>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Arrival Time</th>
+                  <th>Burst Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>0</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>1</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>2</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>3</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+              </table>
+            </div>
+            <div class="solution">
+              <h3>Solution :</h3>
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Arrival Time</th>
-                    <th>Burst Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>0</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>1</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>2</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>3</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>4</td>
-                    <td>2</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="solution">
-                <h3>Solution :</h3>
+              <p><strong>Formula:</strong></p>
+              <ul>
+                <li>Turnaround Time = Completion Time - Arrival Time</li>
+                <li>Waiting Time = Turnaround Time - Burst Time</li>
+                <li>
+                  Average Turnaround Time = Sum of Turnaround Times / Number
+                  of Processes
+                </li>
+                <li>
+                  Average Waiting Time = Sum of Waiting Times / Number of
+                  Processes
+                </li>
+              </ul>
 
-                <p><strong>Formula:</strong></p>
-                <ul>
-                  <li>Turnaround Time = Completion Time - Arrival Time</li>
-                  <li>Waiting Time = Turnaround Time - Burst Time</li>
-                  <li>
-                    Average Turnaround Time = Sum of Turnaround Times / Number
-                    of Processes
-                  </li>
-                  <li>
-                    Average Waiting Time = Sum of Waiting Times / Number of
-                    Processes
-                  </li>
-                </ul>
+              <h4>Gantt Chart</h4>
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 5 Solution | Gantt Chart"
+                title="Round Robin SCHEDULING | Question 5 Solution | Gantt Chart" id="RR5" srcset="" />
 
-                <h4>Gantt Chart</h4>
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 7 Solution | Gantt Chart"
-                  title="Round Robin SCHEDULING | Question 7 Solution | Gantt Chart"
-                  id="RR7"
-                  srcset=""
-                />
-                <!-- <p>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Completion Time</th>
+                  <th>Turnaround Time</th>
+                  <th>Waiting Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>2</td>
+                  <td>2 - 0 = 2</td>
+                  <td>2 - 2 = 0</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>10</td>
+                  <td>10 - 1 = 9</td>
+                  <td>9 - 3 = 6</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>5</td>
+                  <td>5 - 2 = 3</td>
+                  <td>3 - 1 = 2</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>7</td>
+                  <td>7 - 3 = 4</td>
+                  <td>4 - 2 = 2</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>11</td>
+                  <td>11 - 4 = 7</td>
+                  <td>7 - 3 = 4</td>
+                </tr>
+              </table>
+
+              <p>Average Turnaround Time:</p>
+              <p>(2 + 9 + 3 + 4 + 7) / 5 = 5</p>
+
+              <p>Average Waiting Time:</p>
+              <p>(0 + 6 + 2 + 2 + 4) / 5 = 2.8</p>
+            </div>
+          </div>
+          <!-- question 5 end -->
+
+          <!-- question 6 start -->
+          <div id="question6">
+            <div class="question">
+              <h2>
+                Question 6: find the average Turn Around Time and Waiting Time
+                of following processes using RR(Round Robin) process
+                scheduling algorithm? Consider the following processes with
+                their Arrival Time, Burst Time (take Quantum Time = 2).
+              </h2>
+              <p></p>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Arrival Time</th>
+                  <th>Burst Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>0</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>2</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>3</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>4</td>
+                  <td>3</td>
+                </tr>
+              </table>
+            </div>
+            <div class="solution">
+              <h3>Solution :</h3>
+
+              <p><strong>Formula:</strong></p>
+              <ul>
+                <li>Turnaround Time = Completion Time - Arrival Time</li>
+                <li>Waiting Time = Turnaround Time - Burst Time</li>
+                <li>
+                  Average Turnaround Time = Sum of Turnaround Times / Number
+                  of Processes
+                </li>
+                <li>
+                  Average Waiting Time = Sum of Waiting Times / Number of
+                  Processes
+                </li>
+              </ul>
+
+              <h4>Gantt Chart</h4>
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 6 Solution | Gantt Chart"
+                title="Round Robin SCHEDULING | Question 6 Solution | Gantt Chart" id="RR6" srcset="" />
+
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Completion Time</th>
+                  <th>Turnaround Time</th>
+                  <th>Waiting Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>6</td>
+                  <td>6 - 0 = 6</td>
+                  <td>6 - 3 = 3</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>4</td>
+                  <td>4 - 1 = 3</td>
+                  <td>3 - 2 = 1</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>5</td>
+                  <td>5 - 2 = 3</td>
+                  <td>3 - 1 = 2</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>8</td>
+                  <td>8- 3 = 5</td>
+                  <td>5 - 2 = 3</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>11</td>
+                  <td>11 - 4 = 7</td>
+                  <td>7 - 3 = 4</td>
+                </tr>
+              </table>
+
+              <p>Average Turnaround Time = (6 + 3 + 3 + 5 + 7) / 5 = 4.8</p>
+              <p>Average Waiting Time = (3 + 1 + 2 + 3 + 4) / 5 = 2.6</p>
+            </div>
+          </div>
+          <!-- question 6 end -->
+          <!-- question 7 start -->
+          <div class="question7">
+            <div class="question">
+              <h2>
+                Question 7: find the average Turn Around Time and Waiting Time
+                of following processes using RR(Round Robin) process
+                scheduling algorithm? Consider the following processes with
+                their Arrival Time, Burst Time (take Quantum Time = 2)
+              </h2>
+
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Arrival Time</th>
+                  <th>Burst Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>0</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>1</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>2</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>3</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>4</td>
+                  <td>2</td>
+                </tr>
+              </table>
+            </div>
+            <div class="solution">
+              <h3>Solution :</h3>
+
+              <p><strong>Formula:</strong></p>
+              <ul>
+                <li>Turnaround Time = Completion Time - Arrival Time</li>
+                <li>Waiting Time = Turnaround Time - Burst Time</li>
+                <li>
+                  Average Turnaround Time = Sum of Turnaround Times / Number
+                  of Processes
+                </li>
+                <li>
+                  Average Waiting Time = Sum of Waiting Times / Number of
+                  Processes
+                </li>
+              </ul>
+
+              <h4>Gantt Chart</h4>
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 7 Solution | Gantt Chart"
+                title="Round Robin SCHEDULING | Question 7 Solution | Gantt Chart" id="RR7" srcset="" />
+              <!-- <p>
           | P1 (0-2) | P2 (2-4) | P3 (4-6) | P4 (6-7) | P5 (7-9) | P2 (9-10) |
         </p> -->
 
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Completion Time</th>
-                    <th>Turnaround Time</th>
-                    <th>Waiting Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>2</td>
-                    <td>2 - 0 = 2</td>
-                    <td>2 - 2 = 0</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>10</td>
-                    <td>10 - 1 = 9</td>
-                    <td>9 - 3 = 6</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>6</td>
-                    <td>6 - 2 = 4</td>
-                    <td>4 - 2 = 2</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>7</td>
-                    <td>7 - 3 = 4</td>
-                    <td>4 - 1 = 3</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>9</td>
-                    <td>9 - 4 = 5</td>
-                    <td>5 - 2 = 3</td>
-                  </tr>
-                </table>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Completion Time</th>
+                  <th>Turnaround Time</th>
+                  <th>Waiting Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>2</td>
+                  <td>2 - 0 = 2</td>
+                  <td>2 - 2 = 0</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>10</td>
+                  <td>10 - 1 = 9</td>
+                  <td>9 - 3 = 6</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>6</td>
+                  <td>6 - 2 = 4</td>
+                  <td>4 - 2 = 2</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>7</td>
+                  <td>7 - 3 = 4</td>
+                  <td>4 - 1 = 3</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>9</td>
+                  <td>9 - 4 = 5</td>
+                  <td>5 - 2 = 3</td>
+                </tr>
+              </table>
 
-                <p>Average Turnaround Time = (2 + 9 + 4 + 4 + 5) / 5 = 4.8</p>
+              <p>Average Turnaround Time = (2 + 9 + 4 + 4 + 5) / 5 = 4.8</p>
 
-                <p>Average Waiting Time (0 + 6 + 2 + 3 + 3) / 5 = 2.8</p>
-              </div>
+              <p>Average Waiting Time (0 + 6 + 2 + 3 + 3) / 5 = 2.8</p>
             </div>
-            <!-- question 7 end -->
-            <!-- question 8 start -->
-            <div class="question8">
-              <div class="question">
-                <h2>
-                  Question 8: find the average Turn Around Time and Waiting Time
-                  of following processes using RR(Round Robin) process
-                  scheduling algorithm? Consider the following processes with
-                  their Arrival Time, Burst Time (take Quantum Time = 3)
-                </h2>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Arrival Time</th>
-                    <th>Burst Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
-                    <td>0</td>
-                    <td>6</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
-                    <td>1</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
-                    <td>2</td>
-                    <td>7</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
-                    <td>3</td>
-                    <td>5</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
-                    <td>4</td>
-                    <td>4</td>
-                  </tr>
-                </table>
-              </div>
-              <div class="solution">
-                <h4>Solution:</h4>
-                <p>Given Time Quantum: 3</p>
+          </div>
+          <!-- question 7 end -->
+          <!-- question 8 start -->
+          <div class="question8">
+            <div class="question">
+              <h2>
+                Question 8: find the average Turn Around Time and Waiting Time
+                of following processes using RR(Round Robin) process
+                scheduling algorithm? Consider the following processes with
+                their Arrival Time, Burst Time (take Quantum Time = 3)
+              </h2>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Arrival Time</th>
+                  <th>Burst Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
+                  <td>0</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
+                  <td>1</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
+                  <td>2</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
+                  <td>3</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
+                  <td>4</td>
+                  <td>4</td>
+                </tr>
+              </table>
+            </div>
+            <div class="solution">
+              <h4>Solution:</h4>
+              <p>Given Time Quantum: 3</p>
 
-                <h4>Formulas:</h4>
-                <ul>
-                  <li>
-                    Turnaround Time (TAT) = Completion Time - Arrival Time
-                  </li>
-                  <li>Waiting Time (WT) = Turnaround Time - Burst Time</li>
-                </ul>
+              <h4>Formulas:</h4>
+              <ul>
+                <li>
+                  Turnaround Time (TAT) = Completion Time - Arrival Time
+                </li>
+                <li>Waiting Time (WT) = Turnaround Time - Burst Time</li>
+              </ul>
 
-                <h4>Gantt Chart</h4>
+              <h4>Gantt Chart</h4>
 
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 1"
-                  title="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 1"
-                  id="RR8_1"
-                  srcset=""
-                />
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 1"
+                title="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 1" id="RR8_1" srcset="" />
 
-                <img
-                  loading="lazy"
-                  alt="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 2"
-                  title="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 2"
-                  id="RR8_2"
-                  srcset=""
-                />
-                <!-- <p>
+              <img loading="lazy" alt="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 2"
+                title="Round Robin SCHEDULING | Question 8 Solution | Gantt Chart part 2" id="RR8_2" srcset="" />
+              <!-- <p>
           | P1 (0-3) | P2 (3-6) | P3 (6-9) | P4 (9-12) | P1 (12-15) | P5 (15-18)
           | P3 (18-21) | P4 (21-23) | P5(23-24) | P3(24-25)
         </p> -->
 
-                <h4>Calculation:</h4>
-                <table
-                  style="border: 1px solid black"
-                  class="table table-bordered"
-                >
-                  <tr>
-                    <th>Process</th>
-                    <th>Completion Time</th>
-                    <th>Turnaround Time</th>
-                    <th>Waiting Time</th>
-                  </tr>
-                  <tr>
-                    <td>P1</td>
+              <h4>Calculation:</h4>
+              <table style="border: 1px solid black" class="table table-bordered">
+                <tr>
+                  <th>Process</th>
+                  <th>Completion Time</th>
+                  <th>Turnaround Time</th>
+                  <th>Waiting Time</th>
+                </tr>
+                <tr>
+                  <td>P1</td>
 
-                    <td>15</td>
-                    <td>15 - 0 = 15</td>
-                    <td>15 - 6 = 9</td>
-                  </tr>
-                  <tr>
-                    <td>P2</td>
+                  <td>15</td>
+                  <td>15 - 0 = 15</td>
+                  <td>15 - 6 = 9</td>
+                </tr>
+                <tr>
+                  <td>P2</td>
 
-                    <td>6</td>
-                    <td>6 - 1 = 5</td>
-                    <td>5 - 3 = 2</td>
-                  </tr>
-                  <tr>
-                    <td>P3</td>
+                  <td>6</td>
+                  <td>6 - 1 = 5</td>
+                  <td>5 - 3 = 2</td>
+                </tr>
+                <tr>
+                  <td>P3</td>
 
-                    <td>25</td>
-                    <td>25 - 2 = 23</td>
-                    <td>23 - 7 = 16</td>
-                  </tr>
-                  <tr>
-                    <td>P4</td>
+                  <td>25</td>
+                  <td>25 - 2 = 23</td>
+                  <td>23 - 7 = 16</td>
+                </tr>
+                <tr>
+                  <td>P4</td>
 
-                    <td>23</td>
-                    <td>23 - 3 = 20</td>
-                    <td>20 - 5 = 15</td>
-                  </tr>
-                  <tr>
-                    <td>P5</td>
+                  <td>23</td>
+                  <td>23 - 3 = 20</td>
+                  <td>20 - 5 = 15</td>
+                </tr>
+                <tr>
+                  <td>P5</td>
 
-                    <td>24</td>
-                    <td>14 - 4 = 20</td>
-                    <td>20 - 4 = 16</td>
-                  </tr>
-                </table>
+                  <td>24</td>
+                  <td>14 - 4 = 20</td>
+                  <td>20 - 4 = 16</td>
+                </tr>
+              </table>
 
-                <p>
-                  Average Turnaround Time = (15 + 5 + 23 + 20 + 20) / 5 = 16.6
-                </p>
-                <p>Average Waiting Time = (9 + 2 + 16 + 15 + 16) / 5 = 11.6</p>
-              </div>
+              <p>
+                Average Turnaround Time = (15 + 5 + 23 + 20 + 20) / 5 = 16.6
+              </p>
+              <p>Average Waiting Time = (9 + 2 + 16 + 15 + 16) / 5 = 11.6</p>
             </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <button class="btn btn-success" id="down" type="button">
-                <a href="RR2.html">for question 9 to 11 click here</a>
-              </button>
-            </div>
-          </article>
-        </main>
-      </div>
-      <div id="right_content"></div>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-success" id="down" type="button">
+              <a href="RR2.html">for question 9 to 11 click here</a>
+            </button>
+          </div>
+        </article>
+      </main>
     </div>
+    <div id="right_content"></div>
+  </div>
 
-    <script type="module" src="commonthings.min.js"></script>
-    <script>
-      let ganttcharts = document.getElementsByTagName("img");
-      for (let index = 0; index < ganttcharts.length; index++) {
-        ganttcharts[index].src = "/assets/RR1.png";
-      }
-    </script>
-  </body>
+  <script type="module" src="commonthings.min.js"></script>
+  <script>
+    let ganttcharts = document.getElementsByTagName("img");
+    for (let index = 0; index < ganttcharts.length; index++) {
+      ganttcharts[index].src = "/assets/RR1.png";
+    }
+  </script>
+</body>
+
 </html>
