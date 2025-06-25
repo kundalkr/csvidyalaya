@@ -80,7 +80,6 @@
     <loc>https://www.csvidyalaya.com/os/scheduling_algorithms/fcfs2.html</loc>
     <lastmod>2025-06-24</lastmod>
   </url>
-
   <url>
     <loc>https://www.csvidyalaya.com/os/scheduling_algorithms/fcfs.html</loc>
     <image:image>
@@ -104,9 +103,7 @@
       <image:loc>https://www.csvidyalaya.com/assets/SJF/non-preemptive/np-3.jpg</image:loc>
     </image:image>
     <lastmod>2025-06-24</lastmod>
-  
   </url>
-
   <url>
     <loc>https://www.csvidyalaya.com/os/scheduling_algorithms/sjf2.html</loc>
        <image:image>

@@ -11,7 +11,7 @@ function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");
 
-  let hh1 = document.querySelector("#main_content > main > div.title_date > h1");
+  let hh1 = document.querySelector("#main_content > main > div#title_date > h1");
   let lastupdate = document.createElement("div");
   lastupdate.setAttribute("id", "last_updated_parent");
   lastupdate.innerHTML = ` 
@@ -72,7 +72,6 @@ function founder_schemas() {
   document.head.appendChild(founder_schema);
   // founder json ld
 }
-
 
 loadScript('/js/src/for_all_page.min.js', () => {
   loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); });
