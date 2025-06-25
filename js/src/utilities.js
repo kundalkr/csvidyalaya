@@ -13,7 +13,6 @@ export function adding_div_child(params) {
 export function add_body(elmnt) {
   document.querySelector("body").appendChild(elmnt);
 }
-
 export function popup_links(linksarr) {
   let modal = document.createElement("div");
   let inrHTML = ` <div class="modal fade" id="myModal" tabindex="-1" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -41,7 +40,6 @@ export function popup_links(linksarr) {
             document.getElementById('btn_closeder').addEventListener('click',() => setTimeout(openModal, 12 * 60 * 1000));
     `;
   add_body(scriptss);
-
 }
 export function google_font(element) {
   for (const users of element.users) {
@@ -64,7 +62,7 @@ for (let filename of object) {
       h2i = `<h2 class="text-center text-decoration-underline" style=" text-underline-offset: 5px;">List of books which help to learn ${filename.topic_name} </h2>`;
       p1 = `<p class="text-center text-decoration-underline" style="text-underline-offset: 5px;color:#000000;background-color:#FF6B6F;padding:5px;">List of books which help to learn ${filename.topic_name} </p>`;
       for (let book of filename.book) {
-        books += ` <a  href="${book.book_link}"><img loading="lazy" class="w-100 h-auto" style="padding:15px;"src="${book.book_image}" alt="${book.image_alt}"/></a>`;
+        books += `<a href="${book.book_link}"><img loading="lazy" class="w-100 h-auto p-2"  src="${book.book_image}" alt="${book.image_alt}"/></a>`;
       }
     }
   }
@@ -92,10 +90,7 @@ export function sdbar_Links(params) {
     <a style="text-decoration: none;" href="${user.link}">${user.name}</a>
     </li>`;
   }
- 
 }
-
-
 export function sequence_function_call(...args) {
 
   for (let arg of args) {

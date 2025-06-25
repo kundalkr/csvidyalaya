@@ -5,8 +5,6 @@ function loadScript(src, callback) {
   script.onload = callback;
   document.head.appendChild(script);
 }
-
-
 function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");

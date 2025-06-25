@@ -15,7 +15,7 @@
     img {
       height: 200px;
       width: 630px;
-      object-fit: contain;
+
     }
 
     @media (width<=770px) {
@@ -49,20 +49,34 @@
             turnaround time (TAT), and average waiting time (WT).
           </p>
           <div>
-            <br>
-            <a href="#fstque" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Jump To
+
+            <a href="#fstque" class="btn btn-primary btn-lg active mt-2 mb-2" role="button" aria-pressed="true">Jump To
               Question</a>
-            <br>
-            <h2>What Is FCFS Scheduling Algorithm in Operating System ?</h2>
+
+            <div class="heading-wrapper">
+              <a href="#What-Is-FCFS-Scheduling-Algorithm-in-Operating-System?">
+                <svg class="icon border border-2" aria-hidden="true">
+                  <use href="/assets/icon/sprite.svg#heades"></use>
+                </svg>
+              </a>
+              <h2 id="What-Is-FCFS-Scheduling-Algorithm-in-Operating-System?">What Is FCFS Scheduling Algorithm in Operating System ?</h2>
+            </div>
             <p>
-              FCFS (First Come First Serve) is one of the simplest
+            <code>FCFS</code> stands for (First Come First Serve), is one of the simplest
               <a href="/os/operating_System_Topics.html">scheduling algorithms in operating system</a>. It schedules
-              processes based on their arrival time. The
-              process that arrives first gets executed first, and others wait
-              in a queue.
+              processes based on their arrival time.The process Which comes first according to the arrival time executes
+              first and all other process wait in a queue untill the running process completes its work.
+
             </p>
 
-            <h2>Method to Solve FCFS Scheduling Algorithm</h2>
+            <div class="heading-wrapper">
+                  <a href="#Method-to-Solve-FCFS-Scheduling-Algorithm">
+                <svg class="icon border border-2" aria-hidden="true">
+                  <use href="/assets/icon/sprite.svg#heades"></use>
+                </svg>
+              </a>
+              <h2 id="Method-to-Solve-FCFS-Scheduling-Algorithm">Method to Solve FCFS Scheduling Algorithm</h2>
+            </div>
             <ul>
               <li>
                 Step 1: List all the processes and their arrival times in the
@@ -104,7 +118,14 @@
               </li>
             </ul>
 
-            <h2>Advantages and Disadvantages of FCFS Scheduling</h2>
+            <div class="heading-wrapper">
+                  <a href="#Advantages-and-Disadvantages-of-FCFS-Scheduling">
+                <svg class="icon border border-2" aria-hidden="true">
+                  <use href="/assets/icon/sprite.svg#heades"></use>
+                </svg>
+              </a>
+              <h2 id="Advantages-and-Disadvantages-of-FCFS-Scheduling">Advantages and Disadvantages of FCFS Scheduling</h2>
+            </div>
             <table class="table table-bordered border-2 border-black">
               <tr>
                 <th>Advantages</th>
@@ -131,7 +152,7 @@
 
           <div id="question1">
             <div class="question">
-              <h2>Question 1</h2>
+              <h2 id="fstque">Question 1</h2>
               <p>
                 find the average Turn Around Time and Waiting Time of
                 following processes using FCFS(FIRST COME FIRST SERVED)
@@ -167,7 +188,6 @@
             </div>
             <div class="solution">
               <h3>Solution</h3>
-
               <p>Formulas:</p>
               <ul>
                 <li>
@@ -178,16 +198,15 @@
                   Waiting Time (WT) = Turn Around Time (TAT) - Burst Time (BT)
                 </li>
               </ul>
-
               <h4>Gantt Chart</h4>
-
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q1.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q1.jpg" />
-                <img loading="lazy" alt="first-come-first-serve(fcfs) | Question 1 Solution | Gantt Chart Part 1"
+                <img loading="lazy" class="mt-2 mb-2"
+                  alt="first-come-first-serve(fcfs) | Question 1 Solution | Gantt Chart Part 1"
                   title="first-come-first-serve(fcfs) | Question 1 Solution | Gantt Chart Part 1" id="fcfs1" />
-              </picture><br>
-              <br>
+              </picture>
+
 
               <table style="border: 1px solid black" class="table table-bordered">
                 <tr>
@@ -297,11 +316,11 @@
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q2.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q2.jpg" />
-                <img loading="lazy" alt="first-come-first-serve
+                <img loading="lazy" class="mt-2 mb-2" alt="first-come-first-serve
                                (fcfs) | Question 1 Solution | Gantt Chart Part 1" title="first-come-first-serve
                                 (fcfs) | Question 1 Solution | Gantt Chart Part 1" id="fcfs2" />
-              </picture><br>
-              <br>
+              </picture>
+
               <!-- <p>P1 (1-6) -> P2 (6-9) -> P3 (9-15)</p> -->
               <table style="border: 1px solid black" class="table table-bordered">
                 <tr>
@@ -401,11 +420,11 @@
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q3.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q3.jpg" />
-                <img loading="lazy" alt="first-come-first-serve
+                <img loading="lazy" class="mt-2 mb-2" alt="first-come-first-serve
                                (fcfs) | Question 2 Solution | Gantt Chart Part 1" title="first-come-first-serve
                                 (fcfs) | Question 2 Solution | Gantt Chart Part 1" id="fcfs3" />
-              </picture><br>
-              <br>
+              </picture>
+
               <!-- <p>P1 (1-3) -> P2 (3-7) -> P3 (7-10) -> P4 (10-12)</p> -->
               <table style="border: 1px solid black" class="table table-bordered">
                 <tr>
@@ -513,11 +532,10 @@
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q4.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q4.jpg" />
-                <img loading="lazy" alt="first-come-first-serve
+                <img loading="lazy" class="mt-2 mb-2" alt="first-come-first-serve
                                (fcfs) | Question 4 Solution | Gantt Chart Part 1" title="first-come-first-serve
                                 (fcfs) | Question 4 Solution | Gantt Chart Part 1" id="fcfs4" />
-              </picture><br>
-              <br>
+              </picture>
               <!-- <p>P1 (0-4) -> P2 (4-7) -> P3 (7-8) -> P4 (8-10)</p> -->
               <table style="border: 1px solid black" class="table table-bordered">
                 <tr>
@@ -625,11 +643,11 @@
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q5.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q5.jpg" />
-                <img loading="lazy" alt="first-come-first-serve
+                <img loading="lazy" class="mt-2 mb-2" alt="first-come-first-serve
                                (fcfs) | Question 5 Solution | Gantt Chart Part 1" title="first-come-first-serve
                                 (fcfs) | Question 5 Solution | Gantt Chart Part 1" id="fcfs5" />
-              </picture><br>
-              <br>
+              </picture>
+
               <!-- <p>P1 (2-5) -> P2 (5-6) -> P3 (6-8) -> P4 (8-12)</p> -->
               <table style="border: 1px solid black" class="table table-bordered">
                 <tr>
@@ -738,11 +756,10 @@
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q6.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q6.jpg" />
-                <img loading="lazy" alt="first-come-first-serve
+                <img loading="lazy" class="mt-2 mb-2" alt="first-come-first-serve
                                (fcfs) | Question 6 Solution | Gantt Chart Part 1" title="first-come-first-serve
                                 (fcfs) | Question 6 Solution | Gantt Chart Part 1" id="fcfs6" />
-              </picture><br>
-              <br>
+              </picture>
               <!-- <p>P1 (0-6) -> P2 (6-9) -> P3 (9-14) -> P4 (14-16)</p> -->
               <table style="border: 1px solid black" class="table table-bordered">
                 <tr>
@@ -846,11 +863,10 @@
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q7.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q7.jpg" />
-                <img loading="lazy" alt="first-come-first-serve
+                <img loading="lazy" class="mt-2 mb-2" alt="first-come-first-serve
                                (fcfs) | Question 7 Solution | Gantt Chart Part 1" title="first-come-first-serve
                                 (fcfs) | Question 7 Solution | Gantt Chart Part 1" id="fcfs7" />
-              </picture><br>
-              <br>
+              </picture>
               <!-- <p>P1 (0-7) -> P2 (7-12) -> P3 (12-15)</p> -->
               <table style="border: 1px solid black" class="table table-bordered">
                 <tr>
@@ -952,11 +968,10 @@
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q8.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q8.jpg" />
-                <img loading="lazy" alt="first-come-first-serve
+                <img loading="lazy" class="mt-2 mb-2" alt="first-come-first-serve
                                (fcfs) | Question 1 Solution | Gantt Chart Part 1" title="first-come-first-serve
                                 (fcfs) | Question 1 Solution | Gantt Chart Part 1" id="fcfs8" />
-              </picture><br>
-              <br>
+              </picture>
               <!-- <p>P1 (3-5) -> P2 (5-9) -> P3 (9-12) -> P4 (12-13)</p> -->
               <table style="border: 1px solid black" class="table table-bordered">
                 <tr>
@@ -1065,11 +1080,10 @@
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q9.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q9.jpg" />
-                <img loading="lazy" alt="first-come-first-serve
+                <img loading="lazy" class="mt-2 mb-2" alt="first-come-first-serve
                                (fcfs) | Question 9 Solution | Gantt Chart Part 1" title="first-come-first-serve
                                 (fcfs) | Question 9 Solution | Gantt Chart Part 1" id="fcfs9" />
-              </picture><br>
-              <br>
+              </picture>
               <!-- <p>P1 (0-4) -> P2 (4-9) -> P3 (9-12) -> P4 (12-14)</p> -->
               <table style="border: 1px solid black" class="table table-bordered">
                 <tr>
@@ -1127,7 +1141,7 @@
           <!-- question 10 start -->
           <div id="question10">
             <div class="question">
-              <h2 id="fstque">
+              <h2>
                 Question 10 : Consider 3 processes arriving at time intervals
                 P1, P2, P3. Compute the average waiting time and turnaround
                 time using FCFS scheduling.?
@@ -1171,11 +1185,10 @@
               <picture>
                 <source media="(max-width:700px)" srcset="/assets/fcfs/fcfs1_q10.jpg" />
                 <source media="(min-width:701px)" srcset="/assets/fcfs/fcfs1_q10.jpg" />
-                <img loading="lazy" alt="first-come-first-serve
+                <img loading="lazy" class="mt-2 mb-2" alt="first-come-first-serve
                                (fcfs) | Question 10 Solution | Gantt Chart Part 1" title="first-come-first-serve
                                 (fcfs) | Question 10 Solution | Gantt Chart Part 1" id="fcfs10" />
-              </picture><br>
-              <br>
+              </picture>
               <!-- <p>P1 (0-4) -> P2 (4-7) -> P3 (7-9)</p> -->
               <table style="border: 1px solid black" class="table table-bordered">
                 <thead>

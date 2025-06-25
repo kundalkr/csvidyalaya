@@ -1,4 +1,4 @@
-import { add_css, add_body ,bar,sdbar_Links,book_name_recommender} from "/js/src/utilities.min.js";
+import { add_css, add_body ,sdbar_Links,book_name_recommender} from "/js/src/utilities.min.js";
 
 
     import book_sugget from "/os/scheduling_algorithms/recommended_book.json" with {type : "json"};
@@ -39,7 +39,7 @@ const data = {
     },
   ],
 };
-bar(data);
+// bar(data);
 
 add_css(
   "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black; }}"
