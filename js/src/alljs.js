@@ -12,6 +12,7 @@ function last_modified() {
   let hh1 = document.querySelector("#main_content > main > div#title_date > h1");
   let lastupdate = document.createElement("div");
   lastupdate.setAttribute("id", "last_updated_parent");
+  
   lastupdate.innerHTML = ` 
           <div>
             <span>Last updated : </span><span>${lastup[1] + " " + lastup[2] + ", " + lastup[3]
