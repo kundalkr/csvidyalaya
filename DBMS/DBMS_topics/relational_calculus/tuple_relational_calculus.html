@@ -1,120 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="module" src="/js/src/alljs.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tuple Relational calculus Question + solution</title>
-    <style>
-          img {
-        margin-bottom: 2em;
-        width: 600px;
-        height: auto;
-        @media (width<=770px) {
-          width: 400px;
-          height: auto;
-        }
-      }
+
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuple Relational calculus Question + solution</title>
+  <style>
+    img {
+      margin-bottom: 2em;
+      width: 600px;
+      height: auto;
+
       @media (width<=770px) {
-        img {
-          width: 450px;
-          height: auto;
-        }
-        h1 {
-          font-size: large;
-          font-family: "Playwrite CU", cursive;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-          text-align: center;
-        }
+        width: 400px;
+        height: auto;
       }
+    }
+
+    @media (width<=770px) {
+      img {
+        width: 450px;
+        height: auto;
+      }
+
       h1 {
+        font-size: large;
         font-family: "Playwrite CU", cursive;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
         text-align: center;
       }
-      /* loader start */
-      #loadering {
-        position: relative;
-        width: 120px;
-        height: 90px;
-        display: block;
-        margin: 50px auto;
-        /* border: 1px solid red; */
-      }
-      #loadering:before {
-        content: "";
-        position: absolute;
-        bottom: 30px;
-        left: 50px;
-        height: 30px;
-        width: 30px;
-        border-radius: 50%;
-        background: #ff3d00;
-        animation: loading-bounce 0.5s ease-in-out infinite alternate;
-      }
-      #loadering:after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 7px;
-        width: 45px;
-        border-radius: 4px;
-        box-shadow: 0 5px 0 #028637, -35px 50px 0 #028637, -70px 95px 0 #028637;
-        animation: loading-step 1s ease-in-out infinite;
+    }
+
+    h1 {
+      font-family: "Playwrite CU", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+    }
+
+    /* loader start */
+    #loadering {
+      position: relative;
+      width: 120px;
+      height: 90px;
+      display: block;
+      margin: 50px auto;
+      /* border: 1px solid red; */
+    }
+
+    #loadering:before {
+      content: "";
+      position: absolute;
+      bottom: 30px;
+      left: 50px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background: #ff3d00;
+      animation: loading-bounce 0.5s ease-in-out infinite alternate;
+    }
+
+    #loadering:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 7px;
+      width: 45px;
+      border-radius: 4px;
+      box-shadow: 0 5px 0 #028637, -35px 50px 0 #028637, -70px 95px 0 #028637;
+      animation: loading-step 1s ease-in-out infinite;
+    }
+
+    @keyframes loading-bounce {
+      0% {
+        transform: scale(1, 0.7);
       }
 
-      @keyframes loading-bounce {
-        0% {
-          transform: scale(1, 0.7);
-        }
-        40% {
-          transform: scale(0.8, 1.2);
-        }
-        60% {
-          transform: scale(1, 1);
-        }
-        100% {
-          bottom: 140px;
-        }
-      }
-      @keyframes loading-step {
-        0% {
-          box-shadow: 0 10px 0 rgba(0, 0, 0, 0), 0 10px 0 #028637,
-            -35px 50px 0 #028637, -70px 90px 0 #028637;
-        }
-        100% {
-          box-shadow: 0 10px 0 #028637, -35px 50px 0 #028637,
-            -70px 90px 0 #028637, -70px 90px 0 rgba(0, 0, 0, 0);
-        }
+      40% {
+        transform: scale(0.8, 1.2);
       }
 
-      /* loadering end */
-    </style>
-    <script type="module">
-      import Questions from "/DBMS/DBMS_question.json" with {type : "json"};
-            let i = 1;
-            let j = 1;
-            for (let question of Questions) {
-              if (question.Tags.includes('#TRC')) {
-                         let divs = document.createElement("div");
-              divs.setAttribute("id", `question${i}`);
-              let qusn = document.createElement("div");
-              qusn.setAttribute("class", "question");
-              let ans = document.createElement("div");
-              ans.setAttribute("class", "solution");
-              document.querySelector("#main_content > main > article").appendChild(divs);
-              divs.appendChild(qusn);
-              divs.appendChild(ans);
-                qusn.innerHTML = `<h2>${j}) ${question.Question}</h2>`;
-                if (i != 0) {
-                  ans.innerHTML = `
+      60% {
+        transform: scale(1, 1);
+      }
+
+      100% {
+        bottom: 140px;
+      }
+    }
+
+    @keyframes loading-step {
+      0% {
+        box-shadow: 0 10px 0 rgba(0, 0, 0, 0), 0 10px 0 #028637,
+          -35px 50px 0 #028637, -70px 90px 0 #028637;
+      }
+
+      100% {
+        box-shadow: 0 10px 0 #028637, -35px 50px 0 #028637,
+          -70px 90px 0 #028637, -70px 90px 0 rgba(0, 0, 0, 0);
+      }
+    }
+
+    /* loadering end */
+  </style>
+  <script type="module">
+    import Questions from "/DBMS/DBMS_question.json" with {type: "json"};
+    let i = 1;
+    let j = 1;
+    for (let question of Questions) {
+      if (question.Tags.includes('#TRC')) {
+        let divs = document.createElement("div");
+        divs.setAttribute("id", `question${i}`);
+        let qusn = document.createElement("div");
+        qusn.setAttribute("class", "question");
+        let ans = document.createElement("div");
+        ans.setAttribute("class", "solution");
+        document.querySelector("#main_content > main > article").appendChild(divs);
+        divs.appendChild(qusn);
+        divs.appendChild(ans);
+        qusn.innerHTML = `<h2>${j}) ${question.Question}</h2>`;
+        if (i != 0) {
+          ans.innerHTML = `
                       <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample${i}" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">click here for answer</a>
-                      <div class="row">
+                  <div class="row mb-2">
                     <div class="col">
                       <div class="collapse multi-collapse" id="multiCollapseExample${i}">
                         <div class="card card-body bg-danger-subtle">
@@ -122,31 +135,34 @@
                         </div>
                       </div>
                     </div>
-                      </div><br>`;
-                }
-                j++;
-              }
+                  </div>`;
+        }
+        j++;
+      }
 
-              i++;
+      i++;
 
-            }
-    </script>
-  </head>
-  <body>
-    <div id="three_section">
-      <div id="left_content" class="sticky-top">
-        <ul></ul>
-      </div>
-      <div id="main_content">
-        <main>
-          <div id="title_date">
-            <h1>Learn Tuple Relational calculus with solved question</h1>
-          </div><article>
-          </article>
-        </main>
-      </div>
-      <div id="right_content"></div>
+    }
+  </script>
+</head>
+
+<body>
+  <div id="three_section">
+    <div id="left_content" class="sticky-top">
+      <ul></ul>
     </div>
-    <script type="module" src="../../js/commonthings.min.js"></script>
-  </body>
+    <div id="main_content">
+      <main>
+        <div id="title_date">
+          <h1 class="mt-2">Learn Tuple Relational calculus with solved question</h1>
+        </div>
+        <article>
+        </article>
+      </main>
+    </div>
+    <div id="right_content"></div>
+  </div>
+  <script type="module" src="../../js/commonthings.min.js"></script>
+</body>
+
 </html>
