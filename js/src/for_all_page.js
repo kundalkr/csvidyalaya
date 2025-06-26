@@ -104,4 +104,4 @@ function adsense_code() {
  add_head(ads_script);
 }
 adsense_code();
-// adsense code end
+// adsense code en
