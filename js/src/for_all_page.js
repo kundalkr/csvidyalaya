@@ -95,4 +95,13 @@ if (
     gtag('config', 'G-C4M8ZRW6HS');`;
   headu.appendChild(script2);
 }
-
+// adsense code
+function adsense_code() {
+  let ads_script = document.createElement("script");
+  ads_script.async = !0;
+   ads_script.setAttribute("crossorigin", "anonymous");
+  ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
+ add_head(ads_script);
+}
+adsense_code();
+// adsense code end
