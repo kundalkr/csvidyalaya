@@ -22,7 +22,7 @@ function last_modified() {
             <div>
             <p style="margin:0;">
        Like & Follow our page and show your love
-       </p><a style="font-size: xx-large;" href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> &nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i  class="bi bi-instagram"></i></a>
+       </p><a style="font-size: xx-large;" href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> &nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i class="bi bi-instagram"></i></a>
           </div>`;
   hh1.insertAdjacentElement("afterend", lastupdate);
 }

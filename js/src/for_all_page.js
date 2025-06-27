@@ -41,8 +41,6 @@ import { add_head, google_font } from "/js/src/utilities.min.js";
   }
 
 })();
-
-
 let bootstrapcss = document.createElement("link");
 bootstrapcss.setAttribute(
   "href",
@@ -71,7 +69,7 @@ const gfont = {
       link: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_downward,arrow_upward,close,hub&display=block",
     },
     {
-      link:"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+      link: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     }
   ],
 };
@@ -99,9 +97,16 @@ if (
 function adsense_code() {
   let ads_script = document.createElement("script");
   ads_script.async = !0;
-   ads_script.setAttribute("crossorigin", "anonymous");
+  ads_script.setAttribute("crossorigin", "anonymous");
   ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
- add_head(ads_script);
+  add_head(ads_script);
 }
 adsense_code();
-// adsense code en
+function published_data() {
+  const lastModified = new Date(document.lastModified).toISOString().split('T')[0];
+  const scriptTag = document.getElementById("structured-data");
+  const json = JSON.parse(scriptTag.textContent);
+  json.dateModified = lastModified;
+  scriptTag.textContent = JSON.stringify(json);
+}
+published_data();

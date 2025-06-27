@@ -1,271 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="module" src="/js/src/alljs.min.js"></script>
-    <meta name="yandex-verification" content="6cad077691947e7f" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      Explore Computer Science Topics: DSA, Computer Networks, Operating
-      Systems, DBMS and many more
-    </title>
-    <meta
-      name="description"
-      content="Discover comprehensive guides, tutorials, and questions for DSA, Computer Networks, Operating Systems, DBMS and other core computer science topics. Perfect for students and professionals."
-    />
-    <meta
-      name="keywords"
-      content="Computer Science, DSA, Data Structures and Algorithms, Computer Networks, Operating Systems, Computer Science Questions, Learn Computer Science"
-    />
-    <meta name="author" content="Kundal Kumar" />
 
-    <!-- Open Graph Meta Tags -->
-    <meta
-      property="og:title"
-      content="Explore Computer Science Topics: DSA, Computer Networks, Operating Systems, and More"
-    />
-    <meta
-      property="og:description"
-      content="Comprehensive guides and resources on DSA, Computer Networks, Operating Systems, and related topics in computer science. Start learning now!"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://csvidyalaya.com" />
-    <meta
-      property="og:image"
-      content="https://csvidyalaya.com/assets/logo/main_Logo.jpg"
-    />
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
+  <meta name="yandex-verification" content="6cad077691947e7f" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CS Vidyalaya – Learn OS, DSA, DBMS & Tech Concepts</title>
+  <meta name="description"
+    content="Explore key computer science topics like Operating System, Data Structures, DBMS, Software Engineering, Wireless Sensor Networks, and more at CS Vidyalaya.">
+  <meta name="keywords"
+    content="CS Vidyalaya, Operating System, DSA, DBMS, Digital Fundamentals, Software Engineering, Wireless Sensor Network, Tech Tutorials, Computer Science">
+  <meta name="author" content="CS Vidyalaya">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Explore Computer Science Topics: DSA, Computer Networks, Operating Systems, and More"
-    />
-    <meta
-      name="twitter:description"
-      content="Master computer science with in-depth resources on DSA, Computer Networks, Operating Systems, and more. Explore tutorials, questions, and guides now!"
-    />
-    <meta
-      name="twitter:image"
-      content="https://csvidyalaya.com/assets/logo/main_Logo.jpg"
-    />
-    <style>
-      #headinger {
-        h1 {
-          font-size: large;
-          font-family: "Playwrite CU", cursive;
-          font-size: x-large;
-          font-style: normal;
-          text-align: center;
-        }
-        div {
-          text-align: center;
-          font-size: small;
-        }
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.csvidyalaya.com/">
+  <meta property="og:title" content="CS Vidyalaya – Learn OS, DSA, DBMS & Tech Concepts">
+  <meta property="og:description"
+    content="Explore key computer science topics like OS, DBMS, DSA, and more with CS Vidyalaya.">
+  <meta property="og:image" content="https://www.csvidyalaya.com/assets/logo/main_Logo.jpg"> <!-- Add image URL -->
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.csvidyalaya.com/">
+  <meta name="twitter:title" content="CS Vidyalaya – Learn OS, DSA, DBMS & Tech Concepts">
+  <meta name="twitter:description" content="Explore CS topics like OS, DBMS, DSA, WSN and more at CS Vidyalaya.">
+  <meta name="twitter:image" content="https://www.csvidyalaya.com/assets/logo/main-cover.jpg"> <!-- Add image URL -->
+  <script id="structured-data" type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "CS Vidyalaya",
+  "url": "https://www.csvidyalaya.com",
+  "description": "CS Vidyalaya is an educational platform covering Operating Systems, Data Structures, DBMS, Software Engineering, Digital Fundamentals, Wireless Sensor Networks, and other tech topics.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CS Vidyalaya",
+    "url": "https://www.csvidyalaya.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.csvidyalaya.com/assets/logo/main_Logo.jpg"
+    }
+  },
+  "datePublished": "2024-10-01",
+  "dateModified": "2025-06-23"
+}
+</script>
+
+  <style>
+    #headinger {
+      h1 {
+        font-size: large;
+        font-family: "Playwrite CU", cursive;
+        font-size: x-large;
+        font-style: normal;
+        text-align: center;
       }
+
+      div {
+        text-align: center;
+        font-size: small;
+      }
+    }
+
+    .all-cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between;
+      margin: 10px 10px;
+    }
+
+    @media (width<=750px) {
+      .card {
+        align-content: center;
+        width: 18rem;
+        margin-bottom: 10px;
+      }
+
+      .card-body {
+        padding: 4px;
+      }
+
+      h5 {
+        font-weight: bold;
+        font-size: x-small;
+      }
+
+      .card-text {
+        font-size: 10px;
+        margin-bottom: 1px;
+      }
+
       .all-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        margin: 10px 10px;
+        align-content: center;
+        flex-direction: column;
       }
-      @media (width<=750px) {
-        .card {
-          align-content: center;
-          width: 18rem;
-          margin-bottom: 10px;
-        }
-        .card-body {
-          padding: 4px;
-        }
-        h5 {
-          font-weight: bold;
-          font-size: x-small;
-        }
-        .card-text {
-          font-size: 10px;
-          margin-bottom: 1px;
-        }
-        .all-cards {
-          align-content: center;
-          flex-direction: column;
-        }
-        a.btn {
-          padding: 4px;
-          font-size: x-small;
-        }
+
+      a.btn {
+        padding: 4px;
+        font-size: x-small;
       }
+    }
+
+    #al_card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    @media (width<=750px) {
       #al_card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
       }
-      @media (width<=750px) {
-        #al_card {
-          flex-direction: column;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <br>
-    <div id="headinger">
-      <h1>CSvidyalaya.com</h1>
-      <div>Computer Science Vidyalaya</div>
-    </div>
-    <div class="container">
-      <div class="all-cards">
-        <div class="card bg-primary-subtle" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Operating System</h5>
-            <p class="card-text">
-              Definition, functions, Process scheduling algorithms, file system,
-              disk system, I/O system, Definition and functions and many more
-              related question available
-            </p>
-            <a href="/os/operating_System_Topics.html" class="btn btn-success"
-              >practice here -></a
-            >
-          </div>
-        </div>
+    }
+  </style>
+</head>
 
-        <div class="card bg-warning" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">DSA</h5>
-            <p class="card-text">
-              You can practice here Array question, stack, linkedlist, Queue and
-              all other data structure question .....
-            </p>
-            <a href="/dsa_in_c/dsa_in_c_topic.html" class="btn btn-success"
-              >practice here -></a
-            >
-          </div>
-        </div>
-
-        <div class="card bg-secondary-subtle" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Digital Fundamentals</h5>
-            <p class="card-text">
-              Question related to Number Systems and Conversion, complements,
-              Computer Arithmetic, Logic Gates, Boolean Algebra and all others
-              ......
-            </p>
-            <a href="/Digital_Fundamentals/Dgital_funda_topic.html" class="btn btn-success"
-              >practice here -></a
-            >
-          </div>
-        </div>
-
-        <div class="card bg-info" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Software Engineering</h5>
-            <p class="card-text">
-              you can practice here software engineering related questions.
-            </p>
-            <a
-              href="/Software_Engineering/software_engineering_topic.html"
-              class="btn btn-success"
-              >practice here -></a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="all-cards">
-        <div class="card bg-success-subtle" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Wireless Sensor Network (WSN)</h5>
-            <p class="card-text">
-              you can find here previous year question of Wireless Sensor
-              Network.
-            </p>
-            <a href="/WSN/wireless_sensor_network.html" class="btn btn-success"
-              >practice here -></a
-            >
-          </div>
-        </div>
-
-        <div class="card bg-danger-subtle" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Database Management System (DBMS)</h5>
-            <p class="card-text">
-              you can find here Database Management System (DBMS) question +
-              theory
-            </p>
-            <a href="/DBMS/dbms_topic.html" class="btn btn-success"
-              >click here -></a
-            >
-          </div>
-        </div>
-
-        <div class="card bg-danger" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Previous Year Question (PYQ)</h5>
-            <p class="card-text">
-              you can find here previous year question of computer science.
-            </p>
-            <a
-              href="/previous_year_question(PYQ)/PYQ.html"
-              class="btn btn-success"
-              >practice here -></a
-            >
-          </div>
-        </div>
-        <div class="card bg-warning-subtle" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Previous Year Question (PYQ)</h5>
-            <p class="card-text">
-              you can find here previous year question of computer science.
-            </p>
-            <a
-              href="/previous_year_question(PYQ)/PYQ.html"
-              class="btn btn-success"
-              >practice here -></a
-            >
-          </div>
+<body>
+  <br>
+  <div id="headinger">
+    <h1>CSvidyalaya.com</h1>
+    <div>Computer Science Vidyalaya</div>
+  </div>
+  <div class="container">
+    <div class="all-cards">
+      <div class="card bg-primary-subtle" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Operating System</h5>
+          <p class="card-text">
+            Definition, functions, Process scheduling algorithms, file system,
+            disk system, I/O system, Definition and functions and many more
+            related question available
+          </p>
+          <a href="/os/operating_System_Topics.html" class="btn btn-success">practice here -></a>
         </div>
       </div>
 
-      <div id="al_card">
-        <div class="card" style="width: 18rem">
-          <div class="card-header bg-primary text-bg-primary">
-            <h5>Newly Added content</h5>
-          </div>
-          <marquee direction="up" scrollamount="2">
-            <ul></ul>
-          </marquee>
+      <div class="card bg-warning" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">DSA</h5>
+          <p class="card-text">
+            You can practice here Array question, stack, linkedlist, Queue and
+            all other data structure question .....
+          </p>
+          <a href="/dsa_in_c/dsa_in_c_topic.html" class="btn btn-success">practice here -></a>
         </div>
-        &nbsp; &nbsp;
-        <div class="card" style="width: 18rem">
-          <div class="card-header bg-primary text-bg-primary">
-            <h5>Upcoming content</h5>
-          </div>
-          <marquee direction="up" scrollamount="2">
-            <ul></ul>
-          </marquee>
+      </div>
+
+      <div class="card bg-secondary-subtle" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Digital Fundamentals</h5>
+          <p class="card-text">
+            Question related to Number Systems and Conversion, complements,
+            Computer Arithmetic, Logic Gates, Boolean Algebra and all others
+            ......
+          </p>
+          <a href="/Digital_Fundamentals/Dgital_funda_topic.html" class="btn btn-success">practice here -></a>
+        </div>
+      </div>
+
+      <div class="card bg-info" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Software Engineering</h5>
+          <p class="card-text">
+            you can practice here software engineering related questions.
+          </p>
+          <a href="/Software_Engineering/software_engineering_topic.html" class="btn btn-success">practice here -></a>
         </div>
       </div>
     </div>
-    <!-- cards end -->
-    <!-- bootstrap link -->
-    <br><br>
-    <script src="/js/src/index.min.js"></script>
-    <script>
-      window.onload = function () {
-        const images = document.querySelectorAll(
-          "img[data-src-mobile][data-src-desktop]"
-        );
-        const isMobile = window.innerWidth < 700;
-        images.forEach((img) => {
-          img.src = isMobile
-            ? img.getAttribute("data-src-mobile")
-            : img.getAttribute("data-src-desktop");
-          img.removeAttribute("data-src-mobile");
-          img.removeAttribute("data-src-desktop");
-        });
-      };
-    </script>
-  </body>
+    <div class="all-cards">
+      <div class="card bg-success-subtle" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Wireless Sensor Network (WSN)</h5>
+          <p class="card-text">
+            you can find here previous year question of Wireless Sensor
+            Network.
+          </p>
+          <a href="/WSN/wireless_sensor_network.html" class="btn btn-success">practice here -></a>
+        </div>
+      </div>
+
+      <div class="card bg-danger-subtle" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Database Management System (DBMS)</h5>
+          <p class="card-text">
+            you can find here Database Management System (DBMS) question +
+            theory
+          </p>
+          <a href="/DBMS/dbms_topic.html" class="btn btn-success">click here -></a>
+        </div>
+      </div>
+
+      <div class="card bg-danger" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Previous Year Question (PYQ)</h5>
+          <p class="card-text">
+            you can find here previous year question of computer science.
+          </p>
+          <a href="/previous_year_question(PYQ)/PYQ.html" class="btn btn-success">practice here -></a>
+        </div>
+      </div>
+      <div class="card bg-warning-subtle" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Previous Year Question (PYQ)</h5>
+          <p class="card-text">
+            you can find here previous year question of computer science.
+          </p>
+          <a href="/previous_year_question(PYQ)/PYQ.html" class="btn btn-success">practice here -></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="al_card">
+      <div class="card" style="width: 18rem">
+        <div class="card-header bg-primary text-bg-primary">
+          <h5>Newly Added content</h5>
+        </div>
+        <marquee direction="up" scrollamount="2">
+          <ul></ul>
+        </marquee>
+      </div>
+      &nbsp; &nbsp;
+      <div class="card" style="width: 18rem">
+        <div class="card-header bg-primary text-bg-primary">
+          <h5>Upcoming content</h5>
+        </div>
+        <marquee direction="up" scrollamount="2">
+          <ul></ul>
+        </marquee>
+      </div>
+    </div>
+  </div>
+  <!-- cards end -->
+  <!-- bootstrap link -->
+  <br><br>
+  <script src="/js/src/index.min.js"></script>
+  <script>
+    window.onload = function () {
+      const images = document.querySelectorAll(
+        "img[data-src-mobile][data-src-desktop]"
+      );
+      const isMobile = window.innerWidth < 700;
+      images.forEach((img) => {
+        img.src = isMobile
+          ? img.getAttribute("data-src-mobile")
+          : img.getAttribute("data-src-desktop");
+        img.removeAttribute("data-src-mobile");
+        img.removeAttribute("data-src-desktop");
+      });
+    };
+  </script>
+</body>
+
 </html>
