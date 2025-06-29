@@ -101,6 +101,7 @@ function adsense_code() {
   ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
   add_head(ads_script);
 }
+
 adsense_code();
 function published_data() {
   const lastModified = new Date(document.lastModified).toISOString().split('T')[0];
@@ -110,3 +111,28 @@ function published_data() {
   scriptTag.textContent = JSON.stringify(json);
 }
 published_data();
+
+export function breadcrumb(data) {
+  let brdcrmb = document.querySelector("#main_content > main > nav#breadcrumbs > ol.breadcrumb");
+  let active_link = Object.entries(data.users).length;
+  let i = 1;
+ let list;
+  for (let name_link of data.users) {
+    
+    if (i == active_link) {
+       list = document.createElement("li");
+      list.classList.add("breadcrumb-item", "p-1", "active");
+      list.innerHTML += `<a href="" class="bg-body-secondary rounded-2 p-1  text-decoration-none ">${name_link.name}</a>`;
+      brdcrmb.appendChild(list);
+    } else {
+       list = document.createElement("li");
+      list.classList.add("breadcrumb-item", "p-1");
+      list.innerHTML = `<a  href="${name_link.link}" class="p-1 .text-black">${name_link.name}</a>`;
+      brdcrmb.appendChild(list);
+    }
+    i++;
+  }
+
+
+}
+

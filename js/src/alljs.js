@@ -12,17 +12,22 @@ function last_modified() {
   let hh1 = document.querySelector("#main_content > main > div#title_date > h1");
   let lastupdate = document.createElement("div");
   lastupdate.setAttribute("id", "last_updated_parent");
-  
+
   lastupdate.innerHTML = ` 
           <div>
             <span>Last updated : </span><span>${lastup[1] + " " + lastup[2] + ", " + lastup[3]
     }</span>
           </div>
           <hr>
+          <div class="d-flex justify-content-between align-items-center border border-2">
             <div>
-            <p style="margin:0;">
-       Like & Follow our page and show your love
-       </p><a style="font-size: xx-large;" href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> &nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i class="bi bi-instagram"></i></a>
+            <p style="margin:0;" class="m-0 fw-bold"> Like & Follow </p> </div>
+
+         <div>
+       <a style="font-size: xx-large;"href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> &nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i class="bi bi-instagram"></i></a>
+          </div>  
+          
+          
           </div>`;
   hh1.insertAdjacentElement("afterend", lastupdate);
 }
