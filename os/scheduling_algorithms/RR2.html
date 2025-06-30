@@ -8,9 +8,59 @@
   <title>
     Round Robin Scheduling Algorithm: Practice Questions with Answers
   </title>
-  <meta name="description"
-    content="Improve your knowledge of Round Robin scheduling algorithms with practice questions and detailed answers. Perfect resource for technical interviews and academic studies." />
-  <style>
+ 
+ <!-- Meta Tags for SEO -->
+<meta name="description" content="Practice Round Robin (RR) scheduling algorithm with solved questions for better understanding of time-sharing systems in Operating Systems.">
+<meta name="keywords" content="Round Robin Scheduling, Operating System Scheduling, RR Algorithm Questions, OS Scheduling Practice, Time Quantum Scheduling">
+<meta name="author" content="CS Vidyalaya">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph for Facebook and others -->
+<meta property="og:title" content="Round Robin Scheduling – Practice Questions with Solutions">
+<meta property="og:description" content="Practice Round Robin (RR) scheduling algorithm with solved questions for better understanding of time-sharing systems in Operating Systems.">
+<meta property="og:url" content="https://csvidyalaya.com/os/scheduling_algorithms/RR2.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://csvidyalaya.com/assets/featured-image/RR2_fi.jpg">
+<meta property="og:site_name" content="CS Vidyalaya">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Round Robin Scheduling – Practice Questions with Solutions">
+<meta name="twitter:description" content="Solve RR scheduling algorithm problems and sharpen your OS skills. Designed for students and exam preparation.">
+<meta name="twitter:image" content="https://csvidyalaya.com/assets/featured-image/RR2_fi.jpg">
+<meta name="twitter:site" content="@csvidyalaya"> <!-- Optional if you have a Twitter handle -->
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" id="structured-data">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://csvidyalaya.com/os/scheduling_algorithms/RR2.html"
+  },
+  "headline": "Round Robin Scheduling – Practice Questions with Solutions",
+  "description": "Practice Round Robin (RR) scheduling algorithm with solved questions for better understanding of time-sharing systems in Operating Systems.",
+  "image": "https://csvidyalaya.com/assets/featured-image/RR2_fi.jpg",
+  "author": {
+    "@type": "Organization",
+    "name": "CS Vidyalaya",
+    "url": "https://www.csvidyalaya.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CS Vidyalaya",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.csvidyalaya.com/assets/logo/main_Logo.jpg"
+    }
+  },
+  "datePublished": "2024-11-07",
+  "dateModified": "2024-11-07"
+}
+</script>
+
+ <style>
     #RR1_1,
     #RR1_2,
     #RR2_1,
@@ -21,8 +71,9 @@
       height: 180px;
       width: 630px;
       object-fit: none;
-      /* border: 1px solid red; */
-    }
+   
+    } 
+   
 
     #RR1_1 {
       object-position: -37px -14px;
@@ -53,7 +104,7 @@
     }
 
     @media (width<=770px) {
-
+      
       #RR1_1,
       #RR1_2,
       #RR2_1,
@@ -103,6 +154,9 @@
     </div>
     <div id="main_content">
       <main>
+          <div class="featured-image">
+          <img src="/assets/featured-image/RR2_fi.jpg" alt="shortest remaining time first scheduling image">
+        </div>
         <div id="title_date">
           <h1>
             Round Robin Scheduling Algorithm: Practice Questions with Answers
@@ -482,7 +536,7 @@
   </div>
 
   <script>
-    let img = document.getElementsByTagName("img");
+    let img = document.querySelectorAll(".solution img");
     for (let index = 0; index < img.length; index++) {
       img[index].src = "/assets/RR2.png";
     }

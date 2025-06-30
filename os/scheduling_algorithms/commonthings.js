@@ -1,6 +1,6 @@
-import { add_css, popup_links,sdbar_Links,book_name_recommender} from "/js/src/utilities.min.js";
+import { add_css, popup_links,sdbar_Links,book_name_recommender,sequence_function_call} from "/js/src/utilities.min.js";
 
-import {breadcrumb} from "/js/src/for_all_page.min.js";
+import {breadcrumb , breadcrumb_space} from "/js/src/for_all_page.min.js";
 
 import book_sugget from "/os/scheduling_algorithms/recommended_book.json" with {type : "json"};
 book_name_recommender(book_sugget);
@@ -155,9 +155,12 @@ const breadcrumb_Links = {
   ]
 }
 
-breadcrumb(breadcrumb_Links);
 
 
+
+
+
+sequence_function_call(()=>{breadcrumb_space()},()=>{breadcrumb(breadcrumb_Links);} );
 
 
 

@@ -93,24 +93,15 @@ if (
     gtag('config', 'G-C4M8ZRW6HS');`;
   headu.appendChild(script2);
 }
-// adsense code
-function adsense_code() {
-  let ads_script = document.createElement("script");
-  ads_script.async = !0;
-  ads_script.setAttribute("crossorigin", "anonymous");
-  ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
-  add_head(ads_script);
-}
+// function adsense_code() {
+//   let ads_script = document.createElement("script");
+//   ads_script.async = !0;
+//   ads_script.setAttribute("crossorigin", "anonymous");
+//   ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
+//   add_head(ads_script);
+// }
 
-adsense_code();
-function published_data() {
-  const lastModified = new Date(document.lastModified).toISOString().split('T')[0];
-  const scriptTag = document.getElementById("structured-data");
-  const json = JSON.parse(scriptTag.textContent);
-  json.dateModified = lastModified;
-  scriptTag.textContent = JSON.stringify(json);
-}
-published_data();
+// adsense_code();
 
 export function breadcrumb(data) {
   let brdcrmb = document.querySelector("#main_content > main > nav#breadcrumbs > ol.breadcrumb");
@@ -132,7 +123,16 @@ export function breadcrumb(data) {
     }
     i++;
   }
+}
 
-
+export function breadcrumb_space() {
+   let fd_image = document.querySelector("#main_content > main > div.featured-image");
+   let fd_image_parent = document.querySelector("#main_content > main > div.featured-image").parentNode;
+   let nav = document.createElement("nav");
+   nav.setAttribute("id" , "breadcrumbs");
+   nav.setAttribute("style","--bs-breadcrumb-divider: '>';");
+   nav.innerHTML = ` <ol class="breadcrumb mt-2">
+          </ol>`;
+     fd_image_parent.insertBefore(nav,fd_image);
 }
 

@@ -77,9 +77,23 @@ function founder_schemas() {
   // founder json ld
 }
 
+
 loadScript('/js/src/for_all_page.min.js', () => {
   loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); });
 });
+
+
+
+function published_data() {
+  const lastModified = new Date(document.lastModified).toISOString().split('T')[0];
+  const scriptTag = document.getElementById("structured-data");
+  const json = JSON.parse(scriptTag.textContent);
+  json.dateModified = lastModified;
+  scriptTag.textContent = JSON.stringify(json);
+}
+published_data();
+
+
 function bar(link_arr) {
   let bar = document.createElement("div");
   let irhtml = `<div
