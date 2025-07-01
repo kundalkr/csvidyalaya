@@ -1,6 +1,6 @@
 import { add_css, add_body ,sdbar_Links,book_name_recommender} from "/js/src/utilities.min.js";
 
-
+import {breadcrumb } from "/js/src/for_all_page.min.js";
     import book_sugget from "/os/scheduling_algorithms/recommended_book.json" with {type : "json"};
       book_name_recommender(book_sugget);
 const data = {
@@ -160,3 +160,17 @@ const sidebar_links = {
 };
 sdbar_Links(sidebar_links);
 
+const breadcrumb_Links = {
+  users: [
+    {
+    link: "/index.html",name:"CS vidyalaya"
+    },
+    {
+      link: "/os/operating_System_Topics.html",name:"OS"
+    },
+    {
+      link: "/os/Deadlocks/deadlock_topics.html",name:"Deadlocks"
+    }
+  ]
+}
+breadcrumb(breadcrumb_Links);

@@ -113,7 +113,7 @@ export function breadcrumb(data) {
     if (i == active_link) {
        list = document.createElement("li");
       list.classList.add("breadcrumb-item", "p-1", "active");
-      list.innerHTML += `<a href="" class="bg-body-secondary rounded-2 p-1  text-decoration-none ">${name_link.name}</a>`;
+      list.innerHTML += `<a href="${name_link.link}" class="bg-body-secondary rounded-2 p-1  text-decoration-none ">${name_link.name}</a>`;
       brdcrmb.appendChild(list);
     } else {
        list = document.createElement("li");
@@ -125,14 +125,14 @@ export function breadcrumb(data) {
   }
 }
 
-export function breadcrumb_space() {
-   let fd_image = document.querySelector("#main_content > main > div.featured-image");
-   let fd_image_parent = document.querySelector("#main_content > main > div.featured-image").parentNode;
-   let nav = document.createElement("nav");
-   nav.setAttribute("id" , "breadcrumbs");
-   nav.setAttribute("style","--bs-breadcrumb-divider: '>';");
-   nav.innerHTML = ` <ol class="breadcrumb mt-2">
-          </ol>`;
-     fd_image_parent.insertBefore(nav,fd_image);
-}
+// export function breadcrumb_space() {
+//    let fd_image = document.querySelector("#main_content > main > div.featured-image");
+//    let fd_image_parent = document.querySelector("#main_content > main > div.featured-image").parentNode;
+//    let nav = document.createElement("nav");
+//    nav.setAttribute("id" , "breadcrumbs");
+//    nav.setAttribute("style","--bs-breadcrumb-divider: '>';");
+//    nav.innerHTML = ` <ol class="breadcrumb mt-2">
+//           </ol>`;
+//      fd_image_parent.insertBefore(nav,fd_image);
+// }
 

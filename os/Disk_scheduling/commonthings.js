@@ -1,6 +1,7 @@
-import { add_css,sdbar_Links,book_name_recommender } from "/js/src/utilities.min.js";
-import book_suggest from "/os/Disk_scheduling/book_suggest.json" with {type : "json"};
-  book_name_recommender(book_suggest);
+import { add_css, sdbar_Links, book_name_recommender } from "/js/src/utilities.min.js";
+import book_suggest from "/os/Disk_scheduling/book_suggest.json" with {type: "json"}; import { breadcrumb } from "/js/src/for_all_page.min.js";
+book_name_recommender(book_suggest);
+
 // const data = {
 //   users: [
 //     {
@@ -104,3 +105,17 @@ const sidebar_links = {
 sdbar_Links(sidebar_links);
 
 
+const breadcrumb_Links = {
+  users: [
+    {
+      link: "/index.html", name: "CS vidyalaya"
+    },
+    {
+      link: "/os/operating_System_Topics.html", name: "OS"
+    },
+    {
+      link: "/os/Disk_scheduling/disk_scheduling_algorithms.html", name: "Disk schedulings"
+    }
+  ]
+}
+breadcrumb(breadcrumb_Links);
