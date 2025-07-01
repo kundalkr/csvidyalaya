@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
   <url>
     <loc>https://www.csvidyalaya.com/</loc>
     <image:image>
-      <image:loc>https://www.csvidyalaya.com/assets/logo/DSA_IN_C_LOGO_BIG.png</image:loc>
+      <image:loc>https://www.csvidyalaya.com/assets/logo/DSA_LOGO_BIG.png</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/logo/OS_LOGO_BIG.png</image:loc>
@@ -92,24 +90,23 @@
       <image:loc>https://www.csvidyalaya.com/assets/fcfs/fcfs1_q3.jpg</image:loc>
     </image:image>
     <lastmod>2025-07-01</lastmod>
-
   </url>
   <url>
     <loc>https://www.csvidyalaya.com/os/scheduling_algorithms/sjf1.html</loc>
-       <image:image>
+    <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/SJF/non-preemptive/np-1.jpg</image:loc>
     </image:image>
-      <image:image>
+    <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/SJF/non-preemptive/np-3.jpg</image:loc>
     </image:image>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
     <loc>https://www.csvidyalaya.com/os/scheduling_algorithms/sjf2.html</loc>
-       <image:image>
+    <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/SJF/non-preemptive/p-1.jpg</image:loc>
     </image:image>
-      <image:image>
+    <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/SJF/non-preemptive/p-9.jpg</image:loc>
     </image:image>
     <lastmod>2025-07-01</lastmod>
@@ -208,7 +205,7 @@
     </image:image>
     <lastmod>2025-07-01</lastmod>
   </url>
-    <url>
+  <url>
     <loc>https://www.csvidyalaya.com/os/Disk_scheduling/disk_scheduling_algorithms.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/disk_scheduling/scan_2024-26.jpg</image:loc>
@@ -224,7 +221,6 @@
     </image:image>
     <lastmod>2025-07-01</lastmod>
   </url>
-  <!--  -->
   <!-- operating SYSTEM links -->
   <!-- DBMS links -->
   <url>
@@ -373,48 +369,48 @@
   </url>
   <!-- DSA -->
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/dsa_in_c_topic.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/dsa-topic.html</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
 
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/Arrays.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/Arrays.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/DSA/base_address_formulaw.jpg</image:loc>
     </image:image>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/array2.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/array2.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/DSA/base_address_question.jpg</image:loc>
     </image:image>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/stack1.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/stack1.html</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/stack2.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/stack2.html</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/stack3.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/stack3.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/DSA/dsa_q2.jpg</image:loc>
     </image:image>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/infixtoprefix.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/infixtoprefix.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/DSA/infix_and_prefix/inf_to_pref_comp_21.png</image:loc>
     </image:image>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/infixtopostfix.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/infixtopostfix.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/DSA/infix_and_postfix/inf_to_post_comp_49.png</image:loc>
     </image:image>
@@ -424,28 +420,47 @@
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/prefixtopostfix.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/prefixtopostfix.html</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/postfixprefixofinfix.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/postfixprefixofinfix.html</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/queue1.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/queue1.html</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/linkedlist1.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/linkedlist1.html</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/queue2.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/queue2.html</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/dsa_in_c/linkedlist2.html</loc>
+    <loc>https://www.csvidyalaya.com/DSA/linkedlist2.html</loc>
     <lastmod>2025-07-01</lastmod>
   </url>
   <!-- DSA END-->
+  
+  <!-- website page information -->
+  <url>
+    <loc>https://www.csvidyalaya.com/About-us.html</loc>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.csvidyalaya.com/contact-us.html</loc>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.csvidyalaya.com/privacy-policy.html</loc>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+  <url>
+    <loc>https://www.csvidyalaya.com/terms-and-condition.html</loc>
+    <lastmod>2025-07-01</lastmod>
+  </url>
+  <!-- website page information -->
 </urlset>

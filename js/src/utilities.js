@@ -53,6 +53,7 @@ function file_name_viewer() {
   let url = window.location.pathname;
   return url.substring(url.lastIndexOf("/") + 1);
 }
+
 export function book_name_recommender(object) {
   let books = "";
   let h2i = "";

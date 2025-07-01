@@ -49,8 +49,6 @@ function css_files() {
 
 //  all css adding end
 function founder_schemas() {
-
-
   // founder json ld
   const founder_schema = document.createElement("script");
   founder_schema.type = "application/ld+json";

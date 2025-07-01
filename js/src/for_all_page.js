@@ -93,6 +93,7 @@ if (
     gtag('config', 'G-C4M8ZRW6HS');`;
   headu.appendChild(script2);
 }
+
 // function adsense_code() {
 //   let ads_script = document.createElement("script");
 //   ads_script.async = !0;
@@ -100,7 +101,6 @@ if (
 //   ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
 //   add_head(ads_script);
 // }
-
 // adsense_code();
 
 export function breadcrumb(data) {

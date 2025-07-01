@@ -25,7 +25,7 @@ header.innerHTML = `
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="https://kundalkr.github.io/csvidyalaya/" target="_blank"
+                href="/index.html" target="_blank"
                 >Home</a
               >
             </li>
@@ -54,7 +54,7 @@ header.innerHTML = `
                 <li>
                   <a
                     class="dropdown-item"
-                    href="/dsa_in_c/dsa_in_c_topic.html"
+                    href="/DSA/dsa-topic.html"
                     >Dsa</a
                   >
                 </li>
@@ -79,8 +79,8 @@ header.innerHTML = `
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="csvidyalaya.com" target="_blank"
-                >About</a
+                href="/About-us.html" target="_blank"
+                >About us</a
               >
             </li>
             <li class="nav-item">
@@ -113,37 +113,37 @@ header.innerHTML = `
           >
             <ul>
              <li>
-          <a href="https://csvidyalaya.com/os/scheduling_algorithms/fcfs.html"
+          <a href="/os/scheduling_algorithms/fcfs.html"
             >first-come-first-serve(FCFS) </a
           >
         </li> <li>
-          <a href="https://csvidyalaya.com/os/scheduling_algorithms/sjf1.html"
+          <a href="/os/scheduling_algorithms/sjf1.html"
             >Shortest Job First(SJF) </a
           >
         </li> <li>
-          <a href="https://csvidyalaya.com/os/scheduling_algorithms/sjf2.html"
+          <a href="/os/scheduling_algorithms/sjf2.html"
             >SRTF (Shortest Remaining Time First)</a
           >
         </li> <li>
-          <a href="https://csvidyalaya.com/os/scheduling_algorithms/RR1.html"
+          <a href="/os/scheduling_algorithms/RR1.html"
             >Round Robin(RR)</a
           >
         </li> <li>
-          <a href="https://csvidyalaya.com/os/scheduling_algorithms/ps1.html"
+          <a href="/os/scheduling_algorithms/ps1.html"
             >priority scheduling</a
           >
         </li>
             <li>
-          <a href="https://csvidyalaya.com/os/scheduling_algorithms/ps2.html"
+          <a href="/os/scheduling_algorithms/ps2.html"
             >preemptive priority scheduling</a
           >
         </li>
         <li>
-          <a href="https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html"
+          <a href="/os/scheduling_algorithms/mlfqs.html"
             >multi-level feedback Queue (MLFQ) scheduling</a
           >
         </li><li>
-          <a href="https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html"
+          <a href="/os/scheduling_algorithms/MLQS.html"
             >multi-level Queue (MLQ) scheduling</a
           >
         </li>
@@ -151,39 +151,39 @@ header.innerHTML = `
 
         </li>
         <li>
-          <a href="/dsa_in_c/dsa_in_c_topic.html">Dsa In C</a>
+          <a href="/DSA/dsa-topic.html">Dsa In C</a>
           <ul><li>
-          <a href="/dsa_in_c/infixtopostfix.html"
+          <a href="/DSA/infixtopostfix.html"
             >Infix And Postfix question</a
           >
         </li>
             <li>
-          <a href="/dsa_in_c/prefixtopostfix.html"
+          <a href="/DSA/prefixtopostfix.html"
             >Prefix And Postfix question</a
           >
         </li>
         <li>
-          <a href="/dsa_in_c/stack2.html"
+          <a href="/DSA/stack2.html"
             >Infix And Prefix question</a
           >
         </li>
         <li>
-          <a href="/dsa_in_c/stack3.html"
+          <a href="/DSA/stack3.html"
             >Prefix And Infix question</a
           >
         </li>
         <li>
-          <a href="/dsa_in_c/postfixprefixofinfix.html"
+          <a href="/DSA/postfixprefixofinfix.html"
             >Postfix & Prefix To Infix</a
           >
         </li>
          <li>
-          <a href="/dsa_in_c/infixtoprefix.html"
+          <a href="/DSA/infixtoprefix.html"
             >Infix To Prefix question</a
           >
         </li>
         <li>
-          <a href="/dsa_in_c/linkedlist1.html"
+          <a href="/DSA/linkedlist1.html"
             >linkedlist question</a
           >
         </li></ul>
@@ -201,19 +201,19 @@ header.innerHTML = `
         </li>
 
          <li>
-          <a href=" https://csvidyalaya.com/DBMS/DBMS_topics/relational_algebra/relational_algebra_question.html"
+          <a href="/DBMS/DBMS_topics/relational_algebra/relational_algebra_question.html"
             >Relational Algebra question</a
           >
         </li>
 
            <li>
-          <a href="https://csvidyalaya.com/DBMS/DBMS_topics/relational_calculus_topic.html"
+          <a href="/DBMS/DBMS_topics/relational_calculus_topic.html"
             >Relational calculus</a
           >
         </li>
 
             <li>
-          <a href="https://csvidyalaya.com/DBMS/DBMS_topics/relational_algebra_relational_calculus.html"
+          <a href="/DBMS/DBMS_topics/relational_algebra_relational_calculus.html"
             >Relational Algebra + relational calculus</a
           >
         </li>
@@ -232,6 +232,7 @@ footer.innerHTML = `
         class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top"
       >
         <div class="col mb-3">
+        <a style="font-size: xx-large;"href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> &nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i class="bi bi-instagram"></i></a>
           <p class="text-muted">
             © 2025 <span class="navbar-bran">csvidyalaya.com</span>
           </p>
@@ -272,10 +273,10 @@ footer.innerHTML = `
 
             <li class="nav-item mb-2">
               <a
-                href="/anotherpage/about.html"
+                href="/About-us.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
-                >About</a
+                >About us</a
               >
             </li>
             <li class="nav-item mb-2">
@@ -578,7 +579,7 @@ footer.innerHTML = `
             <li class="nav-item mb-2 headi">DSA QUESTION</li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/Arrays.html"
+                href="/DSA/Arrays.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Arrays</a
@@ -586,7 +587,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/infixtopostfix.html"
+                href="/DSA/infixtopostfix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix And Postfix Conversion</a
@@ -594,7 +595,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/infixtoprefix.html"
+                href="/DSA/infixtoprefix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix To Prefix Conversion</a
@@ -602,7 +603,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/stack2.html"
+                href="/DSA/stack2.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix And Prefix Conversion</a
@@ -610,7 +611,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/postfixprefixofinfix.html"
+                href="/DSA/postfixprefixofinfix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Infix To Postfix and Prefix Conversion</a
@@ -618,7 +619,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/prefixtopostfix.html"
+                href="/DSA/prefixtopostfix.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Prefix And Postfix Conversion</a
@@ -626,7 +627,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/linkedlist1.html"
+                href="/DSA/linkedlist1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Linkedlist Question</a
@@ -634,7 +635,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/queue1.html"
+                href="/DSA/queue1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >Queue Question</a
@@ -642,7 +643,7 @@ footer.innerHTML = `
             </li>
             <li class="nav-item mb-2">
               <a
-                href="/dsa_in_c/stack1.html"
+                href="/DSA/stack1.html"
                 class="nav-link p-0 text-muted"
                 target="_blank"
                 >stack Question</a
@@ -714,19 +715,19 @@ footer.innerHTML = `
 document.querySelector("body").append(footer);
 if (
   window.location.href.indexOf(
-    "https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/mlfqs.html"
+    "/sub_modules/os/scheduling_algorithms/mlfqs.html"
   ) === 0
 ) {
   window.location.href =
-    "https://csvidyalaya.com/os/scheduling_algorithms/mlfqs.html";
+    "/os/scheduling_algorithms/mlfqs.html";
 }
 if (
   window.location.href.indexOf(
-    "https://csvidyalaya.com/sub_modules/os/scheduling_algorithms/MLQS.html"
+    "/sub_modules/os/scheduling_algorithms/MLQS.html"
   ) === 0
 ) {
   window.location.href =
-    "https://csvidyalaya.com/os/scheduling_algorithms/MLQS.html";
+    "/os/scheduling_algorithms/MLQS.html";
 }
 
 let bootstrapScript = document.createElement("script");
