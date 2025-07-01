@@ -1,183 +1,193 @@
-[
-    {
-        "topic_name": "first come first serve(FCFS) scheduling algorithm",
-        "file_name": "fcfs.html , fcfs2.html",
-        "book": [
-            {
-                "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
-                "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
-                "book_link": "https://amzn.to/43Wi0Tm"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
-                "image_alt": "Operating Systems, by William Stallings",
-                "book_link": "https://amzn.to/4e9w6nz"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
-                "image_alt": "Operating System, by Deitel",
-                "book_link": "https://amzn.to/4emw0cr"
-            }
-        ]
-    },{
-        "topic_name": "Round Robin (RR) scheduling algorithm",
-        "file_name": "RR1.html , RR2.html , RR3.html , RR4.html",
-        "book": [
-            {
-                "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
-                "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
-                "book_link": "https://amzn.to/43Wi0Tm"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
-                "image_alt": "Operating Systems, by William Stallings",
-                "book_link": "https://amzn.to/4e9w6nz"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
-                "image_alt": "Operating System, by Deitel",
-                "book_link": "https://amzn.to/4emw0cr"
-            }
-        ]
-    },{
-        "topic_name": "multilevel feedback queue scheduling (MLFQ) scheduling algorithm",
-        "file_name": "mlfqs.html",
-        "book": [
-            {
-                "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
-                "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
-                "book_link": "https://amzn.to/43Wi0Tm"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
-                "image_alt": "Operating Systems, by William Stallings",
-                "book_link": "https://amzn.to/4e9w6nz"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
-                "image_alt": "Operating System, by Deitel",
-                "book_link": "https://amzn.to/4emw0cr"
-            }
-        ]
-    },{
-        "topic_name": "multilevel queue scheduling (MLQ) scheduling algorithm",
-        "file_name": "MLQS.html",
-        "book": [
-            {
-                "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
-                "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
-                "book_link": "https://amzn.to/43Wi0Tm"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
-                "image_alt": "Operating Systems, by William Stallings",
-                "book_link": "https://amzn.to/4e9w6nz"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
-                "image_alt": "Operating System, by Deitel",
-                "book_link": "https://amzn.to/4emw0cr"
-            }
-        ]
-    },{
-        "topic_name": "non-preemptive priority scheduling algorithm",
-        "file_name": "ps1.html",
-        "book": [
-            {
-                "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
-                "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
-                "book_link": "https://amzn.to/43Wi0Tm"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
-                "image_alt": "Operating Systems, by William Stallings",
-                "book_link": "https://amzn.to/4e9w6nz"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
-                "image_alt": "Operating System, by Deitel",
-                "book_link": "https://amzn.to/4emw0cr"
-            }
-        ]
-    },{
-        "topic_name": "preemptive priority scheduling algorithm",
-        "file_name": "ps2.html",
-        "book": [
-            {
-                "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
-                "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
-                "book_link": "https://amzn.to/43Wi0Tm"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
-                "image_alt": "Operating Systems, by William Stallings",
-                "book_link": "https://amzn.to/4e9w6nz"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
-                "image_alt": "Operating System, by Deitel",
-                "book_link": "https://amzn.to/4emw0cr"
-            }
-        ]
-    },{
-        "topic_name": "shortest job first (SJF) scheduling algorithm",
-        "file_name": "sjf1.html",
-        "book": [
-            {
-                "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
-                "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
-                "book_link": "https://amzn.to/43Wi0Tm"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
-                "image_alt": "Operating Systems, by William Stallings",
-                "book_link": "https://amzn.to/4e9w6nz"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
-                "image_alt": "Operating System, by Deitel",
-                "book_link": "https://amzn.to/4emw0cr"
-            }
-        ]
-    },{
-        "topic_name": "Shortest Remaining Time First(SRTF) or Preemptive SJF scheduling algorithm",
-        "file_name": "sjf2.html",
-        "book": [
-            {
-                "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
-                "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
-                "book_link": "https://amzn.to/43Wi0Tm"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
-                "image_alt": "Operating Systems, by William Stallings",
-                "book_link": "https://amzn.to/4e9w6nz"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
-                "image_alt": "Operating System, by Deitel",
-                "book_link": "https://amzn.to/4emw0cr"
-            }
-        ]
-    },{
-        "topic_name": "Banker's algorithms question",
-        "file_name": "Bankers_Algorithms.html",
-        "book": [
-            {
-                "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
-                "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
-                "book_link": "https://amzn.to/43Wi0Tm"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
-                "image_alt": "Operating Systems, by William Stallings",
-                "book_link": "https://amzn.to/4e9w6nz"
-            },
-            {
-                "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
-                "image_alt": "Operating System, by Deitel",
-                "book_link": "https://amzn.to/4emw0cr"
-            }
-        ]
-    }
-]
+{
+    "books": [
+        {
+            "topic_name": "first come first serve(FCFS) scheduling algorithm",
+            "file_name": "fcfs.html , fcfs2.html, page_replacement.html, Fit_question.html , Buddy_system.html",
+            "book": [
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "https://amzn.to/43Wi0Tm"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
+                    "image_alt": "Operating Systems, by William Stallings",
+                    "book_link": "https://amzn.to/4e9w6nz"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
+                    "image_alt": "Operating System, by Deitel",
+                    "book_link": "https://amzn.to/4emw0cr"
+                }
+            ]
+        },
+        {
+            "topic_name": "Round Robin (RR) scheduling algorithm",
+            "file_name": "RR1.html , RR2.html , RR3.html , RR4.html",
+            "book": [
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "https://amzn.to/43Wi0Tm"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
+                    "image_alt": "Operating Systems, by William Stallings",
+                    "book_link": "https://amzn.to/4e9w6nz"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
+                    "image_alt": "Operating System, by Deitel",
+                    "book_link": "https://amzn.to/4emw0cr"
+                }
+            ]
+        },
+        {
+            "topic_name": "multilevel feedback queue scheduling (MLFQ) scheduling algorithm",
+            "file_name": "mlfqs.html",
+            "book": [
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "https://amzn.to/43Wi0Tm"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
+                    "image_alt": "Operating Systems, by William Stallings",
+                    "book_link": "https://amzn.to/4e9w6nz"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
+                    "image_alt": "Operating System, by Deitel",
+                    "book_link": "https://amzn.to/4emw0cr"
+                }
+            ]
+        },
+        {
+            "topic_name": "multilevel queue scheduling (MLQ) scheduling algorithm",
+            "file_name": "MLQS.html",
+            "book": [
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "https://amzn.to/43Wi0Tm"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
+                    "image_alt": "Operating Systems, by William Stallings",
+                    "book_link": "https://amzn.to/4e9w6nz"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
+                    "image_alt": "Operating System, by Deitel",
+                    "book_link": "https://amzn.to/4emw0cr"
+                }
+            ]
+        },
+        {
+            "topic_name": "non-preemptive priority scheduling algorithm",
+            "file_name": "ps1.html",
+            "book": [
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "https://amzn.to/43Wi0Tm"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
+                    "image_alt": "Operating Systems, by William Stallings",
+                    "book_link": "https://amzn.to/4e9w6nz"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
+                    "image_alt": "Operating System, by Deitel",
+                    "book_link": "https://amzn.to/4emw0cr"
+                }
+            ]
+        },
+        {
+            "topic_name": "preemptive priority scheduling algorithm",
+            "file_name": "ps2.html",
+            "book": [
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "https://amzn.to/43Wi0Tm"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
+                    "image_alt": "Operating Systems, by William Stallings",
+                    "book_link": "https://amzn.to/4e9w6nz"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
+                    "image_alt": "Operating System, by Deitel",
+                    "book_link": "https://amzn.to/4emw0cr"
+                }
+            ]
+        },
+        {
+            "topic_name": "shortest job first (SJF) scheduling algorithm",
+            "file_name": "sjf1.html",
+            "book": [
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "https://amzn.to/43Wi0Tm"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
+                    "image_alt": "Operating Systems, by William Stallings",
+                    "book_link": "https://amzn.to/4e9w6nz"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
+                    "image_alt": "Operating System, by Deitel",
+                    "book_link": "https://amzn.to/4emw0cr"
+                }
+            ]
+        },
+        {
+            "topic_name": "Shortest Remaining Time First(SRTF) or Preemptive SJF scheduling algorithm",
+            "file_name": "sjf2.html",
+            "book": [
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "https://amzn.to/43Wi0Tm"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
+                    "image_alt": "Operating Systems, by William Stallings",
+                    "book_link": "https://amzn.to/4e9w6nz"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
+                    "image_alt": "Operating System, by Deitel",
+                    "book_link": "https://amzn.to/4emw0cr"
+                }
+            ]
+        },
+        {
+            "topic_name": "Banker's algorithms question",
+            "file_name": "Bankers_Algorithms.html",
+            "book": [
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "https://amzn.to/43Wi0Tm"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/71PV0lQBcOL._AC_FMavif_UC231,231_CACC,231,231_QL58_.jpg?aicid=community-reviews",
+                    "image_alt": "Operating Systems, by William Stallings",
+                    "book_link": "https://amzn.to/4e9w6nz"
+                },
+                {
+                    "book_image": "https://m.media-amazon.com/images/I/51ilyqrIUfL._SY342_.jpg",
+                    "image_alt": "Operating System, by Deitel",
+                    "book_link": "https://amzn.to/4emw0cr"
+                }
+            ]
+        }
+    ]
+}

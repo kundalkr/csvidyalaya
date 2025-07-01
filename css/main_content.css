@@ -70,13 +70,11 @@
       /* padding-left: 8px;
       padding-right: 3px; */
     }
-
     #right_content {
       display: none;
     }
   }
 }
-
 /* full three divided section css*/
 .icon {
   width: 40px;
@@ -84,23 +82,17 @@
   fill: currentColor;
   margin-left: 5px;
 }
-
-
-
 .heading-wrapper {
   display: flex;
   gap: .5em;
 }
-
 @media (width<=700px) {
   .icon {
     width: 25px;
     height: 25px;
 
   }
-
 }
-
 /* featured image */
 .featured-image img {
   width: 100%;
@@ -122,5 +114,19 @@
       font-size: .6rem;
       font-weight: 500;
     }
+  }
+}
+
+#three_section > #main_content #book_recommendation {
+  display: block;
+}
+
+@media (width>=1000px) {
+  #three_section > #main_content  #book_recommendation {
+    display: none;
+  }
+
+  #right_content #book_recommendation {
+    display: block; 
   }
 }

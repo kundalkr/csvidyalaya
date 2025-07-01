@@ -30,7 +30,7 @@
 
   <style>
     #pg_repl {
-      width: 600px;
+      width: 650px;
       height: auto;
       object-fit: contain;
     }
@@ -38,7 +38,7 @@
     @media (width<=770px) {
       #pg_repl {
         height: auto;
-        width: 400px;
+        width: 100%;
       }
     }
   </style>
@@ -58,48 +58,61 @@
             solution
           </h1>
         </div>
-        <section>
-          <p>
-            Here are 9 questions on Buddy System. Each question is presented in a
-            table format. each question is solved in explained form.
-          </p>
-        </section>
-        <section>
-          <div id="question1">
-            <div class="question">
-              <h2>question 1: Consider the following page-reference string :
-                <strong> 1 2 3 2 1 4 2 3 1 4 3 2 1 4 1 2 3 4</strong>
-
-                How many page fault occur in the LRU and Optimal page replacement
-                algorithms, assuming three frames ?
-              </h2>
-            </div>
-            <div class="solution">
-              <p>solutions :</p>
-              <p>optimal page replacement question</p>
-              <picture>
-                <source media="(max-width:700px)" srcset="/assets/page_replacement/for_comp.jpg" />
-                <source media="(min-width:701px)" srcset="/assets/page_replacement/for_comp.jpg" />
-                <img loading="lazy" src="/assets/page_replacement/for_comp.jpg"
-                  alt="optimal page replacement answer 1 | question 1 solution"
-                  title="optimal page replacement questions" id="pg_repl" />
-              </picture>
-              <p>Least recently used (LRU)</p>
-              <picture>
-                <source media="(max-width:700px)" srcset="/assets/page_replacement/lru_comp.jpg" />
-                <source media="(min-width:701px)" srcset="/assets/page_replacement/lru_comp.jpg" />
-                <img loading="lazy" src="/assets/page_replacement/lru_comp.jpg"
-                  alt="least recently used (LRU) answer 1 | question 1 solution"
-                  title="least recently used (LRU) questions" id="pg_repl" />
-              </picture>
-            </div>
-          </div>
-        </section>
         <article>
+          <section>
+            <p>
+              Here are 9 questions on Buddy System. Each question is presented in a
+              table format. each question is solved in explained form.
+            </p>
+          </section>
+          <section>
+            <div id="question1">
+              <div class="question">
+                <h2>question 1: Consider the following page-reference string :
+                  <strong> 1 2 3 2 1 4 2 3 1 4 3 2 1 4 1 2 3 4</strong>
+
+                  How many page fault occur in the LRU and Optimal page replacement
+                  algorithms, assuming three frames ?
+                </h2>
+              </div>
+              <div class="solution">
+                <p>solutions :</p>
+                <p>optimal page replacement question</p>
+                <picture>
+                  <source media="(max-width:700px)" srcset="/assets/page_replacement/for_comp.jpg" />
+                  <source media="(min-width:701px)" srcset="/assets/page_replacement/for_comp.jpg" />
+                  <img loading="lazy" src="/assets/page_replacement/for_comp.jpg"
+                    alt="optimal page replacement answer 1 | question 1 solution"
+                    title="optimal page replacement questions" id="pg_repl" />
+                </picture>
+                <p>Least recently used (LRU)</p>
+                <picture>
+                  <source media="(max-width:700px)" srcset="/assets/page_replacement/lru_comp.jpg" />
+                  <source media="(min-width:701px)" srcset="/assets/page_replacement/lru_comp.jpg" />
+                  <img loading="lazy" src="/assets/page_replacement/lru_comp.jpg"
+                    alt="least recently used (LRU) answer 1 | question 1 solution"
+                    title="least recently used (LRU) questions" id="pg_repl" />
+                </picture>
+              </div>
+            </div>
+          </section>
+          <section id="book_recommendation" class="border border-danger border-2">
+            <h2 class="text-center text-decoration-underline" style=" text-underline-offset: 5px;">List of books that
+              help you learn the page Replacement question </h2>
+            <div class="w-100">
+            </div>
+          </section>
         </article>
       </main>
     </div>
-    <div id="right_content"></div>
+    <div id="right_content">
+      <section id="book_recommendation" class="border border-danger border-2">
+        <p class="text-center text-decoration-underline"
+          style="text-underline-offset: 5px;color:#000000;background-color:#FF6B6F;padding:5px;">List of books that help you learn the page Replacement question</p>
+        <div class="w-100">
+        </div>
+      </section>
+    </div>
   </div>
   <script type="module" src="commonthings.min.js"></script>
 </body>

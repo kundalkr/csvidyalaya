@@ -1,6 +1,6 @@
 import { add_css,book_name_recommender,sdbar_Links} from "/js/src/utilities.min.js";
 
-import book_sugget from "/os/memory_management/recommended_book.json" with {type : "json"};
+import book_sugget from "/os/scheduling_algorithms/recommended_book.json" with {type : "json"};
       book_name_recommender(book_sugget);
 // const data = {
 //   users: [

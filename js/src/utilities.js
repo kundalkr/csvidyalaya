@@ -55,33 +55,22 @@ function file_name_viewer() {
 }
 
 export function book_name_recommender(object) {
-  let books = "";
-  let h2i = "";
-  let p1 = "";
-for (let filename of object) {
-    if (filename.file_name.includes(`${file_name_viewer()}`)) {
-      h2i = `<h2 class="text-center text-decoration-underline" style=" text-underline-offset: 5px;">List of books that help you learn the${filename.topic_name} </h2>`;
-      p1 = `<p class="text-center text-decoration-underline" style="text-underline-offset: 5px;color:#000000;background-color:#FF6B6F;padding:5px;">List of books that help you learn the ${filename.topic_name} </p>`;
-      for (let book of filename.book) {
-        books += `<a href="${book.book_link}"><img loading="lazy" class="w-100 h-auto p-2"  src="${book.book_image}" alt="${book.image_alt}"/></a>`;
+  let allbookss = "";
+for (let booke of object.books) {
+    if (booke.file_name.includes(`${file_name_viewer()}`)) {
+      for (let book of booke.book) {
+        allbookss += `<a href="${book.book_link}"><img loading="lazy" class="w-100 h-auto p-2"  src="${book.book_image}" alt="${book.image_alt}"/></a>`;
       }
     }
   }
 if (window.innerWidth <= 1000) {
-    let article = document.querySelector("#main_content > main > article");
-    let article_book_recommendation = document.createElement("section");
-    article_book_recommendation.setAttribute("id", "book_recommendation");
-    article_book_recommendation.setAttribute("class", "border border-danger border-2");
-    article_book_recommendation.style.padding="5px";
-    article_book_recommendation.innerHTML = `${h2i}<div style="width: 90%;">${books} </div>`;
-    article.appendChild(article_book_recommendation);
+  // h2
+    let article = document.querySelector("#three_section #book_recommendation > div");
+   article.innerHTML=`${allbookss}`;
   } else {
-    let article = document.querySelector("#right_content");
-    let right_content = document.createElement("section");
-    right_content.setAttribute("id", "book_recommendation");
-    right_content.setAttribute("class", "border border-danger border-2");
-    right_content.innerHTML = `${p1}<div class="w-100">${books} </div>`;
-    article.appendChild(right_content);
+    // p
+    let article = document.querySelector("#right_content > #book_recommendation > div");
+    article.innerHTML=`${allbookss}`;
   }
 }
 export function sdbar_Links(params) {

@@ -1,5 +1,5 @@
 import {popup_links,sdbar_Links,book_name_recommender } from "/js/src/utilities.min.js";
-import book_sugget from "/dsa_in_c/book_suggest.json" with {type : "json"};
+import book_sugget from "/DSA/book_suggest.json" with {type : "json"};
 book_name_recommender(book_sugget);
 
 const popup_link = {
@@ -14,11 +14,11 @@ const popup_link = {
     },
     {
       name: "infix to prefix",
-      link: "https://csvidyalaya.com/dsa_in_c/infixtoprefix.html",
+      link: "https://csvidyalaya.com/dsa_in_c/infixtoprefix.html"
     },
     {
       name: "infix to postfix",
-      link: "https://csvidyalaya.com/dsa_in_c/infixtopostfix.html",
+      link: "https://csvidyalaya.com/dsa_in_c/infixtopostfix.html"
     },
     {
       name: "prefix to postfix",
@@ -85,8 +85,6 @@ const sidebar_links = {
   
   ],
 };
-
-
 sdbar_Links(sidebar_links);
 // const bar_data = {
 //   users: [
