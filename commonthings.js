@@ -102,35 +102,35 @@ const sidebar_links = {
       link: "/os/memory_management/Fit_question.html",
     },{
       name: "ARRAYS QUESTION",
-      link: "https://csvidyalaya.com/dsa_in_c/Arrays.html",
+      link: "https://csvidyalaya.com/DSA/Arrays.html",
     },
     {
       name: "Stack",
-      link: "https://csvidyalaya.com/dsa_in_c/stack1.html",
+      link: "https://csvidyalaya.com/DSA/stack1.html",
     },
     {
       name: "infix to prefix",
-      link: "https://csvidyalaya.com/dsa_in_c/infixtoprefix.html",
+      link: "https://csvidyalaya.com/DSA/infixtoprefix.html",
     },
     {
       name: "infix to postfix",
-      link: "https://csvidyalaya.com/dsa_in_c/infixtopostfix.html",
+      link: "https://csvidyalaya.com/DSA/infixtopostfix.html",
     },
     {
       name: "prefix to postfix",
-      link: "https://csvidyalaya.com/dsa_in_c/prefixtopostfix.html",
+      link: "https://csvidyalaya.com/DSA/prefixtopostfix.html",
     },
     {
       name: "postfix prefix of infix",
-      link: "https://csvidyalaya.com/dsa_in_c/postfixprefixofinfix.html",
+      link: "https://csvidyalaya.com/DSA/postfixprefixofinfix.html",
     },
     {
       name: "linked list",
-      link: "https://csvidyalaya.com/dsa_in_c/linkedlist1.html",
+      link: "https://csvidyalaya.com/DSA/linkedlist1.html",
     },
     {
       name: "Queue",
-      link: "https://csvidyalaya.com/dsa_in_c/queue2.html",
+      link: "https://csvidyalaya.com/DSA/queue2.html",
     }
   ],
 };

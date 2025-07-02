@@ -33,7 +33,7 @@ bar.innerHTML = `<div
       <a href="/Software_Engineering/software_engineering_topic.html">software engineering</a>
       <a href="/WSN/wireless_sensor_network.html">WSN</a>
           <a href="/DBMS/dbms_topic.html">DBMS</a>
-      <a href="/dsa_in_c/dsa_in_c_topic.html">Data structure</a>
+      <a href="/DSA/dsa-topic.html">Data structure</a>
        <a href="/os/Deadlocks/deadlock_topics.html">bankers algorithms</a>
       <a href="/os/memory_management/Buddy_system.html">Memory Management</a>
     </div>     <br>`;

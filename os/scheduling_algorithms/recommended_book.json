@@ -2,7 +2,7 @@
     "books": [
         {
             "topic_name": "first come first serve(FCFS) scheduling algorithm",
-            "file_name": "fcfs.html , fcfs2.html, page_replacement.html, Fit_question.html , Buddy_system.html",
+            "file_name": "fcfs.html , fcfs2.html, page_replacement.html, Fit-algorithms.html , Buddy_system.html , page-replacement-algorithms.html",
             "book": [
                 {
                     "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",

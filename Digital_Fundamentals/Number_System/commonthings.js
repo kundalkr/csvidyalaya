@@ -29,12 +29,12 @@ bar.innerHTML = `<div
       "
     >
            <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a>
-           <a href="/dsa_in_c/dsa_in_c_topic.html">Dsa</a>
+           <a href="/DSA/dsa-topic.html">Dsa</a>
            <a href="/DBMS/dbms_topic.html">DBMS</a>
            <a href="/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html">Boolean algebra</a>
            <a href="/DBMS/DBMS_topics/relational_algebra_relational_calculus.html">relational algebra</a> 
-           <a href="/dsa_in_c/dsa_in_c_topic.html">DSA</a>
-           <a href="/dsa_in_c/stack1.html">Stack</a>
+           <a href="/DSA/dsa-topic.html">DSA</a>
+           <a href="/DSA/stack1.html">Stack</a>
            <a href="/Digital_Fundamentals/Dgital_funda_topic.html">Digital Fundamentals</a>
     </div>     <br>`;
 

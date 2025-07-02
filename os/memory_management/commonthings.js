@@ -10,7 +10,7 @@ import book_sugget from "/os/scheduling_algorithms/recommended_book.json" with {
 //     },
 //     {
 //       name: "Dsa",
-//       link: "/dsa_in_c/dsa_in_c_topic.html",
+//       link: "/DSA/dsa-topic.html",
 //     },
 //     {
 //       name: "DBMS",
@@ -26,7 +26,7 @@ import book_sugget from "/os/scheduling_algorithms/recommended_book.json" with {
 //     },
 //     {
 //       name: "Stack",
-//       link: "/dsa_in_c/stack1.html",
+//       link: "/DSA/stack1.html",
 //     },
 //     {
 //       name: "Digital Fundamentals",

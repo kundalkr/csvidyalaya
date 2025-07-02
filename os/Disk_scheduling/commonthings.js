@@ -10,7 +10,7 @@ book_name_recommender(book_suggest);
 //     },
 //     {
 //       name: "Dsa",
-//       link: "/dsa_in_c/dsa_in_c_topic.html",
+//       link: "/DSA/dsa-topic.html",
 //     },
 //     {
 //       name: "DBMS",
@@ -26,7 +26,7 @@ book_name_recommender(book_suggest);
 //     },
 //     {
 //       name: "Stack",
-//       link: "/dsa_in_c/stack1.html",
+//       link: "/DSA/stack1.html",
 //     },
 //     {
 //       name: "Digital Fundamentals",
