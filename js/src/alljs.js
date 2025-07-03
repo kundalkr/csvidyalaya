@@ -12,7 +12,6 @@ function last_modified() {
   let hh1 = document.querySelector("#main_content > main > div#title_date > h1");
   let lastupdate = document.createElement("div");
   lastupdate.setAttribute("id", "last_updated_parent");
-
   lastupdate.innerHTML = ` 
           <div>
             <span>Last updated : </span><span>${lastup[1] + " " + lastup[2] + ", " + lastup[3]
@@ -75,14 +74,6 @@ function founder_schemas() {
   document.head.appendChild(founder_schema);
   // founder json ld
 }
-
-
-loadScript('/js/src/for_all_page.min.js', () => {
-  loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); });
-});
-
-
-
 function published_data() {
   const lastModified = new Date(document.lastModified).toISOString().split('T')[0];
   const scriptTag = document.getElementById("structured-data");
@@ -112,3 +103,7 @@ function bar(link_arr) {
   let h12 = document.querySelector("#fheader");
   h12.insertAdjacentElement("afterend", bar);
 }
+
+loadScript('/js/src/for_all_page.min.js', () => {
+  loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); });
+});
