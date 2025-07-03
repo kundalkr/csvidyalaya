@@ -1,229 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script type="module" src="/js/src/alljs.min.js"></script>
-      <title>Operating System Questions: CPU Scheduling, Deadlock & More</title>
-      <meta
-        name="description"
-        content="Explore key OS topics: CPU scheduling, deadlock, memory management, Banker's algorithm, and more with comprehensive questions and answers."
-      />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script type="module" src="/js/src/alljs.min.js"></script>
+  <title>Operating System Questions: CPU Scheduling, Deadlock & More</title>
+  <meta name="description"
+    content="Explore key OS topics: CPU scheduling, deadlock, memory management, Banker's algorithm, and more with comprehensive questions and answers." />
+  <style>
+    #last_updated_parent {
+      display: none;
+    }
 
+    h1 {
+      font-family: "Playwrite CU", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+    }
 
-    <style>
-      #last_updated_parent{
-        display: none;
+    .card {
+      margin: 10px 10px;
+    }
+
+    @media (width<=700px) {
+      ul.dropdown-menu {
+        font-size: x-small;
+        width: 80vw;
       }
-        h1 {
-          font-family: "Playwrite CU", cursive;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-          text-align: center;
-        }
-    
+
+      .row {
+        display: flex;
+        justify-content: center;
+      }
+
+      a.btn {
+        font-size: x-small;
+        padding: 6px;
+      }
+
       .card {
-        margin: 10px 10px;
+        padding: 1px;
       }
-      @media (width<=700px) {
-        ul.dropdown-menu {
-          font-size: x-small;
-          width: 80vw;
-        }
-        .row {
-          display: flex;
-          justify-content: center;
-        }
-        a.btn {
-          font-size: x-small;
-          padding: 6px;
-        }
-        .card {
-          padding: 1px;
-        }
-        h1 {
-          font-size: large;
-          font-family: "Playwrite CU", cursive;
-          /* font-optical-sizing: auto; */
-          font-weight: 400;
-          font-style: normal;
-          text-align: center;
-        }
-        h2 {
+
+      h1 {
+        font-size: large;
+        font-family: "Playwrite CU", cursive;
+        /* font-optical-sizing: auto; */
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: small;
+      }
+
+      .card-body {
+        .card-text {
           font-size: small;
         }
-        .card-body {
-          .card-text {
-            font-size: small;
-          }
-        }
       }
-    </style>
+    }
+  </style>
 
-  </head>
-  <body>
+</head>
 
-    <h1 class="p-5">Operating System Topics</h1>
- 
-    <div class="container mt-0">
-      <div class="row">
-        <div class="card text-bg-warning mb-3" style="max-width: 18rem">
-          <div class="card-body">
-            <h2 class="card-title">Scheduling Algorithms</h2>
-            <p class="card-text">
-              All Types Of Process Scheduling Algorithms Question Is Available
-            </p>
-            <a
-              href="scheduling_algorithms/Scheduling_Alorithms_topic.html"
-              target="_blank"
-              class="btn btn-danger"
-              >practice here</a
-            >
-            <br><br>
-            <div class="dropdown">
-              <a
-                class="btn btn-info dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Topic Wise
-              </a>
-              <ul
-                class="dropdown-menu"
-                style="background-color: rgb(251, 170, 253)"
-              >
-                <li class="border-1 border-danger">
-                  <a
-                    class="dropdown-item border-1 border-danger"
-                    href="scheduling_algorithms/fcfs.html"
-                    target="_blank"
-                    >First Come First Serve (FCFS) Scheduling</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item border-1 border-success"
-                    href="scheduling_algorithms/sjf1.html"
-                    target="_blank"
-                    >Shortest Job First (SJF) Scheduling</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item border-1 border-success"
-                    href="scheduling_algorithms/sjf2.html"
-                    target="_blank"
-                    >Shortest Remaining Time First (Preemptive SJF or SRTF)</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item border-1 border-success"
-                    href="scheduling_algorithms/RR1.html"
-                    target="_blank"
-                    >Round Robin</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item border-1 border-success"
-                    href="scheduling_algorithms/ps1.html"
-                    target="_blank"
-                    >Priority Scheduling</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item border-1 border-success"
-                    href="scheduling_algorithms/ps2.html"
-                    target="_blank"
-                    >Preemptive Priority Scheduling</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item border-1 border-success"
-                    href="scheduling_algorithms/mlfqs.html"
-                    target="_blank"
-                    >Multilevel Feedback Queue Scheduling (MLFQ)</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item border-1 border-success"
-                    href="scheduling_algorithms/MLQS.html"
-                    target="_blank"
-                    >Multilevel Queue scheduling (MLQ)
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card text-bg-secondary mb-3" style="max-width: 18rem">
-          <div class="card-body">
-            <h2 class="card-title">Deadlock</h2>
-            <p class="card-text">
-              Deadlock related questions and bankers algorithms questions
-            </p>
-            <a
-              href="/os/Deadlocks/deadlock_topics.html"
-              target="_blank"
-              class="btn btn-danger"
-              >practice here</a
-            >
-          </div>
-        </div>
-        <div class="card text-bg-primary mb-3" style="max-width: 18rem">
-          <div class="card-body">
-            <h2 class="card-title">Memory Management</h2>
-            <p class="card-text">
-              Memory Management related questions like fit algorithms, buddy
-              system etc.
-            </p>
-            <a
-              href="/os/memory_management/memory_management_topics.html"
-              target="_blank"
-              class="btn btn-danger"
-              >practice here</a
-            >
-          </div>
-        </div>
-            <div class="card text-bg-success mb-3" style="max-width: 18rem">
-          <div class="card-body">
-            <h2 class="card-title">Disk Scheduling</h2>
-            <p class="card-text">
-             Disk Scheduling Related Question (like FCFS, SCAN, LOOK, SSTF ....etc)
-            </p>
-            <a
-              href="/os/memory_management/memory_management_topics.html"
-              target="_blank"
-              class="btn btn-danger"
-              >practice here</a
-            >
-          </div>
-        </div>
-        <div class="card text-bg-info mb-3" style="max-width: 18rem">
-          <div class="card-body">
-            <h2 class="card-title">Operating System Question</h2>
-            <p class="card-text">
-              Previous Year Question of Operating System
-            </p>
-            <a
-              href="/previous_year_question(PYQ)/OS_question.html"
-              target="_blank"
-              class="btn btn-danger"
-              >practice here</a
-            >
+<body>
+  <h1 class="p-5">Operating System Topics</h1>
+  <div class="container mt-0">
+    <div class="row">
+      <div class="card text-bg-warning mb-3" style="max-width: 18rem">
+        <div class="card-body">
+          <h2 class="card-title">Scheduling Algorithms</h2>
+          <p class="card-text">
+            All Types Of Process Scheduling Algorithms Question Is Available
+          </p>
+          <a href="scheduling_algorithms/Scheduling_Alorithms_topic.html" target="_blank"
+            class="btn btn-danger">practice here</a>
+          <br><br>
+          <div class="dropdown">
+            <a class="btn btn-info dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Topic Wise
+            </a>
+            <ul class="dropdown-menu" style="background-color: rgb(251, 170, 253)">
+              <li class="border-1 border-danger">
+                <a class="dropdown-item border-1 border-danger" href="scheduling_algorithms/fcfs.html"
+                  target="_blank">First Come First Serve (FCFS) Scheduling</a>
+              </li>
+              <li>
+                <a class="dropdown-item border-1 border-success" href="scheduling_algorithms/sjf1.html"
+                  target="_blank">Shortest Job First (SJF) Scheduling</a>
+              </li>
+              <li>
+                <a class="dropdown-item border-1 border-success" href="scheduling_algorithms/sjf2.html"
+                  target="_blank">Shortest Remaining Time First (Preemptive SJF or SRTF)</a>
+              </li>
+              <li>
+                <a class="dropdown-item border-1 border-success" href="scheduling_algorithms/RR1.html"
+                  target="_blank">Round Robin</a>
+              </li>
+              <li>
+                <a class="dropdown-item border-1 border-success" href="scheduling_algorithms/ps1.html"
+                  target="_blank">Priority Scheduling</a>
+              </li>
+              <li>
+                <a class="dropdown-item border-1 border-success" href="scheduling_algorithms/ps2.html"
+                  target="_blank">Preemptive Priority Scheduling</a>
+              </li>
+              <li>
+                <a class="dropdown-item border-1 border-success" href="scheduling_algorithms/mlfqs.html"
+                  target="_blank">Multilevel Feedback Queue Scheduling (MLFQ)</a>
+              </li>
+              <li>
+                <a class="dropdown-item border-1 border-success" href="scheduling_algorithms/MLQS.html"
+                  target="_blank">Multilevel Queue scheduling (MLQ)
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+      <div class="card text-bg-secondary mb-3" style="max-width: 18rem">
+        <div class="card-body">
+          <h2 class="card-title">Deadlock</h2>
+          <p class="card-text">
+            Deadlock related questions and bankers algorithms questions
+          </p>
+          <a href="/os/Deadlocks/deadlock_topics.html" target="_blank" class="btn btn-danger">practice here</a>
+        </div>
+      </div>
+      <div class="card text-bg-primary mb-3" style="max-width: 18rem">
+        <div class="card-body">
+          <h2 class="card-title">Memory Management</h2>
+          <p class="card-text">
+            Memory Management related questions like fit algorithms, buddy
+            system etc.
+          </p>
+          <a href="/os/memory_management/memory_management_topics.html" target="_blank" class="btn btn-danger">practice
+            here</a>
+        </div>
+      </div>
+      <div class="card text-bg-success mb-3" style="max-width: 18rem">
+        <div class="card-body">
+          <h2 class="card-title">Disk Scheduling</h2>
+          <p class="card-text">
+            Disk Scheduling Related Question (like FCFS, SCAN, LOOK, SSTF ....etc)
+          </p>
+          <a href="/os/memory_management/memory_management_topics.html" target="_blank" class="btn btn-danger">practice
+            here</a>
+        </div>
+      </div>
+      <div class="card text-bg-info mb-3" style="max-width: 18rem">
+        <div class="card-body">
+          <h2 class="card-title">Operating System Question</h2>
+          <p class="card-text">
+            Previous Year Question of Operating System
+          </p>
+          <a href="/previous_year_question(PYQ)/OS_question.html" target="_blank" class="btn btn-danger">practice
+            here</a>
+        </div>
+      </div>
     </div>
-    <!-- another type card end -->
+  </div>
+  <!-- another type card end -->
 
-  </body>
+</body>
+
 </html>

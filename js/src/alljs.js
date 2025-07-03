@@ -75,6 +75,11 @@ function founder_schemas() {
   document.head.appendChild(founder_schema);
   // founder json ld
 }
+
+
+loadScript('/js/src/for_all_page.min.js', () => {
+  loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); });
+});
 function published_data() {
   const lastModified = new Date(document.lastModified).toISOString().split('T')[0];
   const scriptTag = document.getElementById("structured-data");
@@ -83,8 +88,6 @@ function published_data() {
   scriptTag.textContent = JSON.stringify(json);
 }
 published_data();
-
-
 function bar(link_arr) {
   let bar = document.createElement("div");
   let irhtml = `<div
@@ -105,6 +108,3 @@ function bar(link_arr) {
   h12.insertAdjacentElement("afterend", bar);
 }
 
-loadScript('/js/src/for_all_page.min.js', () => {
-  loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); });
-});
