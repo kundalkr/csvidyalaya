@@ -1,3 +1,5 @@
+import { add_head} from "/js/src/utilities.min.js";
+
 function loadScript(src, callback) {
   const script = document.createElement('script');
   script.src = src;
@@ -5,7 +7,14 @@ function loadScript(src, callback) {
   script.onload = callback;
   document.head.appendChild(script);
 }
-
+function adsense_code() {
+  let ads_script = document.createElement("script");
+  ads_script.async = !0;
+  ads_script.setAttribute("crossorigin", "anonymous");
+  ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
+  add_head(ads_script);
+}
+adsense_code();
 function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");

@@ -1,12 +1,5 @@
 import { add_head, google_font } from "/js/src/utilities.min.js";
-function adsense_code() {
-  let ads_script = document.createElement("script");
-  ads_script.async = !0;
-  ads_script.setAttribute("crossorigin", "anonymous");
-  ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
-  add_head(ads_script);
-}
-adsense_code();
+
 (function () {
   const favi_size = {
     users: [
