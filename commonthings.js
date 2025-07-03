@@ -1,6 +1,6 @@
-import { book_name_recommender,add_css, popup_links,sdbar_Links,sequence_function_call} from "/js/src/utilities.min.js";
+import { book_name_recommender,add_css, popup_links,sdbar_Links} from "/js/src/utilities.min.js";
 
-import {breadcrumb , breadcrumb_space} from "/js/src/for_all_page.min.js";
+import {breadcrumb } from "/js/src/for_all_page.min.js";
 
 import book_sugget from "/book_suggest.json" with {type : "json"};
 
@@ -143,12 +143,12 @@ const breadcrumb_Links = {
   ]
 }
 
+breadcrumb(breadcrumb_Links);
 
 
 
 
-
-sequence_function_call(()=>{breadcrumb_space()},()=>{breadcrumb(breadcrumb_Links);} );
+// sequence_function_call(()=>{breadcrumb_space()},()=>{breadcrumb(breadcrumb_Links);} );;
 
 
 

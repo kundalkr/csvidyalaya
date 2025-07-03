@@ -47,6 +47,7 @@ function css_files() {
   });
 }
 
+
 //  all css adding end
 function founder_schemas() {
   // founder json ld
