@@ -1,106 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="module" src="/js/src/alljs.min.js"></script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>DBMS topic with question + solution</title>
 
-    <style>
-  #last_updated_parent{
-        display: none;
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DBMS topic with question + solution</title>
+
+  <style>
+    #last_updated_parent {
+      display: none;
+    }
+
+    h1 {
+      font-family: "Playwrite CU", cursive;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+    }
+
+    .card {
+      margin: 10px 10px;
+    }
+
+    @media (width<=700px) {
+      .row {
+        display: flex;
+        justify-content: center;
       }
-        h1 {
-          font-family: "Playwrite CU", cursive;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-          text-align: center;
-        }
- 
+
+      a.btn {
+        font-size: x-small;
+        padding: 6px;
+      }
+
       .card {
-        margin: 10px 10px;
+        padding: 1px;
       }
-      @media (width<=700px) {
-        .row {
-          display: flex;
-          justify-content: center;
-        }
-        a.btn {
-          font-size: x-small;
-          padding: 6px;
-        }
-        .card {
-          padding: 1px;
-        }
-        h1 {
-          font-size: large;
-          font-family: "Playwrite CU", cursive;
-          font-optical-sizing: auto;
-          font-weight: 400;
-          font-style: normal;
-          text-align: center;
-        }
-        h2 {
+
+      h1 {
+        font-size: large;
+        font-family: "Playwrite CU", cursive;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: small;
+      }
+
+      .card-body {
+        .card-text {
           font-size: small;
         }
-        .card-body {
-          .card-text {
-            font-size: small;
-          }
-        }
       }
-    </style>
-  </head>
-  <body>
-    <h1>Relational Algebra</h1>
-    <br>
-    <div class="container">
-      <div class="row">
-        <div class="card text-bg-info mb-3" style="max-width: 18rem">
-          <div class="card-body">
-            <h2 class="card-title">Selection Operations</h2>
-            <p class="card-text">
-              question related to Selection Operations of DBMS
-            </p>
-            <a
-              href="relational_algebra/selection_operation.html"
-              target="_blank"
-              class="btn btn-danger"
-              >practice Here</a
-            >
-          </div>
-        </div>
-        <div class="card text-bg-warning mb-3" style="max-width: 18rem">
-          <div class="card-body">
-            <h2 class="card-title">projection Operations</h2>
-            <p class="card-text">
-              question related to projection Operations of DBMS
-            </p>
-            <a
-              href="relational_algebra/projection_operation.html"
-              target="_blank"
-              class="btn btn-danger"
-              >practice Here</a
-            >
-          </div>
-        </div>
-        <div class="card text-bg-success mb-3" style="max-width: 18rem">
-          <div class="card-body">
-            <h2 class="card-title">Relational Algebra Questions</h2>
-            <p class="card-text">
-              question related to Relational Algebra
-            </p>
-            <a
-              href="relational_algebra/relational_algebra_question.html"
-              target="_blank"
-              class="btn btn-danger"
-              >practice Here</a
-            >
-          </div>
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Relational Algebra</h1>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="card text-bg-success mb-3" style="max-width: 18rem">
+        <div class="card-body">
+          <h2 class="card-title">Relational Algebra Questions</h2>
+          <p class="card-text">
+            question related to Relational Algebra
+          </p>
+          <a href="relational_algebra/relational_algebra_question.html" target="_blank" class="btn btn-danger">practice
+            Here</a>
         </div>
       </div>
     </div>
-    <!-- another type card end -->
-  </body>
+  </div>
+  <!-- another type card end -->
+</body>
+
 </html>

@@ -1,287 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="module" src="/js/src/alljs.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Array address question + solution</title>
-    <style>
+
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Array address question + solution</title>
+  <style>
+    #q22 {
+      height: 400px;
+      width: 730px;
+      object-fit: contain;
+    }
+
+    @media (width<=770px) {
       #q22 {
-        height: 400px;
-        width: 730px;
-        object-fit: contain;
+        height: 180px;
+        width: 400px;
       }
-      @media (width<=770px) {
-        #q22 {
-          height: 180px;
-          width: 400px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="three_section">
-      <div id="left_content" class="sticky-top">
-        <ul></ul>
-      </div>
-      <div id="main_content">
-          <main>
+    }
+  </style>
+</head>
+
+<body>
+  <div id="three_section">
+    <div id="left_content" class="sticky-top">
+      <ul></ul>
+    </div>
+    <div id="main_content">
+      <main>
         <nav id="breadcrumbs" style="--bs-breadcrumb-divider: '&gt;';">
           <ol class="breadcrumb mt-2">
 
 
           </ol>
         </nav>
-          <div id="title_date">
-            <h1>Array question (finding address of element) with solution</h1>
-          </div><article>
-          
-            <p>These questions are generally asked in university exam</p>
-            <p>Indexed based Array question from topic DSA IN C</p>
-            <!-- question 11 start -->
+        <div id="title_date">
+          <h1>Array question (finding address of element) with solution</h1>
+        </div>
+        <article>
 
-            <h3>
-              11. Find the address of X[20] if the base address of a
-              one-dimensional array X is 5000, each element occupies 4 bytes,
-              and the array indexing starts at -5.
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>To find the address, we use:</p>
-            <p>
-              <strong
-                >Address of X[i] = Base Address + ((i - Starting Index) * Size
-                of each element)</strong
-              >
-            </p>
-            <p>
-              Here, base address = 5000, starting index = -5, i = 20, and size
-              of each element = 4 bytes.
-            </p>
-            <p>
-              <strong
-                >Address of X[20] = 5000 + ((20 - (-5)) * 4) = 5000 + (25 * 4) =
-                5000 + 100 = 5100</strong
-              >
-            </p>
-            <p>So, the address of X[20] is 5100.</p>
+          <p>These questions are generally asked in university exam</p>
+          <p>Indexed based Array question from topic DSA IN C</p>
+          <!-- question 11 start -->
 
-            <!-- question 11 end -->
-            <!-- question 12 start -->
-            <h3>
-              12. Find the address of A[30] if the base address of array A is
-              1000, each element occupies 2 bytes, and the array starts at index
-              -10.
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>To find the address, we use:</p>
-            <p>
-              <strong
-                >Address of A[i] = Base Address + ((i - Starting Index) * Size
-                of each element)</strong
-              >
-            </p>
-            <p>
-              Here, base address = 1000, starting index = -10, i = 30, and size
-              of each element = 2 bytes.
-            </p>
-            <p>
-              <strong
-                >Address of A[30] = 1000 + ((30 - (-10)) * 2) = 1000 + (40 * 2)
-                = 1000 + 80 = 1080</strong
-              >
-            </p>
-            <p>So, the address of A[30] is 1080.</p>
+          <h3>
+            11. Find the address of X[20] if the base address of a
+            one-dimensional array X is 5000, each element occupies 4 bytes,
+            and the array indexing starts at -5.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>To find the address, we use:</p>
+          <p>
+            <strong>Address of X[i] = Base Address + ((i - Starting Index) * Size
+              of each element)</strong>
+          </p>
+          <p>
+            Here, base address = 5000, starting index = -5, i = 20, and size
+            of each element = 4 bytes.
+          </p>
+          <p>
+            <strong>Address of X[20] = 5000 + ((20 - (-5)) * 4) = 5000 + (25 * 4) =
+              5000 + 100 = 5100</strong>
+          </p>
+          <p>So, the address of X[20] is 5100.</p>
 
-            <!-- question 12 end -->
-            <!-- question 13 start -->
-            <h3>
-              13. Find the address of B[10] if the base address of array B is
-              4000, each element occupies 6 bytes, and the array starts at index
-              -20.
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>To find the address, we use:</p>
-            <p>
-              <strong
-                >Address of B[i] = Base Address + ((i - Starting Index) * Size
-                of each element)</strong
-              >
-            </p>
-            <p>
-              Here, base address = 4000, starting index = -20, i = 10, and size
-              of each element = 6 bytes.
-            </p>
-            <p>
-              <strong
-                >Address of B[10] = 4000 + ((10 - (-20)) * 6) = 4000 + (30 * 6)
-                = 4000 + 180 = 4180</strong
-              >
-            </p>
-            <p>So, the address of B[10] is 4180.</p>
+          <!-- question 11 end -->
+          <!-- question 12 start -->
+          <h3>
+            12. Find the address of A[30] if the base address of array A is
+            1000, each element occupies 2 bytes, and the array starts at index
+            -10.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>To find the address, we use:</p>
+          <p>
+            <strong>Address of A[i] = Base Address + ((i - Starting Index) * Size
+              of each element)</strong>
+          </p>
+          <p>
+            Here, base address = 1000, starting index = -10, i = 30, and size
+            of each element = 2 bytes.
+          </p>
+          <p>
+            <strong>Address of A[30] = 1000 + ((30 - (-10)) * 2) = 1000 + (40 * 2)
+              = 1000 + 80 = 1080</strong>
+          </p>
+          <p>So, the address of A[30] is 1080.</p>
 
-            <!-- question 13 end -->
-            <!-- question 14 start -->
-            <h3>
-              14. Find the address of C[15] if the base address of array C is
-              2000, each element occupies 5 bytes, and the array starts at index
-              -3.
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>To find the address, we use:</p>
-            <p>
-              <strong
-                >Address of C[i] = Base Address + ((i - Starting Index) * Size
-                of each element)</strong
-              >
-            </p>
-            <p>
-              Here, base address = 2000, starting index = -3, i = 15, and size
-              of each element = 5 bytes.
-            </p>
-            <p>
-              <strong
-                >Address of C[15] = 2000 + ((15 - (-3)) * 5) = 2000 + (18 * 5) =
-                2000 + 90 = 2090</strong
-              >
-            </p>
-            <p>So, the address of C[15] is 2090.</p>
+          <!-- question 12 end -->
+          <!-- question 13 start -->
+          <h3>
+            13. Find the address of B[10] if the base address of array B is
+            4000, each element occupies 6 bytes, and the array starts at index
+            -20.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>To find the address, we use:</p>
+          <p>
+            <strong>Address of B[i] = Base Address + ((i - Starting Index) * Size
+              of each element)</strong>
+          </p>
+          <p>
+            Here, base address = 4000, starting index = -20, i = 10, and size
+            of each element = 6 bytes.
+          </p>
+          <p>
+            <strong>Address of B[10] = 4000 + ((10 - (-20)) * 6) = 4000 + (30 * 6)
+              = 4000 + 180 = 4180</strong>
+          </p>
+          <p>So, the address of B[10] is 4180.</p>
 
-            <!-- question 14 end -->
-            <!-- question 15 start -->
-            <h3>
-              15. Find the address of D[40] if the base address of array D is
-              1500, each element occupies 3 bytes, and the array starts at index
-              -15.
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>To find the address, we use:</p>
-            <p>
-              <strong
-                >Address of D[i] = Base Address + ((i - Starting Index) * Size
-                of each element)</strong
-              >
-            </p>
-            <p>
-              Here, base address = 1500, starting index = -15, i = 40, and size
-              of each element = 3 bytes.
-            </p>
-            <p>
-              <strong
-                >Address of D[40] = 1500 + ((40 - (-15)) * 3) = 1500 + (55 * 3)
-                = 1500 + 165 = 1665</strong
-              >
-            </p>
-            <p>So, the address of D[40] is 1665.</p>
+          <!-- question 13 end -->
+          <!-- question 14 start -->
+          <h3>
+            14. Find the address of C[15] if the base address of array C is
+            2000, each element occupies 5 bytes, and the array starts at index
+            -3.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>To find the address, we use:</p>
+          <p>
+            <strong>Address of C[i] = Base Address + ((i - Starting Index) * Size
+              of each element)</strong>
+          </p>
+          <p>
+            Here, base address = 2000, starting index = -3, i = 15, and size
+            of each element = 5 bytes.
+          </p>
+          <p>
+            <strong>Address of C[15] = 2000 + ((15 - (-3)) * 5) = 2000 + (18 * 5) =
+              2000 + 90 = 2090</strong>
+          </p>
+          <p>So, the address of C[15] is 2090.</p>
 
-            <!-- question 15 end -->
-            <!-- question 16 start -->
-            <h3>
-              16. What is the time complexity to insert an element at the end of
-              an array?
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>
-              Inserting an element at the end of an array takes constant time,
-              as no shifting of elements is needed. The time complexity for this
-              operation is <strong>O(1)</strong>.
-            </p>
-            <!-- question 16 end -->
-            <!-- question 17 start -->
-            <h3>
-              17. How do you delete an element from the middle of an array and
-              what is the time complexity?
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>
-              To delete an element from the middle of an array, all elements
-              after the deleted element must be shifted one position to the
-              left. The time complexity for this operation is
-              <strong>O(n)</strong>, where n is the number of elements in the
-              array.
-            </p>
-            <!-- question 17 end -->
-            <!-- question 18 start -->
-            <h3>
-              18. What is the maximum number of comparisons required to search
-              for an element in an unsorted array of size n?
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>
-              In an unsorted array, the element being searched for could be at
-              any position or may not be present. In the worst case, we would
-              have to compare the target element with all elements of the array.
-              Therefore, the maximum number of comparisons is
-              <strong>n</strong>.
-            </p>
-            <!-- question 18 end -->
-            <!-- question 19 start -->
-            <h3>19. How can you reverse an array in place?</h3>
-            <p><strong>Answer:</strong></p>
-            <p>
-              To reverse an array in place, you can swap the elements at the
-              start and the end of the array, then move inward until all
-              elements have been swapped. The time complexity of this operation
-              is
-              <strong>O(n)</strong>, where n is the number of elements in the
-              array.
-            </p>
-            <!-- question 19 end -->
-            <!-- question 20 start -->
-            <h3>
-              20. What is the time complexity for accessing an element in an
-              array using its index?
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>
-              Accessing an element in an array using its index takes constant
-              time, as we can directly compute the memory address using the
-              formula. The time complexity is <strong>O(1)</strong>.
-            </p>
-            <!-- question 20 end -->
-            <!-- question 21 start -->
-            <h3>
-              21. How does the insertion of an element at the beginning of an
-              array affect time complexity?
-            </h3>
-            <p><strong>Answer:</strong></p>
-            <p>
-              Inserting an element at the beginning of an array requires
-              shifting all other elements one position to the right. This makes
-              the time complexity of the insertion operation
-              <strong>O(n)</strong>, where n is the number of elements in the
-              array.
-            </p>
-            <!-- question 21 end -->
-            <div id="question22">
-              <div class="question">
-                Let the base address of one dimensional Linear array (LA) is
-                1000 and each element of the array occupies 4 bytes. find the
-                address of LA(41)
-              </div>
-              <div class="solution">
-                <p>solution :</p>
-                <picture>
-                  <source
-                    media="(max-width:700px)"
-                    srcset="/assets/DSA/base_address_question.jpg"
-                  />
-                  <source
-                    media="(min-width:701px)"
-                    srcset="/assets/DSA/base_address_question.jpg"
-                  />
-                  <img
-                    loading="lazy"
-                    src="/assets/DSA/base_address_question.jpg"
-                    alt="find the base address of this postfix expression | solution"
-                    title="find the base address of this postfix expression |explained solution"
-                    id="q22"
-                  />
-                </picture>
-              </div>
+          <!-- question 14 end -->
+          <!-- question 15 start -->
+          <h3>
+            15. Find the address of D[40] if the base address of array D is
+            1500, each element occupies 3 bytes, and the array starts at index
+            -15.
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>To find the address, we use:</p>
+          <p>
+            <strong>Address of D[i] = Base Address + ((i - Starting Index) * Size
+              of each element)</strong>
+          </p>
+          <p>
+            Here, base address = 1500, starting index = -15, i = 40, and size
+            of each element = 3 bytes.
+          </p>
+          <p>
+            <strong>Address of D[40] = 1500 + ((40 - (-15)) * 3) = 1500 + (55 * 3)
+              = 1500 + 165 = 1665</strong>
+          </p>
+          <p>So, the address of D[40] is 1665.</p>
+
+          <!-- question 15 end -->
+          <!-- question 16 start -->
+          <h3>
+            16. What is the time complexity to insert an element at the end of
+            an array?
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>
+            Inserting an element at the end of an array takes constant time,
+            as no shifting of elements is needed. The time complexity for this
+            operation is <strong>O(1)</strong>.
+          </p>
+          <!-- question 16 end -->
+          <!-- question 17 start -->
+          <h3>
+            17. How do you delete an element from the middle of an array and
+            what is the time complexity?
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>
+            To delete an element from the middle of an array, all elements
+            after the deleted element must be shifted one position to the
+            left. The time complexity for this operation is
+            <strong>O(n)</strong>, where n is the number of elements in the
+            array.
+          </p>
+          <!-- question 17 end -->
+          <!-- question 18 start -->
+          <h3>
+            18. What is the maximum number of comparisons required to search
+            for an element in an unsorted array of size n?
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>
+            In an unsorted array, the element being searched for could be at
+            any position or may not be present. In the worst case, we would
+            have to compare the target element with all elements of the array.
+            Therefore, the maximum number of comparisons is
+            <strong>n</strong>.
+          </p>
+          <!-- question 18 end -->
+          <!-- question 19 start -->
+          <h3>19. How can you reverse an array in place?</h3>
+          <p><strong>Answer:</strong></p>
+          <p>
+            To reverse an array in place, you can swap the elements at the
+            start and the end of the array, then move inward until all
+            elements have been swapped. The time complexity of this operation
+            is
+            <strong>O(n)</strong>, where n is the number of elements in the
+            array.
+          </p>
+          <!-- question 19 end -->
+          <!-- question 20 start -->
+          <h3>
+            20. What is the time complexity for accessing an element in an
+            array using its index?
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>
+            Accessing an element in an array using its index takes constant
+            time, as we can directly compute the memory address using the
+            formula. The time complexity is <strong>O(1)</strong>.
+          </p>
+          <!-- question 20 end -->
+          <!-- question 21 start -->
+          <h3>
+            21. How does the insertion of an element at the beginning of an
+            array affect time complexity?
+          </h3>
+          <p><strong>Answer:</strong></p>
+          <p>
+            Inserting an element at the beginning of an array requires
+            shifting all other elements one position to the right. This makes
+            the time complexity of the insertion operation
+            <strong>O(n)</strong>, where n is the number of elements in the
+            array.
+          </p>
+          <!-- question 21 end -->
+          <div id="question22">
+            <div class="question">
+              Let the base address of one dimensional Linear array (LA) is
+              1000 and each element of the array occupies 4 bytes. find the
+              address of LA(41)
             </div>
-           <section id="book_recommendation" class="border border-danger border-2">
-            <h2 class="text-center text-decoration-underline" style=" text-underline-offset: 5px;">List of books that help
-          you learn the Array Question</h2>
+            <div class="solution">
+              <p>solution :</p>
+              <picture>
+                <source media="(max-width:700px)" srcset="/assets/DSA/base_address_question.jpg" />
+                <source media="(min-width:701px)" srcset="/assets/DSA/base_address_question.jpg" />
+                <img loading="lazy" src="/assets/DSA/base_address_question.jpg"
+                  alt="find the base address of this postfix expression | solution"
+                  title="find the base address of this postfix expression |explained solution" id="q22" />
+              </picture>
+            </div>
+          </div>
+          <section id="book_recommendation" class="border border-danger border-2">
+            <h2 class="text-center text-decoration-underline" style=" text-underline-offset: 5px;">List of books that
+              help
+              you learn the Array Question</h2>
             <div class="w-100">
 
 
@@ -290,10 +265,10 @@
             </div>
           </section>
         </article>
-        </main>
-      </div>
-       <div id="right_content">
-      <section id="book_recommendation" class="border border-danger border-2">
+      </main>
+    </div>
+    <div id="right_content">
+      <section id="book_recommendations" class="border border-danger border-2">
         <p class="text-center text-decoration-underline"
           style="text-underline-offset: 5px;color:#000000;background-color:#FF6B6F;padding:5px;">List of books that help
           you learn the Array Question </p>
@@ -303,17 +278,10 @@
 
 
         </div>
-      </section></div>
+      </section>
     </div>
+  </div>
+  <script type="module" src="commonthings.min.js"></script>
+</body>
 
-      <main>
-        <nav id="breadcrumbs" style="--bs-breadcrumb-divider: '&gt;';">
-          <ol class="breadcrumb mt-2">
-
-
-          </ol>
-        </nav></main>
-    <div id="down"></div>
-    <script type="module" src="commonthings.min.js"></script>
-  </body>
 </html>

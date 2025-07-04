@@ -69,7 +69,7 @@ if (window.innerWidth <= 1000) {
    article.innerHTML=`${allbookss}`;
   } else {
     // p
-    let article = document.querySelector("#right_content > #book_recommendation > div");
+    let article = document.querySelector("#right_content > #book_recommendations > div");
     article.innerHTML=`${allbookss}`;
   }
 }
