@@ -149,5 +149,6 @@
 #three-section #main-content section#book-recommendation div>h2 {
   text-decoration: underline;
   text-underline-offset: 5px;
-  text-align: center;
+  text-align: center;  color: #000000;
+  background-color: #12ED96 ;
 }
