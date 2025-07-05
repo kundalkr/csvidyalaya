@@ -1,267 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="module" src="/js/src/alljs.min.js"></script>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="three_section">
-      <div id="left_content" class="sticky-top">
-        <ul></ul>
-      </div>
-      <div id="main_content">
-          <main>
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="three-section">
+    <div id="left-content" class="sticky-top">
+      <ul></ul>
+    </div>
+    <div id="main-content">
+      <main>
         <nav id="breadcrumbs" style="--bs-breadcrumb-divider: '&gt;';">
           <ol class="breadcrumb mt-2">
 
 
           </ol>
         </nav>
-          <div id="title_date">
-            <h1>Queue Questions</h1>
-          </div><article>
-          
-            <section>
-              <div id="question16">
-                <div class="question">
-                  <h2>
-                    Question 16: What is the significance of the front pointer
-                    in a queue?
-                  </h2>
-                </div>
-                <div class="solution">
-                  <p><strong>Solution : </strong></p>
-                  <p>
-                    The front pointer in a queue tracks the position of the
-                    element to be dequeued next. After each dequeue operation,
-                    the front pointer is incremented. In a circular queue, when
-                    the front pointer reaches the end of the array, it wraps
-                    around to the beginning.
-                  </p>
-                </div>
+        <div id="title-date">
+          <h1>Queue Questions</h1>
+        </div>
+        <article>
+
+          <section>
+            <div id="question16">
+              <div class="question">
+                <h2>
+                  Question 16: What is the significance of the front pointer
+                  in a queue?
+                </h2>
               </div>
+              <div class="solution">
+                <p><strong>Solution : </strong></p>
+                <p>
+                  The front pointer in a queue tracks the position of the
+                  element to be dequeued next. After each dequeue operation,
+                  the front pointer is incremented. In a circular queue, when
+                  the front pointer reaches the end of the array, it wraps
+                  around to the beginning.
+                </p>
+              </div>
+            </div>
 
-              <h2>
-                Question 17: Describe how the queue is used in a round-robin
-                scheduling algorithm.
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                In a round-robin scheduling algorithm, a queue is used to manage
-                processes. Each process is added to the queue and given a time
-                slice to execute. After its time slice is over, the process is
-                moved to the rear of the queue, and the next process at the
-                front is given the CPU. This ensures fair allocation of
-                resources.
-              </p>
+            <h2>
+              Question 17: Describe how the queue is used in a round-robin
+              scheduling algorithm.
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              In a round-robin scheduling algorithm, a queue is used to manage
+              processes. Each process is added to the queue and given a time
+              slice to execute. After its time slice is over, the process is
+              moved to the rear of the queue, and the next process at the
+              front is given the CPU. This ensures fair allocation of
+              resources.
+            </p>
 
-              <h2>
-                Question 18: What is the space complexity of a queue implemented
-                using a linked list?
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                The space complexity of a queue implemented using a linked list
-                is O(n), where n is the number of elements in the queue. Each
-                node in the linked list requires space for storing the data and
-                the reference to the next node.
-              </p>
+            <h2>
+              Question 18: What is the space complexity of a queue implemented
+              using a linked list?
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              The space complexity of a queue implemented using a linked list
+              is O(n), where n is the number of elements in the queue. Each
+              node in the linked list requires space for storing the data and
+              the reference to the next node.
+            </p>
 
-              <h2>
-                Question 19: How can you detect whether a queue is full in a
-                circular queue implementation?
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                In a circular queue, the queue is full when the next position of
-                the rear pointer equals the front pointer (i.e., (rear + 1) %
-                size == front). This indicates that all positions are occupied
-                and no more elements can be added until some are removed.
-              </p>
+            <h2>
+              Question 19: How can you detect whether a queue is full in a
+              circular queue implementation?
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              In a circular queue, the queue is full when the next position of
+              the rear pointer equals the front pointer (i.e., (rear + 1) %
+              size == front). This indicates that all positions are occupied
+              and no more elements can be added until some are removed.
+            </p>
 
-              <h2>
-                Question 20: Write two real-world examples of a queue data
-                structure.
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                1. A line of customers waiting at a bank teller.<br>2. A queue
-                of packets waiting to be processed by a router in a network.
-              </p>
+            <h2>
+              Question 20: Write two real-world examples of a queue data
+              structure.
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              1. A line of customers waiting at a bank teller.<br>2. A queue
+              of packets waiting to be processed by a router in a network.
+            </p>
 
-              <h2>
-                Question 21: Explain why a queue is suitable for breadth-first
-                search (BFS) in graph traversal.
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                In BFS, nodes are visited in the order of their distance from
-                the starting node. A queue is suitable because it maintains the
-                order of nodes, ensuring that the first node visited is the
-                first one whose neighbors are explored. This maintains the
-                level-order exploration, as required by BFS.
-              </p>
+            <h2>
+              Question 21: Explain why a queue is suitable for breadth-first
+              search (BFS) in graph traversal.
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              In BFS, nodes are visited in the order of their distance from
+              the starting node. A queue is suitable because it maintains the
+              order of nodes, ensuring that the first node visited is the
+              first one whose neighbors are explored. This maintains the
+              level-order exploration, as required by BFS.
+            </p>
 
-              <h2>
-                Question 22: What is the time complexity of checking whether a
-                queue is empty?
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                The time complexity of checking whether a queue is empty is
-                O(1). This operation typically involves comparing the front and
-                rear pointers to see if they indicate an empty queue.
-              </p>
+            <h2>
+              Question 22: What is the time complexity of checking whether a
+              queue is empty?
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              The time complexity of checking whether a queue is empty is
+              O(1). This operation typically involves comparing the front and
+              rear pointers to see if they indicate an empty queue.
+            </p>
 
-              <h2>
-                Question 23: How can a priority queue be implemented using a
-                regular queue?
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                A priority queue can be implemented using a regular queue by
-                inserting elements into the queue based on their priority.
-                Instead of always adding elements to the rear, elements are
-                inserted in the appropriate position such that the
-                highest-priority element is at the front of the queue.
-              </p>
+            <h2>
+              Question 23: How can a priority queue be implemented using a
+              regular queue?
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              A priority queue can be implemented using a regular queue by
+              inserting elements into the queue based on their priority.
+              Instead of always adding elements to the rear, elements are
+              inserted in the appropriate position such that the
+              highest-priority element is at the front of the queue.
+            </p>
 
-              <h2>
-                Question 24: Why is a queue not suitable for depth-first search
-                (DFS)?
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                A queue is not suitable for DFS because it explores nodes in
-                FIFO order, which is not compatible with the depth-first nature
-                of DFS. DFS requires a LIFO structure (stack) to explore nodes
-                deeper in the graph before returning to previous levels, while a
-                queue would explore nodes level by level, like in BFS.
-              </p>
+            <h2>
+              Question 24: Why is a queue not suitable for depth-first search
+              (DFS)?
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              A queue is not suitable for DFS because it explores nodes in
+              FIFO order, which is not compatible with the depth-first nature
+              of DFS. DFS requires a LIFO structure (stack) to explore nodes
+              deeper in the graph before returning to previous levels, while a
+              queue would explore nodes level by level, like in BFS.
+            </p>
 
-              <h2>
-                Question 25: Give a situation where a double-ended queue (deque)
-                would be useful.
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                A double-ended queue (deque) is useful in a scenario like a
-                sliding window in real-time analytics, where elements need to be
-                added or removed from both ends of a data stream. For example,
-                in tracking the highest temperature in the past hour, a deque
-                can be used to quickly add new temperature readings and remove
-                old ones from both ends.
-              </p>
+            <h2>
+              Question 25: Give a situation where a double-ended queue (deque)
+              would be useful.
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              A double-ended queue (deque) is useful in a scenario like a
+              sliding window in real-time analytics, where elements need to be
+              added or removed from both ends of a data stream. For example,
+              in tracking the highest temperature in the past hour, a deque
+              can be used to quickly add new temperature readings and remove
+              old ones from both ends.
+            </p>
 
-              <h2>
-                Question 26: What happens if you try to enqueue an element in a
-                full queue?
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                If you try to enqueue an element in a full queue, it will result
-                in an overflow condition. In such cases, there is no available
-                space to add the new element, and the operation cannot be
-                performed. Proper error handling should be implemented to avoid
-                overflow issues.
-              </p>
+            <h2>
+              Question 26: What happens if you try to enqueue an element in a
+              full queue?
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              If you try to enqueue an element in a full queue, it will result
+              in an overflow condition. In such cases, there is no available
+              space to add the new element, and the operation cannot be
+              performed. Proper error handling should be implemented to avoid
+              overflow issues.
+            </p>
 
-              <h2>
-                Question 27: Explain the role of a queue in a printer spooler
-                system.
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                In a printer spooler system, print jobs are stored in a queue.
-                The first job added to the queue is printed first (FIFO). New
-                print jobs are added to the rear of the queue, while the printer
-                processes jobs from the front. This ensures that jobs are
-                printed in the order they were submitted.
-              </p>
+            <h2>
+              Question 27: Explain the role of a queue in a printer spooler
+              system.
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              In a printer spooler system, print jobs are stored in a queue.
+              The first job added to the queue is printed first (FIFO). New
+              print jobs are added to the rear of the queue, while the printer
+              processes jobs from the front. This ensures that jobs are
+              printed in the order they were submitted.
+            </p>
 
-              <h2>Question 28: How does a queue help in load balancing?</h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                In load balancing, a queue is used to distribute tasks among
-                multiple servers. Incoming tasks are added to the queue, and
-                each server processes tasks from the front of the queue. This
-                ensures an even distribution of workload and prevents any one
-                server from becoming overloaded.
-              </p>
+            <h2>Question 28: How does a queue help in load balancing?</h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              In load balancing, a queue is used to distribute tasks among
+              multiple servers. Incoming tasks are added to the queue, and
+              each server processes tasks from the front of the queue. This
+              ensures an even distribution of workload and prevents any one
+              server from becoming overloaded.
+            </p>
 
-              <h2>
-                Question 29: Describe the working of a queue in an elevator
-                system.
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                In an elevator system, floors requested by users are added to a
-                queue. The elevator processes requests in a sequential manner,
-                visiting the floors in the order they were added (FIFO). This
-                ensures fairness in serving the floors and avoids skipping over
-                floors requested earlier.
-              </p>
+            <h2>
+              Question 29: Describe the working of a queue in an elevator
+              system.
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              In an elevator system, floors requested by users are added to a
+              queue. The elevator processes requests in a sequential manner,
+              visiting the floors in the order they were added (FIFO). This
+              ensures fairness in serving the floors and avoids skipping over
+              floors requested earlier.
+            </p>
 
-              <h2>
-                Question 30: What is the significance of the modulo operator in
-                a circular queue?
-              </h2>
-              <p><strong>Solution : </strong></p>
-              <p>
-                The modulo operator is used in a circular queue to wrap the
-                front and rear pointers around when they reach the end of the
-                queue. This ensures that the pointers stay within the bounds of
-                the array and effectively make the queue circular (i.e., rear =
-                (rear + 1) % size).
-              </p>
-            </section>
-            <section>
-              <br><br>
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">
-        <a href="/DSA/queue1.html" style="color: antiquewhite"
-          >click for previous question 1 to 15 click here</a
-        >
-      </button>
-    </div>
+            <h2>
+              Question 30: What is the significance of the modulo operator in
+              a circular queue?
+            </h2>
+            <p><strong>Solution : </strong></p>
+            <p>
+              The modulo operator is used in a circular queue to wrap the
+              front and rear pointers around when they reach the end of the
+              queue. This ensures that the pointers stay within the bounds of
+              the array and effectively make the queue circular (i.e., rear =
+              (rear + 1) % size).
+            </p>
+          </section>
+          <section>
+            <br><br>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary" type="button">
+                <a href="/DSA/queue1.html" style="color: antiquewhite">click for previous question 1 to 15 click
+                  here</a>
+              </button>
+            </div>
 
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" type="button">
-        <a href="/DSA/queue1.html" style="color: antiquewhite"
-          >click for previous question 1 to 15 click here</a
-        >
-      </button>
-    </div>
-    <br><br>
-    <div class="d-grid gap-2 col-6 mx-auto">
-      <button class="btn btn-primary" id="down" type="button">
-        <a href="/DSA/queue1.html" style="color: antiquewhite"
-          >click for next question 21 to 35 click here</a
-        >
-      </button>
-    </div>
-    <br><br>
-            </section>
-           <section id="book_recommendation" class="border border-danger border-2">
-            <h2 class="text-center text-decoration-underline" style=" text-underline-offset: 5px;">List of books that help
-          you learn the queue related question</h2>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary" type="button">
+                <a href="/DSA/queue1.html" style="color: antiquewhite">click for previous question 1 to 15 click
+                  here</a>
+              </button>
+            </div>
+            <br><br>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-primary" id="down" type="button">
+                <a href="/DSA/queue1.html" style="color: antiquewhite">click for next question 21 to 35 click here</a>
+              </button>
+            </div>
+            <br><br>
+          </section>
+          <section id="book-recommendation" class="border border-danger border-2">
+            <div class="heading-wrapper">
+              <a href="#List-of-books-that-help-you-learn-the-queue-related-question">
+                <svg class="icon border border-2" aria-hidden="true">
+                  <use href="/assets/icon/sprite.svg#heades"></use>
+                </svg>
+              </a>
+              <h2 id="List-of-books-that-help-you-learn-the-queue-related-question">List of books that help
+              you learn the queue related question</h2>
+            </div>
+    
             <div class="w-100">
-
-
-
-
             </div>
           </section>
         </article>
-        </main>
-      </div>
-       <div id="right_content">
-      <section id="book_recommendations" class="border border-danger border-2">
-        <p class="text-center text-decoration-underline"
-          style="text-underline-offset: 5px;color:#000000;background-color:#FF6B6F;padding:5px;">List of books that help
+      </main>
+    </div>
+    <div id="right-content">
+      <section id="book-recommendations" class="border border-danger border-2">
+        <p>List of books that help
           you learn the queue related question</p>
         <div class="w-100">
 
@@ -269,11 +271,13 @@
 
 
         </div>
-      </section></div>
+      </section>
     </div>
+  </div>
 
-    
 
-    <script type="module" src="commonthings.min.js"></script>
-  </body>
+
+  <script type="module" src="commonthings.min.js"></script>
+</body>
+
 </html>

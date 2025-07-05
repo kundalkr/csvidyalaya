@@ -66,7 +66,7 @@ const gfont = {
       link: "https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
     },
     {
-      link: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=arrow_downward,arrow_upward,close,hub&display=block",
+      link: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=close,hub&display=block",
     },
     {
       link: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
@@ -93,11 +93,8 @@ if (
     gtag('config', 'G-C4M8ZRW6HS');`;
   headu.appendChild(script2);
 }
-
-
-
 export function breadcrumb(data) {
-  let brdcrmb = document.querySelector("#main_content > main > nav#breadcrumbs > ol.breadcrumb");
+  let brdcrmb = document.querySelector("#main-content > main > nav#breadcrumbs > ol.breadcrumb");
   let active_link = Object.entries(data.users).length;
   let i = 1;
  let list;
@@ -117,15 +114,3 @@ export function breadcrumb(data) {
     i++;
   }
 }
-
-// export function breadcrumb_space() {
-//    let fd_image = document.querySelector("#main_content > main > div.featured-image");
-//    let fd_image_parent = document.querySelector("#main_content > main > div.featured-image").parentNode;
-//    let nav = document.createElement("nav");
-//    nav.setAttribute("id" , "breadcrumbs");
-//    nav.setAttribute("style","--bs-breadcrumb-divider: '>';");
-//    nav.innerHTML = ` <ol class="breadcrumb mt-2">
-//           </ol>`;
-//      fd_image_parent.insertBefore(nav,fd_image);
-// }
-

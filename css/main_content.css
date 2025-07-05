@@ -1,5 +1,5 @@
 /* full three divided section css*/
-#three_section {
+#three-section {
   display: flex;
 
   #main_content {
@@ -7,7 +7,7 @@
     padding-right: 1%;
   }
 
-  #left_content {
+  #left-content {
     ul {
       background-color: rgba(242, 237, 240, 0.879);
       padding-left: 6%;
@@ -20,28 +20,28 @@
   }
 
   @media (width>=1000px) {
-    #left_content {
+    #left-content {
       width: 15%;
       /* border: 1px solid red; */
       overflow-y: auto;
       height: 100vh;
     }
 
-    #main_content {
+    #main-content {
       width: 65%;
       /* border: 1px solid red; */
       /* padding-left: 8px;
       padding-right: 5px; */
     }
 
-    #right_content {
+    #right-content {
       width: 20%;
       /* border: 1px solid red; */
     }
   }
 
   @media (700px<=width<=1000px) {
-    #left_content {
+    #left-content {
       width: 30%;
       overflow-y: auto;
       height: 100vh;
@@ -49,32 +49,34 @@
       padding-right: 1%;
     }
 
-    #main_content {
+    #main-content {
       width: 75%;
       /* padding-left: 5px;
       padding-right: 5px; */
     }
 
-    #right_content {
+    #right-content {
       display: none;
     }
   }
 
   @media (width<=700px) {
-    #left_content {
+    #left-content {
       display: none;
     }
 
-    #main_content {
+    #main-content {
       width: 100%;
       /* padding-left: 8px;
       padding-right: 3px; */
     }
-    #right_content {
+
+    #right-content {
       display: none;
     }
   }
 }
+
 /* full three divided section css*/
 .icon {
   width: 40px;
@@ -82,10 +84,12 @@
   fill: currentColor;
   margin-left: 5px;
 }
+
 .heading-wrapper {
   display: flex;
   gap: .5em;
 }
+
 @media (width<=700px) {
   .icon {
     width: 25px;
@@ -93,15 +97,17 @@
 
   }
 }
+
 /* featured image */
 .featured-image img {
-  width: 100%;
+  width: 99%;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
   display: block;
   margin-bottom: 20px;
   margin-top: 20px;
+
 }
 
 /* featured image end*/
@@ -117,16 +123,31 @@
   }
 }
 
-#three_section > #main_content #book_recommendation {
+#three-section>#main-content #book-recommendation {
   display: block;
 }
 
 @media (width>=1000px) {
-  #three_section > #main_content #book_recommendation {
+  #three-section>#main-content #book-recommendation {
     display: none;
   }
 
-  #right_content #book_recommendation {
-    display: block; 
+  #right-content #book-recommendation {
+    display: block;
   }
+}
+
+#three-section #right-content section#book-recommendations > p {
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #000000;
+  background-color: #FF6B6F;
+  padding: 5px;
+}
+
+#three-section #main-content section#book-recommendation div>h2 {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-align: center;
 }

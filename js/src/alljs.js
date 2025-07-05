@@ -19,7 +19,7 @@ function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");
 
-  let hh1 = document.querySelector("#main_content > main > div#title_date > h1");
+  let hh1 = document.querySelector("#main-content > main > div#title-date > h1");
   let lastupdate = document.createElement("div");
   lastupdate.setAttribute("id", "last_updated_parent");
   lastupdate.innerHTML = ` 
@@ -97,6 +97,7 @@ function published_data() {
   scriptTag.textContent = JSON.stringify(json);
 }
 published_data();
+
 function bar(link_arr) {
   let bar = document.createElement("div");
   let irhtml = `<div

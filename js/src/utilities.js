@@ -65,16 +65,16 @@ for (let booke of object.books) {
   }
 if (window.innerWidth <= 1000) {
   // h2
-    let article = document.querySelector("#three_section #book_recommendation > div");
+    let article = document.querySelector("#three-section #book-recommendation > div.w-100");
    article.innerHTML=`${allbookss}`;
   } else {
     // p
-    let article = document.querySelector("#right_content > #book_recommendations > div");
+    let article = document.querySelector("#right-content > #book-recommendations > div");
     article.innerHTML=`${allbookss}`;
   }
 }
 export function sdbar_Links(params) {
-  let left_content = document.querySelector("#left_content > ul");
+  let left_content = document.querySelector("#left-content > ul");
   for (const user of params.users) {
     left_content.innerHTML += `<li style="list-style: none;">
     <a style="text-decoration: none;" href="${user.link}">${user.name}</a>
