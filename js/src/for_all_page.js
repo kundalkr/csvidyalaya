@@ -74,25 +74,7 @@ const gfont = {
   ],
 };
 google_font(gfont);
-if (
-  window.location.hostname !== "localhost" &&
-  window.location.hostname !== "127.0.0.1"
-) {
-  let headu = document.querySelector("head");
-  let script1 = document.createElement("script");
-  script1.async = !0;
-  script1.src = "https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS";
-  headu.appendChild(script1);
 
-  let script2 = document.createElement("script");
-
-  script2.innerHTML = `window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'G-C4M8ZRW6HS');`;
-  headu.appendChild(script2);
-}
 export function breadcrumb(data) {
   let brdcrmb = document.querySelector("#main-content > main > nav#breadcrumbs > ol.breadcrumb");
   let active_link = Object.entries(data.users).length;

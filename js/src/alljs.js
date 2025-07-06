@@ -1,4 +1,4 @@
-import { add_head} from "/js/src/utilities.min.js";
+import { add_head } from "/js/src/utilities.min.js";
 
 function loadScript(src, callback) {
   const script = document.createElement('script');
@@ -10,9 +10,9 @@ function loadScript(src, callback) {
 function adsense_code() {
   let ads_script = document.createElement("script");
   ads_script.async = !0;
- 
-  ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056"; 
-   ads_script.setAttribute("crossorigin", "anonymous");
+
+  ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
+  ads_script.setAttribute("crossorigin", "anonymous");
   add_head(ads_script);
 }
 adsense_code();
@@ -99,6 +99,34 @@ function published_data() {
 }
 published_data();
 
+if (
+  window.location.hostname !== "localhost" &&
+  window.location.hostname !== "127.0.0.1"
+) {
+  let script1 = document.createElement("script");
+  script1.innerHTML = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WTF8XDP8');`;
+  // script1.async = !0;
+  // script1.src = "https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS";
+  add_head(script1);
+
+  // let script2 = document.createElement("script");
+
+  // script2.innerHTML = `window.dataLayer = window.dataLayer || [];
+  //   function gtag(){dataLayer.push(arguments);}
+  //   gtag('js', new Date());
+
+  //   gtag('config', 'G-C4M8ZRW6HS');`;
+  // add_head(script2);
+  let noscript = document.createElement("noscript");
+  noscript.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTF8XDP8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
+  let bodyss = document.querySelector("body");
+  bodyss.prepend(noscript);
+}
 function bar(link_arr) {
   let bar = document.createElement("div");
   let irhtml = `<div
