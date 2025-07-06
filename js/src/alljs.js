@@ -118,9 +118,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   // script2.innerHTML = `window.dataLayer = window.dataLayer || [];
   //   function gtag(){dataLayer.push(arguments);}
   //   gtag('js', new Date());
-
   //   gtag('config', 'G-C4M8ZRW6HS');`;
   // add_head(script2);
+
+  
   let noscript = document.createElement("noscript");
   noscript.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTF8XDP8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
