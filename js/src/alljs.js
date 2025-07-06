@@ -8,12 +8,17 @@ function loadScript(src, callback) {
   document.head.appendChild(script);
 }
 function adsense_code() {
-  let ads_script = document.createElement("script");
-  ads_script.async = !0;
+  // let ads_script = document.createElement("script");
+  // ads_script.async = !0;
 
-  ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
-  ads_script.setAttribute("crossorigin", "anonymous");
-  add_head(ads_script);
+  // ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
+  // ads_script.setAttribute("crossorigin", "anonymous");
+  // add_head(ads_script);
+let ads_script = document.createElement("meta");
+ ads_script.setAttribute("name", "google-adsense-account");
+
+ ads_script.setAttribute("content", "ca-pub-3328405028227056");
+add_head(ads_script);
 }
 adsense_code();
 function last_modified() {
