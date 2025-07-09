@@ -44,9 +44,7 @@ const refurnished_links = {
 };
 for (const user of refurnished_links.users) {
   if (
-   window.location.pathname.includes(
-      `${user.link}`
-    ) === 0
+   window.location.pathname.includes(`${user.link}`)
   ) {
     window.location.href =
       `${user.redirect}`;
