@@ -44,7 +44,7 @@ const refurnished_links = {
 };
 for (const user of refurnished_links.users) {
   if (
-    window.location.href.indexOf(
+   window.location.pathname.includes(
       `${user.link}`
     ) === 0
   ) {

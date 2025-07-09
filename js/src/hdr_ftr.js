@@ -28,11 +28,11 @@ document.querySelector("body").append(footer);
 //     "/os/scheduling-algorithms/MLQS.html";
 // }
 
-if (
-  window.location.pathname.includes("/sub_modules/os/scheduling_algorithms/MLQS.html")
-) {
-  window.location.href = "https://www.csvidyalaya.com/os/scheduling-algorithms/first-come-first-serve-2.html";
-}
+// if (
+//   window.location.pathname.includes("/sub_modules/os/scheduling_algorithms/MLQS.html")
+// ) {
+//   window.location.href = "https://www.csvidyalaya.com/os/scheduling-algorithms/first-come-first-serve-2.html";
+// }
 
 
 let bootstrapScript = document.createElement("script");
