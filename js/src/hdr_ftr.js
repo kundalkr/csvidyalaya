@@ -28,6 +28,13 @@ if (
     "/os/scheduling-algorithms/MLQS.html";
 }
 
+if (
+  window.location.pathname.includes("/sub_modules/os/scheduling_algorithms/MLQS.html")
+) {
+  window.location.href = "www.csvidyalaya.com/os/scheduling-algorithms/MLQS.html";
+}
+
+
 let bootstrapScript = document.createElement("script");
 bootstrapScript.src =
   "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js";

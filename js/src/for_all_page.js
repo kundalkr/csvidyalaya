@@ -1,6 +1,4 @@
 import { add_head, google_font } from "/js/src/utilities.min.js";
-
-
 const refurnished_links = {
   users: [
     {
