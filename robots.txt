@@ -9,7 +9,6 @@ User-agent: PhindBot
 User-agent: YouBot
 Disallow: /
 
-
 User-agent: *
 Allow: /
 
@@ -30,7 +29,5 @@ Allow: /
 User-agent: *  
 Disallow: /admin/
 Disallow: /internal/
-
-
 
 Sitemap: https://www.csvidyalaya.com/sitemap.xml

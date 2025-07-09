@@ -47,7 +47,7 @@ function watchTask() {
     "js/src/hdr_ftr.js",
     "js/src/index.js",
     "js/src/utilities.js",
-    "os/scheduling_algorithms/commonthings.js",
+    "os/scheduling-algorithms/commonthings.js",
     "os/Disk_scheduling/commonthings.js",
     "DSA/commonthings.js",
     "DBMS/DBMS_topics/relational_calculus/js/trc.js",

@@ -17,7 +17,7 @@ if (
   ) === 0
 ) {
   window.location.href =
-    "/os/scheduling_algorithms/mlfqs.html";
+    "/os/scheduling-algorithms/mlfqs.html";
 }
 if (
   window.location.href.indexOf(
@@ -25,7 +25,7 @@ if (
   ) === 0
 ) {
   window.location.href =
-    "/os/scheduling_algorithms/MLQS.html";
+    "/os/scheduling-algorithms/MLQS.html";
 }
 
 let bootstrapScript = document.createElement("script");

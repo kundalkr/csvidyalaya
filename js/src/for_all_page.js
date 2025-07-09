@@ -1,5 +1,60 @@
 import { add_head, google_font } from "/js/src/utilities.min.js";
 
+
+const refurnished_links = {
+  users: [
+    {
+      link: "/os/scheduling_algorithms/MLQS.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/multilevel-queue-scheduling.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/fcfs2.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/first-come-first-serve-2.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/fcfs.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/first-come-first-serve.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/sjf1.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/shortest-job-first.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/sjf2.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/Shortest-Remaining-Time-First.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/RR4.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/RR4.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/RR1.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/round-robin.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/RR2.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/round-robin-2.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/RR3.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/RR3.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/ps1.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/priority-scheduling.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/ps2.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/preemptive-priority-scheduling.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/mlfqs.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/multilevel-feedback-queue.html"
+    },
+    {
+      link: "/os/scheduling_algorithms/Scheduling_Alorithms_topic.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/Scheduling-Alorithms-topic.html"
+    },
+  ],
+};
+for (const user of refurnished_links.users) {
+  if (
+    window.location.href.indexOf(
+      `${user.link}`
+    ) === 0
+  ) {
+    window.location.href =
+      `${user.redirect}`;
+  }
+}
+
 (function () {
   const favi_size = {
     users: [
@@ -79,16 +134,16 @@ export function breadcrumb(data) {
   let brdcrmb = document.querySelector("#main-content > main > nav#breadcrumbs > ol.breadcrumb");
   let active_link = Object.entries(data.users).length;
   let i = 1;
- let list;
+  let list;
   for (let name_link of data.users) {
-    
+
     if (i == active_link) {
-       list = document.createElement("li");
+      list = document.createElement("li");
       list.classList.add("breadcrumb-item", "p-1", "active");
       list.innerHTML += `<a href="${name_link.link}" class="bg-body-secondary rounded-2 p-1  text-decoration-none ">${name_link.name}</a>`;
       brdcrmb.appendChild(list);
     } else {
-       list = document.createElement("li");
+      list = document.createElement("li");
       list.classList.add("breadcrumb-item", "p-1");
       list.innerHTML = `<a  href="${name_link.link}" class="p-1 .text-black">${name_link.name}</a>`;
       brdcrmb.appendChild(list);

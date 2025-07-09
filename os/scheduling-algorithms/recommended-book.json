@@ -2,7 +2,7 @@
     "books": [
         {
             "topic_name": "first come first serve(FCFS) scheduling algorithm",
-            "file_name": "fcfs.html , fcfs2.html, page_replacement.html, Fit-algorithms.html , Buddy_system.html , page-replacement-algorithms.html",
+            "file_name": "first-come-first-serve-2.html , first-come-first-serve.html, multilevel-feedback-queue.html, Fit-algorithms.html , Buddy_system.html , page-replacement-algorithms.html",
             "book": [
                 {
                     "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
@@ -23,7 +23,7 @@
         },
         {
             "topic_name": "Round Robin (RR) scheduling algorithm",
-            "file_name": "RR1.html , RR2.html , RR3.html , RR4.html",
+            "file_name": "round-robin.html , round-robin-2.html , RR3.html , RR4.html",
             "book": [
                 {
                     "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
@@ -44,7 +44,7 @@
         },
         {
             "topic_name": "multilevel feedback queue scheduling (MLFQ) scheduling algorithm",
-            "file_name": "mlfqs.html",
+            "file_name": "multilevel-queue-scheduling.html",
             "book": [
                 {
                     "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
@@ -86,7 +86,7 @@
         },
         {
             "topic_name": "non-preemptive priority scheduling algorithm",
-            "file_name": "ps1.html",
+            "file_name": "preemptive-priority-scheduling.html , priority-scheduling.html",
             "book": [
                 {
                     "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
@@ -128,7 +128,7 @@
         },
         {
             "topic_name": "shortest job first (SJF) scheduling algorithm",
-            "file_name": "sjf1.html",
+            "file_name": "shortest-job-first.html",
             "book": [
                 {
                     "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
@@ -149,7 +149,7 @@
         },
         {
             "topic_name": "Shortest Remaining Time First(SRTF) or Preemptive SJF scheduling algorithm",
-            "file_name": "sjf2.html",
+            "file_name": "Shortest-Remaining-Time-First.html",
             "book": [
                 {
                     "book_image": "https://m.media-amazon.com/images/I/815oae4uF+L._SY425_.jpg",
