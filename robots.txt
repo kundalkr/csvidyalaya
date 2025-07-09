@@ -9,6 +9,10 @@ User-agent: PhindBot
 User-agent: YouBot
 Disallow: /
 
+
+User-agent: *
+Allow: /
+
 # Disallow AI model training bots
 User-agent: GPTBot  
 User-agent: CCBot  
@@ -26,6 +30,7 @@ Allow: /
 User-agent: *  
 Disallow: /admin/
 Disallow: /internal/
+
 
 
 Sitemap: https://www.csvidyalaya.com/sitemap.xml
