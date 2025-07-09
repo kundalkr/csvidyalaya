@@ -19,7 +19,7 @@ function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");
 
-  let hh1 = document.querySelector("#main-content > main > div#title-date > h1");
+  let hh1 = document.querySelector("#title-date > h1");
   let lastupdate = document.createElement("div");
   lastupdate.setAttribute("id", "last_updated_parent");
   lastupdate.innerHTML = ` 
