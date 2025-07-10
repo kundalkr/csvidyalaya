@@ -2,7 +2,7 @@ import { add_css, popup_links,sdbar_Links,book_name_recommender,} from "/js/src/
 
 import {breadcrumb } from "/js/src/for_all_page.min.js";
 
-import book_sugget from "/os/scheduling-algorithms/recommended-book.json" with {type : "json"};
+import book_sugget from "/Operating-system/scheduling-algorithms/recommended-book.json" with {type : "json"};
 book_name_recommender(book_sugget);
 const pop_link = {
   users: [
@@ -49,55 +49,55 @@ const sidebar_links = {
   users: [
     {
       name: "first-come-first-serve questions",
-      link: "fcfs.html",
+      link: "/Operating-system/scheduling-algorithms/first-come-first-serve.html"
     },
     {
       name: "shortest job first(SJF) question",
-      link: "sjf1.html",
+      link: "/Operating-system/scheduling-algorithms/shortest-job-first.html"
     },
     {
       name: "Shortest Remaining Time First (SRTF) question",
-      link: "sjf2.html",
+      link: "/Operating-system/scheduling-algorithms/Shortest-Remaining-Time-First.html"
     },
     {
       name: "Multilevel feedback queue scheduling question",
-      link: "mlfqs.html",
+      link: "/Operating-system/scheduling-algorithms/multilevel-feedback-queue.html"
     },
     {
       name: "Multilevel queue scheduling question",
-      link: "MLQS.html",
+      link: "/Operating-system/scheduling-algorithms/multilevel-queue-scheduling.html"
     },
     {
       name: "priority scheduling question",
-      link: "ps1.html",
+      link: "/Operating-system/scheduling-algorithms/priority-scheduling.html"
     },
     {
       name: "peemptive priority scheduling question",
-      link: "ps2.html",
+      link: "/Operating-system/scheduling-algorithms/preemptive-priority-scheduling.html"
     },
     {
       name: "Round Robin scheduling question",
-      link: "RR1.html",
+      link: "/Operating-system/scheduling-algorithms/round-robin.html"
     },
     {
       name: "Bankers algorithms question",
-      link: "/os/Deadlocks/Bankers_Algorithms.html",
+      link: "/Operating-system/Deadlocks/Bankers-Algorithms.html"
     },
     {
       name: "Disk scheduling algorithms question",
-      link: "/os/Disk_scheduling/disk_scheduling_algorithms.html",
+      link: "/Operating-system/Disk-scheduling/disk-scheduling-algorithms.html"
     },
     {
       name: "Memory management question",
-      link: "/os/memory_management/memory_management_topics.html",
+      link: "/Operating-system/memory-management/memory-management-topics.html"
     },
     {
       name: "Buddy System question",
-      link: "/os/memory_management/Buddy_system.html",
+      link: "/Operating-system/memory-management/Buddy-system.html"
     },
     {
       name: "Fit question",
-      link: "/os/memory_management/Fit_question.html",
+      link: "/Operating-system/memory-management/Fit-algorithms.html"
     },
   ],
 };

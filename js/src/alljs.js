@@ -7,40 +7,20 @@ function loadScript(src, callback) {
   script.onload = callback;
   document.head.appendChild(script);
 }
-function adsense_code() {
-  let ads_script = document.createElement("script");
-  ads_script.async = !0;
-  ads_script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3328405028227056";
-  ads_script.setAttribute("crossorigin", "anonymous");
-  add_head(ads_script);
-}
-adsense_code();
 function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");
-
   let hh1 = document.querySelector("#title-date > h1");
   let lastupdate = document.createElement("div");
-  lastupdate.setAttribute("id", "last_updated_parent");
-  lastupdate.innerHTML = ` 
-          <div>
-            <span>Last updated : </span><span>${lastup[1] + " " + lastup[2] + ", " + lastup[3]
-    }</span>
-          </div>
-          <hr>
-          <div class="d-flex justify-content-between align-items-center border border-2">
-            <div>
-            <p style="margin:0;" class="m-0 fw-bold"> Like & Follow </p> </div>
-
-         <div>
-       <a style="font-size: xx-large;"href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> &nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i class="bi bi-instagram"></i></a>
-          </div>  
-          
-          
-          </div>`;
+  lastupdate.setAttribute("id", "last-updated-parent");
+  lastupdate.innerHTML = `<div><span>Last updated : </span><span>${lastup[1] + " " + lastup[2] + ", " + lastup[3]
+    }</span></div><hr><div class="d-flex justify-content-between align-items-center border border-2"><div>
+<p style="margin:0;" class="m-0 fw-bold"> Like & Follow </p> </div><div>
+<a style="font-size: xx-large;"href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> &nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i class="bi bi-instagram"></i></a>&nbsp;
+<a style="font-size: xx-large;color: black;" href="https://www.x.com/csvidya1aya/"><i class="bi bi-twitter-x"></i></a>
+</div></div>`;
   hh1.insertAdjacentElement("afterend", lastupdate);
 }
-
 function css_files() {
   const cssFiles = [
     "/css/headings-footer.min.css",
@@ -84,11 +64,6 @@ function founder_schemas() {
   document.head.appendChild(founder_schema);
   // founder json ld
 }
-
-
-loadScript('/js/src/for_all_page.min.js', () => {
-  loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); });
-});
 function published_data() {
   const lastModified = new Date(document.lastModified).toISOString().split('T')[0];
   const scriptTag = document.getElementById("structured-data");
@@ -96,7 +71,7 @@ function published_data() {
   json.dateModified = lastModified;
   scriptTag.textContent = JSON.stringify(json);
 }
-published_data();
+
 
 if (
   window.location.hostname !== "localhost" &&
@@ -111,39 +86,112 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   // script1.async = !0;
   // script1.src = "https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS";
   add_head(script1);
-
   // let script2 = document.createElement("script");
-
   // script2.innerHTML = `window.dataLayer = window.dataLayer || [];
   //   function gtag(){dataLayer.push(arguments);}
   //   gtag('js', new Date());
   //   gtag('config', 'G-C4M8ZRW6HS');`;
   // add_head(script2);
 
-  
   let noscript = document.createElement("noscript");
   noscript.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTF8XDP8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
   let bodyss = document.querySelector("body");
   bodyss.prepend(noscript);
 }
+
+const bar_links = {
+  users: [
+    {
+      name: "first-come-first-serve questions",
+      link: "/Operating-system/scheduling-algorithms/first-come-first-serve.html"
+    },
+    {
+      name: "shortest job first(SJF) question",
+      link: "/Operating-system/scheduling-algorithms/shortest-job-first.html"
+    },
+    {
+      name: "Shortest Remaining Time First (SRTF) question",
+      link: "/Operating-system/scheduling-algorithms/Shortest-Remaining-Time-First.html"
+    },
+    {
+      name: "Multilevel feedback queue scheduling question",
+      link: "/Operating-system/scheduling-algorithms/multilevel-feedback-queue.html"
+    },
+    {
+      name: "Multilevel queue scheduling question",
+      link: "/Operating-system/scheduling-algorithms/multilevel-queue-scheduling.html"
+    },
+    {
+      name: "priority scheduling question",
+      link: "/Operating-system/scheduling-algorithms/priority-scheduling.html"
+    },
+    {
+      name: "peemptive priority scheduling question",
+      link: "/Operating-system/scheduling-algorithms/preemptive-priority-scheduling.html"
+    },
+    {
+      name: "Round Robin scheduling question",
+      link: "/Operating-system/scheduling-algorithms/round-robin.html"
+    },
+    {
+      name: "Bankers algorithms question",
+      link: "/Operating-system/Deadlocks/Bankers-Algorithms.html"
+    },
+    {
+      name: "Disk scheduling algorithms question",
+      link: "/Operating-system/Disk-scheduling/disk-scheduling-algorithms.html"
+    },
+    {
+      name: "Memory management question",
+      link: "/Operating-system/memory-management/memory-management-topics.html"
+    },
+    {
+      name: "Buddy System question",
+      link: "/Operating-system/memory-management/Buddy-system.html"
+    },
+    {
+      name: "Fit question",
+      link: "/Operating-system/memory-management/Fit-algorithms.html"
+    },
+  ],
+};
+
 function bar(link_arr) {
   let bar = document.createElement("div");
+  // bar.classList.add('scrollable');
   let irhtml = `<div
         id="bar1"
-        class="p-2 d-none d-lg-flex flex-row justify-content-between"
-        style="
-          background-color:rgb(248, 21, 21);
-        "
-      >`;
+        class="scroll-container scrollable"
+      >
+      <button class="scroll-left" onclick="scrollLefti()" style="position:fixed;left:5px">&#9664;</button>
+      `;
   let loopt = "";
   for (const users of link_arr.users) {
     // console.log(users.link + "" + users.name);
-    loopt += `<a class="text-black text-decoration-underline" style="text-decoration-color: rgb(255, 255, 255);text-decoration-thickness: 0.3ex;text-underline-offset: 0.3ex;"   href="${users.link}">${users.name}</a>`;
+    loopt += `<a class="text-black text-decoration-underline scroll-item" style="text-decoration-color: rgb(255, 255, 255);text-decoration-thickness: 0.3ex;text-underline-offset: 0.3ex;"   href="${users.link}">${users.name}</a>`;
   }
-  bar.innerHTML = irhtml + loopt + ` </div>`;
-
+  bar.innerHTML = irhtml + loopt + `<button class="scroll-right" onclick="scrollRight()" style="position:fixed;right:5px">&#9654;</button></div>`;
   let h12 = document.querySelector("#fheader");
   h12.insertAdjacentElement("afterend", bar);
 }
+
+loadScript('/js/src/for_all_page.min.js', () => {
+  loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); bar(bar_links); published_data(); });
+});
+let leftandright = document.createElement('script');
+leftandright.innerHTML = `function scrollLefti() {
+    document.querySelector('.scrollable').scrollBy({
+        left: -150, 
+        behavior: 'smooth' 
+    });
+};
+function scrollRight() {
+    document.querySelector('.scrollable').scrollBy({
+        left: 150, 
+        behavior: 'smooth' 
+    });
+}`;
+add_head(leftandright);
+
 

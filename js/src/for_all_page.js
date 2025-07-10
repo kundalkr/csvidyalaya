@@ -2,49 +2,70 @@ import { add_head, google_font } from "/js/src/utilities.min.js";
 const refurnished_links = {
   users: [
     {
-      link: "/os/scheduling_algorithms/MLQS.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/multilevel-queue-scheduling.html"
+      link: "/os/scheduling_algorithms/MLQS.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/multilevel-queue-scheduling.html"
     },
     {
-      link: "/os/scheduling_algorithms/fcfs2.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/first-come-first-serve-2.html"
+      link: "/os/scheduling_algorithms/fcfs2.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/first-come-first-serve-2.html"
     },
     {
-      link: "/os/scheduling_algorithms/fcfs.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/first-come-first-serve.html"
+      link: "/os/scheduling_algorithms/fcfs.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/first-come-first-serve.html"
     },
     {
-      link: "/os/scheduling_algorithms/sjf1.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/shortest-job-first.html"
+      link: "/os/scheduling_algorithms/sjf1.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/shortest-job-first.html"
     },
     {
-      link: "/os/scheduling_algorithms/sjf2.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/Shortest-Remaining-Time-First.html"
+      link: "/os/scheduling_algorithms/sjf2.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/Shortest-Remaining-Time-First.html"
     },
     {
-      link: "/os/scheduling_algorithms/RR4.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/RR4.html"
+      link: "/os/scheduling_algorithms/RR4.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/RR4.html"
     },
     {
-      link: "/os/scheduling_algorithms/RR1.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/round-robin.html"
+      link: "/os/scheduling_algorithms/RR1.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/round-robin.html"
     },
     {
-      link: "/os/scheduling_algorithms/RR2.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/round-robin-2.html"
+      link: "/os/scheduling_algorithms/RR2.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/round-robin-2.html"
     },
     {
-      link: "/os/scheduling_algorithms/RR3.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/RR3.html"
+      link: "/os/scheduling_algorithms/RR3.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/RR3.html"
     },
     {
-      link: "/os/scheduling_algorithms/ps1.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/priority-scheduling.html"
+      link: "/os/scheduling_algorithms/ps1.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/priority-scheduling.html"
     },
     {
-      link: "/os/scheduling_algorithms/ps2.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/preemptive-priority-scheduling.html"
+      link: "/os/scheduling_algorithms/ps2.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/preemptive-priority-scheduling.html"
     },
     {
-      link: "/os/scheduling_algorithms/mlfqs.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/multilevel-feedback-queue.html"
+      link: "/os/scheduling_algorithms/mlfqs.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/multilevel-feedback-queue.html"
     },
     {
-      link: "/os/scheduling_algorithms/Scheduling_Alorithms_topic.html", redirect: "https://www.csvidyalaya.com/os/scheduling-algorithms/Scheduling-Alorithms-topic.html"
+      link: "/os/scheduling_algorithms/Scheduling_Alorithms_topic.html", redirect: "https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/Scheduling-Alorithms-topic.html"
     },
-  ],
+    {
+      link: "/os/Deadlocks/deadlock_topics.html", redirect: "https://www.csvidyalaya.com/Operating-system/Deadlocks/deadlock-topics.html"
+    },
+    {
+      link: "/os/Deadlocks/Bankers_Algorithms.html", redirect: "https://www.csvidyalaya.com/Operating-system/Deadlocks/Bankers-Algorithms.html"
+    },
+    {
+      link: "/os/Disk_scheduling/disk_scheduling_algorithms.html", redirect: "https://www.csvidyalaya.com/Operating-system/Disk-scheduling/disk-scheduling-algorithms.html"
+    },
+    {
+      link: "/os/memory_management/Buddy_system.html", redirect: "https://www.csvidyalaya.com/Operating-system/memory-management/Buddy-system.html"
+    },
+    {
+      link: "/os/memory_management/memory_management_topics.html", redirect: "https://www.csvidyalaya.com/Operating-system/memory-management/memory-management-topics.html"
+    },
+    {
+      link: "/os/memory_management/Fit-algorithms.html", redirect: "https://www.csvidyalaya.com/Operating-system/memory-management/Fit-algorithms.html"
+    },
+    {
+      link: "/os/memory_management/page-replacement-algorithms.html", redirect: "https://www.csvidyalaya.com/Operating-system/memory-management/page-replacement-algorithms.html"
+    },
+  ]
 };
 for (const user of refurnished_links.users) {
   if (
-   window.location.pathname.includes(`${user.link}`)
+    window.location.pathname.startsWith(`${user.link}`)
   ) {
     window.location.href =
       `${user.redirect}`;

@@ -49,37 +49,37 @@
   </url>
   <!-- operating SYSTEM links -->
   <url>
-    <loc>https://www.csvidyalaya.com/os/operating_System_Topics.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/operating_System_Topics.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <!-- what is -->
   <url>
-    <loc>https://www.csvidyalaya.com/os/what-is/operating-system.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/what-is/operating-system.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/what-is/operating-system.html#process_management</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/what-is/operating-system.html#process_management</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/what-is/operating-system.html#how_os_work</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/what-is/operating-system.html#how_os_work</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/what-is/operating-system.html#future_of_os</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/what-is/operating-system.html#future_of_os</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <!-- scheduling algorithms -->
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/Scheduling-Alorithms-topic.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/Scheduling-Alorithms-topic.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/first-come-first-serve-2.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/first-come-first-serve-2.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/first-come-first-serve.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/first-come-first-serve.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/fcfs/fcfs1_q1.jpg</image:loc>
     </image:image>
@@ -92,7 +92,7 @@
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/shortest-job-first.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/shortest-job-first.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/SJF/non-preemptive/np-1.jpg</image:loc>
     </image:image>
@@ -102,7 +102,7 @@
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/Shortest-Remaining-Time-First.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/Shortest-Remaining-Time-First.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/SJF/non-preemptive/p-1.jpg</image:loc>
     </image:image>
@@ -112,32 +112,31 @@
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/RR4.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/RR4.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/round-robin.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/round-robin.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/round-robin-2.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/round-robin-2.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/RR3.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/RR3.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/priority-scheduling.html</loc>
-    <lastmod>2025-07-09</lastmod>
-
-  </url>
-  <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/preemptive-priority-scheduling.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/priority-scheduling.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/multilevel-feedback-queue.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/preemptive-priority-scheduling.html</loc>
+    <lastmod>2025-07-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/multilevel-feedback-queue.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/MLFQ/MLFQS DEFINITION BIG.png</image:loc>
     </image:image>
@@ -153,7 +152,7 @@
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/scheduling-algorithms/multilevel-queue-scheduling.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/scheduling-algorithms/multilevel-queue-scheduling.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/MLQ/MLQS_DEFINITION_nig.png</image:loc>
     </image:image>
@@ -167,11 +166,11 @@
   </url>
   <!-- memory management -->
   <url>
-    <loc>https://www.csvidyalaya.com/os/memory_management/Fit-algorithms.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/memory-management/Fit-algorithms.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/memory_management/Buddy_system.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/memory-management/Buddy-system.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/buddy_system/main.jpg</image:loc>
     </image:image>
@@ -181,21 +180,21 @@
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/memory_management/memory_management_topics.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/memory-management/memory-management-topics.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/memory_management/page-replacement-algorithms.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/memory-management/page-replacement-algorithms.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
 
   <!-- Deadlock -->
   <url>
-    <loc>https://www.csvidyalaya.com/os/Deadlocks/deadlock_topics.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/Deadlocks/deadlock-topics.html</loc>
     <lastmod>2025-07-09</lastmod>
   </url>
   <url>
-    <loc>https://www.csvidyalaya.com/os/Deadlocks/Bankers_Algorithms.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/Deadlocks/Bankers-Algorithms.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/bankers_algo/1_final.jpg</image:loc>
     </image:image>
@@ -210,8 +209,9 @@
     </image:image>
     <lastmod>2025-07-09</lastmod>
   </url>
+  <!-- disk scheduling  -->
   <url>
-    <loc>https://www.csvidyalaya.com/os/Disk_scheduling/disk_scheduling_algorithms.html</loc>
+    <loc>https://www.csvidyalaya.com/Operating-system/Disk-scheduling/disk-scheduling-algorithms.html</loc>
     <image:image>
       <image:loc>https://www.csvidyalaya.com/assets/disk_scheduling/scan_2024-26.jpg</image:loc>
     </image:image>

@@ -1,7 +1,6 @@
 import {popup_links,sdbar_Links,book_name_recommender } from "/js/src/utilities.min.js";
 import book_sugget from "/DSA/book_suggest.json" with {type : "json"};
 book_name_recommender(book_sugget);
-
 const popup_link = {
   users: [
     {
@@ -39,7 +38,6 @@ const popup_link = {
   ],
 };
 popup_links(popup_link);
-
 const sidebar_links = {
   users: [
       {
@@ -72,11 +70,11 @@ const sidebar_links = {
     },
     {
       name: "prefix to postfix conversion question",
-      link: "ps1.html",
+      link: "prefixtopostfix.html",
     },
     {
       name: "queue question",
-      link: "ps2.html",
+      link: "queue1.html",
     },
     {
       name: "stack question",
@@ -123,8 +121,3 @@ sdbar_Links(sidebar_links);
 //   ],
 // };
 // bar(bar_data);
-
-
-
-
-

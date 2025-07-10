@@ -47,13 +47,14 @@ function watchTask() {
     "js/src/hdr_ftr.js",
     "js/src/index.js",
     "js/src/utilities.js",
-    "os/scheduling-algorithms/commonthings.js",
-    "os/Disk_scheduling/commonthings.js",
+    "Operating-system/scheduling-algorithms/commonthings.js",
+    "Operating-system/Disk-scheduling/commonthings.js",
     "DSA/commonthings.js",
     "DBMS/DBMS_topics/relational_calculus/js/trc.js",
     "DBMS/js/commonthings.js",
     "commonthings.js",
-    "os/Deadlocks/commonthings.js","os/memory_management/commonthings.js"
+    "Operating-system/Deadlocks/commonthings.js",
+    "Operating-system/memory-management/commonthings.js"
   ];
   // let dest = `js/src/`;
 
