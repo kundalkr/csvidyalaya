@@ -7,6 +7,7 @@ function loadScript(src, callback) {
   script.onload = callback;
   document.head.appendChild(script);
 }
+
 function last_modified() {
   const lastModified = new Date(document.lastModified);
   let lastup = lastModified.toDateString().split(" ");
@@ -21,6 +22,7 @@ function last_modified() {
 </div></div>`;
   hh1.insertAdjacentElement("afterend", lastupdate);
 }
+
 function css_files() {
   const cssFiles = [
     "/css/headings-footer.min.css",
@@ -32,11 +34,8 @@ function css_files() {
     let cssf = document.createElement("link");
     cssf.setAttribute("rel", "stylesheet");
     cssf.setAttribute("href", `${file}`);
-    heads.appendChild(cssf);
-  });
+    heads.appendChild(cssf);  });
 }
-
-
 //  all css adding end
 function founder_schemas() {
   // founder json ld
