@@ -1,296 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <script type="module" src="/js/src/alljs.min.js"></script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Software Engineering Questions: Concepts, Interview & Exam Preparation
-    </title>
 
-    <meta
-      name="description"
-      content="Explore comprehensive software engineering questions covering interview topics, exam preparation, and key concepts. Perfect for students and professionals seeking in-depth understanding."
-    />
-    <meta
-      name="keywords"
-      content="Software Engineering Questions, Software Engineering Interview, Exam Preparation, Software Engineering Concepts, CS Questions, Programming, Software Development"
-    />
-    <meta name="author" content="Kundal Kumar" />
-    <!-- <meta name="robots" content="index, follow" /> -->
+<head>
+  <script type="module" src="/js/src/alljs.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Software Engineering Questions: Concepts, Interview & Exam Preparation
+  </title>
 
-    <!-- Open Graph Tags -->
-    <meta
-      property="og:title"
-      content="Software Engineering Questions: Concepts, Interview & Exam Preparation"
-    />
-    <meta
-      property="og:description"
-      content="Discover detailed software engineering questions and answers to boost your interview skills and exam preparation. Ideal for learners and professionals."
-    />
-    <meta property="og:type" content="article" />
+  <meta name="description"
+    content="Explore comprehensive software engineering questions covering interview topics, exam preparation, and key concepts. Perfect for students and professionals seeking in-depth understanding." />
+  <meta name="keywords"
+    content="Software Engineering Questions, Software Engineering Interview, Exam Preparation, Software Engineering Concepts, CS Questions, Programming, Software Development" />
+  <meta name="author" content="Kundal Kumar" />
+  <!-- <meta name="robots" content="index, follow" /> -->
 
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Software Engineering Questions: Concepts, Interview & Exam Preparation"
-    />
-    <meta
-      name="twitter:description"
-      content="Master software engineering concepts with our in-depth questions and answers, designed for interviews and exams."
-    />
-    <style>
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Software Engineering Questions: Concepts, Interview & Exam Preparation" />
+  <meta property="og:description"
+    content="Discover detailed software engineering questions and answers to boost your interview skills and exam preparation. Ideal for learners and professionals." />
+  <meta property="og:type" content="article" />
+
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Software Engineering Questions: Concepts, Interview & Exam Preparation" />
+  <meta name="twitter:description"
+    content="Master software engineering concepts with our in-depth questions and answers, designed for interviews and exams." />
+  <style>
+    #rad_mod {
+      height: 200px;
+      width: 630px;
+      object-fit: contain;
+    }
+
+    @media (width<=770px) {
       #rad_mod {
-        height: 200px;
-        width: 630px;
-        object-fit: contain;
+        height: 180px;
+        width: 400px;
       }
-      @media (width<=770px) {
-        #rad_mod {
-          height: 180px;
-          width: 400px;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="title-date">
-      <h1>  Software Engineering Questions: Concepts + PYQs</h1>
+    }
+  </style>
+</head>
+
+<body>
+  <div id="title-date">
+    <h1> Software Engineering Questions: Concepts + PYQs</h1>
+  </div>
+
+  <main>
+    <nav id="breadcrumbs" style="--bs-breadcrumb-divider: '&gt;';">
+      <ol class="breadcrumb mt-2">
+
+
+      </ol>
+    </nav>
+    <div class="container">
+      <section>
+        <div id="question1">
+          <div class="question">
+            <h2>
+              Question 1 : What is RAD model - Advantages, Disadvantages &
+              when to use it ?
+            </h2>
+          </div>
+          <div class="solution">
+            <p>Solution :</p>
+            <picture>
+              <source media="(max-width:700px)" srcset="/assets/software_engineering/final_RAD.jpg" />
+              <source media="(min-width:701px)" srcset="/assets/software_engineering/final_RAD.jpg" />
+              <img loading="lazy" src="/assets/software_engineering/final_RAD.jpg" alt="how RAD model works"
+                title="working picture of Rad model" id="rad_mod" />
+            </picture>
+            <p>
+              The rapid application development model is a software
+              development methodology that focuses on building prototypes
+              rapidly and getting user’s feedback.
+            </p>
+            <p>
+              <strong>
+                How does RAD works with active participation of users
+              </strong>
+            </p>
+            <ol>
+              <li>
+                <i> Requirement planning :</i>stakeholder define the project
+                scope and requirements
+              </li>
+              <li>
+                <i>user description : </i> create prototypes and gather user
+                feedback
+              </li>
+              <li>
+                <i>Construction : </i>develop and refine the
+                <a href="https://en.wikipedia.org/wiki/Software">Software</a>
+                based on user Requirement
+              </li>
+              <li><i>Cutover : </i>Test , implement and train users</li>
+            </ol>
+
+            <p style="text-decoration: underline">
+              Advantages and disadvantages :
+            </p>
+            <table class="table table-bordered border-2 border-black">
+              <tr>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+              </tr>
+              <tr>
+                <td>fatser development time</td>
+                <td>high costs</td>
+              </tr>
+              <tr>
+                <td>flexibility</td>
+                <td>Dependent on skilled team</td>
+              </tr>
+              <tr>
+                <td>improved quality</td>
+                <td>can't used for cheap projects</td>
+              </tr>
+            </table>
+            <p style="text-decoration: underline">When to use RAD</p>
+            <ol>
+              <li>
+                when project requirement are not fully understood or likely to
+                change
+              </li>
+              <li>when technical risk is not high</li>
+              <li>when user's feedback is readily available</li>
+              <li>when clients need to be involved in the development</li>
+              <li>when time-to-market is critical</li>
+              <li>when application needs to be developed quickly</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="question2">
+          <div class="question">
+            <h2>
+              Question 2 : Who are the different categories of users of the
+              SRS document? what are their expectations from the SRS document
+              ?
+            </h2>
+          </div>
+          <div class="solution">
+            <p>Solution :</p>
+            <p>The different categories of users of the SRS document are :</p>
+            <ol type="I">
+              <li>Developers</li>
+              <li>project managers</li>
+              <li>quality assurance tester(QAT)</li>
+              <li>End - User</li>
+            </ol>
+            <p>Their expectation from the SRS documents are :</p>
+            <ol type="A">
+              <li>
+                <i> Developer :</i> precise detail about the system features
+                and functions to guide implementation; clear definition of
+                technical specification, interfaces and data formats.
+              </li>
+              <li>
+                <i>Project Manager : </i>identification of potential risk and
+                dependencies
+              </li>
+              <li>
+                <i>QAT :</i>Detailed test cases and acceptance criteria to
+                design effective test strategies
+              </li>
+              <li>
+                <i>End Users :</i> easy to understand description of how the
+                system will function and interact with them.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="question3">
+          <div class="question">
+            <h2>
+              Question 3: Explain how the uses of software engineering
+              principles help to develop software products cost-efectively and
+              timely
+            </h2>
+          </div>
+          <div class="solution">
+            <p>
+              Software engineering’s primary benefit is a structured approach
+              of s/w development by adhering to well-defined processes and
+              methodologies. Software engineering ensures that projects are
+              completed on time within budget and to the required quality
+              standards.
+            </p>
+            <p>
+              The uses of SE principles helps to develop sw products cost
+              effectively and on time as explained below:
+            </p>
+            <ol>
+              <li>
+                <i>Cost effectiveness :</i>Structured software engineering
+                practices help manage project cost effectively by ensuring
+                efficient Resource Planning and utilisation. by using well
+                defined process and methodologies, software engineering
+                reduces the risk of budget overruns and delays. cost effective
+                project management is crucial for both small and large scale
+                projects, enabling organisation to achieve their goals without
+                financial strain
+              </li>
+              <li>
+                <i>Timely Delivery : </i>Software engineering methodologies
+                ensure the timely delivery of software projects. These
+                Frameworks promote iterative development, continuous feedback
+                and regular updates. It ensures that the progress is going
+                according to schedule and also maintains clients'
+                satisfaction.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="question4">
+          <div class="question">
+            <h2>
+              Question 4: why do you feel that characteristics of of
+              requirements play a very significant role in the selection of a
+              life cycle model?
+            </h2>
+          </div>
+          <div class="solution">
+            <p>This is because of following reasons :-</p>
+            <p>Types of requirements :-</p>
+            <ol>
+              <li>
+                <i>
+                  Functional vs Non - functional :- Different life cycle
+                  models are suited for different types of requirements such
+                  as functional or Non - functional requirements
+                </i>
+              </li>
+              <li>
+                <i> complexity :- </i> Requirements with high complexity may
+                require more iterative or agile approach
+              </li>
+            </ol>
+            <p>Stability of Requirements :-</p>
+            <ol>
+              <li>
+                <i>stable vs changing : </i> life cycle models like waterfall
+                are suitable for stable requirements While iterative models
+                are better suited for changing of requirements
+              </li>
+              <li>
+                <i> Rate of change : </i>Requirements that change rapidly may
+                require more flexible or adaptive life cycle models
+              </li>
+            </ol>
+            <p>prioritization of requirement :</p>
+            <ol>
+              <li>
+                <i> Must haves vs Nice-to-Haves :</i>Life cycle model can be
+                chosen based on prioritization of requirements with official
+                requirements addressed first.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
     </div>
+  </main>
+</body>
 
-      <main>
-        <nav id="breadcrumbs" style="--bs-breadcrumb-divider: '&gt;';">
-          <ol class="breadcrumb mt-2">
-
-
-          </ol>
-        </nav>
-      <div class="container">
-        <section>
-          <div id="question1">
-            <div class="question">
-              <h2>
-                Question 1 : What is RAD model - Advantages, Disadvantages &
-                when to use it ?
-              </h2>
-            </div>
-            <div class="solution">
-              <p>Solution :</p>
-              <picture>
-                <source
-                  media="(max-width:700px)"
-                  srcset="/assets/software_engineering/final_RAD.jpg"
-                />
-                <source
-                  media="(min-width:701px)"
-                  srcset="/assets/software_engineering/final_RAD.jpg"
-                />
-                <img
-                  loading="lazy"
-                  src="/assets/software_engineering/final_RAD.jpg"
-                  alt="how RAD model works"
-                  title="working picture of Rad model"
-                  id="rad_mod"
-                />
-              </picture>
-              <p>
-                The rapid application development model is a software
-                development methodology that focuses on building prototypes
-                rapidly and getting user’s feedback.
-              </p>
-              <p>
-                <strong>
-                  How does RAD works with active participation of users
-                </strong>
-              </p>
-              <ol>
-                <li>
-                  <i> Requirement planning :</i>stakeholder define the project
-                  scope and requirements
-                </li>
-                <li>
-                  <i>user description : </i> create prototypes and gather user
-                  feedback
-                </li>
-                <li>
-                  <i>Construction : </i>develop and refine the
-                  <a href="https://en.wikipedia.org/wiki/Software">Software</a>
-                  based on user Requirement
-                </li>
-                <li><i>Cutover : </i>Test , implement and train users</li>
-              </ol>
-
-              <p style="text-decoration: underline">
-                Advantages and disadvantages :
-              </p>
-              <table class="table table-bordered border-2 border-black">
-                <tr>
-                  <th>Advantages</th>
-                  <th>Disadvantages</th>
-                </tr>
-                <tr>
-                  <td>fatser development time</td>
-                  <td>high costs</td>
-                </tr>
-                <tr>
-                  <td>flexibility</td>
-                  <td>Dependent on skilled team</td>
-                </tr>
-                <tr>
-                  <td>improved quality</td>
-                  <td>can't used for cheap projects</td>
-                </tr>
-              </table>
-              <p style="text-decoration: underline">When to use RAD</p>
-              <ol>
-                <li>
-                  when project requirement are not fully understood or likely to
-                  change
-                </li>
-                <li>when technical risk is not high</li>
-                <li>when user's feedback is readily available</li>
-                <li>when clients need to be involved in the development</li>
-                <li>when time-to-market is critical</li>
-                <li>when application needs to be developed quickly</li>
-              </ol>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div id="question2">
-            <div class="question">
-              <h2>
-                Question 2 : Who are the different categories of users of the
-                SRS document? what are their expectations from the SRS document
-                ?
-              </h2>
-            </div>
-            <div class="solution">
-              <p>Solution :</p>
-              <p>The different categories of users of the SRS document are :</p>
-              <ol type="I">
-                <li>Developers</li>
-                <li>project managers</li>
-                <li>quality assurance tester(QAT)</li>
-                <li>End - User</li>
-              </ol>
-              <p>Their expectation from the SRS documents are :</p>
-              <ol type="A">
-                <li>
-                  <i> Developer :</i> precise detail about the system features
-                  and functions to guide implementation; clear definition of
-                  technical specification, interfaces and data formats.
-                </li>
-                <li>
-                  <i>Project Manager : </i>identification of potential risk and
-                  dependencies
-                </li>
-                <li>
-                  <i>QAT :</i>Detailed test cases and acceptance criteria to
-                  design effective test strategies
-                </li>
-                <li>
-                  <i>End Users :</i> easy to understand description of how the
-                  system will function and interact with them.
-                </li>
-              </ol>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div id="question3">
-            <div class="question">
-              <h2>
-                Question 3: Explain how the uses of software engineering
-                principles help to develop software products cost-efectively and
-                timely
-              </h2>
-            </div>
-            <div class="solution">
-              <p>
-                Software engineering’s primary benefit is a structured approach
-                of s/w development by adhering to well-defined processes and
-                methodologies. Software engineering ensures that projects are
-                completed on time within budget and to the required quality
-                standards.
-              </p>
-              <p>
-                The uses of SE principles helps to develop sw products cost
-                effectively and on time as explained below:
-              </p>
-              <ol>
-                <li>
-                  <i>Cost effectiveness :</i>Structured software engineering
-                  practices help manage project cost effectively by ensuring
-                  efficient Resource Planning and utilisation. by using well
-                  defined process and methodologies, software engineering
-                  reduces the risk of budget overruns and delays. cost effective
-                  project management is crucial for both small and large scale
-                  projects, enabling organisation to achieve their goals without
-                  financial strain
-                </li>
-                <li>
-                  <i>Timely Delivery : </i>Software engineering methodologies
-                  ensure the timely delivery of software projects. These
-                  Frameworks promote iterative development, continuous feedback
-                  and regular updates. It ensures that the progress is going
-                  according to schedule and also maintains clients'
-                  satisfaction.
-                </li>
-              </ol>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div id="question4">
-            <div class="question">
-              <h2>
-                Question 4: why do you feel that characteristics of of
-                requirements play a very significant role in the selection of a
-                life cycle model?
-              </h2>
-            </div>
-            <div class="solution">
-              <p>This is because of following reasons :-</p>
-              <p>Types of requirements :-</p>
-              <ol>
-                <li>
-                  <i>
-                    Functional vs Non - functional :- Different life cycle
-                    models are suited for different types of requirements such
-                    as functional or Non - functional requirements
-                  </i>
-                </li>
-                <li>
-                  <i> complexity :- </i> Requirements with high complexity may
-                  require more iterative or agile approach
-                </li>
-              </ol>
-              <p>Stability of Requirements :-</p>
-              <ol>
-                <li>
-                  <i>stable vs changing : </i> life cycle models like waterfall
-                  are suitable for stable requirements While iterative models
-                  are better suited for changing of requirements
-                </li>
-                <li>
-                  <i> Rate of change : </i>Requirements that change rapidly may
-                  require more flexible or adaptive life cycle models
-                </li>
-              </ol>
-              <p>prioritization of requirement :</p>
-              <ol>
-                <li>
-                  <i> Must haves vs Nice-to-Haves :</i>Life cycle model can be
-                  chosen based on prioritization of requirements with official
-                  requirements addressed first.
-                </li>
-              </ol>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-  </body>
 </html>

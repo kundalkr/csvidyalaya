@@ -182,3 +182,9 @@
       background-color: #e0f0ff;
       box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
     }
+#right-content .icon {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+  margin-left: 5px;
+}

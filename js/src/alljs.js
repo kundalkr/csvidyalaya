@@ -26,7 +26,7 @@ function last_modified() {
 function css_files() {
   const cssFiles = [
     "/css/headings-footer.min.css",
-    "/css/main_content.min.css",
+    "/css/main-content.min.css",
     "/css/universal-css.min.css",
   ];
   let heads = document.querySelector("head");
@@ -34,7 +34,8 @@ function css_files() {
     let cssf = document.createElement("link");
     cssf.setAttribute("rel", "stylesheet");
     cssf.setAttribute("href", `${file}`);
-    heads.appendChild(cssf);  });
+    heads.appendChild(cssf);
+  });
 }
 //  all css adding end
 function founder_schemas() {

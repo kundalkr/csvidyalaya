@@ -30,7 +30,7 @@ function jsTask(src, dest) {
 function watchTask() {
   const cssFiles = [
     "css/headings-footer.css",
-    "css/main_content.css",
+    "css/main-content.css",
     "css/universal-css.css",
   ];
 
