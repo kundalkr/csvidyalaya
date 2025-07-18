@@ -123,54 +123,16 @@ const sidebar_links = {
 };
 sdbar_Links(sidebar_links);
 
-// const data = {
-//   users: [
-//     {
-//       name: "scheduling algorithms",
-//       link: "/os/scheduling_algorithms/Scheduling_Alorithms_topic.html",
-//     },
-//     {
-//       name: "Dsa",
-//       link: "/DSA/dsa-topic.html",
-//     },
-//     {
-//       name: "DBMS",
-//       link: "/DBMS/dbms_topic.html",
-//     },
-//     {
-//       name: "Boolean algebra",
-//       link: "/Digital_Fundamentals/Boolean_Algebra/booleanalgebra1.html",
-//     },
-//     {
-//       name: "relational algebra",
-//       link: "/DBMS/DBMS_topics/relational_algebra_relational_calculus.html",
-//     },
-//     {
-//       name: "Stack",
-//       link: "/DSA/stack1.html",
-//     },
-//     {
-//       name: "Digital Fundamentals",
-//       link: "/Digital_Fundamentals/Dgital_funda_topic.html",
-//     },
-//     {
-//       name: "Buddy system",
-//       link: "https://csvidyalaya.com/os/memory_management/Buddy_system.html",
-//     },
-//   ],
-// };
-
-
 const breadcrumb_Links = {
   users: [
     {
     link: "/index.html",name:"CS vidyalaya"
     },
     {
-      link: "/os/operating_System_Topics.html",name:"OS"
+      link: "/Operating-system/operating-System-Topics.html",name:"OS"
     },
     {
-      link: "/os/scheduling_algorithms/Scheduling_Alorithms_topic.html",name:"Scheduling Algorithms"
+      link: "/Operating-system/scheduling-algorithms/Scheduling-Alorithms-topic.html",name:"Scheduling Algorithms"
     }
   ]
 }
