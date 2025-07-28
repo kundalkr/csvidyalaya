@@ -3,7 +3,7 @@ form.addEventListener("submit", async function (e) {
     e.preventDefault();
     const formData = new FormData(form);
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycbx5CpdUwmym8Mpx_5nk4rvnR2czfIEyA6QWbPKalUcYpInvR8JNhHJp0TDICA7fID2r/exec";
+        "https://script.google.com/macros/s/AKfycbwD4GSttrXPew7g7S5LHzZtl62-XlUU5w2zNLV6vN_g7Iv5QdCTwhQS8gJTiww0WE43/exec";
     try {
         const res = await fetch(scriptURL, {
             method: "POST",
