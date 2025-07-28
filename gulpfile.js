@@ -14,7 +14,6 @@ function cssTask(src, dest) {
     .pipe(rename({ suffix: ".min" }))
     .pipe(gulp.dest(`${dest}`));
 }
-
 // JS Task
 function jsTask(src, dest) {
   return function () {
@@ -25,20 +24,18 @@ function jsTask(src, dest) {
       .pipe(gulp.dest(`${dest}`));
   };
 }
-
 // Watch Task
 function watchTask() {
   const cssFiles = [
     "css/headings-footer.css",
     "css/main-content.css",
     "css/universal-css.css",
+    "TOOLS/Assignment-tools/css/main.css"
   ];
-
   cssFiles.forEach((file) => {
     const dest = path.dirname(file);
     gulp.watch(`${file}`, () => cssTask(`${file}`, dest));
   });
-
   const jsFiles = [
     "js/src/alljs.js",
     "js/src/cards.js",
@@ -54,15 +51,15 @@ function watchTask() {
     "DBMS/js/commonthings.js",
     "commonthings.js",
     "Operating-system/Deadlocks/commonthings.js",
-    "Operating-system/memory-management/commonthings.js"
+    "Operating-system/memory-management/commonthings.js",
+    "Digital_Fundamentals/Boolean_Algebra/commonthing.js",
+    "TOOLS/Assignment-tools/js/doc-request.js"
   ];
-  // let dest = `js/src/`;
-
+// let dest = `js/src/`;
   jsFiles.forEach((file) => {
     const dest = path.dirname(file);
     gulp.watch(`${file}`, jsTask(`${file}`, dest));
   });
 }
-
 // Default task
 exports.default = watchTask;

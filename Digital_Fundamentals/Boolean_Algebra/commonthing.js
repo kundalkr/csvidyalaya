@@ -28,15 +28,15 @@ bar.innerHTML = `<div
        padding: 10px 10px;color:"black";
       "
     >
-      <a href="/os/scheduling_algorithms/Scheduling_Alorithms_topic.html">scheduling algorithms</a>
-      <a href="/Digital Fundamentals/Dgital_funda_topic.html">Digital fundamental question</a>
-      <a href="/Software_Engineering/software_engineering_topic.html">software engineering</a>
+     <a href="/Operating-system/scheduling-algorithms/Scheduling-Alorithms-topic.html">scheduling algorithms</a>
+      <a href="/Digital_Fundamentals/Dgital_funda_topic.html">Digital fundamental question</a>
+      <a href="/Software-Engineering/software-engineering-topic.html">software engineering</a>
       <a href="/WSN/wireless_sensor_network.html">WSN</a>
           <a href="/DBMS/dbms_topic.html">DBMS</a>
       <a href="/DSA/dsa-topic.html">Data structure</a>
-       <a href="/os/Deadlocks/deadlock_topics.html">bankers algorithms</a>
-      <a href="/os/memory_management/Buddy_system.html">Memory Management</a>
-    </div>     <br>`;
+       <a href="/Operating-system/Deadlocks/deadlock-topics.html">bankers algorithms</a>
+      <a href="/Operating-system/memory-management/memory-management-topics.html">Memory Management</a>
+    </div><br>`;
 
 let body = document.querySelector("body");
 let h1 = document.querySelector("body>div");
@@ -48,17 +48,14 @@ repetetive.style.padding = "0px 12px";
 
 repetetive.innerHTML = `
     <h2>Methods to Solve Boolean Algebra</h2>
-    
     <h3>1. Truth Tables</h3>
-    <p>
-        A truth table shows all possible input combinations and their corresponding output for a Boolean expression.
+    <p>A truth table shows all possible input combinations and their corresponding output for a Boolean expression.
         <ol>
             <li>List all possible values of inputs.</li>
             <li>Calculate the output for each combination.</li>
             <li>The final column represents the result of the Boolean expression.</li>
         </ol>
     </p>
-
     <h3>2. Boolean Laws</h3>
     <p>
         Use the Boolean algebra laws to simplify the expressions:
@@ -70,7 +67,6 @@ repetetive.innerHTML = `
             <li><b>Negation Law</b>: A + A' = 1, AA' = 0</li>
         </ul>
     </p>
-
     <h3>3. Karnaugh Maps (K-Maps)</h3>
     <p>
         A K-map provides a visual method to simplify Boolean expressions:
@@ -81,7 +77,6 @@ repetetive.innerHTML = `
             <li>Write the simplified expression based on the groups.</li>
         </ol>
     </p>
-
     <h3>4. Algebraic Manipulation</h3>
     <p>
         You can simplify Boolean expressions by applying algebraic manipulation:
@@ -91,7 +86,6 @@ repetetive.innerHTML = `
             <li>Continue simplifying until no further reductions are possible.</li>
         </ol>
     </p>
-
     <h3>5. Quine-McCluskey Method</h3>
     <p>
         A tabular method used for minimization of Boolean functions:

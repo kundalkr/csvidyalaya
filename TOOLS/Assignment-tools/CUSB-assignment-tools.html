@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="module" src="/js/src/alljs.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSB Assignment Tools</title>
+    <style>
+        img {
+            width: 300px;
+            height: auto;
+            @media (width<=800px) {
+                width: 90%;
+                height: auto;
+            }
+        }
+
+        #all-template {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            @media (width<=800px) {
+                flex-direction: column;
+            }
+
+            img {
+                border: 2px solid black;
+                margin-top: 5px;
+            }
+        }
+
+        #main-content {}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main-content">
+            <main>
+                <nav id="breadcrumbs" style="--bs-breadcrumb-divider: '&gt;';">
+                    <ol class="breadcrumb mt-2">
+                    </ol>
+                </nav>
+                <div class="featured-image">
+                    <img src="" alt="">
+                </div>
+                <div id="title-date">
+                    <h1>CUSB Assignment Template </h1>
+                </div>
+                <article>
+                    <section>
+                        <div class="heading-wrapper">
+                            <a href="#list-of-all-assignment-template">
+                                <svg class="icon border border-2" aria-hidden="true">
+                                    <use href="/assets/icon/sprite.svg#heades"></use>
+                                </svg></a>
+                            <h2 id="list-of-all-assignment-template">list of all assignment template</h2>
+                        </div>
+                        <div class="border border-2 mb-2" id="all-template">
+                            <div class="ms-2"><a href="border-flower.html"><img src="/assets/Template/border-flower.jpg"
+                                        alt="border flower template"></a></div>
+                            <div class="ms-2"><a href="colourfull-1.html"><img src="/assets/Template/colorfull-1.jpg"
+                                        alt="colorfull-1"></a></div>
+                            <div class="ms-2"><a href="corner-flower.html"><img src="/assets/Template/corner-flower.jpg"
+                                        alt="corner flower template"></a></div>
+                            <div class="ms-2"><a href="first-template.html"><img
+                                        src="/assets/Template/first-template.png" alt="first template"></a></div>
+                            <div class="ms-2"><a href="flower-background.html"><img
+                                        src="/assets/Template/flower-background.jpg"
+                                        alt="flower background template"></a></div>
+                            <div class="ms-2"><a href="old-style-1.html"><img src="/assets/Template/old-style-1.jpg"
+                                        alt="old style type 1 template"></a></div>
+                            <div class="ms-2"><a href="old-style-2.html"><img src="/assets/Template/old-style-2.jpg"
+                                        alt="old style type 2 template"></a></div>
+                            <div class="ms-2"><a href="old-style-3.html"><img src="/assets/Template/old-style-3.jpg"
+                                        alt="old style type 3 template"></a></div>
+                            <div class="ms-2"><a href="old-style-4.html"><img src="/assets/Template/old-style-4.jpg"
+                                        alt="old style type 4 template"></a></div>
+                            <div class="ms-2"><a href="old-style-5.html"><img src="/assets/Template/old-style-5.jpg"
+                                        alt="old style type 5 template"></a></div>
+                            <div class="ms-2"><a href="old-style-6.html"><img src="/assets/Template/old-style-6.jpg"
+                                        alt="old style type 5 template"></a></div>
+                             <div class="ms-2"><a href="colourfull-1.html"><img src="/assets/Template/side-flower-1.jpg"
+                                        alt="old style type 5 template"></a></div>
+                        </div>
+                    </section>
+                </article>
+            </main>
+        </div>
+
+    </div>
+</body>
+
+</html>

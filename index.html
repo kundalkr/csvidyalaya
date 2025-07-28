@@ -28,25 +28,25 @@
   <meta name="twitter:description" content="Explore CS topics like OS, DBMS, DSA, WSN and more at CS Vidyalaya.">
   <meta name="twitter:image" content="https://www.csvidyalaya.com/assets/logo/main-cover.jpg"> <!-- Add image URL -->
   <script id="structured-data" type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "CS Vidyalaya",
-  "url": "https://www.csvidyalaya.com",
-  "description": "CS Vidyalaya is an educational platform covering Operating Systems, Data Structures, DBMS, Software Engineering, Digital Fundamentals, Wireless Sensor Networks, and other tech topics.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "CS Vidyalaya",
-    "url": "https://www.csvidyalaya.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.csvidyalaya.com/assets/logo/main_Logo.jpg"
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CS Vidyalaya",
+      "url": "https://www.csvidyalaya.com",
+      "description": "CS Vidyalaya is an educational platform covering Operating Systems, Data Structures, DBMS, Software Engineering, Digital Fundamentals, Wireless Sensor Networks, and other tech topics.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "CS Vidyalaya",
+        "url": "https://www.csvidyalaya.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.csvidyalaya.com/assets/logo/main_Logo.jpg"
+        }
+      },
+      "datePublished": "2024-10-01",
+      "dateModified": "2025-06-23"
     }
-  },
-  "datePublished": "2024-10-01",
-  "dateModified": "2025-06-23"
-}
-</script>
+  </script>
 
   <style>
     #headinger {
@@ -72,39 +72,32 @@
       align-content: space-between;
       margin: 10px 10px;
     }
-
     @media (width<=750px) {
       .card {
         align-content: center;
         width: 18rem;
         margin-bottom: 10px;
       }
-
       .card-body {
         padding: 4px;
       }
-
       h5 {
         font-weight: bold;
         font-size: x-small;
       }
-
       .card-text {
         font-size: 10px;
         margin-bottom: 1px;
       }
-
       .all-cards {
         align-content: center;
         flex-direction: column;
       }
-
       a.btn {
         padding: 4px;
         font-size: x-small;
       }
     }
-
     #al_card {
       display: flex;
       align-items: center;
@@ -214,6 +207,15 @@
           <a href="/previous_year_question(PYQ)/PYQ.html" class="btn btn-success">practice here -></a>
         </div>
       </div>
+      <div class="card bg-warning-subtle mt-3" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">CUSB university assignment tools</h5>
+          <p class="card-text">
+            you create assignment first page 
+          </p>
+          <a href="/TOOLS/Assignment-tools/CUSB-assignment-tools.html" class="btn btn-success">click here -></a>
+        </div>
+      </div>
     </div>
 
     <div id="al_card">
@@ -247,9 +249,9 @@
       );
       const isMobile = window.innerWidth < 700;
       images.forEach((img) => {
-        img.src = isMobile
-          ? img.getAttribute("data-src-mobile")
-          : img.getAttribute("data-src-desktop");
+        img.src = isMobile ?
+          img.getAttribute("data-src-mobile") :
+          img.getAttribute("data-src-desktop");
         img.removeAttribute("data-src-mobile");
         img.removeAttribute("data-src-desktop");
       });
