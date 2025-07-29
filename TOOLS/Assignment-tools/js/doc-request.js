@@ -2,19 +2,26 @@ const form = document.getElementById("myForm");
 
 let div = document.createElement("div");
 let buttone = document.createElement("a");
-buttone.textContent = "Click Me to get your file";
-buttone.setAttribute("class", "btn btn-secondary");
+buttone.textContent = "Click here for your file";
+buttone.setAttribute("class", "btn btn-success");
 buttone.style.display = "none";
-// div.appendChild(buttone);
 function hide_form() {
     div.setAttribute("id", "timerDisplay");
+    div.setAttribute("class", "border border-2 p-4 mb-5");
     form.insertAdjacentElement("afterend", div);
     form.style.display = "none";
     let timeLeft = 20;
-    div.textContent = `${timeLeft}`;
+    let div1 = document.createElement("div");
+    div1.setAttribute("id", "firstdiv");
+    div1.innerHTML = ` <h2 class="text-center">generating your file , please wait  </h2> <br>`
+    div.appendChild(div1);
+    let div2 = document.createElement("div");
+    div2.setAttribute("id", "seconddiv");
+    div2.setAttribute("class", "text-center");
+    div.appendChild(div2);
     const interval = setInterval(() => {
         timeLeft--;
-        div.textContent = `${timeLeft}`;
+        div2.textContent = `${timeLeft}`;
         if (timeLeft <= 0) {
             clearInterval(interval);
             buttone.style.display = "block";
@@ -22,10 +29,11 @@ function hide_form() {
             div.appendChild(buttone);
         }
     }, 1000);
+
 }
 function button(params) {
     buttone.setAttribute("href", `https://drive.google.com/file/d/${params}/view`);
-    buttone.setAttribute("target","_blank");
+    buttone.setAttribute("target", "_blank");
 }
 form.addEventListener("submit", async function (e) {
     e.preventDefault();
@@ -33,7 +41,7 @@ form.addEventListener("submit", async function (e) {
     let text;
     const formData = new FormData(form);
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyNXCtUmaY3hzl4iCnzv91O01SLmiDlPjRXlv6ukNRyjdbwIKGsYVKUmgQCiCmoB2n0gQ/exec";
+        "https://script.google.com/macros/s/AKfycbxazIW6uqRphqyh_Dsc_NygGZ4xpROsrzGKXaUyRUISXq4rn_hhw922qrL3Ug2o1dfBZA/exec";
     try {
         const res = await fetch(scriptURL, {
             method: "POST",
