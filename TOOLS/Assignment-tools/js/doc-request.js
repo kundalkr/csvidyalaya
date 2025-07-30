@@ -1,5 +1,4 @@
 const form = document.getElementById("myForm");
-
 let div = document.createElement("div");
 let buttone = document.createElement("a");
 buttone.textContent = "Click here for your file";
@@ -10,7 +9,7 @@ function hide_form() {
     div.setAttribute("class", "border border-2 p-4 mb-5");
     form.insertAdjacentElement("afterend", div);
     form.style.display = "none";
-    let timeLeft = 20;
+    let timeLeft = 22;
     let div1 = document.createElement("div");
     div1.setAttribute("id", "firstdiv");
     div1.innerHTML = ` <h2 class="text-center">generating your file , please wait  </h2> <br>`
@@ -29,7 +28,6 @@ function hide_form() {
             div.appendChild(buttone);
         }
     }, 1000);
-
 }
 function button(params) {
     buttone.setAttribute("href", `https://drive.google.com/file/d/${params}/view`);
@@ -41,7 +39,7 @@ form.addEventListener("submit", async function (e) {
     let text;
     const formData = new FormData(form);
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxazIW6uqRphqyh_Dsc_NygGZ4xpROsrzGKXaUyRUISXq4rn_hhw922qrL3Ug2o1dfBZA/exec";
+        "https://script.google.com/macros/s/AKfycbzRGeuMLpn1GiZXmzBkr4LxPSDVoUvK714PGOuMUYuyJzE56W_TOThhFbsi20oXaoQn1w/exec";
     try {
         const res = await fetch(scriptURL, {
             method: "POST",
@@ -52,6 +50,5 @@ form.addEventListener("submit", async function (e) {
     } catch (err) {
         alert("Fetch error: " + err.message);
     }
-
 });
 

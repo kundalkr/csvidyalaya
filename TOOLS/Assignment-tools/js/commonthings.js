@@ -60,7 +60,7 @@ const pop_link = {
     },
   ],
 };
-popup_links(pop_link);
+// popup_links(pop_link);
 add_css(
   "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black; }}"
 );
