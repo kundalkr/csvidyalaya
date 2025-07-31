@@ -1,7 +1,7 @@
 {
     "books": [
         {
-            "file_name": "border-flower.html , colourfull-1.html , corner-flower.html first-template.html flower-background.html old-style-1.html old-style-2.html old-style-3.html old-style-4.html old-style-5.html old-style-6.html side-flower-1.html side-flower-2.html, flower-in-bottom-1.html, different-side-flower-1.html, different-side-flower-2.html , left-side-flower-1.html",
+            "file_name": "border-flower.html , colourfull-1.html , corner-flower.html first-template.html flower-background.html old-style-1.html old-style-2.html old-style-3.html old-style-4.html old-style-5.html old-style-6.html side-flower-1.html side-flower-2.html, flower-in-bottom-1.html, different-side-flower-1.html, different-side-flower-2.html , left-side-flower-1.html, different-side-flower-5.html",
             "book": [
                 {
                     "book_image": "/assets/Template/border-flower.jpg",
@@ -102,6 +102,11 @@
                     "book_image": "/assets/Template/left-side-flower-1.jpg",
                     "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
                     "book_link": "/TOOLS/Assignment-tools/left-side-flower-1.html"
+                },
+                {
+                    "book_image": "/assets/Template/different-side-flower-5.jpg",
+                    "image_alt": "OPERATING SYSTEM CONCEPT by Abraham Silberschatz",
+                    "book_link": "/TOOLS/Assignment-tools/different-side-flower-5.html"
                 }
             ]
         }
