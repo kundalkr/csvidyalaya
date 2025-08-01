@@ -17,8 +17,10 @@ function last_modified() {
   lastupdate.innerHTML = `<div><span>Last updated : </span><span>${lastup[1] + " " + lastup[2] + ", " + lastup[3]
     }</span></div><hr><div class="d-flex justify-content-between align-items-center border border-2"><div>
 <p style="margin:0;" class="m-0 fw-bold"> Like & Follow </p> </div><div>
-<a style="font-size: xx-large;"href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> &nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i class="bi bi-instagram"></i></a>&nbsp;
-<a style="font-size: xx-large;color: black;" href="https://www.x.com/csvidya1aya/"><i class="bi bi-twitter-x"></i></a>
+<a style="font-size: xx-large;"href="https://www.facebook.com/csvidyalaya1/"><i class="bi bi-facebook"></i></a> 
+&nbsp;<a style="font-size: xx-large;color: brown;" href="https://www.instagram.com/csvidyalaya/"><i class="bi bi-instagram"></i></a>&nbsp;
+<a style="font-size: xx-large;color: black;" href="https://www.x.com/csvidya1aya/"><i class="bi bi-twitter-x"></i></a>&nbsp;
+<a href="https://t.me/+0y7RpzVA1nhlYzk9" style="font-size: xx-large;color: blue; class="btn btn-success " target="_blank"><i class="bi bi-telegram"></i></a>
 </div></div>`;
   hh1.insertAdjacentElement("afterend", lastupdate);
 }

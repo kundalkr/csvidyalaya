@@ -15,7 +15,7 @@ export function add_body(elmnt) {
 }
 export function popup_links(linksarr) {
   let modal = document.createElement("div");
-  let inrHTML = ` <div class="modal fade" id="myModal" tabindex="-1" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  let inrHTML = `<div class="modal fade" id="myModal" tabindex="-1" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -65,11 +65,11 @@ export function book_name_recommender(object) {
   }
   if (window.location.pathname.includes("scheduling-algorithms") == true) {
     if (window.innerWidth <= 1000) {
-      // h2
+
       let article = document.querySelector("#three-section #book-recommendation > div.w-100");
       article.innerHTML = `${allbookss}`;
     } else {
-      // p
+
 
       let article = document.querySelector("#right-content > #book-recommendations > div");
       article.innerHTML = `${allbookss}`;

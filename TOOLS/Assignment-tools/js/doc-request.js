@@ -12,7 +12,9 @@ function hide_form() {
     let timeLeft = 22;
     let div1 = document.createElement("div");
     div1.setAttribute("id", "firstdiv");
-    div1.innerHTML = ` <h2 class="text-center">generating your file , please wait  </h2> <br>`
+    div1.innerHTML = `<h2 class="text-center">generating your file , please wait  </h2> <br>
+    <div class="text-center"> <h2 >join our telegram Group to suggest any Idea </h2> <a href="https://t.me/+0y7RpzVA1nhlYzk9" class="btn btn-success " target="_blank"><i class="bi bi-telegram">Telegram</i></a></div>
+    `
     div.appendChild(div1);
     let div2 = document.createElement("div");
     div2.setAttribute("id", "seconddiv");
@@ -39,7 +41,7 @@ form.addEventListener("submit", async function (e) {
     let text;
     const formData = new FormData(form);
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycby21LV5el6eBKytN9Z_5S8iX3OCiEdvQwB2SeTHWwuG6FcDyfdGimrbtxiBXGJSzJLMSg/exec";
+        "https://script.google.com/macros/s/AKfycbwlsLY3faecbnJLSpgJoEURoopQaB1IylXTGGtUo6GomKo2o2eL67MJgneINvEmV2PcEA/exec";
     try {
         const res = await fetch(scriptURL, {
             method: "POST",
