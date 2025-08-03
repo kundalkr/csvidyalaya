@@ -41,7 +41,7 @@ form.addEventListener("submit", async function (e) {
     let text;
     const formData = new FormData(form);
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwlsLY3faecbnJLSpgJoEURoopQaB1IylXTGGtUo6GomKo2o2eL67MJgneINvEmV2PcEA/exec";
+        "https://script.google.com/macros/s/AKfycbx9dc1QV-k7wFTH5kkJOYiHmjCpBLfoxS274xpIK8BxEMCmEJHvLtpkaA9NNs93Q3h7MA/exec";
     try {
         const res = await fetch(scriptURL, {
             method: "POST",
@@ -53,4 +53,7 @@ form.addEventListener("submit", async function (e) {
         alert("Fetch error: " + err.message);
     }
 });
-
+document.getElementsByTagName("input").addEventListener("focus", function () {
+    this.style.border = '1px solid red'
+});
+  
