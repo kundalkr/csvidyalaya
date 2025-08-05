@@ -4,6 +4,7 @@ let buttone = document.createElement("a");
 buttone.textContent = "Click here for your file";
 buttone.setAttribute("class", "btn btn-success");
 buttone.style.display = "none";
+
 function hide_form() {
     div.setAttribute("id", "timerDisplay");
     div.setAttribute("class", "border border-2 p-4 mb-5");
@@ -41,7 +42,7 @@ form.addEventListener("submit", async function (e) {
     let text;
     const formData = new FormData(form);
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycby6RPEJsC-5Nt_SRYkRndjSSZ4OGRvSPjhC-QF_vrcGCrHYnSKBeZnd7Do_xN6v2AyM-w/exec";
+        "https://script.google.com/macros/s/AKfycbwPs41XrZMYVDUKBYgOyPrtrKeoEfZA74oLDJll02vp4T2qXaFPYR6OFUuakqc2dQPR1Q/exec";
     try {
         const res = await fetch(scriptURL, {
             method: "POST",
@@ -53,7 +54,7 @@ form.addEventListener("submit", async function (e) {
         alert("Fetch error: " + err.message);
     }
 });
+
 document.getElementsByTagName("input").addEventListener("focus", function () {
     this.style.border = '1px solid red'
 });
-  

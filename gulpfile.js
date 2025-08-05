@@ -54,7 +54,8 @@ function watchTask() {
     "Operating-system/memory-management/commonthings.js",
     "Digital_Fundamentals/Boolean_Algebra/commonthing.js",
     "TOOLS/Assignment-tools/js/doc-request.js",
-    "TOOLS/Assignment-tools/js/commonthings.js"
+    "TOOLS/Assignment-tools/js/commonthings.js",
+    "TOOLS/Assignment-tools/js/form-functionality.js"
   ];
 // let dest = `js/src/`;
   jsFiles.forEach((file) => {
