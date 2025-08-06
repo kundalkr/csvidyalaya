@@ -5,7 +5,8 @@ function label_changer(elm) {
     let inp = document.createElement("input");
     inp.setAttribute("type", "text");
     inp.setAttribute("name", `${gtattr}`);
-    inp.setAttribute("class", "form-control");
+    inp.setAttribute("class", "form-control mb-2");
     inp.setAttribute("value", `${prv_text}`);
     elm.insertAdjacentElement("beforebegin", inp);
+    elm.style.display = "none";
 };
