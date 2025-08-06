@@ -15,7 +15,7 @@ function hide_form() {
     div1.setAttribute("id", "firstdiv");
     div1.innerHTML = `<h2 class="text-center">generating your file , please wait  </h2> <br>
     <div class="text-center"> <h2 >join our telegram Group to suggest any Idea </h2> <a href="https://t.me/+0y7RpzVA1nhlYzk9" class="btn btn-success " target="_blank"><i class="bi bi-telegram">Telegram</i></a></div>
-    `
+    `;
     div.appendChild(div1);
     let div2 = document.createElement("div");
     div2.setAttribute("id", "seconddiv");
@@ -31,7 +31,7 @@ function hide_form() {
             div.appendChild(buttone);
         }
     }, 1000);
-}
+};
 function button(params) {
     buttone.setAttribute("href", `https://drive.google.com/file/d/${params}/view`);
     buttone.setAttribute("target", "_blank");
@@ -42,7 +42,7 @@ form.addEventListener("submit", async function (e) {
     let text;
     const formData = new FormData(form);
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxQoBxck2bbxsokewkdi36GSlYPqmh5DHGDKpMB5MwXQ6_DLgFeysqzgUAvwxWHZaSoMg/exec";
+        "https://script.google.com/macros/s/AKfycbwLMfX9ddBQ8FMhRHuBcDCbC9VxZ-XIEMgVs5J7AZz3XVzi-Rfc-QSpj8j1plRs5cxWRg/exec";
     try {
         const res = await fetch(scriptURL, {
             method: "POST",
@@ -56,5 +56,5 @@ form.addEventListener("submit", async function (e) {
 });
 
 document.getElementsByTagName("input").addEventListener("focus", function () {
-    this.style.border = '1px solid red'
+    this.style.border = '1px solid red';
 });
