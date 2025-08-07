@@ -42,7 +42,7 @@ form.addEventListener("submit", async function (e) {
     let text;
     const formData = new FormData(form);
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzj2Z5GlbOnRR2tBSHjMH5CY2JjwuZ8Q1eR15weGFKtH0mlnBueTfAjQetZI2Ssw1hzuA/exec";
+        "https://script.google.com/macros/s/AKfycbyPyRFaNrscv0Lbh3AiAWDJukWY_aZhZnqbbCs0WIgNIfEFmtcH6K3oI_XCOTHEYhaw2A/exec";
     try {
         const res = await fetch(scriptURL, {
             method: "POST",
@@ -55,6 +55,6 @@ form.addEventListener("submit", async function (e) {
     }
 });
 
-document.getElementsByTagName("input").addEventListener("focus", function () {
-    this.style.border = '1px solid red';
-});
+// document.getElementsByTagName("input").addEventListener("focus", function () {
+//     this.style.border = '1px solid red';
+// });
