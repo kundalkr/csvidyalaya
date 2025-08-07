@@ -42,7 +42,7 @@ form.addEventListener("submit", async function (e) {
     let text;
     const formData = new FormData(form);
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyPyRFaNrscv0Lbh3AiAWDJukWY_aZhZnqbbCs0WIgNIfEFmtcH6K3oI_XCOTHEYhaw2A/exec";
+        "https://script.google.com/macros/s/AKfycbyUi4f0UiJpdFlCoV6eooZqP-x55YzpPwzGB_8YREn4k_SsrUfeR6Y_Cn-XH88Cltg9lQ/exec";
     try {
         const res = await fetch(scriptURL, {
             method: "POST",
