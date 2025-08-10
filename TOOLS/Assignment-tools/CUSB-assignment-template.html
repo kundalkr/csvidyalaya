@@ -33,8 +33,29 @@
                 margin-top: 5px;
             }
         }
+
+        .steps {
+            counter-reset: step;
+            /* Initialize counter */
+            list-style: none;
+            /* Hide default 1., 2., 3. */
+            padding-left: 0;
+        }
+
+        .steps li {
+            counter-increment: step;
+            /* Increase step count */
+            margin: 8px 0;
+        }
+
+        .steps li::before {
+            content: "Step "counter(step) ". ";
+            font-weight: bold;
+            color: #007bff;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div id="main-content">
@@ -169,9 +190,16 @@
                                     <img loading="lazy" src="/assets/Template/colorfull-7.jpg" alt="colorfull-1">
                                 </a>
                             </div>
-                              <div class="ms-2">
+                            <div class="ms-2">
                                 <a href="left-bottom-flower-1.html">
-                                    <img loading="lazy" src="/assets/Template/left-bottom-flower-1.jpg" alt="colorfull-1">
+                                    <img loading="lazy" src="/assets/Template/left-bottom-flower-1.jpg"
+                                        alt="colorfull-1">
+                                </a>
+                            </div>
+                                <div class="ms-2">
+                                <a href="colourfull-8.html">
+                                    <img loading="lazy" src="/assets/Template/colorfull-8.jpg"
+                                        alt="colorfull-1">
                                 </a>
                             </div>
                         </div>
@@ -186,10 +214,15 @@
                             <h2 id="how-to-use-this-tool">how to use this template tool</h2>
                         </div>
                         <div>
-                            <ol>
-                                <li>step 1: select any template from here <a
+                            <ol class="steps">
+                                <li> select any template from here <a
                                         href="/TOOLS/Assignment-tools/CUSB-assignment-template.html">CUSB Assignment
-                                        Template</a></li>
+                                        Template</a> <br>
+                                    <p>for example : you select this template</p>
+                                    <a href="colourfull-1.html">
+                                        <img src="/assets/Template/colorfull-1.jpg" alt="example template">
+                                    </a>
+                                </li>
                                 <li></li>
                                 <li></li>
                             </ol>
