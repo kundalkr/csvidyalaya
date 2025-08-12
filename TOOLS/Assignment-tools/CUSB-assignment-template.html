@@ -16,8 +16,11 @@
                 height: auto;
             }
         }
-
-        #all-template {
+.card:hover{
+    animation: none !important; 
+}
+        #asthetic-template,
+        #colourfull-templates {
             width: 100%;
             display: flex;
             justify-content: center;
@@ -70,93 +73,197 @@
                 <div id="title-date">
                     <h1>CUSB Assignment Template </h1>
                 </div>
+                <!-- table of contents  -->
+                <nav aria-label="Table of Contents" class="mt-3 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h2>Table of Contents</h2>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#Asthetic-Template">Asthetic Template</a></li>
+                            <li class="list-group-item"><a href="#Colourfull-template">Colourfull-template</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- table of contents  -->
                 <article>
-                    <section>
+                    <section class="mb-3">
                         <div class="heading-wrapper">
-                            <a href="#list-of-all-assignment-template">
+                            <a href="#Asthetic-Template">
                                 <svg class="icon border border-2" aria-hidden="true">
                                     <use href="/assets/icon/sprite.svg#heades"></use>
-                                </svg></a>
-                            <h2 id="list-of-all-assignment-template">list of all assignment template</h2>
+                                </svg>
+                            </a>
+                            <h2 id="Asthetic-Template">Asthetic Template</h2>
                         </div>
-                        <div class="border border-2 mb-2" id="all-template">
-                            <div class="ms-2"><a href="border-flower.html"><img loading="lazy"
-                                        src="/assets/Template/border-flower.jpg" alt="border flower template"></a></div>
-                            <div class="ms-2"><a href="colourfull-1.html"><img loading="lazy"
-                                        src="/assets/Template/colorfull-1.jpg" alt="colorfull-1"></a></div>
-                            <div class="ms-2"><a href="corner-flower.html"><img loading="lazy"
-                                        src="/assets/Template/corner-flower.jpg" alt="corner flower template"></a></div>
-                            <div class="ms-2"><a href="first-template.html"><img loading="lazy"
-                                        src="/assets/Template/first-template.png" alt="first template"></a></div>
-                            <div class="ms-2"><a href="flower-background.html"><img loading="lazy"
-                                        src="/assets/Template/flower-background.jpg"
-                                        alt="flower background template"></a></div>
-                            <div class="ms-2"><a href="old-style-1.html"><img loading="lazy"
-                                        src="/assets/Template/old-style-1.jpg" alt="old style type 1 template"></a>
+                        <div id="asthetic-template">
+                            <div class="ms-2">
+                                <a href="border-flower.html">
+                                    <img loading="lazy" src="/assets/Template/border-flower.jpg"
+                                        alt="border flower template">
+                                </a>
                             </div>
-                            <div class="ms-2"><a href="old-style-2.html"><img loading="lazy"
-                                        src="/assets/Template/old-style-2.jpg" alt="old style type 2 template"></a>
+                            <div class="ms-2">
+                                <a href="corner-flower.html">
+                                    <img loading="lazy" src="/assets/Template/corner-flower.jpg"
+                                        alt="corner flower template">
+                                </a>
                             </div>
-                            <div class="ms-2"><a href="old-style-3.html"><img loading="lazy"
-                                        src="/assets/Template/old-style-3.jpg" alt="old style type 3 template"></a>
+                            <div class="ms-2">
+                                <a href="flower-background.html">
+                                    <img loading="lazy" src="/assets/Template/flower-background.jpg"
+                                        alt="flower background template">
+                                </a>
                             </div>
-                            <div class="ms-2"><a href="old-style-4.html"><img loading="lazy"
-                                        src="/assets/Template/old-style-4.jpg" alt="old style type 4 template"></a>
+                            <div class="ms-2">
+                                <a href="old-style-1.html">
+                                    <img loading="lazy" src="/assets/Template/old-style-1.jpg"
+                                        alt="old style type 1 template">
+                                </a>
                             </div>
-                            <div class="ms-2"><a href="old-style-5.html"><img loading="lazy"
-                                        src="/assets/Template/old-style-5.jpg" alt="old style type 5 template"></a>
+                            <div class="ms-2">
+                                <a href="old-style-2.html">
+                                    <img loading="lazy" src="/assets/Template/old-style-2.jpg"
+                                        alt="old style type 2 template">
+                                </a>
                             </div>
-                            <div class="ms-2"><a href="old-style-6.html"><img loading="lazy"
-                                        src="/assets/Template/old-style-6.jpg" alt="old style type 5 template"></a>
+                            <div class="ms-2">
+                                <a href="old-style-3.html">
+                                    <img loading="lazy" src="/assets/Template/old-style-3.jpg"
+                                        alt="old style type 3 template">
+                                </a>
                             </div>
-                            <div class="ms-2"><a href="side-flower-1.html"><img loading="lazy"
-                                        src="/assets/Template/side-flower-1.jpg" alt="old style type 5 template"></a>
+                            <div class="ms-2">
+                                <a href="old-style-4.html">
+                                    <img loading="lazy" src="/assets/Template/old-style-4.jpg"
+                                        alt="old style type 4 template">
+                                </a>
                             </div>
-                            <div class="ms-2"><a href="side-flower-2.html"><img loading="lazy"
-                                        src="/assets/Template/side-flower-2.jpg" alt="old style type 5 template"></a>
+                            <div class="ms-2">
+                                <a href="old-style-5.html">
+                                    <img loading="lazy" src="/assets/Template/old-style-5.jpg"
+                                        alt="old style type 5 template">
+                                </a>
                             </div>
-                            <div class="ms-2"><a href="flower-in-bottom-1.html"><img loading="lazy"
-                                        src="/assets/Template/flower-in-bottom-1.jpg"
-                                        alt="old style type 5 template"></a></div>
-                            <div class="ms-2"><a href="different-side-flower-1.html"><img loading="lazy"
-                                        src="/assets/Template/different-side-flower-1.jpg"
-                                        alt="old style type 5 template"></a></div>
-                            <div class="ms-2"><a href="different-side-flower-2.html"><img loading="lazy"
-                                        src="/assets/Template/different-side-flower-2.jpg"
-                                        alt="old style type 5 template"></a></div>
-                            <div class="ms-2"><a href="left-side-flower-1.html"><img loading="lazy"
-                                        src="/assets/Template/left-side-flower-1.jpg"
-                                        alt="old style type 5 template"></a></div>
-                            <div class="ms-2"><a href="different-side-flower-3.html"><img loading="lazy"
-                                        src="/assets/Template/different-side-flower-3.jpg"
-                                        alt="old style type 5 template"></a></div>
-                            <div class="ms-2"><a href="different-side-flower-4.html"><img loading="lazy"
-                                        src="/assets/Template/different-side-flower-4.jpg"
-                                        alt="old style type 5 template"></a></div>
-                            <div class="ms-2"><a href="different-side-flower-5.html"><img loading="lazy"
-                                        src="/assets/Template/different-side-flower-5.jpg"
-                                        alt="old style type 5 template"></a></div>
+                            <div class="ms-2">
+                                <a href="old-style-6.html">
+                                    <img loading="lazy" src="/assets/Template/old-style-6.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="different-side-flower-1.html">
+                                    <img loading="lazy" src="/assets/Template/different-side-flower-1.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="different-side-flower-2.html">
+                                    <img loading="lazy" src="/assets/Template/different-side-flower-2.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="different-side-flower-3.html">
+                                    <img loading="lazy" src="/assets/Template/different-side-flower-3.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="different-side-flower-4.html">
+                                    <img loading="lazy" src="/assets/Template/different-side-flower-4.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="different-side-flower-5.html">
+                                    <img loading="lazy" src="/assets/Template/different-side-flower-5.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
 
-                            <div class="ms-2"><a href="different-side-flower-6.html"><img loading="lazy"
-                                        src="/assets/Template/different-side-flower-6.jpg"
-                                        alt="old style type 5 template"></a></div>
-                            <div class="ms-2"><a href="right-bottom-flower-1.html"><img loading="lazy"
-                                        src="/assets/Template/right-bottom-flower-1.jpg"
-                                        alt="old style type 5 template"></a></div>
+                            <div class="ms-2">
+                                <a href="different-side-flower-6.html">
+                                    <img loading="lazy" src="/assets/Template/different-side-flower-6.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="different-side-flower-7.html">
+                                    <img loading="lazy" src="/assets/Template/different-side-flower-7.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
 
-                            <div class="ms-2"><a href="different-side-flower-7.html"><img loading="lazy"
-                                        src="/assets/Template/different-side-flower-7.jpg"
-                                        alt="old style type 5 template"></a></div>
+                            <div class="ms-2">
+                                <a href="different-side-flower-8.html">
+                                    <img loading="lazy" src="/assets/Template/different-side-flower-8.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
 
-                            <div class="ms-2"><a href="different-side-flower-8.html"><img loading="lazy"
-                                        src="/assets/Template/different-side-flower-8.jpg"
-                                        alt="old style type 5 template"></a></div>
-                            <div class="ms-2"><a href="corner-border-1.html"><img loading="lazy"
-                                        src="/assets/Template/corner-border-1.jpg" alt="old style type 5 template"></a>
+                            <div class="ms-2">
+                                <a href="side-flower-2.html">
+                                    <img loading="lazy" src="/assets/Template/side-flower-2.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="flower-in-bottom-1.html">
+                                    <img loading="lazy" src="/assets/Template/flower-in-bottom-1.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+
+                            <div class="ms-2">
+                                <a href="left-side-flower-1.html">
+                                    <img loading="lazy" src="/assets/Template/left-side-flower-1.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="corner-border-1.html">
+                                    <img loading="lazy" src="/assets/Template/corner-border-1.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="right-bottom-flower-1.html">
+                                    <img loading="lazy" src="/assets/Template/right-bottom-flower-1.jpg"
+                                        alt="old style type 5 template">
+                                </a>
                             </div>
                             <div class="ms-2">
                                 <a href="right-side-flower-1.html">
                                     <img loading="lazy" src="/assets/Template/right-side-flower-1.jpg"
+                                        alt="old style type 5 template">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="heading-wrapper">
+                            <a href="#Colourfull-template">
+                                <svg class="icon border border-2" aria-hidden="true">
+                                    <use href="/assets/icon/sprite.svg#heades"></use>
+                                </svg>
+                            </a>
+                            <h2 id="Colourfull-template">Colourfull templates</h2>
+                        </div>
+                        <div id="colourfull-templates">
+                            <div class="ms-2">
+                                <a href="colourfull-1.html">
+                                    <img loading="lazy" src="/assets/Template/colorfull-1.jpg" alt="colorfull-1">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="first-template.html">
+                                    <img loading="lazy" src="/assets/Template/first-template.png" alt="first template">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="side-flower-1.html">
+                                    <img loading="lazy" src="/assets/Template/side-flower-1.jpg"
                                         alt="old style type 5 template">
                                 </a>
                             </div>
@@ -206,9 +313,19 @@
                                     <img loading="lazy" src="/assets/Template/colorfull-9.jpg" alt="colorfull-1">
                                 </a>
                             </div>
-                              <div class="ms-2">
+                            <div class="ms-2">
                                 <a href="colourfull-10.html">
                                     <img loading="lazy" src="/assets/Template/colorfull-10.jpg" alt="colorfull-1">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="colourfull-11.html">
+                                    <img loading="lazy" src="/assets/Template/colorfull-11.jpg" alt="colorfull-1">
+                                </a>
+                            </div>
+                            <div class="ms-2">
+                                <a href="colourfull-12.html">
+                                    <img loading="lazy" src="/assets/Template/colorfull-12.jpg" alt="colorfull-1">
                                 </a>
                             </div>
                         </div>

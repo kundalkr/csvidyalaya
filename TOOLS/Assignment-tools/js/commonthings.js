@@ -24,11 +24,3 @@ let scr = document.createElement("script");
 scr.setAttribute("src", "/TOOLS/Assignment-tools/js/form-functionality.js");
 scr.setAttribute("type", "text/javascript");
 add_head(scr);
-
-
-
-
-
-
-
-
