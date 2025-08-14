@@ -13,6 +13,7 @@ function hide_form() {
     let div1 = document.createElement("div");
     div1.setAttribute("id","firstdiv");
     div1.innerHTML = `<h2 class="text-center">generating your file , please wait  </h2> <br>
+    <p class="text-center">This will take less than half a minute</p>
     <div class="text-center"> <h2>join our telegram Group to suggest any Idea </h2> <a href="https://t.me/+0y7RpzVA1nhlYzk9" class="btn btn-success " target="_blank"><i class="bi bi-telegram">Telegram</i></a></div>
     `;
     div.appendChild(div1);
