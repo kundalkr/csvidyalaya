@@ -3,6 +3,7 @@ let div = document.createElement("div");
 let buttone = document.createElement("a"); let text;
 buttone.textContent = "Click here for your file";
 buttone.setAttribute("class", "btn btn-success");
+buttone.setAttribute("id", "dlink");
 buttone.style.display = "none";
 function hide_form() {
     div.setAttribute("id", "timerDisplay");
@@ -37,6 +38,7 @@ function hide_form() {
             buttone.style.display = "block";
             div.textContent = ``;
             div.appendChild(buttone);
+             document.getElementById('dlink').focus();
         }
     }, 1000);
 };
