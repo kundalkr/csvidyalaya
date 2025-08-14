@@ -1,6 +1,6 @@
 const form = document.getElementById("myForm");
 let div = document.createElement("div");
-let buttone = document.createElement("a");
+let buttone = document.createElement("a");  let text;
 buttone.textContent = "Click here for your file";
 buttone.setAttribute("class", "btn btn-success");
 buttone.style.display = "none";
@@ -9,11 +9,11 @@ function hide_form() {
     div.setAttribute("class", "border border-2 p-4 mb-5");
     form.insertAdjacentElement("afterend", div);
     form.style.display = "none";
-    let timeLeft = 22;
+    let timeLeft = 0;
     let div1 = document.createElement("div");
-    div1.setAttribute("id", "firstdiv");
+    div1.setAttribute("id","firstdiv");
     div1.innerHTML = `<h2 class="text-center">generating your file , please wait  </h2> <br>
-    <div class="text-center"> <h2 >join our telegram Group to suggest any Idea </h2> <a href="https://t.me/+0y7RpzVA1nhlYzk9" class="btn btn-success " target="_blank"><i class="bi bi-telegram">Telegram</i></a></div>
+    <div class="text-center"> <h2>join our telegram Group to suggest any Idea </h2> <a href="https://t.me/+0y7RpzVA1nhlYzk9" class="btn btn-success " target="_blank"><i class="bi bi-telegram">Telegram</i></a></div>
     `;
     div.appendChild(div1);
     let div2 = document.createElement("div");
@@ -21,9 +21,9 @@ function hide_form() {
     div2.setAttribute("class", "text-center");
     div.appendChild(div2);
     const interval = setInterval(() => {
-        timeLeft--;
+        timeLeft++;
         div2.textContent = `${timeLeft}`;
-        if (timeLeft <= 0) {
+        if (text.length > 15) {
             clearInterval(interval);
             buttone.style.display = "block";
             div.textContent = ``;
@@ -38,7 +38,7 @@ function button(params) {
 form.addEventListener("submit", async function (e) {
     e.preventDefault();
     hide_form();
-    let text;
+  
     const formData = new FormData(form);
     const scriptURL =
         "https://script.google.com/macros/s/AKfycbxTxP4wZOnmdgQvBPbNa1beaod8BfU4cLOlQCAE3saoUKhuPJj8D5ocu5cqXUrJHzas8Q/exec";
