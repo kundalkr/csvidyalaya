@@ -13,7 +13,7 @@ const breadcrumb_Links = {
       link: "/index.html", name: "CS vidyalaya"
     },
     {
-      link: "/TOOLS/Assignment-tools/CUSB-assignment-template.html", name: "Assignment tools"
+      link: "/TOOLS/Assignment-tools/CUSB-assignment-template.html", name: "All Assignment Templates"
     }
   ]
 }
