@@ -16,11 +16,9 @@
                 height: auto;
             }
         }
-
         .card:hover {
             animation: none !important;
         }
-
         #asthetic-template,
         #colourfull-templates {
             width: 100%;
@@ -32,27 +30,20 @@
             @media (width<=800px) {
                 flex-direction: column;
             }
-
             img {
                 border: 2px solid black;
                 margin-top: 5px;
             }
         }
-
         .steps {
             counter-reset: step;
-            /* Initialize counter */
             list-style: none;
-            /* Hide default 1., 2., 3. */
             padding-left: 0;
         }
-
         .steps li {
             counter-increment: step;
-            /* Increase step count */
             margin: 8px 0;
         }
-
         .steps li::before {
             content: "Step "counter(step) ". ";
             font-weight: bold;
@@ -89,6 +80,18 @@
                 </nav>
                 <!-- table of contents  -->
                 <article>
+                    <section>
+                        <p>here you can create intro page of your assignment or project. these all are free template
+                            (This means that you don't have to pay any money/fee to use all these template ).
+                            these templates can be used by students of any department of CUSB. </p>
+                        <p>for now, we have two types of templates</p>
+                        <ul>
+                            <li class="list-group-item"><a href="#Asthetic-Template">Asthetic Template</a></li>
+                            <li class="list-group-item"><a href="#Colourfull-template">Colourfull-template</a></li>
+                        </ul>
+                        <p>In future , we upload more templates</p>
+                    </section>
+
                     <section class="mb-3">
                         <div class="heading-wrapper">
                             <a href="#Asthetic-Template">
@@ -335,7 +338,7 @@
                                     <img loading="lazy" src="/assets/Template/colorfull-13.jpg" alt="colorfull-1">
                                 </a>
                             </div>
-                             <div class="ms-2">
+                            <div class="ms-2">
                                 <a href="colourfull-14.html">
                                     <img loading="lazy" src="/assets/Template/colorfull-14.jpg" alt="colorfull-1">
                                 </a>

@@ -1,13 +1,13 @@
 const form = document.getElementById("myForm");
 let div = document.createElement("div");
-let buttone = document.createElement("a"); let text;
+let buttone = document.createElement("a");let text;
 buttone.textContent = "Click here for your file";
 buttone.setAttribute("class", "btn btn-success");
 buttone.setAttribute("id", "dlink");
 buttone.style.display = "none";
 function hide_form() {
     div.setAttribute("id", "timerDisplay");
-    div.setAttribute("class", "border border-2 p-4 mb-5");
+    div.setAttribute("class", "border border-2 p-4 mb-5 mt-3");
     form.insertAdjacentElement("afterend", div);
     form.style.display = "none";
     let timeLeft = 0;
@@ -20,16 +20,17 @@ function hide_form() {
     <div class="text-center"> 
         <h2>Join our telegram Group to suggest any Idea </h2> 
         <a href="https://t.me/+0y7RpzVA1nhlYzk9" class="btn btn-success" target="_blank">
-       <i class="bi bi-telegram">Telegram</i>
-       </a>
+        <i class="bi bi-telegram">Telegram</i>
+        </a>
     </div>
     `;
     div.appendChild(div1);
-    document.getElementById('timerDisplay').focus();
+  
     let div2 = document.createElement("div");
     div2.setAttribute("id", "seconddiv");
     div2.setAttribute("class", "text-center");
-    div.appendChild(div2);
+    div.appendChild(div2);  
+    document.getElementById('timerDisplay').focus();
     const interval = setInterval(() => {
         timeLeft++;
         div2.textContent = `${timeLeft}`;
@@ -38,7 +39,7 @@ function hide_form() {
             buttone.style.display = "block";
             div.textContent = ``;
             div.appendChild(buttone);
-             document.getElementById('dlink').focus();
+            document.getElementById('dlink').focus();
         }
     }, 1000);
 };
