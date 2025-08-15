@@ -7,6 +7,7 @@ buttone.setAttribute("id", "dlink");
 buttone.style.display = "none";
 function hide_form() {
     div.setAttribute("id", "timerDisplay");
+    div.setAttribute("tabindex", "0");
     div.setAttribute("class", "border border-2 p-4 mb-5 mt-3");
     form.insertAdjacentElement("afterend", div);
     form.style.display = "none";
@@ -14,7 +15,7 @@ function hide_form() {
     let div1 = document.createElement("div");
     div1.setAttribute("id", "firstdiv");
     div1.innerHTML = `
-    <h2 class="text-center">Generating your file , please wait </h2>
+    <h2 class="text-center" tabindex="0">Generating your file , please wait </h2>
     <br> 
     <p class="text-center">This will take less than half a minute</p>
     <div class="text-center"> 
@@ -25,12 +26,11 @@ function hide_form() {
     </div>
     `;
     div.appendChild(div1);
-  
     let div2 = document.createElement("div");
     div2.setAttribute("id", "seconddiv");
     div2.setAttribute("class", "text-center");
     div.appendChild(div2);  
-    document.getElementById('timerDisplay').focus();
+  
     const interval = setInterval(() => {
         timeLeft++;
         div2.textContent = `${timeLeft}`;
@@ -41,7 +41,7 @@ function hide_form() {
             div.appendChild(buttone);
             document.getElementById('dlink').focus();
         }
-    }, 1000);
+    }, 1000);  document.getElementById('timerDisplay').focus();
 };
 function button(params) {
     buttone.setAttribute("href", `https://drive.google.com/file/d/${params}/view`);
