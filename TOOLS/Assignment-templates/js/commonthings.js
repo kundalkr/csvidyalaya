@@ -5,7 +5,7 @@ import { breadcrumb } from "/js/src/for_all_page.min.js";
 import book_sugget from "/TOOLS/Assignment-templates/js/template.json" with {type: "json"};
 book_name_recommender(book_sugget);
 add_css(
-  "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black; }}"
+  "ul>li>a{color: black;} button#down{ background-color: #00FF40;a{color: black;}}"
 );
 const breadcrumb_Links = {
   users: [
@@ -17,6 +17,7 @@ const breadcrumb_Links = {
     }
   ]
 }
+
 breadcrumb(breadcrumb_Links);
 
 let scr = document.createElement("script");
