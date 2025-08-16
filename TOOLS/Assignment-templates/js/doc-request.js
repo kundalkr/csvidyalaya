@@ -30,7 +30,7 @@ function hide_form() {
     div2.setAttribute("id", "seconddiv");
     div2.setAttribute("class", "text-center");
     div.appendChild(div2);  
-  
+    
     const interval = setInterval(() => {
         timeLeft++;
         div2.textContent = `${timeLeft}`;
