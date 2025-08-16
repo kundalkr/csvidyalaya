@@ -30,7 +30,7 @@ function watchTask() {
     "css/headings-footer.css",
     "css/main-content.css",
     "css/universal-css.css",
-    "TOOLS/Assignment-tools/css/main.css"
+    "TOOLS/Assignment-templates/css/main.css"
   ];
   cssFiles.forEach((file) => {
     const dest = path.dirname(file);
@@ -53,9 +53,9 @@ function watchTask() {
     "Operating-system/Deadlocks/commonthings.js",
     "Operating-system/memory-management/commonthings.js",
     "Digital_Fundamentals/Boolean_Algebra/commonthing.js",
-    "TOOLS/Assignment-tools/js/doc-request.js",
-    "TOOLS/Assignment-tools/js/commonthings.js",
-    "TOOLS/Assignment-tools/js/form-functionality.js"
+    "TOOLS/Assignment-templates/js/doc-request.js",
+    "TOOLS/Assignment-templates/js/commonthings.js",
+    "TOOLS/Assignment-templates/js/form-functionality.js"
   ];
 // let dest = `js/src/`;
   jsFiles.forEach((file) => {
