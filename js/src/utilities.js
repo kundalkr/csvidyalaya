@@ -69,8 +69,6 @@ export function book_name_recommender(object) {
       let article = document.querySelector("#three-section #book-recommendation > div.w-100");
       article.innerHTML = `${allbookss}`;
     } else {
-
-
       let article = document.querySelector("#right-content > #book-recommendations > div");
       article.innerHTML = `${allbookss}`;
     }

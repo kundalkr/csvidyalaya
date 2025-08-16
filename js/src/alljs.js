@@ -68,12 +68,12 @@ function founder_schemas() {
 }
 function published_data() {
   const lastModified = new Date(document.lastModified).toISOString().split('T')[0];
+  
   const scriptTag = document.getElementById("structured-data");
   const json = JSON.parse(scriptTag.textContent);
   json.dateModified = lastModified;
   scriptTag.textContent = JSON.stringify(json);
 }
-
 
 if (
   window.location.hostname !== "localhost" &&
@@ -85,15 +85,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WTF8XDP8');`;
-  // script1.async = !0;
-  // script1.src = "https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS";
-  add_head(script1);
-  // let script2 = document.createElement("script");
-  // script2.innerHTML = `window.dataLayer = window.dataLayer || [];
-  //   function gtag(){dataLayer.push(arguments);}
-  //   gtag('js', new Date());
-  //   gtag('config', 'G-C4M8ZRW6HS');`;
-  // add_head(script2);
+
 
   let noscript = document.createElement("noscript");
   noscript.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTF8XDP8"
