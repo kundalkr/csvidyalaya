@@ -75,7 +75,7 @@ export function book_name_recommender(object) {
       article.innerHTML = `${allbookss}`;
     }
   }
-  if (window.location.pathname.includes("Assignment-tools") == true) {
+  if (window.location.pathname.includes("Assignment-templates") == true) {
     let article = document.querySelector("#left-side"); article.innerHTML = `${allbookss}`;
   }
 
