@@ -68,11 +68,14 @@ function founder_schemas() {
 }
 function published_data() {
   const lastModified = new Date(document.lastModified).toISOString().split('T')[0];
-  
+
   const scriptTag = document.getElementById("structured-data");
-  const json = JSON.parse(scriptTag.textContent);
-  json.dateModified = lastModified;
-  scriptTag.textContent = JSON.stringify(json);
+  if (document.querySelector('#structured-data')) {
+    const json = JSON.parse(scriptTag.textContent);
+    json.dateModified = lastModified;
+    scriptTag.textContent = JSON.stringify(json);
+  }
+
 }
 
 if (
