@@ -1,4 +1,4 @@
-import { add_head,file_name_viewer } from "/js/src/utilities.min.js";
+import { add_head } from "/js/src/utilities.min.js";
 
 function loadScript(src, callback) {
   const script = document.createElement('script');
