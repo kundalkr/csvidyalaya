@@ -1,4 +1,4 @@
-import { add_head } from "/js/src/utilities.min.js";
+import { add_head,file_name_viewer } from "/js/src/utilities.min.js";
 
 function loadScript(src, callback) {
   const script = document.createElement('script');
@@ -154,8 +154,11 @@ const bar_links = {
 };
 
 function bar(link_arr) {
+  if (file_name_viewer()!=) {
+    
+  }
   let bar = document.createElement("div");
-  // bar.classList.add('scrollable');
+
   let irhtml = `<div
         id="bar1"
         class="scroll-container scrollable"
