@@ -83,18 +83,17 @@ if (
   window.location.hostname !== "127.0.0.1"
 ) {
   let script1 = document.createElement("script");
-  script1.innerHTML = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WTF8XDP8');`;
+  script1.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-C4M8ZRW6HS");
+  script1.async = true;
 
 
-  let noscript = document.createElement("noscript");
-  noscript.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTF8XDP8"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
-  let bodyss = document.querySelector("body");
-  bodyss.prepend(noscript);
+  let script2 = document.createElement("script");
+  script2.innerHTML = ` window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-C4M8ZRW6HS');`;
+
+  add_head(script1); add_head(script2);
 }
 
 const bar_links = {

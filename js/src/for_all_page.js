@@ -62,18 +62,8 @@ const refurnished_links = {
       link: "/os/memory_management/page-replacement-algorithms.html", redirect: "https://www.csvidyalaya.com/Operating-system/memory-management/page-replacement-algorithms.html"
     },
     {
-      link: "/TOOLS/Assignment-tools/CUSB-assignment-template.html#Asthetic-Template", redirect: " https://www.csvidyalaya.com/TOOLS/Assignment-templates/CUSB-assignment-template.html#Asthetic-Template"
-    },
-
-    {
-      link: "/TOOLS/Assignment-tools/CUSB-assignment-template.html#Colourfull-template", redirect: "https://www.csvidyalaya.com/TOOLS/Assignment-templates/CUSB-assignment-template.html#Colourfull-template"
-    }, 
-    {
-      link: "/TOOLS/Assignment-tools/CUSB-assignment-template.html", redirect: "https://www.csvidyalaya.com/TOOLS/Assignment-templates/CUSB-assignment-template.html"
-    }, 
-    {
-      link: "/TOOLS/Assignment-tools/CUSB-assignment-template.html#how-to-use-this-tool", redirect: "https://www.csvidyalaya.com/TOOLS/Assignment-templates/CUSB-assignment-template.html#how-to-use-this-tool"
-    },
+      link: "/TOOLS/", redirect: "https://cusb.csvidyalaya.com"
+    }
   ]
 };
 for (const user of refurnished_links.users) {
