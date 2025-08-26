@@ -154,9 +154,6 @@ const bar_links = {
 };
 
 function bar(link_arr) {
-  if (file_name_viewer()!=) {
-    
-  }
   let bar = document.createElement("div");
 
   let irhtml = `<div
