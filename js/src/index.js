@@ -30,6 +30,8 @@ const newly_added = {
     },
   ],
 };
+
+// #al_card > div:nth-child(1) > marquee > ul
 function newly_add(newly_added) {
   let newly_add = document.querySelector(
     "#al_card > div:nth-child(1) > marquee > ul"

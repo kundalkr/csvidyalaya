@@ -2,7 +2,6 @@
   "name": "csvidyalaya",
   "version": "1.0.0",
   "description": "college projects",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,8 +17,9 @@
   "homepage": "https://github.com/kundalkr/csvidyalaya#readme",
   "devDependencies": {
     "@eslint/js": "^9.28.0",
+    "@parcel/packager-raw-url": "^2.16.3",
+    "@parcel/transformer-jsonld": "^2.16.3",
     "cssnano": "^7.0.7",
-    "eslint": "^9.28.0",
     "globals": "^16.2.0",
     "gulp": "^5.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -27,9 +27,15 @@
     "gulp-rename": "^2.0.0",
     "gulp-terser": "^2.1.0",
     "gulp-uglify": "^3.0.2",
-    "htmlhint": "^1.6.3"
+    "htmlhint": "^1.6.3",
+    "parcel": "^2.16.3"
   },
   "dependencies": {
-    "csvidyalaya": "file:"
+    "bootstrap": "^5.3.8",
+    "csvidyalaya": "file:",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router": "^6.29.0",
+    "react-router-dom": "^6.29.0"
   }
 }
