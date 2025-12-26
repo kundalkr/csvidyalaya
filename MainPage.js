@@ -24,12 +24,8 @@ const Mainpage = () => {
                 many more related question available
               </p>
               <a
-                // href="/Operating-system/operating-System-Topics.html"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.location.href =
-                    "/Operating-system/operating-System-Topics.html";
-                }}
+                href="/Operating-system/operating-System-Topics.html"
+         
                 className="btn btn-success"
               >
                 practice here -&gt;
@@ -43,7 +39,7 @@ const Mainpage = () => {
                 You can practice here Array question, stack, linkedlist, Queue
                 and all other data structure question .....
               </p>
-              <a href="DSA/dsa-topic.html" className="btn btn-success">
+              <a href="/DSA/dsa-topic.html" className="btn btn-success">
                 practice here -&gt;
               </a>
             </div>

@@ -17501,11 +17501,7 @@ const Mainpage = ()=>{
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            // href="/Operating-system/operating-System-Topics.html"
-                                            onClick: (e)=>{
-                                                e.preventDefault();
-                                                window.location.href = "/Operating-system/operating-System-Topics.html";
-                                            },
+                                            href: "https://www.csvidyalaya.com/Operating-system/operating-System-Topics.html",
                                             className: "btn btn-success",
                                             children: "practice here ->"
                                         }, void 0, false, {
@@ -17537,7 +17533,7 @@ const Mainpage = ()=>{
                                             children: "DSA"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 41,
+                                            lineNumber: 37,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17545,27 +17541,27 @@ const Mainpage = ()=>{
                                             children: "You can practice here Array question, stack, linkedlist, Queue and all other data structure question ....."
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 42,
+                                            lineNumber: 38,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "DSA/dsa-topic.html",
+                                            href: "https://www.csvidyalaya.com/DSA/dsa-topic.html",
                                             className: "btn btn-success",
                                             children: "practice here ->"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 46,
+                                            lineNumber: 42,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "MainPage.js",
-                                    lineNumber: 40,
+                                    lineNumber: 36,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "MainPage.js",
-                                lineNumber: 39,
+                                lineNumber: 35,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17581,7 +17577,7 @@ const Mainpage = ()=>{
                                             children: "Digital Fundamentals"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 53,
+                                            lineNumber: 49,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17589,27 +17585,27 @@ const Mainpage = ()=>{
                                             children: "Question related to Number Systems and Conversion, complements, Computer Arithmetic, Logic Gates, Boolean Algebra and all others ......"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 54,
+                                            lineNumber: 50,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "/Digital_Fundamentals/Dgital_funda_topic.html",
+                                            href: "https://www.csvidyalaya.com/Digital_Fundamentals/Dgital_funda_topic.html",
                                             className: "btn btn-success",
                                             children: "practice here ->"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 59,
+                                            lineNumber: 55,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "MainPage.js",
-                                    lineNumber: 52,
+                                    lineNumber: 48,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "MainPage.js",
-                                lineNumber: 51,
+                                lineNumber: 47,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17625,7 +17621,7 @@ const Mainpage = ()=>{
                                             children: "Software Engineering"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 69,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17633,27 +17629,27 @@ const Mainpage = ()=>{
                                             children: "you can practice here software engineering related questions."
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 70,
+                                            lineNumber: 66,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "/Software-Engineering/software-engineering-topic.html",
+                                            href: "https://www.csvidyalaya.com/Software-Engineering/software-engineering-topic.html",
                                             className: "btn btn-success",
                                             children: "practice here ->"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 73,
+                                            lineNumber: 69,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "MainPage.js",
-                                    lineNumber: 68,
+                                    lineNumber: 64,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "MainPage.js",
-                                lineNumber: 67,
+                                lineNumber: 63,
                                 columnNumber: 11
                             }, undefined)
                         ]
@@ -17678,7 +17674,7 @@ const Mainpage = ()=>{
                                             children: "Wireless Sensor Network (WSN)"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 85,
+                                            lineNumber: 81,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17686,27 +17682,27 @@ const Mainpage = ()=>{
                                             children: "you can find here previous year question of Wireless Sensor Network."
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 86,
+                                            lineNumber: 82,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "/WSN/wireless_sensor_network.html",
+                                            href: "https://www.csvidyalaya.com/WSN/wireless_sensor_network.html",
                                             className: "btn btn-success",
                                             children: "practice here ->"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 90,
+                                            lineNumber: 86,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "MainPage.js",
-                                    lineNumber: 84,
+                                    lineNumber: 80,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "MainPage.js",
-                                lineNumber: 83,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17722,7 +17718,7 @@ const Mainpage = ()=>{
                                             children: "Database Management System (DBMS)"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 100,
+                                            lineNumber: 96,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17730,27 +17726,27 @@ const Mainpage = ()=>{
                                             children: "you can find here Database Management System (DBMS) question + theory"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 101,
+                                            lineNumber: 97,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "/DBMS/dbms_topic.html",
+                                            href: "https://www.csvidyalaya.com/DBMS/dbms_topic.html",
                                             className: "btn btn-success",
                                             children: "click here ->"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 105,
+                                            lineNumber: 101,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "MainPage.js",
-                                    lineNumber: 99,
+                                    lineNumber: 95,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "MainPage.js",
-                                lineNumber: 98,
+                                lineNumber: 94,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17766,7 +17762,7 @@ const Mainpage = ()=>{
                                             children: "Previous Year Question (PYQ)"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 112,
+                                            lineNumber: 108,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17774,27 +17770,27 @@ const Mainpage = ()=>{
                                             children: "you can find here previous year question of computer science."
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 113,
+                                            lineNumber: 109,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "/previous_year_question(PYQ)/PYQ.html",
+                                            href: "https://www.csvidyalaya.com/previous_year_question(PYQ)/PYQ.html",
                                             className: "btn btn-success",
                                             children: "practice here ->"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 116,
+                                            lineNumber: 112,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "MainPage.js",
-                                    lineNumber: 111,
+                                    lineNumber: 107,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "MainPage.js",
-                                lineNumber: 110,
+                                lineNumber: 106,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17810,7 +17806,7 @@ const Mainpage = ()=>{
                                             children: "Previous Year Question (PYQ)"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 126,
+                                            lineNumber: 122,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17818,27 +17814,27 @@ const Mainpage = ()=>{
                                             children: "you can find here previous year question of computer science."
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 127,
+                                            lineNumber: 123,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "/previous_year_question(PYQ)/PYQ.html",
+                                            href: "https://www.csvidyalaya.com/previous_year_question(PYQ)/PYQ.html",
                                             className: "btn btn-success",
                                             children: "practice here ->"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 130,
+                                            lineNumber: 126,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "MainPage.js",
-                                    lineNumber: 125,
+                                    lineNumber: 121,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "MainPage.js",
-                                lineNumber: 124,
+                                lineNumber: 120,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17854,7 +17850,7 @@ const Mainpage = ()=>{
                                             children: "CUSB university assignment tools"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 143,
+                                            lineNumber: 139,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -17862,33 +17858,33 @@ const Mainpage = ()=>{
                                             children: "you create assignment first page"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 144,
+                                            lineNumber: 140,
                                             columnNumber: 15
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            href: "/TOOLS/Assignment-templates/CUSB-assignment-template.html",
+                                            href: "https://www.csvidyalaya.com/TOOLS/Assignment-templates/CUSB-assignment-template.html",
                                             className: "btn btn-success",
                                             children: "click here ->"
                                         }, void 0, false, {
                                             fileName: "MainPage.js",
-                                            lineNumber: 145,
+                                            lineNumber: 141,
                                             columnNumber: 15
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "MainPage.js",
-                                    lineNumber: 142,
+                                    lineNumber: 138,
                                     columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "MainPage.js",
-                                lineNumber: 138,
+                                lineNumber: 134,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "MainPage.js",
-                        lineNumber: 82,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17904,7 +17900,7 @@ const Mainpage = ()=>{
                                         links: (0, _indexMin.newlyAdded).all_links
                                     }, void 0, false, {
                                         fileName: "MainPage.js",
-                                        lineNumber: 157,
+                                        lineNumber: 153,
                                         columnNumber: 15
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _linkedlistDefault.default), {
@@ -17912,23 +17908,23 @@ const Mainpage = ()=>{
                                         links: (0, _indexMin.upcoming).all_links
                                     }, void 0, false, {
                                         fileName: "MainPage.js",
-                                        lineNumber: 159,
+                                        lineNumber: 155,
                                         columnNumber: 15
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "MainPage.js",
-                                lineNumber: 156,
+                                lineNumber: 152,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "MainPage.js",
-                            lineNumber: 155,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "MainPage.js",
-                        lineNumber: 154,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, undefined)
                 ]
@@ -17939,7 +17935,7 @@ const Mainpage = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footerDefault.default), {}, void 0, false, {
                 fileName: "MainPage.js",
-                lineNumber: 164,
+                lineNumber: 160,
                 columnNumber: 7
             }, undefined)
         ]
