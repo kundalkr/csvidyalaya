@@ -7,3 +7,5 @@ hdrftr.html
 footer.html
 header.html
 testing.html
+eslint.config.mjs
+gulpfile.js
