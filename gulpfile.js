@@ -30,6 +30,7 @@ function watchTask() {
     "css/headings-footer.css",
     "css/main-content.css",
     "css/universal-css.css",
+    "css/tailwind.css",
     "TOOLS/Assignment-templates/css/main.css"
   ];
   cssFiles.forEach((file) => {
@@ -55,7 +56,8 @@ function watchTask() {
     "Digital_Fundamentals/Boolean_Algebra/commonthing.js",
     "TOOLS/Assignment-templates/js/doc-request.js",
     "TOOLS/Assignment-templates/js/commonthings.js",
-    "TOOLS/Assignment-templates/js/form-functionality.js"
+    "TOOLS/Assignment-templates/js/form-functionality.js",
+    "js/custom-element/amazon-ads.js"
   ];
 // let dest = `js/src/`;
   jsFiles.forEach((file) => {

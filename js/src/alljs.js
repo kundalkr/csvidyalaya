@@ -30,6 +30,7 @@ function css_files() {
     "/css/headings-footer.min.css",
     "/css/main-content.min.css",
     "/css/universal-css.min.css",
+    "/css/tailwind.min.css",
   ];
   let heads = document.querySelector("head");
   cssFiles.forEach((file) => {
@@ -173,7 +174,7 @@ function bar(link_arr) {
 }
 
 loadScript('/js/src/for_all_page.min.js', () => {
-  loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); bar(bar_links); published_data(); });
+  loadScript('/js/src/hdr_ftr.min.js', () => { founder_schemas(); css_files(); last_modified(); bar(bar_links); published_data(); loadScript('/js/custom-element/amazon-ads.min.js')});
 });
 let leftandright = document.createElement('script');
 leftandright.innerHTML = `function scrollLefti() {
