@@ -1,13 +1,13 @@
 window.AMAZON_PRODUCTS = {
   induction1: {
     title: "Prestige Induction Cooktop",
-    image: "/assets/ad-picture/electric-induction.png",
+    image: "/assets/ad-picture/electric-induction.webp",
     price: "₹2,000",
     link: "https://amzn.to/4btYEZl"
   },
   induction2: {
     title: "Motorcycle Keychain Biker Protection",
-    image: "/assets/ad-picture/KEYCHAIN.png",
+    image: "/assets/ad-picture/KEYCHAIN.webp",
     price: "₹100",
     link: "https://amzn.to/4lQQcHc"
   }
