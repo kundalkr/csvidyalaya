@@ -5,11 +5,17 @@ window.AMAZON_PRODUCTS = {
     price: "₹2,000",
     link: "https://amzn.to/4btYEZl"
   },
-  induction2: {
+  induction1: {
     title: "bike key chain",
     image: "/assets/ad-picture/bell.webp",
     price: "₹90",
     link: "https://amzn.to/4lQQcHc"
+  },
+    induction2: {
+    title: "dhoni IPL tshirts",
+    image: "/assets/ad-picture/dhonitshirts.webp",
+    price: "₹250",
+    link: "https://amzn.to/4s8wt7n"
   }
 };
 
