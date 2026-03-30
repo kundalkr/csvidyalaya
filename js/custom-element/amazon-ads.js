@@ -6,9 +6,9 @@ window.AMAZON_PRODUCTS = {
     link: "https://amzn.to/4btYEZl"
   },
   induction2: {
-    title: "Motorcycle Keychain Biker Protection",
-    image: "/assets/ad-picture/KEYCHAIN.webp",
-    price: "₹100",
+    title: "bike key chain",
+    image: "/assets/ad-picture/bell.webp",
+    price: "₹90",
     link: "https://amzn.to/4lQQcHc"
   }
 };
