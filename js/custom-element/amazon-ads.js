@@ -8,7 +8,7 @@ window.AMAZON_PRODUCTS = {
   induction1: {
     title: "bike key chain",
     image: "/assets/ad-picture/bell.webp",
-    price: "₹90",
+    price: "₹100",
     link: "https://amzn.to/4lQQcHc"
   },
     induction2: {
