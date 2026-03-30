@@ -1,5 +1,5 @@
 window.AMAZON_PRODUCTS = {
-  induction1: {
+  induction: {
     title: "Prestige Induction Cooktop",
     image: "/assets/ad-picture/electric-induction.webp",
     price: "₹2,000",
